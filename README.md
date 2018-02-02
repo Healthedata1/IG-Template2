@@ -17,9 +17,7 @@ And the Jekyll templates and static pages to go with them...
 
 
 ### Rendered IG-Template at
-
-http://build.fhir.org/ig/Healthedata1/IG-Template2/index.html
-
+https://healthedata1.github.io/IG-Template2/
 
 ## Setup instructions
 
