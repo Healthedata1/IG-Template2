@@ -1,0 +1,119 @@
+﻿mFHIR : Validation Results
+=========================================
+
+err = 36, warn = 2, info = 6
+Generated Fri Feb 02 09:15:37 PST 2018. FHIR version 3.1.0 for 3.0.1
+
+ Build Errors : 72 / 0
+ /Users/ehaas/Documents/FHIR/mFHIR/source/examples/obs : 5 / 0
+ /Users/ehaas/Documents/FHIR/mFHIR/source/resources/bt-profile-spreadsheet : 0 / 1
+ /Users/ehaas/Documents/FHIR/mFHIR/source/resources/capabilitystatement-client : 1 / 0
+ /Users/ehaas/Documents/FHIR/mFHIR/source/resources/capabilitystatement-server : 1 / 0
+ /Users/ehaas/Documents/FHIR/mFHIR/source/resources/extensions-profile-spreadsheet : 3 / 1
+ /Users/ehaas/Documents/FHIR/mFHIR/source/resources/identifier-free-reference-profile-spreadsheet : 0 / 1
+ /Users/ehaas/Documents/FHIR/mFHIR/source/resources/ig : 8 / 0
+ /Users/ehaas/Documents/FHIR/mFHIR/source/resources/structuremap-Foo : 0 / 1
+</table>
+== n/a ==
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 251, column 773: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 251, column 841: The link 'Encounter/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/h2/div/p/a at Line 251, column 952: The link 'Practitioner/practitioner-1' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 257, column 746: The link 'Patient/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 257, column 814: The link 'Encounter/example' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 257, column 925: The link 'Practitioner/practitioner-1' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 112, column 8: The link 'index.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 113, column 8: The link 'guidance.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 114, column 8: The link 'profiles.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 115, column 8: The link 'structuremaps.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 117, column 8: The link 'terminology.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 119, column 8: The link 'capstatements.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 122, column 8: The link 'downloads.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/div/div/div/div/nav/a at Line 192, column 8: The link 'toc.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/div/div/div/div/nav/a at Line 192, column 78: The link 'index.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 209, column 6: The link 'StructureDefinition-extension-blah.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 210, column 6: The link 'StructureDefinition-extension-complex.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/extensions.html#/html/head/link/body/div/div/div/p/a/img at Line 243, column 103: The image source 'cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 112, column 8: The link 'index.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 113, column 8: The link 'guidance.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 114, column 8: The link 'profiles.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 115, column 8: The link 'structuremaps.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 117, column 8: The link 'terminology.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 119, column 8: The link 'capstatements.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 122, column 8: The link 'downloads.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/div/div/div/div/nav/a at Line 192, column 8: The link 'toc.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/div/div/div/div/nav/a at Line 192, column 78: The link 'index.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/security.html#/html/head/link/body/div/div/div/p/a/img at Line 240, column 103: The image source 'cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 112, column 8: The link 'index.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 113, column 8: The link 'guidance.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 114, column 8: The link 'profiles.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 115, column 8: The link 'structuremaps.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 117, column 8: The link 'terminology.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 119, column 8: The link 'capstatements.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 122, column 8: The link 'downloads.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/div/div/div/div/nav/a at Line 192, column 8: The link 'toc.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/div/div/div/div/nav/a at Line 192, column 78: The link 'index.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/operations.html#/html/head/link/body/div/div/div/p/a/img at Line 244, column 103: The image source 'cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 112, column 8: The link 'index.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 113, column 8: The link 'guidance.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 114, column 8: The link 'profiles.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 115, column 8: The link 'structuremaps.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 117, column 8: The link 'terminology.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 119, column 8: The link 'capstatements.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 122, column 8: The link 'downloads.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/div/div/div/div/nav/a at Line 192, column 8: The link 'toc.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/div/div/div/div/nav/a at Line 192, column 78: The link 'index.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/div/div/div/div/li/a at Line 212, column 6: The link 'Observation-example.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 219, column 8: The link 'examples.xml.zip' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 220, column 8: The link 'examples.json.zip' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/div/div/div/div/ul/li/a at Line 221, column 8: The link 'examples.ttl.zip' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/examples.html#/html/head/link/body/div/div/div/p/a/img at Line 254, column 103: The image source 'cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/a/img at Line 46, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/a/img at Line 68, column 2: The image source 'assets/images/org_logo.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 112, column 8: The link 'index.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 113, column 8: The link 'guidance.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 114, column 8: The link 'profiles.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 115, column 8: The link 'structuremaps.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 117, column 8: The link 'terminology.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 119, column 8: The link 'capstatements.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/nav/div/div/ul/li/a at Line 122, column 8: The link 'downloads.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/div/div/div/div/nav/a at Line 192, column 8: The link 'toc.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/div/div/div/div/nav/a at Line 192, column 78: The link 'index.html' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/mFHIR/docs/unused page templates/searchparams.html#/html/head/link/body/div/div/div/p/a/img at Line 241, column 103: The image source 'cc0.png' cannot be resolved
+== /Users/ehaas/Documents/FHIR/mFHIR/source/examples/obs.xml ==
+ERROR: Observation/example: Observation: Profile http://hl7.org/fhir/StructureDefinition/Observation, Element 'Observation.status': minimum required = 1, but only found 0
+ERROR: Observation/example: Observation.code.coding[3]: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+ERROR: Observation/example: Observation.subject: Unable to resolve resource 'Patient/example'
+ERROR: Observation/example: Observation.context: Unable to resolve resource 'Encounter/example'
+ERROR: Observation/example: Observation.performer: Unable to resolve resource 'Practitioner/practitioner-1'
+== /Users/ehaas/Documents/FHIR/mFHIR/source/resources/bt-profile-spreadsheet.xml ==
+INFORMATION: /Users/ehaas/Documents/FHIR/mFHIR/source/resources/bt-profile-spreadsheet: Resources generated by processing /Users/ehaas/Documents/FHIR/mFHIR/source/resources/bt-profile-spreadsheet:  http://www.fhir.org/guides/mfhir/StructureDefinition/bt ("This is a draft Blood Type Profile")
+== /Users/ehaas/Documents/FHIR/mFHIR/source/resources/capabilitystatement-client.xml ==
+ERROR: CapabilityStatement/client: CapabilityStatement.profile: Unable to resolve resource 'http://www.fhir.org/guides/mfhir/StructureDefinition/template-basic'
+== /Users/ehaas/Documents/FHIR/mFHIR/source/resources/capabilitystatement-server.xml ==
+ERROR: CapabilityStatement/server: CapabilityStatement.profile: Unable to resolve resource 'http://www.fhir.org/guides/mfhir/StructureDefinition/template-basic'
+== /Users/ehaas/Documents/FHIR/mFHIR/source/resources/extensions-profile-spreadsheet.xml ==
+INFORMATION: /Users/ehaas/Documents/FHIR/mFHIR/source/resources/extensions-profile-spreadsheet: Resources generated by processing /Users/ehaas/Documents/FHIR/mFHIR/source/resources/extensions-profile-spreadsheet:  http://www.fhir.org/guides/mfhir/ValueSet/blah-codes ("BlahCodes")  http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes ("BlahCodes")  http://www.fhir.org/guides/mfhir/StructureDefinition/extension-blah ("Example Extension")  http://www.fhir.org/guides/mfhir/StructureDefinition/extension-complex ("Complex Extension")  http://www.fhir.org/guides/mfhir/StructureDefinition/foo ("Profile foo")
+ERROR: ValueSet/blah-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.version': minimum required = 1, but only found 0
+ERROR: ValueSet/blah-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.experimental': minimum required = 1, but only found 0
+ERROR: ValueSet/blah-codes: ValueSet: Profile http://hl7.org/fhir/StructureDefinition/shareablevalueset, Element 'ValueSet.publisher': minimum required = 1, but only found 0
+== /Users/ehaas/Documents/FHIR/mFHIR/source/resources/identifier-free-reference-profile-spreadsheet.xml ==
+INFORMATION: /Users/ehaas/Documents/FHIR/mFHIR/source/resources/identifier-free-reference-profile-spreadsheet: Resources generated by processing /Users/ehaas/Documents/FHIR/mFHIR/source/resources/identifier-free-reference-profile-spreadsheet:  http://www.fhir.org/guides/mfhir/StructureDefinition/ifr ("Identifer Free Reference Data Type")
+== /Users/ehaas/Documents/FHIR/mFHIR/source/resources/ig.xml ==
+ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[2]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[2].example': minimum required = 1, but only found 0
+ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[3]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[3].example': minimum required = 1, but only found 0
+ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[4]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[4].example': minimum required = 1, but only found 0
+ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[5]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[5].example': minimum required = 1, but only found 0
+ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[6]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[6].example': minimum required = 1, but only found 0
+ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[7]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[7].example': minimum required = 1, but only found 0
+ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[8]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[8].example': minimum required = 1, but only found 0
+ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[9]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[9].example': minimum required = 1, but only found 0
+== /Users/ehaas/Documents/FHIR/mFHIR/source/resources/structuremap-Foo.xml ==
+WARNING: StructureMap/Foo: StructureMap.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)

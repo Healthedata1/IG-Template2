@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>mFHIR</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/mfhir/ImplementationGuide/ig</pre></div>
+  </text>
+  <url value="http://www.fhir.org/guides/mfhir/ImplementationGuide/ig"/>
+  <name value="mFHIR"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Open mHealth"/>
+  <package>
+    <name value="base"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-example.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/example"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-complex.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-complex"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-blah.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-blah"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureMap-Foo.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureMap/Foo"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ifr.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/ifr"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-foo.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/foo"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-server.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="CapabilityStatement/server"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-client.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="CapabilityStatement/client"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-bt.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/bt"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package>
+    <name value="/Users/ehaas/Documents/FHIR/mFHIR/source/resources/bt-profile-spreadsheet"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-bt.html"/>
+      </extension>
+      <name value="This is a draft Blood Type Profile"/>
+      <sourceReference>
+        <reference value="StructureDefinition/bt"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package>
+    <name value="/Users/ehaas/Documents/FHIR/mFHIR/source/resources/extensions-profile-spreadsheet"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-blah-codes.html"/>
+      </extension>
+      <name value="BlahCodes"/>
+      <sourceReference>
+        <reference value="ValueSet/blah-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-blah-codes.html"/>
+      </extension>
+      <name value="BlahCodes"/>
+      <sourceReference>
+        <reference value="CodeSystem/blah-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-blah.html"/>
+      </extension>
+      <name value="Example Extension"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-blah"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-complex.html"/>
+      </extension>
+      <name value="Complex Extension"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-complex"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-foo.html"/>
+      </extension>
+      <name value="Profile foo"/>
+      <sourceReference>
+        <reference value="StructureDefinition/foo"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package>
+    <name value="Identifer Free Reference Data Type"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ifr.html"/>
+      </extension>
+      <name value="Identifer Free Reference Data Type"/>
+      <sourceReference>
+        <reference value="StructureDefinition/ifr"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.md"/>
+    <title value="mFHIR Homepage"/>
+    <kind value="page"/>
+    <page>
+      <source value="_includes/toc.md"/>
+      <title value="mFHIR Table of Contents"/>
+      <kind value="page"/>
+    </page>
+  </page>
+</ImplementationGuide>

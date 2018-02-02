@@ -1,0 +1,231 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ig",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>mFHIR</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/mfhir/ImplementationGuide/ig</pre></div>"
+  },
+  "url": "http://www.fhir.org/guides/mfhir/ImplementationGuide/ig",
+  "name": "mFHIR",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Open mHealth",
+  "package": [
+    {
+      "name": "base",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/example"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-complex.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-complex"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-blah.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-blah"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureMap-Foo.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "StructureMap/Foo"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-ifr.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "StructureDefinition/ifr"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-foo.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "StructureDefinition/foo"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-server.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "CapabilityStatement/server"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-client.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "CapabilityStatement/client"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-bt.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "StructureDefinition/bt"
+          }
+        }
+      ]
+    },
+    {
+      "name": "/Users/ehaas/Documents/FHIR/mFHIR/source/resources/bt-profile-spreadsheet",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-bt.html"
+            }
+          ],
+          "name": "This is a draft Blood Type Profile",
+          "sourceReference": {
+            "reference": "StructureDefinition/bt"
+          }
+        }
+      ]
+    },
+    {
+      "name": "/Users/ehaas/Documents/FHIR/mFHIR/source/resources/extensions-profile-spreadsheet",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-blah-codes.html"
+            }
+          ],
+          "name": "BlahCodes",
+          "sourceReference": {
+            "reference": "ValueSet/blah-codes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-blah-codes.html"
+            }
+          ],
+          "name": "BlahCodes",
+          "sourceReference": {
+            "reference": "CodeSystem/blah-codes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-blah.html"
+            }
+          ],
+          "name": "Example Extension",
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-blah"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-complex.html"
+            }
+          ],
+          "name": "Complex Extension",
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-complex"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-foo.html"
+            }
+          ],
+          "name": "Profile foo",
+          "sourceReference": {
+            "reference": "StructureDefinition/foo"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Identifer Free Reference Data Type",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-ifr.html"
+            }
+          ],
+          "name": "Identifer Free Reference Data Type",
+          "sourceReference": {
+            "reference": "StructureDefinition/ifr"
+          }
+        }
+      ]
+    }
+  ],
+  "page": {
+    "source": "index.md",
+    "title": "mFHIR Homepage",
+    "kind": "page",
+    "page": [
+      {
+        "source": "_includes/toc.md",
+        "title": "mFHIR Table of Contents",
+        "kind": "page"
+      }
+    ]
+  }
+}
