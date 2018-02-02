@@ -1,7 +1,7 @@
 Configuration Parameter,Configuration Value ( use '|' for lists)
-igtemplate-dir,/Users/ehaas/Documents/FHIR/mFHIR/
-working-dir,/Users/ehaas/Documents/FHIR/mFHIR/
-title,mFHIR
+igtemplate-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
+working-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
+title,IG-Template2
 status,draft
 publisher,Open mHealth
 extensions,extension-blah|extension-complex

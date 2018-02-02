@@ -3,10 +3,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>mFHIR</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/mfhir/ImplementationGuide/ig</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG-Template2</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/mfhir/ImplementationGuide/ig</pre></div>
   </text>
   <url value="http://www.fhir.org/guides/mfhir/ImplementationGuide/ig"/>
-  <name value="mFHIR"/>
+  <name value="IG-Template2"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Open mHealth"/>
@@ -87,7 +87,7 @@
     </resource>
   </package>
   <package>
-    <name value="/Users/ehaas/Documents/FHIR/mFHIR/source/resources/bt-profile-spreadsheet"/>
+    <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/bt-profile-spreadsheet"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-bt.html"/>
@@ -99,7 +99,7 @@
     </resource>
   </package>
   <package>
-    <name value="/Users/ehaas/Documents/FHIR/mFHIR/source/resources/extensions-profile-spreadsheet"/>
+    <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/extensions-profile-spreadsheet"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-blah-codes.html"/>
@@ -160,11 +160,11 @@
   </package>
   <page>
     <source value="index.md"/>
-    <title value="mFHIR Homepage"/>
+    <title value="IG-Template2 Homepage"/>
     <kind value="page"/>
     <page>
       <source value="_includes/toc.md"/>
-      <title value="mFHIR Table of Contents"/>
+      <title value="IG-Template2 Table of Contents"/>
       <kind value="page"/>
     </page>
   </page>

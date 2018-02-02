@@ -3,10 +3,10 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>mFHIR</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/mfhir/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Template2</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/mfhir/ImplementationGuide/ig</pre></div>"
   },
   "url": "http://www.fhir.org/guides/mfhir/ImplementationGuide/ig",
-  "name": "mFHIR",
+  "name": "IG-Template2",
   "status": "draft",
   "experimental": true,
   "publisher": "Open mHealth",
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "name": "/Users/ehaas/Documents/FHIR/mFHIR/source/resources/bt-profile-spreadsheet",
+      "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/bt-profile-spreadsheet",
       "resource": [
         {
           "extension": [
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "name": "/Users/ehaas/Documents/FHIR/mFHIR/source/resources/extensions-profile-spreadsheet",
+      "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/extensions-profile-spreadsheet",
       "resource": [
         {
           "extension": [
@@ -218,12 +218,12 @@
   ],
   "page": {
     "source": "index.md",
-    "title": "mFHIR Homepage",
+    "title": "IG-Template2 Homepage",
     "kind": "page",
     "page": [
       {
         "source": "_includes/toc.md",
-        "title": "mFHIR Table of Contents",
+        "title": "IG-Template2 Table of Contents",
         "kind": "page"
       }
     ]
