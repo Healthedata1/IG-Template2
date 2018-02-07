@@ -3,6 +3,9 @@ Author:  Eric Haas
 
 A template for building an FHIR Implemenation Guide(IG) using the IG publisher and profile spreadsheets.  This is based on the design of the [Argonaut](http://www.fhir.org/guides/argonaut/r2/) and [US-Core](http://hl7.org/fhir/us/core/) IGs.    See the [FHIR IG publisher documentation](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation)  for how to set up your local environment.
 
+The source directory contains all the new and edited content for creating an IG.  This is include pages,resource and examples , and custom navigation and logos, images and even stylesheets.  The framework directory and several template files located in the root directory ( for example `sd.html`) hold the static content for IG and they don't need to be changed to produce an IG.  If you want to customize your IG then you may have to edit these files adn you are on your own.
+The published output is in the docs directory for GitHub Pages which is the easiest way to share your content.  This directory in  not needed if you are using the ig autopublisher.
+
 Shows how to create:
 
 - Profiles
