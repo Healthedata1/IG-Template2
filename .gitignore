@@ -6,7 +6,6 @@
 *.exe
 *.o
 *.so
-*.sh
 *.py
 
 
@@ -50,7 +49,7 @@ output
 archived
 validation
 validateme
-my-notes
+my_notes
 
 # Altova files #
 ################
@@ -67,5 +66,3 @@ tmp*.xml
 ~*.docx
 ~*.xlsx
 ~*.pptx
-
-
