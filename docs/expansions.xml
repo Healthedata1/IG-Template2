@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9655cd3b-0119-420e-9a93-a49ac4acffd7"/>
+  <id value="dfd1ba31-be26-4138-b534-6078b72878c0"/>
   <meta>
-    <lastUpdated value="2018-02-02T10:14:13.470-08:00"/>
+    <lastUpdated value="2018-02-07T13:39:04.447-08:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://www.fhir.org/guides/mfhir/ValueSet/blah-codes"/>
+    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
     <resource>
       <ValueSet>
         <id value="blah-codes"/>
@@ -18,10 +18,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes version 0.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p>
             <p>All codes from system 
               <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes</code>
+                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
               </a>
             </p>
             <table class="codes">
@@ -38,7 +38,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-mfhir-CodeSystem-blah-codes-blah"> </a>
+                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-blah"> </a>
                   <a href="CodeSystem-blah-codes.html#blah-codes-blah">blah</a>
                 </td>
                 <td>Blah</td>
@@ -46,7 +46,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-mfhir-CodeSystem-blah-codes-foo"> </a>
+                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo"> </a>
                   <a href="CodeSystem-blah-codes.html#blah-codes-foo">foo</a>
                 </td>
                 <td>Foo</td>
@@ -54,7 +54,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-mfhir-CodeSystem-blah-codes-bar"> </a>
+                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a>
                   <a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a>
                 </td>
                 <td>Bar</td>
@@ -63,11 +63,11 @@
             </table>
           </div>
         </text>
-        <url value="http://www.fhir.org/guides/mfhir/ValueSet/blah-codes"/>
+        <url value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
         <version value="0.0.0"/>
         <name value="BlahCodes"/>
         <status value="draft"/>
-        <date value="2018-02-02T10:08:19-08:00"/>
+        <date value="2018-02-07T13:39:04-08:00"/>
         <contact>
           <telecom>
             <system value="url"/>
@@ -85,8 +85,8 @@
         </jurisdiction>
         <immutable value="true"/>
         <expansion>
-          <identifier value="urn:uuid:8ce2e325-ab67-43fb-aa57-5a1e8eb25c5e"/>
-          <timestamp value="2018-02-02T01:22:20-08:00"/>
+          <identifier value="urn:uuid:8f9179f7-9b7c-467a-8071-8d170da2c057"/>
+          <timestamp value="2018-02-07T13:39:16-08:00"/>
           <total value="3"/>
           <parameter>
             <name value="profile"/>
@@ -94,20 +94,20 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes|0.0.0"/>
+            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"/>
           </parameter>
           <contains>
-            <system value="http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
             <code value="blah"/>
             <display value="Blah"/>
           </contains>
           <contains>
-            <system value="http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
             <code value="foo"/>
             <display value="Foo"/>
           </contains>
           <contains>
-            <system value="http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
             <code value="bar"/>
             <display value="Bar"/>
           </contains>

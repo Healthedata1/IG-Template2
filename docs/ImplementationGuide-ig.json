@@ -3,13 +3,13 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Template2</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/mfhir/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
   },
-  "url": "http://www.fhir.org/guides/mfhir/ImplementationGuide/ig",
-  "name": "IG-Template2",
+  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
+  "name": "IG-Test3",
   "status": "draft",
   "experimental": true,
-  "publisher": "Open mHealth",
+  "publisher": "Health eData Inc",
   "package": [
     {
       "name": "base",
@@ -52,6 +52,17 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-basic.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "StructureDefinition/template-basic"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureMap-Foo.html"
             }
           ],
@@ -68,17 +79,6 @@
           ],
           "sourceReference": {
             "reference": "StructureDefinition/ifr"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-foo.html"
-            }
-          ],
-          "sourceReference": {
-            "reference": "StructureDefinition/foo"
           }
         },
         {
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/bt-profile-spreadsheet",
+      "name": "/Users/ehaas/Documents/FHIR/IG-Test3/source/resources/bt-profile-spreadsheet",
       "resource": [
         {
           "extension": [
@@ -134,7 +134,24 @@
       ]
     },
     {
-      "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/extensions-profile-spreadsheet",
+      "name": "Identifer Free Reference Data Type",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-ifr.html"
+            }
+          ],
+          "name": "Identifer Free Reference Data Type",
+          "sourceReference": {
+            "reference": "StructureDefinition/ifr"
+          }
+        }
+      ]
+    },
+    {
+      "name": "/Users/ehaas/Documents/FHIR/IG-Test3/source/resources/template-profile-spreadsheet",
       "resource": [
         {
           "extension": [
@@ -188,29 +205,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-foo.html"
+              "valueUri": "StructureDefinition-template-basic.html"
             }
           ],
-          "name": "Profile foo",
+          "name": "Profile template-basic",
           "sourceReference": {
-            "reference": "StructureDefinition/foo"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Identifer Free Reference Data Type",
-      "resource": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-ifr.html"
-            }
-          ],
-          "name": "Identifer Free Reference Data Type",
-          "sourceReference": {
-            "reference": "StructureDefinition/ifr"
+            "reference": "StructureDefinition/template-basic"
           }
         }
       ]
@@ -218,12 +218,12 @@
   ],
   "page": {
     "source": "index.md",
-    "title": "IG-Template2 Homepage",
+    "title": "IG-Test3 Homepage",
     "kind": "page",
     "page": [
       {
         "source": "_includes/toc.md",
-        "title": "IG-Template2 Table of Contents",
+        "title": "IG-Test3 Table of Contents",
         "kind": "page"
       }
     ]

@@ -8,13 +8,13 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></li></ul></div>"
   },
-  "url": "http://www.fhir.org/guides/mfhir/ValueSet/blah-codes",
+  "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
   "version": "0.0.0",
   "name": "BlahCodes",
   "status": "draft",
-  "date": "2018-02-02T10:08:19-08:00",
+  "date": "2018-02-07T13:39:04-08:00",
   "contact": [
     {
       "telecom": [
@@ -42,7 +42,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes"
+        "system": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes"
       }
     ]
   }

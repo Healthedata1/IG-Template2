@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG-Template2</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/mfhir/ImplementationGuide/ig</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>
   </text>
-  <url value="http://www.fhir.org/guides/mfhir/ImplementationGuide/ig"/>
-  <name value="IG-Template2"/>
+  <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
+  <name value="IG-Test3"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <publisher value="Open mHealth"/>
+  <publisher value="Health eData Inc"/>
   <package>
     <name value="base"/>
     <resource>
@@ -39,6 +39,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-basic.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/template-basic"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureMap-Foo.html"/>
       </extension>
       <sourceReference>
@@ -51,14 +59,6 @@
       </extension>
       <sourceReference>
         <reference value="StructureDefinition/ifr"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-foo.html"/>
-      </extension>
-      <sourceReference>
-        <reference value="StructureDefinition/foo"/>
       </sourceReference>
     </resource>
     <resource>
@@ -87,7 +87,7 @@
     </resource>
   </package>
   <package>
-    <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/bt-profile-spreadsheet"/>
+    <name value="/Users/ehaas/Documents/FHIR/IG-Test3/source/resources/bt-profile-spreadsheet"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-bt.html"/>
@@ -99,7 +99,19 @@
     </resource>
   </package>
   <package>
-    <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/extensions-profile-spreadsheet"/>
+    <name value="Identifer Free Reference Data Type"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ifr.html"/>
+      </extension>
+      <name value="Identifer Free Reference Data Type"/>
+      <sourceReference>
+        <reference value="StructureDefinition/ifr"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <package>
+    <name value="/Users/ehaas/Documents/FHIR/IG-Test3/source/resources/template-profile-spreadsheet"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-blah-codes.html"/>
@@ -138,33 +150,21 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-foo.html"/>
+        <valueUri value="StructureDefinition-template-basic.html"/>
       </extension>
-      <name value="Profile foo"/>
+      <name value="Profile template-basic"/>
       <sourceReference>
-        <reference value="StructureDefinition/foo"/>
-      </sourceReference>
-    </resource>
-  </package>
-  <package>
-    <name value="Identifer Free Reference Data Type"/>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-ifr.html"/>
-      </extension>
-      <name value="Identifer Free Reference Data Type"/>
-      <sourceReference>
-        <reference value="StructureDefinition/ifr"/>
+        <reference value="StructureDefinition/template-basic"/>
       </sourceReference>
     </resource>
   </package>
   <page>
     <source value="index.md"/>
-    <title value="IG-Template2 Homepage"/>
+    <title value="IG-Test3 Homepage"/>
     <kind value="page"/>
     <page>
       <source value="_includes/toc.md"/>
-      <title value="IG-Template2 Table of Contents"/>
+      <title value="IG-Test3 Table of Contents"/>
       <kind value="page"/>
     </page>
   </page>

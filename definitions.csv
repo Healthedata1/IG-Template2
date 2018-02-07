@@ -1,9 +1,9 @@
 Configuration Parameter,Configuration Value ( use '|' for lists)
 igtemplate-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
-working-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
-title,IG-Template2
+working-dir,/Users/ehaas/Documents/FHIR/IG-Test3/
+title,IG-Test3
 status,draft
-publisher,Open mHealth
+publisher,Health eData Inc
 extensions,extension-blah|extension-complex
 searches,
 codesystems,blah-codes
@@ -25,7 +25,7 @@ no-inactive-codes,FALSE
 broken-links,warning
 gen-examples,FALSE
 do-transforms,FALSE
-canonicalBase,http://www.fhir.org/guides/mfhir
+canonicalBase,http://www.fhir.org/guides/test3
 dependencyList.name,
 dependencyList.location,
 dependencyList.source,

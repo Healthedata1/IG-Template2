@@ -1,13 +1,13 @@
 {
   "resourceType": "Bundle",
-  "id": "9655cd3b-0119-420e-9a93-a49ac4acffd7",
+  "id": "dfd1ba31-be26-4138-b534-6078b72878c0",
   "meta": {
-    "lastUpdated": "2018-02-02T10:14:13.470-08:00"
+    "lastUpdated": "2018-02-07T13:39:04.447-08:00"
   },
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "http://www.fhir.org/guides/mfhir/ValueSet/blah-codes",
+      "fullUrl": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
       "resource": {
         "resourceType": "ValueSet",
         "id": "blah-codes",
@@ -18,13 +18,13 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes version 0.0.0</p><p>All codes from system <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-mfhir-CodeSystem-blah-codes-blah\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-blah\">blah</a></td><td>Blah</td><td>example code 1</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-mfhir-CodeSystem-blah-codes-foo\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-foo\">foo</a></td><td>Foo</td><td>example code 2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-mfhir-CodeSystem-blah-codes-bar\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-bar\">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p><p>All codes from system <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-blah\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-blah\">blah</a></td><td>Blah</td><td>example code 1</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-foo\">foo</a></td><td>Foo</td><td>example code 2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-bar\">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
         },
-        "url": "http://www.fhir.org/guides/mfhir/ValueSet/blah-codes",
+        "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
         "version": "0.0.0",
         "name": "BlahCodes",
         "status": "draft",
-        "date": "2018-02-02T10:08:19-08:00",
+        "date": "2018-02-07T13:39:04-08:00",
         "contact": [
           {
             "telecom": [
@@ -50,8 +50,8 @@
         ],
         "immutable": true,
         "expansion": {
-          "identifier": "urn:uuid:8ce2e325-ab67-43fb-aa57-5a1e8eb25c5e",
-          "timestamp": "2018-02-02T01:22:20-08:00",
+          "identifier": "urn:uuid:8f9179f7-9b7c-467a-8071-8d170da2c057",
+          "timestamp": "2018-02-07T13:39:16-08:00",
           "total": 3,
           "parameter": [
             {
@@ -60,22 +60,22 @@
             },
             {
               "name": "version",
-              "valueUri": "http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes|0.0.0"
+              "valueUri": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"
             }
           ],
           "contains": [
             {
-              "system": "http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes",
+              "system": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
               "code": "blah",
               "display": "Blah"
             },
             {
-              "system": "http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes",
+              "system": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
               "code": "foo",
               "display": "Foo"
             },
             {
-              "system": "http://www.fhir.org/guides/mfhir/CodeSystem/blah-codes",
+              "system": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
               "code": "bar",
               "display": "Bar"
             }
