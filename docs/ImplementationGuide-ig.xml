@@ -87,7 +87,7 @@
     </resource>
   </package>
   <package>
-    <name value="/Users/ehaas/Documents/FHIR/IG-Test3/source/resources/bt-profile-spreadsheet"/>
+    <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/bt-profile-spreadsheet"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-bt.html"/>
@@ -111,7 +111,7 @@
     </resource>
   </package>
   <package>
-    <name value="/Users/ehaas/Documents/FHIR/IG-Test3/source/resources/template-profile-spreadsheet"/>
+    <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/template-profile-spreadsheet"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-blah-codes.html"/>

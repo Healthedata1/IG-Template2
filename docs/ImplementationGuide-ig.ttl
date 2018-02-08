@@ -123,7 +123,7 @@
      ]
   ], [
      fhir:index 1;
-     fhir:ImplementationGuide.package.name [ fhir:value "/Users/ehaas/Documents/FHIR/IG-Test3/source/resources/bt-profile-spreadsheet" ];
+     fhir:ImplementationGuide.package.name [ fhir:value "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/bt-profile-spreadsheet" ];
      fhir:ImplementationGuide.package.resource [
        fhir:index 0;
        fhir:Element.extension [
@@ -155,7 +155,7 @@
      ]
   ], [
      fhir:index 3;
-     fhir:ImplementationGuide.package.name [ fhir:value "/Users/ehaas/Documents/FHIR/IG-Test3/source/resources/template-profile-spreadsheet" ];
+     fhir:ImplementationGuide.package.name [ fhir:value "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/template-profile-spreadsheet" ];
      fhir:ImplementationGuide.package.resource [
        fhir:index 0;
        fhir:Element.extension [
