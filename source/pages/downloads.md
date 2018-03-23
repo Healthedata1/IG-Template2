@@ -2,27 +2,144 @@
 title: Downloads
 layout: default
 active: downloads
+mycss: argo-sched.css
 ---
 
-**Validator Pack and Definitions:**
 
-The following file contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of the this Implementation Guides.:
 
-- [Validator Pack](validator.pack)
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
-In addition there are format specific definitions files.
-- [XML](definitions.xml.zip)
-- [JSON](definitions.json.zip)
-- [TTL](definitions.ttl.zip)
 
-These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these US-Core profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation.  See the overview on [validating FHIR profiles and resources]({{ site.data.fhir.path }}/validation.html)
 
-**Schematrons** are also available and listed below:
+* Do not remove this line (it will not be displayed)
+{:toc}
 
-- [Schematrons](#)
 
-**Examples:** all the examples that are used in this Implementation Guide available for download:
 
-- [XML](examples.xml.zip)
-- [JSON](examples.json.zip)
-- [TTl](examples.ttl.zip)
+
+
+# Argonaut Implementation Guide
+
+## Introduction
+
+## Scope
+
+### Patient Based Scheduling
+
+### Provider based Scheduling
+
+## Actors
+
+## Assumptions and Preconditions
+
+## Security
+
+## Best Practices
+
+## Future Scope
+
+## Patient Based Scheduling
+
+### Introduction
+
+### Use Case 1: Patient Portal Scheduling for existing patients
+
+####  Patient login
+
+####  Appointment Availability Discovery and Search
+
+####  Optional Hold Appointment Operation
+
+####  Book Appointment
+
+### Use Case 2: Open Scheduling for new patient or existing patient
+
+####  Patient Registration Option A
+
+####  Appointment Availability Discovery and Search
+
+####  Optional Hold Appointment Operation
+
+####  Patient Registration Option B
+
+####  Book Appointment
+
+####  Patient Coverage Update Option C
+
+### Use Case 3 Prefetching Open Slots
+
+####  Share Business Rules
+
+#### Subscribe for Schedule Change Notifications
+
+####  Initial Load
+
+####  Notification of schedule changes
+
+#### "Smart Polling" for Updated Slots
+
+#### Patient Registration Option A
+
+####  Appointment Availability Discovery and Search
+
+####  Optional Hold Appointment Operation
+
+####  Patient Registration Option B
+
+####  Book Appointment
+
+####  Patient Coverage Update Option C
+
+### Canceling/Rescheduling Appointments
+
+#### Usage
+
+### Releasing Holds
+
+#### Usage
+
+### Retrieving appointments
+
+#### APIs
+
+#### Usage
+
+## Provider Based Scheduling
+
+### Introduction
+
+### Use Case 1: Scheduling across systems
+
+#### Optional Find Patient
+
+#### New Patient Registration/Coverage Information Option A
+
+#### Appointment Availability Discovery and Search
+
+#### Optional hold appointment operation
+
+#### New Patient Registration/Coverage Information Option B
+
+#### Book appointment
+
+#### Optional exchange of patient information
+
+### Use Case 2: Scheduling for existing patient across systems
+
+### Use Case 3: Scheduling for existing patient *within* a system
+
+### Canceling/Rescheduling appointments
+
+### Releasing holds
+
+### Retrieving Patient appointments
+
+## Downloads
+
+### ImplemenationGuide Resource
+
+### Validator Pack and Definitions
+
+### Schematrons
+
+### Examples

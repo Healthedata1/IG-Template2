@@ -1,12 +1,13 @@
 Configuration Parameter,Configuration Value ( use '|' for lists)
 igtemplate-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
-working-dir,/Users/ehaas/Documents/FHIR/IG-Test3/
+working-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
 title,IG-Test3
 status,draft
 publisher,Health eData Inc
-extensions,extension-blah|extension-complex
+license,
+extensions,
 searches,
-codesystems,blah-codes
+codesystems,
 valuesets,
 structuremaps,Foo
 source,ig.xml
@@ -26,9 +27,9 @@ broken-links,warning
 gen-examples,FALSE
 do-transforms,FALSE
 canonicalBase,http://www.fhir.org/guides/test3
-dependencyList.name,
-dependencyList.location,
-dependencyList.source,
+dependencyList.name,uscore
+dependencyList.location,http://hl7.org/fhir/us/core/1.0.1
+dependencyList.source,dependencies/uscore-vp
 special-urls,
 tool,jekyll
 logging,progress

@@ -1,15 +1,16 @@
 #!/bin/bash
 name="IG-Template2"
-# $PWD=/Users/ehaas/Documents/FHIR/IG-Template2
-path2=/Users/ehaas/Downloads/
+path1=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
+path2=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher-test.jar
 path3=/Users/ehaas/Documents/FHIR/IG-tools/
-while getopts ds:t option
+while getopts ds:to option
 do
  case "${option}"
  in
  d) DEFN=1;;
  s) SOURCE=${OPTARG};;
  t) NA='N/A';;
+ o) PUB=1;;
  esac
 done
 echo "================================================================="
@@ -19,6 +20,7 @@ echo "Optional Parameters"
 echo '-d parameter = create definitions files  = ' $DEFN
 echo '-s parameter = source directory = ' $SOURCE
 echo '-t parameter for no terminology server (run faster and offline)= ' $NA
+echo '-o parameter for running latest version of the igpublisher= ' $PUB
 echo === create ig.json and ig.xml in $PWD and ../$SOURCE ===
 echo "================================================================="
 echo getting rid of .DS_Store files since they gum up the igpublisher....
@@ -34,7 +36,14 @@ if [[ $DEFN ]]; then
   git status
 
 fi
-echo "================================================================="
-echo === run igpublisher ===
-echo "================================================================="
-java -jar ${path2}org.hl7.fhir.igpublisher.jar -ig ig.json -watch -tx $NA
+if [[ $PUB ]]; then
+  echo "================================================================="
+  echo === run most recent version of the igpublisher ===
+  echo "================================================================="
+  java -jar ${path2} -ig ig.json -watch -tx $NA
+else
+  echo "================================================================="
+  echo === run last known good version of the igpublisher ===
+  echo "================================================================="
+  java -jar ${path1} -ig ig.json -watch -tx $NA
+fi

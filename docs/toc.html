@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IG-Test3</title>
+  <title>Argo-Scheduling</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IG-Test3 Implemenation Guide" />
-<meta name="author" content="Health eData Inc"/>
+<meta name="description" content="Argo-Scheduling Implemenation Guide" />
+<meta name="author" content="Argonaut Project"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -25,6 +25,7 @@
   <link href="assets/css/project.css" rel="stylesheet"/>
   <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
 	<link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+
 
 
   <!-- Favicons -->
@@ -54,18 +55,11 @@
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
 
-your logo here
-
-[![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive #org_logo}
-
-can only resize using html  or css ;-(
-
+================THIS IS FOR THE PROJECT LOGO AND URL ===============
 -->
 
-
-<a no-external="true" href="http://www.openmhealth.org/">
-<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
+<a no-external="true" href="http://argonautwiki.hl7.org">
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/ArgonautProject_logo_black.png"/>
 </a>
 
   <!-- end org logo -->
@@ -74,7 +68,7 @@ can only resize using html  or css ;-(
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
       
-      <strong>IG-Test3 Implementation Guide CI Build</strong>
+      <strong>Argo-Scheduling Implementation Guide Release 1.0.0</strong>
       
 
     </div><!-- end ig title text -->
@@ -107,19 +101,50 @@ can only resize using html  or css ;-(
         <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-       <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
+       
+<!--{:.nav .navbar-nav} don't remove the line above - to add or remove a menu item commeent in or out - [Home](index.html)- [Use Cases...](guidance.html){: .dropdown-toggle data-toggle="dropdown"}  - [Patient Based Scheduling](patient-scheduling.html)  - [Provider based Scheduling](provider-scheduling.html)  {: .dropdown-menu}- [Operations](operations.html)- [Profiles/Extensions](profiles.html)- [Terminology](terminology.html)- [Capability Statements...](capstatements.html){: .dropdown-toggle data-toggle="dropdown"}  - [Conformance requirements for Server](CapabilityStatement-server.html)  - [Conformance requirements for Client](client-capstatement.html)  {: .dropdown-menu}- [Downloads](downloads.html)-->
 <ul class="nav navbar-nav">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="guidance.html">General Guidance</a></li>
-  <li><a href="profiles.html">Profiles and Logical Models</a></li>
-  <li><a href="structuremaps.html">Mappings</a>
-<!-- - [Extensions](extensions.html) --></li>
-  <li><a href="terminology.html">Terminology</a>
-<!-- - [Search Parameters](searchparams.html) --></li>
-  <li><a href="capstatements.html">Capability Statements</a>
-<!-- - [Security](security.html) -->
-<!-- - [Examples](examples.html) --></li>
-  <li><a href="downloads.html">Downloads</a></li>
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Use Cases<b class="caret">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
+    <li>
+      <a href="patient-scheduling.html">Patient Based Scheduling</a>
+    </li>
+    <li>
+      <a href="provider-scheduling.html">Provider Based Scheduling</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="operations.html">Operations</a>
+</li>
+<li>
+  <a href="profiles.html">Profiles/Extensions</a>
+</li>
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+<li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Capability Statements<b class="caret">
+  </b>
+</a>
+<ul class="dropdown-menu">
+  <li>
+    <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
+  </li>
+  <li>
+    <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
+  </li>
+</ul>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
 </ul>
 
 
@@ -191,7 +216,7 @@ can only resize using html  or css ;-(
     
       <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a><a class="breadcrumb-item" href="index.html">Home</a>
       /
-      <span class="breadcrumb-item active">Table of Contents</span>
+      <span class="breadcrumb-item active">Contents</span>
     
     
 
@@ -201,34 +226,150 @@ can only resize using html  or css ;-(
 
   <!-- ============CONTENT CONTENT=============== -->
 
-<h1>Table of Contents</h1>
+<h1>Contents</h1>
 
-page source: toc.md
+<!-- page source: toc.md  -->
 
-<!-- sidebar-wrapper  put your TOC here. like example below...-->
+<h2 id="argonaut-implementation-guide-homepageindexhtml"><a href="index.html">Argonaut Implementation Guide HomePage</a></h2>
+<ul>
+  <li><a href="index.html#introduction">Introduction</a></li>
+  <li><a href="index.html#scope">Scope</a>
+    <ul>
+      <li><a href="index.html#patient-based-scheduling">Patient Based Scheduling</a></li>
+      <li><a href="index.html#provider-based-scheduling">Provider based Scheduling</a></li>
+    </ul>
+  </li>
+  <li><a href="index.html#actors">Actors</a></li>
+  <li><a href="index.html#assumptions-and-preconditions">Assumptions and Preconditions</a></li>
+  <li><a href="index.html#security">Security</a></li>
+  <li><a href="index.html#future-scope">Future Scope</a></li>
+</ul>
 
-<div>
-  <ul>
-    <li><a href="index.html">PHCase Implementation Guide</a>    <ul>
-        <li><a href="index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block" id="markdown-toc-cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
-        <li><a href="index.html#jekyll-site-variables" id="markdown-toc-jekyll-site-variables">Jekyll Site Variables</a></li>
-        <li><a href="index.html#introduction" id="markdown-toc-introduction">Introduction</a></li>
-        <li><a href="index.html#more-stuff" id="markdown-toc-more-stuff">More Stuff</a>        <ul>
-            <li><a href="index.html#and-more-stuff" id="markdown-toc-and-more-stuff">And More Stuff</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="guidance.html" id="markdown-toc-general-guidance-and-definitions">General Guidance and Definitions</a>    <ul>
-    <li><a href="guidance.html#introduction" id="markdown-toc-introduction">Introduction</a></li>
-    <li><a href="guidance.html#more-stuff" id="markdown-toc-more-stuff">More Stuff</a>        <ul>
-        <li><a href="guidance.html#and-more-stuff" id="markdown-toc-and-more-stuff">And More Stuff</a></li>
-      </ul>
-    </li>
-  </ul>
-</li>
-   </ul>
-</div>
+<h3 id="patient-based-schedulingpatient-schedulinghtml"><a href="patient-scheduling.html">Patient Based Scheduling</a></h3>
+<ul>
+  <li><a href="patient-scheduling.html#introduction">Introduction</a></li>
+  <li><a href="patient-scheduling.html#use-case-1-patient-portal-scheduling-for-existing-patients">Use Case 1: Patient Portal Scheduling for existing patients</a>
+    <ul>
+      <li><a href="patient-scheduling.html#patient-login">Patient login</a></li>
+      <li><a href="patient-scheduling.html#appointment-availability-discovery-and-search">Appointment Availability Discovery and Search</a></li>
+      <li><a href="patient-scheduling.html#optional-hold-appointment-operation">Optional Hold Appointment Operation</a></li>
+      <li><a href="patient-scheduling.html#book-appointment">Book Appointment</a></li>
+    </ul>
+  </li>
+  <li><a href="patient-scheduling.html#use-case-2-open-scheduling-for-new-patient-or-existing-patient">Use Case 2: Open Scheduling for new patient or existing patient</a>
+    <ul>
+      <li><a href="patient-scheduling.html#patient-registration-option-a">Patient Registration Option A</a></li>
+      <li><a href="patient-scheduling.html#appointment-availability-discovery-and-search-1">Appointment Availability Discovery and Search</a></li>
+      <li><a href="patient-scheduling.html#optional-hold-appointment-operation-1">Optional Hold Appointment Operation</a></li>
+      <li><a href="patient-scheduling.html#patient-registration-option-b">Patient Registration Option B</a></li>
+      <li><a href="patient-scheduling.html#book-appointment-1">Book Appointment</a></li>
+      <li><a href="patient-scheduling.html#patient-coverage-update-option-c">Patient Coverage Update Option C</a></li>
+    </ul>
+  </li>
+  <li><a href="patient-scheduling.html#use-case-3-prefetching-open-slots">Use Case 3 Prefetching Open Slots</a>
+    <ul>
+      <li><a href="patient-scheduling.html#share-business-rules">Share Business Rules</a></li>
+      <li><a href="patient-scheduling.html#subscribe-for-schedule-change-notifications">Subscribe for Schedule Change Notifications</a></li>
+      <li><a href="patient-scheduling.html#initial-load">Initial Load</a></li>
+      <li><a href="patient-scheduling.html#notification-of-schedule-changes">Notification of schedule changes</a></li>
+      <li><a href="patient-scheduling.html#smart-polling-for-updated-slots">“Smart Polling” for Updated Slots</a></li>
+      <li><a href="patient-scheduling.html#patient-registration-option-a-1">Patient Registration Option A</a></li>
+      <li><a href="patient-scheduling.html#appointment-availability-discovery-and-search-2">Appointment Availability Discovery and Search</a></li>
+      <li><a href="patient-scheduling.html#optional-hold-appointment-operation-2">Optional Hold Appointment Operation</a></li>
+      <li><a href="patient-scheduling.html#patient-registration-option-b-1">Patient Registration Option B</a></li>
+      <li><a href="patient-scheduling.html#book-appointment-2">Book Appointment</a></li>
+      <li><a href="patient-scheduling.html#patient-coverage-update-option-c-1">Patient Coverage Update Option C</a></li>
+    </ul>
+  </li>
+  <li><a href="patient-scheduling.html#cancelingrescheduling-appointments">Canceling/Rescheduling Appointments</a>
+    <ul>
+      <li><a href="patient-scheduling.html#usage">Usage</a></li>
+    </ul>
+  </li>
+  <li><a href="patient-scheduling.html#releasing-holds">Releasing Holds</a>
+    <ul>
+      <li><a href="patient-scheduling.html#usage-1">Usage</a></li>
+    </ul>
+  </li>
+  <li><a href="patient-scheduling.html#retrieving-appointments">Retrieving appointments</a>
+    <ul>
+      <li><a href="patient-scheduling.html#usage-2">Usage</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="provider-based-schedulingprovider-schedulinghtml"><a href="provider-scheduling.html">Provider Based Scheduling</a></h3>
+<ul>
+  <li><a href="provider-scheduling.html#introduction">Introduction</a></li>
+  <li><a href="provider-scheduling.html#use-case-1-scheduling-across-systems">Use Case 1: Scheduling across systems</a>
+    <ul>
+      <li><a href="provider-scheduling.html#optional-find-patient">Optional Find Patient</a></li>
+      <li><a href="provider-scheduling.html#new-patient-registrationcoverage-information-option-a">New Patient Registration/Coverage Information Option A</a></li>
+      <li><a href="provider-scheduling.html#appointment-availability-discovery-and-search">Appointment Availability Discovery and Search</a></li>
+      <li><a href="provider-scheduling.html#optional-hold-appointment-operation">Optional hold appointment operation</a></li>
+      <li><a href="provider-scheduling.html#new-patient-registrationcoverage-information-option-b">New Patient Registration/Coverage Information Option B</a></li>
+      <li><a href="provider-scheduling.html#book-appointment">Book appointment</a></li>
+      <li><a href="provider-scheduling.html#optional-exchange-of-patient-information">Optional exchange of patient information</a></li>
+    </ul>
+  </li>
+  <li><a href="provider-scheduling.html#use-case-2-scheduling-for-existing-patient-across-systems">Use Case 2: Scheduling for existing patient across systems</a></li>
+  <li><a href="provider-scheduling.html#use-case-3-scheduling-for-existing-patient-within-a-system">Use Case 3: Scheduling for existing patient <em>within</em> a system</a></li>
+  <li><a href="provider-scheduling.html#cancelingrescheduling-appointments">Canceling/Rescheduling appointments</a></li>
+  <li><a href="provider-scheduling.html#releasing-holds">Releasing holds</a></li>
+  <li><a href="provider-scheduling.html#retrieving-patient-appointments">Retrieving Patient appointments</a></li>
+</ul>
+
+<h3 id="operationsoperationshtml"><a href="operations.html">Operations</a></h3>
+
+<li><a href="OperationDefinition-slot-prefetch.html">Availability_Prefetch_Operation</a></li>
+<li><a href="OperationDefinition-appointment-hold.html">Appointment_Hold</a></li>
+<li><a href="OperationDefinition-appointment-find.html">Appointment_Availability_Operation</a></li>
+<li><a href="OperationDefinition-appointment-book.html">Appointment_Book</a></li>
+
+<h3 id="profilesextensionsprofileshtml"><a href="profiles.html">Profiles/Extensions</a></h3>
+
+<li><a href="StructureDefinition-avail-bundle.html">Argonaut_Appointment_Bundle_Profile</a></li>
+<li><a href="StructureDefinition-argo-appt.html">Argonaut_Appointment_Profile</a></li>
+<li><a href="StructureDefinition-argo-coverage.html">Argonaut_Coverage_Profile</a></li>
+<li><a href="StructureDefinition-prefetch-slot.html">Argonaut_Prefetch_Slot_Profile</a></li>
+<li><a href="StructureDefinition-argo-sched-notif.html">Argonaut_Schedule_Notification_Profile</a></li>
+<li><a href="StructureDefinition-argo-sub-notif.html">Argonaut_Scheduling_Subscription_Profile</a></li>
+<li><a href="StructureDefinition-slot-bundle.html">Argonaut_Slot_Bundle_Profile</a></li>
+
+<h3 id="terminologyterminologyhtml"><a href="terminology.html">Terminology</a></h3>
+
+<p><strong>Value Sets</strong></p>
+
+<li><a href="ValueSet-visit-type.html">Argonaut_Visit_Types</a></li>
+<li><a href="ValueSet-status-reason.html">Argonaut_Appointment_Event_Reason_Codes</a></li>
+<li><a href="ValueSet-specialty.html">Argonaut_Scheduling_Specialties</a></li>
+<li><a href="ValueSet-argo-slot-status.html">Argonaut_Slot_Status_Codes</a></li>
+<li><a href="ValueSet-slot-bundle-type.html">Argonaut_Slot_BundleType_Codes</a></li>
+<li><a href="ValueSet-sct-services.html">Argonaut_Snomed_CT_Services</a></li>
+<li><a href="ValueSet-appt-type.html">Argonaut_Appointment_Types</a></li>
+
+<p><strong>Code Systems</strong></p>
+
+<li><a href="CodeSystem-visit-type.html">Argonaut_Visit_Types_Codes</a></li>
+<li><a href="CodeSystem-status-reason.html">Argonaut_Appointment_Event_Reason_Codes</a></li>
+<li><a href="CodeSystem-appt-type.html">Argonaut_Appointment_Type_Codes</a></li>
+
+<p><strong>Concept Maps</strong></p>
+
+<li><a href="ConceptMap-visit-snomed-map.html">Argonaut_Scheduiing_Visit_Type_to_SNOMED_CT_Mapping</a></li>
+<li><a href="ConceptMap-visit-appt-map.html">Argonaut_Scheduiing_Visit_Type_to_Appointment_Type_Mapping</a></li>
+
+<h3 id="conformance-requirements-for-servercapabilitystatement-serverhtml"><a href="CapabilityStatement-server.html">Conformance requirements for Server</a></h3>
+
+<h3 id="conformance-requirements-for-clientcapabilitystatement-clienthtml"><a href="CapabilityStatement-client.html">Conformance requirements for Client</a></h3>
+
+<h3 id="downloadsdownloadshtml"><a href="downloads.html">Downloads</a></h3>
+<ul>
+  <li><a href="downloads.html#implemenationguide-resource">ImplemenationGuide Resource</a></li>
+  <li><a href="downloads.html#validator-pack-and-definitions">Validator Pack and Definitions</a></li>
+  <li><a href="downloads.html#schematrons">Schematrons</a></li>
+  <li><a href="downloads.html#examples">Examples</a></li>
+</ul>
 
 
 
@@ -253,12 +394,18 @@ page source: toc.md
 
     </div>  <!-- /segment-content -->
 
+<!-- back to top arrow -->
+
+<a id="back-to-top" href="#" class="btn btn-info btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+
+<!-- end back to top arrow -->
 
 <div id="segment-footer" class="segment">  <!-- segment-footer -->
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Test3 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Feb 14, 2018 23:25-0800. |
+            Argo-Scheduling Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Thu, Mar 22, 2018 19:23-0700. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
@@ -285,11 +432,21 @@ page source: toc.md
 <script src="./assets/js/anchor.min.js"> </script>
 <script src="./assets/js/fhir.js"> </script>
 
+
+<script src="./assets/js/topofpage.js"> </script>
+
+
+
+
+
 <!-- Analytics Below
 ================================================== -->
 
 <!-- add acnhors before the closing body tag. -->
 <script> anchors.add()</script>
+
+
+
 </body>
 </html>
 

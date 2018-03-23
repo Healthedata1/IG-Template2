@@ -427,29 +427,18 @@ p, li {
     font-size: 1em;
 }
 
-/* ----- numbered headings ------
-
-
-body{counter-reset: section}
-h2{counter-reset: sub-section}
-h3{counter-reset: composite}
-h4{counter-reset: detail}
-
-h2:before{
-  counter-increment: section;
-  content: counter(section) " ";
-}
-h3:before{
-  counter-increment: sub-section;
-  content: counter(section) "." counter(sub-section) " ";
-}
-h4:before{
-  counter-increment: composite;
-  content: counter(section) "." counter(sub-section) "." counter(composite) " ";
-}
-h5:before{
-  counter-increment: detail;
-  content: counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
+/*-----top of page arrow ----*/
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    display:none;
+    background-color: #999999;
 }
 
-*/
+.card-body {
+ border: 1px solid;
+ border-color: #cccccc;
+ padding: 10px
+}
