@@ -7,7 +7,7 @@
   },
   "url": "http://fhir.org/guides/argonaut-scheduling/ImplementationGuide/ig",
   "name": "Argo-Scheduling",
-  "status": "active",
+  "status": "draft",
   "experimental": true,
   "publisher": "Argonaut Project",
   "package": [
@@ -645,10 +645,12 @@
   "page": {
     "source": "index.md",
     "title": "Argo-Scheduling Homepage",
+    "kind": "page",
     "page": [
       {
         "source": "_includes/toc.md",
-        "title": "Argo-Scheduling Table of Contents"
+        "title": "Argo-Scheduling Table of Contents",
+        "kind": "page"
       }
     ]
   }

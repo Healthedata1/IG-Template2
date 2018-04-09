@@ -1,10 +1,10 @@
 ﻿Argo-Scheduling : Validation Results
 =========================================
 
-err = 4, warn = 34, info = 364
-Generated Thu Mar 22 19:23:15 PDT 2018. FHIR version 3.2.0 for 3.0.1
+err = 0, warn = 0, info = 364
+Generated Mon Apr 09 12:17:43 PDT 2018. FHIR version 3.3.0 for 3.0.1
 
- Build Errors : 7 / 0
+ Build Errors : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/examples/1a-avail-bundle : 0 / 18
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/examples/2b-avail-bundle : 0 / 18
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/examples/coverage-example-1 : 0 / 4
@@ -28,29 +28,29 @@ Generated Thu Mar 22 19:23:15 PDT 2018. FHIR version 3.2.0 for 3.0.1
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/examples/slot-bundle-example : 0 / 35
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/examples/slot-example1 : 0 / 3
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/examples/subscription-example : 0 / 9
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-appt : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-coverage : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-sched-notif : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-sub-notif : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-avail-bundle : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-status-reason : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-subscription-eventfocus : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-subscription-payloadprofile : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-subscription-triggerevent : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-prefetch-slot : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-slot-bundle : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/capabilitystatement-client : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/capabilitystatement-server : 0 / 1
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-appt : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-coverage : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-sched-notif : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-sub-notif : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-avail-bundle : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-status-reason : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-subscription-eventfocus : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-subscription-payloadprofile : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-subscription-triggerevent : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-prefetch-slot : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-slot-bundle : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/capabilitystatement-client : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/capabilitystatement-server : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/codesystem-appt-type : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/codesystem-status-reason : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/codesystem-visit-type : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/conceptmap-visit-appt : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/conceptmap-visit-snomed : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/ig : 2 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/conceptmap-visit-appt : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/conceptmap-visit-snomed : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/ig : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/operationdefinition-appointment-book : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/operationdefinition-appointment-find6 : 0 / 1
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/operationdefinition-appointment-find6 : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/operationdefinition-appointment-hold : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/operationdefinition-slot-prefetch : 0 / 1
+ /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/operationdefinition-slot-prefetch : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/valueset-appt-type : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/valueset-sct-services : 0 / 0
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/valueset-slot-bundle-type : 0 / 0
@@ -60,13 +60,6 @@ Generated Thu Mar 22 19:23:15 PDT 2018. FHIR version 3.2.0 for 3.0.1
  /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/valueset-visit-type : 0 / 0
 </table>
 == n/a ==
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-sct-services.html#/html/head/link/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 289, column 171: The link 'http://hl7.org/fhir/STU3ConceptMap-visit-snomed-map.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-visit-type.html#/html/head/link/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 289, column 640: The link 'http://hl7.org/fhir/STU3ConceptMap-visit-appt-map.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-visit-type.html#/html/head/link/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 289, column 751: The link 'http://hl7.org/fhir/STU3ConceptMap-visit-snomed-map.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-appt-type.html#/html/head/link/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 289, column 198: The link 'http://hl7.org/fhir/STU3ConceptMap-visit-appt-map.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-sub-notif-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/p/a at Line 403, column 123: The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/cqif/extension-cqif-fhirpathexpression.html' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-sub-notif-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/p/a at Line 512, column 163: The link 'http://hl7.org/fhir/STU3/patient-scheduling.html#use-case-3-prefetching-open-slots' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-subscription-triggerevent-definitions.html#/html/head/link/body/div/div/div/div/div/div/table/tr/td/p/a at Line 288, column 123: The link 'http://hl7.org/fhir/STU3/http://hl7.org/fhir/STU3/cqif/extension-cqif-fhirpathexpression.html' cannot be resolved
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/examples/1a-avail-bundle.xml ==
 INFORMATION: Bundle/hal-dr-y-appts: Bundle.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/hal-dr-y-appts: Bundle.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -273,47 +266,28 @@ INFORMATION: Subscription/example: Subscription.channel[1].extension[1].url[1]: 
 INFORMATION: Subscription/example: Subscription.channel[1].type[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Subscription/example: Subscription.channel[1].payload[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-appt.xml ==
-WARNING: StructureDefinition/argo-appt: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-coverage.xml ==
-WARNING: StructureDefinition/argo-coverage: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-sched-notif.xml ==
-WARNING: StructureDefinition/argo-sched-notif: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-argo-sub-notif.xml ==
-WARNING: StructureDefinition/argo-sub-notif: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-avail-bundle.xml ==
-WARNING: StructureDefinition/avail-bundle: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-status-reason.xml ==
-WARNING: StructureDefinition/extension-status-reason: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-subscription-eventfocus.xml ==
-WARNING: StructureDefinition/extension-subscription-eventfocus: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-subscription-payloadprofile.xml ==
-WARNING: StructureDefinition/extension-subscription-payloadprofile: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-extension-subscription-triggerevent.xml ==
-WARNING: StructureDefinition/extension-subscription-triggerevent: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-prefetch-slot.xml ==
-WARNING: StructureDefinition/prefetch-slot: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/StructureDefinition-slot-bundle.xml ==
-WARNING: StructureDefinition/slot-bundle: StructureDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/capabilitystatement-client.xml ==
-WARNING: CapabilityStatement/client: CapabilityStatement.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/capabilitystatement-server.xml ==
-WARNING: CapabilityStatement/server: CapabilityStatement.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/codesystem-appt-type.xml ==
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/codesystem-status-reason.xml ==
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/codesystem-visit-type.xml ==
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/conceptmap-visit-appt.xml ==
-WARNING: ConceptMap/visit-appt-map: ConceptMap.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/conceptmap-visit-snomed.xml ==
-WARNING: ConceptMap/visit-snomed-map: ConceptMap.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/ig.xml ==
-ERROR: ImplementationGuide/ig: ImplementationGuide.page: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.page.kind': minimum required = 1, but only found 0
-ERROR: ImplementationGuide/ig: ImplementationGuide.page.page: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.page.page.kind': minimum required = 1, but only found 0
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/operationdefinition-appointment-book.xml ==
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/operationdefinition-appointment-find6.xml ==
-WARNING: OperationDefinition/appointment-find: OperationDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/operationdefinition-appointment-hold.xml ==
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/operationdefinition-slot-prefetch.xml ==
-WARNING: OperationDefinition/slot-prefetch: OperationDefinition.jurisdiction: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/jurisdiction (http://hl7.org/fhir/ValueSet/jurisdiction, and a code should come from this value set unless it has no suitable code) (codes = urn:iso:std:iso:3166#US)
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/valueset-appt-type.xml ==
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/valueset-sct-services.xml ==
 == /Users/ehaas/Documents/FHIR/Argo-Scheduling/source/resources/valueset-slot-bundle-type.xml ==

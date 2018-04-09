@@ -68,7 +68,7 @@
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
       
-      <strong>Argo-Scheduling Implementation Guide Release 1.0.0</strong>
+      <strong>Argo-Scheduling Implementation Guide CI Build</strong>
       
 
     </div><!-- end ig title text -->
@@ -412,7 +412,7 @@
   <tr><td>Definition</td><td><p>Reason the appointment has been scheduled to take place, as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/condition.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Procedure]]">Condition</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/condition.html" title="http://hl7.org/fhir/StructureDefinition/Condition">Condition</a> | <a href="http://hl7.org/fhir/STU3/procedure.html" title="http://hl7.org/fhir/StructureDefinition/Procedure">Procedure</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Appointment.priority"> </a><b>Appointment.priority</b></td></tr>
   <tr><td>Definition</td><td><p>The priority of the appointment. Can be used to make informed decisions if needing to re-prioritize appointments. (The iCal Standard specifies 0 as undefined, 1 as highest, 9 as lowest priority).</p>
 </td></tr>
@@ -430,7 +430,7 @@
   <tr><td>Definition</td><td><p>Additional information to support the appointment provided when making the appointment.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Appointment.start"> </a><b>Appointment.start</b></td></tr>
   <tr><td>Definition</td><td><p>Date/Time that the appointment is to take place.</p>
 </td></tr>
@@ -452,7 +452,7 @@
   <tr><td>Definition</td><td><p>The slots from the participants' schedules that will be filled by the appointment.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/slot.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Slot]]">Slot</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/slot.html" title="http://hl7.org/fhir/StructureDefinition/Slot">Slot</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Appointment.created"> </a><b>Appointment.created</b></td></tr>
   <tr><td>Definition</td><td><p>The date that this appointment was initially created. This could be different to the meta.lastModified value on the initial entry, as this could have been before the resource was created on the FHIR server, and should remain unchanged over the lifespan of the appointment.</p>
 </td></tr>
@@ -472,7 +472,7 @@
   <tr><td>Definition</td><td><p>The referral request this appointment is allocated to assess (incoming referral).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/referralrequest.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/ReferralRequest]]">ReferralRequest</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/referralrequest.html" title="http://hl7.org/fhir/StructureDefinition/ReferralRequest">ReferralRequest</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Appointment.participant:p-1"> </a><a name="Appointment.participant"> </a><b>Appointment.participant(p-1)</b></td></tr>
   <tr><td>Definition</td><td><p>List of participants involved in the appointment.</p>
 </td></tr>
@@ -517,7 +517,7 @@
   <tr><td>Definition</td><td><p>A Person, Location/HealthcareService or Device that is participating in the appointment.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-location.html" title="[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-location], CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient], CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/HealthcareService]]">US  Core Location Profile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-location.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location">US  Core Location Profile</a> | <a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-patient.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient">US Core Patient Profile</a> | <a href="http://hl7.org/fhir/us/core/1.0.1//StructureDefinition-us-core-practitioner.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner">US  Core Practitioner Profile</a> | <a href="http://hl7.org/fhir/STU3/healthcareservice.html" title="http://hl7.org/fhir/StructureDefinition/HealthcareService">HealthcareService</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td colspan="2" class="structure"><a name="Appointment.participant:p-1.required"> </a><a name="Appointment.participant.required"> </a><b>Appointment.participant.required</b></td></tr>
   <tr><td>Definition</td><td><p>Is this participant required to be present at the meeting. This covers a use-case where 2 doctors need to meet to discuss the results for a specific patient, and the patient is not required to be present.</p>
@@ -580,7 +580,7 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            Argo-Scheduling Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Thu, Mar 22, 2018 19:23-0700. |
+            Argo-Scheduling Version: 1.0.1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Apr 9, 2018 12:17-0700. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

@@ -7,7 +7,7 @@
   </text>
   <url value="http://fhir.org/guides/argonaut-scheduling/ImplementationGuide/ig"/>
   <name value="Argo-Scheduling"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Argonaut Project"/>
   <package id="p1">
@@ -484,9 +484,11 @@
   <page>
     <source value="index.md"/>
     <title value="Argo-Scheduling Homepage"/>
+    <kind value="page"/>
     <page>
       <source value="_includes/toc.md"/>
       <title value="Argo-Scheduling Table of Contents"/>
+      <kind value="page"/>
     </page>
   </page>
 </ImplementationGuide>

@@ -16,10 +16,10 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://fhir.org/guides/argonaut-scheduling/StructureDefinition/argo-sub-notif"/>
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="Argonaut_Scheduling_Subscription_Profile"/>
   <title value="Argonaut Scheduling Subscription Profile"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2018-02-13T00:00:00-08:00"/>
   <publisher value="Argonaut Project"/>
   <contact>
@@ -855,7 +855,7 @@
       <sliceName value="valueUri"/>
       <short value="Payload profile URI"/>
       <definition value="The uri of payload when sending notifications to a subscriber."/>
-      <comment value="The Argonaut Scheduling Schedule Notification Profile defines the payload when sending notifications to a subscriber described in [Use Case 3 Prefetching Open Slots](patient-scheduling.html#use-case-3-prefetching-open-slots).   The actual notification is triggered by a Slot instance defined in  `criteria` .  The Slot&#39;s `schedule&#39; element identifies the Schedule resource instance that populates the payload."/>
+      <comment value="The Argonaut Scheduling Schedule Notification Profile defines the payload when sending notifications to a subscriber described in Use Case 3 Prefetching Open Slots.   The actual notification is triggered by a Slot instance defined in  `criteria` .  The Slot&#39;s `schedule&#39; element identifies the Schedule resource instance that populates the payload."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -1096,7 +1096,7 @@
       <sliceName value="valueUri"/>
       <short value="Payload profile URI"/>
       <definition value="The uri of payload when sending notifications to a subscriber."/>
-      <comment value="The Argonaut Scheduling Schedule Notification Profile defines the payload when sending notifications to a subscriber described in [Use Case 3 Prefetching Open Slots](patient-scheduling.html#use-case-3-prefetching-open-slots).   The actual notification is triggered by a Slot instance defined in  `criteria` .  The Slot&#39;s `schedule&#39; element identifies the Schedule resource instance that populates the payload."/>
+      <comment value="The Argonaut Scheduling Schedule Notification Profile defines the payload when sending notifications to a subscriber described in Use Case 3 Prefetching Open Slots.   The actual notification is triggered by a Slot instance defined in  `criteria` .  The Slot&#39;s `schedule&#39; element identifies the Schedule resource instance that populates the payload."/>
       <min value="1"/>
       <fixedUri value="http://fhir.org/guides/argonaut-scheduling/StructureDefinition/argo-sched-notif"/>
       <mustSupport value="true"/>

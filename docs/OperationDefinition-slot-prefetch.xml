@@ -129,9 +129,9 @@
 		</div>
   </text>
   <url value="http://fhir.org/guides/argonaut-scheduling/OperationDefinition/slot-prefetch"/>
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="Availability_Prefetch_Operation"/>
-  <status value="draft"/>
+  <status value="active"/>
   <kind value="operation"/>
   <date value="2018-02-12T00:00:00-08:00"/>
   <description value="This operation fetches available free slots for the &#39;initial load&#39;, update and reconciliation steps in the [Prefetch Use Case](patient-scheduling.html#use-case-3-prefetching-open-slots).  The server determines which open slots to expose to the application for use in creating new appointments.  If neither a start or end date is given then the maximum period as defined by local business rules and starting from when the operation was transacted SHALL be used.   The actors practitioner, organization and location further refine the search."/>

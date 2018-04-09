@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="310c940b-d32f-4dc7-914e-d174fa1b7043"/>
+  <id value="ec2f9404-f46f-471e-a2ae-d9049daf7ded"/>
   <meta>
-    <lastUpdated value="2018-03-22T19:23:00.017-07:00"/>
+    <lastUpdated value="2018-04-09T12:17:32.133-07:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 41 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type version 1.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type version 1.0.1</p>
             <p>All codes from system 
               <a href="CodeSystem-visit-type.html">
                 <code>http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type</code>
@@ -365,12 +365,12 @@
           </div>
         </text>
         <url value="http://fhir.org/guides/argonaut-scheduling/ValueSet/visit-type"/>
-        <version value="1.0.0"/>
+        <version value="1.0.1"/>
         <name value="Argonaut_Visit_Types"/>
         <title value="Argonaut Visit Types"/>
-        <status value="draft"/>
+        <status value="active"/>
         <date value="2017-07-30T12:40:10-07:00"/>
-        <description value="The Argonaut Visit Types are a prioritized valueset of the most common &#39;business types&#39; for scheduling and have been identified as the baseline use cases for the  Argonaut scheduling Implementation Guide.  This is intended to facilitates implementation of the IG by provide a common starting point for interoperability.  These concept are used in the Argonaut Appointment, Schedule and Slot resources.  The Visit types can be extended by implementers to meet there use cases.  In order to address overlap between `serviceType` and `appointmentType`, these concepts are mapped to the [Argonaut Appointment Types](ConceptMap-visit-appt-map.html).  A mapping to [SNOMED CT](ConceptMap-visit-snomed-map.html) is also provided."/>
+        <description value="The Argonaut Visit Types are a prioritized valueset of the most common &#39;business types&#39; for scheduling and have been identified as the baseline use cases for the  Argonaut scheduling Implementation Guide.  This is intended to facilitates implementation of the IG by provide a common starting point for interoperability.  These concept are used in the Argonaut Appointment, Schedule and Slot resources.  The Visit types can be extended by implementers to meet there use cases.  In order to address overlap between `serviceType` and `appointmentType`, these concepts are mapped to the [Argonaut Appointment Types](http://fhir.org/guides/argonaut-scheduling/ConceptMap/visit-appt-map).  A mapping to [SNOMED CT](http://fhir.org/guides/argonaut-scheduling/ConceptMap/visit-snomed-map) is also provided."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -379,8 +379,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bd7846de-05ff-4e18-8bf7-7c807361924e"/>
-          <timestamp value="2018-03-22T19:03:09-07:00"/>
+          <identifier value="urn:uuid:af54a2e3-7f3e-4e91-abd9-5c749ebd6eea"/>
+          <timestamp value="2018-04-09T11:56:05-07:00"/>
           <total value="41"/>
           <parameter>
             <name value="profile"/>
@@ -388,7 +388,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type|1.0.0"/>
+            <valueUri value="http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type|1.0.1"/>
           </parameter>
           <contains>
             <system value="http://fhir.org/guides/argonaut-scheduling/CodeSystem/visit-type"/>
@@ -608,7 +608,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 32 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://fhir.org/guides/argonaut-scheduling/CodeSystem/status-reason version 1.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://fhir.org/guides/argonaut-scheduling/CodeSystem/status-reason version 1.0.1</p>
             <p>All codes from system 
               <a href="CodeSystem-status-reason.html">
                 <code>http://fhir.org/guides/argonaut-scheduling/CodeSystem/status-reason</code>
@@ -886,10 +886,10 @@
           </div>
         </text>
         <url value="http://fhir.org/guides/argonaut-scheduling/ValueSet/status-reason"/>
-        <version value="1.0.0"/>
+        <version value="1.0.1"/>
         <name value="Argonaut_Appointment_Event_Reason_Codes"/>
         <title value="Argonaut Appointment Event Reason Codes"/>
-        <status value="draft"/>
+        <status value="active"/>
         <date value="2017-10-10T00:40:10-07:00"/>
         <description value="The reason for the current state of the Appointment."/>
         <jurisdiction>
@@ -900,8 +900,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3848e32f-6ca9-47e0-82df-199c62c7ca26"/>
-          <timestamp value="2018-03-22T19:03:10-07:00"/>
+          <identifier value="urn:uuid:8f5a1057-f9e8-4b6a-a20e-9c8027d3868c"/>
+          <timestamp value="2018-04-09T11:56:06-07:00"/>
           <total value="32"/>
           <parameter>
             <name value="profile"/>
@@ -909,7 +909,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.org/guides/argonaut-scheduling/CodeSystem/status-reason|1.0.0"/>
+            <valueUri value="http://fhir.org/guides/argonaut-scheduling/CodeSystem/status-reason|1.0.1"/>
           </parameter>
           <contains>
             <system value="http://fhir.org/guides/argonaut-scheduling/CodeSystem/status-reason"/>
@@ -2313,10 +2313,10 @@
           </div>
         </text>
         <url value="http://fhir.org/guides/argonaut-scheduling/ValueSet/specialty"/>
-        <version value="1.0.0"/>
+        <version value="1.0.1"/>
         <name value="Argonaut_Scheduling_Specialties"/>
         <title value="Argonaut Scheduling Specialties"/>
-        <status value="draft"/>
+        <status value="active"/>
         <date value="2017-07-12T12:40:10-07:00"/>
         <description value="The specialties offered by providers and  that would be required to perform the service requested in this appointment. "/>
         <jurisdiction>
@@ -2328,8 +2328,8 @@
         </jurisdiction>
         <copyright value="This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
         <expansion>
-          <identifier value="urn:uuid:e8981786-921d-410c-b4c3-ee8af5aad9e0"/>
-          <timestamp value="2018-03-19T14:41:19-07:00"/>
+          <identifier value="urn:uuid:ede9f5fc-2848-4eb1-b4b1-ba7b168c7b11"/>
+          <timestamp value="2018-04-09T11:56:06-07:00"/>
           <total value="151"/>
           <parameter>
             <name value="profile"/>
@@ -3169,10 +3169,10 @@
           </div>
         </text>
         <url value="http://fhir.org/guides/argonaut-scheduling/ValueSet/argo-slot-status"/>
-        <version value="1.0.0"/>
+        <version value="1.0.1"/>
         <name value="Argonaut_Slot_Status_Codes"/>
         <title value="Argonaut Slot Status Codes"/>
-        <status value="draft"/>
+        <status value="active"/>
         <date value="2018-03-19T00:00:00-07:00"/>
         <description value="The free/busy status of the slot. This value set is a subset of the the FHIR core Slot value set excluding the &#39;busy-tentative&#39; concept."/>
         <jurisdiction>
@@ -3183,8 +3183,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a50128fa-9084-4554-8066-176e1d1d8291"/>
-          <timestamp value="2018-03-19T14:41:28-07:00"/>
+          <identifier value="urn:uuid:97509dc7-5be2-411d-b6f6-c96287da68cd"/>
+          <timestamp value="2018-04-09T11:56:14-07:00"/>
           <total value="4"/>
           <parameter>
             <name value="profile"/>
@@ -3265,10 +3265,10 @@
           </div>
         </text>
         <url value="http://fhir.org/guides/argonaut-scheduling/ValueSet/slot-bundle-type"/>
-        <version value="1.0.0"/>
+        <version value="1.0.1"/>
         <name value="Argonaut_Slot_BundleType_Codes"/>
         <title value="Argonaut Slot BundleType Codes"/>
-        <status value="draft"/>
+        <status value="active"/>
         <date value="2017-01-09T23:40:10-08:00"/>
         <description value="Slot Bundle Profile types constrained to &#39;history&#39; and &#39;searchset&#39;."/>
         <jurisdiction>
@@ -3279,8 +3279,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d29c802a-e70f-4bd1-9a7a-9c79c9fb3426"/>
-          <timestamp value="2018-03-19T14:41:29-07:00"/>
+          <identifier value="urn:uuid:53443229-7fb5-4ff9-90c7-5fb31da76c55"/>
+          <timestamp value="2018-04-09T11:56:15-07:00"/>
           <total value="2"/>
           <parameter>
             <name value="profile"/>
@@ -3313,7 +3313,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 10 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-type version 1.0.0, http://hl7.org/fhir/v2/0276 version 2.8.2, http://hl7.org/fhir/ValueSet/v2-0276 version 2.8.2</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-type version 1.0.1, http://hl7.org/fhir/v2/0276 version 2.8.2, http://hl7.org/fhir/ValueSet/v2-0276 version 2.8.2</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -3423,12 +3423,12 @@
           </div>
         </text>
         <url value="http://fhir.org/guides/argonaut-scheduling/ValueSet/appt-type"/>
-        <version value="1.0.0"/>
+        <version value="1.0.1"/>
         <name value="Argonaut_Appointment_Types"/>
         <title value="Argonaut Appointment Types"/>
-        <status value="draft"/>
+        <status value="active"/>
         <date value="2017-07-12T12:40:10-07:00"/>
-        <description value="The style of appointment or patient for appointment booking (not service type).  These concepts are used in the FHIR Appointment, Schedule and Slot resources. The [Argonaut Scheduling Visit Types](ConceptMap-visit-appt-map.html) are mapped to these concepts."/>
+        <description value="The style of appointment or patient for appointment booking (not service type).  These concepts are used in the FHIR Appointment, Schedule and Slot resources. The [Argonaut Scheduling Visit Types](http://fhir.org/guides/argonaut-scheduling/ConceptMap/visit-appt-map) are mapped to these concepts."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3437,8 +3437,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a422b548-c35b-4382-a19b-95d62fa19594"/>
-          <timestamp value="2018-03-22T19:03:12-07:00"/>
+          <identifier value="urn:uuid:cbafe0a3-a895-40ae-aec1-e67ef2b82189"/>
+          <timestamp value="2018-04-09T11:56:38-07:00"/>
           <total value="10"/>
           <parameter>
             <name value="profile"/>
@@ -3446,7 +3446,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-type|1.0.0"/>
+            <valueUri value="http://fhir.org/guides/argonaut-scheduling/CodeSystem/appt-type|1.0.1"/>
           </parameter>
           <parameter>
             <name value="version"/>
