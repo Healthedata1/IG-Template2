@@ -23,11 +23,6 @@ https://healthedata1.github.io/IG-Template2/
 
 ## Setup instructions
 
-You will also need to add the following directories to the same path:
-
-- `temp`
-- `output`
-- `qa`
 
 [FHIR-IGPub-filebuilder](https://github.com/Healthedata1/FHIR-IGPub-filebuilder) can be used to automate the creation and updating of the `ig.json` and `ig.xml` files based on the content in the definitions.csv file and in `resources` and `examples` directories.  See the inline comments for how to use.  
 
