@@ -6,7 +6,7 @@ A template for building an FHIR Implemenation Guide(IG) using the IG publisher a
 See below for a directory tree
 
 The `source` directory contains all the new and edited content for creating an IG.  This is include pages,resources and examples , and custom navigation and logos, images and even stylesheets.  The `framework` directory and several template files located in the root directory ( for example `sd.html`) hold the static content for IG and they don't need to be changed to produce an IG.  If you want to customize your IG then you may have to edit these files and you are on your own.
-The published output is in the docs directory for [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) which is the easiest way to share your content.  See below if you are using the ig autopublisher.
+The published output is in the docs directory for [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) which is the easiest way to share your content.  See below if you are using the [ig autopublisher](https://github.com/Healthedata1/auto-ig-builder).
 
 Shows how to create:
 
@@ -43,7 +43,7 @@ https://healthedata1.github.io/IG-Template2/
        bash pub3.sh -d -s Argo-Scheduling -t
 
 1. Output will be in IG-Template2 docs folder
-1. for autopublishing from GitHib will need to:
+1. for [autopublishing from GitHib](https://github.com/Healthedata1/auto-ig-builder) will need to:
    -  add these (static) files and folders to source:
       - base.html
       - dependencies
