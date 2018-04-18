@@ -33,3 +33,6 @@ dependencyList.source,dependencies/uscore-vp
 special-urls,
 tool,jekyll
 logging,progress
+topofpage,TRUE
+allviews,TRUE
+mappings,TRUE

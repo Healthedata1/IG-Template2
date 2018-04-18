@@ -1,27 +1,24 @@
 ﻿{
   "openapi": "3.0.1",
   "info": {
-    "title": "Argonaut Scheduling Server CapabilityStatement",
-    "description": "The Argonaut Scheduling Server CapabilityStatement provides a for a complete list of supported RESTful interactions for the Argonaut Scheduling Implementation Guide",
+    "description": "This resource defines the expected capabilities ",
     "license": {
       "name": "CC0-1.0"
     },
-    "version": "1.0.1",
-    "contact": {
-      "name": "Argonaut Project"
-    }
+    "version": "0.0.0",
+    "contact": {}
   },
   "externalDocs": {
-    "url": "http://fhir.org/guides/argonaut-scheduling/CapabilityStatement/server",
+    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/server",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {
-    "/Appointment": {
-      "summary": "manage the collection of resources of type Appointment",
-      "description": "Access to services to manage the collection of all resources of type Appointment",
+    "/Basic": {
+      "summary": "manage the collection of resources of type Basic",
+      "description": "Access to services to manage the collection of all resources of type Basic",
       "get": {
         "summary": "Search all resources based on a set of criteria",
-        "operationId": "searchAppointment",
+        "operationId": "searchBasic",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -61,12 +58,12 @@
         }
       }
     },
-    "/Appointment/{rid}": {
-      "summary": "Read/Write/etc resource instance of type Appointment",
-      "description": "Access to services to manage the state of a single resource of type Appointment",
+    "/Basic/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Basic",
+      "description": "Access to services to manage the state of a single resource of type Basic",
       "get": {
         "summary": "Read the current state of the resource",
-        "operationId": "readAppointment",
+        "operationId": "readBasic",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -93,12 +90,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Appointment"
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Basic"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/Appointment.xsd"
+                  "$ref": "http://build.fhir.org/Basic.xsd"
                 }
               }
             }
@@ -106,73 +103,12 @@
         }
       }
     },
-    "/Coverage/{rid}": {
-      "summary": "Read/Write/etc resource instance of type Coverage",
-      "description": "Access to services to manage the state of a single resource of type Coverage",
-      "put": {
-        "summary": "Update the current state of the resource",
-        "operationId": "updateCoverage",
-        "requestBody": {
-          "description": "The new state of the resource",
-          "required": true,
-          "content": {
-            "application/fhir+json": {
-              "schema": {
-                "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Coverage"
-              }
-            },
-            "application/fhir+xml": {
-              "schema": {
-                "$ref": "http://build.fhir.org/Coverage.xsd"
-              }
-            }
-          }
-        },
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "the resource being returned after being updated",
-            "headers": {
-              "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag"
-              }
-            },
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Coverage"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "http://build.fhir.org/Coverage.xsd"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/Patient": {
-      "summary": "manage the collection of resources of type Patient",
-      "description": "Access to services to manage the collection of all resources of type Patient",
+    "/Basic/{rid}/_history/{hid}": {
+      "summary": "Read past versions of resource instance of type Basic",
+      "description": "Access to previous versions of a single resource of type Basic",
       "get": {
-        "summary": "Search all resources based on a set of criteria",
-        "operationId": "searchPatient",
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadBasic",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -193,18 +129,18 @@
             "description": "the resource being returned",
             "headers": {
               "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag"
+                "description": "Version from Resource.meta.version as a weak ETag for that version"
               }
             },
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Bundle"
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Basic"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/Bundle.xsd"
+                  "$ref": "http://build.fhir.org/Basic.xsd"
                 }
               }
             }
