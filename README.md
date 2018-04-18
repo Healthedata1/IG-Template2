@@ -3,8 +3,10 @@ Author:  Eric Haas
 
 A template for building an FHIR Implemenation Guide(IG) using the IG publisher and profile spreadsheets.  This is based on the design of the [Argonaut](http://www.fhir.org/guides/argonaut/r2/) and [US-Core](http://hl7.org/fhir/us/core/) IGs.    See the [FHIR IG publisher documentation](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation)  for how to set up your local environment.
 
-The source directory contains all the new and edited content for creating an IG.  This is include pages,resource and examples , and custom navigation and logos, images and even stylesheets.  The framework directory and several template files located in the root directory ( for example `sd.html`) hold the static content for IG and they don't need to be changed to produce an IG.  If you want to customize your IG then you may have to edit these files adn you are on your own.
-The published output is in the docs directory for GitHub Pages which is the easiest way to share your content.  This directory in  not needed if you are using the ig autopublisher.
+See below for a directory tree
+
+The `source` directory contains all the new and edited content for creating an IG.  This is include pages,resources and examples , and custom navigation and logos, images and even stylesheets.  The `framework` directory and several template files located in the root directory ( for example `sd.html`) hold the static content for IG and they don't need to be changed to produce an IG.  If you want to customize your IG then you may have to edit these files and you are on your own.
+The published output is in the docs directory for [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) which is the easiest way to share your content.  See below if you are using the [ig autopublisher](https://github.com/Healthedata1/auto-ig-builder).
 
 Shows how to create:
 
@@ -23,11 +25,6 @@ https://healthedata1.github.io/IG-Template2/
 
 ## Setup instructions
 
-You will also need to add the following directories to the same path:
-
-- `temp`
-- `output`
-- `qa`
 
 [FHIR-IGPub-filebuilder](https://github.com/Healthedata1/FHIR-IGPub-filebuilder) can be used to automate the creation and updating of the `ig.json` and `ig.xml` files based on the content in the definitions.csv file and in `resources` and `examples` directories.  See the inline comments for how to use.  
 
@@ -46,7 +43,7 @@ You will also need to add the following directories to the same path:
        bash pub3.sh -d -s Argo-Scheduling -t
 
 1. Output will be in IG-Template2 docs folder
-1. for autopublishing from GitHib will need to:
+1. for [autopublishing from GitHib](https://github.com/Healthedata1/auto-ig-builder) will need to:
    -  add these (static) files and folders to source:
       - base.html
       - dependencies
