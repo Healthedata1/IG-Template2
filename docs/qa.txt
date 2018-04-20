@@ -1,38 +1,67 @@
-﻿IG-Test3 : Validation Results
+﻿Argonaut Clinical Notes : Validation Results
 =========================================
 
-err = 22, warn = 2, info = 0
-Generated Wed Apr 18 06:04:20 PDT 2018. FHIR version 3.4.0 for 3.0.1
+err = 4, warn = 0, info = 0
+Generated Fri Apr 20 06:52:08 PDT 2018. FHIR version 3.4.0 for 3.0.1
 
  Build Errors : 5 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/obs : 5 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client : 1 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server : 1 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/structuredefinition-template-basic2 : 4 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/structuremap-Foo : 0 / 1
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-client : 1 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-server : 1 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-argo-clinicalnotes : 0 / 0
+ /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-example-dr : 0 / 0
 </table>
 == n/a ==
-ERROR: ??: The reference http://www.fhir.org/guides/test3/StructureDefinition/template-blah could not be resolved
-ERROR: ??: The reference http://www.fhir.org/guides/test3/StructureDefinition/template-complex could not be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 259, column 728: The link 'Patient/example' for "Patient/example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 259, column 796: The link 'Encounter/example' for "Encounter/example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/link/body/div/div/div/div/div/div/div/p/a at Line 259, column 907: The link 'Practitioner/practitioner-1' for "Practitioner/practitioner-1" cannot be resolved
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/obs.xml ==
-ERROR: Observation/example: Observation: Profile http://hl7.org/fhir/StructureDefinition/Observation, Element 'Observation.status': minimum required = 1, but only found 0
-ERROR: Observation/example: Observation.code.coding[3]: null
-ERROR: Observation/example: Observation.subject: Unable to resolve resource 'Patient/example'
-ERROR: Observation/example: Observation.context: Unable to resolve resource 'Encounter/example'
-ERROR: Observation/example: Observation.performer: Unable to resolve resource 'Practitioner/practitioner-1'
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client.xml ==
-ERROR: CapabilityStatement/client: CapabilityStatement.profile: Unable to resolve resource 'http://www.fhir.org/guides/test3/StructureDefinition/template-basic'
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server.xml ==
-ERROR: CapabilityStatement/server: CapabilityStatement.profile: Unable to resolve resource 'http://www.fhir.org/guides/test3/StructureDefinition/template-basic'
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig.xml ==
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/structuredefinition-template-basic2.xml ==
-ERROR: template-basic2: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/template-blah' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic2 differential Basic.extension (Simple_Extension)
-ERROR: template-basic2: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/template-complex' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic2 differential Basic.extension (Complex_Extension)
-ERROR: template-basic2: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/template-blah' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic2 snapshot Basic.extension (Simple_Extension)
-ERROR: template-basic2: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/template-complex' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic2 snapshot Basic.extension (Complex_Extension)
-== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/structuremap-Foo.xml ==
-WARNING: StructureMap/Foo: StructureMap.jurisdiction: Error null validating CodeableConcept
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-argo-clinicalnotes.html: unable to parse character reference 'type=[type]`
+
+**Example:**
+
+-  GET [base]/DocumentReference?patient=1234&type=http://loinc.org | 11488-4
+
+
+*Support:* Mandatory for server and client to support search by patient and note type....rest all TBD. Mandatory for client to support the _include parameter. Optional for server to support the _include parameter.
+
+*Implementation Notes:*   This query searches for all MedicationAdministration resources for a patient and returns a Bundle of all MedicationAdministration and resources for the specified patient. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. [(how to search by reference)], and [(how to search by _include)].
+
+-------
+
+  [(how to search by reference)]: http://hl7.org/fhir/STU3/search.html#reference
+  [(how to search by token)]: http://hl7.org/fhir/STU3/search.html#token
+  [Composite Search Parameters]: http://hl7.org/fhir/STU3/search.html#combining
+  [(how to search by date)]: http://hl7.org/fhir/STU3/search.html#date
+  [(how to search by _include)]: http://hl7.org/fhir/STU3/search.html#_include
+
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+
+</div>  <!-- col -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /page content -->
+</div>  <!-- /page content wrapper -->
+
+
+
+  <script src="assets/js/jquery.js"> </script>
+<script src="assets/js/jquery-ui.min.js"> </script>
+<script>
+try {
+  var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index')'' (last text = ' for a complete list of supported RESTful interactions for this IG.' at line 669 column 75
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 243, column 14: The link 'index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block' for "Cat Facts (To Show How the Text Wraps around the Contents Block)" cannot be resolved (valid targets: [page-content-wrapper, jekyll-site-variables, segment-header, publish-box, markdown-toc-introduction, segment-post-footer, markdown-toc-and-more-stuff, markdown-toc, stripe, markdown-toc-more-stuff, back-to-top, segment-footer, segment-navbar, more-stuff, and-more-stuff, project-status, introduction, markdown-toc-jekyll-site-variables])
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 253, column 10: The link 'guidance.html#introduction' for "Introduction" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/a at Line 254, column 10: The link 'guidance.html#more-stuff' for "More Stuff" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/link/body/div/div/div/div/div/div/div/ul/li/ul/li/ul/li/a at Line 255, column 14: The link 'guidance.html#and-more-stuff' for "And More Stuff" cannot be resolved (valid targets: [page-content-wrapper, use-case-1, segment-header, usage, foo, markdown-toc-usage, segment-post-footer, markdown-toc-general-guidance, general-guidance, markdown-toc, stripe, segment-footer, information, segment-navbar, foo-1, markdown-toc-use-case-1, project-status])
+== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-client.xml ==
+ERROR: CapabilityStatement/client: CapabilityStatement.profile: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'
+== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/capabilitystatement-server.xml ==
+ERROR: CapabilityStatement/server: CapabilityStatement.profile: Unable to resolve resource 'http://fhir.org/guides/argonaut-clinicalnotes/StructureDefinition/template-basic'
+== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/ig.xml ==
+== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-argo-clinicalnotes.xml ==
+== /Users/ehaas/Documents/FHIR/Argo-ClinicalNotes/source/resources/structuredefinition-example-dr.xml ==

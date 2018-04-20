@@ -1,19 +1,25 @@
-source: template-basic2.md file
 
-    This is the introduction markdown file that gets inserted into the sd.html template.
+{% assign id = {{page.id}} %}
+source file: source/pages/\_includes/{{id}}-intro.md
 
-    This profile sets minimum expectations for blah blah blah
+{{site.data.structuredefinitions.[id].description}}
 
-    ##### Mandatory Data Elements and Terminology
+#### Scope and Usage
 
-    The following data-elements are mandatory (i.e data MUST be present). blah blah blah
+scope and usage text here
 
-    **must have:**
+#### Mandatory Data Elements and Terminology
 
-    1. blah
-    1. blah
-    1. blah
+The following data-elements are mandatory (i.e data MUST be present). blah blah blah
 
-    **Additional Profile specific implementation guidance:**
+**must have:**
 
-    #### Examples
+1. blah
+1. blah
+1. blah
+
+**Additional Profile specific implementation guidance:**
+
+#### Examples
+
+- list examples here
