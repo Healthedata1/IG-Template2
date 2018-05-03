@@ -1,8 +1,151 @@
 {
   "resourceType": "Bundle",
-  "id": "f668ab6e-52a4-4710-942d-5e1edbb61586",
+  "id": "61856c6a-c12a-4af2-aab0-d014ff5498cc",
   "meta": {
-    "lastUpdated": "2018-04-20T06:51:42.284-07:00"
+    "lastUpdated": "2018-05-03T16:50:40.502-07:00"
   },
-  "type": "collection"
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://www.fhir.org/guides/test3/ValueSet/minvs",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "minvs",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://hl7.org/fhir/basic-resource-type version 3.0.1</p><p>All codes from system <a href=\"http://hl7.org/fhir/STU3/codesystem-basic-resource-type.html\"><code>http://hl7.org/fhir/basic-resource-type</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-basic-resource-type-diet\"> </a><a href=\"http://hl7.org/fhir/STU3/codesystem-basic-resource-type.html#basic-resource-type-diet\">diet</a></td><td>Diet</td><td>The specification of a set of food and/or other nutritional material to be delivered to a patient.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-basic-resource-type-study\"> </a><a href=\"http://hl7.org/fhir/STU3/codesystem-basic-resource-type.html#basic-resource-type-study\">study</a></td><td>Study</td><td>An investigation to determine information about a particular therapy or product</td></tr></table></div>"
+        },
+        "url": "http://www.fhir.org/guides/test3/ValueSet/minvs",
+        "version": "0.0.0",
+        "name": "BlahCodes",
+        "status": "draft",
+        "date": "2018-05-02T08:16:34-07:00",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url"
+              },
+              {
+                "system": "email"
+              }
+            ]
+          }
+        ],
+        "description": "A example VS for Extension: minValueSet",
+        "jurisdiction": [
+          {
+            "coding": [
+              {
+                "system": "urn:iso:std:iso:3166",
+                "code": "US",
+                "display": "United States of America"
+              }
+            ]
+          }
+        ],
+        "immutable": true,
+        "expansion": {
+          "identifier": "urn:uuid:3259cbe1-3d54-440b-bac5-3085a2d13b1b",
+          "timestamp": "2018-05-03T16:41:42-07:00",
+          "total": 2,
+          "parameter": [
+            {
+              "name": "profile",
+              "valueUri": "http://hl7.org/fhir/ExpansionProfile/dc8fd4bc-091a-424a-8a3b-6198ef146891"
+            },
+            {
+              "name": "version",
+              "valueUri": "http://hl7.org/fhir/basic-resource-type|3.0.1"
+            }
+          ],
+          "contains": [
+            {
+              "system": "http://hl7.org/fhir/basic-resource-type",
+              "code": "diet",
+              "display": "Diet"
+            },
+            {
+              "system": "http://hl7.org/fhir/basic-resource-type",
+              "code": "study",
+              "display": "Study"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "blah-codes",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p><p>All codes from system <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-blah\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-blah\">blah</a></td><td>Blah</td><td>example code 1</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-foo\">foo</a></td><td>Foo</td><td>example code 2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-bar\">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
+        },
+        "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
+        "version": "0.0.0",
+        "name": "BlahCodes",
+        "status": "draft",
+        "date": "2018-03-13T08:16:34-07:00",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url"
+              },
+              {
+                "system": "email"
+              }
+            ]
+          }
+        ],
+        "description": "A bunch of example codes",
+        "jurisdiction": [
+          {
+            "coding": [
+              {
+                "system": "urn:iso:std:iso:3166",
+                "code": "US",
+                "display": "United States of America"
+              }
+            ]
+          }
+        ],
+        "immutable": true,
+        "expansion": {
+          "identifier": "urn:uuid:2d3f58ce-6e0d-43a5-8def-1ec2d8893a06",
+          "timestamp": "2018-05-03T16:41:43-07:00",
+          "total": 3,
+          "parameter": [
+            {
+              "name": "profile",
+              "valueUri": "http://hl7.org/fhir/ExpansionProfile/dc8fd4bc-091a-424a-8a3b-6198ef146891"
+            },
+            {
+              "name": "version",
+              "valueUri": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"
+            }
+          ],
+          "contains": [
+            {
+              "system": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
+              "code": "blah",
+              "display": "Blah"
+            },
+            {
+              "system": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
+              "code": "foo",
+              "display": "Foo"
+            },
+            {
+              "system": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
+              "code": "bar",
+              "display": "Bar"
+            }
+          ]
+        }
+      }
+    }
+  ]
 }
