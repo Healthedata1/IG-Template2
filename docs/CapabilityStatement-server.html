@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IG-Test3</title>
+  <title>Argonaut Questionnaire</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IG-Test3 Implemenation Guide" />
-<meta name="author" content="Health eData Inc"/>
+<meta name="description" content="Argonaut Questionnaire Implemenation Guide" />
+<meta name="author" content="Argonaut Project"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -19,7 +19,7 @@
 
   <link href="assets/css/bootstrap.css" rel="stylesheet"/>
   <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet"/>
 
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
@@ -56,18 +56,11 @@
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
 
-your logo here
-
-[![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive #org_logo}
-
-can only resize using html  or css ;-(
-
+================THIS IS FOR THE PROJECT LOGO AND URL ===============
 -->
 
-
-<a no-external="true" href="http://www.openmhealth.org/">
-<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
+<a no-external="true" href="http://argonautwiki.hl7.org">
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/ArgonautProject_logo_black.png"/>
 </a>
 
   <!-- end org logo -->
@@ -76,7 +69,7 @@ can only resize using html  or css ;-(
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
       
-      <strong>IG-Test3 Implementation Guide CI Build</strong>
+      <strong>Argonaut Questionnaire Implementation Guide CI Build</strong>
       
 
     </div><!-- end ig title text -->
@@ -109,19 +102,63 @@ can only resize using html  or css ;-(
         <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-       <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
+       
+<!--{:.nav .navbar-nav} don't remove the line above - to add or remove a menu item commeent in or out - [Home](index.html)- [Use Cases...](guidance.html){: .dropdown-toggle data-toggle="dropdown"}  - [Patient Based Scheduling](patient-scheduling.html)  - [Provider based Scheduling](provider-scheduling.html)  {: .dropdown-menu}- [Operations](operations.html)- [Profiles/Extensions](profiles.html)- [Terminology](terminology.html)- [Capability Statements...](capstatements.html){: .dropdown-toggle data-toggle="dropdown"}  - [Conformance requirements for Server](CapabilityStatement-server.html)  - [Conformance requirements for Client](client-capstatement.html)  {: .dropdown-menu}- [Downloads](downloads.html)-->
 <ul class="nav navbar-nav">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="guidance.html">General Guidance</a></li>
-  <li><a href="profiles.html">Profiles and Logical Models</a></li>
-  <li><a href="structuremaps.html">Mappings</a>
-<!-- - [Extensions](extensions.html) --></li>
-  <li><a href="terminology.html">Terminology</a>
-<!-- - [Search Parameters](searchparams.html) --></li>
-  <li><a href="capstatements.html">Capability Statements</a>
-<!-- - [Security](security.html) -->
-<!-- - [Examples](examples.html) --></li>
-  <li><a href="downloads.html">Downloads</a></li>
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+
+  <!--
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Use Cases<b class="caret">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
+    <li>
+      <a href="patient-scheduling.html">Patient Based Scheduling</a>
+    </li>
+    <li>
+      <a href="provider-scheduling.html">Provider Based Scheduling</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="operations.html">Operations</a>
+</li>
+-->
+<li>
+  <a href="profiles.html">Profiles/Extensions</a>
+</li>
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+<li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Capability Statements<b class="caret">
+  </b>
+</a>
+<ul class="dropdown-menu">
+<li>
+  <a href="CapabilityStatement-assessmentbank.html">Conformance requirements for Assessment Bank</a>
+</li>
+<li>
+  <a href="CapabilityStatement-answerbank.html">Conformance requirements for Answer Bank</a>
+</li>
+
+  <li>
+    <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
+  </li>
+  <li>
+    <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
+  </li>
+</ul>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
 </ul>
 
 
@@ -258,7 +295,37 @@ can only resize using html  or css ;-(
   <h2>CapabilityStatement: server</h2>
 
   <div xmlns="http://www.w3.org/1999/xhtml">
-<ul><li>FHIR Version: 3.0.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>
+			<h2 id="argonaut-questionnaire-conformance-requirements">Argonaut Questionnaire Conformance Requirements</h2>
+			<p>This section outlines conformance requirements for the Argonaut questionnaire Server, identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual Argonaut questionnaire profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the Argonaut questionnaire actors.</p>
+			<h3 id="conformance-requirements-for-the-argonaut-questionnaire-implementation-guide-server">Conformance requirements for the Argonaut questionnaire Implementation Guide Server</h3>
+			<ul>
+				<li>FHIR Version: 3.0.1</li>
+				<li>Supported formats: xml, json</li>
+				<li>Published: May 20, 2018</li>
+				<li>Published by: The Argonaut Project</li>
+			</ul>
+			<p>The Section describes the expected Capabilities of the Argonaut Questonnaire Server (Provider EHR)  which is responsible for fetching, rendering and displaying Questionaires,  storing (scoring) and sharing QuestionnaireAnswers ( ...todo...) , RESTful operations, and search parameters supported by Argonaut questionnaire Servers are defined.</p>
+			<h4 id="behavior">Behavior</h4>
+			<p>Description:</p>
+			<p>The Argonaut questionnaire Server <strong>SHALL (...todo... review...)</strong>:</p>
+			<ol>
+				<li>Support at least one Argonaut questionnaire use case.</li>
+				<li>Implement the RESTful behavior according to the FHIR specification including returning the appropriate response classes as described in the FHIR specification for <a href="http://hl7.org/fhir/STU3/http.html">FHIR RESTful API</a> and <a href="http://hl7.org/fhir/STU3/operations.html">Extended Operations on the RESTful API</a>.</li>
+				<li>Conform to the <a href="http://hl7.org/fhir/us/core/1.0.1">US Core Implementation Guiide</a>.</li>
+				<li>Support <em>json</em> resource formats for all Argonaut questionnaire interactions.</li>
+				<li>Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.</li>
+			</ol>
+			<p>The Argonaut questionnaire Server <strong>SHOULD (...todo... review...)</strong>:</p>
+			<ol>
+				<li>Support <em>xml</em> resource formats for all Argonaut questionnaire interactions.</li>
+				<li>Identify the Argonaut questionnaire profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li>
+			</ol>
+			<h4 id="security-">Security:</h4>
+			<p>For general security consideration refer to the <a href="http://hl7.org/fhir/us/core/security.html">Security section</a> in the US Core Implementation Guide.</p>
+			<h4 id="profile-interaction-summary-">Profile Interaction Summary: (...todo... review...)</h4>
+			<h4 id="resource-details-">Resource  Details: (...todo... review...)</h4>
+			<hr/>
+		</div>
   <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
 
 
@@ -308,9 +375,7 @@ Formats: <a href="CapabilityStatement-server.html">Narrative</a>, <a href="Capab
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Test3 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Thu, May 3, 2018 16:50-0700. |
-             <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
-                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+            Argonaut Questionnaire Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, May 16, 2018 00:29-0700. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->
@@ -345,7 +410,7 @@ Formats: <a href="CapabilityStatement-server.html">Narrative</a>, <a href="Capab
 <!-- Analytics Below
 ================================================== -->
 
-<!-- add acnhors before the closing body tag. -->
+<!-- add anchors before the closing body tag. -->
 <script> anchors.add()</script>
 
 

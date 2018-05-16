@@ -1,0 +1,117 @@
+{
+  "resourceType": "AuditEvent",
+  "id": "example-error",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Recording that an error has happened due to a client requesting that an Observation resource be Created on the Patient endpoint. Note that the OperationOutcome from failed transaction is recorded as an AuditEvent.entity.</div>"
+  },
+  "contained": [
+    {
+      "resourceType": "OperationOutcome",
+      "id": "o1",
+      "issue": [
+        {
+          "severity": "error",
+          "code": "invalid",
+          "details": {
+            "text": "Invalid pointer operation"
+          }
+        }
+      ]
+    }
+  ],
+  "type": {
+    "system": "http://hl7.org/fhir/audit-event-type",
+    "code": "rest",
+    "display": "Restful Operation"
+  },
+  "subtype": [
+    {
+      "system": "http://hl7.org/fhir/restful-interaction",
+      "code": "create",
+      "display": "create"
+    }
+  ],
+  "action": "C",
+  "recorded": "2017-09-07T23:42:24Z",
+  "outcome": "8",
+  "outcomeDesc": "Invalid request to create an Operation resource on the Patient endpoint.",
+  "agent": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/extra-security-role-type",
+            "code": "humanuser",
+            "display": "human user"
+          }
+        ]
+      },
+      "userId": {
+        "value": "95"
+      },
+      "altId": "601847123",
+      "name": "Grahame Grieve",
+      "requestor": true
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "code": "110153",
+            "display": "Source Role ID"
+          }
+        ]
+      },
+      "userId": {
+        "value": "2.16.840.1.113883.4.2|2.16.840.1.113883.4.2"
+      },
+      "altId": "6580",
+      "requestor": false,
+      "network": {
+        "address": "Workstation1.ehr.familyclinic.com",
+        "type": "1"
+      }
+    }
+  ],
+  "source": {
+    "site": "Cloud",
+    "identifier": {
+      "value": "hl7connect.healthintersections.com.au"
+    },
+    "type": [
+      {
+        "system": "http://hl7.org/fhir/security-source-type",
+        "code": "3",
+        "display": "Web Server"
+      }
+    ]
+  },
+  "entity": [
+    {
+      "type": {
+        "system": "http://hl7.org/fhir/object-type",
+        "code": "2",
+        "display": "System Object"
+      },
+      "detail": [
+        {
+          "type": "requested transaction",
+          "valueString": "http POST ..... "
+        }
+      ]
+    },
+    {
+      "reference": {
+        "reference": "#o1"
+      },
+      "type": {
+        "system": "http://hl7.org/fhir/resource-types",
+        "code": "OperationOutcome",
+        "display": "OperationOutcome"
+      },
+      "description": "transaction failed"
+    }
+  ]
+}

@@ -3,13 +3,13 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Questionnaire</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-questionnaire/ImplementationGuide/ig</pre></div>"
   },
-  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
-  "name": "IG-Test3",
+  "url": "http://fhir.org/guides/argonaut-questionnaire/ImplementationGuide/ig",
+  "name": "Argonaut Questionnaire",
   "status": "draft",
   "experimental": true,
-  "publisher": "Health eData Inc",
+  "publisher": "Argonaut Project",
   "package": [
     {
       "id": "p1",
@@ -19,108 +19,156 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Observation-foofoo.html"
+              "valueUri": "Questionnaire-questionnaire-example-phq9.html"
             }
           ],
           "example": true,
           "sourceReference": {
-            "reference": "Observation/foofoo"
+            "reference": "Questionnaire/questionnaire-example-phq9"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-minvs.html"
+              "valueUri": "Questionnaire-questionnaire-example-housing.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "ValueSet/minvs"
+            "reference": "Questionnaire/questionnaire-example-housing"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-blah-codes.html"
+              "valueUri": "Questionnaire-questionnaire-example-dast.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "ValueSet/blah-codes"
+            "reference": "Questionnaire/questionnaire-example-dast"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-template-basic.html"
+              "valueUri": "Questionnaire-questionnaire-example-audit.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "StructureDefinition/template-basic"
+            "reference": "Questionnaire/questionnaire-example-audit"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-complex.html"
+              "valueUri": "Questionnaire-questionnaire-example-asq3.html"
             }
           ],
-          "example": false,
+          "example": true,
           "sourceReference": {
-            "reference": "StructureDefinition/extension-complex"
+            "reference": "Questionnaire/questionnaire-example-asq3"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-extension-blah.html"
+              "valueUri": "ValueSet-SAMHSA-dad.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/extension-blah"
+            "reference": "ValueSet/SAMHSA-dad"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-bt.html"
+              "valueUri": "ValueSet-SAMHSA-6.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/bt"
+            "reference": "ValueSet/SAMHSA-6"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "SearchParameter-blah.html"
+              "valueUri": "ValueSet-PHQ-9.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "SearchParameter/blah"
+            "reference": "ValueSet/PHQ-9"
           }
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CodeSystem-blah-codes.html"
+              "valueUri": "ValueSet-example-answerlist1.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "CodeSystem/blah-codes"
+            "reference": "ValueSet/example-answerlist1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-score.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-score"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-qr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/qr"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-q.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/q"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-answer-codes.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/answer-codes"
           }
         },
         {
@@ -146,18 +194,78 @@
           "sourceReference": {
             "reference": "CapabilityStatement/client"
           }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-assessmentbank.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/assessmentbank"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-answerbank.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/answerbank"
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q-profile-spreadsheet.xml",
+      "name": "Argonaut_Q_Profile",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-q.html"
+            }
+          ],
+          "name": "Argonaut_Q_Profile",
+          "sourceReference": {
+            "reference": "StructureDefinition/q"
+          }
+        }
+      ]
+    },
+    {
+      "id": "QR-profile-spreadsheet.xml",
+      "name": "Argonaut_QR_Profile",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-qr.html"
+            }
+          ],
+          "name": "Argonaut_QR_Profile",
+          "sourceReference": {
+            "reference": "StructureDefinition/qr"
+          }
         }
       ]
     }
   ],
   "page": {
     "source": "index.md",
-    "title": "IG-Test3 Homepage",
+    "title": "Argonaut Questionnaire Homepage",
     "kind": "page",
     "page": [
       {
         "source": "_includes/toc.md",
-        "title": "IG-Test3 Table of Contents",
+        "title": "Argonaut Questionnaire Table of Contents",
         "kind": "page"
       }
     ]

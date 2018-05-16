@@ -1,0 +1,66 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "usersession-status-source",
+  "meta": {
+    "lastUpdated": "2018-04-03T12:05:46.262+10:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>UserSessionStatusSource</h2><div><p>The source of the status of the user session</p>\n</div><p>This code system http://hl7.org/fhir/usersession-status-source defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">user<a name=\"usersession-status-source-user\"> </a></td><td>User</td><td>The status was reported by the user</td></tr><tr><td style=\"white-space:nowrap\">system<a name=\"usersession-status-source-system\"> </a></td><td>System</td><td>The status was reported by the system</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "url": "http://hl7.org/fhir/usersession-status-source",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.4.642.1.865"
+  },
+  "version": "3.3.0",
+  "name": "UserSessionStatusSource",
+  "status": "draft",
+  "experimental": false,
+  "date": "2018-04-03T12:05:46+10:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The source of the status of the user session",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/usersession-status-source",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "user",
+      "display": "User",
+      "definition": "The status was reported by the user"
+    },
+    {
+      "code": "system",
+      "display": "System",
+      "definition": "The status was reported by the system"
+    }
+  ]
+}

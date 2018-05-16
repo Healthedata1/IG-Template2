@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IG-Test3</title>
+  <title>Argonaut Questionnaire</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IG-Test3 Implemenation Guide" />
-<meta name="author" content="Health eData Inc"/>
+<meta name="description" content="Argonaut Questionnaire Implemenation Guide" />
+<meta name="author" content="Argonaut Project"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -19,7 +19,7 @@
 
   <link href="assets/css/bootstrap.css" rel="stylesheet"/>
   <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet"/>
 
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
@@ -56,18 +56,11 @@
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
 
-your logo here
-
-[![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive #org_logo}
-
-can only resize using html  or css ;-(
-
+================THIS IS FOR THE PROJECT LOGO AND URL ===============
 -->
 
-
-<a no-external="true" href="http://www.openmhealth.org/">
-<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
+<a no-external="true" href="http://argonautwiki.hl7.org">
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/ArgonautProject_logo_black.png"/>
 </a>
 
   <!-- end org logo -->
@@ -76,7 +69,7 @@ can only resize using html  or css ;-(
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
       
-      <strong>IG-Test3 Implementation Guide CI Build</strong>
+      <strong>Argonaut Questionnaire Implementation Guide CI Build</strong>
       
 
     </div><!-- end ig title text -->
@@ -109,19 +102,63 @@ can only resize using html  or css ;-(
         <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-       <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
+       
+<!--{:.nav .navbar-nav} don't remove the line above - to add or remove a menu item commeent in or out - [Home](index.html)- [Use Cases...](guidance.html){: .dropdown-toggle data-toggle="dropdown"}  - [Patient Based Scheduling](patient-scheduling.html)  - [Provider based Scheduling](provider-scheduling.html)  {: .dropdown-menu}- [Operations](operations.html)- [Profiles/Extensions](profiles.html)- [Terminology](terminology.html)- [Capability Statements...](capstatements.html){: .dropdown-toggle data-toggle="dropdown"}  - [Conformance requirements for Server](CapabilityStatement-server.html)  - [Conformance requirements for Client](client-capstatement.html)  {: .dropdown-menu}- [Downloads](downloads.html)-->
 <ul class="nav navbar-nav">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="guidance.html">General Guidance</a></li>
-  <li><a href="profiles.html">Profiles and Logical Models</a></li>
-  <li><a href="structuremaps.html">Mappings</a>
-<!-- - [Extensions](extensions.html) --></li>
-  <li><a href="terminology.html">Terminology</a>
-<!-- - [Search Parameters](searchparams.html) --></li>
-  <li><a href="capstatements.html">Capability Statements</a>
-<!-- - [Security](security.html) -->
-<!-- - [Examples](examples.html) --></li>
-  <li><a href="downloads.html">Downloads</a></li>
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+
+  <!--
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Use Cases<b class="caret">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
+    <li>
+      <a href="patient-scheduling.html">Patient Based Scheduling</a>
+    </li>
+    <li>
+      <a href="provider-scheduling.html">Provider Based Scheduling</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="operations.html">Operations</a>
+</li>
+-->
+<li>
+  <a href="profiles.html">Profiles/Extensions</a>
+</li>
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+<li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Capability Statements<b class="caret">
+  </b>
+</a>
+<ul class="dropdown-menu">
+<li>
+  <a href="CapabilityStatement-assessmentbank.html">Conformance requirements for Assessment Bank</a>
+</li>
+<li>
+  <a href="CapabilityStatement-answerbank.html">Conformance requirements for Answer Bank</a>
+</li>
+
+  <li>
+    <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
+  </li>
+  <li>
+    <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
+  </li>
+</ul>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
 </ul>
 
 
@@ -200,56 +237,206 @@ can only resize using html  or css ;-(
 
   <!-- ============CONTENT CONTENT=============== -->
 
-<h1>Test IG HomePage</h1>
+<h1>Argonaut Questionnaire HomePage</h1>
 
 <!-- page source: index.md  -->
 
 <p id="publish-box">
-This is the   Continuous Integration Build  of the IG-Test3 Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3">FHIR Version 3.0.1</a>.  See the <a href="http://www.fhir.org/guides//history.html">Directory of published versions<img src="external.png" /></a>
+This is the   Continuous Integration Build  of the Argonaut Questionnaire Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3">FHIR Version 3.0.1</a>.  See the <a href="http://www.fhir.org/guides//history.html">Directory of published versions</a>
 </p>
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
 <ul id="markdown-toc">
-  <li><a href="#cat-facts-to-show-how-the-text-wraps-around-the-contents-block" id="markdown-toc-cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
-  <li><a href="#jekyll-site-variables" id="markdown-toc-jekyll-site-variables">Jekyll Site Variables</a></li>
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#more-stuff" id="markdown-toc-more-stuff">More Stuff</a>    <ul>
-      <li><a href="#and-more-stuff" id="markdown-toc-and-more-stuff">And More Stuff</a></li>
-    </ul>
-  </li>
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+  <li><a href="#actors" id="markdown-toc-actors">Actors</a></li>
+  <li><a href="#assumptions-and-preconditions" id="markdown-toc-assumptions-and-preconditions">Assumptions and Preconditions</a></li>
+  <li><a href="#workflow-overview" id="markdown-toc-workflow-overview">Workflow Overview</a></li>
+  <li><a href="#security" id="markdown-toc-security">Security</a></li>
+  <li><a href="#outstanding-issuesfuture-scope" id="markdown-toc-outstanding-issuesfuture-scope">Outstanding issues/Future scope</a></li>
+  <li><a href="#jekyll-site-variables--remove-when-publish" id="markdown-toc-jekyll-site-variables--remove-when-publish">Jekyll Site Variables  (remove when publish)</a></li>
 </ul>
 
 <!-- end TOC -->
 
-<h3 id="cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</h3>
+<h2 id="introduction">Introduction</h2>
 
-<p>The domestic cat[1][5] (Latin: Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and for their ability to hunt vermin. There are more than 70 cat breeds, though different associations proclaim different numbers according to their standards.</p>
+<p>The goal of the Argonaut Questionaire Project is to develop guidance to support interchange of simple forms based on <a href="http://hl7.org/fhir/STU3">FHIR Version 3.0.1</a> and specifically the <a href="http://hl7.org/fhir/STU3/questionnaire.html" title="Questionaire resource">Questionnaire</a> and <a href="http://hl7.org/fhir/STU3/questionnaireresponse.html" title="QuestionnaireResponse resource">QuestionnaireResponse</a> resources.  This implementation guide provides implementers with FHIR RESTful APIs and guidance to create, use and share between organizations standard assessment forms and the assessment responses.
+The requirements were developed and defined by the Argonaut Questionnaire project team and tested through pilot implementations, Argonaut virtual connectathons and HL7 sponsored Connectathons.</p>
 
-<p>Cats are similar in anatomy to the other felids, with a strong flexible body, quick reflexes, sharp retractable claws, and teeth adapted to killing small prey. Cat senses fit a crepuscular and predatory ecological niche. Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. They can see in near darkness. Like most other mammals, cats have poorer color vision and a better sense of smell than humans. Cats, despite being solitary hunters, are a social species and cat communication includes the use of a variety of vocalizations (mewing, purring, trilling, hissing, growling, and grunting), as well as cat pheromones and types of cat-specific body language.[7]</p>
+<p>This implementation Guide is organized as follows:</p>
 
-<p>Cats have a high breeding rate.[8] Under controlled breeding, they can be bred and shown as registered pedigree pets, a hobby known as cat fancy. Failure to control the breeding of pet cats by neutering, as well as the abandonment of former household pets, has resulted in large numbers of feral cats worldwide, requiring population control.[9] In certain areas outside cats’ native range, this has contributed, along with habitat destruction and other factors, to the extinction of many bird species. Cats have been known to extirpate a bird species within specific regions and may have contributed to the extinction of isolated island populations.[10] Cats are thought to be primarily responsible for the extinction of 33 species of birds, and the presence of feral and free-ranging cats makes some otherwise suitable locations unsuitable for attempted species reintroduction.[11]</p>
+<ul>
+  <li>The use case, scope, preconditions and workflow are described in the following sections</li>
+  <li>Detailed guidance on using the Argonaut Questionnaire FHIR artifacts such as profiles and extensions can be found on the <a href="guidance.html">Scenario 1</a> page.</li>
+  <li>FHIR profiles and extensions are listed on the <a href="profiles.html">Profiles</a> page.</li>
+  <li>Implementation Guide specific value sets, and code systems on the <a href="terminology.html">Terminology</a>  page.</li>
+  <li>Conformance requirements for the servers and clients that claim conformance to this guide are found in the <a href="CapabilityStatement-assessmentbank.html">Assessment-Bank</a>, <a href="CapabilityStatement-answerbank.html">Answer-Bank</a>,  <a href="CapabilityStatement-server.html">Provider EHR</a> and <a href="CapabilityStatement-client.html">client</a> CapabilityStatements.</li>
+  <li>The <a href="downloads.html">Downloads</a> page contains many downloadable files to help with implementation of this specification.</li>
+</ul>
 
-<p>Since cats were venerated in ancient Egypt, they were commonly believed to have been domesticated there,[12] but there may have been instances of domestication as early as the Neolithic from around 9,500 years ago (7,500 BC).[13] A genetic study in 2007 concluded that domestic cats are descended from Near Eastern wildcats, having diverged around 8,000 BC in the Middle East.[12][14] A 2016 study found that leopard cats were undergoing domestication independently in China around 5,500 BC, though this line of partially domesticated cats leaves no trace in the domesticated populations of today.[15][16]</p>
+<h2 id="scope">Scope</h2>
+<p>Clinical Assessment used in healthcare can be very sophisticated and complex tools and there are many facets to them. (for example, automatic prepopulation of fields, rendering,  and interactive UIs).  However,
+there is clearly a need for a common form standard with a focus on simple assessments.  Clinical Assessments that are hand crafted lead to non standard responses and limited reuse.   Forms should be shareable between systems and across organizational boundaries. With this in mind, the Argonaut Questionaire Poject’s focus and scope is on <em>simple</em> clinical assessments for the provider with general applicability and question sets that are mostly unstructured in systems today.  The  following table summarizes the scope of this implementation’s guide:</p>
 
-<p>As of a 2007 study, cats are the second most popular pet in the US by number of pets owned, behind freshwater fish.[17] In a 2010 study they were ranked the third most popular pet in the UK, after fish and dogs, with around 8 million being owned.[18]</p>
+<div class="row">
+<div class="col-sm-4">
 
-<p>Figure 1 is a picture of a cat to show how to insert an image using markdown.</p>
+    <p><strong>In Scope</strong></p>
+
+    <hr />
+
+    <ul>
+      <li>Simple assessments
+        <ul>
+          <li>Text based questions</li>
+          <li>scoring</li>
+        </ul>
+      </li>
+      <li>Any content provider or source of questions</li>
+      <li>Basic workflow for discovery and sharing of forms</li>
+    </ul>
+
+    <hr />
+  </div>
+
+<div class="col-sm-4">
+    <p><strong>Out of Scope</strong></p>
+
+    <hr />
+
+    <ul>
+      <li>Complex “structured assessments“
+        <ul>
+          <li>Embedded logic for “dynamic” question trees</li>
+          <li>Pre-population and rendering (up to the application)</li>
+          <li>Graphs, flow sheets, charts, video</li>
+        </ul>
+      </li>
+      <li>CIMI and openEHR-like modelling efforts</li>
+      <li>How to elevate response data into structured data</li>
+      <li>Data sharing workflow considerations</li>
+    </ul>
+
+    <hr />
+
+  </div>
+
+
+</div>
+
+<h2 id="actors">Actors</h2>
+
+<ol>
+  <li><strong><a href="StructureDefinition-q.html" title="Argonaut Questionnaire Profile">Argonaut Questionnaire Profile</a></strong></li>
+  <li><strong><a href="StructureDefinition-qr.html" title="Argonaut QuestionnaireResponse Profile">Argonaut QuestionnaireResponse Profile</a></strong></li>
+  <li><strong>“<a href="CapabilityStatement-assessmentbank.html">Assessment-Bank</a>“</strong><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>: A form repository for the collection of the assessments. It is accessible to both the providers and form editors as a FHIR Questionnaire endpoint.</li>
+  <li>(Optionally) <strong>“<a href="CapabilityStatement-answerbank.html">Answer-Bank</a>“</strong><sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>: A repository for the collection of the completed assessments (‘answers’). It is accessible to both the providers and form editors as a FHIR QuestionnaireResponse endpoint.  …TODO: discus…</li>
+  <li><strong><a href="CapabilityStatement-server.html">Provider EHR</a></strong><sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>: The System that is capable of retrieving, rendering and displaying the assessment to a subject or a provider to fill out.  This may be the same system as in the Answers section below.</li>
+  <li><strong>Form Author/Editor</strong>: A system or person authorized to create update and deprecate assessments forms.</li>
+  <li><strong>Practitioner</strong>: A healthcare provider authorized to administer the assessment to a subject.</li>
+  <li><strong>Provider administrator</strong>: A practitioner or staff member authorized to fill out an assessment on behalf of a subject or with input from a subject.</li>
+  <li><strong>Subject</strong>: The patient or individual who is the focus of the assessment.  For example, a patient.</li>
+</ol>
+
+<h2 id="assumptions-and-preconditions">Assumptions and Preconditions</h2>
+<ul>
+  <li>The Assessment is completed directly by the subject or by a “provider administer” on behalf of the subject or with input from the subject.</li>
+  <li>Patient consent management is out of scope.</li>
+  <li>Forms are created and shared within and across organizations</li>
+  <li>The questions, answers/answer choices and scoring information are agreed upon across all users of the assessment.</li>
+  <li>The appropriate copyright/licensing issues have been addressed.</li>
+  <li>This guides supports the <a href="http://argonautwiki.hl7.org/images/4/4c/Argonaut_UseCasesV1.pdf">four uses cases</a> defined for Phase 1 of the <a href="http://argonautwiki.hl7.org/index.php?title=Main_Page">Argonaut Project</a>:
+    <ul>
+      <li>Patients apps that launch standalone</li>
+      <li>Patient apps that launch from a portal</li>
+      <li>Provider apps that launch standalone</li>
+      <li>Provider apps that launch from a portal</li>
+    </ul>
+  </li>
+  <li>If the patient Subject/Patient Administrator logs in via a third-party application or logged into an EHR’s patient portal, the subject ID is returned or known
+    <ul>
+      <li>User level login and trust exists between the EHR and a third party application.
+        <ul>
+          <li>A client application has been authorized by the health system and uses <a href="http://docs.smarthealthit.org/authorization/">SMART on FHIR</a> authorization for apps that connect to EHR data.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>System level trust exists between a scheduling server and am external provider system for high volume data exchange - for example, retrieving completed assessments for all patients.
+    <ul>
+      <li>Supports the <a href="http://argonautwiki.hl7.org/images/4/4c/Argonaut_UseCasesV1.pdf">use case 5</a> defined for Phase 1 of the Argonaut Project.</li>
+      <li>One solution is to use access FHIR resources by requesting access tokens from OAuth 2.0 compliant authorization servers using <a href="http://docs.smarthealthit.org/authorization/backend-services/">SMART Backend Services</a>.</li>
+    </ul>
+  </li>
+  <li><a href="http://build.fhir.org/ig/HL7/US-Core/guidance.html" title="US Core General Guidance">US Core General Guidance</a> and conventions apply to this guide.</li>
+</ul>
+
+<h2 id="workflow-overview">Workflow Overview</h2>
+
+<p><strong>See <a href="guidance.html">Scenario 1</a> for a detailed description of workflow and API guidance.</strong></p>
+
+<p>In the basic workflow outlined below., an EHR system retrieves a standardized assessment represented by the Questionaire resource from an assessment bank.  The Questionnaire is rendered/displayed to the end user - either the subject or provider administrator.  The end user enters responses to the assessment questions and these responses are captured and represented using the QuestionnaireResponse resource.  The response may be processed (scored, aggregated, etc) and shared or stored by other systems.</p>
 
 <!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
 
-<!-- file:///assets/images/cat.jpg -->
+<!-- file:///assets/images/workflow.png -->
 
 <div>
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: Meow.</strong></figcaption>
-  <img src="assets/images/cat.jpg" class="figure-img img-responsive img-rounded center-block" alt="cat.jpg" />
+<figcaption class="figure-caption"><strong>Basic Argonaut Questionnaire Workflow.</strong></figcaption>
+  <img src="assets/images/workflow.png" class="figure-img img-responsive img-rounded center-block" alt="workflow.png" />
 </figure>
 
 <p></p>
 </div>
 
-<h3 id="jekyll-site-variables">Jekyll Site Variables</h3>
+<table class="grid">
+  <thead>
+    <tr>
+      <th>step</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>An EHR system retrieves a standardized assessment represented by the Questionnaire resource from an assessment bank.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>The Questionnaire is rendered/displayed to the end user - either the subject or provider administrator.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>The end user enters responses to the assessment questions and these responses are captured and represented using the QuestionnaireResponse resource.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>The response may be processed (scored, aggregated, etc) and shared or stored by other systems.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="security">Security</h2>
+
+<p>For general security consideration refer to the <a href="http://build.fhir.org/ig/HL7/US-Core/security.html" title="US Core Security">Security section</a> in the US Core Implementation Guide. See the <a href="index.html#assumptions-and-preconditions" title="Assumptions-and-Preconditions">Assumptions</a> section above for a discussion of login and trust.</p>
+
+<h2 id="outstanding-issuesfuture-scope">Outstanding issues/Future scope</h2>
+
+<ul>
+  <li>Management of versioning of assessments</li>
+  <li>Intellectual Property and Copyright issues</li>
+  <li>Saving/retrieving half completed forms ?</li>
+  <li>Supporting retrieval of standard concepts from external repository like VSAC?  ( example: nursing forms)</li>
+  <li>preference to contain or include return bundle</li>
+  <li>Defining a single way to do X?  e.g choice questions.  (there is more than one way!)</li>
+  <li>Scoring -  Currently formal logic is not in scope.</li>
+  <li>retrieval of forms as a printable pdf.</li>
+</ul>
+
+<h2 id="jekyll-site-variables--remove-when-publish">Jekyll Site Variables  (remove when publish)</h2>
 
 <p>These are the site variables defined <a href="http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll">here</a>:</p>
 
@@ -264,22 +451,22 @@ This is the   Continuous Integration Build  of the IG-Test3 Implementation Guide
     <p>Whether is experimental IG (defined in ig.xml) - {{site.data.fhir.ig.experimental}}  = true</p>
   </li>
   <li>
-    <p>IG Publisher name (defined in ig.xml) - {{site.data.fhir.ig.publisher}}  = Health eData Inc</p>
+    <p>IG Publisher name (defined in ig.xml) - {{site.data.fhir.ig.publisher}}  = Argonaut Project</p>
   </li>
   <li>
-    <p>dependency url - e.g. “uscore” : Base url of a dependency implementation Guide (defined in ig.json) -   {{site.data.fhir.uscore}} =</p>
+    <p>dependency url - e.g. “uscore” : Base url of a dependency implementation Guide (defined in ig.json) -   {{site.data.fhir.uscore}} = http://build.fhir.org/ig/HL7/US-Core</p>
   </li>
   <li>
-    <p>igName : Title of the implementation Guide (defined in ig.xml) -   {{site.data.fhir.igName}} = IG-Test3</p>
+    <p>igName : Title of the implementation Guide (defined in ig.xml) -   {{site.data.fhir.igName}} = Argonaut Questionnaire</p>
   </li>
   <li>
     <p>path : path to the main FHIR specification (defined in ig.json)-   {{site.data.fhir.path}} = http://hl7.org/fhir/STU3</p>
   </li>
   <li>
-    <p>canonical : canonical path to this specification (defined in ig.json)-   {{site.data.fhir.canonical}}  = http://www.fhir.org/guides/test3</p>
+    <p>canonical : canonical path to this specification (defined in ig.json)-   {{site.data.fhir.canonical}}  = http://fhir.org/guides/argonaut-questionnaire</p>
   </li>
   <li>
-    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 98</p>
+    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 139</p>
   </li>
   <li>
     <p>version : version of FHIR -   {{site.data.fhir.version}}  = 3.0.1</p>
@@ -291,23 +478,33 @@ This is the   Continuous Integration Build  of the IG-Test3 Implementation Guide
     <p>versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 3.0.1-11917</p>
   </li>
   <li>
-    <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 12</p>
+    <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 18</p>
   </li>
   <li>
     <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 1</p>
   </li>
   <li>
-    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Thu, May 3, 2018 16:50-0700</p>
+    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Wed, May 16, 2018 00:29-0700</p>
   </li>
 </ul>
 
-<h3 id="introduction">Introduction</h3>
+<p><br /></p>
 
-<p>blah blah blah</p>
+<hr />
 
-<h3 id="more-stuff">More Stuff</h3>
-
-<h4 id="and-more-stuff">And More Stuff</h4>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>This is called the ‘Form Manager’ in the <a href="http://build.fhir.org/ig/HL7/sdc/" title="SDC">Structured Data Capture Initiative</a> (SDC) <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>This is called the ‘Form Receiver/Archiver’ in the <a href="http://build.fhir.org/ig/HL7/sdc/" title="SDC">Structured Data Capture Initiative</a> (SDC) <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>This is called the ‘Form Filler’ and/or ‘Form Response Handler’ in the <a href="http://build.fhir.org/ig/HL7/sdc/" title="SDC">Structured Data Capture Initiative</a> (SDC) <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 
 
@@ -342,9 +539,7 @@ This is the   Continuous Integration Build  of the IG-Test3 Implementation Guide
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Test3 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Thu, May 3, 2018 16:50-0700. |
-             <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
-                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+            Argonaut Questionnaire Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, May 16, 2018 00:29-0700. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->
@@ -379,7 +574,7 @@ This is the   Continuous Integration Build  of the IG-Test3 Implementation Guide
 <!-- Analytics Below
 ================================================== -->
 
-<!-- add acnhors before the closing body tag. -->
+<!-- add anchors before the closing body tag. -->
 <script> anchors.add()</script>
 
 
