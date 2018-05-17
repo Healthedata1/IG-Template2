@@ -2,11 +2,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>Argonaut Questionnaire</title>
+  <title>mFHIR</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Argonaut Questionnaire Implemenation Guide"/>
-<meta name="author" content="Argonaut Project"/>
+<meta name="description" content="mFHIR Implemenation Guide"/>
+<meta name="author" content="Open mHealth"/>
   <link rel="stylesheet" href="fhir.css"/>
 
 
@@ -52,10 +52,16 @@
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
 
-================THIS IS FOR THE PROJECT LOGO AND URL =============== -->
+your logo here
 
-<a no-external="true" href="http://argonautwiki.hl7.org">
-<img src="assets/images/ArgonautProject_logo_black.png" alt="visit our website" class="img-responsive project-logo"/>
+[![visit our website](assets/images/org_logo.png)](your web site.html)
+{: .img-responsive #org_logo}
+
+can only resize using html  or css ;-( -->
+
+
+<a no-external="true" href="http://www.openmhealth.org/">
+<img src="assets/images/org_logo.png" alt="visit our website" class="img-responsive project-logo"/>
 </a>
 
     <!-- end org logo -->
@@ -64,7 +70,7 @@
       <div id="project-status" class="project-status">   <!-- ig title text -->
 
       
-      <strong>Argonaut Questionnaire Implementation Guide CI Build</strong>
+      <strong>mFHIR Implementation Guide CI Build</strong>
       
 
     </div>  <!-- end ig title text -->
@@ -97,61 +103,19 @@
         <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-       
-  <!-- {:.nav .navbar-nav} don't remove the line above - to add or remove a menu item commeent in or out - [Home](index.html)- [Use Cases...](guidance.html){: .dropdown-toggle data-toggle="dropdown"}  - [Patient Based Scheduling](patient-scheduling.html)  - [Provider based Scheduling](provider-scheduling.html)  {: .dropdown-menu}- [Operations](operations.html)- [Profiles/Extensions](profiles.html)- [Terminology](terminology.html)- [Capability Statements...](capstatements.html){: .dropdown-toggle data-toggle="dropdown"}  - [Conformance requirements for Server](CapabilityStatement-server.html)  - [Conformance requirements for Client](client-capstatement.html)  {: .dropdown-menu}- [Downloads](downloads.html) -->
+         <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
-  <li>
-    <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="guidance.html">Guidance</a>
-  </li>
-
-    <!-- <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Use Cases<b class="caret">
-    </b>
-  </a>
-  <ul class="dropdown-menu">
-    <li>
-      <a href="patient-scheduling.html">Patient Based Scheduling</a>
-    </li>
-    <li>
-      <a href="provider-scheduling.html">Provider Based Scheduling</a>
-    </li>
-  </ul>
-</li>
-<li>
-  <a href="operations.html">Operations</a>
-</li> -->
-<li>
-  <a href="profiles.html">Profiles/Extensions</a>
-</li>
-<li>
-  <a href="terminology.html">Terminology</a>
-</li>
-<li class="dropdown">
-  <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statements<b class="caret">
-  </b>
-</a>
-<ul class="dropdown-menu">
-<li>
-  <a href="CapabilityStatement-assessmentbank.html">Conformance requirements for Assessment Bank</a>
-</li>
-<li>
-  <a href="CapabilityStatement-answerbank.html">Conformance requirements for Answer Bank</a>
-</li>
-
-  <li>
-    <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
-  </li>
-  <li>
-    <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
-  </li>
-</ul>
-</li>
-<li>
-  <a href="downloads.html">Downloads</a>
-</li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="guidance.html">General Guidance</a></li>
+  <li><a href="profiles.html">Profiles and Logical Models</a></li>
+  <li><a href="structuremaps.html">Mappings</a>
+  <!-- - [Extensions](extensions.html) --></li>
+  <li><a href="terminology.html">Terminology</a>
+  <!-- - [Search Parameters](searchparams.html) --></li>
+  <li><a href="capstatements.html">Capability Statements</a>
+  <!-- - [Security](security.html) -->
+  <!-- - [Examples](examples.html) --></li>
+  <li><a href="downloads.html">Downloads</a></li>
 </ul>
 
 
@@ -241,19 +205,19 @@
 <div>
   <ul>
     <li><a href="index.html">PHCase Implementation Guide</a>    <ul>
-        <li><a name="3727ed3b-9d6d-4eed-aa25-cfd120e0d982">​</a><a href="index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block" id="markdown-toc-cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
-        <li><a name="cdf6392c-d6b7-4312-890f-acd6fbf5c836">​</a><a href="index.html#jekyll-site-variables" id="markdown-toc-jekyll-site-variables">Jekyll Site Variables</a></li>
-        <li><a href="index.html#introduction" id="markdown-toc-introduction">Introduction</a></li>
-        <li><a name="bf88e3ea-3623-4770-970c-7ec7deaa00bc">​</a><a href="index.html#more-stuff" id="markdown-toc-more-stuff">More Stuff</a>        <ul>
-            <li><a name="8e1cba67-269c-4b02-a8d4-5fc1d70122ee">​</a><a href="index.html#and-more-stuff" id="markdown-toc-and-more-stuff">And More Stuff</a></li>
+        <li><a name="734f7f39-b2c4-41a3-be95-89bfe4ce923f">​</a><a href="index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block" id="markdown-toc-cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
+        <li><a name="e06ca6ba-a84a-40e9-9fa9-75eb401040b9">​</a><a href="index.html#jekyll-site-variables" id="markdown-toc-jekyll-site-variables">Jekyll Site Variables</a></li>
+        <li><a name="abcfb677-8f92-4b46-a488-17f06f5b806e">​</a><a href="index.html#introduction" id="markdown-toc-introduction">Introduction</a></li>
+        <li><a name="9b31b77f-84af-46b1-b82a-6ea38485b7bf">​</a><a href="index.html#more-stuff" id="markdown-toc-more-stuff">More Stuff</a>        <ul>
+            <li><a name="587c084a-7dc2-47d1-8f4a-5139e71b6edd">​</a><a href="index.html#and-more-stuff" id="markdown-toc-and-more-stuff">And More Stuff</a></li>
           </ul>
         </li>
       </ul>
     </li>
     <li><a href="guidance.html" id="markdown-toc-general-guidance-and-definitions">General Guidance and Definitions</a>    <ul>
-    <li><a href="guidance.html#introduction" id="markdown-toc-introduction">Introduction</a></li>
-    <li><a name="8841de6d-0855-43f4-8c69-abfbf4063324">​</a><a href="guidance.html#more-stuff" id="markdown-toc-more-stuff">More Stuff</a>        <ul>
-        <li><a name="0546f1f4-4d65-414c-9701-18b5c1c02c36">​</a><a href="guidance.html#and-more-stuff" id="markdown-toc-and-more-stuff">And More Stuff</a></li>
+    <li><a name="2c00b54f-9e2a-434f-a86d-6893eff8733c">​</a><a href="guidance.html#introduction" id="markdown-toc-introduction">Introduction</a></li>
+    <li><a name="b18fafb2-6b42-4f5e-9a01-ab2eb3312de6">​</a><a href="guidance.html#more-stuff" id="markdown-toc-more-stuff">More Stuff</a>        <ul>
+        <li><a name="c2cc332f-255e-4cd9-ae8f-a95fa9049d48">​</a><a href="guidance.html#and-more-stuff" id="markdown-toc-and-more-stuff">And More Stuff</a></li>
       </ul>
     </li>
   </ul>
@@ -292,7 +256,7 @@
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-            Argonaut Questionnaire Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, May 16, 2018 00:29-0700. | <a rel="license" no-external="true" style="color: #81BEF7" href="http://hl7.org/fhir/STU3license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
+            mFHIR Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, May 16, 2018 18:41-0700. | <a rel="license" no-external="true" style="color: #81BEF7" href="http://hl7.org/fhir/STU3license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         
         </p>
    </div>    <!-- /inner-wrapper -->

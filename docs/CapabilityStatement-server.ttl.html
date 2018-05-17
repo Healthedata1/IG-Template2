@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>Argonaut Questionnaire</title>
+  <title>mFHIR</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Argonaut Questionnaire Implemenation Guide" />
-<meta name="author" content="Argonaut Project"/>
+<meta name="description" content="mFHIR Implemenation Guide" />
+<meta name="author" content="Open mHealth"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -56,11 +56,18 @@
 <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
 </a>
 
-================THIS IS FOR THE PROJECT LOGO AND URL ===============
+your logo here
+
+[![visit our website](assets/images/org_logo.png)](your web site.html)
+{: .img-responsive #org_logo}
+
+can only resize using html  or css ;-(
+
 -->
 
-<a no-external="true" href="http://argonautwiki.hl7.org">
-<img alt="visit our website" class="img-responsive project-logo" src="assets/images/ArgonautProject_logo_black.png"/>
+
+<a no-external="true" href="http://www.openmhealth.org/">
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.png"/>
 </a>
 
   <!-- end org logo -->
@@ -69,7 +76,7 @@
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
       
-      <strong>Argonaut Questionnaire Implementation Guide CI Build</strong>
+      <strong>mFHIR Implementation Guide CI Build</strong>
       
 
     </div><!-- end ig title text -->
@@ -102,63 +109,19 @@
         <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-       
-<!--{:.nav .navbar-nav} don't remove the line above - to add or remove a menu item commeent in or out - [Home](index.html)- [Use Cases...](guidance.html){: .dropdown-toggle data-toggle="dropdown"}  - [Patient Based Scheduling](patient-scheduling.html)  - [Provider based Scheduling](provider-scheduling.html)  {: .dropdown-menu}- [Operations](operations.html)- [Profiles/Extensions](profiles.html)- [Terminology](terminology.html)- [Capability Statements...](capstatements.html){: .dropdown-toggle data-toggle="dropdown"}  - [Conformance requirements for Server](CapabilityStatement-server.html)  - [Conformance requirements for Client](client-capstatement.html)  {: .dropdown-menu}- [Downloads](downloads.html)-->
+       <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
-  <li>
-    <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="guidance.html">Guidance</a>
-  </li>
-
-  <!--
-  <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Use Cases<b class="caret">
-    </b>
-  </a>
-  <ul class="dropdown-menu">
-    <li>
-      <a href="patient-scheduling.html">Patient Based Scheduling</a>
-    </li>
-    <li>
-      <a href="provider-scheduling.html">Provider Based Scheduling</a>
-    </li>
-  </ul>
-</li>
-<li>
-  <a href="operations.html">Operations</a>
-</li>
--->
-<li>
-  <a href="profiles.html">Profiles/Extensions</a>
-</li>
-<li>
-  <a href="terminology.html">Terminology</a>
-</li>
-<li class="dropdown">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Capability Statements<b class="caret">
-  </b>
-</a>
-<ul class="dropdown-menu">
-<li>
-  <a href="CapabilityStatement-assessmentbank.html">Conformance requirements for Assessment Bank</a>
-</li>
-<li>
-  <a href="CapabilityStatement-answerbank.html">Conformance requirements for Answer Bank</a>
-</li>
-
-  <li>
-    <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
-  </li>
-  <li>
-    <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
-  </li>
-</ul>
-</li>
-<li>
-  <a href="downloads.html">Downloads</a>
-</li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="guidance.html">General Guidance</a></li>
+  <li><a href="profiles.html">Profiles and Logical Models</a></li>
+  <li><a href="structuremaps.html">Mappings</a>
+<!-- - [Extensions](extensions.html) --></li>
+  <li><a href="terminology.html">Terminology</a>
+<!-- - [Search Parameters](searchparams.html) --></li>
+  <li><a href="capstatements.html">Capability Statements</a>
+<!-- - [Security](security.html) -->
+<!-- - [Examples](examples.html) --></li>
+  <li><a href="downloads.html">Downloads</a></li>
 </ul>
 
 
@@ -313,150 +276,63 @@
   <a href="http://hl7.org/fhir/STU3/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
   <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;server&quot;];
   <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;additional&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n			&lt;h2 id=\&quot;argonaut-questionnaire-conformance-requirements\&quot;&gt;Argonaut Questionnaire Conformance Requirements&lt;/h2&gt;\n			&lt;p&gt;This section outlines conformance requirements for the Argonaut questionnaire Server, identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual Argonaut questionnaire profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the Argonaut questionnaire actors.&lt;/p&gt;\n			&lt;h3 id=\&quot;conformance-requirements-for-the-argonaut-questionnaire-implementation-guide-server\&quot;&gt;Conformance requirements for the Argonaut questionnaire Implementation Guide Server&lt;/h3&gt;\n			&lt;ul&gt;\n				&lt;li&gt;FHIR Version: 3.0.1&lt;/li&gt;\n				&lt;li&gt;Supported formats: xml, json&lt;/li&gt;\n				&lt;li&gt;Published: May 20, 2018&lt;/li&gt;\n				&lt;li&gt;Published by: The Argonaut Project&lt;/li&gt;\n			&lt;/ul&gt;\n			&lt;p&gt;The Section describes the expected Capabilities of the Argonaut Questonnaire Server (Provider EHR)  which is responsible for fetching, rendering and displaying Questionaires,  storing (scoring) and sharing QuestionnaireAnswers ( ...todo...) , RESTful operations, and search parameters supported by Argonaut questionnaire Servers are defined.&lt;/p&gt;\n			&lt;h4 id=\&quot;behavior\&quot;&gt;Behavior&lt;/h4&gt;\n			&lt;p&gt;Description:&lt;/p&gt;\n			&lt;p&gt;The Argonaut questionnaire Server &lt;strong&gt;SHALL (...todo... review...)&lt;/strong&gt;:&lt;/p&gt;\n			&lt;ol&gt;\n				&lt;li&gt;Support at least one Argonaut questionnaire use case.&lt;/li&gt;\n				&lt;li&gt;Implement the RESTful behavior according to the FHIR specification including returning the appropriate response classes as described in the FHIR specification for &lt;a href=\&quot;http://hl7.org/fhir/STU3/http.html\&quot;&gt;FHIR RESTful API&lt;/a&gt; and &lt;a href=\&quot;http://hl7.org/fhir/STU3/operations.html\&quot;&gt;Extended Operations on the RESTful API&lt;/a&gt;.&lt;/li&gt;\n				&lt;li&gt;Conform to the &lt;a href=\&quot;http://hl7.org/fhir/us/core/1.0.1\&quot;&gt;US Core Implementation Guiide&lt;/a&gt;.&lt;/li&gt;\n				&lt;li&gt;Support &lt;em&gt;json&lt;/em&gt; resource formats for all Argonaut questionnaire interactions.&lt;/li&gt;\n				&lt;li&gt;Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.&lt;/li&gt;\n			&lt;/ol&gt;\n			&lt;p&gt;The Argonaut questionnaire Server &lt;strong&gt;SHOULD (...todo... review...)&lt;/strong&gt;:&lt;/p&gt;\n			&lt;ol&gt;\n				&lt;li&gt;Support &lt;em&gt;xml&lt;/em&gt; resource formats for all Argonaut questionnaire interactions.&lt;/li&gt;\n				&lt;li&gt;Identify the Argonaut questionnaire profiles supported as part of the FHIR &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.&lt;/li&gt;\n			&lt;/ol&gt;\n			&lt;h4 id=\&quot;security-\&quot;&gt;Security:&lt;/h4&gt;\n			&lt;p&gt;For general security consideration refer to the &lt;a href=\&quot;http://hl7.org/fhir/us/core/security.html\&quot;&gt;Security section&lt;/a&gt; in the US Core Implementation Guide.&lt;/p&gt;\n			&lt;h4 id=\&quot;profile-interaction-summary-\&quot;&gt;Profile Interaction Summary: (...todo... review...)&lt;/h4&gt;\n			&lt;h4 id=\&quot;resource-details-\&quot;&gt;Resource  Details: (...todo... review...)&lt;/h4&gt;\n			&lt;hr/&gt;\n		&lt;/div&gt;&quot;
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n&lt;ul&gt;&lt;li&gt;FHIR Version: 3.0.0&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2017-03-08&lt;/li&gt;&lt;li&gt;Published by: Health eData Inc&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;The Section describes the expected capabilities etc....&lt;/p&gt;&lt;/div&gt;&quot;
   ];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.url">fhir:CapabilityStatement.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://fhir.org/guides/argonaut-questionnaire/CapabilityStatement/server&quot;];
+  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.url">fhir:CapabilityStatement.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://www.fhir.org/guides/mfhir/CapabilityStatement/server&quot;];
   <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.version">fhir:CapabilityStatement.version</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;0.0.0&quot;];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.name">fhir:CapabilityStatement.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;argonautQuestionnaireServerCapabilityStatement&quot;];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.title">fhir:CapabilityStatement.title</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Argonaut Questionnaire Server CapabilityStatement&quot;];
+  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.name">fhir:CapabilityStatement.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Server&quot;];
   <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.status">fhir:CapabilityStatement.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.experimental">fhir:CapabilityStatement.experimental</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.date">fhir:CapabilityStatement.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2018-05-18T00:00:00-07:00&quot;^^xsd:dateTime];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.publisher">fhir:CapabilityStatement.publisher</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Argonaut Project&quot;];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.description">fhir:CapabilityStatement.description</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;The Argonaut questionnaire Server CapabilityStatement provides a for a complete list of supported RESTful interactions for the Argonaut questionnaire Implementation Guide&quot;];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.jurisdiction">fhir:CapabilityStatement.jurisdiction</a> [
+  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.date">fhir:CapabilityStatement.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2017-03-08T00:00:00-08:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.publisher">fhir:CapabilityStatement.publisher</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Health eData Inc&quot;];
+  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.contact">fhir:CapabilityStatement.contact</a> [
      <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
        <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;US&quot; ]     ]
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;other&quot; ];
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;ehaas@healthedatainc.com&quot; ]     ]
   ];
+  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.description">fhir:CapabilityStatement.description</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;This resource defines the expected capabilities &quot;];
   <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.kind">fhir:CapabilityStatement.kind</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;requirements&quot;];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.fhirVersion">fhir:CapabilityStatement.fhirVersion</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;3.0.1&quot;];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.acceptUnknown">fhir:CapabilityStatement.acceptUnknown</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;both&quot;];
+  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.fhirVersion">fhir:CapabilityStatement.fhirVersion</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;3.0.0&quot;];
   <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.format">fhir:CapabilityStatement.format</a> [
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;application/fhir+xml&quot;;
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;xml&quot;;
      <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0
   ], [
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;application/fhir+json&quot;;
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;json&quot;;
      <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1
-  ];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.patchFormat">fhir:CapabilityStatement.patchFormat</a> [
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;application/json-patch+json&quot;;
-     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0
-  ], [
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;application/xml-patch+xml&quot;;
-     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1
-  ], [
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;application/fhirpath-patch+fhirpath&quot;;
-     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2
-  ];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.implementationGuide">fhir:CapabilityStatement.implementationGuide</a> [
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://fhir.org/guides/argonaut-questionnaire/ImplementationGuide/ig&quot;;
-     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0
-  ], [
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/core/ImplementationGuide/ig&quot;;
-     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1
-  ];
-  <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.profile">fhir:CapabilityStatement.profile</a> [
-     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/STU3/rdf.html#reference">fhir:link</a> &lt;http://fhir.org/guides/argonaut-questionnaire/StructureDefinition/q&gt;;
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;http://fhir.org/guides/argonaut-questionnaire/StructureDefinition/q&quot; ]
-  ], [
-     <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
-     <a href="http://hl7.org/fhir/STU3/rdf.html#reference">fhir:link</a> &lt;http://fhir.org/guides/argonaut-questionnaire/StructureDefinition/qr&gt;;
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;http://fhir.org/guides/argonaut-questionnaire/StructureDefinition/qr&quot; ]
   ];
   <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest">fhir:CapabilityStatement.rest</a> [
      <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.mode">fhir:CapabilityStatement.rest.mode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;server&quot; ];
-     <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.documentation">fhir:CapabilityStatement.rest.documentation</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;The [Argonaut](http://argonautwiki.hl7.org/) questionnaire Project is a vendor agnostic specification providing FHIR RESTful APIs and guidance for access to and booking of appointments for patients by both patient and practitioner end users. This specification is based on [FHIR Version 3.0.1](http://hl7.org/fhir/STU3) and specifically the [Questionnaire](http://hl7.org/fhir/STU3/questionnaire.html)and QuestionnaireResponse](http://hl7.org/fhir/STU3/questionnaireresponse.html) resources.&quot; ];
-     <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.security">fhir:CapabilityStatement.rest.security</a> [
-       <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.security.service">fhir:CapabilityStatement.rest.security.service</a> [
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
-           <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/restful-security-service&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SMART-on-FHIR&quot; ]         ]       ];
-       <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.security.description">fhir:CapabilityStatement.rest.security.description</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;For general security consideration refer to the [Security section](http://hl7.org/fhir/us/core/security.html) in the US Core Implementation Guide.&quot; ]     ];
      <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource">fhir:CapabilityStatement.rest.resource</a> [
        <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.type">fhir:CapabilityStatement.rest.resource.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;Questionnaire&quot; ];
+       <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.type">fhir:CapabilityStatement.rest.resource.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;Basic&quot; ];
        <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">fhir:CapabilityStatement.rest.resource.interaction</a> [
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
          <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
            <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
            <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHALL&quot; ]         ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;read&quot; ]       ], [
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
-           <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHALL&quot; ]         ];
+           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
          <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;search-type&quot; ]       ], [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
+         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
+           <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
+           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
+         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;read&quot; ]       ], [
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2;
          <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
            <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
            <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHALL&quot; ]         ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;patch&quot; ]       ];
-       <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">fhir:CapabilityStatement.rest.resource.referencePolicy</a> [
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;enforced&quot;;
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0       ];
-       <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">fhir:CapabilityStatement.rest.resource.searchParam</a> [
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">fhir:Element.extension</a> [
-           <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHALL&quot; ]         ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;_id&quot; ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/SearchParameter/_id&quot; ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;token&quot; ]       ], [
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">fhir:Element.extension</a> [
-           <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHALL&quot; ]         ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;title&quot; ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/SearchParameter/title&quot; ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;string&quot; ]       ], [
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2;
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">fhir:Element.extension</a> [
-           <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHALL&quot; ]         ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;status&quot; ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/SearchParameter/status&quot; ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;token&quot; ]       ], [
+           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
+         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;history-instance&quot; ]       ], [
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 3;
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">fhir:Element.extension</a> [
-           <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">fhir:CapabilityStatement.rest.resource.searchParam.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;version&quot; ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">fhir:CapabilityStatement.rest.resource.searchParam.definition</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/SearchParameter/version&quot; ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">fhir:CapabilityStatement.rest.resource.searchParam.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;token&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
-       <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.type">fhir:CapabilityStatement.rest.resource.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;QuestionnaireResponse&quot; ];
-       <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">fhir:CapabilityStatement.rest.resource.interaction</a> [
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
          <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
            <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
            <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
            <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;create&quot; ]       ], [
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
-           <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
-         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;update&quot; ]       ];
-       <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.updateCreate">fhir:CapabilityStatement.rest.resource.updateCreate</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
-       <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">fhir:CapabilityStatement.rest.resource.referencePolicy</a> [
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;enforced&quot;;
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0       ]     ]
+         <a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;vread&quot; ]       ]     ]
   ].
 
 # - ontology header ------------------------------------------------------------
@@ -515,7 +391,7 @@ Formats: <a href="CapabilityStatement-server.html">Narrative</a>, <a href="Capab
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            Argonaut Questionnaire Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, May 16, 2018 00:29-0700. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+            mFHIR Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, May 16, 2018 18:41-0700. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->
