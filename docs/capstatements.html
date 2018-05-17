@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IG-Test3</title>
+  <title>mFHIR</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IG-Test3 Implemenation Guide" />
-<meta name="author" content="Health eData Inc"/>
+<meta name="description" content="mFHIR Implemenation Guide" />
+<meta name="author" content="Open mHealth"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -67,7 +67,7 @@ can only resize using html  or css ;-(
 
 
 <a no-external="true" href="http://www.openmhealth.org/">
-<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.png"/>
 </a>
 
   <!-- end org logo -->
@@ -76,7 +76,7 @@ can only resize using html  or css ;-(
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
       
-      <strong>IG-Test3 Implementation Guide CI Build</strong>
+      <strong>mFHIR Implementation Guide CI Build</strong>
       
 
     </div><!-- end ig title text -->
@@ -208,13 +208,70 @@ can only resize using html  or css ;-(
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
+<ul id="markdown-toc">
+  <li><a href="#conformance-requirements-for-server" id="markdown-toc-conformance-requirements-for-server">Conformance requirements for Server</a></li>
+  <li><a href="#conformance-requirements-for-client" id="markdown-toc-conformance-requirements-for-client">Conformance requirements for Client</a></li>
+</ul>
 
 <!-- end TOC -->
 
-<li><a href="CapabilityStatement-server.html">Server</a> Server</li>
-<li><a href="CapabilityStatement-client.html">Client</a> Client</li>
+<p>This section outlines conformance requirements</p>
 
-<p><br /></p>
+<h3 id="conformance-requirements-for-server">Conformance requirements for Server</h3>
+
+<p><a href="CapabilityStatement-server.html">Source Resource</a></p>
+
+<ul>
+  <li>FHIR Version: 1.9.0</li>
+  <li>Supported formats: xml, json</li>
+  <li>Published: 2017-03-08s</li>
+  <li>Published by: Health eData include</li>
+</ul>
+
+<p>etc</p>
+
+<h3 id="conformance-requirements-for-client">Conformance requirements for Client</h3>
+
+<p><a href="CapabilityStatement-client.html">Source Resource</a></p>
+
+<ul>
+  <li>FHIR Version: 1.9.0</li>
+  <li>Supported formats: xml, json</li>
+  <li>Published: 2017-03-08</li>
+  <li>Published by: Health eData include</li>
+</ul>
+
+<p>etc</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Steps for adding this narrative to CapStatements  - if you don't want to generate it
+
+1) Create narrative in markdown
+2) View Page source in Browser and copy the html content and save as .xhtml file
+
+3) Edit xhtml content  ( I use xml spy since can view in browser mode )
+
+1) Change title
+
+2)  Edit  or remove TOC  ( contains both client and server links)
+
+3) Remove any relative links to build (e.g., xml / json views)  since these will break if not viewed inside of IG
+
+4) Remove or replace any unsupported xhtml characters:  You can catch these using the w3 validator or by trying to view in browser
+   e.g., replace ";&amp;nbsp" with "&amp;#160;"
+
+4) Insert in CapabilityStatement.text.div as xhtml
+    Make CapabilityStatement.text.status = "additional"
+
+e.g.
+ &lt;text&gt;
+    &lt;status value="additional"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
+...(inserted xhtml here)...
+   &lt;/div&gt;
+
+save CapabilityStatement file
+</code></pre>
+</div>
 
 
 
@@ -247,7 +304,7 @@ can only resize using html  or css ;-(
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Test3 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, May 16, 2018 18:46-0700. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+            mFHIR Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, May 16, 2018 18:48-0700. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->
