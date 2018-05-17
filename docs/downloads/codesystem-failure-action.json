@@ -1,0 +1,72 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "failure-action",
+  "meta": {
+    "lastUpdated": "2018-04-03T12:05:46.262+10:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>failure-action</h2><div><p>The result if validation fails</p>\n</div><p>This code system http://hl7.org/fhir/failure-action defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">fatal<a name=\"failure-action-fatal\"> </a></td><td>Fatal</td><td/></tr><tr><td style=\"white-space:nowrap\">warn<a name=\"failure-action-warn\"> </a></td><td>Warning</td><td/></tr><tr><td style=\"white-space:nowrap\">rec-only<a name=\"failure-action-rec-only\"> </a></td><td>Record only</td><td/></tr><tr><td style=\"white-space:nowrap\">none<a name=\"failure-action-none\"> </a></td><td>None</td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "url": "http://hl7.org/fhir/failure-action",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.4.642.1.891"
+  },
+  "version": "3.3.0",
+  "name": "failure-action",
+  "status": "draft",
+  "experimental": false,
+  "date": "2018-04-03T12:05:46+10:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The result if validation fails",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/failure-action",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "fatal",
+      "display": "Fatal"
+    },
+    {
+      "code": "warn",
+      "display": "Warning"
+    },
+    {
+      "code": "rec-only",
+      "display": "Record only"
+    },
+    {
+      "code": "none",
+      "display": "None"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "id": "work-schedule-odh",
+  "meta": {
+    "lastUpdated": "2018-04-03T12:05:46.262+10:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Work Schedule (ODH)</h2><div><p>A value set consisting of codes which describe a person's typical arrangement of working hours for one job.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li/><li>Import all the codes that are contained in https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7130</li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueString": "pher"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/work-schedule-odh",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.114222.4.11.7130"
+    }
+  ],
+  "version": "3.3.0",
+  "name": "Work Schedule (ODH)",
+  "status": "active",
+  "experimental": true,
+  "date": "2018-04-03T12:05:46+10:00",
+  "publisher": "CDC PHIN VADS",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7130"
+        }
+      ]
+    }
+  ],
+  "description": "A value set consisting of codes which describe a person's typical arrangement of working hours for one job.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7130"
+        ]
+      }
+    ]
+  }
+}

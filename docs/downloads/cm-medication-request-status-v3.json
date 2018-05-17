@@ -1,0 +1,100 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "cm-medication-request-status-v3",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>v3 map for MedicationRequestStatus (http://hl7.org/fhir/ConceptMap/cm-medication-request-status-v3)</h2><p>Mapping from <a href=\"valueset-medication-request-status.html\">http://hl7.org/fhir/ValueSet/medication-request-status</a> to <a href=\"v3/ActStatus/vs.html\">http://hl7.org/fhir/ValueSet/v3-ActStatus</a></p><p>DRAFT. Published on 03/04/2018 12:05:46 PM by HL7 (FHIR Project) (<a href=\"http://hl7.org/fhir\">http://hl7.org/fhir</a>, <a href=\"mailto:fhir@lists.hl7.org\">fhir@lists.hl7.org</a>). </p><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Equivalence</b></td><td><b>Destination Code</b></td></tr><tr><td>active</td><td>equal</td><td>active</td></tr><tr><td>on-hold</td><td>equal</td><td>suspended</td></tr><tr><td>cancelled</td><td>equal</td><td>cancelled</td></tr><tr><td>completed</td><td>equal</td><td>completed</td></tr><tr><td>entered-in-error</td><td>equal</td><td>nullified</td></tr><tr><td>stopped</td><td>equal</td><td>aborted</td></tr><tr><td>draft</td><td>equal</td><td>new</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/ConceptMap/cm-medication-request-status-v3",
+  "name": "v3 map for MedicationRequestStatus",
+  "status": "draft",
+  "date": "2018-04-03T12:05:46+10:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://hl7.org/fhir/ValueSet/medication-request-status",
+  "targetCanonical": "http://hl7.org/fhir/ValueSet/v3-ActStatus",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/medication-request-status",
+      "target": "http://hl7.org/fhir/v3/ActStatus",
+      "element": [
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "target": [
+            {
+              "code": "suspended",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "nullified",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "stopped",
+          "target": [
+            {
+              "code": "aborted",
+              "equivalence": "equal"
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "new",
+              "equivalence": "equal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

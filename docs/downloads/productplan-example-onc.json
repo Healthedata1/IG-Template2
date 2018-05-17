@@ -1,0 +1,191 @@
+{
+  "resourceType": "ProductPlan",
+  "id": "example-onc",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\tSample Plan\n\t\t</div>"
+  },
+  "status": "active",
+  "name": "Sample Plan",
+  "alias": [
+    "PPO Sample Plan"
+  ],
+  "period": {
+    "start": "2017-01-01"
+  },
+  "ownedBy": {
+    "reference": "Organization/Test",
+    "display": "Test"
+  },
+  "administeredBy": {
+    "reference": "Organization/Test",
+    "display": "Test"
+  },
+  "address": [
+    {
+      "line": [
+        "123 Fake Street"
+      ],
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20005",
+      "country": "USA"
+    }
+  ],
+  "coverageArea": {
+    "reference": "Location/2",
+    "display": "National"
+  },
+  "coverage": [
+    {
+      "type": {
+        "text": "Medical"
+      },
+      "benefit": [
+        {
+          "type": {
+            "text": "Diagnostic and treatment services"
+          },
+          "item": [
+            {
+              "code": {
+                "text": "primary care visit"
+              }
+            },
+            {
+              "code": {
+                "text": "specialty care visit"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "plan": [
+    {
+      "type": {
+        "text": "Standard"
+      },
+      "premium": {
+        "value": 2000,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      },
+      "category": [
+        {
+          "code": {
+            "text": "Medical"
+          },
+          "benefit": [
+            {
+              "type": {
+                "text": "primary care office visit"
+              },
+              "cost": [
+                {
+                  "type": {
+                    "text": "copay"
+                  },
+                  "applicability": [
+                    {
+                      "code": "preferred"
+                    }
+                  ],
+                  "value": {
+                    "value": 25,
+                    "system": "urn:iso:std:iso:4217",
+                    "code": "USD"
+                  }
+                },
+                {
+                  "type": {
+                    "text": "coinsurance"
+                  },
+                  "applicability": [
+                    {
+                      "code": "participating"
+                    }
+                  ],
+                  "value": {
+                    "value": 35,
+                    "unit": "%"
+                  }
+                },
+                {
+                  "type": {
+                    "text": "coinsurance"
+                  },
+                  "applicability": [
+                    {
+                      "code": "non-participating"
+                    }
+                  ],
+                  "value": {
+                    "value": 35,
+                    "unit": "%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": {
+                "text": "specialty care office visit"
+              },
+              "cost": [
+                {
+                  "type": {
+                    "text": "copay"
+                  },
+                  "applicability": [
+                    {
+                      "code": "preferred"
+                    }
+                  ],
+                  "value": {
+                    "value": 35,
+                    "system": "urn:iso:std:iso:4217",
+                    "code": "USD"
+                  }
+                },
+                {
+                  "type": {
+                    "text": "coinsurance"
+                  },
+                  "applicability": [
+                    {
+                      "code": "participating"
+                    }
+                  ],
+                  "value": {
+                    "value": 35,
+                    "unit": "%"
+                  }
+                },
+                {
+                  "type": {
+                    "text": "coinsurance"
+                  },
+                  "applicability": [
+                    {
+                      "code": "non-participating"
+                    }
+                  ],
+                  "value": {
+                    "value": 35,
+                    "unit": "%"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endpoint": [
+    {
+      "reference": "Endpoint/example"
+    }
+  ]
+}

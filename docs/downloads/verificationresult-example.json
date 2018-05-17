@@ -1,0 +1,23 @@
+{
+  "resourceType": "VerificationResult",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>target</b>: Dr Feelbetter</p><p><b>need</b>: initial</p><p><b>status</b>: attested</p><p><b>statusDate</b>: 18/12/2017</p><p><b>validationType</b>: primary</p><p><b>validationProcess</b>: primary <span>(Details )</span></p><p><b>failureAction</b>: none</p></div>"
+  },
+  "target": [
+    {
+      "display": "Dr Feelbetter"
+    }
+  ],
+  "need": "initial",
+  "status": "attested",
+  "statusDate": "2017-12-18",
+  "validationType": "primary",
+  "validationProcess": [
+    {
+      "text": "primary"
+    }
+  ],
+  "failureAction": "none"
+}

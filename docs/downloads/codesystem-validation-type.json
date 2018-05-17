@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "validation-type",
+  "meta": {
+    "lastUpdated": "2018-04-03T12:05:46.262+10:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>validation-type</h2><div><p>What the target is validated against</p>\n</div><p>This code system http://hl7.org/fhir/validation-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">nothing<a name=\"validation-type-nothing\"> </a></td><td>Nothing</td><td/></tr><tr><td style=\"white-space:nowrap\">primary<a name=\"validation-type-primary\"> </a></td><td>Primary Source</td><td/></tr><tr><td style=\"white-space:nowrap\">multiple<a name=\"validation-type-multiple\"> </a></td><td>Multiple Sources</td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "url": "http://hl7.org/fhir/validation-type",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.4.642.1.887"
+  },
+  "version": "3.3.0",
+  "name": "validation-type",
+  "status": "draft",
+  "experimental": false,
+  "date": "2018-04-03T12:05:46+10:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "What the target is validated against",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/validation-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "nothing",
+      "display": "Nothing"
+    },
+    {
+      "code": "primary",
+      "display": "Primary Source"
+    },
+    {
+      "code": "multiple",
+      "display": "Multiple Sources"
+    }
+  ]
+}

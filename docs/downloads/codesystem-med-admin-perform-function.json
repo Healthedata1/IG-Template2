@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "med-admin-perform-function",
+  "meta": {
+    "lastUpdated": "2018-04-03T12:05:46.262+10:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MedicationAdministrationPerformerFunction</h2><div><p>A code describing the role an individual played in administering the medication</p>\n</div><p>This code system http://hl7.org/fhir/med-admin-perform-function defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">performer<a name=\"med-admin-perform-function-performer\"> </a></td><td>Performer</td><td>A person, non-person living subject, organization or device that who actually and principally carries out the action</td></tr><tr><td style=\"white-space:nowrap\">verifier<a name=\"med-admin-perform-function-verifier\"> </a></td><td>Verifier</td><td>A person who verifies the correctness and appropriateness of the service (plan, order, event, etc.) and hence takes on accountability.</td></tr><tr><td style=\"white-space:nowrap\">witness<a name=\"med-admin-perform-function-witness\"> </a></td><td>Witness</td><td>A person witnessing the action happening without doing anything. A witness is not necessarily aware, much less approves of anything stated in the service event. Example for a witness is students watching an operation or an advanced directive witness.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "url": "http://hl7.org/fhir/med-admin-perform-function",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.4.642.1.350"
+  },
+  "version": "3.3.0",
+  "name": "MedicationAdministrationPerformerFunction",
+  "status": "draft",
+  "experimental": false,
+  "date": "2018-04-03T12:05:46+10:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "A code describing the role an individual played in administering the medication",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "performer",
+      "display": "Performer",
+      "definition": "A person, non-person living subject, organization or device that who actually and principally carries out the action"
+    },
+    {
+      "code": "verifier",
+      "display": "Verifier",
+      "definition": "A person who verifies the correctness and appropriateness of the service (plan, order, event, etc.) and hence takes on accountability."
+    },
+    {
+      "code": "witness",
+      "display": "Witness",
+      "definition": "A person witnessing the action happening without doing anything. A witness is not necessarily aware, much less approves of anything stated in the service event. Example for a witness is students watching an operation or an advanced directive witness."
+    }
+  ]
+}

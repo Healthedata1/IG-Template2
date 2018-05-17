@@ -1,0 +1,88 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-request-intent",
+  "meta": {
+    "lastUpdated": "2018-04-03T12:05:46.262+10:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MedicationRequestIntent</h2><div><p>The kind of medication order</p>\n</div><p>This code system http://hl7.org/fhir/medication-request-intent defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">proposal<a name=\"medication-request-intent-proposal\"> </a></td><td>Proposal</td><td>The request is a suggestion made by someone/something that doesn't have an intention to ensure it occurs and without providing an authorization to act</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">plan<a name=\"medication-request-intent-plan\"> </a></td><td>Plan</td><td>The request represents an intension to ensure something occurs without providing an authorization for others to act</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">order<a name=\"medication-request-intent-order\"> </a></td><td>Order</td><td>The request represents a request/demand and authorization for action</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  original-order<a name=\"medication-request-intent-original-order\"> </a></td><td>Original Order</td><td>The request represents the original authorization for the medication request.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  instance-order<a name=\"medication-request-intent-instance-order\"> </a></td><td>Instance Order</td><td>The request represents an instance for the particular order, for example a medication administration record.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">option<a name=\"medication-request-intent-option\"> </a></td><td>Option</td><td>The request represents a component or option for a RequestGroup that establishes timing, conditionality and/or  other constraints among a set of requests.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Trial Use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "url": "http://hl7.org/fhir/medication-request-intent",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.4.642.1.362"
+  },
+  "version": "3.3.0",
+  "name": "MedicationRequestIntent",
+  "status": "draft",
+  "experimental": false,
+  "date": "2018-04-03T12:05:46+10:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The kind of medication order",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/medication-request-intent",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "proposal",
+      "display": "Proposal",
+      "definition": "The request is a suggestion made by someone/something that doesn't have an intention to ensure it occurs and without providing an authorization to act"
+    },
+    {
+      "code": "plan",
+      "display": "Plan",
+      "definition": "The request represents an intension to ensure something occurs without providing an authorization for others to act"
+    },
+    {
+      "code": "order",
+      "display": "Order",
+      "definition": "The request represents a request/demand and authorization for action",
+      "concept": [
+        {
+          "code": "original-order",
+          "display": "Original Order",
+          "definition": "The request represents the original authorization for the medication request."
+        },
+        {
+          "code": "instance-order",
+          "display": "Instance Order",
+          "definition": "The request represents an instance for the particular order, for example a medication administration record."
+        }
+      ]
+    },
+    {
+      "code": "option",
+      "display": "Option",
+      "definition": "The request represents a component or option for a RequestGroup that establishes timing, conditionality and/or  other constraints among a set of requests."
+    }
+  ]
+}
