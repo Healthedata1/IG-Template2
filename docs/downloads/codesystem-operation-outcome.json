@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "operation-outcome",
+  "meta": {
+    "lastUpdated": "2018-04-03T12:05:46.262+10:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Operation Outcome Codes</h2><div><p>Operation Outcome codes used by FHIR test servers (see Implementation file translations.xml)</p>\n</div><p>This code system http://hl7.org/fhir/operation-outcome defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Draft"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "url": "http://hl7.org/fhir/operation-outcome",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.4.642.1.413"
+  },
+  "version": "3.3.0",
+  "name": "Operation Outcome Codes",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Operation Outcome codes used by FHIR test servers (see Implementation file translations.xml)",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/operation-outcome",
+  "hierarchyMeaning": "is-a",
+  "content": "complete"
+}

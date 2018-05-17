@@ -1,9 +1,9 @@
 ﻿{
-  "url" : "http://www.fhir.org/guides/mfhir/ImplementationGuide/ig",
-  "name" : "mFHIR",
-  "date" : "Wed, 16 May, 2018 18:48:59 -0700",
-  "errs" : "282",
-  "warnings" : "16",
+  "url" : "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
+  "name" : "IG-Test3",
+  "date" : "Thu, 17 May, 2018 08:57:28 -0700",
+  "errs" : "22",
+  "warnings" : "2",
   "hints" : "0",
   "version" : "3.0.1",
   "tool" : "3.4.0-13690"

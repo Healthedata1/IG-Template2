@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-statement-taken",
+  "meta": {
+    "lastUpdated": "2018-04-03T12:05:46.262+10:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MedicationStatementTaken</h2><div><p>A coded concept identifying level of certainty if patient has taken or has not taken the medication</p>\n</div><p>This code system http://hl7.org/fhir/medication-statement-taken defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">y<a name=\"medication-statement-taken-y\"> </a></td><td>Yes</td><td>Positive assertion that patient has taken medication</td></tr><tr><td style=\"white-space:nowrap\">n<a name=\"medication-statement-taken-n\"> </a></td><td>No</td><td>Negative assertion that patient has not taken medication</td></tr><tr><td style=\"white-space:nowrap\">unk<a name=\"medication-statement-taken-unk\"> </a></td><td>Unknown</td><td>Unknown assertion if patient has taken medication</td></tr><tr><td style=\"white-space:nowrap\">na<a name=\"medication-statement-taken-na\"> </a></td><td>Not Applicable</td><td>Patient reporting does not apply</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/medication-statement-taken",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.4.642.1.373"
+  },
+  "version": "3.3.0",
+  "name": "MedicationStatementTaken",
+  "status": "draft",
+  "experimental": false,
+  "date": "2018-04-03T12:05:46+10:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "A coded concept identifying level of certainty if patient has taken or has not taken the medication",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/medication-statement-taken",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "y",
+      "display": "Yes",
+      "definition": "Positive assertion that patient has taken medication"
+    },
+    {
+      "code": "n",
+      "display": "No",
+      "definition": "Negative assertion that patient has not taken medication"
+    },
+    {
+      "code": "unk",
+      "display": "Unknown",
+      "definition": "Unknown assertion if patient has taken medication"
+    },
+    {
+      "code": "na",
+      "display": "Not Applicable",
+      "definition": "Patient reporting does not apply"
+    }
+  ]
+}

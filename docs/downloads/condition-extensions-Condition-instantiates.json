@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "condition-extensions-Condition-instantiates",
+  "url": "http://hl7.org/fhir/SearchParameter/condition-extensions-Condition-instantiates",
+  "name": "instantiates",
+  "status": "draft",
+  "experimental": true,
+  "description": "Matches on the instantiates extension value",
+  "code": "instantiates",
+  "base": [
+    "Condition"
+  ],
+  "type": "uri",
+  "xpath": "f:Condition/f:extension[@url='http://hl7.org/fhir/StructureDefinition/condition-instantiates'] | f:Condition/f:extension[@url='http://hl7.org/fhir/StructureDefinition/condition-instantiates']",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true
+}
