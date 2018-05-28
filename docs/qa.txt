@@ -1,13 +1,13 @@
 ﻿IG-Test3 : Validation Results
 =========================================
 
-err = 22, warn = 2, info = 0
-Generated Thu May 17 08:58:07 PDT 2018. FHIR version 3.4.0 for 3.0.1
+err = 26, warn = 2, info = 0
+Generated Mon May 28 11:33:03 PDT 2018. FHIR version 3.4.0 for 3.4.0
 
  Build Errors : 6 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/obs : 5 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client : 1 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server : 1 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client : 2 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server : 2 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/structuredefinition-template-basic2 : 4 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/structuremap-Foo : 0 / 1
@@ -15,9 +15,9 @@ Generated Thu May 17 08:58:07 PDT 2018. FHIR version 3.4.0 for 3.0.1
 == n/a ==
 ERROR: ??: The reference http://www.fhir.org/guides/test3/StructureDefinition/template-blah could not be resolved
 ERROR: ??: The reference http://www.fhir.org/guides/test3/StructureDefinition/template-complex could not be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 728: The link 'Patient/example' for "Patient/example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 796: The link 'Encounter/example' for "Encounter/example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 907: The link 'Practitioner/practitioner-1' for "Practitioner/practitioner-1" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 703: The link 'Patient/example' for "Patient/example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 771: The link 'Encounter/example' for "Encounter/example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 882: The link 'Practitioner/practitioner-1' for "Practitioner/practitioner-1" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'full-ig.zip' for "Downloadable Copy" cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/obs.xml ==
 ERROR: Observation/example: Observation: Profile http://hl7.org/fhir/StructureDefinition/Observation, Element 'Observation.status': minimum required = 1, but only found 0
@@ -26,9 +26,11 @@ ERROR: Observation/example: Observation.subject: Unable to resolve resource 'Pat
 ERROR: Observation/example: Observation.context: Unable to resolve resource 'Encounter/example'
 ERROR: Observation/example: Observation.performer: Unable to resolve resource 'Practitioner/practitioner-1'
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client.xml ==
-ERROR: CapabilityStatement/client: CapabilityStatement.profile: Unable to resolve resource 'http://www.fhir.org/guides/test3/StructureDefinition/template-basic'
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement: Undefined element 'profile'
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server.xml ==
-ERROR: CapabilityStatement/server: CapabilityStatement.profile: Unable to resolve resource 'http://www.fhir.org/guides/test3/StructureDefinition/template-basic'
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement: Undefined element 'profile'
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/structuredefinition-template-basic2.xml ==
 ERROR: template-basic2: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/template-blah' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic2 differential Basic.extension (Simple_Extension)

@@ -2,6 +2,7 @@
 title: General Guidance and Definitions
 layout: default
 active: guidance
+f: http://build.fhir.org/
 ---
 
 {:.no_toc}
@@ -13,6 +14,8 @@ active: guidance
 
 ### [Introduction](#)
 {:.self-link}
+
+This is based on {{page.f}}index.html
 
 blah blah blah
 

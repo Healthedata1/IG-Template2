@@ -6,88 +6,79 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
   },
   "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
+  "version": "0.0.0",
   "name": "IG-Test3",
   "status": "draft",
-  "experimental": true,
   "publisher": "Health eData Inc",
-  "package": [
-    {
-      "id": "p1",
-      "name": "base",
-      "resource": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Observation-example.html"
-            }
-          ],
-          "example": true,
-          "sourceReference": {
-            "reference": "Observation/example"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureMap-Foo.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureMap/Foo"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-template-basic2.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/template-basic2"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-server.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CapabilityStatement/server"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-client.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CapabilityStatement/client"
-          }
-        }
-      ]
-    }
-  ],
-  "page": {
-    "source": "index.md",
-    "title": "IG-Test3 Homepage",
-    "kind": "page",
-    "page": [
+  "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
+  "fhirVersion": "3.4.0",
+  "definition": {
+    "resource": [
       {
-        "source": "_includes/toc.md",
-        "title": "IG-Test3 Table of Contents",
-        "kind": "page"
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-example.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureMap-Foo.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/Foo"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-basic2.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/template-basic2"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-server.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/server"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-client.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/client"
+        },
+        "exampleBoolean": false
       }
-    ]
+    ],
+    "page": {
+      "nameUrl": "index.md",
+      "title": "IG-Test3 Homepage",
+      "generation": "markdown"
+    }
   }
 }

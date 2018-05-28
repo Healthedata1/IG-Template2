@@ -1,10 +1,10 @@
 ﻿{
   "url" : "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
   "name" : "IG-Test3",
-  "date" : "Thu, 17 May, 2018 08:57:28 -0700",
-  "errs" : "22",
+  "date" : "Mon, 28 May, 2018 11:31:49 -0700",
+  "errs" : "26",
   "warnings" : "2",
   "hints" : "0",
-  "version" : "3.0.1",
+  "version" : "3.4.0",
   "tool" : "3.4.0-13690"
 }

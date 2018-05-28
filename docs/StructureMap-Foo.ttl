@@ -28,7 +28,10 @@
   ];
   fhir:StructureMap.structure [
      fhir:index 0;
-     fhir:StructureMap.structure.url [ fhir:value "http://www.fhir.org/guides/test3/StructureDefinition/LogicalModel" ];
+     fhir:StructureMap.structure.url [
+       fhir:value "http://www.fhir.org/guides/test3/StructureDefinition/LogicalModel";
+       fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/LogicalModel>
+     ];
      fhir:StructureMap.structure.mode [ fhir:value "source" ]
   ];
   fhir:StructureMap.group [

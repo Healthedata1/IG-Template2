@@ -6,66 +6,62 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>
   </text>
   <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
+  <version value="0.0.0"/>
   <name value="IG-Test3"/>
   <status value="draft"/>
-  <experimental value="true"/>
   <publisher value="Health eData Inc"/>
-  <package id="p1">
-    <name value="base"/>
+  <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
+  <fhirVersion value="3.4.0"/>
+  <definition>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Observation-example.html"/>
       </extension>
-      <example value="true"/>
-      <sourceReference>
+      <reference>
         <reference value="Observation/example"/>
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureMap-Foo.html"/>
       </extension>
-      <example value="false"/>
-      <sourceReference>
+      <reference>
         <reference value="StructureMap/Foo"/>
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-basic2.html"/>
       </extension>
-      <example value="false"/>
-      <sourceReference>
+      <reference>
         <reference value="StructureDefinition/template-basic2"/>
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-server.html"/>
       </extension>
-      <example value="false"/>
-      <sourceReference>
+      <reference>
         <reference value="CapabilityStatement/server"/>
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-client.html"/>
       </extension>
-      <example value="false"/>
-      <sourceReference>
+      <reference>
         <reference value="CapabilityStatement/client"/>
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
-  </package>
-  <page>
-    <source value="index.md"/>
-    <title value="IG-Test3 Homepage"/>
-    <kind value="page"/>
     <page>
-      <source value="_includes/toc.md"/>
-      <title value="IG-Test3 Table of Contents"/>
-      <kind value="page"/>
+      <nameUrl value="index.md"/>
+      <title value="IG-Test3 Homepage"/>
+      <generation value="markdown"/>
     </page>
-  </page>
+  </definition>
 </ImplementationGuide>
