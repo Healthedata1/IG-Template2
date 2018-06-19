@@ -3,65 +3,98 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>
   </text>
-  <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
+  <url value="http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig"/>
   <version value="0.0.0"/>
-  <name value="IG-Test3"/>
+  <name value="Argonaut Clinical Notes"/>
   <status value="draft"/>
-  <publisher value="Health eData Inc"/>
-  <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
-  <fhirVersion value="3.4.0"/>
-  <definition>
+  <experimental value="true"/>
+  <publisher value="Argonaut Project"/>
+  <fhirVersion value="3.0.1"/>
+  <package id="p1">
+    <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-example.html"/>
+        <valueUri value="ValueSet-dr-type.html"/>
       </extension>
-      <reference>
-        <reference value="Observation/example"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dr-type"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureMap-Foo.html"/>
+        <valueUri value="ValueSet-dr-category.html"/>
       </extension>
-      <reference>
-        <reference value="StructureMap/Foo"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dr-category"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-template-basic2.html"/>
+        <valueUri value="StructureDefinition-cn-plus-uscore.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/template-basic2"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/cn-plus-uscore"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-example-dr.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/example-dr"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-argo-clinicalnotes.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-clinicalnotes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-dr-category.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CodeSystem/dr-category"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-server.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CapabilityStatement/server"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-client.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CapabilityStatement/client"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
+  </package>
+  <page>
+    <source value="index.md"/>
+    <title value="Argonaut Clinical Notes Homepage"/>
+    <kind value="page"/>
     <page>
-      <nameUrl value="index.md"/>
-      <title value="IG-Test3 Homepage"/>
-      <generation value="markdown"/>
+      <source value="_includes/toc.md"/>
+      <title value="Argonaut Clinical Notes Table of Contents"/>
+      <kind value="page"/>
     </page>
-  </definition>
+  </page>
 </ImplementationGuide>

@@ -28,11 +28,13 @@ gen-examples,FALSE
 do-transforms,FALSE
 canonicalBase,http://www.fhir.org/guides/test3
 dependencyList.name,uscore
-dependencyList.location,http://hl7.org/fhir/us/core/1.0.1
+dependencyList.location,http://hl7.org/fhir/us/core
 dependencyList.source,dependencies/uscore-vp
+dependencyList.version,1.0.1
 special-urls,
 tool,jekyll
 logging,progress
 topofpage,TRUE
 allviews,TRUE
 mappings,TRUE
+npm-name,healthedatainc.igtemplate
