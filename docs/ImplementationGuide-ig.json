@@ -3,129 +3,96 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Clinical Notes</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG-Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
   },
-  "url": "http://fhir.org/guides/argonaut-clinicalnotes/ImplementationGuide/ig",
+  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
   "version": "0.0.0",
-  "name": "Argonaut Clinical Notes",
+  "name": "IG-Test3",
   "status": "draft",
-  "experimental": true,
-  "publisher": "Argonaut Project",
-  "fhirVersion": "3.0.1",
-  "package": [
-    {
-      "id": "p1",
-      "name": "base",
-      "resource": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-dr-type.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "ValueSet/dr-type"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-dr-category.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "ValueSet/dr-category"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-cn-plus-uscore.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/cn-plus-uscore"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-example-dr.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/example-dr"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-argo-clinicalnotes.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/argo-clinicalnotes"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CodeSystem-dr-category.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CodeSystem/dr-category"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-server.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CapabilityStatement/server"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "CapabilityStatement-client.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "CapabilityStatement/client"
-          }
-        }
-      ]
-    }
-  ],
-  "page": {
-    "source": "index.md",
-    "title": "Argonaut Clinical Notes Homepage",
-    "kind": "page",
-    "page": [
+  "publisher": "Health eData Inc",
+  "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
+  "packageId": "healthedatainc.igtemplate",
+  "license": "CC0-1.0",
+  "fhirVersion": "3.4.0",
+  "definition": {
+    "resource": [
       {
-        "source": "_includes/toc.md",
-        "title": "Argonaut Clinical Notes Table of Contents",
-        "kind": "page"
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-example.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-basic.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/template-basic"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-complex.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-complex"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-blah.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-blah"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-server.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/server"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-client.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/client"
+        },
+        "exampleBoolean": false
       }
-    ]
+    ],
+    "page": {
+      "nameUrl": "index.md",
+      "title": "IG-Test3 Homepage",
+      "generation": "markdown"
+    }
   }
 }
