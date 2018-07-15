@@ -614,9 +614,12 @@
          fhir:ElementDefinition.type.code [ fhir:value "TriggerDefinition" ]
        ], [
          fhir:index 46;
-         fhir:ElementDefinition.type.code [ fhir:value "UsageContext" ]
+         fhir:ElementDefinition.type.code [ fhir:value "Expression" ]
        ], [
          fhir:index 47;
+         fhir:ElementDefinition.type.code [ fhir:value "UsageContext" ]
+       ], [
+         fhir:index 48;
          fhir:ElementDefinition.type.code [ fhir:value "Dosage" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];

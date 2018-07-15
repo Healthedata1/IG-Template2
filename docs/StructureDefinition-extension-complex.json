@@ -622,6 +622,9 @@
             "code": "TriggerDefinition"
           },
           {
+            "code": "Expression"
+          },
+          {
             "code": "UsageContext"
           },
           {

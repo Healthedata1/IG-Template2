@@ -534,6 +534,9 @@
         <code value="TriggerDefinition"/>
       </type>
       <type>
+        <code value="Expression"/>
+      </type>
+      <type>
         <code value="UsageContext"/>
       </type>
       <type>
