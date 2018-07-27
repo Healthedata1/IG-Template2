@@ -15,14 +15,29 @@
   <license value="CC0-1.0"/>
   <fhirVersion value="3.4.0"/>
   <definition>
+    <package id="patient-on-usprofile-spreadsheet.xml">
+      <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"/>
+    </package>
+    <package id="template-profile-spreadsheet.xml">
+      <name value="Template-basic"/>
+    </package>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-example.html"/>
+        <valueUri value="Patient-example.html"/>
       </extension>
       <reference>
-        <reference value="Observation/example"/>
+        <reference value="Patient/example"/>
       </reference>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-blah-codes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/blah-codes"/>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -35,19 +50,19 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-complex.html"/>
+        <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/extension-complex"/>
+        <reference value="StructureDefinition/template-profile-on-profile"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-blah.html"/>
+        <valueUri value="CodeSystem-blah-codes.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/extension-blah"/>
+        <reference value="CodeSystem/blah-codes"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -68,6 +83,46 @@
         <reference value="CapabilityStatement/client"/>
       </reference>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/template-profile-on-profile"/>
+      </reference>
+      <name value="Template-Profile-on-Profile"/>
+      <package value="patient-on-usprofile-spreadsheet.xml"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-blah.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-blah"/>
+      </reference>
+      <name value="Example Extension"/>
+      <package value="template-profile-spreadsheet.xml"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-complex.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-complex"/>
+      </reference>
+      <name value="Complex Extension"/>
+      <package value="template-profile-spreadsheet.xml"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-basic.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/template-basic"/>
+      </reference>
+      <name value="Template-basic"/>
+      <package value="template-profile-spreadsheet.xml"/>
     </resource>
     <page>
       <nameUrl value="index.md"/>

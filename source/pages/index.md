@@ -1,5 +1,5 @@
 ---
-title: Test IG HomePage
+title: Home Page
 layout: default
 active: home
 ---

@@ -1,31 +1,28 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 12, errors = 23, warn = 23, info = 0 -->
+<!-- broken links = 88, errors = 11, warn = 29, info = 2 -->
 <head>
   <title>IG-Test3 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IG-Test3</h1>
- <p>Generated Sun Jul 15 08:24:35 PDT 2018. FHIR version 3.4.0 for 3.4.0</p>
+ <p>Generated Fri Jul 27 10:10:43 PDT 2018. FHIR version 3.4.0 for 3.4.0</p>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>12</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>88</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_examples_obs"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/examples/obs</b></a></td><td><b>5</b></td><td><b>0</b></td>
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_examples_patient-example"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example</b></a></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_StructureDefinition-extension-blah"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-extension-blah</b></a></td><td><b>2</b></td><td><b>4</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_CodeSystem-blah-codes"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_StructureDefinition-extension-complex"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-extension-complex</b></a></td><td><b>2</b></td><td><b>11</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_StructureDefinition-template-basic"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-template-basic</b></a></td><td><b>6</b></td><td><b>8</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_ValueSet-blah-codes"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_capabilitystatement-client"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client</b></a></td><td><b>4</b></td><td><b>0</b></td>
@@ -36,6 +33,12 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_ig"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_patient-on-usprofile-spreadsheet"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet</b></a></td><td><b>1</b></td><td><b>5</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_template-profile-spreadsheet"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/template-profile-spreadsheet</b></a></td><td><b>0</b></td><td><b>24</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
@@ -45,186 +48,304 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#c7d10335-ed1f-4beb-a76e-cd1bf568bc6a">/Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 703</a></b></td><td><b>error</b></td><td><b>The link 'Patient-example.html' for &quot;Patient/example&quot; cannot be resolved</b></td>
+     <td><b>Patient.contact.relationship</b></td><td><b>error</b></td><td><b>The reference http://hl7.org/fhir/ValueSet/v2-0131 could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#9677f3ab-d310-4c20-93d4-9afc9e3bc9f6">/Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 776</a></b></td><td><b>error</b></td><td><b>The link 'Encounter/example' for &quot;Encounter/example&quot; cannot be resolved</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#c737af93-1dc8-47a5-8321-c1e1c9531b63">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 408, column 1936</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex' for &quot;http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#5d064d9c-351f-4265-bb86-88ffa583b7a7">/Users/ehaas/Documents/FHIR/IG-Template2/docs/Observation-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 260, column 887</a></b></td><td><b>error</b></td><td><b>The link 'Practitioner-practitioner-1.html' for &quot;Practitioner/practitioner-1&quot; cannot be resolved</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#2eb8d6ff-4010-40ba-b0e8-072d30d4abe3">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 440, column 1716</a></b></td><td><b>error</b></td><td><b>The link 'v2-0131.html' for &quot;v2-0131&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#8ac6052e-abc5-4e93-8010-41c4999e903a">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 214, column 8</a></b></td><td><b>error</b></td><td><b>The link '../output/package.tgz' for &quot;Package&quot; cannot be resolved</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#963d26d1-668e-4951-894e-b660dd2c9662">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 451, column 2113</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/us/core/ValueSet/simple-language' for &quot;http://hl7.org/fhir/us/core/ValueSet/simple-language&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#1a942f88-cee9-4fff-b49c-aedf5e78b2f0">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 228, column 8</a></b></td><td><b>error</b></td><td><b>The link '../output/examples.xml.zip' for &quot;XML&quot; cannot be resolved</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#4b4c21ac-a703-41d6-a78f-56bda045a824">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 487, column 413</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#46ee55e8-2876-4234-9179-1ac15eae23aa">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 229, column 8</a></b></td><td><b>error</b></td><td><b>The link '../output/examples.json.zip' for &quot;JSON&quot; cannot be resolved</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#98326038-a8db-48c5-88c7-043355020a7e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 501, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.extension.valueCode' for &quot;valueCode&quot; cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Patient.name, Patient.implicitRules, Patient.managingOrganization, Patient.name.use, Patient.identifier.period, tabs-summ, tbl-summ, Patient.active, Patient.identifier.value, segment-footer, Patient.photo, Patient.name.family, Patient.modifierExtension, Patient.identifier.id, Patient.communication.id, Patient.link.id, segment-header, profile, all-tbl-summ, Patient.identifier.assigner, all-json-inner, Patient.id, examples, Patient.name.period, tabs-all, back-to-top, tbl-diff-inner, Patient.birthDate, Patient.contact.name, Patient.identifier.type, Patient.name.suffix, Patient.identifier.system, Patient.address, Patient.deceased_x_, tabs, segment-post-footer, Patient.contact.organization, Patient.name.prefix, json-inner, search, Patient.identifier.use, Patient.communication.preferred, tbl-snap, Patient.contact.period, Patient.extension, Patient.gender, Patient.maritalStatus, Patient.telecom, Patient.text, all-tbl-diff-inner, mandatory-data-elements-and-terminology, Patient.link.extension, all-tbl-diff, Patient.link.other, Patient.name.text, Patient.contact.id, Patient.contact.modifierExtension, Patient.link, stripe, Patient.contact.extension, Patient.meta, Patient.multipleBirth_x_, all-tbl-snap-inner, Patient.identifier, tabs-diff, tbl-diff, Patient.contact.relationship, all-tbl-summ-inner, Patient.contact.gender, Patient.contained, tabs-json, segment-navbar, Patient.link.modifierExtension, Patient.generalPractitioner, Patient.communication.extension, all-tbl-snap, Patient.communication.modifierExtension, downloads, Patient.contact.telecom, Patient.contact, Patient.communication.language, json, tabs-snap, introduction, summary, Patient.communication, scope-and-usage, Patient, Patient.name.id, Patient.link.type, all-tbl-diff2-inner, Patient.language, Patient.contact.address, project-status, Patient.name.given, all-json])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#c5cc0a78-aecb-44a3-bd43-a64ba871a38a">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 237, column 8</a></b></td><td><b>error</b></td><td><b>The link 'full-ig.zip' for &quot;Downloadable Copy&quot; cannot be resolved</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#0582738d-ec46-49d5-8b20-92d4d06befa9">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 501, column 503</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#bf00e078-7dcc-4602-b1d4-7d8a2dc9c2c3">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 245, column 8</a></b></td><td><b>error</b></td><td><b>The link 'registry.fhir.org.zip' for &quot;Registry Source file&quot; cannot be resolved</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#dbd6a52e-e442-4355-be10-460895192b8d">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 507, column 450</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;usual | official | temp | secondary (If known)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#67438706-ab58-46dd-b731-46266fed9f5e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 455, column 398</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#90983306-ad5b-40ec-9264-4a0744d9e43d">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 508, column 490</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Description of identifier&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#7b555f02-8f58-4d6f-96e8-fcb3bab188e8">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 461, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-basic.html#Basic.extension.valueCode' for &quot;valueCode&quot; cannot be resolved (valid targets: [page-content-wrapper, mandatory-data-elements-and-terminology, tbl-snap-inner, Basic.implicitRules, Basic.id, all-tbl-diff, tabs-summ, tbl-summ, stripe, segment-footer, Basic.modifierExtension, all-tbl-snap-inner, segment-header, Basic.created, profile, tabs-diff, all-tbl-summ, tbl-diff, Basic.extension, all-json-inner, Basic.text, all-tbl-summ-inner, examples, tabs-json, tabs-all, back-to-top, tbl-diff-inner, segment-navbar, Basic, Basic.subject, tabs, Basic.author, segment-post-footer, Basic.language, json-inner, all-tbl-snap, search, Basic.code, downloads, json, tabs-snap, introduction, tbl-snap, summary, scope-and-usage, Basic.contained, all-tbl-diff2-inner, Basic.identifier, Basic.meta, all-tbl-diff-inner, project-status, all-json])</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#1f1c0846-581c-4502-8594-24fd280d7282">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 518, column 450</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;usual | official | temp | nickname | anonymous | old | maiden&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#295809cf-3d37-487f-906a-b68f50516cc7">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 584, column 398</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#bda37cda-c41b-4a8b-9a0d-35f5e63f6e5e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 527, column 589</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;male | female | other | unknown&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#75bfa818-71fe-433d-baa1-ebd5e129c481">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 590, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-basic.html#Basic.extension.valueCode' for &quot;valueCode&quot; cannot be resolved (valid targets: [page-content-wrapper, mandatory-data-elements-and-terminology, tbl-snap-inner, Basic.implicitRules, Basic.id, all-tbl-diff, tabs-summ, tbl-summ, stripe, segment-footer, Basic.modifierExtension, all-tbl-snap-inner, segment-header, Basic.created, profile, tabs-diff, all-tbl-summ, tbl-diff, Basic.extension, all-json-inner, Basic.text, all-tbl-summ-inner, examples, tabs-json, tabs-all, back-to-top, tbl-diff-inner, segment-navbar, Basic, Basic.subject, tabs, Basic.author, segment-post-footer, Basic.language, json-inner, all-tbl-snap, search, Basic.code, downloads, json, tabs-snap, introduction, tbl-snap, summary, scope-and-usage, Basic.contained, all-tbl-diff2-inner, Basic.identifier, Basic.meta, all-tbl-diff-inner, project-status, all-json])</b></td>
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#98326038-a8db-48c5-88c7-043355020a7e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 530, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.deceasedBoolean' for &quot;deceasedBoolean&quot; cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Patient.name, Patient.implicitRules, Patient.managingOrganization, Patient.name.use, Patient.identifier.period, tabs-summ, tbl-summ, Patient.active, Patient.identifier.value, segment-footer, Patient.photo, Patient.name.family, Patient.modifierExtension, Patient.identifier.id, Patient.communication.id, Patient.link.id, segment-header, profile, all-tbl-summ, Patient.identifier.assigner, all-json-inner, Patient.id, examples, Patient.name.period, tabs-all, back-to-top, tbl-diff-inner, Patient.birthDate, Patient.contact.name, Patient.identifier.type, Patient.name.suffix, Patient.identifier.system, Patient.address, Patient.deceased_x_, tabs, segment-post-footer, Patient.contact.organization, Patient.name.prefix, json-inner, search, Patient.identifier.use, Patient.communication.preferred, tbl-snap, Patient.contact.period, Patient.extension, Patient.gender, Patient.maritalStatus, Patient.telecom, Patient.text, all-tbl-diff-inner, mandatory-data-elements-and-terminology, Patient.link.extension, all-tbl-diff, Patient.link.other, Patient.name.text, Patient.contact.id, Patient.contact.modifierExtension, Patient.link, stripe, Patient.contact.extension, Patient.meta, Patient.multipleBirth_x_, all-tbl-snap-inner, Patient.identifier, tabs-diff, tbl-diff, Patient.contact.relationship, all-tbl-summ-inner, Patient.contact.gender, Patient.contained, tabs-json, segment-navbar, Patient.link.modifierExtension, Patient.generalPractitioner, Patient.communication.extension, all-tbl-snap, Patient.communication.modifierExtension, downloads, Patient.contact.telecom, Patient.contact, Patient.communication.language, json, tabs-snap, introduction, summary, Patient.communication, scope-and-usage, Patient, Patient.name.id, Patient.link.type, all-tbl-diff2-inner, Patient.language, Patient.contact.address, project-status, Patient.name.given, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#98326038-a8db-48c5-88c7-043355020a7e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 531, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.deceasedDateTime' for &quot;deceasedDateTime&quot; cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Patient.name, Patient.implicitRules, Patient.managingOrganization, Patient.name.use, Patient.identifier.period, tabs-summ, tbl-summ, Patient.active, Patient.identifier.value, segment-footer, Patient.photo, Patient.name.family, Patient.modifierExtension, Patient.identifier.id, Patient.communication.id, Patient.link.id, segment-header, profile, all-tbl-summ, Patient.identifier.assigner, all-json-inner, Patient.id, examples, Patient.name.period, tabs-all, back-to-top, tbl-diff-inner, Patient.birthDate, Patient.contact.name, Patient.identifier.type, Patient.name.suffix, Patient.identifier.system, Patient.address, Patient.deceased_x_, tabs, segment-post-footer, Patient.contact.organization, Patient.name.prefix, json-inner, search, Patient.identifier.use, Patient.communication.preferred, tbl-snap, Patient.contact.period, Patient.extension, Patient.gender, Patient.maritalStatus, Patient.telecom, Patient.text, all-tbl-diff-inner, mandatory-data-elements-and-terminology, Patient.link.extension, all-tbl-diff, Patient.link.other, Patient.name.text, Patient.contact.id, Patient.contact.modifierExtension, Patient.link, stripe, Patient.contact.extension, Patient.meta, Patient.multipleBirth_x_, all-tbl-snap-inner, Patient.identifier, tabs-diff, tbl-diff, Patient.contact.relationship, all-tbl-summ-inner, Patient.contact.gender, Patient.contained, tabs-json, segment-navbar, Patient.link.modifierExtension, Patient.generalPractitioner, Patient.communication.extension, all-tbl-snap, Patient.communication.modifierExtension, downloads, Patient.contact.telecom, Patient.contact, Patient.communication.language, json, tabs-snap, introduction, summary, Patient.communication, scope-and-usage, Patient, Patient.name.id, Patient.link.type, all-tbl-diff2-inner, Patient.language, Patient.contact.address, project-status, Patient.name.given, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#41f38c0c-ee83-464e-819b-17db6ebf5368">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 533, column 453</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Marital (civil) status of a patient&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#98326038-a8db-48c5-88c7-043355020a7e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 535, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.multipleBirthBoolean' for &quot;multipleBirthBoolean&quot; cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Patient.name, Patient.implicitRules, Patient.managingOrganization, Patient.name.use, Patient.identifier.period, tabs-summ, tbl-summ, Patient.active, Patient.identifier.value, segment-footer, Patient.photo, Patient.name.family, Patient.modifierExtension, Patient.identifier.id, Patient.communication.id, Patient.link.id, segment-header, profile, all-tbl-summ, Patient.identifier.assigner, all-json-inner, Patient.id, examples, Patient.name.period, tabs-all, back-to-top, tbl-diff-inner, Patient.birthDate, Patient.contact.name, Patient.identifier.type, Patient.name.suffix, Patient.identifier.system, Patient.address, Patient.deceased_x_, tabs, segment-post-footer, Patient.contact.organization, Patient.name.prefix, json-inner, search, Patient.identifier.use, Patient.communication.preferred, tbl-snap, Patient.contact.period, Patient.extension, Patient.gender, Patient.maritalStatus, Patient.telecom, Patient.text, all-tbl-diff-inner, mandatory-data-elements-and-terminology, Patient.link.extension, all-tbl-diff, Patient.link.other, Patient.name.text, Patient.contact.id, Patient.contact.modifierExtension, Patient.link, stripe, Patient.contact.extension, Patient.meta, Patient.multipleBirth_x_, all-tbl-snap-inner, Patient.identifier, tabs-diff, tbl-diff, Patient.contact.relationship, all-tbl-summ-inner, Patient.contact.gender, Patient.contained, tabs-json, segment-navbar, Patient.link.modifierExtension, Patient.generalPractitioner, Patient.communication.extension, all-tbl-snap, Patient.communication.modifierExtension, downloads, Patient.contact.telecom, Patient.contact, Patient.communication.language, json, tabs-snap, introduction, summary, Patient.communication, scope-and-usage, Patient, Patient.name.id, Patient.link.type, all-tbl-diff2-inner, Patient.language, Patient.contact.address, project-status, Patient.name.given, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#98326038-a8db-48c5-88c7-043355020a7e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 536, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.multipleBirthInteger' for &quot;multipleBirthInteger&quot; cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Patient.name, Patient.implicitRules, Patient.managingOrganization, Patient.name.use, Patient.identifier.period, tabs-summ, tbl-summ, Patient.active, Patient.identifier.value, segment-footer, Patient.photo, Patient.name.family, Patient.modifierExtension, Patient.identifier.id, Patient.communication.id, Patient.link.id, segment-header, profile, all-tbl-summ, Patient.identifier.assigner, all-json-inner, Patient.id, examples, Patient.name.period, tabs-all, back-to-top, tbl-diff-inner, Patient.birthDate, Patient.contact.name, Patient.identifier.type, Patient.name.suffix, Patient.identifier.system, Patient.address, Patient.deceased_x_, tabs, segment-post-footer, Patient.contact.organization, Patient.name.prefix, json-inner, search, Patient.identifier.use, Patient.communication.preferred, tbl-snap, Patient.contact.period, Patient.extension, Patient.gender, Patient.maritalStatus, Patient.telecom, Patient.text, all-tbl-diff-inner, mandatory-data-elements-and-terminology, Patient.link.extension, all-tbl-diff, Patient.link.other, Patient.name.text, Patient.contact.id, Patient.contact.modifierExtension, Patient.link, stripe, Patient.contact.extension, Patient.meta, Patient.multipleBirth_x_, all-tbl-snap-inner, Patient.identifier, tabs-diff, tbl-diff, Patient.contact.relationship, all-tbl-summ-inner, Patient.contact.gender, Patient.contained, tabs-json, segment-navbar, Patient.link.modifierExtension, Patient.generalPractitioner, Patient.communication.extension, all-tbl-snap, Patient.communication.modifierExtension, downloads, Patient.contact.telecom, Patient.contact, Patient.communication.language, json, tabs-snap, introduction, summary, Patient.communication, scope-and-usage, Patient, Patient.name.id, Patient.link.type, all-tbl-diff2-inner, Patient.language, Patient.contact.address, project-status, Patient.name.given, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#649f3a53-2b8c-462f-9686-e57f3c202ff6">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 545, column 496</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;male | female | other | unknown&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#ff699847-36d9-4213-8d8d-12f8fdac1852">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 552, column 775</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;The language which can be used to communicate with the patient about his or her health&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#840cc29e-5ee2-4c09-a309-48c9df0bfd22">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 561, column 514</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;replaced-by | replaces | refer | seealso - type of link&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#60a59141-3a59-4269-86ca-0893cc37c01e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 626, column 1936</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex' for &quot;http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#951e9fac-a062-4d83-b2f9-86fd9b1299f6">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 658, column 1716</a></b></td><td><b>error</b></td><td><b>The link 'v2-0131.html' for &quot;v2-0131&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#f021bef2-9966-4a0f-a989-1caa3f66b0bc">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 669, column 2113</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/us/core/ValueSet/simple-language' for &quot;http://hl7.org/fhir/us/core/ValueSet/simple-language&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#5f0b662e-62a0-4bd6-8964-4bed6d3189ca">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 703, column 413</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#636ff540-d347-43ac-9495-d1364b9f84b7">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 717, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.extension.valueCode' for &quot;valueCode&quot; cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Patient.name, Patient.implicitRules, Patient.managingOrganization, Patient.name.use, Patient.identifier.period, tabs-summ, tbl-summ, Patient.active, Patient.identifier.value, segment-footer, Patient.photo, Patient.name.family, Patient.modifierExtension, Patient.identifier.id, Patient.communication.id, Patient.link.id, segment-header, profile, all-tbl-summ, Patient.identifier.assigner, all-json-inner, Patient.id, examples, Patient.name.period, tabs-all, back-to-top, tbl-diff-inner, Patient.birthDate, Patient.contact.name, Patient.identifier.type, Patient.name.suffix, Patient.identifier.system, Patient.address, Patient.deceased_x_, tabs, segment-post-footer, Patient.contact.organization, Patient.name.prefix, json-inner, search, Patient.identifier.use, Patient.communication.preferred, tbl-snap, Patient.contact.period, Patient.extension, Patient.gender, Patient.maritalStatus, Patient.telecom, Patient.text, all-tbl-diff-inner, mandatory-data-elements-and-terminology, Patient.link.extension, all-tbl-diff, Patient.link.other, Patient.name.text, Patient.contact.id, Patient.contact.modifierExtension, Patient.link, stripe, Patient.contact.extension, Patient.meta, Patient.multipleBirth_x_, all-tbl-snap-inner, Patient.identifier, tabs-diff, tbl-diff, Patient.contact.relationship, all-tbl-summ-inner, Patient.contact.gender, Patient.contained, tabs-json, segment-navbar, Patient.link.modifierExtension, Patient.generalPractitioner, Patient.communication.extension, all-tbl-snap, Patient.communication.modifierExtension, downloads, Patient.contact.telecom, Patient.contact, Patient.communication.language, json, tabs-snap, introduction, summary, Patient.communication, scope-and-usage, Patient, Patient.name.id, Patient.link.type, all-tbl-diff2-inner, Patient.language, Patient.contact.address, project-status, Patient.name.given, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#3dd90b9d-a3c3-4626-a788-73127159bf5b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 717, column 503</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#498b8ca4-f0f4-4539-ab5b-b6bb7ea5a293">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 723, column 450</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;usual | official | temp | secondary (If known)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#42237a13-4f61-456f-8fec-7643d172e24e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 724, column 490</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Description of identifier&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#b02cd6fe-7de9-428a-8d94-99da700bb8ae">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 734, column 450</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;usual | official | temp | nickname | anonymous | old | maiden&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#e5b0156c-0870-4cb3-80c9-e3e76bd75f1a">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 743, column 589</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;male | female | other | unknown&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#636ff540-d347-43ac-9495-d1364b9f84b7">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 746, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.deceasedBoolean' for &quot;deceasedBoolean&quot; cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Patient.name, Patient.implicitRules, Patient.managingOrganization, Patient.name.use, Patient.identifier.period, tabs-summ, tbl-summ, Patient.active, Patient.identifier.value, segment-footer, Patient.photo, Patient.name.family, Patient.modifierExtension, Patient.identifier.id, Patient.communication.id, Patient.link.id, segment-header, profile, all-tbl-summ, Patient.identifier.assigner, all-json-inner, Patient.id, examples, Patient.name.period, tabs-all, back-to-top, tbl-diff-inner, Patient.birthDate, Patient.contact.name, Patient.identifier.type, Patient.name.suffix, Patient.identifier.system, Patient.address, Patient.deceased_x_, tabs, segment-post-footer, Patient.contact.organization, Patient.name.prefix, json-inner, search, Patient.identifier.use, Patient.communication.preferred, tbl-snap, Patient.contact.period, Patient.extension, Patient.gender, Patient.maritalStatus, Patient.telecom, Patient.text, all-tbl-diff-inner, mandatory-data-elements-and-terminology, Patient.link.extension, all-tbl-diff, Patient.link.other, Patient.name.text, Patient.contact.id, Patient.contact.modifierExtension, Patient.link, stripe, Patient.contact.extension, Patient.meta, Patient.multipleBirth_x_, all-tbl-snap-inner, Patient.identifier, tabs-diff, tbl-diff, Patient.contact.relationship, all-tbl-summ-inner, Patient.contact.gender, Patient.contained, tabs-json, segment-navbar, Patient.link.modifierExtension, Patient.generalPractitioner, Patient.communication.extension, all-tbl-snap, Patient.communication.modifierExtension, downloads, Patient.contact.telecom, Patient.contact, Patient.communication.language, json, tabs-snap, introduction, summary, Patient.communication, scope-and-usage, Patient, Patient.name.id, Patient.link.type, all-tbl-diff2-inner, Patient.language, Patient.contact.address, project-status, Patient.name.given, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#636ff540-d347-43ac-9495-d1364b9f84b7">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 747, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.deceasedDateTime' for &quot;deceasedDateTime&quot; cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Patient.name, Patient.implicitRules, Patient.managingOrganization, Patient.name.use, Patient.identifier.period, tabs-summ, tbl-summ, Patient.active, Patient.identifier.value, segment-footer, Patient.photo, Patient.name.family, Patient.modifierExtension, Patient.identifier.id, Patient.communication.id, Patient.link.id, segment-header, profile, all-tbl-summ, Patient.identifier.assigner, all-json-inner, Patient.id, examples, Patient.name.period, tabs-all, back-to-top, tbl-diff-inner, Patient.birthDate, Patient.contact.name, Patient.identifier.type, Patient.name.suffix, Patient.identifier.system, Patient.address, Patient.deceased_x_, tabs, segment-post-footer, Patient.contact.organization, Patient.name.prefix, json-inner, search, Patient.identifier.use, Patient.communication.preferred, tbl-snap, Patient.contact.period, Patient.extension, Patient.gender, Patient.maritalStatus, Patient.telecom, Patient.text, all-tbl-diff-inner, mandatory-data-elements-and-terminology, Patient.link.extension, all-tbl-diff, Patient.link.other, Patient.name.text, Patient.contact.id, Patient.contact.modifierExtension, Patient.link, stripe, Patient.contact.extension, Patient.meta, Patient.multipleBirth_x_, all-tbl-snap-inner, Patient.identifier, tabs-diff, tbl-diff, Patient.contact.relationship, all-tbl-summ-inner, Patient.contact.gender, Patient.contained, tabs-json, segment-navbar, Patient.link.modifierExtension, Patient.generalPractitioner, Patient.communication.extension, all-tbl-snap, Patient.communication.modifierExtension, downloads, Patient.contact.telecom, Patient.contact, Patient.communication.language, json, tabs-snap, introduction, summary, Patient.communication, scope-and-usage, Patient, Patient.name.id, Patient.link.type, all-tbl-diff2-inner, Patient.language, Patient.contact.address, project-status, Patient.name.given, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#70c6a65f-45ad-44f4-b5c2-2192db5e5442">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 749, column 453</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Marital (civil) status of a patient&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#636ff540-d347-43ac-9495-d1364b9f84b7">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 751, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.multipleBirthBoolean' for &quot;multipleBirthBoolean&quot; cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Patient.name, Patient.implicitRules, Patient.managingOrganization, Patient.name.use, Patient.identifier.period, tabs-summ, tbl-summ, Patient.active, Patient.identifier.value, segment-footer, Patient.photo, Patient.name.family, Patient.modifierExtension, Patient.identifier.id, Patient.communication.id, Patient.link.id, segment-header, profile, all-tbl-summ, Patient.identifier.assigner, all-json-inner, Patient.id, examples, Patient.name.period, tabs-all, back-to-top, tbl-diff-inner, Patient.birthDate, Patient.contact.name, Patient.identifier.type, Patient.name.suffix, Patient.identifier.system, Patient.address, Patient.deceased_x_, tabs, segment-post-footer, Patient.contact.organization, Patient.name.prefix, json-inner, search, Patient.identifier.use, Patient.communication.preferred, tbl-snap, Patient.contact.period, Patient.extension, Patient.gender, Patient.maritalStatus, Patient.telecom, Patient.text, all-tbl-diff-inner, mandatory-data-elements-and-terminology, Patient.link.extension, all-tbl-diff, Patient.link.other, Patient.name.text, Patient.contact.id, Patient.contact.modifierExtension, Patient.link, stripe, Patient.contact.extension, Patient.meta, Patient.multipleBirth_x_, all-tbl-snap-inner, Patient.identifier, tabs-diff, tbl-diff, Patient.contact.relationship, all-tbl-summ-inner, Patient.contact.gender, Patient.contained, tabs-json, segment-navbar, Patient.link.modifierExtension, Patient.generalPractitioner, Patient.communication.extension, all-tbl-snap, Patient.communication.modifierExtension, downloads, Patient.contact.telecom, Patient.contact, Patient.communication.language, json, tabs-snap, introduction, summary, Patient.communication, scope-and-usage, Patient, Patient.name.id, Patient.link.type, all-tbl-diff2-inner, Patient.language, Patient.contact.address, project-status, Patient.name.given, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#636ff540-d347-43ac-9495-d1364b9f84b7">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 752, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.multipleBirthInteger' for &quot;multipleBirthInteger&quot; cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Patient.name, Patient.implicitRules, Patient.managingOrganization, Patient.name.use, Patient.identifier.period, tabs-summ, tbl-summ, Patient.active, Patient.identifier.value, segment-footer, Patient.photo, Patient.name.family, Patient.modifierExtension, Patient.identifier.id, Patient.communication.id, Patient.link.id, segment-header, profile, all-tbl-summ, Patient.identifier.assigner, all-json-inner, Patient.id, examples, Patient.name.period, tabs-all, back-to-top, tbl-diff-inner, Patient.birthDate, Patient.contact.name, Patient.identifier.type, Patient.name.suffix, Patient.identifier.system, Patient.address, Patient.deceased_x_, tabs, segment-post-footer, Patient.contact.organization, Patient.name.prefix, json-inner, search, Patient.identifier.use, Patient.communication.preferred, tbl-snap, Patient.contact.period, Patient.extension, Patient.gender, Patient.maritalStatus, Patient.telecom, Patient.text, all-tbl-diff-inner, mandatory-data-elements-and-terminology, Patient.link.extension, all-tbl-diff, Patient.link.other, Patient.name.text, Patient.contact.id, Patient.contact.modifierExtension, Patient.link, stripe, Patient.contact.extension, Patient.meta, Patient.multipleBirth_x_, all-tbl-snap-inner, Patient.identifier, tabs-diff, tbl-diff, Patient.contact.relationship, all-tbl-summ-inner, Patient.contact.gender, Patient.contained, tabs-json, segment-navbar, Patient.link.modifierExtension, Patient.generalPractitioner, Patient.communication.extension, all-tbl-snap, Patient.communication.modifierExtension, downloads, Patient.contact.telecom, Patient.contact, Patient.communication.language, json, tabs-snap, introduction, summary, Patient.communication, scope-and-usage, Patient, Patient.name.id, Patient.link.type, all-tbl-diff2-inner, Patient.language, Patient.contact.address, project-status, Patient.name.given, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#17895de5-9e19-4c82-898c-cb7bac8ffbe1">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 761, column 496</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;male | female | other | unknown&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#d457eb30-95d3-4781-b52e-07b8aa96a7da">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 768, column 775</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;The language which can be used to communicate with the patient about his or her health&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#9fec4f1b-f9d3-4fff-a985-5727eb0f0c77">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 777, column 514</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;replaced-by | replaces | refer | seealso - type of link&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#48b2b5db-d2ab-47a7-a885-789d7e9a968b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 398, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html#Extension.id' for &quot;id&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#48b2b5db-d2ab-47a7-a885-789d7e9a968b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 401, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html#Extension.url' for &quot;url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#48b2b5db-d2ab-47a7-a885-789d7e9a968b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 402, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html#Extension.valueCode' for &quot;valueCode&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#5c6a8530-3f71-437e-a094-32df37e954c6">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 402, column 478</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#48f29e62-33ca-4e57-8a4a-415b03dc448e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 459, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html#Extension.id' for &quot;id&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#48f29e62-33ca-4e57-8a4a-415b03dc448e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 462, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html#Extension.url' for &quot;url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#48f29e62-33ca-4e57-8a4a-415b03dc448e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 463, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html#Extension.valueCode' for &quot;valueCode&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#ade265db-992d-4c66-9ede-4fe9a2086ba6">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 463, column 478</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#3f446496-f198-4089-bd28-f0760e38f90b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 214, column 8</a></b></td><td><b>error</b></td><td><b>The link '../output/package.tgz' for &quot;Package&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#0c7176b9-2417-4edd-a62e-90f53743c4bb">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 228, column 8</a></b></td><td><b>error</b></td><td><b>The link '../output/examples.xml.zip' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#a98feae9-ffe6-45fa-9d15-c977e484d91e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 229, column 8</a></b></td><td><b>error</b></td><td><b>The link '../output/examples.json.zip' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#e4716a85-27d3-4eda-9af9-c0fd2c9fde0c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 237, column 8</a></b></td><td><b>error</b></td><td><b>The link 'full-ig.zip' for &quot;Downloadable Copy&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#16eb17ff-1933-48af-a720-b91fcf53bb7e">/Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 245, column 8</a></b></td><td><b>error</b></td><td><b>The link 'registry.fhir.org.zip' for &quot;Registry Source file&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html#e9c6c2b7-3697-41ed-ae09-8640e1c576dd">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/span/b/a at Line 312, column 142</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html' for &quot;[CanonicalType[http://www.fhir.org/guides/test3/StructureDefinition/extension-blah]]&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html#644cdca6-1102-491a-a9e7-aaf632b21c7b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/span/b/a at Line 319, column 143</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html' for &quot;[CanonicalType[http://www.fhir.org/guides/test3/StructureDefinition/extension-complex]]&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#2c8b52bf-5362-4a26-94e8-f30abd3f939c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 411, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html#Extension.id' for &quot;id&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#2c8b52bf-5362-4a26-94e8-f30abd3f939c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 415, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html#Extension.extension.valueCode' for &quot;valueCode&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#afcaacb0-fa28-4dc0-a774-7d2727a04cfb">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 415, column 495</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#2c8b52bf-5362-4a26-94e8-f30abd3f939c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 419, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html#Extension.extension.valueString' for &quot;valueString&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#2c8b52bf-5362-4a26-94e8-f30abd3f939c">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 422, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html#Extension.url' for &quot;url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#7128b51e-05f0-4ab5-b9ae-2c36f2d04646">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 492, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html#Extension.id' for &quot;id&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#7128b51e-05f0-4ab5-b9ae-2c36f2d04646">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 496, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html#Extension.extension.valueCode' for &quot;valueCode&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#805ccb83-acb9-45e2-90df-6feb5e8f6085">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 496, column 495</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#7128b51e-05f0-4ab5-b9ae-2c36f2d04646">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 500, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html#Extension.extension.valueString' for &quot;valueString&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#7128b51e-05f0-4ab5-b9ae-2c36f2d04646">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 503, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html#Extension.url' for &quot;url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#72a2e259-5934-4501-8fca-0e1e3a1814c2">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/ul/li/a at Line 381, column 7</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#a9d070cf-b394-4c11-bb4d-fcdf16cc9f7a">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/ul/li/a at Line 382, column 7</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-complex&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#c5e0d4ff-e567-4f95-9e28-0e5ad47874bf">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 401, column 1804</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#1806f2d3-f5cd-4060-bc11-4f20b75e1710">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 402, column 1767</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-complex&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#b8fdfc57-eeb4-45bd-a9ca-fe79d64c7b94">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 423, column 1894</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#5a332f04-0172-41d3-86b1-a840e48ce465">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 424, column 1857</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-complex&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#40ef4df6-3a51-4403-9221-4252947d137a">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 466, column 398</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#ecdf161c-c289-4982-a95d-34bb7afc3c89">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 471, column 19</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#ecdf161c-c289-4982-a95d-34bb7afc3c89">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 472, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-basic.html#Basic.extension.valueCode' for &quot;valueCode&quot; cannot be resolved (valid targets: [page-content-wrapper, mandatory-data-elements-and-terminology, tbl-snap-inner, Basic.implicitRules, Basic.id, all-tbl-diff, Basic.code.coding, Basic.code.coding.id, tabs-summ, tbl-summ, stripe, segment-footer, Basic.code.coding.system, Basic.modifierExtension, all-tbl-snap-inner, segment-header, Basic.code.coding.display, Basic.created, profile, tabs-diff, all-tbl-summ, tbl-diff, Basic.extension, all-json-inner, Basic.text, all-tbl-summ-inner, examples, tabs-json, tabs-all, back-to-top, Basic.code.text, tbl-diff-inner, segment-navbar, Basic.code.coding.version, Basic, Basic.subject, tabs, Basic.author, segment-post-footer, Basic.language, json-inner, all-tbl-snap, search, Basic.code, downloads, Basic.code.coding.code, json, tabs-snap, introduction, Basic.code.id, tbl-snap, summary, scope-and-usage, Basic.contained, all-tbl-diff2-inner, Basic.identifier, Basic.meta, Basic.code.coding.userSelected, all-tbl-diff-inner, project-status, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#3c3d18f2-9f5f-469e-bf06-827ffaac6756">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 472, column 488</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#ecdf161c-c289-4982-a95d-34bb7afc3c89">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 475, column 19</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-complex&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#12ff3d8f-18ba-45c4-bee7-0bef11c6a756">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 480, column 447</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Kind of Resource&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#4784a99c-7194-4e22-9848-a4567d1b2a34">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/ul/li/a at Line 527, column 7</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#f1be75d9-dfa4-4c30-ae05-5c0a7a5d46ff">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/ul/li/a at Line 528, column 7</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-complex&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#78cb7199-1277-4917-9474-690ed2571e6b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 544, column 1804</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#4283205e-79f0-4d10-a934-76b9fa5edf11">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 545, column 1767</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-complex&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#6f938efe-613d-4d28-aa1d-98433ee42489">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 578, column 1894</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#05639af3-0a81-488e-b40c-7e5a2440d754">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 579, column 1857</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-complex&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#c3858c5a-2b9d-4f86-8a36-9abbcbedd3e3">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 619, column 398</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#a9aab172-a3fc-4dca-8ad8-18be4f67c2ad">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 624, column 19</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#a9aab172-a3fc-4dca-8ad8-18be4f67c2ad">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 625, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-basic.html#Basic.extension.valueCode' for &quot;valueCode&quot; cannot be resolved (valid targets: [page-content-wrapper, mandatory-data-elements-and-terminology, tbl-snap-inner, Basic.implicitRules, Basic.id, all-tbl-diff, Basic.code.coding, Basic.code.coding.id, tabs-summ, tbl-summ, stripe, segment-footer, Basic.code.coding.system, Basic.modifierExtension, all-tbl-snap-inner, segment-header, Basic.code.coding.display, Basic.created, profile, tabs-diff, all-tbl-summ, tbl-diff, Basic.extension, all-json-inner, Basic.text, all-tbl-summ-inner, examples, tabs-json, tabs-all, back-to-top, Basic.code.text, tbl-diff-inner, segment-navbar, Basic.code.coding.version, Basic, Basic.subject, tabs, Basic.author, segment-post-footer, Basic.language, json-inner, all-tbl-snap, search, Basic.code, downloads, Basic.code.coding.code, json, tabs-snap, introduction, Basic.code.id, tbl-snap, summary, scope-and-usage, Basic.contained, all-tbl-diff2-inner, Basic.identifier, Basic.meta, Basic.code.coding.userSelected, all-tbl-diff-inner, project-status, all-json])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#b35223c3-e413-48a5-a899-6146c2c8172b">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 625, column 488</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#a9aab172-a3fc-4dca-8ad8-18be4f67c2ad">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 628, column 19</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html' for &quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-complex&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#42341de2-f412-4530-8dd0-75d921a94a03">/Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 633, column 447</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/STU3/null.html' for &quot;Kind of Resource&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#0e80fa57-5e92-4b57-9920-4bea0f48e98f">/Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 269, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah.html' for &quot;Example Extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#1f0b7d2d-198e-4ac8-9599-82d03316abd5">/Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 270, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-complex.html' for &quot;Complex Extension&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_ehaas_Documents_FHIR_IG-Template2_source_examples_obs"> </a>
-<h2><a href="Observation-example.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/examples/obs.xml</a></h2>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template2_source_examples_patient-example"> </a>
+<h2><a href="Patient-example.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example.xml</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Observation/example: Observation</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/Observation, Element 'Observation.status': minimum required = 1, but only found 0</b></td>
+     <td><b>Patient/example: Patient.extension[3].valueCode</b></td><td><b>error</b></td><td><b>The value provided ('F') is not in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex (http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex, and a code is required from this value set) (error message = Error expanding ValueSet: running without terminology services)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Observation/example: Observation.code.coding[3]</b></td><td><b>error</b></td><td><b>Terminology service not available</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Observation/example: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Patient/example'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Observation/example: Observation.context</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Encounter/example'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Observation/example: Observation.performer</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Practitioner/practitioner-1'</b></td>
+     <td><b>Patient/example: Patient.identifier.type.coding</b></td><td><b>error</b></td><td><b>Invalid FHIR Code System http://hl7.org/fhir/v2/0203</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_StructureDefinition-extension-blah"> </a>
-<h2><a href="StructureDefinition-extension-blah.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-extension-blah.xml</a></h2>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_CodeSystem-blah-codes"> </a>
+<h2><a href="CodeSystem-blah-codes.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes.xml</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:differential/f:element/f:binding</b></td><td><b>error</b></td><td><b>Undefined element 'valueSetUri'</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-blah: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-blah: StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-blah: StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-blah: StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition/extension-blah: StructureDefinition.differential.element[3].binding</b></td><td><b>error</b></td><td><b>ValueSet SHALL start with http:// or https:// or urn: [valueSet.startsWith('http:') or valueSet.startsWith('https') or valueSet.startsWith('urn:')]</b></td>
+     <td><b>CodeSystem/blah-codes: CodeSystem</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_StructureDefinition-extension-complex"> </a>
-<h2><a href="StructureDefinition-extension-complex.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-extension-complex.xml</a></h2>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_ValueSet-blah-codes"> </a>
+<h2><a href="ValueSet-blah-codes.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes.xml</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:differential/f:element/f:binding</b></td><td><b>error</b></td><td><b>Undefined element 'valueSetUri'</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[4]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[5]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[5].binding</b></td><td><b>error</b></td><td><b>ValueSet SHALL start with http:// or https:// or urn: [valueSet.startsWith('http:') or valueSet.startsWith('https') or valueSet.startsWith('urn:')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[6]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[7]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[8]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[9]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[10]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_StructureDefinition-template-basic"> </a>
-<h2><a href="StructureDefinition-template-basic.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-template-basic.xml</a></h2>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:differential/f:element/f:binding</b></td><td><b>error</b></td><td><b>Undefined element 'valueSetUri'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/template-basic: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[4]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[5]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[6]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[6].binding</b></td><td><b>error</b></td><td><b>ValueSet SHALL start with http:// or https:// or urn: [valueSet.startsWith('http:') or valueSet.startsWith('https') or valueSet.startsWith('urn:')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[7]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>template-basic</b></td><td><b>error</b></td><td><b><a href="template-basic.html">template-basic</a>: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-blah' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic differential Basic.extension (Simple_Extension)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>template-basic</b></td><td><b>error</b></td><td><b><a href="template-basic.html">template-basic</a>: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-complex' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic differential Basic.extension (Complex_Extension)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>template-basic</b></td><td><b>error</b></td><td><b><a href="template-basic.html">template-basic</a>: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-blah' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic snapshot Basic.extension (Simple_Extension)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>template-basic</b></td><td><b>error</b></td><td><b><a href="template-basic.html">template-basic</a>: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-complex' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic snapshot Basic.extension (Complex_Extension)</b></td>
+     <td><b>ValueSet/blah-codes: ValueSet</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
    </tr>
 </table>
 <hr/>
@@ -273,6 +394,112 @@
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_patient-on-usprofile-spreadsheet"> </a>
+<h2><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet</b></td><td><b>information</b></td><td><b><p>Resources generated by processing patient-on-usprofile-spreadsheet:</p></ul><li>http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile ("Template-Profile-on-Profile")</li></b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.mapping[2].uri</b></td><td><b>error</b></td><td><b>URI values cannot have whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_template-profile-spreadsheet"> </a>
+<h2><a href="StructureDefinition-extension-blah.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/template-profile-spreadsheet.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/template-profile-spreadsheet</b></td><td><b>information</b></td><td><b><p>Resources generated by processing template-profile-spreadsheet:</p></ul><li>http://www.fhir.org/guides/test3/StructureDefinition/extension-blah ("Example Extension")</li><li>http://www.fhir.org/guides/test3/StructureDefinition/extension-complex ("Complex Extension")</li><li>http://www.fhir.org/guides/test3/StructureDefinition/template-basic ("Template-basic")</li></b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-blah: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-blah: StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-blah: StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-blah: StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[4]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[5]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[6]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[7]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[8]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition.differential.element[9]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-basic: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[4]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[5]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[6]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[7]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-basic: StructureDefinition.differential.element[8]</b></td><td><b>warning</b></td><td><b>Element names should be simple alphanumerics, or code generation tools may be broken [path.matches('[a-z][A-Za-z0-9]*')]</b></td>
    </tr>
 </table>
 </body>

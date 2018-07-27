@@ -113,8 +113,8 @@ can only resize using html  or css ;-(
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="guidance.html">General Guidance</a></li>
-  <li><a href="profiles.html">Profiles and Logical Models</a></li>
-  <li><a href="structuremaps.html">Mappings</a>
+  <li><a href="profiles.html">Profiles and Extensions</a>
+<!-- - [Mappings](structuremaps.html) -->
 <!-- - [Extensions](extensions.html) --></li>
   <li><a href="terminology.html">Terminology</a>
 <!-- - [Search Parameters](searchparams.html) --></li>
@@ -283,15 +283,32 @@ can only resize using html  or css ;-(
   &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.license">license</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;CC0-1.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.fhirVersion">fhirVersion</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;3.4.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition">definition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.package">package</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;patient-on-usprofile-spreadsheet.xml&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.package.name">name</a>
+            <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet&quot;/&gt;
+    &lt;/package&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.package">package</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;template-profile-spreadsheet.xml&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.package.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Template-basic&quot;/&gt;
+    &lt;/package&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Observation-example.html&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Patient-example.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Observation/example&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient/example&quot;/&gt;
       &lt;/reference&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;ValueSet-blah-codes.html&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;ValueSet/blah-codes&quot;/&gt;
+      &lt;/reference&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
@@ -306,20 +323,20 @@ can only resize using html  or css ;-(
     &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-complex.html&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;StructureDefinition-template-profile-on-profile.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;StructureDefinition/extension-complex&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;StructureDefinition/template-profile-on-profile&quot;/&gt;
       &lt;/reference&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-blah.html&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;CodeSystem-blah-codes.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;StructureDefinition/extension-blah&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;CodeSystem/blah-codes&quot;/&gt;
       &lt;/reference&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
     &lt;/resource&gt;
@@ -342,6 +359,50 @@ can only resize using html  or css ;-(
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;CapabilityStatement/client&quot;/&gt;
       &lt;/reference&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;StructureDefinition-template-profile-on-profile.html&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;StructureDefinition/template-profile-on-profile&quot;/&gt;
+      &lt;/reference&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Template-Profile-on-Profile&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.package">package</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;patient-on-usprofile-spreadsheet.xml&quot;/&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-blah.html&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;StructureDefinition/extension-blah&quot;/&gt;
+      &lt;/reference&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Example Extension&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.package">package</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;template-profile-spreadsheet.xml&quot;/&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-complex.html&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;StructureDefinition/extension-complex&quot;/&gt;
+      &lt;/reference&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Complex Extension&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.package">package</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;template-profile-spreadsheet.xml&quot;/&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;StructureDefinition-template-basic.html&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;StructureDefinition/template-basic&quot;/&gt;
+      &lt;/reference&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Template-basic&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.resource.package">package</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;template-profile-spreadsheet.xml&quot;/&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.page">page</a>&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#url">value</a>=&quot;index.md&quot;/&gt;
@@ -399,7 +460,7 @@ Formats: <a href="ImplementationGuide-ig.html">Narrative</a>, <a href="Implement
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Test3 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.4.0</a> (IG Publisher v3.4.0-13936) generated on Sun, Jul 15, 2018 08:24-0700. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+            IG-Test3 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.4.0</a> (IG Publisher v3.4.0-14140) generated on Fri, Jul 27, 2018 10:10-0700. | <a no-external = "true" style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->

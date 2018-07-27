@@ -3,16 +3,22 @@ title: Profiles defined as part of this Guide
 layout: default
 active: profiles
 ---
-
 #### Profiles
 
 The following Profiles have been defined for this implementation guide.
 
-{% include list-simple-profiles.xhtml %}
+{% include list-profiles.xhtml %}
 
-#### Logical Models
+<br />
 
-The following Logical Models have been defined for this implementation guide.
+#### Extensions
 
-{% include list-simple-logicals.xhtml %}
----
+These extensions have been defined for this implementation guide.
+
+
+{% include list-extensions.xhtml %}
+
+
+{% include link-list.md %}
+
+<br />

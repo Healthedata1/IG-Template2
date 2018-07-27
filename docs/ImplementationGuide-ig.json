@@ -15,18 +15,40 @@
   "license": "CC0-1.0",
   "fhirVersion": "3.4.0",
   "definition": {
+    "package": [
+      {
+        "id": "patient-on-usprofile-spreadsheet.xml",
+        "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"
+      },
+      {
+        "id": "template-profile-spreadsheet.xml",
+        "name": "Template-basic"
+      }
+    ],
     "resource": [
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-example.html"
+            "valueUri": "Patient-example.html"
           }
         ],
         "reference": {
-          "reference": "Observation/example"
+          "reference": "Patient/example"
         },
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-blah-codes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/blah-codes"
+        },
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -44,11 +66,11 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-complex.html"
+            "valueUri": "StructureDefinition-template-profile-on-profile.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/extension-complex"
+          "reference": "StructureDefinition/template-profile-on-profile"
         },
         "exampleBoolean": false
       },
@@ -56,11 +78,11 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah.html"
+            "valueUri": "CodeSystem-blah-codes.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/extension-blah"
+          "reference": "CodeSystem/blah-codes"
         },
         "exampleBoolean": false
       },
@@ -87,6 +109,58 @@
           "reference": "CapabilityStatement/client"
         },
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-profile-on-profile.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/template-profile-on-profile"
+        },
+        "name": "Template-Profile-on-Profile",
+        "package": "patient-on-usprofile-spreadsheet.xml"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-blah.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-blah"
+        },
+        "name": "Example Extension",
+        "package": "template-profile-spreadsheet.xml"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-complex.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-complex"
+        },
+        "name": "Complex Extension",
+        "package": "template-profile-spreadsheet.xml"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-basic.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/template-basic"
+        },
+        "name": "Template-basic",
+        "package": "template-profile-spreadsheet.xml"
       }
     ],
     "page": {

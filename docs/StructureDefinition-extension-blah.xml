@@ -3,9 +3,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-blah"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-extension-blah-definitions.html#Extension" title="an example of a simple extension.">Extension</a><a name="Extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span>..<span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Example Extension</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-extension-blah-definitions.html#Extension.url" title="null">url</a><a name="Extension.url"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">&quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah&quot;</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck04.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-extension-blah-definitions.html#Extension.valueCode:valueCode" title="Slice valueCode: null">valueCode</a><a name="Extension.valueCode"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/STU3/terminologies.html#unbound">(unbound)</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set">required</a>)</td></tr>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck5.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span title="Slice blah: an example of a simple extension.">Extension</span><a name="Extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span>..<span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Example Extension</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck50.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span title="null">url</span><a name="Extension.url"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">&quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah&quot;</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck40.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span title="null">valueCode</span><a name="Extension.valueCode"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Binding: </span><a href="http://www.fhir.org/guides/test3/ValueSet/blah-codes">http://www.fhir.org/guides/test3/ValueSet/blah-codes</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set">required</a>)</td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://www.fhir.org/guides/test3/StructureDefinition/extension-blah"/>
@@ -15,13 +15,6 @@
   <status value="active"/>
   <date value="2017-02-15"/>
   <description value="an example of a simple extension."/>
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="US"/>
-      <display value="United States of America"/>
-    </coding>
-  </jurisdiction>
   <fhirVersion value="3.4.0"/>
   <mapping>
     <identity value="rim"/>
@@ -40,6 +33,7 @@
   <snapshot>
     <element id="Extension">
       <path value="Extension"/>
+      <sliceName value="blah"/>
       <short value="Example Extension"/>
       <definition value="an example of a simple extension."/>
       <min value="0"/>
@@ -54,7 +48,7 @@
         <key value="ele-1"/>
         <severity value="error"/>
         <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="Element"/>
       </constraint>
@@ -146,9 +140,8 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Extension.valueCode:valueCode">
+    <element id="Extension.valueCode">
       <path value="Extension.valueCode"/>
-      <sliceName value="valueCode"/>
       <short value="Value of extension"/>
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
       <min value="0"/>
@@ -166,6 +159,7 @@
       <binding>
         <strength value="required"/>
         <description value="A bunch of example codes"/>
+        <valueSet value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -176,8 +170,10 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
+      <sliceName value="blah"/>
       <short value="Example Extension"/>
       <definition value="an example of a simple extension."/>
+      <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>
     </element>
@@ -185,15 +181,15 @@
       <path value="Extension.url"/>
       <fixedUri value="http://www.fhir.org/guides/test3/StructureDefinition/extension-blah"/>
     </element>
-    <element id="Extension.valueCode:valueCode">
+    <element id="Extension.valueCode">
       <path value="Extension.valueCode"/>
-      <sliceName value="valueCode"/>
       <type>
         <code value="code"/>
       </type>
       <binding>
         <strength value="required"/>
         <description value="A bunch of example codes"/>
+        <valueSet value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
       </binding>
     </element>
   </differential>

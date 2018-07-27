@@ -4,7 +4,7 @@ layout: default
 active: toc
 ---
 
-<!-- sidebar-wrapper  put your TOC here. like example below...-->
+<em> Put your TOC here. like example below  (this is not automatically generated)...</em>
 
 <div>
   <ul>
