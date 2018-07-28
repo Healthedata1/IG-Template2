@@ -2,9 +2,9 @@
 =========================================
 
 err = 22, warn = 58, info = 4
-Generated Fri Jul 27 10:10:43 PDT 2018. FHIR version 3.4.0 for 3.4.0
+Generated Sat Jul 28 09:01:04 PDT 2018. FHIR version 3.4.0 for 3.4.0
 
- Build Errors : 88 / 0
+ Build Errors : 85 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 2 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes : 0 / 1
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes : 0 / 1
@@ -60,9 +60,6 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extensi
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 462, column 8: The link 'StructureDefinition/extension-blah.html#Extension.url' for "url" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 463, column 8: The link 'StructureDefinition/extension-blah.html#Extension.valueCode' for "valueCode" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 463, column 478: The link 'http://hl7.org/fhir/STU3/null.html' for "Value of extension" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 214, column 8: The link '../output/package.tgz' for "Package" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 228, column 8: The link '../output/examples.xml.zip' for "XML" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 229, column 8: The link '../output/examples.json.zip' for "JSON" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 237, column 8: The link 'full-ig.zip' for "Downloadable Copy" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'registry.fhir.org.zip' for "Registry Source file" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/span/b/a at Line 312, column 142: The link 'StructureDefinition/extension-blah.html' for "[CanonicalType[http://www.fhir.org/guides/test3/StructureDefinition/extension-blah]]" cannot be resolved
