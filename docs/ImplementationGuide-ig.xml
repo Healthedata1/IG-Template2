@@ -50,10 +50,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-searchparameter-qualification-code.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/searchparameter-qualification-code"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/template-profile-on-profile"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-identifier-status.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-identifier-status"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

@@ -66,11 +66,35 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-searchparameter-qualification-code.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/searchparameter-qualification-code"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-template-profile-on-profile.html"
           }
         ],
         "reference": {
           "reference": "StructureDefinition/template-profile-on-profile"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-identifier-status.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-identifier-status"
         },
         "exampleBoolean": false
       },
