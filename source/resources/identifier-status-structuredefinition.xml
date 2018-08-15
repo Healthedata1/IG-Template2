@@ -23,7 +23,6 @@
 	<differential>
 		<element id="Extension">
 			<path value="Extension"/>
-			<sliceName value= "foo"/>
 			<short value="Status"/>
 			<definition value="Describes the status of an identifier"/>
 			<max value="1"/>
@@ -46,7 +45,7 @@
 				<code value="code"/>
 			</type>
 			<binding>
-				<strength value="example"/>
+				<strength value="required"/>
 				<valueSet value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
 			</binding>
 		</element>
