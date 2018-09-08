@@ -1,4 +1,5 @@
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "coding" : [{
     "system" : "urn:iso:std:iso:3166",
@@ -28,5 +29,66 @@ v: {
   "display" : "",
   "severity" : "error",
   "error" : "Unable to provide support for code system urn:iso:std:iso:3166:-2"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "urn:iso:std:iso:3166",
+    "code" : "US"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:iso:std:iso:3166"
+    },
+    {
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "filter" : [{
+        "property" : "class",
+        "op" : "=",
+        "value" : "region"
+      }]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/usps-state"]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to find value set http://hl7.org/fhir/ValueSet/usps-state"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "urn:iso:std:iso:3166",
+    "code" : "US",
+    "display" : "United States of America"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:iso:std:iso:3166"
+    },
+    {
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "filter" : [{
+        "property" : "class",
+        "op" : "=",
+        "value" : "region"
+      }]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/usps-state"]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to find value set http://hl7.org/fhir/ValueSet/usps-state"
 }
 -------------------------------------------------------------------------------------

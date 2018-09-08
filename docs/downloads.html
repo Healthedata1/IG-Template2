@@ -2,11 +2,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IG-Test3</title>
+  <title>Open mHealth to FHIR</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="IG-Test3 Implemenation Guide"/>
-<meta name="author" content="Health eData Inc"/>
+<meta name="description" content="Open mHealth to FHIR Implemenation Guide"/>
+<meta name="author" content="Open mHealth"/>
   <link rel="stylesheet" href="fhir.css"/>
 
 
@@ -61,7 +61,7 @@ can only resize using html  or css ;-( -->
 
 
 <a no-external="true" href="http://www.openmhealth.org/">
-<img src="assets/images/org_logo.jpg" alt="visit our website" class="img-responsive project-logo"/>
+<img src="assets/images/org_logo.png" alt="visit our website" class="img-responsive project-logo"/>
 </a>
 
     <!-- end org logo -->
@@ -70,7 +70,7 @@ can only resize using html  or css ;-( -->
       <div id="project-status" class="project-status">   <!-- ig title text -->
 
       
-      <strong>IG-Test3 Implementation Guide CI Build</strong>
+      <strong>Open mHealth to FHIR Implementation Guide CI Build</strong>
       
 
     </div>  <!-- end ig title text -->
@@ -100,15 +100,15 @@ can only resize using html  or css ;-( -->
           <span class="icon-bar">
           </span>
         </button>
-        <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
+        <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
          <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="guidance.html">General Guidance</a></li>
-  <li><a href="profiles.html">Profiles and Extensions</a>
-  <!-- - [Mappings](structuremaps.html) -->
+  <li><a href="profiles.html">Profiles and Logical Models</a></li>
+  <li><a href="structuremaps.html">Mappings</a>
   <!-- - [Extensions](extensions.html) --></li>
   <li><a href="terminology.html">Terminology</a>
   <!-- - [Search Parameters](searchparams.html) --></li>
@@ -198,45 +198,41 @@ can only resize using html  or css ;-( -->
 
 <h1>Downloads</h1>
 
+  <!-- status-bar -->
+<p id="publish-box">
+This is the   Continuous Integration Build  of the Open mHealth to FHIR Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="http://www.fhir.org/guides//history.html">Directory of published versions</a>
+</p>
+
+
   <!-- page source: downloads.md -->
 
-<p><strong>Package File</strong></p>
+<p><strong>Validator Pack and Definitions:</strong></p>
 
-<p>The following package file includes an NPM package file used by many of the FHIR tools.  It contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of the this version of the Implementation Guides. This file should be the first choice whenever generating any implementation artifacts since it contains all of the rules about what makes the profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation. See the overview on validating <a href="http://build.fhir.org/validation.html">FHIR profiles and resources</a>:</p>
+<p>The following file contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of the this Implementation Guides.:</p>
 
 <ul>
-  <li><a href="package.tgz">Package</a></li>
+  <li><a href="validator.pack">Validator Pack</a></li>
 </ul>
+
+<p>In addition there are format specific definitions files.
+- <a href="definitions.xml.zip">XML</a>
+- <a href="definitions.json.zip">JSON</a>
+- <a href="definitions.ttl.zip">TTL</a></p>
+
+<p><a name="e6a74170-8f82-4cbe-8b48-2bec8def13dc">​</a>These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these US-Core profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation.  See the overview on <a href="http://hl7.org/fhir/STU3//validation.html">validating FHIR profiles and resources</a></p>
 
 <p><strong>Schematrons</strong> are also available and listed below:</p>
 
 <ul>
-  <li><a href="#">…TODO…</a></li>
+  <li><a href="#">Schematrons</a></li>
 </ul>
 
-<p><strong>Examples</strong></p>
-
-<p>all the examples that are used in this Implementation Guide available for download:</p>
+<p><strong>Examples:</strong> all the examples that are used in this Implementation Guide available for download:</p>
 
 <ul>
   <li><a href="examples.xml.zip">XML</a></li>
   <li><a href="examples.json.zip">JSON</a></li>
-</ul>
-
-<p><strong>Downloadable Copy of Entire Specification</strong></p>
-
-<p>A downloadable version is available so this Implementation Guide can be hosted locally:</p>
-
-<ul>
-  <li><a name="3c82f123-e768-41e0-bf6c-e948c20c2ab9">​</a><a href="full-ig.zip">Downloadable Copy</a></li>
-</ul>
-
-<p><strong>FHIR IG Registry Source Documentation</strong></p>
-
-<p>A file for uploading this Guide and all its artifacts to a FHIR Registry</p>
-
-<ul>
-  <li><a name="fe50c221-f443-4b34-bbfc-b28597abe37d">​</a><a href="registry.fhir.org.zip">Registry Source file</a></li>
+  <li><a href="examples.ttl.zip">TTl</a></li>
 </ul>
 
 
@@ -268,7 +264,7 @@ can only resize using html  or css ;-( -->
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-            IG-Test3 Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://build.fhir.org">FHIR Version: 3.4.0</a> (IG Publisher v3.4.0-14827) generated on Wed, Aug 15, 2018 08:29-0700. | <a rel="license" no-external="true" style="color: #81BEF7" href="http://build.fhir.orglicense.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
+            Open mHealth to FHIR Version: 0.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Sep 7, 2018 20:05-0700. | <a rel="license" no-external="true" style="color: #81BEF7" href="http://hl7.org/fhir/STU3/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         
         </p>
    </div>    <!-- /inner-wrapper -->

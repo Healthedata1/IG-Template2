@@ -17,6 +17,11 @@ f: http://build.fhir.org/
 
 This is based on {{page.f}}index.html
 
+
+{% include examplebutton.html example="example" b_title = "Example Button bar" %}
+
+
+
 blah blah blah
 
 ### More Stuff

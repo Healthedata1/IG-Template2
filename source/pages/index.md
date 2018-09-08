@@ -3,9 +3,9 @@ title: Home Page
 layout: default
 active: home
 ---
-
+<!--{% raw %}  ==== this is being replaced by status in the layout template
 {% include publish-box.html %}
-
+{% endraw %}-->
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 

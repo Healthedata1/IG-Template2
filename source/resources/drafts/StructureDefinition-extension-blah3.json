@@ -1,0 +1,92 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "StudyTestType",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2018-09-05T16:46:24.978+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/cfAuthor",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://clinfhir.com/StructureDefinition/userEmail",
+      "valueString": "romano_angela_d@lilly.com"
+    }
+  ],
+  "url": "https://fhirtest.uhn.ca/baseDstu3/StructureDefinition/StudyTestType",
+  "name": "StudyTestType",
+  "status": "draft",
+  "kind": "complex-type",
+  "abstract": false,
+  "contextType": "resource",
+  "context": [
+    "*"
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension0",
+        "path": "Extension",
+        "label": "CodeableConcept0",
+        "definition": "No Description",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "1"
+        }
+      },
+      {
+        "id": "Extension.url0",
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "label": "CodeableConcept0",
+        "definition": "No Description",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "CodeableConcept0"
+      },
+      {
+        "id": "Extension.value[x]0",
+        "path": "Extension.valueCodeableConcept",
+        "label": "CodeableConcept0",
+        "definition": "No Description",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.valueCodeableConcept",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "No Description",
+          "valueSetUri": "https://api-v5-r4.hspconsortium.org/R4ClinicalResearch/open/ValueSet/Study-TestTypeVS"
+        }
+      }
+    ]
+  }
+}

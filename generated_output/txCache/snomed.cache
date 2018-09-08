@@ -1,0 +1,1300 @@
+-------------------------------------------------------------------------------------
+
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "373067005",
+  "display" : "No"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 0
+      }],
+      "system" : "http://snomed.info/sct",
+      "version" : "20180131",
+      "code" : "373067005",
+      "display" : "No"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 2
+      }],
+      "system" : "http://fhir.org/guides/argonaut-questionnaire/CodeSystem/answer-codes",
+      "version" : "0.0.0",
+      "code" : "not-last-year",
+      "display" : "Yes, but not in the last year"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 4
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "code" : "LA15519-4",
+      "display" : "Yes, during the last year"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#373067005) is not  valid"
+}
+-------------------------------------------------------------------------------------
+
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "373067005",
+  "display" : "No"
+}, "valueSet" :null}####
+v: {
+  "display" : "No (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "68130003"
+}, "valueSet" :null}####
+v: {
+  "display" : "Physical activity",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258158006",
+        "display" : "Sleep episode"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:7b375fc9-59d6-4134-abab-fc0c70d4f527",
+    "timestamp" : "2018-09-08T00:52:55.891Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "258158006",
+      "display" : "Sleep episode"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "307155000",
+        "display" : "before sleeping"
+      },
+      {
+        "code" : "309610004",
+        "display" : "during sleep"
+      },
+      {
+        "code" : "307156004",
+        "display" : "on waking"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:b6a45249-5b86-4ba0-9c5f-42bffc1aa992",
+    "timestamp" : "2018-09-08T00:52:56.594Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "307155000",
+      "display" : "before sleeping"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "309610004",
+      "display" : "during sleep"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307156004",
+      "display" : "on waking"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "263678003",
+        "display" : "at rest"
+      },
+      {
+        "code" : "55561003",
+        "display" : "active"
+      },
+      {
+        "code" : "307166007",
+        "display" : "before exercise"
+      },
+      {
+        "code" : "255214003",
+        "display" : "after exercise"
+      },
+      {
+        "code" : "309604004",
+        "display" : "during exercise"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:0b8b20cd-0303-4e1c-af8d-7c3a767c0097",
+    "timestamp" : "2018-09-08T00:52:56.813Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "263678003",
+      "display" : "at rest"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "55561003",
+      "display" : "active"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307166007",
+      "display" : "before exercise"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255214003",
+      "display" : "after exercise"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "309604004",
+      "display" : "during exercise"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "16985007",
+        "display" : "fasting"
+      },
+      {
+        "code" : "440565004",
+        "display" : "not fasting"
+      },
+      {
+        "code" : "307165006",
+        "display" : "before meal"
+      },
+      {
+        "code" : "24863003",
+        "display" : "after meal"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1549040",
+        "display" : "before breakfast"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550743",
+        "display" : "after breakfast"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550741",
+        "display" : "before lunch"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1879668",
+        "display" : "after lunch"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550742",
+        "display" : "before dinner"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1879671",
+        "display" : "after dinner"
+      },
+      {
+        "code" : "2 hours postprandial",
+        "display" : "2 hours postprandial"
+      },
+      {
+        "code" : "311503006",
+        "display" : "with meal"
+      },
+      {
+        "code" : "311504000",
+        "display" : "with food"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:dbdbcab1-74d0-4a37-a413-66f5ef240a45",
+    "timestamp" : "2018-09-08T00:52:57.032Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "16985007",
+      "display" : "fasting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "440565004",
+      "display" : "not fasting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307165006",
+      "display" : "before meal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "24863003",
+      "display" : "after meal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1549040",
+      "display" : "before breakfast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550743",
+      "display" : "after breakfast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550741",
+      "display" : "before lunch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1879668",
+      "display" : "after lunch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550742",
+      "display" : "before dinner"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1879671",
+      "display" : "after dinner"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2 hours postprandial",
+      "display" : "2 hours postprandial"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "311503006",
+      "display" : "with meal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "311504000",
+      "display" : "with food"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "33586001",
+        "display" : "sitting"
+      },
+      {
+        "code" : "102538003",
+        "display" : "lying down"
+      },
+      {
+        "code" : "10904000",
+        "display" : "standing"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:cad6de2b-f318-484d-9625-b28a3ba1a13e",
+    "timestamp" : "2018-09-08T00:52:57.703Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "33586001",
+      "display" : "sitting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "102538003",
+      "display" : "lying down"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10904000",
+      "display" : "standing"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "73775008",
+        "display" : "morning"
+      },
+      {
+        "code" : "422133006",
+        "display" : "afternoon"
+      },
+      {
+        "code" : "3157002",
+        "display" : "evening"
+      },
+      {
+        "code" : "2546009",
+        "display" : "night"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:4bb5073a-3933-4e14-b6ce-d24d35a84a20",
+    "timestamp" : "2018-09-08T00:52:57.922Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "73775008",
+      "display" : "morning"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "422133006",
+      "display" : "afternoon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3157002",
+      "display" : "evening"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2546009",
+      "display" : "night"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "307145004",
+        "display" : "Monday"
+      },
+      {
+        "code" : "307147007",
+        "display" : "Tuesday"
+      },
+      {
+        "code" : "307148002",
+        "display" : "Wednesday"
+      },
+      {
+        "code" : "307149005",
+        "display" : "Thursday"
+      },
+      {
+        "code" : "307150005",
+        "display" : "Friday"
+      },
+      {
+        "code" : "307151009",
+        "display" : "Saturday"
+      },
+      {
+        "code" : "307146003",
+        "display" : "Sunday"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:12447ed8-5f41-4895-a519-4ff17f008760",
+    "timestamp" : "2018-09-08T00:52:59.282Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "307145004",
+      "display" : "Monday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307147007",
+      "display" : "Tuesday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307148002",
+      "display" : "Wednesday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307149005",
+      "display" : "Thursday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307150005",
+      "display" : "Friday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307151009",
+      "display" : "Saturday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307146003",
+      "display" : "Sunday"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "33586001",
+        "display" : "sitting"
+      },
+      {
+        "code" : "102538003",
+        "display" : "lying down"
+      },
+      {
+        "code" : "10904000",
+        "display" : "standing"
+      },
+      {
+        "code" : "272580008",
+        "display" : "semi-recumbent"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:c9c42df4-7a67-442b-910b-4e1f6d43c547",
+    "timestamp" : "2018-09-08T00:52:59.500Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "33586001",
+      "display" : "sitting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "102538003",
+      "display" : "lying down"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10904000",
+      "display" : "standing"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "272580008",
+      "display" : "semi-recumbent"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "68130003",
+    "display" : "Physical activity (observable entity)"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/observation-category"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system http://hl7.org/fhir/observation-category"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "68130003",
+  "display" : "Physical activity (observable entity)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Physical activity",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258158006",
+        "display" : "Sleep episode"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:15dfcda0-f897-4f2c-be24-f0d286b041c7",
+    "timestamp" : "2018-09-08T00:53:15.000Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "258158006",
+      "display" : "Sleep episode"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "307155000",
+        "display" : "before sleeping"
+      },
+      {
+        "code" : "309610004",
+        "display" : "during sleep"
+      },
+      {
+        "code" : "307156004",
+        "display" : "on waking"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:e4719de0-3e28-4e95-ac1a-74e0987db5aa",
+    "timestamp" : "2018-09-08T00:53:16.672Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "307155000",
+      "display" : "before sleeping"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "309610004",
+      "display" : "during sleep"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307156004",
+      "display" : "on waking"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "263678003",
+        "display" : "at rest"
+      },
+      {
+        "code" : "55561003",
+        "display" : "active"
+      },
+      {
+        "code" : "307166007",
+        "display" : "before exercise"
+      },
+      {
+        "code" : "255214003",
+        "display" : "after exercise"
+      },
+      {
+        "code" : "309604004",
+        "display" : "during exercise"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:c8841487-dffa-4d2a-b723-b5231a8a243a",
+    "timestamp" : "2018-09-08T00:53:16.907Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "263678003",
+      "display" : "at rest"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "55561003",
+      "display" : "active"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307166007",
+      "display" : "before exercise"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255214003",
+      "display" : "after exercise"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "309604004",
+      "display" : "during exercise"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "16985007",
+        "display" : "fasting"
+      },
+      {
+        "code" : "440565004",
+        "display" : "not fasting"
+      },
+      {
+        "code" : "307165006",
+        "display" : "before meal"
+      },
+      {
+        "code" : "24863003",
+        "display" : "after meal"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1549040",
+        "display" : "before breakfast"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550743",
+        "display" : "after breakfast"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550741",
+        "display" : "before lunch"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1879668",
+        "display" : "after lunch"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550742",
+        "display" : "before dinner"
+      },
+      {
+        "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1879671",
+        "display" : "after dinner"
+      },
+      {
+        "code" : "2 hours postprandial",
+        "display" : "2 hours postprandial"
+      },
+      {
+        "code" : "311503006",
+        "display" : "with meal"
+      },
+      {
+        "code" : "311504000",
+        "display" : "with food"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:cf65a975-566d-4ae0-85c9-de75d1bfc4a5",
+    "timestamp" : "2018-09-08T00:53:17.141Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "16985007",
+      "display" : "fasting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "440565004",
+      "display" : "not fasting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307165006",
+      "display" : "before meal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "24863003",
+      "display" : "after meal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1549040",
+      "display" : "before breakfast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550743",
+      "display" : "after breakfast"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550741",
+      "display" : "before lunch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1879668",
+      "display" : "after lunch"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1550742",
+      "display" : "before dinner"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "ConceptReport.jsp?dictionary=NCI%20MetaThesaurus&code=C1879671",
+      "display" : "after dinner"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2 hours postprandial",
+      "display" : "2 hours postprandial"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "311503006",
+      "display" : "with meal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "311504000",
+      "display" : "with food"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "33586001",
+        "display" : "sitting"
+      },
+      {
+        "code" : "102538003",
+        "display" : "lying down"
+      },
+      {
+        "code" : "10904000",
+        "display" : "standing"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:96edb2ba-246e-4807-97a6-d04aa356d5a9",
+    "timestamp" : "2018-09-08T00:53:17.875Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "33586001",
+      "display" : "sitting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "102538003",
+      "display" : "lying down"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10904000",
+      "display" : "standing"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "73775008",
+        "display" : "morning"
+      },
+      {
+        "code" : "422133006",
+        "display" : "afternoon"
+      },
+      {
+        "code" : "3157002",
+        "display" : "evening"
+      },
+      {
+        "code" : "2546009",
+        "display" : "night"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:856c372b-e13a-4cc6-9340-cf80e3ed47e2",
+    "timestamp" : "2018-09-08T00:53:18.094Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "73775008",
+      "display" : "morning"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "422133006",
+      "display" : "afternoon"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "3157002",
+      "display" : "evening"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "2546009",
+      "display" : "night"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "307145004",
+        "display" : "Monday"
+      },
+      {
+        "code" : "307147007",
+        "display" : "Tuesday"
+      },
+      {
+        "code" : "307148002",
+        "display" : "Wednesday"
+      },
+      {
+        "code" : "307149005",
+        "display" : "Thursday"
+      },
+      {
+        "code" : "307150005",
+        "display" : "Friday"
+      },
+      {
+        "code" : "307151009",
+        "display" : "Saturday"
+      },
+      {
+        "code" : "307146003",
+        "display" : "Sunday"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:04cec0f6-f05e-4b6f-b7c0-8ef826a3fd3b",
+    "timestamp" : "2018-09-08T00:53:19.672Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "307145004",
+      "display" : "Monday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307147007",
+      "display" : "Tuesday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307148002",
+      "display" : "Wednesday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307149005",
+      "display" : "Thursday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307150005",
+      "display" : "Friday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307151009",
+      "display" : "Saturday"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "307146003",
+      "display" : "Sunday"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "33586001",
+        "display" : "sitting"
+      },
+      {
+        "code" : "102538003",
+        "display" : "lying down"
+      },
+      {
+        "code" : "10904000",
+        "display" : "standing"
+      },
+      {
+        "code" : "272580008",
+        "display" : "semi-recumbent"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:a54387f2-017c-42ce-8699-d0e4b7b63b17",
+    "timestamp" : "2018-09-08T00:53:19.891Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "33586001",
+      "display" : "sitting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "102538003",
+      "display" : "lying down"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10904000",
+      "display" : "standing"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "272580008",
+      "display" : "semi-recumbent"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
