@@ -71,6 +71,6 @@
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://hl7.org/fhir/v2/0203"
+  "error" : "The code system \"http://hl7.org/fhir/v2/0203\" is not known; The code provided (http://hl7.org/fhir/v2/0203#MR, (Medical Record Number)) is not  valid in the value set Identifier Type Codes"
 }
 -------------------------------------------------------------------------------------
