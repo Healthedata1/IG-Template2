@@ -3,10 +3,10 @@
   "name": "IG_Test3",
   "package-id": "healthedatainc.mfhir",
   "ig-ver": "0.0.0",
-  "date": "Thu, 27 Sep, 2018 08:04:07 -0700",
+  "date": "Mon, 15 Oct, 2018 13:07:28 -0700",
   "errs": 14,
   "warnings": 34,
-  "hints": 4,
+  "hints": 0,
   "version": "3.6.0",
-  "tool": "3.6.0-14947"
+  "tool": "3.6.0 (2)"
 }

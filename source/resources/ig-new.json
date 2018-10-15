@@ -29,7 +29,8 @@
   "copyright" : "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
   "packageId" : "healthedatainc.mfhir",
   "license" : "CC0-1.0",
-  "fhirVersion" : "3.6.0",
+  "fhirVersion" : ["3.6.0",
+  "3.6.0"],
   "dependsOn" : [{
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
@@ -37,7 +38,7 @@
     "version" : "current"
   }],
   "definition" : {
-    "package" : [{
+    "grouping" : [{
       "name" : "base"
     }],
     "resource" : [{
@@ -112,8 +113,8 @@
       "generation" : "markdown"
     },
     "parameter" : [{
-      "code" : "apply-business-version",
-      "value" : "0.0.0"
+      "code" : "apply",
+      "value" : "version"
     },
     {
       "code" : "html-template",

@@ -43,6 +43,11 @@
      fhir:StructureDefinition.snapshot.element [
        fhir:index 0;
        fhir:Element.id [ fhir:value "Extension" ];
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
+         fhir:Extension.valueCode [ fhir:value "normative" ]
+       ];
        fhir:ElementDefinition.path [ fhir:value "Extension" ];
        fhir:ElementDefinition.short [ fhir:value "Complex Extension" ];
        fhir:ElementDefinition.definition [ fhir:value "an example of a complex extension." ];

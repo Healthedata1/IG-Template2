@@ -13,9 +13,11 @@
   "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
   "packageId": "healthedatainc.mfhir",
   "license": "CC0-1.0",
-  "fhirVersion": "3.6.0",
+  "fhirVersion": [
+    "3.6.0"
+  ],
   "definition": {
-    "package": [
+    "grouping": [
       {
         "name": "base"
       },
@@ -172,7 +174,7 @@
           "reference": "StructureDefinition/template-profile-on-profile"
         },
         "name": "Template-Profile-on-Profile",
-        "package": "patient-on-usprofile-spreadsheet.xml"
+        "groupingId": "patient-on-usprofile-spreadsheet.xml"
       },
       {
         "extension": [
@@ -185,7 +187,7 @@
           "reference": "StructureDefinition/extension-blah"
         },
         "name": "Example Extension",
-        "package": "template-profile-spreadsheet.xml"
+        "groupingId": "template-profile-spreadsheet.xml"
       },
       {
         "extension": [
@@ -198,7 +200,7 @@
           "reference": "StructureDefinition/extension-complex"
         },
         "name": "Complex Extension",
-        "package": "template-profile-spreadsheet.xml"
+        "groupingId": "template-profile-spreadsheet.xml"
       },
       {
         "extension": [
@@ -211,7 +213,7 @@
           "reference": "StructureDefinition/extension-blah2"
         },
         "name": "Example Extension",
-        "package": "template-profile-spreadsheet.xml"
+        "groupingId": "template-profile-spreadsheet.xml"
       },
       {
         "extension": [
@@ -224,7 +226,7 @@
           "reference": "StructureDefinition/template-basic"
         },
         "name": "template-basic",
-        "package": "template-profile-spreadsheet.xml"
+        "groupingId": "template-profile-spreadsheet.xml"
       }
     ],
     "page": {

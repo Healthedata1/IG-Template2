@@ -26,15 +26,16 @@
   <packageId value="healthedatainc.mfhir"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="3.6.0"/>
+  <fhirVersion value="3.6.0"/>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
     <version value="current"/>
   </dependsOn>
   <definition>
-    <package>
+    <grouping>
       <name value="base"/>
-    </package>
+    </grouping>
     <resource>
       <reference>
         <reference value="Patient/example"/>
@@ -107,8 +108,8 @@
       <generation value="markdown"/>
     </page>
     <parameter>
-      <code value="apply-business-version"/>
-      <value value="0.0.0"/>
+      <code value="apply"/>
+      <value value="version"/>
     </parameter>
     <parameter>
       <code value="html-template"/>

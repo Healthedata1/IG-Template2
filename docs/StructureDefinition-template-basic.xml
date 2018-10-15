@@ -279,6 +279,9 @@
       <isSummary value="false"/>
     </element>
     <element id="Basic.extension:Simple_Extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
       <path value="Basic.extension"/>
       <sliceName value="Simple_Extension"/>
       <short value="Example extension"/>
@@ -315,6 +318,9 @@
       <isModifier value="false"/>
     </element>
     <element id="Basic.extension:Complex_Extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
       <path value="Basic.extension"/>
       <sliceName value="Complex_Extension"/>
       <short value="Example complex extension"/>

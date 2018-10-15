@@ -322,6 +322,12 @@
       },
       {
         "id": "Basic.extension:Simple_Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Basic.extension",
         "sliceName": "Simple_Extension",
         "short": "Example extension",
@@ -367,6 +373,12 @@
       },
       {
         "id": "Basic.extension:Complex_Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Basic.extension",
         "sliceName": "Complex_Extension",
         "short": "Example complex extension",

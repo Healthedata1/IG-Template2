@@ -20,19 +20,22 @@
   fhir:ImplementationGuide.copyright [ fhir:value "Used by permission of Health eData Inc, all rights reserved Creative Commons License"];
   fhir:ImplementationGuide.packageId [ fhir:value "healthedatainc.mfhir"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
-  fhir:ImplementationGuide.fhirVersion [ fhir:value "3.6.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "3.6.0";
+     fhir:index 0
+  ];
   fhir:ImplementationGuide.definition [
-     fhir:ImplementationGuide.definition.package [
+     fhir:ImplementationGuide.definition.grouping [
        fhir:index 0;
-       fhir:ImplementationGuide.definition.package.name [ fhir:value "base" ]
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "base" ]
      ], [
        fhir:index 1;
        fhir:Element.id [ fhir:value "patient-on-usprofile-spreadsheet.xml" ];
-       fhir:ImplementationGuide.definition.package.name [ fhir:value "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet" ]
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet" ]
      ], [
        fhir:index 2;
        fhir:Element.id [ fhir:value "template-profile-spreadsheet.xml" ];
-       fhir:ImplementationGuide.definition.package.name [ fhir:value "Template-basic" ]
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Template-basic" ]
      ];
      fhir:ImplementationGuide.definition.resource [
        fhir:index 0;
@@ -178,7 +181,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/template-profile-on-profile" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Template-Profile-on-Profile" ];
-       fhir:ImplementationGuide.definition.resource.package [ fhir:value "patient-on-usprofile-spreadsheet.xml" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "patient-on-usprofile-spreadsheet.xml" ]
      ], [
        fhir:index 12;
        fhir:Element.extension [
@@ -191,7 +194,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/extension-blah" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Extension" ];
-       fhir:ImplementationGuide.definition.resource.package [ fhir:value "template-profile-spreadsheet.xml" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
      ], [
        fhir:index 13;
        fhir:Element.extension [
@@ -204,7 +207,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/extension-complex" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Complex Extension" ];
-       fhir:ImplementationGuide.definition.resource.package [ fhir:value "template-profile-spreadsheet.xml" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
      ], [
        fhir:index 14;
        fhir:Element.extension [
@@ -217,7 +220,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/extension-blah2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Extension" ];
-       fhir:ImplementationGuide.definition.resource.package [ fhir:value "template-profile-spreadsheet.xml" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
      ], [
        fhir:index 15;
        fhir:Element.extension [
@@ -230,7 +233,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/template-basic" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "template-basic" ];
-       fhir:ImplementationGuide.definition.resource.package [ fhir:value "template-profile-spreadsheet.xml" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.md" ];

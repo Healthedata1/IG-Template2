@@ -194,7 +194,6 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
 </p>
 
 
-
 <!-- ============BreadCrumb=============== -->
 
 <nav class="breadcrumb">
@@ -295,17 +294,20 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.copyright">fhir:ImplementationGuide.copyright</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;Used by permission of Health eData Inc, all rights reserved Creative Commons License&quot;];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.packageId">fhir:ImplementationGuide.packageId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;healthedatainc.mfhir&quot;];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.license">fhir:ImplementationGuide.license</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;CC0-1.0&quot;];
-  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.fhirVersion">fhir:ImplementationGuide.fhirVersion</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;3.6.0&quot;];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.fhirVersion">fhir:ImplementationGuide.fhirVersion</a> [
+     <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;3.6.0&quot;;
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0
+  ];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition">fhir:ImplementationGuide.definition</a> [
-     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package">fhir:ImplementationGuide.definition.package</a> [
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping">fhir:ImplementationGuide.definition.grouping</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.name">fhir:ImplementationGuide.definition.package.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;base&quot; ]     ], [
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.name">fhir:ImplementationGuide.definition.grouping.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;base&quot; ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
-       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;patient-on-usprofile-spreadsheet.xml&quot; ];
-       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.name">fhir:ImplementationGuide.definition.package.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet&quot; ]     ], [
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;patient-on-usprofile-spreadsheet.xml&quot; ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.name">fhir:ImplementationGuide.definition.grouping.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet&quot; ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
-       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;template-profile-spreadsheet.xml&quot; ];
-       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.package.name">fhir:ImplementationGuide.definition.package.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Template-basic&quot; ]     ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;template-profile-spreadsheet.xml&quot; ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.name">fhir:ImplementationGuide.definition.grouping.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Template-basic&quot; ]     ];
      <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">fhir:ImplementationGuide.definition.resource</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
@@ -403,7 +405,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/template-profile-on-profile&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">fhir:ImplementationGuide.definition.resource.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Template-Profile-on-Profile&quot; ];
-       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">fhir:ImplementationGuide.definition.resource.package</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;patient-on-usprofile-spreadsheet.xml&quot; ]     ], [
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">fhir:ImplementationGuide.definition.resource.groupingId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;patient-on-usprofile-spreadsheet.xml&quot; ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 12;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
@@ -412,7 +414,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/extension-blah&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">fhir:ImplementationGuide.definition.resource.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Example Extension&quot; ];
-       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">fhir:ImplementationGuide.definition.resource.package</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;template-profile-spreadsheet.xml&quot; ]     ], [
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">fhir:ImplementationGuide.definition.resource.groupingId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;template-profile-spreadsheet.xml&quot; ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 13;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
@@ -421,7 +423,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/extension-complex&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">fhir:ImplementationGuide.definition.resource.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Complex Extension&quot; ];
-       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">fhir:ImplementationGuide.definition.resource.package</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;template-profile-spreadsheet.xml&quot; ]     ], [
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">fhir:ImplementationGuide.definition.resource.groupingId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;template-profile-spreadsheet.xml&quot; ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 14;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
@@ -430,7 +432,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/extension-blah2&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">fhir:ImplementationGuide.definition.resource.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Example Extension&quot; ];
-       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">fhir:ImplementationGuide.definition.resource.package</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;template-profile-spreadsheet.xml&quot; ]     ], [
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">fhir:ImplementationGuide.definition.resource.groupingId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;template-profile-spreadsheet.xml&quot; ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 15;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
@@ -439,7 +441,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/template-basic&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">fhir:ImplementationGuide.definition.resource.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;template-basic&quot; ];
-       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.package">fhir:ImplementationGuide.definition.resource.package</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;template-profile-spreadsheet.xml&quot; ]     ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">fhir:ImplementationGuide.definition.resource.groupingId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;template-profile-spreadsheet.xml&quot; ]     ];
      <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page">fhir:ImplementationGuide.definition.page</a> [
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;index.md&quot; ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;IG_Test3 Homepage&quot; ];
@@ -502,7 +504,7 @@ Formats: <a href="ImplementationGuide-ig.html">Narrative</a>, <a href="Implement
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Thu, Sep 27, 2018 08:04-0700.
+      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Mon, Oct 15, 2018 13:07-0700.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>

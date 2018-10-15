@@ -340,6 +340,11 @@
      ], [
        fhir:index 8;
        fhir:Element.id [ fhir:value "Basic.extension:Simple_Extension" ];
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
+         fhir:Extension.valueCode [ fhir:value "normative" ]
+       ];
        fhir:ElementDefinition.path [ fhir:value "Basic.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Simple_Extension" ];
        fhir:ElementDefinition.short [ fhir:value "Example extension" ];
@@ -386,6 +391,11 @@
      ], [
        fhir:index 9;
        fhir:Element.id [ fhir:value "Basic.extension:Complex_Extension" ];
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
+         fhir:Extension.valueCode [ fhir:value "normative" ]
+       ];
        fhir:ElementDefinition.path [ fhir:value "Basic.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Complex_Extension" ];
        fhir:ElementDefinition.short [ fhir:value "Example complex extension" ];

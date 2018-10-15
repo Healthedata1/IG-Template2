@@ -194,7 +194,6 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
 </p>
 
 
-
 <!-- ============BreadCrumb=============== -->
 
 <nav class="breadcrumb">
@@ -296,7 +295,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Health eData Template Profile&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2017-02-15&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;3.6.0&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;3.6.0&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping">mapping</a>&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.uri">uri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/v3&quot;/&gt;
@@ -580,6 +579,10 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Basic.extension:Simple_Extension&quot;&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;normative&quot;/&gt;
+      &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Basic.extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Simple_Extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Example extension&quot;/&gt;
@@ -618,6 +621,10 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Basic.extension:Complex_Extension&quot;&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;normative&quot;/&gt;
+      &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Basic.extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Complex_Extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Example complex extension&quot;/&gt;
@@ -1924,7 +1931,7 @@ Formats: <a href="StructureDefinition-template-basic.html">Narrative</a>, <a hre
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Thu, Sep 27, 2018 08:04-0700.
+      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Mon, Oct 15, 2018 13:07-0700.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
