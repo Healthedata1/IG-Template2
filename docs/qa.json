@@ -1,11 +1,11 @@
 ﻿{
   "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
-  "name": "IG_Test3",
+  "name": "IG_Test3FOO",
   "package-id": "healthedatainc.mfhir",
-  "ig-ver": "0.0.0",
-  "date": "Mon, 15 Oct, 2018 13:07:28 -0700",
-  "errs": 14,
-  "warnings": 34,
+  "ig-ver": "8.8.8",
+  "date": "Mon, 22 Oct, 2018 22:59:30 -0700",
+  "errs": 22,
+  "warnings": 38,
   "hints": 0,
   "version": "3.6.0",
   "tool": "3.6.0 (2)"

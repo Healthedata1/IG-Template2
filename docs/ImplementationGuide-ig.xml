@@ -3,11 +3,11 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG_Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IG_Test3FOO</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>
   </text>
   <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
-  <version value="0.0.0"/>
-  <name value="IG_Test3"/>
+  <version value="8.8.8"/>
+  <name value="IG_Test3FOO"/>
   <status value="draft"/>
   <publisher value="Health eData Inc"/>
   <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
@@ -174,9 +174,109 @@
       <groupingId value="template-profile-spreadsheet.xml"/>
     </resource>
     <page>
-      <nameUrl value="index.md"/>
-      <title value="IG_Test3 Homepage"/>
+      <nameUrl value="index.html"/>
+      <title value="Home"/>
       <generation value="markdown"/>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles and Extensions"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="StructureDefinition-template-basic.html"/>
+          <title value="Structuredefinition Template Basic "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
+          <title value="Structuredefinition Template Profile On Profile "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-blah.html"/>
+          <title value="Structure Definition Extension Blah"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-blah2.html"/>
+          <title value="StructureDefinitionExtensionBlah2"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-complex.html"/>
+          <title value="StructureDefinition Extension Complex"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-identifier-status.html"/>
+          <title value="StructureDefinition Extension Identifier Status"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="operations.html"/>
+        <title value="Operations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="ValueSet-blah-codes.html"/>
+          <title value="Valueset Blah Codes "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="CodeSystem-blah-codes.html"/>
+          <title value="Codesystem Blah Codes "/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="searchparameters.html"/>
+        <title value="Search Parameters"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="capstatements.html"/>
+        <title value="Capability Statements"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="CapabilityStatement-client.html"/>
+          <title value="CapabilityStatement Client "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="CapabilityStatement-server.html"/>
+          <title value="CapabilityStatement Server "/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="All Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="toc.html"/>
+        <title value="Table of Contents"/>
+        <generation value="html"/>
+      </page>
     </page>
   </definition>
 </ImplementationGuide>

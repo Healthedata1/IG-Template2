@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="extension-identifier-status"/>
+  <meta>
+    <lastUpdated value="2017-11-20T11:48:37.913-05:00"/>
+  </meta>
+  <url value="http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status"/>
+  <name value="IdentifierStatus"/>
+  <title value="VhDir Identifier Status"/>
+  <status value="active"/>
+  <date value="2017-11-20T11:33:43.51-05:00"/>
+  <description value="Describes the status of an identifier"/>
+  <fhirVersion value="3.6.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Identifier"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Status"/>
+      <definition value="Describes the status of an identifier"/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status"/>
+    </element>
+    <element id="Extension.valueCode">
+      <path value="Extension.valueCode"/>
+      <short value="active|inactive|issued in error|revoked|pending"/>
+      <definition value="Describes the status of an identifier"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

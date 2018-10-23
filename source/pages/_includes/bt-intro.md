@@ -4,7 +4,7 @@ source: bt.md file
 
     This profile sets minimum expectations for blah blah blah
 
-    ##### Mandatory Data Elements and Terminology
+    #### Mandatory Data Elements and Terminology
 
     The following data-elements are mandatory (i.e data MUST be present). blah blah blah
 
@@ -16,4 +16,4 @@ source: bt.md file
 
     **Additional Profile specific implementation guidance:**
 
-    #### Examples
+    ### Examples

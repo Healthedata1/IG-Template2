@@ -3,11 +3,11 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG_Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG_Test3FOO</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
   },
   "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
-  "version": "0.0.0",
-  "name": "IG_Test3",
+  "version": "8.8.8",
+  "name": "IG_Test3FOO",
   "status": "draft",
   "publisher": "Health eData Inc",
   "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
@@ -230,9 +230,117 @@
       }
     ],
     "page": {
-      "nameUrl": "index.md",
-      "title": "IG_Test3 Homepage",
-      "generation": "markdown"
+      "nameUrl": "index.html",
+      "title": "Home",
+      "generation": "markdown",
+      "page": [
+        {
+          "nameUrl": "guidance.html",
+          "title": "General Guidance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles and Extensions",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "StructureDefinition-template-basic.html",
+              "title": "Structuredefinition Template Basic ",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-template-profile-on-profile.html",
+              "title": "Structuredefinition Template Profile On Profile ",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-extension-blah.html",
+              "title": "Structure Definition Extension Blah",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-extension-blah2.html",
+              "title": "StructureDefinitionExtensionBlah2",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-extension-complex.html",
+              "title": "StructureDefinition Extension Complex",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-extension-identifier-status.html",
+              "title": "StructureDefinition Extension Identifier Status",
+              "generation": "generated"
+            }
+          ]
+        },
+        {
+          "nameUrl": "operations.html",
+          "title": "Operations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ValueSet-blah-codes.html",
+              "title": "Valueset Blah Codes ",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "CodeSystem-blah-codes.html",
+              "title": "Codesystem Blah Codes ",
+              "generation": "generated"
+            }
+          ]
+        },
+        {
+          "nameUrl": "searchparameters.html",
+          "title": "Search Parameters",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "capstatements.html",
+          "title": "Capability Statements",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "CapabilityStatement-client.html",
+              "title": "CapabilityStatement Client ",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "CapabilityStatement-server.html",
+              "title": "CapabilityStatement Server ",
+              "generation": "generated"
+            }
+          ]
+        },
+        {
+          "nameUrl": "security.html",
+          "title": "Security",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "All Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "toc.html",
+          "title": "Table of Contents",
+          "generation": "html"
+        }
+      ]
     }
   }
 }

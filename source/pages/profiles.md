@@ -3,7 +3,7 @@ title: Profiles defined as part of this Guide
 layout: default
 active: profiles
 ---
-#### Profiles
+## Profiles
 
 The following Profiles have been defined for this implementation guide.
 
@@ -11,7 +11,7 @@ The following Profiles have been defined for this implementation guide.
 
 <br />
 
-#### Extensions
+## Extensions
 
 These extensions have been defined for this implementation guide.
 

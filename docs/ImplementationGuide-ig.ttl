@@ -10,11 +10,11 @@
   fhir:Resource.id [ fhir:value "ig"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG_Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG_Test3FOO</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://www.fhir.org/guides/test3/ImplementationGuide/ig"];
-  fhir:ImplementationGuide.version [ fhir:value "0.0.0"];
-  fhir:ImplementationGuide.name [ fhir:value "IG_Test3"];
+  fhir:ImplementationGuide.version [ fhir:value "8.8.8"];
+  fhir:ImplementationGuide.name [ fhir:value "IG_Test3FOO"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.publisher [ fhir:value "Health eData Inc"];
   fhir:ImplementationGuide.copyright [ fhir:value "Used by permission of Health eData Inc, all rights reserved Creative Commons License"];
@@ -236,9 +236,113 @@
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
      ];
      fhir:ImplementationGuide.definition.page [
-       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.md" ];
-       fhir:ImplementationGuide.definition.page.title [ fhir:value "IG_Test3 Homepage" ];
-       fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guidance.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "General Guidance" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles and Extensions" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-template-basic.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Structuredefinition Template Basic " ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-template-profile-on-profile.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Structuredefinition Template Profile On Profile " ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-blah.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Structure Definition Extension Blah" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-blah2.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinitionExtensionBlah2" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 4;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-complex.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension Complex" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 5;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-identifier-status.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension Identifier Status" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operations.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Operations" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "ValueSet-blah-codes.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Valueset Blah Codes " ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CodeSystem-blah-codes.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Codesystem Blah Codes " ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "searchparameters.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Search Parameters" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "capstatements.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Capability Statements" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CapabilityStatement-client.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "CapabilityStatement Client " ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CapabilityStatement-server.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "CapabilityStatement Server " ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Security" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 7;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 8;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "examples.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "All Examples" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 9;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ]
      ]
   ] .
 
