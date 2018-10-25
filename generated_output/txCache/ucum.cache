@@ -1,0 +1,821 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "{steps}/d"
+}, "valueSet" :null}####
+v: {
+  "display" : "{steps}/d",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fL",
+        "display" : "fL"
+      },
+      {
+        "code" : "pL",
+        "display" : "pL"
+      },
+      {
+        "code" : "nL",
+        "display" : "nL"
+      },
+      {
+        "code" : "uL",
+        "display" : "uL"
+      },
+      {
+        "code" : "mL",
+        "display" : "mL"
+      },
+      {
+        "code" : "cL",
+        "display" : "cL"
+      },
+      {
+        "code" : "dL",
+        "display" : "dL"
+      },
+      {
+        "code" : "L",
+        "display" : "L"
+      },
+      {
+        "code" : "kL",
+        "display" : "kL"
+      },
+      {
+        "code" : "fl oz",
+        "display" : "fl oz"
+      },
+      {
+        "code" : "Cup",
+        "display" : "Cup"
+      },
+      {
+        "code" : "in^3",
+        "display" : "in^3"
+      },
+      {
+        "code" : "pt",
+        "display" : "pt"
+      },
+      {
+        "code" : "qt",
+        "display" : "qt"
+      },
+      {
+        "code" : "gal",
+        "display" : "gal"
+      },
+      {
+        "code" : "tsp",
+        "display" : "tsp"
+      },
+      {
+        "code" : "tbsp",
+        "display" : "tbsp"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "K",
+        "display" : "K"
+      },
+      {
+        "code" : "F",
+        "display" : "F"
+      },
+      {
+        "code" : "C",
+        "display" : "C"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "m/s",
+        "display" : "m/s"
+      },
+      {
+        "code" : "km/h",
+        "display" : "km/h"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "min/mi",
+        "display" : "min/mi"
+      },
+      {
+        "code" : "min/km",
+        "display" : "min/km"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fg",
+        "display" : "fg"
+      },
+      {
+        "code" : "pg",
+        "display" : "pg"
+      },
+      {
+        "code" : "ng",
+        "display" : "ng"
+      },
+      {
+        "code" : "ug",
+        "display" : "ug"
+      },
+      {
+        "code" : "mg",
+        "display" : "mg"
+      },
+      {
+        "code" : "g",
+        "display" : "g"
+      },
+      {
+        "code" : "kg",
+        "display" : "kg"
+      },
+      {
+        "code" : "Metric Ton",
+        "display" : "Metric Ton"
+      },
+      {
+        "code" : "gr",
+        "display" : "gr"
+      },
+      {
+        "code" : "oz",
+        "display" : "oz"
+      },
+      {
+        "code" : "lb",
+        "display" : "lb"
+      },
+      {
+        "code" : "Ton",
+        "display" : "Ton"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "pT",
+        "display" : "pT"
+      },
+      {
+        "code" : "nT",
+        "display" : "nT"
+      },
+      {
+        "code" : "uT",
+        "display" : "uT"
+      },
+      {
+        "code" : "mT",
+        "display" : "mT"
+      },
+      {
+        "code" : "T",
+        "display" : "T"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fm",
+        "display" : "fm"
+      },
+      {
+        "code" : "pm",
+        "display" : "pm"
+      },
+      {
+        "code" : "nm",
+        "display" : "nm"
+      },
+      {
+        "code" : "um",
+        "display" : "um"
+      },
+      {
+        "code" : "mm",
+        "display" : "mm"
+      },
+      {
+        "code" : "cm",
+        "display" : "cm"
+      },
+      {
+        "code" : "m",
+        "display" : "m"
+      },
+      {
+        "code" : "km",
+        "display" : "km"
+      },
+      {
+        "code" : "in",
+        "display" : "in"
+      },
+      {
+        "code" : "ft",
+        "display" : "ft"
+      },
+      {
+        "code" : "yd",
+        "display" : "yd"
+      },
+      {
+        "code" : "mi",
+        "display" : "mi"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "ps",
+        "display" : "ps"
+      },
+      {
+        "code" : "ns",
+        "display" : "ns"
+      },
+      {
+        "code" : "us",
+        "display" : "us"
+      },
+      {
+        "code" : "ms",
+        "display" : "ms"
+      },
+      {
+        "code" : "sec",
+        "display" : "sec"
+      },
+      {
+        "code" : "min",
+        "display" : "min"
+      },
+      {
+        "code" : "h",
+        "display" : "h"
+      },
+      {
+        "code" : "d",
+        "display" : "d"
+      },
+      {
+        "code" : "wk",
+        "display" : "wk"
+      },
+      {
+        "code" : "Mo",
+        "display" : "Mo"
+      },
+      {
+        "code" : "yr",
+        "display" : "yr"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "mm^2",
+        "display" : "mm^2"
+      },
+      {
+        "code" : "cm^2",
+        "display" : "cm^2"
+      },
+      {
+        "code" : "m^2",
+        "display" : "m^2"
+      },
+      {
+        "code" : "km^2",
+        "display" : "km^2"
+      },
+      {
+        "code" : "in^2",
+        "display" : "in^2"
+      },
+      {
+        "code" : "ft^2",
+        "display" : "ft^2"
+      },
+      {
+        "code" : "yd^2",
+        "display" : "yd^2"
+      },
+      {
+        "code" : "mi^2",
+        "display" : "mi^2"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fL",
+        "display" : "fL"
+      },
+      {
+        "code" : "pL",
+        "display" : "pL"
+      },
+      {
+        "code" : "nL",
+        "display" : "nL"
+      },
+      {
+        "code" : "uL",
+        "display" : "uL"
+      },
+      {
+        "code" : "mL",
+        "display" : "mL"
+      },
+      {
+        "code" : "cL",
+        "display" : "cL"
+      },
+      {
+        "code" : "dL",
+        "display" : "dL"
+      },
+      {
+        "code" : "L",
+        "display" : "L"
+      },
+      {
+        "code" : "kL",
+        "display" : "kL"
+      },
+      {
+        "code" : "fl oz",
+        "display" : "fl oz"
+      },
+      {
+        "code" : "Cup",
+        "display" : "Cup"
+      },
+      {
+        "code" : "in^3",
+        "display" : "in^3"
+      },
+      {
+        "code" : "pt",
+        "display" : "pt"
+      },
+      {
+        "code" : "qt",
+        "display" : "qt"
+      },
+      {
+        "code" : "gal",
+        "display" : "gal"
+      },
+      {
+        "code" : "tsp",
+        "display" : "tsp"
+      },
+      {
+        "code" : "tbsp",
+        "display" : "tbsp"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "K",
+        "display" : "K"
+      },
+      {
+        "code" : "F",
+        "display" : "F"
+      },
+      {
+        "code" : "C",
+        "display" : "C"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "m/s",
+        "display" : "m/s"
+      },
+      {
+        "code" : "km/h",
+        "display" : "km/h"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "min/mi",
+        "display" : "min/mi"
+      },
+      {
+        "code" : "min/km",
+        "display" : "min/km"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fg",
+        "display" : "fg"
+      },
+      {
+        "code" : "pg",
+        "display" : "pg"
+      },
+      {
+        "code" : "ng",
+        "display" : "ng"
+      },
+      {
+        "code" : "ug",
+        "display" : "ug"
+      },
+      {
+        "code" : "mg",
+        "display" : "mg"
+      },
+      {
+        "code" : "g",
+        "display" : "g"
+      },
+      {
+        "code" : "kg",
+        "display" : "kg"
+      },
+      {
+        "code" : "Metric Ton",
+        "display" : "Metric Ton"
+      },
+      {
+        "code" : "gr",
+        "display" : "gr"
+      },
+      {
+        "code" : "oz",
+        "display" : "oz"
+      },
+      {
+        "code" : "lb",
+        "display" : "lb"
+      },
+      {
+        "code" : "Ton",
+        "display" : "Ton"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "pT",
+        "display" : "pT"
+      },
+      {
+        "code" : "nT",
+        "display" : "nT"
+      },
+      {
+        "code" : "uT",
+        "display" : "uT"
+      },
+      {
+        "code" : "mT",
+        "display" : "mT"
+      },
+      {
+        "code" : "T",
+        "display" : "T"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fm",
+        "display" : "fm"
+      },
+      {
+        "code" : "pm",
+        "display" : "pm"
+      },
+      {
+        "code" : "nm",
+        "display" : "nm"
+      },
+      {
+        "code" : "um",
+        "display" : "um"
+      },
+      {
+        "code" : "mm",
+        "display" : "mm"
+      },
+      {
+        "code" : "cm",
+        "display" : "cm"
+      },
+      {
+        "code" : "m",
+        "display" : "m"
+      },
+      {
+        "code" : "km",
+        "display" : "km"
+      },
+      {
+        "code" : "in",
+        "display" : "in"
+      },
+      {
+        "code" : "ft",
+        "display" : "ft"
+      },
+      {
+        "code" : "yd",
+        "display" : "yd"
+      },
+      {
+        "code" : "mi",
+        "display" : "mi"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "ps",
+        "display" : "ps"
+      },
+      {
+        "code" : "ns",
+        "display" : "ns"
+      },
+      {
+        "code" : "us",
+        "display" : "us"
+      },
+      {
+        "code" : "ms",
+        "display" : "ms"
+      },
+      {
+        "code" : "sec",
+        "display" : "sec"
+      },
+      {
+        "code" : "min",
+        "display" : "min"
+      },
+      {
+        "code" : "h",
+        "display" : "h"
+      },
+      {
+        "code" : "d",
+        "display" : "d"
+      },
+      {
+        "code" : "wk",
+        "display" : "wk"
+      },
+      {
+        "code" : "Mo",
+        "display" : "Mo"
+      },
+      {
+        "code" : "yr",
+        "display" : "yr"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "mm^2",
+        "display" : "mm^2"
+      },
+      {
+        "code" : "cm^2",
+        "display" : "cm^2"
+      },
+      {
+        "code" : "m^2",
+        "display" : "m^2"
+      },
+      {
+        "code" : "km^2",
+        "display" : "km^2"
+      },
+      {
+        "code" : "in^2",
+        "display" : "in^2"
+      },
+      {
+        "code" : "ft^2",
+        "display" : "ft^2"
+      },
+      {
+        "code" : "yd^2",
+        "display" : "yd^2"
+      },
+      {
+        "code" : "mi^2",
+        "display" : "mi^2"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------

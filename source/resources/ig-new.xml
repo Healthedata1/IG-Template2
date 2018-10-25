@@ -19,21 +19,20 @@
   </extension>
   <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
   <version value="0.0.0"/>
-  <name value="IG_Test3FOO"/>
+  <name value="IG_Test3"/>
   <status value="draft"/>
+  <experimental value="true"/>
   <publisher value="Health eData Inc"/>
-  <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
   <packageId value="healthedatainc.mfhir"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="3.6.0"/>
-  <fhirVersion value="3.6.0"/>
+  <fhirVersion value="3.0.1"/>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
     <version value="current"/>
   </dependsOn>
   <definition>
-    <grouping>
+    <grouping id="p1">
       <name value="base"/>
     </grouping>
     <resource>
@@ -41,98 +40,92 @@
         <reference value="Patient/example"/>
       </reference>
       <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/extension-complex"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/extension-blah"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/blah-codes"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/template-basic"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/extension-blah2"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/template-profile-on-profile"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/extension-identifier-status"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/blah-codes"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="CapabilityStatement/server"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="CapabilityStatement/client"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <page>
       <nameUrl value="index.html"/>
       <title value="Home"/>
-      <generation value="markdown"/>
+      <generation value="html"/>
       <page>
         <nameUrl value="guidance.html"/>
         <title value="General Guidance"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="profiles.html"/>
         <title value="Profiles and Extensions"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
         <page>
           <nameUrl value="StructureDefinition-template-basic.html"/>
-          <title value="Structuredefinition Template Basic "/>
+          <title value="StructureDefinition Template Basic"/>
           <generation value="generated"/>
         </page>
         <page>
           <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
-          <title value="Structuredefinition Template Profile On Profile "/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-extension-blah.html"/>
-          <title value="Structure Definition Extension Blah"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-extension-blah2.html"/>
-          <title value="StructureDefinitionExtensionBlah2"/>
+          <title value="StructureDefinition Template Profile On Profile"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -141,70 +134,75 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-extension-identifier-status.html"/>
-          <title value="StructureDefinition Extension Identifier Status"/>
+          <nameUrl value="StructureDefinition-extension-blah.html"/>
+          <title value="StructureDefinition Extension Blah"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-blah2.html"/>
+          <title value="StructureDefinition Extension Blah2"/>
           <generation value="generated"/>
         </page>
       </page>
       <page>
         <nameUrl value="operations.html"/>
         <title value="Operations"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="terminology.html"/>
         <title value="Terminology"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
         <page>
           <nameUrl value="ValueSet-blah-codes.html"/>
-          <title value="Valueset Blah Codes "/>
+          <title value="ValueSet Blah Codes"/>
           <generation value="generated"/>
         </page>
         <page>
           <nameUrl value="CodeSystem-blah-codes.html"/>
-          <title value="Codesystem Blah Codes "/>
+          <title value="CodeSystem Blah Codes"/>
           <generation value="generated"/>
         </page>
       </page>
       <page>
         <nameUrl value="searchparameters.html"/>
         <title value="Search Parameters"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="capstatements.html"/>
         <title value="Capability Statements"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
         <page>
-          <nameUrl value="CapabilityStatement-client.html"/>
-          <title value="CapabilityStatement Client "/>
+          <nameUrl value="CapabilityStatement-server.html"/>
+          <title value="CapabilityStatement Server"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="CapabilityStatement-server.html"/>
-          <title value="CapabilityStatement Server "/>
+          <nameUrl value="CapabilityStatement-client.html"/>
+          <title value="CapabilityStatement Client"/>
           <generation value="generated"/>
         </page>
       </page>
       <page>
         <nameUrl value="security.html"/>
         <title value="Security"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="all-examples.html"/>
+        <nameUrl value="examples.html"/>
         <title value="All Examples"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="toc.html"/>
         <title value="Table of Contents"/>
-        <generation value="html"/>
+        <generation value="generated"/>
       </page>
     </page>
     <parameter>

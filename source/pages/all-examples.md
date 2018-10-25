@@ -1,6 +1,6 @@
 ---
 # jekyll header
-name: all-examples
+active: all-examples
 title: Examples
 layout: default
 ---

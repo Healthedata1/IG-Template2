@@ -23,14 +23,13 @@
   }],
   "url" : "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
   "version" : "0.0.0",
-  "name" : "IG_Test3FOO",
+  "name" : "IG_Test3",
   "status" : "draft",
+  "experimental" : true,
   "publisher" : "Health eData Inc",
-  "copyright" : "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
   "packageId" : "healthedatainc.mfhir",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["3.6.0",
-  "3.6.0"],
+  "fhirVersion" : ["3.0.1"],
   "dependsOn" : [{
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
@@ -39,105 +38,100 @@
   }],
   "definition" : {
     "grouping" : [{
+      "id" : "p1",
       "name" : "base"
     }],
     "resource" : [{
       "reference" : {
         "reference" : "Patient/example"
       },
-      "exampleBoolean" : true
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/extension-complex"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/extension-blah"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "ValueSet/blah-codes"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/template-basic"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/extension-blah2"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/template-profile-on-profile"
       },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/extension-identifier-status"
-      },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "CodeSystem/blah-codes"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "CapabilityStatement/server"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "CapabilityStatement/client"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     }],
     "page" : {
       "nameUrl" : "index.html",
       "title" : "Home",
-      "generation" : "markdown",
+      "generation" : "html",
       "page" : [{
         "nameUrl" : "guidance.html",
         "title" : "General Guidance",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "nameUrl" : "profiles.html",
         "title" : "Profiles and Extensions",
-        "generation" : "markdown",
+        "generation" : "html",
         "page" : [{
           "nameUrl" : "StructureDefinition-template-basic.html",
-          "title" : "Structuredefinition Template Basic ",
+          "title" : "StructureDefinition Template Basic",
           "generation" : "generated"
         },
         {
           "nameUrl" : "StructureDefinition-template-profile-on-profile.html",
-          "title" : "Structuredefinition Template Profile On Profile ",
-          "generation" : "generated"
-        },
-        {
-          "nameUrl" : "StructureDefinition-extension-blah.html",
-          "title" : "Structure Definition Extension Blah",
-          "generation" : "generated"
-        },
-        {
-          "nameUrl" : "StructureDefinition-extension-blah2.html",
-          "title" : "StructureDefinitionExtensionBlah2",
+          "title" : "StructureDefinition Template Profile On Profile",
           "generation" : "generated"
         },
         {
@@ -146,70 +140,75 @@
           "generation" : "generated"
         },
         {
-          "nameUrl" : "StructureDefinition-extension-identifier-status.html",
-          "title" : "StructureDefinition Extension Identifier Status",
+          "nameUrl" : "StructureDefinition-extension-blah.html",
+          "title" : "StructureDefinition Extension Blah",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "StructureDefinition-extension-blah2.html",
+          "title" : "StructureDefinition Extension Blah2",
           "generation" : "generated"
         }]
       },
       {
         "nameUrl" : "operations.html",
         "title" : "Operations",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "nameUrl" : "terminology.html",
         "title" : "Terminology",
-        "generation" : "markdown",
+        "generation" : "html",
         "page" : [{
           "nameUrl" : "ValueSet-blah-codes.html",
-          "title" : "Valueset Blah Codes ",
+          "title" : "ValueSet Blah Codes",
           "generation" : "generated"
         },
         {
           "nameUrl" : "CodeSystem-blah-codes.html",
-          "title" : "Codesystem Blah Codes ",
+          "title" : "CodeSystem Blah Codes",
           "generation" : "generated"
         }]
       },
       {
         "nameUrl" : "searchparameters.html",
         "title" : "Search Parameters",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "nameUrl" : "capstatements.html",
         "title" : "Capability Statements",
-        "generation" : "markdown",
+        "generation" : "html",
         "page" : [{
-          "nameUrl" : "CapabilityStatement-client.html",
-          "title" : "CapabilityStatement Client ",
+          "nameUrl" : "CapabilityStatement-server.html",
+          "title" : "CapabilityStatement Server",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "CapabilityStatement-server.html",
-          "title" : "CapabilityStatement Server ",
+          "nameUrl" : "CapabilityStatement-client.html",
+          "title" : "CapabilityStatement Client",
           "generation" : "generated"
         }]
       },
       {
         "nameUrl" : "security.html",
         "title" : "Security",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "nameUrl" : "downloads.html",
         "title" : "Downloads",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
-        "nameUrl" : "all-examples.html",
+        "nameUrl" : "examples.html",
         "title" : "All Examples",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "nameUrl" : "toc.html",
         "title" : "Table of Contents",
-        "generation" : "html"
+        "generation" : "generated"
       }]
     },
     "parameter" : [{

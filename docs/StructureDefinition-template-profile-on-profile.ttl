@@ -16,8 +16,8 @@
   fhir:StructureDefinition.version [ fhir:value "0.0.0"];
   fhir:StructureDefinition.name [ fhir:value "Template-Profile-on-Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2017-02-15"^^xsd:date];
-  fhir:StructureDefinition.fhirVersion [ fhir:value "3.6.0"];
+  fhir:StructureDefinition.date [ fhir:value "2017-02-15T00:00:00-08:00"^^xsd:dateTime];
+  fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
      fhir:StructureDefinition.mapping.identity [ fhir:value "foo" ];
@@ -62,10 +62,7 @@
   fhir:StructureDefinition.kind [ fhir:value "resource"];
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
   fhir:StructureDefinition.type [ fhir:value "Patient"];
-  fhir:StructureDefinition.baseDefinition [
-     fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient";
-     fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
-  ];
+  fhir:StructureDefinition.baseDefinition [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"];
   fhir:StructureDefinition.derivation [ fhir:value "constraint"];
   fhir:StructureDefinition.snapshot [
      fhir:StructureDefinition.snapshot.element [
@@ -200,7 +197,6 @@
          fhir:ElementDefinition.type.code [ fhir:value "uri" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -224,9 +220,9 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet" ];
-           fhir:Extension.valueCanonical [
-             fhir:value "http://hl7.org/fhir/ValueSet/all-languages";
-             fhir:link <http://hl7.org/fhir/ValueSet/all-languages>
+           fhir:Extension.valueReference [
+             fhir:link <http://hl7.org/fhir/ValueSet/all-languages>;
+             fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/all-languages" ]
            ]
          ], [
            fhir:index 1;
@@ -239,9 +235,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.description [ fhir:value "A human language." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/languages";
-           fhir:link <http://hl7.org/fhir/ValueSet/languages>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/languages>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/languages" ]
          ]
        ]
      ], [
@@ -361,11 +357,7 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-race>
-         ]
+         fhir:ElementDefinition.type.profile [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race" ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -391,11 +383,7 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity>
-         ]
+         fhir:ElementDefinition.type.profile [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity" ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -421,11 +409,7 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex>
-         ]
+         fhir:ElementDefinition.type.profile [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex" ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -460,7 +444,6 @@
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
@@ -596,7 +579,6 @@
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
          fhir:Element.extension [
@@ -606,9 +588,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Identifies the purpose for this identifier, if known ." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/identifier-use";
-           fhir:link <http://hl7.org/fhir/ValueSet/identifier-use>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/identifier-use>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/identifier-use" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -652,9 +634,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.description [ fhir:value "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/identifier-type";
-           fhir:link <http://hl7.org/fhir/ValueSet/identifier-type>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/identifier-type>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/identifier-type" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -803,11 +785,7 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
-         ]
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Organization" ]
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -844,7 +822,6 @@
        ];
        fhir:ElementDefinition.defaultValueBoolean [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -982,7 +959,6 @@
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
          fhir:Element.extension [
@@ -992,9 +968,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The use of a human name" ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/name-use";
-           fhir:link <http://hl7.org/fhir/ValueSet/name-use>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/name-use>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/name-use" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1273,9 +1249,9 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/administrative-gender";
-           fhir:link <http://hl7.org/fhir/ValueSet/administrative-gender>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/administrative-gender>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/administrative-gender" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1360,7 +1336,6 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -1438,9 +1413,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The domestic partnership status of a person." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/marital-status";
-           fhir:link <http://hl7.org/fhir/ValueSet/marital-status>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/marital-status>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/marital-status" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1656,7 +1631,6 @@
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -1689,9 +1663,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The nature of the relationship between a patient and a contact person for that patient." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/v2-0131";
-           fhir:link <http://hl7.org/fhir/ValueSet/v2-0131>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/v2-0131>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/v2-0131" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1831,9 +1805,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The gender of a person used for administrative purposes." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/administrative-gender";
-           fhir:link <http://hl7.org/fhir/ValueSet/administrative-gender>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/administrative-gender>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/administrative-gender" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1866,11 +1840,7 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
-         ]
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Organization" ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "pat-1";
@@ -1950,7 +1920,6 @@
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -2050,7 +2019,6 @@
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -2085,9 +2053,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The species of an animal." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/animal-species";
-           fhir:link <http://hl7.org/fhir/ValueSet/animal-species>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/animal-species>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/animal-species" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2131,9 +2099,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The breed of an animal." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/animal-breeds";
-           fhir:link <http://hl7.org/fhir/ValueSet/animal-breeds>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/animal-breeds>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/animal-breeds" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2176,9 +2144,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The state of the animal's reproductive organs." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/animal-genderstatus";
-           fhir:link <http://hl7.org/fhir/ValueSet/animal-genderstatus>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/animal-genderstatus>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/animal-genderstatus" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2321,7 +2289,6 @@
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -2352,15 +2319,15 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet" ];
-           fhir:Extension.valueCanonical [
-             fhir:value "http://hl7.org/fhir/us/core/ValueSet/simple-language";
-             fhir:link <http://hl7.org/fhir/us/core/ValueSet/simple-language>
+           fhir:Extension.valueReference [
+             fhir:link <http://hl7.org/fhir/us/core/ValueSet/simple-language>;
+             fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/core/ValueSet/simple-language" ]
            ]
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/core/ValueSet/simple-language";
-           fhir:link <http://hl7.org/fhir/us/core/ValueSet/simple-language>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/us/core/ValueSet/simple-language>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/core/ValueSet/simple-language" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2433,15 +2400,11 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner";
-           fhir:index 1;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
-         ]
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner" ]
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -2474,11 +2437,7 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
-         ]
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Organization" ]
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -2519,7 +2478,6 @@
          fhir:ElementDefinition.constraint.source [ fhir:value "Element" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -2615,7 +2573,6 @@
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifierReason [ fhir:value "No Modifier Reason provideed in previous versions of FHIR" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -2639,15 +2596,11 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
-         fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/RelatedPerson";
-           fhir:index 1;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
-         ]
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Patient" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/RelatedPerson" ]
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -2689,9 +2642,9 @@
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The type of link between this patient resource and another patient resource." ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/link-type";
-           fhir:link <http://hl7.org/fhir/ValueSet/link-type>
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/link-type>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/link-type" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2768,6 +2721,32 @@
        ]
      ]
   ] .
+
+<http://hl7.org/fhir/ValueSet/all-languages> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/languages> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/identifier-use> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/identifier-type> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/name-use> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/administrative-gender> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/marital-status> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/v2-0131> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/animal-species> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/animal-breeds> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/animal-genderstatus> a fhir:ValueSet .
+
+<http://hl7.org/fhir/us/core/ValueSet/simple-language> a fhir:us .
+
+<http://hl7.org/fhir/ValueSet/link-type> a fhir:ValueSet .
 
 # - ontology header ------------------------------------------------------------
 

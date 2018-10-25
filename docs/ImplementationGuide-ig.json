@@ -3,344 +3,326 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG_Test3FOO</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG_Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
   },
   "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
-  "version": "8.8.8",
-  "name": "IG_Test3FOO",
+  "version": "0.0.0",
+  "name": "IG_Test3",
   "status": "draft",
+  "experimental": true,
   "publisher": "Health eData Inc",
-  "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
-  "packageId": "healthedatainc.mfhir",
-  "license": "CC0-1.0",
-  "fhirVersion": [
-    "3.6.0"
-  ],
-  "definition": {
-    "grouping": [
-      {
-        "name": "base"
-      },
-      {
-        "id": "patient-on-usprofile-spreadsheet.xml",
-        "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"
-      },
-      {
-        "id": "template-profile-spreadsheet.xml",
-        "name": "Template-basic"
-      }
-    ],
-    "resource": [
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-example.html"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/example"
-        },
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-complex.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-complex"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-blah-codes.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/blah-codes"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-basic.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-basic"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah2.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah2"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-profile-on-profile.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-profile-on-profile"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-identifier-status.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-identifier-status"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-blah-codes.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/blah-codes"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CapabilityStatement-server.html"
-          }
-        ],
-        "reference": {
-          "reference": "CapabilityStatement/server"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CapabilityStatement-client.html"
-          }
-        ],
-        "reference": {
-          "reference": "CapabilityStatement/client"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-profile-on-profile.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-profile-on-profile"
-        },
-        "name": "Template-Profile-on-Profile",
-        "groupingId": "patient-on-usprofile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah"
-        },
-        "name": "Example Extension",
-        "groupingId": "template-profile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-complex.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-complex"
-        },
-        "name": "Complex Extension",
-        "groupingId": "template-profile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah2.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah2"
-        },
-        "name": "Example Extension",
-        "groupingId": "template-profile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-basic.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-basic"
-        },
-        "name": "template-basic",
-        "groupingId": "template-profile-spreadsheet.xml"
-      }
-    ],
-    "page": {
-      "nameUrl": "index.html",
-      "title": "Home",
-      "generation": "markdown",
-      "page": [
+  "fhirVersion": "3.0.1",
+  "package": [
+    {
+      "id": "p1",
+      "name": "base",
+      "resource": [
         {
-          "nameUrl": "guidance.html",
-          "title": "General Guidance",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "profiles.html",
-          "title": "Profiles and Extensions",
-          "generation": "markdown",
-          "page": [
+          "extension": [
             {
-              "nameUrl": "StructureDefinition-template-basic.html",
-              "title": "Structuredefinition Template Basic ",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-template-profile-on-profile.html",
-              "title": "Structuredefinition Template Profile On Profile ",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-extension-blah.html",
-              "title": "Structure Definition Extension Blah",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-extension-blah2.html",
-              "title": "StructureDefinitionExtensionBlah2",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-extension-complex.html",
-              "title": "StructureDefinition Extension Complex",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-extension-identifier-status.html",
-              "title": "StructureDefinition Extension Identifier Status",
-              "generation": "generated"
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Patient-example.html"
             }
-          ]
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Patient/example"
+          }
         },
         {
-          "nameUrl": "operations.html",
-          "title": "Operations",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "terminology.html",
-          "title": "Terminology",
-          "generation": "markdown",
-          "page": [
+          "extension": [
             {
-              "nameUrl": "ValueSet-blah-codes.html",
-              "title": "Valueset Blah Codes ",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "CodeSystem-blah-codes.html",
-              "title": "Codesystem Blah Codes ",
-              "generation": "generated"
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-complex.html"
             }
-          ]
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-complex"
+          }
         },
         {
-          "nameUrl": "searchparameters.html",
-          "title": "Search Parameters",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "capstatements.html",
-          "title": "Capability Statements",
-          "generation": "markdown",
-          "page": [
+          "extension": [
             {
-              "nameUrl": "CapabilityStatement-client.html",
-              "title": "CapabilityStatement Client ",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "CapabilityStatement-server.html",
-              "title": "CapabilityStatement Server ",
-              "generation": "generated"
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-blah.html"
             }
-          ]
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-blah"
+          }
         },
         {
-          "nameUrl": "security.html",
-          "title": "Security",
-          "generation": "markdown"
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-blah-codes.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/blah-codes"
+          }
         },
         {
-          "nameUrl": "downloads.html",
-          "title": "Downloads",
-          "generation": "markdown"
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-basic.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/template-basic"
+          }
         },
         {
-          "nameUrl": "all-examples.html",
-          "title": "All Examples",
-          "generation": "markdown"
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-blah2.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-blah2"
+          }
         },
         {
-          "nameUrl": "toc.html",
-          "title": "Table of Contents",
-          "generation": "html"
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-profile-on-profile.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/template-profile-on-profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CodeSystem-blah-codes.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CodeSystem/blah-codes"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-server.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/server"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-client.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/client"
+          }
+        }
+      ]
+    },
+    {
+      "id": "patient-on-usprofile-spreadsheet.xml",
+      "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-profile-on-profile.html"
+            }
+          ],
+          "example": false,
+          "name": "Template-Profile-on-Profile",
+          "sourceReference": {
+            "reference": "StructureDefinition/template-profile-on-profile"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-profile-spreadsheet.xml",
+      "name": "Template-basic",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-blah.html"
+            }
+          ],
+          "example": false,
+          "name": "Example Extension",
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-blah"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-complex.html"
+            }
+          ],
+          "example": false,
+          "name": "Complex Extension",
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-complex"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-blah2.html"
+            }
+          ],
+          "example": false,
+          "name": "Example Extension",
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-blah2"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-template-basic.html"
+            }
+          ],
+          "example": false,
+          "name": "template-basic",
+          "sourceReference": {
+            "reference": "StructureDefinition/template-basic"
+          }
         }
       ]
     }
+  ],
+  "page": {
+    "source": "index.html",
+    "title": "Home",
+    "kind": "page",
+    "page": [
+      {
+        "source": "guidance.html",
+        "title": "General Guidance",
+        "kind": "page"
+      },
+      {
+        "source": "profiles.html",
+        "title": "Profiles and Extensions",
+        "kind": "page",
+        "page": [
+          {
+            "source": "StructureDefinition-template-basic.html",
+            "title": "StructureDefinition Template Basic",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-template-profile-on-profile.html",
+            "title": "StructureDefinition Template Profile On Profile",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-extension-complex.html",
+            "title": "StructureDefinition Extension Complex",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-extension-blah.html",
+            "title": "StructureDefinition Extension Blah",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-extension-blah2.html",
+            "title": "StructureDefinition Extension Blah2",
+            "kind": "resource"
+          }
+        ]
+      },
+      {
+        "source": "operations.html",
+        "title": "Operations",
+        "kind": "page"
+      },
+      {
+        "source": "terminology.html",
+        "title": "Terminology",
+        "kind": "page",
+        "page": [
+          {
+            "source": "ValueSet-blah-codes.html",
+            "title": "ValueSet Blah Codes",
+            "kind": "resource"
+          },
+          {
+            "source": "CodeSystem-blah-codes.html",
+            "title": "CodeSystem Blah Codes",
+            "kind": "resource"
+          }
+        ]
+      },
+      {
+        "source": "searchparameters.html",
+        "title": "Search Parameters",
+        "kind": "page"
+      },
+      {
+        "source": "capstatements.html",
+        "title": "Capability Statements",
+        "kind": "page",
+        "page": [
+          {
+            "source": "CapabilityStatement-server.html",
+            "title": "CapabilityStatement Server",
+            "kind": "resource"
+          },
+          {
+            "source": "CapabilityStatement-client.html",
+            "title": "CapabilityStatement Client",
+            "kind": "resource"
+          }
+        ]
+      },
+      {
+        "source": "security.html",
+        "title": "Security",
+        "kind": "page"
+      },
+      {
+        "source": "downloads.html",
+        "title": "Downloads",
+        "kind": "page"
+      },
+      {
+        "source": "examples.html",
+        "title": "All Examples",
+        "kind": "page"
+      },
+      {
+        "source": "toc.html",
+        "title": "Table of Contents",
+        "kind": "resource"
+      }
+    ]
   }
 }

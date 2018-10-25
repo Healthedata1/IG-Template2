@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IG_Test3FOO</title>
+  <title>IG_Test3</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IG_Test3FOO Implemenation Guide" />
+<meta name="description" content="IG_Test3 Implemenation Guide" />
 <meta name="author" content="Health eData Inc"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -76,7 +76,7 @@ can only resize using html  or css ;-(
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
       
-      <strong>IG_Test3FOO Implementation Guide CI Build</strong>
+      <strong>IG_Test3 Implementation Guide CI Build</strong>
       
 
     </div><!-- end ig title text -->
@@ -190,7 +190,7 @@ can only resize using html  or css ;-(
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='profiles.html'><b>Profiles and Extensions</b></a></li><li><b>Structuredefinition Template Profile On Profile </b></li>
+    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='profiles.html'><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>
 </nav>
 
 
@@ -198,7 +198,7 @@ can only resize using html  or css ;-(
 
 <!--status-bar-->
 <p id="publish-box">
-This is the   Continuous Integration Build  of the IG_Test3FOO Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 3.6.0</a>.  See the <a href="history.html">Directory of published versions</a>
+This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 3.0.1</a>.  See the <a href="history.html">Directory of published versions</a>
 </p>
 
 
@@ -287,8 +287,8 @@ This is the   Continuous Integration Build  of the IG_Test3FOO Implementation Gu
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.version">version</a>" : "0.0.0",
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.name">name</a>" : "Template-Profile-on-Profile",
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a>" : "2017-02-15",
-  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a>" : "3.6.0",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a>" : "2017-02-15T00:00:00-08:00",
+  "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a>" : "3.0.1",
   "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping">mapping</a>" : [
     {
       "<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.identity">identity</a>" : "foo",
@@ -475,7 +475,6 @@ This element is labelled as a modifier because the implicit rules may provide ad
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true
       },
       {
@@ -500,7 +499,9 @@ This element is labelled as a modifier because the implicit rules may provide ad
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
             {
               "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCanonical</a>" : "http://hl7.org/fhir/ValueSet/all-languages"
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueReference</a>" : {
+                "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/all-languages"
+              }
             },
             {
               "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
@@ -513,7 +514,9 @@ This element is labelled as a modifier because the implicit rules may provide ad
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "A human language.",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/languages"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/languages"
+          }
         }
       },
       {
@@ -625,9 +628,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
-            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-            ]
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
@@ -655,9 +656,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
-            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-            ]
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
@@ -685,9 +684,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
-            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
-            ]
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
@@ -722,7 +719,6 @@ This element is labelled as a modifier because the implicit rules may provide ad
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
@@ -863,7 +859,6 @@ This element is labelled as a modifier because the implicit rules may provide ad
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
@@ -874,7 +869,9 @@ This element is labelled as a modifier because the implicit rules may provide ad
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "Identifies the purpose for this identifier, if known .",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/identifier-use"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/identifier-use"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -922,7 +919,9 @@ Where the system is known, a type is unnecessary because the type is always part
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/identifier-type"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/identifier-type"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -1079,9 +1078,7 @@ Where the system is known, a type is unnecessary because the type is always part
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
-            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
-            ]
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
@@ -1123,7 +1120,6 @@ This element is labeled as a modifier because when the patient record is marked 
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.defaultValue[x]">defaultValueBoolean</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -1266,7 +1262,6 @@ This element is labeled as a modifier because when the patient record is marked 
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
@@ -1277,7 +1272,9 @@ This element is labeled as a modifier because when the patient record is marked 
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The use of a human name",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/name-use"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/name-use"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -1567,7 +1564,9 @@ This element is labeled as a modifier because when the patient record is marked 
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/administrative-gender"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/administrative-gender"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -1657,7 +1656,6 @@ This element is labeled as a modifier because once a patient is marked as deceas
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -1740,7 +1738,9 @@ This element is labeled as a modifier because once a patient is marked as deceas
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The domestic partnership status of a person.",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/marital-status"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/marital-status"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -1962,7 +1962,6 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -1998,7 +1997,9 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The nature of the relationship between a patient and a contact person for that patient.",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/v2-0131"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/v2-0131"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2146,7 +2147,9 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The gender of a person used for administrative purposes.",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/administrative-gender"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/administrative-gender"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2179,9 +2182,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
-            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
-            ]
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
@@ -2267,7 +2268,6 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : false,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2364,7 +2364,6 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2402,7 +2401,9 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "example",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The species of an animal.",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/animal-species"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/animal-species"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2448,7 +2449,9 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "example",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The breed of an animal.",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/animal-breeds"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/animal-breeds"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2493,7 +2496,9 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "example",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The state of the animal's reproductive organs.",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/animal-genderstatus"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/animal-genderstatus"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2635,7 +2640,6 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2668,11 +2672,15 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
             {
               "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCanonical</a>" : "http://hl7.org/fhir/us/core/ValueSet/simple-language"
+              "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueReference</a>" : {
+                "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/core/ValueSet/simple-language"
+              }
             }
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/us/core/ValueSet/simple-language"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/core/ValueSet/simple-language"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2748,10 +2756,11 @@ It is not to be used to record Care Teams, these should be in a CareTeam resourc
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
-            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner"
-            ]
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : "http://hl7.org/fhir/StructureDefinition/Organization"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -2786,9 +2795,7 @@ It is not to be used to record Care Teams, these should be in a CareTeam resourc
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
-            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
-            ]
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
@@ -2837,7 +2844,6 @@ This element is labelled as a modifier because it may not be the main Patient re
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2930,7 +2936,6 @@ This element is labelled as a modifier because it may not be the main Patient re
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "No Modifier Reason provideed in previous versions of FHIR",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2955,10 +2960,11 @@ This element is labelled as a modifier because it may not be the main Patient re
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
-            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
-            ]
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
@@ -3004,7 +3010,9 @@ This element is labelled as a modifier because it may not be the main Patient re
           ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The type of link between this patient resource and another patient resource.",
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/link-type"
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
+            "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/link-type"
+          }
         },
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -3138,7 +3146,7 @@ Formats: <a href="StructureDefinition-template-profile-on-profile.html">Narrativ
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      IG_Test3FOO Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Wed, Oct 24, 2018 22:07-0700.
+      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.0.1</a> generated on Thu, Oct 25, 2018 08:36-0700.
       | <a style="color: #81BEF7" href="history.html>History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
