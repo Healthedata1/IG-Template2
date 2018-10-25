@@ -39,7 +39,10 @@
      ]
   ];
   fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
-  fhir:CodeSystem.valueSet [ fhir:value "http://www.fhir.org/guides/test3/ValueSet/blah-codes"];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://www.fhir.org/guides/test3/ValueSet/blah-codes";
+     fhir:link <http://www.fhir.org/guides/test3/ValueSet/blah-codes>
+  ];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.concept [
      fhir:index 0;

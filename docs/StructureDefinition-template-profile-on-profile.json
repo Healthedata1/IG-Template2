@@ -9,8 +9,8 @@
   "version": "0.0.0",
   "name": "Template-Profile-on-Profile",
   "status": "active",
-  "date": "2017-02-15T00:00:00-08:00",
-  "fhirVersion": "3.0.1",
+  "date": "2017-02-15",
+  "fhirVersion": "3.6.0",
   "mapping": [
     {
       "identity": "foo",
@@ -195,6 +195,7 @@
           }
         ],
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true
       },
       {
@@ -219,9 +220,7 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-              "valueReference": {
-                "reference": "http://hl7.org/fhir/ValueSet/all-languages"
-              }
+              "valueCanonical": "http://hl7.org/fhir/ValueSet/all-languages"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
@@ -234,9 +233,7 @@
           ],
           "strength": "extensible",
           "description": "A human language.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/languages"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
         }
       },
       {
@@ -348,7 +345,9 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+            ]
           }
         ],
         "mustSupport": true,
@@ -376,7 +375,9 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+            ]
           }
         ],
         "mustSupport": true,
@@ -404,7 +405,9 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+            ]
           }
         ],
         "mustSupport": true,
@@ -439,6 +442,7 @@
           }
         ],
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "mapping": [
           {
             "identity": "rim",
@@ -579,6 +583,7 @@
           }
         ],
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true,
         "binding": {
           "extension": [
@@ -589,9 +594,7 @@
           ],
           "strength": "required",
           "description": "Identifies the purpose for this identifier, if known .",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/identifier-use"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use"
         },
         "mapping": [
           {
@@ -637,9 +640,7 @@
           ],
           "strength": "extensible",
           "description": "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/identifier-type"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-type"
         },
         "mapping": [
           {
@@ -796,7 +797,9 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
           }
         ],
         "isSummary": true,
@@ -836,6 +839,7 @@
         ],
         "defaultValueBoolean": true,
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true,
         "mapping": [
           {
@@ -978,6 +982,7 @@
           }
         ],
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true,
         "binding": {
           "extension": [
@@ -988,9 +993,7 @@
           ],
           "strength": "required",
           "description": "The use of a human name",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/name-use"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/name-use"
         },
         "mapping": [
           {
@@ -1280,9 +1283,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
         },
         "mapping": [
           {
@@ -1370,6 +1371,7 @@
           }
         ],
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true,
         "mapping": [
           {
@@ -1452,9 +1454,7 @@
           ],
           "strength": "extensible",
           "description": "The domestic partnership status of a person.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/marital-status"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/marital-status"
         },
         "mapping": [
           {
@@ -1674,6 +1674,7 @@
           }
         ],
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true,
         "mapping": [
           {
@@ -1709,9 +1710,7 @@
           ],
           "strength": "extensible",
           "description": "The nature of the relationship between a patient and a contact person for that patient.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/v2-0131"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/v2-0131"
         },
         "mapping": [
           {
@@ -1859,9 +1858,7 @@
           ],
           "strength": "required",
           "description": "The gender of a person used for administrative purposes.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
         },
         "mapping": [
           {
@@ -1894,7 +1891,9 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
           }
         ],
         "condition": [
@@ -1980,6 +1979,7 @@
         ],
         "mustSupport": false,
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true,
         "mapping": [
           {
@@ -2076,6 +2076,7 @@
           }
         ],
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true,
         "mapping": [
           {
@@ -2113,9 +2114,7 @@
           ],
           "strength": "example",
           "description": "The species of an animal.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/animal-species"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/animal-species"
         },
         "mapping": [
           {
@@ -2161,9 +2160,7 @@
           ],
           "strength": "example",
           "description": "The breed of an animal.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/animal-breeds"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/animal-breeds"
         },
         "mapping": [
           {
@@ -2208,9 +2205,7 @@
           ],
           "strength": "example",
           "description": "The state of the animal's reproductive organs.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/animal-genderstatus"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/animal-genderstatus"
         },
         "mapping": [
           {
@@ -2352,6 +2347,7 @@
           }
         ],
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true,
         "mapping": [
           {
@@ -2384,15 +2380,11 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-              "valueReference": {
-                "reference": "http://hl7.org/fhir/us/core/ValueSet/simple-language"
-              }
+              "valueCanonical": "http://hl7.org/fhir/us/core/ValueSet/simple-language"
             }
           ],
           "strength": "extensible",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/core/ValueSet/simple-language"
-          }
+          "valueSet": "http://hl7.org/fhir/us/core/ValueSet/simple-language"
         },
         "mapping": [
           {
@@ -2466,11 +2458,10 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
           }
         ],
         "mapping": [
@@ -2505,7 +2496,9 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
           }
         ],
         "isSummary": true,
@@ -2550,6 +2543,7 @@
           }
         ],
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true,
         "mapping": [
           {
@@ -2642,6 +2636,7 @@
           }
         ],
         "isModifier": true,
+        "isModifierReason": "No Modifier Reason provideed in previous versions of FHIR",
         "isSummary": true,
         "mapping": [
           {
@@ -2666,11 +2661,10 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
-          },
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
           }
         ],
         "isSummary": true,
@@ -2716,9 +2710,7 @@
           ],
           "strength": "required",
           "description": "The type of link between this patient resource and another patient resource.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/link-type"
-          }
+          "valueSet": "http://hl7.org/fhir/ValueSet/link-type"
         },
         "mapping": [
           {

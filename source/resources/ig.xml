@@ -3,93 +3,106 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
+  <version value="0.0.0"/>
   <name value="IG_Test3"/>
+  <title value="IG_Test3"/>
   <status value="draft"/>
-  <experimental value="true"/>
   <publisher value="Health eData Inc"/>
-  <package>
-    <name value="base"/>
-<!-- <resource>   1..* Resource in the implementation guide -->
-<!--   <example value="[boolean]"/> 1..1 If not an example, has its normal meaning -->
-<!--   <name value="[string]"/> 0..1 Human Name for the resource -->
-<!--   <description value="[string]"/> 0..1 Reason why included in guide -->
-<!--   <acronym value="[string]"/> 0..1 Short code to identify the resource -->
-<!--   <source[x]>1..1 uri|Reference(Any) Location of the resource </source[x]> -->
-<!--    <exampleFor> 0..1 Reference(StructureDefinition) Resource this is an example of (if applicable) </exampleFor> -->
-<!-- </resource> -->
-    <!-- insert resources --><resource><example value="true"/><sourceReference><reference value="Patient/example"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="StructureDefinition/extension-complex"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="StructureDefinition/extension-blah"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="ValueSet/blah-codes"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="StructureDefinition/template-basic"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="StructureDefinition/extension-blah2"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="StructureDefinition/template-profile-on-profile"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CodeSystem/blah-codes"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CapabilityStatement/server"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CapabilityStatement/client"/></sourceReference></resource>
-  </package>
-  <!-- ============ Home Page =============== -->
-<page><source value="index.html"/><title value="Home"/><kind value="page"/>
+  <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
+  <!-- 0..1 Use and/or publishing restrictions -->
+ <packageId value="healthedatainc.mfhir"/> <!-- 0..1 NPM Package name for IG -->
+<license value="CC0-1.0"/> <!--*****HARDCODED********* 0..1 SPDX license code for this IG (or not-open-source) -->
+<fhirVersion value="3.6.0"/> <!-- 0..1 FHIR Version this Implementation Guide targets -->
+ <definition>
+  <!--  <grouping>  0..* Grouping used to present related resources in the IG -->
+  <!-- <name value="[string]"/> 1..1 Descriptive name for the package -->
+  <!--   <description value="[string]"/> 0..1 Human readable text describing the package -->
+  <!--  </grouping>  -->
+    <grouping>
+      <name value="base"/>
+    </grouping>
+    <!-- <resource>
+    <reference>
+      <reference value="[type]/[id]"/>
+    </reference>
+    <name value="Test Example"/>
+    <description value="A test example to show how a implementation guide works"/>
+    <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/patient"/>|<exampleBoolean value="true|false"/>
+  </resource>   -->
+  <!--  <groupingId value="[id]"/>  0..1 Grouping this is part of -->
+  <!-- insert resources --><resource><reference><reference value="Patient/example"/></reference><exampleBoolean value="true"/></resource><resource><reference><reference value="StructureDefinition/extension-complex"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/extension-blah"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="ValueSet/blah-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/template-basic"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/extension-blah2"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/template-profile-on-profile"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CodeSystem/blah-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CapabilityStatement/server"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CapabilityStatement/client"/></reference><exampleBoolean value="false"/></resource>
 
-  <!-- ============ Guidance Page =============== -->
-  <page><source value="guidance.html"/><title value="General Guidance"/><kind value="page"/></page>
+    <!-- ============ Home Page =============== -->
+  <page><nameUrl value="index.html"/><title value="Home"/><generation value="markdown"/>
 
-  <!-- ============ Profiles Page =============== -->
-  <page><source value="profiles.html"/><title value="Profiles and Extensions"/><kind value="page"/>
+    <!-- ============ Guidance Page =============== -->
+    <page><nameUrl value="guidance.html"/><title value="General Guidance"/><generation value="markdown"/></page>
+
+    <!-- ============ Profiles Page =============== -->
+    <page><nameUrl value="profiles.html"/><title value="Profiles and Extensions"/><generation value="markdown"/>
 
      <!-- ============ Profiles and examples=============== -->
-     <!-- insert profiles --><page><source value="StructureDefinition-template-basic.html"/><title value="StructureDefinition Template Basic"/><kind value="resource"/></page><page><source value="StructureDefinition-template-profile-on-profile.html"/><title value="StructureDefinition Template Profile On Profile"/><kind value="resource"/></page>
+     <!-- insert profiles --><page><nameUrl value="StructureDefinition-template-basic.html"/><title value="StructureDefinition Template Basic"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-template-profile-on-profile.html"/><title value="StructureDefinition Template Profile On Profile"/><generation value="generated"/></page>
     <!-- ============ End Profiles and examples=============== -->
 
     <!-- ============ Extensions and examples =============== -->
-    <!-- insert extensions --><page><source value="StructureDefinition-extension-complex.html"/><title value="StructureDefinition Extension Complex"/><kind value="resource"/></page><page><source value="StructureDefinition-extension-blah.html"/><title value="StructureDefinition Extension Blah"/><kind value="resource"/></page><page><source value="StructureDefinition-extension-blah2.html"/><title value="StructureDefinition Extension Blah2"/><kind value="resource"/></page>
+    <!-- insert extensions --><page><nameUrl value="StructureDefinition-extension-complex.html"/><title value="StructureDefinition Extension Complex"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-extension-blah.html"/><title value="StructureDefinition Extension Blah"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-extension-blah2.html"/><title value="StructureDefinition Extension Blah2"/><generation value="generated"/></page>
     <!-- ============ End Extensions and examples =============== -->
 
-    </page>
-  <!-- ============ Operations Page =============== -->
-  <page><source value="operations.html"/><title value="Operations"/><kind value="page"/>
+      </page>
+    <!-- ============ Operations Page =============== -->
+    <page><nameUrl value="operations.html"/><title value="Operations"/><generation value="markdown"/>
 
     <!-- ============ Operations and examples  =============== -->
     <!-- insert operations -->
     <!-- ============ End Operations and examples  =============== -->
 
-  </page>
-  <!-- ============ Terminology Page =============== -->
+    </page>
+    <!-- ============ Terminology Page =============== -->
 
-  <page><source value="terminology.html"/><title value="Terminology"/><kind value="page"/>
+    <page><nameUrl value="terminology.html"/><title value="Terminology"/><generation value="markdown"/>
      <!-- ============ ValueSet   =============== -->
-    <!-- insert valuesets --><page><source value="ValueSet-blah-codes.html"/><title value="ValueSet Blah Codes"/><kind value="resource"/></page>
+    <!-- insert valuesets --><page><nameUrl value="ValueSet-blah-codes.html"/><title value="ValueSet Blah Codes"/><generation value="generated"/></page>
     <!-- ============ End ValueSet   =============== -->
 
     <!-- ============ CodeSystems  =============== -->
-    <!-- insert codesystems --><page><source value="CodeSystem-blah-codes.html"/><title value="CodeSystem Blah Codes"/><kind value="resource"/></page>
+    <!-- insert codesystems --><page><nameUrl value="CodeSystem-blah-codes.html"/><title value="CodeSystem Blah Codes"/><generation value="generated"/></page>
     <!-- ============ End CodeSystems  =============== -->
 
     <!-- ============ ConceptMaps   =============== -->
     <!-- insert conceptmaps -->
     <!-- ============ End ConceptMaps   =============== -->
 
-  </page>
+    </page>
 
-  <!-- ============ SearchParameter Page =============== -->
-  <page><source value="searchparameters.html"/><title value="Search Parameters"/><kind value="page"/>
+    <!-- ============ SearchParameter Page =============== -->
+    <page><nameUrl value="searchparameters.html"/><title value="Search Parameters"/><generation value="markdown"/>
 
   <!-- ============ SearchParameters =============== -->
   <!-- insert searchparameters -->
   <!-- ============ End SearchParameters  =============== -->
-  </page>
+    </page>
 
-  <!-- ============ CapabilityStatement Page =============== -->
-  <page><source value="capstatements.html"/><title value="Capability Statements"/><kind value="page"/>
+    <!-- ============ CapabilityStatement Page =============== -->
+    <page><nameUrl value="capstatements.html"/><title value="Capability Statements"/><generation value="markdown"/>
 
   <!-- ============ CapabilityStatements    =============== -->
-    <!-- insert capabilitystatements --><page><source value="CapabilityStatement-server.html"/><title value="CapabilityStatement Server"/><kind value="resource"/></page><page><source value="CapabilityStatement-client.html"/><title value="CapabilityStatement Client"/><kind value="resource"/></page>
+    <!-- insert capabilitystatements --><page><nameUrl value="CapabilityStatement-server.html"/><title value="CapabilityStatement Server"/><generation value="generated"/></page><page><nameUrl value="CapabilityStatement-client.html"/><title value="CapabilityStatement Client"/><generation value="generated"/></page>
   <!-- ============ End CapabilityStatements    =============== -->
+    </page>
+
+    <!-- ============ Security Page =============== -->
+    <page><nameUrl value="security.html"/><title value="Security"/><generation value="markdown"/></page>
+
+    <!-- ============ Downloads Page =============== -->
+    <page><nameUrl value="downloads.html"/><title value="Downloads"/><generation value="markdown"/></page>
+
+    <!-- ============ Examples Page=============== -->
+    <page><nameUrl value="all-examples.html"/><title value="All Examples"/><generation value="markdown"/></page>
+
+    <!-- ============ Table of Contents =============== -->
+    <page><nameUrl value="toc.html"/><title value="Table of Contents"/><generation value="html"/></page>
 
   </page>
-
-  <!-- ============ Security Page =============== -->
-  <page><source value="security.html"/><title value="Security"/><kind value="page"/></page>
-
-  <!-- ============ Downloads Page =============== -->
-  <page><source value="downloads.html"/><title value="Downloads"/><kind value="page"/></page>
-
-  <!-- ============ Examples Page=============== -->
-  <page><source value="examples.html"/><title value="All Examples"/><kind value="page"/></page>
-
-  <!-- ============ Table of Contents =============== -->
-  <page><source value="toc.html"/><title value="Table of Contents"/><kind value="toc"/></page>
-
-</page>
+  </definition>
 </ImplementationGuide>

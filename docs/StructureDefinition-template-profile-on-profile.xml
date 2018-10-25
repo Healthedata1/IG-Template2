@@ -12,8 +12,8 @@
   <version value="0.0.0"/>
   <name value="Template-Profile-on-Profile"/>
   <status value="active"/>
-  <date value="2017-02-15T00:00:00-08:00"/>
-  <fhirVersion value="3.0.1"/>
+  <date value="2017-02-15"/>
+  <fhirVersion value="3.6.0"/>
   <mapping>
     <identity value="foo"/>
     <uri value="http://unknown.org/foo"/>
@@ -179,6 +179,7 @@
         <code value="uri"/>
       </type>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
     </element>
     <element id="Patient.language">
@@ -198,9 +199,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
-          <valueReference>
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
-          </valueReference>
+          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
@@ -210,9 +209,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
       </binding>
     </element>
     <element id="Patient.text">
@@ -373,6 +370,7 @@
         <code value="Extension"/>
       </type>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -487,6 +485,7 @@
         <code value="code"/>
       </type>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -494,9 +493,7 @@
         </extension>
         <strength value="required"/>
         <description value="Identifies the purpose for this identifier, if known ."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-use"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -533,9 +530,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -703,6 +698,7 @@
       </type>
       <defaultValueBoolean value="true"/>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -819,6 +815,7 @@
         <code value="code"/>
       </type>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -826,9 +823,7 @@
         </extension>
         <strength value="required"/>
         <description value="The use of a human name"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/name-use"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/name-use"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1074,9 +1069,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1154,6 +1147,7 @@
         <code value="dateTime"/>
       </type>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="v2"/>
@@ -1222,9 +1216,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="The domestic partnership status of a person."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/marital-status"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/marital-status"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1403,6 +1395,7 @@
         <code value="Extension"/>
       </type>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -1430,9 +1423,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="The nature of the relationship between a patient and a contact person for that patient."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/v2-0131"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/v2-0131"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1556,9 +1547,7 @@
         </extension>
         <strength value="required"/>
         <description value="The gender of a person used for administrative purposes."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1655,6 +1644,7 @@
       </constraint>
       <mustSupport value="false"/>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -1730,6 +1720,7 @@
         <code value="Extension"/>
       </type>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -1759,9 +1750,7 @@
         </extension>
         <strength value="example"/>
         <description value="The species of an animal."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/animal-species"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/animal-species"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1799,9 +1788,7 @@
         </extension>
         <strength value="example"/>
         <description value="The breed of an animal."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/animal-breeds"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/animal-breeds"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1838,9 +1825,7 @@
         </extension>
         <strength value="example"/>
         <description value="The state of the animal&#39;s reproductive organs."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/animal-genderstatus"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/animal-genderstatus"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1954,6 +1939,7 @@
         <code value="Extension"/>
       </type>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -1979,14 +1965,10 @@
       <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
-          <valueReference>
-            <reference value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
-          </valueReference>
+          <valueCanonical value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
         </extension>
         <strength value="extensible"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2050,9 +2032,6 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-      </type>
-      <type>
-        <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       </type>
       <mapping>
@@ -2120,6 +2099,7 @@
         <source value="Element"/>
       </constraint>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -2191,6 +2171,7 @@
         <code value="Extension"/>
       </type>
       <isModifier value="true"/>
+      <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="rim"/>
@@ -2212,9 +2193,6 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-      </type>
-      <type>
-        <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
       </type>
       <isSummary value="true"/>
@@ -2252,9 +2230,7 @@
         </extension>
         <strength value="required"/>
         <description value="The type of link between this patient resource and another patient resource."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/link-type"/>
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/link-type"/>
       </binding>
       <mapping>
         <identity value="rim"/>

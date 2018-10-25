@@ -198,7 +198,7 @@ can only resize using html  or css ;-(
 
 <!--status-bar-->
 <p id="publish-box">
-This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 3.0.1</a>.  See the <a href="history.html">Directory of published versions</a>
+This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 3.6.0</a>.  See the <a href="history.html">Directory of published versions</a>
 </p>
 
 
@@ -288,8 +288,8 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;0.0.0&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Template-Profile-on-Profile&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2017-02-15T00:00:00-08:00&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;3.0.1&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2017-02-15&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;3.6.0&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping">mapping</a>&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;foo&quot;/&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.uri">uri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://unknown.org/foo&quot;/&gt;
@@ -332,9 +332,9 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
   &lt;/mapping&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.kind">kind</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;resource&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.abstract">abstract</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.type">type</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;Patient&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.type">type</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Patient&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.baseDefinition">baseDefinition</a>
-                  <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient&quot;/&gt;
+                  <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.derivation">derivation</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;constraint&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot">snapshot</a>&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Patient&quot;&gt;
@@ -356,7 +356,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
                <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;If the resource is contained in another resource, it SHALL NOT contain nested Resources&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;contained.contained.empty()&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;not(parent::f:contained and f:contained)&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;DomainResource&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;DomainResource&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-1&quot;/&gt;
@@ -365,7 +365,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
                <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;If the resource is contained in another resource, it SHALL NOT contain any narrative&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;contained.text.empty()&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;not(parent::f:contained and f:text)&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;DomainResource&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;DomainResource&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-4&quot;/&gt;
@@ -376,7 +376,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
                     <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;DomainResource&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;DomainResource&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;dom-3&quot;/&gt;
@@ -387,7 +387,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
                     <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;contained.where((&amp;#39;#&amp;#39;+id in %resource.descendants().reference).not()).empty()&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat(&amp;#39;#&amp;#39;, $id))]))&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;DomainResource&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;DomainResource&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
@@ -471,6 +471,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;uri&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Patient.language&quot;&gt;
@@ -491,24 +493,20 @@ This element is labelled as a modifier because the implicit rules may provide ad
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet&quot;&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueReference</a>&gt;
-            &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/all-languages&quot;/&gt;
-          &lt;/valueReference&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet&quot;&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCanonical</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/all-languages&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Language&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;extensible&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;A human language.&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/languages&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/languages&quot;/&gt;
       &lt;/binding&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Patient.text&quot;&gt;
@@ -601,7 +599,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-race&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-race&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
@@ -625,7 +623,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
@@ -649,7 +647,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex&quot;/&gt;
+                 <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
@@ -678,6 +676,8 @@ This element is labelled as a modifier because the implicit rules may provide ad
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
@@ -798,18 +798,18 @@ This element is labelled as a modifier because the implicit rules may provide ad
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;code&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;IdentifierUse&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>
                      <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Identifies the purpose for this identifier, if known .&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/identifier-use&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/identifier-use&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -844,19 +844,17 @@ Where the system is known, a type is unnecessary because the type is always part
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;IdentifierType&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;extensible&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>
                      <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/identifier-type&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/identifier-type&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -999,7 +997,7 @@ Where the system is known, a type is unnecessary because the type is always part
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
+                       <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
@@ -1038,6 +1036,8 @@ This element is labeled as a modifier because when the patient record is marked 
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.defaultValue[x]">defaultValueBoolean</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -1162,17 +1162,17 @@ This element is labeled as a modifier because when the patient record is marked 
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;code&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;NameUse&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;The use of a human name&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/name-use&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/name-use&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -1435,9 +1435,7 @@ This element is labeled as a modifier because when the patient record is marked 
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/administrative-gender&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/administrative-gender&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -1523,6 +1521,8 @@ This element is labeled as a modifier because once a patient is marked as deceas
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;dateTime&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -1588,18 +1588,16 @@ This element is labeled as a modifier because once a patient is marked as deceas
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;MaritalStatus&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;extensible&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;The domestic partnership status of a person.&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/marital-status&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/marital-status&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -1683,7 +1681,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Patient.contact&quot;&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name&quot;&gt;
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name&quot;&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Contact&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Patient.contact&quot;/&gt;
@@ -1711,7 +1709,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;All FHIR elements must have a @value or children&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;hasValue() | (children().count() &amp;gt; id.count())&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Element&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;pat-1&quot;/&gt;
@@ -1799,6 +1797,8 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -1824,15 +1824,13 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ContactRelationship&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;extensible&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>
                      <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;The nature of the relationship between a patient and a contact person for that patient.&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/v2-0131&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/v2-0131&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -1955,19 +1953,17 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;AdministrativeGender&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>
                      <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;The gender of a person used for administrative purposes.&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/administrative-gender&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/administrative-gender&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -2000,7 +1996,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
+                       <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;pat-1&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
@@ -2043,7 +2039,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Patient.animal&quot;&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name&quot;&gt;
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name&quot;&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Animal&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Patient.animal&quot;/&gt;
@@ -2069,10 +2065,12 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;All FHIR elements must have a @value or children&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;hasValue() | (children().count() &amp;gt; id.count())&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Element&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -2153,6 +2151,8 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -2180,14 +2180,12 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;AnimalSpecies&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;example&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;The species of an animal.&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/animal-species&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/animal-species&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -2224,14 +2222,12 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;AnimalBreed&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;example&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;The breed of an animal.&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/animal-breeds&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/animal-breeds&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -2267,14 +2263,12 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;AnimalGenderStatus&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;example&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;The state of the animal&amp;#39;s reproductive organs.&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/animal-genderstatus&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/animal-genderstatus&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -2315,7 +2309,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;All FHIR elements must have a @value or children&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;hasValue() | (children().count() &amp;gt; id.count())&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Element&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
@@ -2397,6 +2391,8 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -2426,17 +2422,12 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet&quot;&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueReference</a>&gt;
-            &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>
-                       <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/core/ValueSet/simple-language&quot;/&gt;
-          &lt;/valueReference&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet&quot;&gt;
+          &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCanonical</a>
+                          <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/core/ValueSet/simple-language&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;extensible&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>
-                     <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/core/ValueSet/simple-language&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/core/ValueSet/simple-language&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -2507,12 +2498,9 @@ It is not to be used to record Care Teams, these should be in a CareTeam resourc
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
-      &lt;/type&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
+                       <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Practitioner&quot;/&gt;
+                       <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Practitioner&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -2546,7 +2534,7 @@ It is not to be used to record Care Teams, these should be in a CareTeam resourc
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
+                       <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
@@ -2588,9 +2576,11 @@ This element is labelled as a modifier because it may not be the main Patient re
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;All FHIR elements must have a @value or children&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;hasValue() | (children().count() &amp;gt; id.count())&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Element&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -2667,6 +2657,8 @@ This element is labelled as a modifier because it may not be the main Patient re
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
+                        <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;No Modifier Reason provideed in previous versions of FHIR&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -2689,12 +2681,9 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;/base&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Patient&quot;/&gt;
-      &lt;/type&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Patient&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
-                       <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/RelatedPerson&quot;/&gt;
+                       <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/RelatedPerson&quot;/&gt;
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
@@ -2728,15 +2717,13 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://build.fhir.org/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
+                   <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;LinkType&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>
                      <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;The type of link between this patient resource and another patient resource.&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
-          &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/link-type&quot;/&gt;
-        &lt;/valueSetReference&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/link-type&quot;/&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -2852,8 +2839,8 @@ Formats: <a href="StructureDefinition-template-profile-on-profile.html">Narrativ
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.0.1</a> generated on Thu, Oct 25, 2018 08:36-0700.
-      | <a style="color: #81BEF7" href="history.html>History</a>
+      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Thu, Oct 25, 2018 09:46-0700.
+      | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
