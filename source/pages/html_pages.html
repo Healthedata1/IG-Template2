@@ -1,5 +1,5 @@
 ---
-# jekyll header
+## jekyll header
 ---
 {% include header.html %}
 
@@ -8,16 +8,16 @@
 
 
   <!-- ============CONTENT CONTENT=============== -->
-{% assign pagepath = {{page.path}} %}
+{% assign pagepath = page.path %}
 pagepath = {{pagepath}}
 <br />
 
 
 
 <pre>
-## Table of Contents
+### Table of Contents
 {: nocount="true"}
-{% for p in site.data.pages %}{% assign pagepath = {{p[0]}} %}{% assign pagelabel = {{site.data.pages[pagepath].label | remove: ".0"}} %}{% assign pagetitle = {{site.data.pages[pagepath].title}} %}{% assign depth = pagelabel | split: '.' %}{% unless {{pagepath}} contains 'ttl' or {{pagepath}} contains 'json' or  {{pagepath}} contains 'xml' or  {{pagepath}} contains 'definitions' or {{pagepath}} contains 'mappings'%}
+{% for p in site.data.pages %}{% assign pagepath = p[0] %}{% assign pagelabel = site.data.pages[pagepath].label | remove: ".0" %}{% assign pagetitle = site.data.pages[pagepath].title %}{% assign depth = pagelabel | split: '.' %}{% unless {{pagepath}} contains 'ttl' or {{pagepath}} contains 'json' or  {{pagepath}} contains 'xml' or  {{pagepath}} contains 'definitions' or {{pagepath}} contains 'mappings'%}
 {% for i in depth %}&nbsp;&nbsp;{% endfor %}- {{pagelabel | plus: 1 }} - [{{pagetitle | remove: ".html"}}]({{pagepath}}){% endunless %}{% endfor %}
 </pre>
 
@@ -42,7 +42,7 @@ site.historypath = {{ site.historypath }}
 
 {% for p in site.html_pages %}
 
-{% unless {{p.name}} contains 'ttl' or {{p.name}} contains 'json' or  {{p.name}} contains 'xml' or  {{p.name}} contains 'definitions' or {{p.name}} contains 'mappings'%}
+{% unless p.name contains 'ttl' or p.name contains 'json' or  p.name contains 'xml' or  p.name contains 'definitions' or p.name contains 'mappings'%}
 
 {% increment n %},
 {% assign title = p.name | remove: ".html" | remove: ".md" | split: '-' %}
@@ -66,33 +66,33 @@ site.historypath = {{ site.historypath }}
 <h3>R3 IG pages</h3>
 {% for p in site.html_pages %}
 
-{% unless {{p.name}} contains 'ttl' or {{p.name}} contains 'json' or  {{p.name}} contains 'xml' or  {{p.name}} contains 'definitions' or {{p.name}} contains 'mappings'%}
+{% unless p.name contains 'ttl' or p.name contains 'json' or  p.name contains 'xml' or  p.name contains 'definitions' or p.name contains 'mappings'%}
 
 
 {% assign title = p.name | remove: ".html" | remove: ".md" | split: '-' %}
 
-&lt;page&gt;<br />
-  &nbsp;&nbsp;&nbsp;&lt;source value=&quot;{{ p.path }}&quot;/&gt;<br />
-  &nbsp;&nbsp;&nbsp;&lt;title value=&quot;{% for word in title %}{{ word | capitalize }}{% endfor %}&quot;/&gt;<br />
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value=&quot;{{ p.path }}&quot;/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value=&quot;{% for word in title %}{{ word | capitalize }} {% endfor %}&quot;/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 {% assign kind = "page" %}
 {% for e in site.example_types %}
-{% if {{title}} contains e %}
+{% if title contains e %}
 {% assign kind = "example" %}
 {% else %}
 {% endif %}
 {% endfor %}
 
 {% for c in site.conformance_types %}
-{% if {{p.name}} contains c %}
+{% if p.name contains c %}
 {% assign kind = "resource" %}
 {% endif %}
 {% endfor %}
 
 
-value=&quot;{{ kind }}&quot;/&gt;<br />
-&lt;/page&gt;<br />
+value=&quot;{{ kind }}&quot;/&gt;
+&lt;/page&gt;<br /><br />
 
 
 {% endunless %}
@@ -104,28 +104,28 @@ value=&quot;{{ kind }}&quot;/&gt;<br />
 <h3>R4 IG pages</h3>
 {% for p in site.html_pages %}
 
-{% unless {{p.name}} contains 'ttl' or {{p.name}} contains 'json' or  {{p.name}} contains 'xml' or  {{p.name}} contains 'definitions' or {{p.name}} contains 'mappings'%}
+{% unless p.name contains 'ttl' or p.name contains 'json' or  p.name contains 'xml' or  p.name contains 'definitions' or p.name contains 'mappings'%}
 
 
 {% assign title = p.name | remove: ".html" | remove: ".md" | split: '-' %}
 
 
-&lt;page&gt;<br />
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value=&quot;{{ p.path }}&quot;/&gt;<br />
-  &nbsp;&nbsp;&nbsp;&lt;title value=&quot;{% for word in title %}{{ word | capitalize }} {% endfor %}&quot;/&gt;<br />
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value=&quot;{{ p.path }}&quot;/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value=&quot;{% for word in title %}{{ word | capitalize }} {% endfor %}&quot;/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 {% assign generation = "markdown" %}
 {% for e in site.resource_types %}
-{% if {{title}} contains e %}
+{% if title contains e %}
 {% assign generation = "generated" %}
 
 {% endif %}
 {% endfor %}
 
 
-value=&quot;{{ generation }}&quot;/&gt;<br />
-&lt;/page&gt;<br />
+value=&quot;{{ generation }}&quot;/&gt;
+&lt;/page&gt;<br /><br />
 
 
 {% endunless %}

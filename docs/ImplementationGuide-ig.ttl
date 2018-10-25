@@ -334,7 +334,7 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 8;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "examples.html" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "all-examples.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "All Examples" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [

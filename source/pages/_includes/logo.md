@@ -6,7 +6,7 @@
 your logo here
 
 [![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive #org_logo}
+{: .img-responsive # org_logo}
 
 can only resize using html  or css ;-(
 

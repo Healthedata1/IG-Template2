@@ -104,7 +104,7 @@
     </resource>
     <page>
       <nameUrl value="index.html"/>
-      <title value="{title} Homepage"/>
+      <title value="Home"/>
       <generation value="markdown"/>
       <page>
         <nameUrl value="guidance.html"/>
@@ -197,7 +197,7 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="examples.html"/>
+        <nameUrl value="all-examples.html"/>
         <title value="All Examples"/>
         <generation value="markdown"/>
       </page>

@@ -595,25 +595,25 @@
             "code": "Timing"
           },
           {
-            "code": "ParameterDefinition"
-          },
-          {
-            "code": "DataRequirement"
-          },
-          {
-            "code": "RelatedArtifact"
-          },
-          {
             "code": "ContactDetail"
           },
           {
             "code": "Contributor"
           },
           {
-            "code": "TriggerDefinition"
+            "code": "DataRequirement"
           },
           {
             "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
           },
           {
             "code": "UsageContext"

@@ -109,7 +109,7 @@
     }],
     "page" : {
       "nameUrl" : "index.html",
-      "title" : "{title} Homepage",
+      "title" : "Home",
       "generation" : "markdown",
       "page" : [{
         "nameUrl" : "guidance.html",
@@ -202,7 +202,7 @@
         "generation" : "markdown"
       },
       {
-        "nameUrl" : "examples.html",
+        "nameUrl" : "all-examples.html",
         "title" : "All Examples",
         "generation" : "markdown"
       },

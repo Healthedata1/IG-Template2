@@ -12,7 +12,7 @@ f: http://build.fhir.org/
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-## [Introduction](#)
+### Introduction
 {:.self-link}
 
 This is based on {{page.f}}index.html
@@ -24,6 +24,6 @@ This is based on {{page.f}}index.html
 
 blah blah blah
 
-## More Stuff
+### More Stuff
 
-### And More Stuff
+#### And More Stuff

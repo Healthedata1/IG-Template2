@@ -99,118 +99,89 @@
     </reference>
     <exampleBoolean value="false"/>
   </resource>
-  <page>
-    <nameUrl value="index.html"/>
-    <title value="Home"/>
-    <generation value="markdown"/>
-    <page>
-      <nameUrl value="guidance.html"/>
-      <title value="General Guidance"/>
-      <generation value="markdown"/>
-    </page>
-    <page>
-      <nameUrl value="profiles.html"/>
-      <title value="Profiles and Extensions"/>
-      <generation value="markdown"/>
-      <!-- Profiles and examples-->
-      <page>
-        <nameUrl value="StructureDefinition-template-basic.html"/>
-        <title value="Structuredefinition Template Basic "/>
-        <generation value="generated"/>
+
+    <!-- ============ Home Page =============== -->
+  <page><nameUrl value="index.html"/><title value="Home"/><generation value="markdown"/>
+
+    <!-- ============ Guidance Page =============== -->
+    <page><nameUrl value="guidance.html"/><title value="General Guidance"/><generation value="markdown"/></page>
+
+    <!-- ============ Profiles Page =============== -->
+    <page><nameUrl value="profiles.html"/><title value="Profiles and Extensions"/><generation value="markdown"/>
+
+       <!-- ============ Profiles and examples=============== -->
+      <page><nameUrl value="StructureDefinition-template-basic.html"/><title value="Structuredefinition Template Basic "/><generation value="generated"/></page>
+      <page><nameUrl value="StructureDefinition-template-profile-on-profile.html"/><title value="Structuredefinition Template Profile On Profile "/><generation value="generated"/></page>
+      <!-- ============ End Profiles and examples=============== -->
+
+
+      <!-- ============ Extensions and examples =============== -->
+      <page><nameUrl value="StructureDefinition-extension-blah.html"/><title value="Structure Definition Extension Blah"/><generation value="generated"/></page>
+      <page><nameUrl value="StructureDefinition-extension-blah2.html"/><title value="StructureDefinitionExtensionBlah2"/><generation value="generated"/></page>
+      <page><nameUrl value="StructureDefinition-extension-complex.html"/><title value="StructureDefinition Extension Complex"/><generation value="generated"/></page>
+      <page><nameUrl value="StructureDefinition-extension-identifier-status.html"/><title value="StructureDefinition Extension Identifier Status"/><generation value="generated"/></page>
+      <!-- ============ End Extensions and examples =============== -->
+
       </page>
-      <page>
-        <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
-        <title value="Structuredefinition Template Profile On Profile "/>
-        <generation value="generated"/>
-      </page>
-      <!-- Extensions and examples -->
-      <page>
-         <nameUrl value="StructureDefinition-extension-blah.html"/>
-         <title value="Structure Definition Extension Blah"/>
-         <generation value="generated"/>
-      </page>
-      <page>
-         <nameUrl value="StructureDefinition-extension-blah2.html"/>
-         <title value="StructureDefinitionExtensionBlah2"/>
-         <generation value="generated"/>
-      </page>
-      <page>
-         <nameUrl value="StructureDefinition-extension-complex.html"/>
-         <title value="StructureDefinition Extension Complex"/>
-         <generation value="generated"/>
-      </page>
-      <page>
-         <nameUrl value="StructureDefinition-extension-identifier-status.html"/>
-         <title value="StructureDefinition Extension Identifier Status"/>
-         <generation value="generated"/>
-      </page>
+    <!-- ============ Operations Page =============== -->
+    <page><nameUrl value="operations.html"/><title value="Operations"/><generation value="markdown"/>
+
+      <!-- ============ Operations and examples  =============== -->
+
+      <!-- ============ End Operations and examples  =============== -->
+
     </page>
-    <page>
-      <nameUrl value="operations.html"/>
-      <title value="Operations"/>
-      <generation value="markdown"/>
-      <!-- Operations and examples  -->
+    <!-- ============ Terminology Page =============== -->
+
+    <page><nameUrl value="terminology.html"/><title value="Terminology"/><generation value="markdown"/>
+       <!-- ============ ValueSet   =============== -->
+      <page><nameUrl value="ValueSet-blah-codes.html"/><title value="Valueset Blah Codes "/><generation value="generated"/></page>
+
+      <!-- ============ End ValueSet   =============== -->
+
+
+      <!-- ============ CodeSystems  =============== -->
+      <page><nameUrl value="CodeSystem-blah-codes.html"/><title value="Codesystem Blah Codes "/><generation value="generated"/></page>
+
+      <!-- ============ End CodeSystems  =============== -->
+
+
+      <!-- ============ ConceptMaps   =============== -->
+
+      <!-- ============ End ConceptMaps   =============== -->
+
     </page>
-    <page>
-      <nameUrl value="terminology.html"/>
-      <title value="Terminology"/>
-      <generation value="markdown"/>
-      <!-- ValueSet   -->
-      <page>
-        <nameUrl value="ValueSet-blah-codes.html"/>
-        <title value="Valueset Blah Codes "/>
-        <generation value="generated"/>
-      </page>
-      <!-- CodeSystem  -->
-      <page>
-        <nameUrl value="CodeSystem-blah-codes.html"/>
-        <title value="Codesystem Blah Codes "/>
-        <generation value="generated"/>
-      </page>
-      <!-- ConceptMap   -->
+
+    <!-- ============ SearchParameter Page =============== -->
+    <page><nameUrl value="searchparameters.html"/><title value="Search Parameters"/><generation value="markdown"/>
+
+    <!-- ============ SearchParameters =============== -->
+
+    <!-- ============ End SearchParameters  =============== -->
     </page>
-    <page>
-      <nameUrl value="searchparameters.html"/>
-      <title value="Search Parameters"/>
-      <generation value="markdown"/>
-      <!-- SearchParameters  -->
+
+    <!-- ============ CapabilityStatement Page =============== -->
+    <page><nameUrl value="capstatements.html"/><title value="Capability Statements"/><generation value="markdown"/>
+
+    <!-- ============ CapabilityStatements    =============== -->
+      <page><nameUrl value="CapabilityStatement-client.html"/><title value="CapabilityStatement Client "/><generation value="generated"/></page>
+      <page><nameUrl value="CapabilityStatement-server.html"/><title value="CapabilityStatement Server "/><generation value="generated"/></page>
+    <!-- ============ End CapabilityStatements    =============== -->
+
     </page>
-    <page>
-      <nameUrl value="capstatements.html"/>
-      <title value="Capability Statements"/>
-      <generation value="markdown"/>
-      <!-- CapabilityStatements    -->
-      <page>
-        <nameUrl value="CapabilityStatement-client.html"/>
-        <title value="CapabilityStatement Client "/>
-        <generation value="generated"/>
-      </page>
-      <page>
-        <nameUrl value="CapabilityStatement-server.html"/>
-        <title value="CapabilityStatement Server "/>
-        <generation value="generated"/>
-      </page>
-    </page>
-    <page>
-      <nameUrl value="security.html"/>
-      <title value="Security"/>
-      <generation value="markdown"/>
-    </page>
-    <page>
-      <nameUrl value="downloads.html"/>
-      <title value="Downloads"/>
-      <generation value="markdown"/>
-    </page>
-    <page>
-      <nameUrl value="examples.html"/>
-      <title value="All Examples"/>
-      <generation value="markdown"/>
-    </page>
-    <page>
-      <nameUrl value="toc.html"/>
-      <title value="Table of Contents"/>
-      <generation value="html"/>
-    </page>
+
+    <!-- ============ Security Page =============== -->
+    <page><nameUrl value="security.html"/><title value="Security"/><generation value="markdown"/></page>
+
+    <!-- ============ Downloads Page =============== -->
+    <page><nameUrl value="downloads.html"/><title value="Downloads"/><generation value="markdown"/></page>
+
+    <!-- ============ Examples Page=============== -->
+    <page><nameUrl value="all-examples.html"/><title value="All Examples"/><generation value="markdown"/></page>
+
+    <!-- ============ Table of Contents =============== -->
+    <page><nameUrl value="toc.html"/><title value="Table of Contents"/><generation value="html"/></page>
+
   </page>
 </definition>
 </ImplementationGuide>

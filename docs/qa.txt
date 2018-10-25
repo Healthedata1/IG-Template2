@@ -1,10 +1,10 @@
 ﻿IG_Test3FOO : Validation Results
 =========================================
 
-err = 22, warn = 38, info = 0
-Generated Mon Oct 22 22:59:40 PDT 2018. FHIR version 3.6.0 for 3.6.0
+err = 22, warn = 42, info = 0
+Generated Wed Oct 24 22:07:52 PDT 2018. FHIR version 3.6.0 for 3.6.0
 
- Build Errors : 201 / 0
+ Build Errors : 29 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 6 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes : 0 / 1
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes : 0 / 1
@@ -12,155 +12,16 @@ Generated Mon Oct 22 22:59:40 PDT 2018. FHIR version 3.6.0 for 3.6.0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server : 2 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/identifier-status-structuredefinition : 0 / 1
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig : 0 / 6
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet : 1 / 2
- Template-basic : 0 / 8
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet : 1 / 3
+ Template-basic : 0 / 9
 </table>
 == n/a ==
 ERROR: Patient.contact.relationship: The reference http://hl7.org/fhir/ValueSet/v2-0131 could not be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/p/a at Line 209, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/p/a at Line 272, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.html#/html/head/body/div/div/div/p/a at Line 315, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/p/a at Line 209, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 237, column 12: The link 'operations.html' for "Operations" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 244, column 12: The link 'searchparameters.html' for "Search Parameters" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 251, column 12: The link 'security.html' for "Security" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 253, column 13: The link 'examples.html' for "All Examples" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/p/a at Line 287, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.xml.html#/html/head/body/div/div/div/p/a at Line 622, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/todo.html#/html/head/body/div/div/div/div/div/div/p/a at Line 209, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/todo.html#/html/head/body/div/div/div/p/a at Line 256, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-definitions.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-definitions.html#/html/head/body/div/div/div/p/a at Line 398, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 451, column 1713: The link 'v2-0131.html' for "v2-0131" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 589, column 1713: The link 'v2-0131.html' for "v2-0131" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 734, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status.ttl.html#/html/head/body/div/div/div/p/a at Line 546, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-mappings.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-mappings.html#/html/head/body/div/div/div/p/a at Line 309, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.ttl.html#/html/head/body/div/div/div/p/a at Line 393, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status-definitions.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status-definitions.html#/html/head/body/div/div/div/p/a at Line 337, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.xml.html#/html/head/body/div/div/div/p/a at Line 1936, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.json.html#/html/head/body/div/div/div/p/a at Line 668, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.json.html#/html/head/body/div/div/div/p/a at Line 385, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.ttl.html#/html/head/body/div/div/div/p/a at Line 1791, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/a/img at Line 48, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/a/img at Line 70, column 2: The image source 'assets/images/org_logo.jpg' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/nav/div/div/ul/li/a at Line 114, column 8: The link 'index.html' for "Home" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/nav/div/div/ul/li/a at Line 115, column 8: The link 'guidance.html' for "General Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/nav/div/div/ul/li/a at Line 116, column 8: The link 'profiles.html' for "Profiles and Extensions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/nav/div/div/ul/li/a at Line 119, column 8: The link 'terminology.html' for "Terminology" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/nav/div/div/ul/li/a at Line 121, column 8: The link 'capstatements.html' for "Capability Statements" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/nav/div/div/ul/li/a at Line 124, column 8: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/div/div/div/div/nav/a at Line 201, column 6: The link 'toc.html' for "TOC" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/div/div/div/div/p/a at Line 209, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/div/p/a at Line 256, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/pages/todo.html#/html/head/body/div/div/div/p/a/img at Line 258, column 92: The image source 'cc0.png' cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-definitions.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-definitions.html#/html/head/body/div/div/div/p/a at Line 904, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/terminology.html#/html/head/body/div/div/div/div/div/div/p/a at Line 209, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/terminology.html#/html/head/body/div/div/div/p/a at Line 263, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status.xml.html#/html/head/body/div/div/div/p/a at Line 533, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status-mappings.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status-mappings.html#/html/head/body/div/div/div/p/a at Line 309, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.xml.html#/html/head/body/div/div/div/p/a at Line 2843, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.json.html#/html/head/body/div/div/div/p/a at Line 567, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.json.html#/html/head/body/div/div/div/p/a at Line 406, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-definitions.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-definitions.html#/html/head/body/div/div/div/p/a at Line 337, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.xml.html#/html/head/body/div/div/div/p/a at Line 963, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.json.html#/html/head/body/div/div/div/p/a at Line 567, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.json.html#/html/head/body/div/div/div/p/a at Line 372, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.ttl.html#/html/head/body/div/div/div/p/a at Line 376, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 729, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#/html/head/body/div/div/div/p/a at Line 363, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-mappings.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-mappings.html#/html/head/body/div/div/div/p/a at Line 346, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.xml.html#/html/head/body/div/div/div/p/a at Line 531, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.ttl.html#/html/head/body/div/div/div/p/a at Line 403, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-mappings.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-mappings.html#/html/head/body/div/div/div/p/a at Line 309, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.xml.html#/html/head/body/div/div/div/p/a at Line 531, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.html#/html/head/body/div/div/div/p/a at Line 320, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.json.html#/html/head/body/div/div/div/p/a at Line 3142, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-definitions.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-definitions.html#/html/head/body/div/div/div/p/a at Line 337, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.xml.html#/html/head/body/div/div/div/p/a at Line 468, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.ttl.html#/html/head/body/div/div/div/p/a at Line 911, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 561, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status.json.html#/html/head/body/div/div/div/p/a at Line 570, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.html#/html/head/body/div/div/div/p/a at Line 328, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-identifier-status.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 561, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.html#/html/head/body/div/div/div/p/a at Line 320, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.xml.html#/html/head/body/div/div/div/p/a at Line 375, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.ttl.html#/html/head/body/div/div/div/p/a at Line 403, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.xml.html#/html/head/body/div/div/div/p/a at Line 386, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.json.html#/html/head/body/div/div/div/p/a at Line 2136, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/guidance.html#/html/head/body/div/div/div/div/div/div/p/a at Line 209, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/guidance.html#/html/head/body/div/div/div/p/a at Line 321, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 546, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/p/a at Line 209, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/p/a at Line 291, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.ttl.html#/html/head/body/div/div/div/p/a at Line 462, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/history.html#/html/head/body/div/div/div/div/div/div/p/a at Line 209, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/history.html#/html/head/body/div/div/div/p/a at Line 293, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.ttl.html#/html/head/body/div/div/div/p/a at Line 589, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html#/html/head/body/div/div/div/p/a at Line 614, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.json.html#/html/head/body/div/div/div/p/a at Line 1057, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.ttl.html#/html/head/body/div/div/div/p/a at Line 2592, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.ttl.html#/html/head/body/div/div/div/p/a at Line 543, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.html#/html/head/body/div/div/div/p/a at Line 320, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.json.html#/html/head/body/div/div/div/p/a at Line 406, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/capstatements.html#/html/head/body/div/div/div/div/div/div/p/a at Line 209, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/capstatements.html#/html/head/body/div/div/div/p/a at Line 262, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 576, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-mappings.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-mappings.html#/html/head/body/div/div/div/p/a at Line 318, column 10: The link '' for "History" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/p/a at Line 247, column 11: The link 'operations.html' for "Operations" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/p/a at Line 255, column 11: The link 'searchparameters.html' for "Search Parameters" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/p/a at Line 263, column 11: The link 'security.html' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 447, column 1713: The link 'v2-0131.html' for "v2-0131" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 575, column 1713: The link 'v2-0131.html' for "v2-0131" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1078, column 18: The link '' for "Capabilitystatement Client " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1108, column 18: The link '' for "Capabilitystatement Server " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1138, column 18: The link '' for "Codesystem Blah Codes " cannot be resolved
@@ -173,50 +34,17 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1388, column 18: The link '' for "Structuredefinition Template Basic " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1426, column 18: The link '' for "Structuredefinition Template Profile On Profile " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1456, column 18: The link '' for "Valueset Blah Codes " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1486, column 18: The link '' for "Capstatements " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1504, column 18: The link '' for "Downloads " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1522, column 18: The link '' for "Guidance " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1540, column 18: The link '' for "History " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1558, column 18: The link '' for "Html_pages " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1576, column 18: The link '' for "Index " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1594, column 18: The link '' for "Profiles " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1612, column 18: The link '' for "Terminology " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1630, column 18: The link '' for "Toc " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1648, column 18: The link '' for "Todo " cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1486, column 18: The link '' for "All Examples " cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1504, column 18: The link '' for "Capstatements " cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1522, column 18: The link '' for "Downloads " cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1540, column 18: The link '' for "Guidance " cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1558, column 18: The link '' for "History " cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1576, column 18: The link '' for "Html_pages " cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1594, column 18: The link '' for "Index " cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1612, column 18: The link '' for "Profiles " cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1630, column 18: The link '' for "Terminology " cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1648, column 18: The link '' for "Toc " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 1666, column 18: The link '' for "Todo " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/p/a at Line 3182, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.xml.html#/html/head/body/div/div/div/p/a at Line 362, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.json.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.json.html#/html/head/body/div/div/div/p/a at Line 500, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-mappings.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-mappings.html#/html/head/body/div/div/div/p/a at Line 483, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/div/div/div/p/a at Line 209, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/p/a at Line 363, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.ttl.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.ttl.html#/html/head/body/div/div/div/p/a at Line 543, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.xml.html#/html/head/body/div/div/div/div/div/div/p/a at Line 201, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.xml.html#/html/head/body/div/div/div/p/a at Line 386, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/p/a at Line 213, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/p/a at Line 276, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/p/a at Line 213, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 241, column 12: The link 'operations.html' for "Operations" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 248, column 12: The link 'searchparameters.html' for "Search Parameters" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 255, column 12: The link 'security.html' for "Security" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 257, column 13: The link 'examples.html' for "All Examples" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/p/a at Line 291, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/terminology.html#/html/head/body/div/div/div/div/div/div/p/a at Line 213, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/terminology.html#/html/head/body/div/div/div/p/a at Line 267, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/guidance.html#/html/head/body/div/div/div/div/div/div/p/a at Line 213, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/guidance.html#/html/head/body/div/div/div/p/a at Line 325, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/div/div/div/p/a at Line 213, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/p/a at Line 295, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/capstatements.html#/html/head/body/div/div/div/div/div/div/p/a at Line 213, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/capstatements.html#/html/head/body/div/div/div/p/a at Line 266, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/div/div/div/p/a at Line 213, column 173: The link '' for "Directory of published versions" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/p/a at Line 367, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/p/a at Line 290, column 10: The link '' for "History" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/p/a at Line 297, column 10: The link '' for "History" cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example.xml ==
 ERROR: Patient/example: Patient.extension[1].extension[4].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#1586-7) is not  valid in the value set US-Core Detailed Race)
 ERROR: Patient/example: Patient.extension[1].extension[5].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2036-2) is not  valid in the value set US-Core Detailed Race)
@@ -247,6 +75,7 @@ WARNING: ImplementationGuide/ig: ImplementationGuide.definition.page.page[6].pag
 WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
 WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: StructureDefinition/template-profile-on-profile: StructureDefinition.mapping[2].uri: URI values cannot have whitespace
+WARNING: http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile: Profiles SHOULD state the FHIR Version on which they are based
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/template-profile-spreadsheet.xml ==
 WARNING: StructureDefinition/extension-blah: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
 WARNING: StructureDefinition/extension-blah: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
@@ -256,3 +85,4 @@ WARNING: StructureDefinition/extension-blah2: StructureDefinition: A resource sh
 WARNING: StructureDefinition/extension-blah2: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: StructureDefinition/template-basic: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
 WARNING: StructureDefinition/template-basic: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: http://www.fhir.org/guides/test3/StructureDefinition/template-basic: Profiles SHOULD state the FHIR Version on which they are based

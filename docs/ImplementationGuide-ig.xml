@@ -268,7 +268,7 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="examples.html"/>
+        <nameUrl value="all-examples.html"/>
         <title value="All Examples"/>
         <generation value="markdown"/>
       </page>

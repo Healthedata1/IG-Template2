@@ -687,25 +687,25 @@
         <code value="Timing"/>
       </type>
       <type>
-        <code value="ParameterDefinition"/>
-      </type>
-      <type>
-        <code value="DataRequirement"/>
-      </type>
-      <type>
-        <code value="RelatedArtifact"/>
-      </type>
-      <type>
         <code value="ContactDetail"/>
       </type>
       <type>
         <code value="Contributor"/>
       </type>
       <type>
-        <code value="TriggerDefinition"/>
+        <code value="DataRequirement"/>
       </type>
       <type>
         <code value="Expression"/>
+      </type>
+      <type>
+        <code value="ParameterDefinition"/>
+      </type>
+      <type>
+        <code value="RelatedArtifact"/>
+      </type>
+      <type>
+        <code value="TriggerDefinition"/>
       </type>
       <type>
         <code value="UsageContext"/>

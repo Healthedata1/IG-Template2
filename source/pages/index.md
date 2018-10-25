@@ -15,7 +15,7 @@ active: home
 
 <!-- end TOC -->
 
-##  Cat Facts (To Show How the Text Wraps around the Contents Block)
+### Cat Facts (To Show How the Text Wraps around the Contents Block)
 
  The domestic cat[1][5] (Latin: Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and for their ability to hunt vermin. There are more than 70 cat breeds, though different associations proclaim different numbers according to their standards.
 
@@ -31,9 +31,9 @@ Figure 1 is a picture of a cat to show how to insert an image using markdown.
 
 {% include img.html img="cat.jpg" caption="Figure 1: Meow" %}
 
-## Jekyll Site Variables
+### Jekyll Site Variables
 
-These are the site variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll):
+These are the site variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation# Jekyll):
 
 - IG Business version specification (defined in ig.json)- {% raw %}{{site.data.fhir.ig.version}} {% endraw %} = {{site.data.fhir.ig.version}}
 
@@ -66,15 +66,15 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 - genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -  {% raw %} {{site.data.fhir.genDate}} {% endraw %} = {{site.data.fhir.genDate}}
 
 
-## Introduction
+### Introduction
 
 blah blah blah
 
-## More Stuff
+### More Stuff
 
 and more stuff
 
-### And More Stuff
+#### And More Stuff
 
 add link list to bottom of each page....
 <!-- {% raw %}>{% include link-list.md %} {% endraw %}-->

@@ -825,25 +825,25 @@
          fhir:ElementDefinition.type.code [ fhir:value "Timing" ]
        ], [
          fhir:index 40;
-         fhir:ElementDefinition.type.code [ fhir:value "ParameterDefinition" ]
-       ], [
-         fhir:index 41;
-         fhir:ElementDefinition.type.code [ fhir:value "DataRequirement" ]
-       ], [
-         fhir:index 42;
-         fhir:ElementDefinition.type.code [ fhir:value "RelatedArtifact" ]
-       ], [
-         fhir:index 43;
          fhir:ElementDefinition.type.code [ fhir:value "ContactDetail" ]
        ], [
-         fhir:index 44;
+         fhir:index 41;
          fhir:ElementDefinition.type.code [ fhir:value "Contributor" ]
        ], [
+         fhir:index 42;
+         fhir:ElementDefinition.type.code [ fhir:value "DataRequirement" ]
+       ], [
+         fhir:index 43;
+         fhir:ElementDefinition.type.code [ fhir:value "Expression" ]
+       ], [
+         fhir:index 44;
+         fhir:ElementDefinition.type.code [ fhir:value "ParameterDefinition" ]
+       ], [
          fhir:index 45;
-         fhir:ElementDefinition.type.code [ fhir:value "TriggerDefinition" ]
+         fhir:ElementDefinition.type.code [ fhir:value "RelatedArtifact" ]
        ], [
          fhir:index 46;
-         fhir:ElementDefinition.type.code [ fhir:value "Expression" ]
+         fhir:ElementDefinition.type.code [ fhir:value "TriggerDefinition" ]
        ], [
          fhir:index 47;
          fhir:ElementDefinition.type.code [ fhir:value "UsageContext" ]

@@ -55,7 +55,7 @@
 your logo here
 
 [![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive #org_logo}
+{: .img-responsive # org_logo}
 
 can only resize using html  or css ;-( -->
 
@@ -93,7 +93,7 @@ can only resize using html  or css ;-( -->
     <div class="container">    <!-- container -->
       <div class="row">    <!-- row -->
        <div class="inner-wrapper">   <!-- inner-wrapper -->
-         <div class="col-12"><a name="13fd545f-60ca-49cf-b246-717ff7bf257d">​</a>    <!-- col -->
+         <div class="col-12"><a name="c97083a9-434d-41c7-83f1-f80739e385dd">​</a>    <!-- col -->
               <!-- content of page -->
 
 
@@ -106,7 +106,7 @@ pagepath = html_pages.html
 
 
 <pre>
-## Table of Contents
+### Table of Contents
 {: nocount="true"}
 
 &nbsp;&nbsp;- 1 - [Home](index.html)
@@ -128,7 +128,7 @@ pagepath = html_pages.html
 &nbsp;&nbsp;&nbsp;&nbsp;- 7.2 - [CapabilityStatement Server ](CapabilityStatement-server.html)
 &nbsp;&nbsp;- 8 - [Security](security.html)
 &nbsp;&nbsp;- 9 - [Downloads](downloads.html)
-&nbsp;&nbsp;- 10 - [All Examples](examples.html)
+&nbsp;&nbsp;- 10 - [All Examples](all-examples.html)
 &nbsp;&nbsp;- 11 - [Table of Contents](toc.html)
 </pre>
 
@@ -1030,10 +1030,10 @@ p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Download
 
 
 
-p = examples.html{"title"=&gt;"All Examples", "label"=&gt;"9", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>All Examples</b></li>"}
+p = all-examples.html{"title"=&gt;"All Examples", "label"=&gt;"9", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><b>All Examples</b></li>"}
 <br/>
 
-pagepath = examples.html
+pagepath = all-examples.html
 <br/>
 p.title = All Examples
 <br/>
@@ -1058,7 +1058,7 @@ p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Table of
 
 
 
-site.historypath = 
+site.historypath = history.html
 <br/>
 
 
@@ -1476,6 +1476,24 @@ site.historypath =
 12,
 
 
+<em>title</em> = All Examples 
+<em>path</em> = all-examples.md,
+<em>url</em> = /all-examples.html,
+<em>link</em> = <a href="null">All Examples </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+13,
+
+
 <em>title</em> = Capstatements 
 <em>path</em> = capstatements.md,
 <em>url</em> = /capstatements.html,
@@ -1491,7 +1509,7 @@ site.historypath =
 
 
 
-13,
+14,
 
 
 <em>title</em> = Downloads 
@@ -1509,7 +1527,7 @@ site.historypath =
 
 
 
-14,
+15,
 
 
 <em>title</em> = Guidance 
@@ -1527,7 +1545,7 @@ site.historypath =
 
 
 
-15,
+16,
 
 
 <em>title</em> = History 
@@ -1545,7 +1563,7 @@ site.historypath =
 
 
 
-16,
+17,
 
 
 <em>title</em> = Html_pages 
@@ -1563,7 +1581,7 @@ site.historypath =
 
 
 
-17,
+18,
 
 
 <em>title</em> = Index 
@@ -1581,7 +1599,7 @@ site.historypath =
 
 
 
-18,
+19,
 
 
 <em>title</em> = Profiles 
@@ -1599,7 +1617,7 @@ site.historypath =
 
 
 
-19,
+20,
 
 
 <em>title</em> = Terminology 
@@ -1617,7 +1635,7 @@ site.historypath =
 
 
 
-20,
+21,
 
 
 <em>title</em> = Toc 
@@ -1635,30 +1653,12 @@ site.historypath =
 
 
 
-21,
+22,
 
 
 <em>title</em> = Todo 
 <em>path</em> = todo.md,
 <em>url</em> = /todo.html,
-<em>link</em> = <a href="null">Todo </a>
-<br/>
-
-
-
-
-
-
-
-
-
-
-22,
-
-
-<em>title</em> = Todo 
-<em>path</em> = pages/todo.md,
-<em>url</em> = /pages/todo.html,
 <em>link</em> = <a href="null">Todo </a>
 <br/>
 
@@ -1680,9 +1680,9 @@ site.historypath =
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="CapabilityStatement-client.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="CapabilitystatementClient"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="CapabilityStatement-client.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Capabilitystatement Client "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -1691,8 +1691,8 @@ site.historypath =
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -1716,9 +1716,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="CapabilityStatement-server.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="CapabilitystatementServer"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="CapabilityStatement-server.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Capabilitystatement Server "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -1727,8 +1727,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -1752,9 +1752,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="CodeSystem-blah-codes.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="CodesystemBlahCodes"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="CodeSystem-blah-codes.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Codesystem Blah Codes "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -1763,8 +1763,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -1788,9 +1788,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="ImplementationGuide-ig.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="ImplementationguideIg"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="ImplementationGuide-ig.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Implementationguide Ig "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -1799,8 +1799,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -1824,9 +1824,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="Patient-example.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="PatientExample"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="Patient-example.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Patient Example "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -1835,8 +1835,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="example"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="example"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -1868,9 +1868,9 @@ value="example"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-extension-blah.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="StructuredefinitionExtensionBlah"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-extension-blah.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Blah "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -1879,8 +1879,8 @@ value="example"/&gt;<br/>
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -1912,9 +1912,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-extension-blah2.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="StructuredefinitionExtensionBlah2"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-extension-blah2.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Blah2 "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -1923,8 +1923,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -1956,9 +1956,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-extension-complex.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="StructuredefinitionExtensionComplex"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-extension-complex.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Complex "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -1967,8 +1967,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2000,9 +2000,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-extension-identifier-status.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="StructuredefinitionExtensionIdentifierStatus"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-extension-identifier-status.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Identifier Status "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2011,8 +2011,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2044,9 +2044,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-template-basic.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="StructuredefinitionTemplateBasic"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-template-basic.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Template Basic "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2055,8 +2055,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2088,9 +2088,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-template-profile-on-profile.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="StructuredefinitionTemplateProfileOnProfile"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="StructureDefinition-template-profile-on-profile.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Template Profile On Profile "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2099,8 +2099,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2124,9 +2124,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="ValueSet-blah-codes.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="ValuesetBlahCodes"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="ValueSet-blah-codes.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Valueset Blah Codes "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2135,8 +2135,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="resource"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="resource"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2160,9 +2160,9 @@ value="resource"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="capstatements.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Capstatements"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="all-examples.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="All Examples "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2171,8 +2171,8 @@ value="resource"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2184,9 +2184,9 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="downloads.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Downloads"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="capstatements.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Capstatements "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2195,8 +2195,8 @@ value="page"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2208,9 +2208,9 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="guidance.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Guidance"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="downloads.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Downloads "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2219,8 +2219,8 @@ value="page"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2232,9 +2232,9 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="history.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="History"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="guidance.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Guidance "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2243,8 +2243,8 @@ value="page"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2256,9 +2256,9 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="html_pages.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Html_pages"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="history.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="History "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2267,8 +2267,8 @@ value="page"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2280,9 +2280,9 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="index.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Index"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="html_pages.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Html_pages "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2291,8 +2291,8 @@ value="page"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2304,9 +2304,9 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="profiles.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Profiles"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="index.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Index "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2315,8 +2315,8 @@ value="page"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2328,9 +2328,9 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="terminology.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Terminology"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="profiles.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Profiles "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2339,8 +2339,8 @@ value="page"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2352,9 +2352,9 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="toc.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Toc"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="terminology.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Terminology "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2363,8 +2363,8 @@ value="page"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2376,9 +2376,9 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="todo.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Todo"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="toc.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Toc "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2387,8 +2387,8 @@ value="page"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2400,9 +2400,9 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;source value="pages/todo.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Todo"/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;source value="todo.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Todo "/&gt;
 &nbsp;&nbsp;&nbsp;&lt;kind
 
 
@@ -2411,8 +2411,8 @@ value="page"/&gt;<br/>
 
 
 
-value="page"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="page"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2430,17 +2430,17 @@ value="page"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="CapabilityStatement-client.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Capabilitystatement Client "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="CapabilityStatement-client.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Capabilitystatement Client "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2465,17 +2465,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="CapabilityStatement-server.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Capabilitystatement Server "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="CapabilityStatement-server.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Capabilitystatement Server "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2500,17 +2500,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="CodeSystem-blah-codes.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Codesystem Blah Codes "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="CodeSystem-blah-codes.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Codesystem Blah Codes "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2535,17 +2535,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="ImplementationGuide-ig.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Implementationguide Ig "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="ImplementationGuide-ig.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Implementationguide Ig "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2570,17 +2570,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="Patient-example.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Patient Example "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="Patient-example.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Patient Example "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2613,17 +2613,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-extension-blah.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Blah "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-extension-blah.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Blah "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2656,17 +2656,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-extension-blah2.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Blah2 "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-extension-blah2.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Blah2 "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2699,17 +2699,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-extension-complex.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Complex "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-extension-complex.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Complex "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2742,17 +2742,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-extension-identifier-status.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Identifier Status "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-extension-identifier-status.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Extension Identifier Status "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2785,17 +2785,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-template-basic.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Template Basic "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-template-basic.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Template Basic "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2828,17 +2828,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-template-profile-on-profile.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Template Profile On Profile "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="StructureDefinition-template-profile-on-profile.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Structuredefinition Template Profile On Profile "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2863,17 +2863,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="ValueSet-blah-codes.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Valueset Blah Codes "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="ValueSet-blah-codes.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Valueset Blah Codes "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="generated"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="generated"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2898,17 +2898,17 @@ value="generated"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="capstatements.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Capstatements "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="all-examples.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="All Examples "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2921,17 +2921,17 @@ value="markdown"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="downloads.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Downloads "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="capstatements.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Capstatements "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2944,17 +2944,17 @@ value="markdown"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="guidance.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Guidance "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="downloads.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Downloads "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2967,17 +2967,17 @@ value="markdown"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="history.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="History "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="guidance.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Guidance "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -2990,17 +2990,17 @@ value="markdown"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="html_pages.html"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Html_pages "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="history.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="History "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -3013,17 +3013,17 @@ value="markdown"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="index.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Index "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="html_pages.html"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Html_pages "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -3036,17 +3036,17 @@ value="markdown"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="profiles.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Profiles "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="index.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Index "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -3059,17 +3059,17 @@ value="markdown"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="terminology.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Terminology "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="profiles.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Profiles "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -3082,17 +3082,17 @@ value="markdown"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="toc.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Toc "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="terminology.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Terminology "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -3105,17 +3105,17 @@ value="markdown"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="todo.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Todo "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="toc.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Toc "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -3128,17 +3128,17 @@ value="markdown"/&gt;<br/>
 
 
 
-&lt;page&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="pages/todo.md"/&gt;<br/>
-  &nbsp;&nbsp;&nbsp;&lt;title value="Todo "/&gt;<br/>
+&lt;page&gt;
+  &nbsp;&nbsp;&nbsp;&lt;nameUrl value="todo.md"/&gt;
+  &nbsp;&nbsp;&nbsp;&lt;title value="Todo "/&gt;
   &nbsp;&nbsp;&nbsp;&lt;generation
 
 
 
 
 
-value="markdown"/&gt;<br/>
-&lt;/page&gt;<br/>
+value="markdown"/&gt;
+&lt;/page&gt;<br/><br/>
 
 
 
@@ -3173,9 +3173,9 @@ value="markdown"/&gt;<br/>
 <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
-    <p><a name="0c10679c-5bef-4057-8d44-1b00f3c7692a">​</a>
-      IG_Test3FOO Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Mon, Oct 22, 2018 22:59-0700.
-      | <a style="color: #81BEF7" href="null">History</a>
+    <p>
+      IG_Test3FOO Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Wed, Oct 24, 2018 22:07-0700.
+      | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         
