@@ -1,4 +1,4 @@
-historypath : "http://hl7.org/fhir/us/davinci-deqm/history.html" # complete path to IG history file
+historypath : "history.html" # complete path to IG history file
 summaries: false #true if want custom profile summaries in summary tab
 diff2: false # true if want to show intermediate differentials
 build: ci  # choice of ci|ballot|version
