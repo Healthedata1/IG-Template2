@@ -1,5 +1,5 @@
 ---
-## jekyll header
+### jekyll header
 ---
 {% include header.html %}
 
@@ -15,7 +15,7 @@ pagepath = {{pagepath}}
 
 
 <pre>
-### Table of Contents
+#### Table of Contents
 {: nocount="true"}
 {% for p in site.data.pages %}{% assign pagepath = p[0] %}{% assign pagelabel = site.data.pages[pagepath].label | remove: ".0" %}{% assign pagetitle = site.data.pages[pagepath].title %}{% assign depth = pagelabel | split: '.' %}{% unless {{pagepath}} contains 'ttl' or {{pagepath}} contains 'json' or  {{pagepath}} contains 'xml' or  {{pagepath}} contains 'definitions' or {{pagepath}} contains 'mappings'%}
 {% for i in depth %}&nbsp;&nbsp;{% endfor %}- {{pagelabel | plus: 1 }} - [{{pagetitle | remove: ".html"}}]({{pagepath}}){% endunless %}{% endfor %}
@@ -71,16 +71,14 @@ site.historypath = {{ site.historypath }}
 
 {% assign title = p.name | remove: ".html" | remove: ".md" | split: '-' %}
 
-&lt;page&gt;
-  &nbsp;&nbsp;&nbsp;&lt;source value=&quot;{{ p.path }}&quot;/&gt;
-  &nbsp;&nbsp;&nbsp;&lt;title value=&quot;{% for word in title %}{{ word | capitalize }} {% endfor %}&quot;/&gt;
-&nbsp;&nbsp;&nbsp;&lt;kind
+&lt;page&gt;&lt;source
+value=&quot;{{ p.path | replace: ".md" , ".html" }}&quot;/&gt;&lt;title
+value=&quot;{% for word in title %}{{ word | capitalize }} {% endfor %}&quot;/&gt;&lt;kind
 
 {% assign kind = "page" %}
 {% for e in site.example_types %}
 {% if title contains e %}
 {% assign kind = "example" %}
-{% else %}
 {% endif %}
 {% endfor %}
 
@@ -91,8 +89,9 @@ site.historypath = {{ site.historypath }}
 {% endfor %}
 
 
-value=&quot;{{ kind }}&quot;/&gt;
-&lt;/page&gt;<br /><br />
+value=&quot;{{ kind }}&quot;/&gt;&lt;/page&gt;
+<br />
+<br />
 
 
 {% endunless %}
@@ -110,10 +109,9 @@ value=&quot;{{ kind }}&quot;/&gt;
 {% assign title = p.name | remove: ".html" | remove: ".md" | split: '-' %}
 
 
-&lt;page&gt;
-  &nbsp;&nbsp;&nbsp;&lt;nameUrl value=&quot;{{ p.path }}&quot;/&gt;
-  &nbsp;&nbsp;&nbsp;&lt;title value=&quot;{% for word in title %}{{ word | capitalize }} {% endfor %}&quot;/&gt;
-  &nbsp;&nbsp;&nbsp;&lt;generation
+&lt;page&gt;&lt;nameUrl
+value=&quot;{{ p.path | replace: ".md" , ".html" }}&quot;/&gt;&lt;title
+value=&quot;{% for word in title %}{{ word | capitalize }} {% endfor %}&quot;/&gt;&lt;generation
 
 {% assign generation = "markdown" %}
 {% for e in site.resource_types %}
@@ -123,9 +121,9 @@ value=&quot;{{ kind }}&quot;/&gt;
 {% endif %}
 {% endfor %}
 
-
-value=&quot;{{ generation }}&quot;/&gt;
-&lt;/page&gt;<br /><br />
+value=&quot;{{ generation }}&quot;/&gt;&lt;/page&gt;
+<br />
+<br />
 
 
 {% endunless %}
