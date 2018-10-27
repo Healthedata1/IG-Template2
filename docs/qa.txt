@@ -2,7 +2,7 @@
 =========================================
 
 err = 26, warn = 28, info = 0
-Generated Thu Oct 25 09:47:13 PDT 2018. FHIR version 3.6.0 for 3.6.0
+Generated Fri Oct 26 20:52:34 PDT 2018. FHIR version 3.6.0 for 3.6.0
 
  Build Errors : 29 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 6 / 0
