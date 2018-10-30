@@ -1,0 +1,35 @@
+
+
+I tried to use the ig-publisher to create a Table of contents with sections in the pages but it only went one level deep with the labels
+
+from my R4 ig.xml...
+~~~
+<!-- ============ Home Page =============== -->
+<page><nameUrl value="index.html"/><title value="Home"/><generation value="markdown"/>
+
+<!-- ============ Guidance Page =============== -->
+<page><nameUrl value="guidance.html"/><title value="General Guidance"/><generation value="markdown"/>
+<page><nameUrl value="guidance.html#introduction"/><title value="Introduction"/><generation value="markdown"/></page>
+<page><nameUrl value="guidance.html#more-stuff"/><title value="More Stuff"/><generation value="markdown"/>
+<page><nameUrl value="guidance.html#and-more-stuff"/><title value="And More Stuff"/><generation value="markdown"/></page>
+
+</page>
+
+</page>
+~~~~
+
+It created this:
+
+2 - General Guidance
+
+  2.1 - Introduction
+
+  2.2 - More Stuff
+
+    2 - And More Stuff  (instead of 2.2.1) does it only go one layer deep.
+    
+    
+hand edit for now.  :-(
+
+
+

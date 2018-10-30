@@ -93,7 +93,7 @@ can only resize using html  or css ;-( -->
     <div class="container">    <!-- container -->
       <div class="row">    <!-- row -->
        <div class="inner-wrapper">   <!-- inner-wrapper -->
-         <div class="col-12"><a name="cb757236-d7a6-4953-9048-c4c10af86134">​</a>    <!-- col -->
+         <div class="col-12"><a name="db485938-db31-4fdf-bfcb-a8c2945ec818">​</a>    <!-- col -->
               <!-- content of page -->
 
 
@@ -572,6 +572,9 @@ xml.js,/assets/js/xml.js
 cc0.png,/cc0.png
 <br/>
 
+client.openapi.json,/client.openapi.json
+<br/>
+
 extension-blah.csv,/extension-blah.csv
 <br/>
 
@@ -726,6 +729,9 @@ modifier.png,/modifier.png
 <br/>
 
 mustsupport.png,/mustsupport.png
+<br/>
+
+server.openapi.json,/server.openapi.json
 <br/>
 
 summary.png,/summary.png
@@ -1034,6 +1040,9 @@ tbl_bck1111.png,/tbl_bck1111.png
 tbl_bck11110.png,/tbl_bck11110.png
 <br/>
 
+tbl_bck1112.png,/tbl_bck1112.png
+<br/>
+
 tbl_bck112.png,/tbl_bck112.png
 <br/>
 
@@ -1202,8 +1211,10 @@ pagepath = html_pages.html
 &nbsp;&nbsp;&nbsp;&nbsp;- 3.5 - [StructureDefinition Extension Blah2](StructureDefinition-extension-blah2.html)
 &nbsp;&nbsp;- 4 - [Operations](operations.html)
 &nbsp;&nbsp;- 5 - [Terminology](terminology.html)
-&nbsp;&nbsp;&nbsp;&nbsp;- 5.1 - [ValueSet Blah Codes](ValueSet-blah-codes.html)
-&nbsp;&nbsp;&nbsp;&nbsp;- 5.2 - [CodeSystem Blah Codes](CodeSystem-blah-codes.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 5.1 - [Value Sets](terminology.html#value-sets)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 5 - [ValueSet Blah Codes](ValueSet-blah-codes.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 5.2 - [Code Systems](terminology.html#code-systems)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 5 - [CodeSystem Blah Codes](CodeSystem-blah-codes.html)
 &nbsp;&nbsp;- 6 - [Search Parameters](searchparameters.html)
 &nbsp;&nbsp;- 7 - [Capability Statements](capstatements.html)
 &nbsp;&nbsp;&nbsp;&nbsp;- 7.1 - [CapabilityStatement Server](CapabilityStatement-server.html)
@@ -1670,159 +1681,185 @@ p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Terminol
 
 
 
-p = ValueSet-blah-codes.html{"title"=&gt;"ValueSet Blah Codes", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li>", "examples"=&gt;[]}
+p = terminology.html#value-sets{"title"=&gt;"Value Sets", "label"=&gt;"4.1.0", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>Value Sets</b></li>"}
+<br/>
+
+pagepath = terminology.html#value-sets
+<br/>
+p.title = Value Sets
+<br/>
+p.label = 5.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>Value Sets</b></li></pre>
+
+
+
+p = ValueSet-blah-codes.html{"title"=&gt;"ValueSet Blah Codes", "label"=&gt;"4.1.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li>", "examples"=&gt;[]}
 <br/>
 
 pagepath = ValueSet-blah-codes.html
 <br/>
 p.title = ValueSet Blah Codes
 <br/>
-p.label = 5.1
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
 
 
 
-p = ValueSet-blah-codes.xml.html{"title"=&gt;"ValueSet Blah Codes - XML Representation", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li>"}
+p = ValueSet-blah-codes.xml.html{"title"=&gt;"ValueSet Blah Codes - XML Representation", "label"=&gt;"4.1.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li>"}
 <br/>
 
 pagepath = ValueSet-blah-codes.xml.html
 <br/>
 p.title = ValueSet Blah Codes - XML Representation
 <br/>
-p.label = 5.1
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
 
 
 
-p = ValueSet-blah-codes.json.html{"title"=&gt;"ValueSet Blah Codes - JSON Representation", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li>"}
+p = ValueSet-blah-codes.json.html{"title"=&gt;"ValueSet Blah Codes - JSON Representation", "label"=&gt;"4.1.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li>"}
 <br/>
 
 pagepath = ValueSet-blah-codes.json.html
 <br/>
 p.title = ValueSet Blah Codes - JSON Representation
 <br/>
-p.label = 5.1
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
 
 
 
-p = ValueSet-blah-codes.ttl.html{"title"=&gt;"ValueSet Blah Codes - TTL Representation", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li>"}
+p = ValueSet-blah-codes.ttl.html{"title"=&gt;"ValueSet Blah Codes - TTL Representation", "label"=&gt;"4.1.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li>"}
 <br/>
 
 pagepath = ValueSet-blah-codes.ttl.html
 <br/>
 p.title = ValueSet Blah Codes - TTL Representation
 <br/>
-p.label = 5.1
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
 
 
 
-p = ValueSet-blah-codes-definitions.html{"title"=&gt;"ValueSet Blah Codes - Definitions", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li>"}
+p = ValueSet-blah-codes-definitions.html{"title"=&gt;"ValueSet Blah Codes - Definitions", "label"=&gt;"4.1.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li>"}
 <br/>
 
 pagepath = ValueSet-blah-codes-definitions.html
 <br/>
 p.title = ValueSet Blah Codes - Definitions
 <br/>
-p.label = 5.1
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
 
 
 
-p = ValueSet-blah-codes-mappings.html{"title"=&gt;"ValueSet Blah Codes - mappings", "label"=&gt;"4.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li>"}
+p = ValueSet-blah-codes-mappings.html{"title"=&gt;"ValueSet Blah Codes - mappings", "label"=&gt;"4.1.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li>"}
 <br/>
 
 pagepath = ValueSet-blah-codes-mappings.html
 <br/>
 p.title = ValueSet Blah Codes - mappings
 <br/>
-p.label = 5.1
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#value-sets"><b>Value Sets</b></a></li><li><b>ValueSet Blah Codes</b></li></pre>
 
 
 
-p = CodeSystem-blah-codes.html{"title"=&gt;"CodeSystem Blah Codes", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li>", "examples"=&gt;[]}
+p = terminology.html#code-systems{"title"=&gt;"Code Systems", "label"=&gt;"4.2.0", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>Code Systems</b></li>"}
+<br/>
+
+pagepath = terminology.html#code-systems
+<br/>
+p.title = Code Systems
+<br/>
+p.label = 5.2
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>Code Systems</b></li></pre>
+
+
+
+p = CodeSystem-blah-codes.html{"title"=&gt;"CodeSystem Blah Codes", "label"=&gt;"4.2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li>", "examples"=&gt;[]}
 <br/>
 
 pagepath = CodeSystem-blah-codes.html
 <br/>
 p.title = CodeSystem Blah Codes
 <br/>
-p.label = 5.2
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
 
 
 
-p = CodeSystem-blah-codes.xml.html{"title"=&gt;"CodeSystem Blah Codes - XML Representation", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li>"}
+p = CodeSystem-blah-codes.xml.html{"title"=&gt;"CodeSystem Blah Codes - XML Representation", "label"=&gt;"4.2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li>"}
 <br/>
 
 pagepath = CodeSystem-blah-codes.xml.html
 <br/>
 p.title = CodeSystem Blah Codes - XML Representation
 <br/>
-p.label = 5.2
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
 
 
 
-p = CodeSystem-blah-codes.json.html{"title"=&gt;"CodeSystem Blah Codes - JSON Representation", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li>"}
+p = CodeSystem-blah-codes.json.html{"title"=&gt;"CodeSystem Blah Codes - JSON Representation", "label"=&gt;"4.2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li>"}
 <br/>
 
 pagepath = CodeSystem-blah-codes.json.html
 <br/>
 p.title = CodeSystem Blah Codes - JSON Representation
 <br/>
-p.label = 5.2
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
 
 
 
-p = CodeSystem-blah-codes.ttl.html{"title"=&gt;"CodeSystem Blah Codes - TTL Representation", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li>"}
+p = CodeSystem-blah-codes.ttl.html{"title"=&gt;"CodeSystem Blah Codes - TTL Representation", "label"=&gt;"4.2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li>"}
 <br/>
 
 pagepath = CodeSystem-blah-codes.ttl.html
 <br/>
 p.title = CodeSystem Blah Codes - TTL Representation
 <br/>
-p.label = 5.2
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
 
 
 
-p = CodeSystem-blah-codes-definitions.html{"title"=&gt;"CodeSystem Blah Codes - Definitions", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li>"}
+p = CodeSystem-blah-codes-definitions.html{"title"=&gt;"CodeSystem Blah Codes - Definitions", "label"=&gt;"4.2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li>"}
 <br/>
 
 pagepath = CodeSystem-blah-codes-definitions.html
 <br/>
 p.title = CodeSystem Blah Codes - Definitions
 <br/>
-p.label = 5.2
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
 
 
 
-p = CodeSystem-blah-codes-mappings.html{"title"=&gt;"CodeSystem Blah Codes - mappings", "label"=&gt;"4.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li>"}
+p = CodeSystem-blah-codes-mappings.html{"title"=&gt;"CodeSystem Blah Codes - mappings", "label"=&gt;"4.2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li>"}
 <br/>
 
 pagepath = CodeSystem-blah-codes-mappings.html
 <br/>
 p.title = CodeSystem Blah Codes - mappings
 <br/>
-p.label = 5.2
+p.label = 5
 <br/>
-p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="terminology.html"><b>Terminology</b></a></li><li><a href="terminology.html#code-systems"><b>Code Systems</b></a></li><li><b>CodeSystem Blah Codes</b></li></pre>
 
 
 
@@ -4223,7 +4260,7 @@ value="markdown"/&gt;&lt;/page&gt;
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Mon, Oct 29, 2018 17:15-0700.
+      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Tue, Oct 30, 2018 15:28-0700.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>

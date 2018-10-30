@@ -223,15 +223,11 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
 
 
 
-<!--  ==== this is being replaced by status in the layout template
-{% include publish-box.html %}
--->
-
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
 <ul id="markdown-toc">
-  <li><a href="#cat-facts-to-show-how-the-text-wraps-around-the-contents-block" id="markdown-toc-cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
-  <li><a href="#jekyll-site-variables" id="markdown-toc-jekyll-site-variables">Jekyll Site Variables</a></li>
+  <li><a href="#cat-facts" id="markdown-toc-cat-facts">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
+  <li><a href="#variables" id="markdown-toc-variables">Jekyll Site Variables</a></li>
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#more-stuff" id="markdown-toc-more-stuff">More Stuff</a>    <ul>
       <li><a href="#and-more-stuff" id="markdown-toc-and-more-stuff">And More Stuff</a></li>
@@ -241,7 +237,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
 
 <!-- end TOC -->
 
-<h3 id="cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</h3>
+<h3 id="cat-facts">Cat Facts (To Show How the Text Wraps around the Contents Block)</h3>
 
 <p>The domestic cat[1][5] (Latin: Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and for their ability to hunt vermin. There are more than 70 cat breeds, though different associations proclaim different numbers according to their standards.</p>
 
@@ -268,7 +264,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
 <p></p>
 </div>
 
-<h3 id="jekyll-site-variables">Jekyll Site Variables</h3>
+<h3 id="variables">Jekyll Site Variables</h3>
 
 <p>These are the site variables defined <a href="http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation# Jekyll">here</a>:</p>
 
@@ -298,25 +294,25 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
     <p>canonical : canonical path to this specification (defined in ig.json)-   {{site.data.fhir.canonical}}  = http://www.fhir.org/guides/test3</p>
   </li>
   <li>
-    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 70</p>
+    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 22</p>
   </li>
   <li>
     <p>version : version of FHIR -   {{site.data.fhir.version}}  = 3.6.0</p>
   </li>
   <li>
-    <p>revision : revision of FHIR -   {{site.data.fhir.revision}}  = c95170d5</p>
+    <p>revision : revision of FHIR -   {{site.data.fhir.revision}}  = c9ee083c</p>
   </li>
   <li>
-    <p>versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 3.6.0-c95170d5</p>
+    <p>versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 3.6.0-c9ee083c</p>
   </li>
   <li>
     <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 8</p>
   </li>
   <li>
-    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 1</p>
+    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 157</p>
   </li>
   <li>
-    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Mon, Oct 29, 2018 17:15-0700</p>
+    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Tue, Oct 30, 2018 15:28-0700</p>
   </li>
 </ul>
 
@@ -363,7 +359,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Mon, Oct 29, 2018 17:15-0700.
+      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Tue, Oct 30, 2018 15:28-0700.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>

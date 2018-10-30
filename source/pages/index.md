@@ -3,9 +3,6 @@ title: Home Page
 layout: default
 active: home
 ---
-<!--{% raw %}  ==== this is being replaced by status in the layout template
-{% include publish-box.html %}
-{% endraw %}-->
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
@@ -15,7 +12,7 @@ active: home
 
 <!-- end TOC -->
 
-### Cat Facts (To Show How the Text Wraps around the Contents Block)
+### Cat Facts (To Show How the Text Wraps around the Contents Block) {#cat-facts}
 
  The domestic cat[1][5] (Latin: Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and for their ability to hunt vermin. There are more than 70 cat breeds, though different associations proclaim different numbers according to their standards.
 
@@ -31,7 +28,7 @@ Figure 1 is a picture of a cat to show how to insert an image using markdown.
 
 {% include img.html img="cat.jpg" caption="Figure 1: Meow" %}
 
-### Jekyll Site Variables
+### Jekyll Site Variables {#variables}
 
 These are the site variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation# Jekyll):
 

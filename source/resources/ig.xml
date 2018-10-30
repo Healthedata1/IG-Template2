@@ -38,18 +38,23 @@
     <!-- ============ Guidance Page =============== -->
     <page><nameUrl value="guidance.html"/><title value="General Guidance"/><generation value="markdown"/></page>
 
+
     <!-- ============ Profiles Page =============== -->
     <page><nameUrl value="profiles.html"/><title value="Profiles and Extensions"/><generation value="markdown"/>
+    
 
      <!-- ============ Profiles and examples=============== -->
-     <!-- insert profiles --><page><nameUrl value="StructureDefinition-template-basic.html"/><title value="StructureDefinition Template Basic"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-template-profile-on-profile.html"/><title value="StructureDefinition Template Profile On Profile"/><generation value="generated"/></page>
+     <!-- insert profiles -->
+     <page><nameUrl value="StructureDefinition-template-basic.html"/><title value="StructureDefinition Template Basic"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-template-profile-on-profile.html"/><title value="StructureDefinition Template Profile On Profile"/><generation value="generated"/></page>
     <!-- ============ End Profiles and examples=============== -->
-
     <!-- ============ Extensions and examples =============== -->
-    <!-- insert extensions --><page><nameUrl value="StructureDefinition-extension-complex.html"/><title value="StructureDefinition Extension Complex"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-extension-blah.html"/><title value="StructureDefinition Extension Blah"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-extension-blah2.html"/><title value="StructureDefinition Extension Blah2"/><generation value="generated"/></page>
+    <!-- insert extensions -->
+    <page><nameUrl value="StructureDefinition-extension-complex.html"/><title value="StructureDefinition Extension Complex"/><generation value="generated"/></page>
+    <page><nameUrl value="StructureDefinition-extension-blah.html"/><title value="StructureDefinition Extension Blah"/><generation value="generated"/></page>
+    <page><nameUrl value="StructureDefinition-extension-blah2.html"/><title value="StructureDefinition Extension Blah2"/><generation value="generated"/></page>
     <!-- ============ End Extensions and examples =============== -->
-
       </page>
+      
     <!-- ============ Operations Page =============== -->
     <page><nameUrl value="operations.html"/><title value="Operations"/><generation value="markdown"/>
 
@@ -61,14 +66,19 @@
     <!-- ============ Terminology Page =============== -->
 
     <page><nameUrl value="terminology.html"/><title value="Terminology"/><generation value="markdown"/>
+
+
+    <page><nameUrl value="terminology.html#value-sets"/><title value="Value Sets"/><generation value="markdown"/>
      <!-- ============ ValueSet   =============== -->
     <!-- insert valuesets --><page><nameUrl value="ValueSet-blah-codes.html"/><title value="ValueSet Blah Codes"/><generation value="generated"/></page>
     <!-- ============ End ValueSet   =============== -->
+    </page>
+    <page><nameUrl value="terminology.html#code-systems"/><title value="Code Systems"/><generation value="markdown"/>
 
     <!-- ============ CodeSystems  =============== -->
     <!-- insert codesystems --><page><nameUrl value="CodeSystem-blah-codes.html"/><title value="CodeSystem Blah Codes"/><generation value="generated"/></page>
     <!-- ============ End CodeSystems  =============== -->
-
+    </page>
     <!-- ============ ConceptMaps   =============== -->
     <!-- insert conceptmaps -->
     <!-- ============ End ConceptMaps   =============== -->
