@@ -39,6 +39,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
             "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
           }
         ],
         "path": "Extension",
@@ -80,7 +84,7 @@
         "representation": [
           "xmlAttr"
         ],
-        "short": "xml:id (or equivalent in JSON)",
+        "short": "Unique id for inter-element referencing",
         "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
         "min": 0,
         "max": "1",
@@ -171,7 +175,7 @@
         "representation": [
           "xmlAttr"
         ],
-        "short": "xml:id (or equivalent in JSON)",
+        "short": "Unique id for inter-element referencing",
         "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
         "min": 0,
         "max": "1",
@@ -265,7 +269,7 @@
         "id": "Extension.extension:code.valueCode",
         "path": "Extension.extension.valueCode",
         "short": "Value of extension",
-        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
         "max": "1",
         "base": {
@@ -319,7 +323,7 @@
         "representation": [
           "xmlAttr"
         ],
-        "short": "xml:id (or equivalent in JSON)",
+        "short": "Unique id for inter-element referencing",
         "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
         "min": 0,
         "max": "1",
@@ -413,7 +417,7 @@
         "id": "Extension.extension:text.valueString",
         "path": "Extension.extension.valueString",
         "short": "Value of extension",
-        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
         "max": "1",
         "base": {
@@ -470,7 +474,7 @@
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "short": "Value of extension",
-        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
         "max": "0",
         "base": {

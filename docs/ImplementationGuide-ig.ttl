@@ -276,26 +276,14 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
          fhir:ImplementationGuide.definition.page.page [
            fhir:index 0;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html#value-sets" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Value Sets" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-           fhir:ImplementationGuide.definition.page.page [
-             fhir:index 0;
-             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "ValueSet-blah-codes.html" ];
-             fhir:ImplementationGuide.definition.page.title [ fhir:value "ValueSet Blah Codes" ];
-             fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-           ]
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "ValueSet-blah-codes.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "ValueSet Blah Codes" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
            fhir:index 1;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html#code-systems" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Code Systems" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-           fhir:ImplementationGuide.definition.page.page [
-             fhir:index 0;
-             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CodeSystem-blah-codes.html" ];
-             fhir:ImplementationGuide.definition.page.title [ fhir:value "CodeSystem Blah Codes" ];
-             fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-           ]
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CodeSystem-blah-codes.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "CodeSystem Blah Codes" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ]
        ], [
          fhir:index 4;

@@ -47,6 +47,10 @@
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
          fhir:Extension.valueCode [ fhir:value "normative" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ];
+         fhir:Extension.valueCode [ fhir:value "4.0.0" ]
        ];
        fhir:ElementDefinition.path [ fhir:value "Extension" ];
        fhir:ElementDefinition.short [ fhir:value "Complex Extension" ];
@@ -88,7 +92,7 @@
          fhir:value "xmlAttr";
          fhir:index 0
        ];
-       fhir:ElementDefinition.short [ fhir:value "xml:id (or equivalent in JSON)" ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
        fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
@@ -177,7 +181,7 @@
          fhir:value "xmlAttr";
          fhir:index 0
        ];
-       fhir:ElementDefinition.short [ fhir:value "xml:id (or equivalent in JSON)" ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
        fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
@@ -269,7 +273,7 @@
        fhir:Element.id [ fhir:value "Extension.extension:code.valueCode" ];
        fhir:ElementDefinition.path [ fhir:value "Extension.extension.valueCode" ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ];
+       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -324,7 +328,7 @@
          fhir:value "xmlAttr";
          fhir:index 0
        ];
-       fhir:ElementDefinition.short [ fhir:value "xml:id (or equivalent in JSON)" ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
        fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
@@ -416,7 +420,7 @@
        fhir:Element.id [ fhir:value "Extension.extension:text.valueString" ];
        fhir:ElementDefinition.path [ fhir:value "Extension.extension.valueString" ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ];
+       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -470,7 +474,7 @@
        fhir:Element.id [ fhir:value "Extension.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Extension.value[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ];
+       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ];
        fhir:ElementDefinition.base [

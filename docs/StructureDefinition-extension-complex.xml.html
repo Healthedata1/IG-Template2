@@ -318,6 +318,10 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;normative&quot;/&gt;
       &lt;/extension&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version&quot;&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;4.0.0&quot;/&gt;
+      &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Complex Extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;an example of a complex extension.&quot;/&gt;
@@ -351,7 +355,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Extension.id&quot;&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Extension.id&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">representation</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;xmlAttr&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Unique id for inter-element referencing&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -426,7 +430,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Extension.extension:code.id&quot;&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Extension.extension.id&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">representation</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;xmlAttr&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Unique id for inter-element referencing&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -507,7 +511,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Extension.extension.valueCode&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Value of extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).&quot;/&gt;
+                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -551,7 +555,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Extension.extension:text.id&quot;&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Extension.extension.id&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">representation</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;xmlAttr&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Unique id for inter-element referencing&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -632,7 +636,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Extension.extension.valueString&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Value of extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).&quot;/&gt;
+                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -681,7 +685,7 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Extension.value[x]&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Value of extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).&quot;/&gt;
+                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -965,7 +969,7 @@ Formats: <a href="StructureDefinition-extension-complex.html">Narrative</a>, <a 
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Tue, Oct 30, 2018 15:28-0700.
+      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Mon, Nov 12, 2018 11:33-0800.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>

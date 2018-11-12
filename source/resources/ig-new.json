@@ -151,24 +151,14 @@
         "title" : "Terminology",
         "generation" : "markdown",
         "page" : [{
-          "nameUrl" : "terminology.html#value-sets",
-          "title" : "Value Sets",
-          "generation" : "markdown",
-          "page" : [{
-            "nameUrl" : "ValueSet-blah-codes.html",
-            "title" : "ValueSet Blah Codes",
-            "generation" : "generated"
-          }]
+          "nameUrl" : "ValueSet-blah-codes.html",
+          "title" : "ValueSet Blah Codes",
+          "generation" : "generated"
         },
         {
-          "nameUrl" : "terminology.html#code-systems",
-          "title" : "Code Systems",
-          "generation" : "markdown",
-          "page" : [{
-            "nameUrl" : "CodeSystem-blah-codes.html",
-            "title" : "CodeSystem Blah Codes",
-            "generation" : "generated"
-          }]
+          "nameUrl" : "CodeSystem-blah-codes.html",
+          "title" : "CodeSystem Blah Codes",
+          "generation" : "generated"
         }]
       },
       {

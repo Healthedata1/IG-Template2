@@ -214,24 +214,14 @@
         <title value="Terminology"/>
         <generation value="markdown"/>
         <page>
-          <nameUrl value="terminology.html#value-sets"/>
-          <title value="Value Sets"/>
-          <generation value="markdown"/>
-          <page>
-            <nameUrl value="ValueSet-blah-codes.html"/>
-            <title value="ValueSet Blah Codes"/>
-            <generation value="generated"/>
-          </page>
+          <nameUrl value="ValueSet-blah-codes.html"/>
+          <title value="ValueSet Blah Codes"/>
+          <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="terminology.html#code-systems"/>
-          <title value="Code Systems"/>
-          <generation value="markdown"/>
-          <page>
-            <nameUrl value="CodeSystem-blah-codes.html"/>
-            <title value="CodeSystem Blah Codes"/>
-            <generation value="generated"/>
-          </page>
+          <nameUrl value="CodeSystem-blah-codes.html"/>
+          <title value="CodeSystem Blah Codes"/>
+          <generation value="generated"/>
         </page>
       </page>
       <page>

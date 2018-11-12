@@ -41,6 +41,9 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative"/>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Extension"/>
       <short value="Complex Extension"/>
       <definition value="an example of a complex extension."/>
@@ -73,7 +76,7 @@
     <element id="Extension.id">
       <path value="Extension.id"/>
       <representation value="xmlAttr"/>
-      <short value="xml:id (or equivalent in JSON)"/>
+      <short value="Unique id for inter-element referencing"/>
       <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
       <min value="0"/>
       <max value="1"/>
@@ -145,7 +148,7 @@
     <element id="Extension.extension:code.id">
       <path value="Extension.extension.id"/>
       <representation value="xmlAttr"/>
-      <short value="xml:id (or equivalent in JSON)"/>
+      <short value="Unique id for inter-element referencing"/>
       <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
       <min value="0"/>
       <max value="1"/>
@@ -220,7 +223,7 @@
     <element id="Extension.extension:code.valueCode">
       <path value="Extension.extension.valueCode"/>
       <short value="Value of extension"/>
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -264,7 +267,7 @@
     <element id="Extension.extension:text.id">
       <path value="Extension.extension.id"/>
       <representation value="xmlAttr"/>
-      <short value="xml:id (or equivalent in JSON)"/>
+      <short value="Unique id for inter-element referencing"/>
       <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
       <min value="0"/>
       <max value="1"/>
@@ -339,7 +342,7 @@
     <element id="Extension.extension:text.valueString">
       <path value="Extension.extension.valueString"/>
       <short value="Value of extension"/>
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -384,7 +387,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <short value="Value of extension"/>
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)."/>
       <min value="0"/>
       <max value="0"/>
       <base>

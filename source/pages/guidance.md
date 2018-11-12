@@ -26,4 +26,13 @@ blah blah blah
 
 ### More Stuff
 
+inline json example exploiting Rouge to highlight inline comment (errors in json):
+
+~~~json
+{
+"foo":  "bar"  \\adding comment here is shown as a error in jekyll,
+"foo2":  "bar2"
+}
+~~~
+
 #### And More Stuff
