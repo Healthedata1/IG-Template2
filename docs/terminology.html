@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IG_Test3</title>
+  <title>Open mHealth to FHIR</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IG_Test3 Implemenation Guide" />
-<meta name="author" content="Health eData Inc"/>
+<meta name="description" content="Open mHealth to FHIR Implemenation Guide" />
+<meta name="author" content="Open mHealth"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -59,7 +59,7 @@
 your logo here
 
 [![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive # org_logo}
+{: .img-responsive #org_logo}
 
 can only resize using html  or css ;-(
 
@@ -67,18 +67,17 @@ can only resize using html  or css ;-(
 
 
 <a no-external="true" href="http://www.openmhealth.org/">
-<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.png"/>
 </a>
 
   <!-- end org logo -->
 
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
-
-      
-      <strong>IG_Test3 Implementation Guide CI Build</strong>
-      
-
+        <b>Open mHealth to FHIR Implementation Guide</b>
+        
+        CI Build
+        
     </div><!-- end ig title text -->
 
   </div><!-- end container -->
@@ -106,15 +105,17 @@ can only resize using html  or css ;-(
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
-  <li><a href="guidance.html">General Guidance</a></li>
-  <li><a href="profiles.html">Profiles and Extensions</a>
-<!-- - [Mappings](structuremaps.html) -->
+  <li><a href="use_case.html">Use Case</a></li>
+  <li><a href="sa_workflow.html">Smart App Workflow</a></li>
+  <li><a href="mapping.html">OMH to FHIR Mapping</a></li>
+  <li><a href="profiles.html">Profiles and Logical Models</a>
+<!-- [Mappings](structuremaps.html)-->
 <!-- - [Extensions](extensions.html) --></li>
   <li><a href="terminology.html">Terminology</a>
 <!-- - [Search Parameters](searchparams.html) --></li>
@@ -210,7 +211,9 @@ can only resize using html  or css ;-(
 
 <!--status-bar-->
 <p id="publish-box">
-This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 3.6.0</a>.  See the <a href="history.html">Directory of published versions</a>
+This is the 
+    Continuous Integration Build
+    of the Open mHealth to FHIR Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="history.html">Directory of published versions</a>
 </p>
 
 
@@ -223,15 +226,40 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
 
 
 
-<h3 id="value-sets">Value Sets</h3>
+<h4 id="value-sets">Value Sets</h4>
 
 <p>These value sets have been defined for this implementation guide:</p>
-<li><a href="ValueSet-blah-codes.html">BlahCodes</a></li>
+<li><a href="ValueSet-dp-type.html">Open mHealth Datapoint Types</a></li>
+<li><a href="ValueSet-volume-unit-value.html">Volume Unit Value</a></li>
+<li><a href="ValueSet-temporal-relationship-to-sleep.html">Temporal Relationship To Sleep</a></li>
+<li><a href="ValueSet-temporal-relationship-to-physical-activity.html">Temporal Relationship To Physical Activity</a></li>
+<li><a href="ValueSet-temporal-relationship-to-meal.html">Temporal Relationship To Meal</a></li>
+<li><a href="ValueSet-temperature-unit-value.html">Temperature Unit Value</a></li>
+<li><a href="ValueSet-speed-unit-value.html">Speed Unit Value</a></li>
+<li><a href="ValueSet-specimen-source.html">Specimen Source</a></li>
+<li><a href="ValueSet-position-during-measurement.html">Position During Measurement</a></li>
+<li><a href="ValueSet-part-of-day.html">Part Of Day</a></li>
+<li><a href="ValueSet-pace-unit-value.html">Pace Unit Value</a></li>
+<li><a href="ValueSet-medication-dose-unit.html">Medication Dose Unit</a></li>
+<li><a href="ValueSet-mass-unit-value.html">Mass Unit Value</a></li>
+<li><a href="ValueSet-magnetic-flux-density-unit-value.html">Magnetic Flux Density Unit Value</a></li>
+<li><a href="ValueSet-length-unit-value.html">Length Unit Value</a></li>
+<li><a href="ValueSet-intervention-administration-route.html">Intervention Administration Route</a></li>
+<li><a href="ValueSet-duration-unit-value.html">Duration Unit Value</a></li>
+<li><a href="ValueSet-descriptive-statistic-denominator.html">Descriptive Statistic Denominator</a></li>
+<li><a href="ValueSet-day-of-week.html">Day Of Week</a></li>
+<li><a href="ValueSet-body-posture.html">Body Posture</a></li>
+<li><a href="ValueSet-body-location.html">Body Location</a></li>
+<li><a href="ValueSet-area-unit-value.html">Area Unit Value</a></li>
 
-<h3 id="code-systems">Code Systems</h3>
+<h4 id="code-systems">Code Systems</h4>
 
 <p><strong>Code systems published in this IG</strong> - Includes US Core defined code systems and externally defined code systems</p>
-<li><a href="CodeSystem-blah-codes.html">BlahCodes</a></li>
+<li><a href="CodeSystem-specimen-source.html">specimen-source</a></li>
+<li><a href="CodeSystem-medication-dose-unit.html">medication-dose-unit</a></li>
+<li><a href="CodeSystem-intervention-administration-route.html">intervention-administration-route</a></li>
+<li><a href="CodeSystem-descriptive-statistic-denominator.html">descriptive-statistic-denominator</a></li>
+<li><a href="CodeSystem-body-location.html">body-location</a></li>
 
 
 
@@ -263,10 +291,10 @@ This is the   Continuous Integration Build  of the IG_Test3 Implementation Guide
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      IG_Test3 Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Mon, Nov 12, 2018 11:33-0800.
+      Open mHealth to FHIR Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Tue, Nov 20, 2018 16:50-0800.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
-        <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+        <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->
