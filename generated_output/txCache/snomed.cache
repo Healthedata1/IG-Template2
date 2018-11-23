@@ -1,6 +1,4 @@
 -------------------------------------------------------------------------------------
-
-
 {"code" : {
   "system" : "http://snomed.info/sct",
   "code" : "68130003"
@@ -11,8 +9,6 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -24,14 +20,11 @@ v: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -51,14 +44,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -86,14 +76,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -153,14 +140,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -180,14 +164,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -211,14 +192,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -254,14 +232,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -285,14 +260,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"code" : {
   "coding" : [{
     "system" : "http://snomed.info/sct",
@@ -313,8 +285,6 @@ v: {
   "error" : "The code provided (http://snomed.info/sct#68130003) is not  valid in the value set Observation Category Codes"
 }
 -------------------------------------------------------------------------------------
-
-
 {"code" : {
   "system" : "http://snomed.info/sct",
   "code" : "68130003",
@@ -326,8 +296,6 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -339,14 +307,11 @@ v: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -366,14 +331,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -401,14 +363,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -468,14 +427,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -495,14 +451,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -526,14 +479,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -569,14 +519,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -600,13 +547,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"code" : {
   "system" : "http://snomed.info/sct",
   "code" : "373067005",
@@ -652,7 +597,6 @@ v: {
   "error" : "The code provided (http://snomed.info/sct#373067005) is not  valid"
 }
 -------------------------------------------------------------------------------------
-
 {"code" : {
   "system" : "http://snomed.info/sct",
   "code" : "373067005",
@@ -2201,5 +2145,365 @@ v: {
   "display" : "Cardiologist",
   "severity" : null,
   "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258479004",
+        "display" : "interstitial fluid"
+      },
+      {
+        "code" : "capillary blood",
+        "display" : "capillary blood"
+      },
+      {
+        "code" : "plasma",
+        "display" : "plasma"
+      },
+      {
+        "code" : "serum",
+        "display" : "serum"
+      },
+      {
+        "code" : "tears",
+        "display" : "tears"
+      },
+      {
+        "code" : "whole blood",
+        "display" : "whole blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258479004",
+        "display" : "interstitial fluid"
+      },
+      {
+        "code" : "capillary blood",
+        "display" : "capillary blood"
+      },
+      {
+        "code" : "plasma",
+        "display" : "plasma"
+      },
+      {
+        "code" : "serum",
+        "display" : "serum"
+      },
+      {
+        "code" : "tears",
+        "display" : "tears"
+      },
+      {
+        "code" : "whole blood",
+        "display" : "whole blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258479004",
+        "display" : "interstitial fluid"
+      },
+      {
+        "code" : "122554006",
+        "display" : "capillary blood"
+      },
+      {
+        "code" : "119361006",
+        "display" : "plasma"
+      },
+      {
+        "code" : "serum",
+        "display" : "serum"
+      },
+      {
+        "code" : "tears",
+        "display" : "tears"
+      },
+      {
+        "code" : "whole blood",
+        "display" : "whole blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258479004",
+        "display" : "interstitial fluid"
+      },
+      {
+        "code" : "122554006",
+        "display" : "capillary blood"
+      },
+      {
+        "code" : "119361006",
+        "display" : "plasma"
+      },
+      {
+        "code" : "serum",
+        "display" : "serum"
+      },
+      {
+        "code" : "tears",
+        "display" : "tears"
+      },
+      {
+        "code" : "whole blood",
+        "display" : "whole blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258479004",
+        "display" : "interstitial fluid"
+      },
+      {
+        "code" : "122554006",
+        "display" : "capillary blood"
+      },
+      {
+        "code" : "119361006",
+        "display" : "plasma"
+      },
+      {
+        "code" : "119364003",
+        "display" : "serum"
+      },
+      {
+        "code" : "tears",
+        "display" : "tears"
+      },
+      {
+        "code" : "whole blood",
+        "display" : "whole blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258479004",
+        "display" : "interstitial fluid"
+      },
+      {
+        "code" : "122554006",
+        "display" : "capillary blood"
+      },
+      {
+        "code" : "119361006",
+        "display" : "plasma"
+      },
+      {
+        "code" : "119364003",
+        "display" : "serum"
+      },
+      {
+        "code" : "tears",
+        "display" : "tears"
+      },
+      {
+        "code" : "whole blood",
+        "display" : "whole blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258479004",
+        "display" : "interstitial fluid"
+      },
+      {
+        "code" : "122554006",
+        "display" : "capillary blood"
+      },
+      {
+        "code" : "119361006",
+        "display" : "plasma"
+      },
+      {
+        "code" : "119364003",
+        "display" : "serum"
+      },
+      {
+        "code" : "122594008",
+        "display" : "tears"
+      },
+      {
+        "code" : "whole blood",
+        "display" : "whole blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258479004",
+        "display" : "interstitial fluid"
+      },
+      {
+        "code" : "122554006",
+        "display" : "capillary blood"
+      },
+      {
+        "code" : "119361006",
+        "display" : "plasma"
+      },
+      {
+        "code" : "119364003",
+        "display" : "serum"
+      },
+      {
+        "code" : "122594008",
+        "display" : "tears"
+      },
+      {
+        "code" : "whole blood",
+        "display" : "whole blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258479004",
+        "display" : "interstitial fluid"
+      },
+      {
+        "code" : "122554006",
+        "display" : "capillary blood"
+      },
+      {
+        "code" : "119361006",
+        "display" : "plasma"
+      },
+      {
+        "code" : "119364003",
+        "display" : "serum"
+      },
+      {
+        "code" : "122594008",
+        "display" : "tears"
+      },
+      {
+        "code" : "258580003",
+        "display" : "whole blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258479004",
+        "display" : "interstitial fluid"
+      },
+      {
+        "code" : "122554006",
+        "display" : "capillary blood"
+      },
+      {
+        "code" : "119361006",
+        "display" : "plasma"
+      },
+      {
+        "code" : "119364003",
+        "display" : "serum"
+      },
+      {
+        "code" : "122594008",
+        "display" : "tears"
+      },
+      {
+        "code" : "258580003",
+        "display" : "whole blood"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------

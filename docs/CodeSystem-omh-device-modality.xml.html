@@ -191,7 +191,7 @@ can only resize using html  or css ;-(
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='terminology.html'><b>Terminology</b></a></li><li><b>CodeSystem Specimen Source</b></li>
+    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='terminology.html'><b>Terminology</b></a></li><li><b>CodeSystem Omh Device Modality</b></li>
 </nav>
 
 
@@ -211,7 +211,7 @@ This is the
 
 
   <style type="text/css">
-  h2,h3,h4,h5,h6{--pagenumber: "5.23"}
+  h2,h3,h4,h5,h6{--pagenumber: "5.27"}
   </style>
 
 
@@ -219,65 +219,108 @@ This is the
 <!-- ============nav-tabs=============== -->
 
 
-     <!--  - choose what you want  comment out or Change what you don't-->
+  
+    <!--  - choose what you want  comment out or Change what you don't-->
 <ul class="nav nav-tabs">
 
-	<li class="active"><a href="#">Narrative Content</a></li>
+	<li><a href="CodeSystem-omh-device-modality.html">Narrative Content</a></li>
 
 <!--
 { % if CodeSystem == "StructureDefinition"  % }
-	{ % if content == "definitions"  % }
+	{ % if xml == "definitions"  % }
 		<li class="active"><a href="#">Detailed Descriptions</a></li>
 	{ % else % }
-		<li><a href="CodeSystem-specimen-source-definitions.html">Detailed Descriptions</a></li>
+		<li><a href="CodeSystem-omh-device-modality-definitions.html">Detailed Descriptions</a></li>
 	{ % endif % }
-	{ % if content == "mappings" % }
+	{ % if xml == "mappings" % }
 		<li class="active"><a href="#">Mappings</a></li>
 	{ % else % }
-		<li><a href="CodeSystem-specimen-source-mappings.html">Mappings</a></li>
+		<li><a href="CodeSystem-omh-device-modality-mappings.html">Mappings</a></li>
 	{ % endif % }
 { % endif % }
 -->
 
-<li><a href="CodeSystem-specimen-source.xml.html">XML</a></li>
+	<li class="active"><a href="#">XML</a></li>
 
 
-	<li><a href="CodeSystem-specimen-source.json.html">JSON</a></li>
+	<li><a href="CodeSystem-omh-device-modality.json.html">JSON</a></li>
 
 <!--
-{ % if content == "turtle" % }
+{ % if xml == "turtle" % }
 	<li class="active"><a href="#">Turtle</a></li>
 { % else % }
-	<li><a href="CodeSystem-specimen-source.ttl.html">Turtle</a></li>
+	<li><a href="CodeSystem-omh-device-modality.ttl.html">Turtle</a></li>
 { % endif % }
 -->
 </ul>
 
-
+    <h2>XML Format: CodeSystem-omh-device-modality</h2>
+  
+<!--
+   { % elsif page.template == 'definitions'% }
+    { % include nav-tabs.html type=page.type id=page.id active="definitions" % }
+  { % elsif page.template == 'mappings' %}
+    { % include nav-tabs.html type=page.type id=page.id active="mappings" % }
+ -->
+  
 
   <!-- ============CONTENT CONTENT=============== -->
 
 
 
-<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
-
 <!-- ============ CONTENT CONTENT=============== -->
 
+  <!-- ============ default xml or json content for structuredefinition CONTENT CONTENT=============== -->
+  <p>
+  Download Raw <a href="CodeSystem-omh-device-modality.xml" download>xml</a>
+  </p>
 
-<!-- ============CodeSystem ConceptMap CapabilityStatement SearchParameter CONTENT CONTENT=============== -->
+<pre class="xml">
 
-  <h2>CodeSystem: specimen-source</h2>
+&lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;omh-device-modality&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;Open mHealth to FHIR Device Modality&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Identifies whether device measurement is sensed directly or entered by the user&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;This code system http://www.fhir.org/guides/mfhir/CodeSystem/omh-device-modality defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;sensed&lt;a name=&quot;omh-device-modality-sensed&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sensed&lt;/td&gt;&lt;td&gt;Device measurement is sensed directly by the device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;self-reported&lt;a name=&quot;omh-device-modality-self-reported&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Self Reported&lt;/td&gt;&lt;td&gt;Device measurement is entered by the user&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://www.fhir.org/guides/mfhir/CodeSystem/omh-device-modality&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;0.0.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;omh-device-modality&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Open mHealth to FHIR Device Modality&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-11-17T00:00:00-08:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://www.openmhealth.org/&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Identifies whether device measurement is sensed directly or entered by the user&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.valueSet">valueSet</a>
+            <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://www.fhir.org/guides/mfhir/ValueSet/omh-device-modality&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;sensed&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Sensed&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Device measurement is sensed directly by the device&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;self-reported&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Self Reported&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Device measurement is entered by the user&quot;/&gt;
+  &lt;/concept&gt;
+&lt;/CodeSystem&gt;</pre>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>specimen-source</h2><div><p>The specimen analyzed. The current value set is taken from the SNOMED CT Body substance sample (specimen) hierarchy without the word 'specimen'. More values will be added as needed.</p>
-</div><p>This code system http://www.fhir.org/guides/mfhir/CodeSystem/specimen-source defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">interstitial fluid<a name="specimen-source-interstitialfluid"> </a></td><td>interstitial fluid</td><td/></tr><tr><td style="white-space:nowrap">capillary blood<a name="specimen-source-capillaryblood"> </a></td><td>capillary blood</td><td/></tr><tr><td style="white-space:nowrap">plasma<a name="specimen-source-plasma"> </a></td><td>plasma</td><td/></tr><tr><td style="white-space:nowrap">serum<a name="specimen-source-serum"> </a></td><td>serum</td><td/></tr><tr><td style="white-space:nowrap">tears<a name="specimen-source-tears"> </a></td><td>tears</td><td/></tr><tr><td style="white-space:nowrap">whole blood<a name="specimen-source-wholeblood"> </a></td><td>whole blood</td><td/></tr></table></div>
-  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
 
-
+<!-- ============ default xml or json content CONTENT CONTENT=============== -->
 
 
 <!-- simple format links
 <p>
-Formats: <a href="CodeSystem-specimen-source.html">Narrative</a>, <a href="CodeSystem-specimen-source.xml.html">XML</a>, <a href="CodeSystem-specimen-source.json.html">JSON</a>, <a href="CodeSystem-specimen-source.ttl.html">Turtle</a>
+Formats: <a href="CodeSystem-omh-device-modality.html">Narrative</a>, <a href="CodeSystem-omh-device-modality.xml.html">XML</a>, <a href="CodeSystem-omh-device-modality.json.html">JSON</a>, <a href="CodeSystem-omh-device-modality.ttl.html">Turtle</a>
 </p>
 -->
 
@@ -319,7 +362,7 @@ Formats: <a href="CodeSystem-specimen-source.html">Narrative</a>, <a href="CodeS
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      Open mHealth to FHIR Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Tue, Nov 20, 2018 16:50-0800.
+      Open mHealth to FHIR Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Fri, Nov 23, 2018 04:16-0800.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
