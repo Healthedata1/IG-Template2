@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>Open mHealth to FHIR</title>
+  <title>IG_Test3</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Open mHealth to FHIR Implemenation Guide" />
-<meta name="author" content="Open mHealth"/>
+<meta name="description" content="IG_Test3 Implemenation Guide" />
+<meta name="author" content="Health eData Inc"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -59,7 +59,7 @@
 your logo here
 
 [![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive #org_logo}
+{: .img-responsive # org_logo}
 
 can only resize using html  or css ;-(
 
@@ -67,16 +67,16 @@ can only resize using html  or css ;-(
 
 
 <a no-external="true" href="http://www.openmhealth.org/">
-<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.png"/>
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
 </a>
 
   <!-- end org logo -->
 
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
-        <b>Open mHealth to FHIR Implementation Guide</b>
+        <b>IG_Test3 Implementation Guide</b>
         
-        CI Build
+        (Release 0.0.0 Ballot)
         
     </div><!-- end ig title text -->
 
@@ -105,17 +105,15 @@ can only resize using html  or css ;-(
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
-  <li><a href="use_case.html">Use Case</a></li>
-  <li><a href="sa_workflow.html">Smart App Workflow</a></li>
-  <li><a href="mapping.html">OMH to FHIR Mapping</a></li>
-  <li><a href="profiles.html">Profiles and Logical Models</a>
-<!-- [Mappings](structuremaps.html)-->
+  <li><a href="guidance.html">General Guidance</a></li>
+  <li><a href="profiles.html">Profiles and Extensions</a>
+<!-- - [Mappings](structuremaps.html) -->
 <!-- - [Extensions](extensions.html) --></li>
   <li><a href="terminology.html">Terminology</a>
 <!-- - [Search Parameters](searchparams.html) --></li>
@@ -200,8 +198,8 @@ can only resize using html  or css ;-(
 <!--status-bar-->
 <p id="publish-box">
 This is the 
-    Continuous Integration Build
-    of the Open mHealth to FHIR Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="history.html">Directory of published versions</a>
+     Release 0.0.0 Ballot
+    of the IG_Test3 Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 3.6.0</a>.  See the <a href="history.html">Directory of published versions</a>
 </p>
 
 
@@ -277,78 +275,78 @@ This is the
 
 <pre class="json">
 {
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement">resourceType</a>" : "CapabilityStatement",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.id">id</a>" : "server",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
-&lt;ul&gt;&lt;li&gt;FHIR Version: 3.0.0&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2017-03-08&lt;/li&gt;&lt;li&gt;Published by: Health eData Inc&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;The Section describes the expected capabilities etc....&lt;/p&gt;&lt;/div&gt;"
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement">resourceType</a>" : "CapabilityStatement",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.id">id</a>" : "server",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;ul&gt;&lt;li&gt;FHIR Version: 3.6.0&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2017-03-08&lt;/li&gt;&lt;li&gt;Published by: Health eData Inc&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;The Section describes the expected capabilities etc....&lt;/p&gt;&lt;/div&gt;"
   },
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.url">url</a>" : "http://www.fhir.org/guides/mfhir/CapabilityStatement/server",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.version">version</a>" : "0.0.0",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.name">name</a>" : "Server",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2017-03-08T00:00:00-08:00",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>" : "Health eData Inc",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.contact">contact</a>" : [
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.url">url</a>" : "http://www.fhir.org/guides/test3/CapabilityStatement/server",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.version">version</a>" : "0.0.0",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.name">name</a>" : "Server",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.status">status</a>" : "draft",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2017-03-08",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>" : "Health eData Inc",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.contact">contact</a>" : [
     {
-      "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+      "<a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "other",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "ehaas@healthedatainc.com"
+          "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "other",
+          "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "ehaas@healthedatainc.com"
         }
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.description">description</a>" : "This resource defines the expected capabilities ",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.kind">kind</a>" : "requirements",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a>" : "3.0.0",
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.format">format</a>" : [
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.description">description</a>" : "This resource defines the expected capabilities ",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.kind">kind</a>" : "requirements",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a>" : "3.6.0",
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.format">format</a>" : [
     "xml",
     "json"
   ],
-  "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest">rest</a>" : [
+  "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest">rest</a>" : [
     {
-      "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a>" : "server",
-      "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
+      "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a>" : "server",
+      "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
         {
-          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Basic",
-          "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+          "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Basic",
+          "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
             {
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+              "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                  "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
                 }
               ],
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+              "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
             },
             {
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+              "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                  "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
                 }
               ],
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
+              "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
             },
             {
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+              "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                  "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
                 }
               ],
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "history-instance"
+              "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "history-instance"
             },
             {
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
+              "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
+                  "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueCode</a>" : "SHOULD"
                 }
               ],
-              "<a href="http://hl7.org/fhir/STU3/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
+              "<a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
             }
           ]
         }
@@ -405,10 +403,12 @@ Formats: <a href="CapabilityStatement-server.html">Narrative</a>, <a href="Capab
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      Open mHealth to FHIR Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Fri, Nov 23, 2018 04:16-0800.
+      IG_Test3 
+           Version 0.0.0 Ballot
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Thu, Dec 13, 2018 17:04-0800.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
-        <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+        <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->

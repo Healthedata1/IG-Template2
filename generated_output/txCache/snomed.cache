@@ -2507,3 +2507,75 @@ e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "16985007",
+        "display" : "fasting"
+      },
+      {
+        "code" : "440565004",
+        "display" : "not fasting"
+      },
+      {
+        "code" : "307165006",
+        "display" : "before meal"
+      },
+      {
+        "code" : "24863003",
+        "display" : "after meal"
+      },
+      {
+        "code" : "311503006",
+        "display" : "with meal"
+      },
+      {
+        "code" : "311504000",
+        "display" : "with food"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "16985007",
+        "display" : "fasting"
+      },
+      {
+        "code" : "440565004",
+        "display" : "not fasting"
+      },
+      {
+        "code" : "307165006",
+        "display" : "before meal"
+      },
+      {
+        "code" : "24863003",
+        "display" : "after meal"
+      },
+      {
+        "code" : "311503006",
+        "display" : "with meal"
+      },
+      {
+        "code" : "311504000",
+        "display" : "with food"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------

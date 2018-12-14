@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>Open mHealth to FHIR</title>
+  <title>IG_Test3</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Open mHealth to FHIR Implemenation Guide" />
-<meta name="author" content="Open mHealth"/>
+<meta name="description" content="IG_Test3 Implemenation Guide" />
+<meta name="author" content="Health eData Inc"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -59,7 +59,7 @@
 your logo here
 
 [![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive #org_logo}
+{: .img-responsive # org_logo}
 
 can only resize using html  or css ;-(
 
@@ -67,16 +67,16 @@ can only resize using html  or css ;-(
 
 
 <a no-external="true" href="http://www.openmhealth.org/">
-<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.png"/>
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
 </a>
 
   <!-- end org logo -->
 
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
-        <b>Open mHealth to FHIR Implementation Guide</b>
+        <b>IG_Test3 Implementation Guide</b>
         
-        CI Build
+        (Release 0.0.0 Ballot)
         
     </div><!-- end ig title text -->
 
@@ -105,17 +105,15 @@ can only resize using html  or css ;-(
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
-  <li><a href="use_case.html">Use Case</a></li>
-  <li><a href="sa_workflow.html">Smart App Workflow</a></li>
-  <li><a href="mapping.html">OMH to FHIR Mapping</a></li>
-  <li><a href="profiles.html">Profiles and Logical Models</a>
-<!-- [Mappings](structuremaps.html)-->
+  <li><a href="guidance.html">General Guidance</a></li>
+  <li><a href="profiles.html">Profiles and Extensions</a>
+<!-- - [Mappings](structuremaps.html) -->
 <!-- - [Extensions](extensions.html) --></li>
   <li><a href="terminology.html">Terminology</a>
 <!-- - [Search Parameters](searchparams.html) --></li>
@@ -200,8 +198,8 @@ can only resize using html  or css ;-(
 <!--status-bar-->
 <p id="publish-box">
 This is the 
-    Continuous Integration Build
-    of the Open mHealth to FHIR Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="history.html">Directory of published versions</a>
+     Release 0.0.0 Ballot
+    of the IG_Test3 Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 3.6.0</a>.  See the <a href="history.html">Directory of published versions</a>
 </p>
 
 
@@ -273,1404 +271,333 @@ This is the
 
 <pre class="json">
 {
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide">resourceType</a>" : "ImplementationGuide",
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.id">id</a>" : "ig",
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;Open mHealth to FHIR&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/mfhir/ImplementationGuide/ig&lt;/pre&gt;&lt;/div&gt;"
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide">resourceType</a>" : "ImplementationGuide",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.id">id</a>" : "ig",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;IG_Test3&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/test3/ImplementationGuide/ig&lt;/pre&gt;&lt;/div&gt;"
   },
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.url">url</a>" : "http://www.fhir.org/guides/mfhir/ImplementationGuide/ig",
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.version">version</a>" : "0.0.0",
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.name">name</a>" : "Open mHealth to FHIR",
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.publisher">publisher</a>" : "Open mHealth",
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.fhirVersion">fhirVersion</a>" : "3.0.1",
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package">package</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.id">id</a>" : "p1",
-      "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.name">name</a>" : "base",
-      "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource">resource</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Observation-stepcount-example.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Observation/stepcount-example"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "DocumentReference-omh-stepcount-example.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "DocumentReference/omh-stepcount-example"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Binary-omh-stepcount-example.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Binary/omh-stepcount-example"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-dp-type.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/dp-type"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-step-count.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-step-count"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-heart-rate.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-heart-rate"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-header.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-header"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-datapoint-template.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-datapoint-template"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-extension-observation-device-modality.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-extension-observation-device-modality"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-volume-unit-value.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/volume-unit-value"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-temporal-relationship-to-sleep.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/temporal-relationship-to-sleep"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-temporal-relationship-to-physical-activity.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/temporal-relationship-to-physical-activity"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-temporal-relationship-to-meal.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/temporal-relationship-to-meal"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-temperature-unit-value.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/temperature-unit-value"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-speed-unit-value.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/speed-unit-value"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-specimen-source.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/specimen-source"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-position-during-measurement.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/position-during-measurement"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-part-of-day.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/part-of-day"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-pace-unit-value.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/pace-unit-value"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-medication-dose-unit.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/medication-dose-unit"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-mass-unit-value.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/mass-unit-value"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-magnetic-flux-density-unit-value.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/magnetic-flux-density-unit-value"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-length-unit-value.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/length-unit-value"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-intervention-administration-route.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/intervention-administration-route"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-duration-unit-value.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/duration-unit-value"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-descriptive-statistic-denominator.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/descriptive-statistic-denominator"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-day-of-week.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/day-of-week"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-body-posture.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/body-posture"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-body-location.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/body-location"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-area-unit-value.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/area-unit-value"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-ventilation-cycle-time.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-ventilation-cycle-time"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-systolic-blood-pressure.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-systolic-blood-pressure"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-speed.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-speed"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-sleep-episode.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-sleep-episode"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-sleep-duration.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-sleep-duration"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-single-medication-dose-taken.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-single-medication-dose-taken"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-rr-interval.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-rr-interval"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-respiratory-rate.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-respiratory-rate"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-reason-single-medication-dose-not-taken.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-reason-single-medication-dose-not-taken"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-physical-activity.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-physical-activity"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-pharmacy-medication-dispensing.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-pharmacy-medication-dispensing"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-patient-medication-schedule.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-patient-medication-schedule"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-pace.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-pace"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-oxygen-saturation.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-oxygen-saturation"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-orientation.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-orientation"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-minutes-moderate-activity.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-minutes-moderate-activity"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-minute-volume.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-minute-volume"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-medication.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-medication"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-medication-prescription.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-medication-prescription"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-medication-adherence-percent.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-medication-adherence-percent"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-magnetic-force.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-magnetic-force"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-inspiratory-time.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-inspiratory-time"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-geoposition.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-geoposition"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-expiratory-time.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-expiratory-time"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-diastolic-blood-pressure.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-diastolic-blood-pressure"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-calories-burned.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-calories-burned"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-breath-carbon-monoxide.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-breath-carbon-monoxide"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-body-weight.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-body-weight"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-body-temperature.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-body-temperature"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-body-mass-index.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-body-mass-index"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-body-height.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-body-height"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-body-fat-percentage.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-body-fat-percentage"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-blood-pressure.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-blood-pressure"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-blood-glucose.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-blood-glucose"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-ambient-temperature.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-ambient-temperature"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-acceleration.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-acceleration"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CodeSystem-medication-dose-unit.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/medication-dose-unit"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CodeSystem-intervention-administration-route.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/intervention-administration-route"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CodeSystem-descriptive-statistic-denominator.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/descriptive-statistic-denominator"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CodeSystem-body-location.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/body-location"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-dr.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-dr"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-contained-p.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/contained-p"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CodeSystem-omh-device-modality.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/omh-device-modality"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CodeSystem-omh-datapoint-type.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/omh-datapoint-type"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CapabilityStatement-server.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "CapabilityStatement/server"
-          }
-        },
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CapabilityStatement-client.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "CapabilityStatement/client"
-          }
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.id">id</a>" : "contained-p-spreadsheet.xml",
-      "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.name">name</a>" : "contained-p",
-      "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource">resource</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-contained-p.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.name">name</a>" : "OMH Contained Patient Profile",
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/contained-p"
-          }
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.id">id</a>" : "dr-profile-spreadsheet.xml",
-      "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.name">name</a>" : "omh-dr",
-      "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource">resource</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-omh-dr.html"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.name">name</a>" : "OMH DocumentReference Profile",
-          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/omh-dr"
-          }
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.url">url</a>" : "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.version">version</a>" : "0.0.0",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a>" : "IG_Test3",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.title">title</a>" : "IG_Test3",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a>" : "draft",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a>" : "Health eData Inc",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.copyright">copyright</a>" : "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.packageId">packageId</a>" : "healthedatainc.mfhir",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.license">license</a>" : "CC0-1.0",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.fhirVersion">fhirVersion</a>" : [
+    "3.6.0"
+  ],
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition">definition</a>" : {
+    "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping">grouping</a>" : [
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.name">name</a>" : "base"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.id">id</a>" : "patient-on-usprofile-spreadsheet.xml",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.name">name</a>" : "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.id">id</a>" : "template-profile-spreadsheet.xml",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.name">name</a>" : "Template-basic"
+      }
+    ],
+    "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>" : [
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Patient-example.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/example"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : true
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-complex.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-complex"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-blah.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-blah-codes.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/blah-codes"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-template-basic.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-basic"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-blah2.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah2"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-template-profile-on-profile.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-profile-on-profile"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CodeSystem-blah-codes.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/blah-codes"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CapabilityStatement-server.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "CapabilityStatement/server"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CapabilityStatement-client.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "CapabilityStatement/client"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-template-profile-on-profile.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-profile-on-profile"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Template-Profile-on-Profile",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "patient-on-usprofile-spreadsheet.xml"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-blah.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Example Extension",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "template-profile-spreadsheet.xml"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-complex.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-complex"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Complex Extension",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "template-profile-spreadsheet.xml"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-blah2.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah2"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Example Extension",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "template-profile-spreadsheet.xml"
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-template-basic.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-basic"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "template-basic",
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "template-profile-spreadsheet.xml"
+      }
+    ],
+    "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page">page</a>" : {
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "index.html",
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Home",
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown",
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>" : [
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "guidance.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "General Guidance",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown"
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "profiles.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Profiles and Extensions",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>" : [
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-template-basic.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Template Basic",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            },
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-template-profile-on-profile.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Template Profile On Profile",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            },
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-extension-complex.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Extension Complex",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            },
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-extension-blah.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Extension Blah",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            },
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-extension-blah2.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Extension Blah2",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            }
+          ]
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "operations.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Operations",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown"
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "terminology.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Terminology",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>" : [
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "ValueSet-blah-codes.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "ValueSet Blah Codes",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            },
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "CodeSystem-blah-codes.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "CodeSystem Blah Codes",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            }
+          ]
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "searchparameters.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Search Parameters",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown"
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "capstatements.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Capability Statements",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>" : [
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "CapabilityStatement-server.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "CapabilityStatement Server",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            },
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "CapabilityStatement-client.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "CapabilityStatement Client",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            }
+          ]
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "security.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Security",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown"
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "downloads.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Downloads",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown"
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "all-examples.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "All Examples",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown"
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "toc.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Table of Contents",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "html"
         }
       ]
     }
-  ],
-  "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page">page</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "index.html",
-    "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "Home",
-    "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page",
-    "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.page">page</a>" : [
-      {
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "guidance.html",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "General Guidance",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page"
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "profiles.html",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "Profiles and Extensions",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.page">page</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-step-count.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Step Count",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-heart-rate.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Heart Rate",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-header.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Header",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-datapoint-template.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Datapoint Template",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-ventilation-cycle-time.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Ventilation Cycle Time",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-systolic-blood-pressure.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Systolic Blood Pressure",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-speed.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Speed",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-sleep-episode.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Sleep Episode",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-sleep-duration.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Sleep Duration",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-single-medication-dose-taken.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Single Medication Dose Taken",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-rr-interval.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Rr Interval",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-respiratory-rate.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Respiratory Rate",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-reason-single-medication-dose-not-taken.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Reason Single Medication Dose Not Taken",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-physical-activity.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Physical Activity",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-pharmacy-medication-dispensing.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Pharmacy Medication Dispensing",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-patient-medication-schedule.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Patient Medication Schedule",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-pace.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Pace",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-oxygen-saturation.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Oxygen Saturation",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-orientation.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Orientation",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-minutes-moderate-activity.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Minutes Moderate Activity",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-minute-volume.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Minute Volume",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-medication.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Medication",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-medication-prescription.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Medication Prescription",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-medication-adherence-percent.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Medication Adherence Percent",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-magnetic-force.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Magnetic Force",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-inspiratory-time.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Inspiratory Time",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-geoposition.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Geoposition",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-expiratory-time.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Expiratory Time",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-diastolic-blood-pressure.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Diastolic Blood Pressure",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-calories-burned.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Calories Burned",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-breath-carbon-monoxide.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Breath Carbon Monoxide",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-body-weight.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Body Weight",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-body-temperature.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Body Temperature",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-body-mass-index.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Body Mass Index",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-body-height.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Body Height",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-body-fat-percentage.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Body Fat Percentage",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-blood-pressure.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Blood Pressure",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-blood-glucose.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Blood Glucose",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-ambient-temperature.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Ambient Temperature",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-acceleration.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Acceleration",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-dr.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Dr",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-contained-p.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Contained P",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "StructureDefinition-omh-extension-observation-device-modality.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "StructureDefinition Omh Extension Observation Device Modality",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          }
-        ]
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "operations.html",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "Operations",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page"
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "terminology.html",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "Terminology",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.page">page</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-dp-type.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Dp Type",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-volume-unit-value.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Volume Unit Value",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-temporal-relationship-to-sleep.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Temporal Relationship To Sleep",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-temporal-relationship-to-physical-activity.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Temporal Relationship To Physical Activity",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-temporal-relationship-to-meal.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Temporal Relationship To Meal",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-temperature-unit-value.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Temperature Unit Value",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-speed-unit-value.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Speed Unit Value",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-specimen-source.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Specimen Source",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-position-during-measurement.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Position During Measurement",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-part-of-day.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Part Of Day",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-pace-unit-value.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Pace Unit Value",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-medication-dose-unit.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Medication Dose Unit",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-mass-unit-value.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Mass Unit Value",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-magnetic-flux-density-unit-value.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Magnetic Flux Density Unit Value",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-length-unit-value.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Length Unit Value",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-intervention-administration-route.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Intervention Administration Route",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-duration-unit-value.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Duration Unit Value",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-descriptive-statistic-denominator.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Descriptive Statistic Denominator",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-day-of-week.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Day Of Week",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-body-posture.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Body Posture",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-body-location.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Body Location",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "ValueSet-area-unit-value.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "ValueSet Area Unit Value",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "CodeSystem-medication-dose-unit.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "CodeSystem Medication Dose Unit",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "CodeSystem-intervention-administration-route.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "CodeSystem Intervention Administration Route",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "CodeSystem-descriptive-statistic-denominator.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "CodeSystem Descriptive Statistic Denominator",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "CodeSystem-body-location.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "CodeSystem Body Location",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "CodeSystem-omh-device-modality.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "CodeSystem Omh Device Modality",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "CodeSystem-omh-datapoint-type.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "CodeSystem Omh Datapoint Type",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          }
-        ]
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "searchparameters.html",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "Search Parameters",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page"
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "capstatements.html",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "Capability Statements",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.page">page</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "CapabilityStatement-server.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "CapabilityStatement Server",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "CapabilityStatement-client.html",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "CapabilityStatement Client",
-            "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-          }
-        ]
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "security.html",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "Security",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page"
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "downloads.html",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "Downloads",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page"
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "all-examples.html",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "All Examples",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page"
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a>" : "toc.html",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.title">title</a>" : "Table of Contents",
-        "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "resource"
-      }
-    ]
   }
 }</pre>
 
@@ -1722,10 +649,12 @@ Formats: <a href="ImplementationGuide-ig.html">Narrative</a>, <a href="Implement
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      Open mHealth to FHIR Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Fri, Nov 23, 2018 04:16-0800.
+      IG_Test3 
+           Version 0.0.0 Ballot
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Thu, Dec 13, 2018 17:04-0800.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
-        <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+        <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->

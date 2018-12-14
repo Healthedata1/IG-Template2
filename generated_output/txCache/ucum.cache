@@ -1,5 +1,4 @@
 -------------------------------------------------------------------------------------
-
 {"code" : {
   "system" : "http://unitsofmeasure.org",
   "code" : "{steps}/d"
@@ -10,7 +9,6 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -86,13 +84,11 @@ v: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -112,13 +108,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -134,13 +128,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -156,13 +148,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -218,13 +208,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -252,13 +240,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -314,13 +300,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -372,13 +356,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -418,13 +400,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -500,13 +480,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -526,13 +504,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -548,13 +524,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -570,13 +544,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -632,13 +604,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -666,13 +636,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -728,13 +696,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -786,13 +752,11 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -832,8 +796,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
@@ -846,5 +809,1573 @@ v: {
   "display" : "{visit}/a",
   "severity" : null,
   "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "{steps}",
+        "display" : "steps"
+      },
+      {
+        "code" : "mm[Hg]",
+        "display" : "mmHg"
+      },
+      {
+        "code" : "mg/dL",
+        "display" : "mg/dL"
+      },
+      {
+        "code" : "mmol/L",
+        "display" : "mmol/L"
+      },
+      {
+        "code" : "kg/m2",
+        "display" : "kg/m^2"
+      },
+      {
+        "code" : "kCal",
+        "display" : "kcal"
+      },
+      {
+        "code" : "/min",
+        "display" : "beats/min"
+      },
+      {
+        "code" : "/min",
+        "display" : "breaths/min"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fL",
+        "display" : "fL"
+      },
+      {
+        "code" : "pL",
+        "display" : "pL"
+      },
+      {
+        "code" : "nL",
+        "display" : "nL"
+      },
+      {
+        "code" : "uL",
+        "display" : "uL"
+      },
+      {
+        "code" : "mL",
+        "display" : "mL"
+      },
+      {
+        "code" : "cL",
+        "display" : "cL"
+      },
+      {
+        "code" : "dL",
+        "display" : "dL"
+      },
+      {
+        "code" : "L",
+        "display" : "L"
+      },
+      {
+        "code" : "kL",
+        "display" : "kL"
+      },
+      {
+        "code" : "[foz_us]",
+        "display" : "fl oz"
+      },
+      {
+        "code" : "[cup_us]",
+        "display" : "Cup"
+      },
+      {
+        "code" : "[cin_i]",
+        "display" : "in^3"
+      },
+      {
+        "code" : "[pt_us]",
+        "display" : "pt"
+      },
+      {
+        "code" : "[qt_us]",
+        "display" : "qt"
+      },
+      {
+        "code" : "[gal_us]",
+        "display" : "gal"
+      },
+      {
+        "code" : "[tsp_us]",
+        "display" : "tsp"
+      },
+      {
+        "code" : "[tbs_us]",
+        "display" : "tbsp"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "K",
+        "display" : "K"
+      },
+      {
+        "code" : "[degF]",
+        "display" : "F"
+      },
+      {
+        "code" : "Cel",
+        "display" : "C"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "min/[mi_us]",
+        "display" : "min/mi"
+      },
+      {
+        "code" : "min/km",
+        "display" : "min/km"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fg",
+        "display" : "fg"
+      },
+      {
+        "code" : "pg",
+        "display" : "pg"
+      },
+      {
+        "code" : "ng",
+        "display" : "ng"
+      },
+      {
+        "code" : "ug",
+        "display" : "ug"
+      },
+      {
+        "code" : "mg",
+        "display" : "mg"
+      },
+      {
+        "code" : "g",
+        "display" : "g"
+      },
+      {
+        "code" : "kg",
+        "display" : "kg"
+      },
+      {
+        "code" : "t",
+        "display" : "Metric Ton"
+      },
+      {
+        "code" : "gr",
+        "display" : "gr"
+      },
+      {
+        "code" : "[oz_av]",
+        "display" : "oz"
+      },
+      {
+        "code" : "[lb_av]",
+        "display" : "lb"
+      },
+      {
+        "code" : "[ston_av]",
+        "display" : "Ton"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fm",
+        "display" : "fm"
+      },
+      {
+        "code" : "pm",
+        "display" : "pm"
+      },
+      {
+        "code" : "nm",
+        "display" : "nm"
+      },
+      {
+        "code" : "um",
+        "display" : "um"
+      },
+      {
+        "code" : "mm",
+        "display" : "mm"
+      },
+      {
+        "code" : "cm",
+        "display" : "cm"
+      },
+      {
+        "code" : "m",
+        "display" : "m"
+      },
+      {
+        "code" : "km",
+        "display" : "km"
+      },
+      {
+        "code" : "[in_i]",
+        "display" : "in"
+      },
+      {
+        "code" : "[ft_i]",
+        "display" : "ft"
+      },
+      {
+        "code" : "[yd_i]",
+        "display" : "yd"
+      },
+      {
+        "code" : "[mi_i]",
+        "display" : "mi"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "ps",
+        "display" : "ps"
+      },
+      {
+        "code" : "ns",
+        "display" : "ns"
+      },
+      {
+        "code" : "us",
+        "display" : "us"
+      },
+      {
+        "code" : "ms",
+        "display" : "ms"
+      },
+      {
+        "code" : "sec",
+        "display" : "sec"
+      },
+      {
+        "code" : "min",
+        "display" : "min"
+      },
+      {
+        "code" : "h",
+        "display" : "h"
+      },
+      {
+        "code" : "d",
+        "display" : "d"
+      },
+      {
+        "code" : "wk",
+        "display" : "wk"
+      },
+      {
+        "code" : "mo",
+        "display" : "Mo"
+      },
+      {
+        "code" : "a",
+        "display" : "yr"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "mm2",
+        "display" : "mm^2"
+      },
+      {
+        "code" : "cm2",
+        "display" : "cm^2"
+      },
+      {
+        "code" : "m2",
+        "display" : "m^2"
+      },
+      {
+        "code" : "km2",
+        "display" : "km^2"
+      },
+      {
+        "code" : "[sin_i]",
+        "display" : "in^2"
+      },
+      {
+        "code" : "[sft_i]",
+        "display" : "ft^2"
+      },
+      {
+        "code" : "[syd_i]",
+        "display" : "yd^2"
+      },
+      {
+        "code" : "[smi_i]",
+        "display" : "mi^2"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "{steps}",
+        "display" : "steps"
+      },
+      {
+        "code" : "mm[Hg]",
+        "display" : "mmHg"
+      },
+      {
+        "code" : "mg/dL",
+        "display" : "mg/dL"
+      },
+      {
+        "code" : "mmol/L",
+        "display" : "mmol/L"
+      },
+      {
+        "code" : "kg/m2",
+        "display" : "kg/m^2"
+      },
+      {
+        "code" : "kCal",
+        "display" : "kcal"
+      },
+      {
+        "code" : "/min",
+        "display" : "beats/min"
+      },
+      {
+        "code" : "/min",
+        "display" : "breaths/min"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fL",
+        "display" : "fL"
+      },
+      {
+        "code" : "pL",
+        "display" : "pL"
+      },
+      {
+        "code" : "nL",
+        "display" : "nL"
+      },
+      {
+        "code" : "uL",
+        "display" : "uL"
+      },
+      {
+        "code" : "mL",
+        "display" : "mL"
+      },
+      {
+        "code" : "cL",
+        "display" : "cL"
+      },
+      {
+        "code" : "dL",
+        "display" : "dL"
+      },
+      {
+        "code" : "L",
+        "display" : "L"
+      },
+      {
+        "code" : "kL",
+        "display" : "kL"
+      },
+      {
+        "code" : "[foz_us]",
+        "display" : "fl oz"
+      },
+      {
+        "code" : "[cup_us]",
+        "display" : "Cup"
+      },
+      {
+        "code" : "[cin_i]",
+        "display" : "in^3"
+      },
+      {
+        "code" : "[pt_us]",
+        "display" : "pt"
+      },
+      {
+        "code" : "[qt_us]",
+        "display" : "qt"
+      },
+      {
+        "code" : "[gal_us]",
+        "display" : "gal"
+      },
+      {
+        "code" : "[tsp_us]",
+        "display" : "tsp"
+      },
+      {
+        "code" : "[tbs_us]",
+        "display" : "tbsp"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "K",
+        "display" : "K"
+      },
+      {
+        "code" : "[degF]",
+        "display" : "F"
+      },
+      {
+        "code" : "Cel",
+        "display" : "C"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "min/[mi_us]",
+        "display" : "min/mi"
+      },
+      {
+        "code" : "min/km",
+        "display" : "min/km"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fg",
+        "display" : "fg"
+      },
+      {
+        "code" : "pg",
+        "display" : "pg"
+      },
+      {
+        "code" : "ng",
+        "display" : "ng"
+      },
+      {
+        "code" : "ug",
+        "display" : "ug"
+      },
+      {
+        "code" : "mg",
+        "display" : "mg"
+      },
+      {
+        "code" : "g",
+        "display" : "g"
+      },
+      {
+        "code" : "kg",
+        "display" : "kg"
+      },
+      {
+        "code" : "t",
+        "display" : "Metric Ton"
+      },
+      {
+        "code" : "gr",
+        "display" : "gr"
+      },
+      {
+        "code" : "[oz_av]",
+        "display" : "oz"
+      },
+      {
+        "code" : "[lb_av]",
+        "display" : "lb"
+      },
+      {
+        "code" : "[ston_av]",
+        "display" : "Ton"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "fm",
+        "display" : "fm"
+      },
+      {
+        "code" : "pm",
+        "display" : "pm"
+      },
+      {
+        "code" : "nm",
+        "display" : "nm"
+      },
+      {
+        "code" : "um",
+        "display" : "um"
+      },
+      {
+        "code" : "mm",
+        "display" : "mm"
+      },
+      {
+        "code" : "cm",
+        "display" : "cm"
+      },
+      {
+        "code" : "m",
+        "display" : "m"
+      },
+      {
+        "code" : "km",
+        "display" : "km"
+      },
+      {
+        "code" : "[in_i]",
+        "display" : "in"
+      },
+      {
+        "code" : "[ft_i]",
+        "display" : "ft"
+      },
+      {
+        "code" : "[yd_i]",
+        "display" : "yd"
+      },
+      {
+        "code" : "[mi_i]",
+        "display" : "mi"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "ps",
+        "display" : "ps"
+      },
+      {
+        "code" : "ns",
+        "display" : "ns"
+      },
+      {
+        "code" : "us",
+        "display" : "us"
+      },
+      {
+        "code" : "ms",
+        "display" : "ms"
+      },
+      {
+        "code" : "sec",
+        "display" : "sec"
+      },
+      {
+        "code" : "min",
+        "display" : "min"
+      },
+      {
+        "code" : "h",
+        "display" : "h"
+      },
+      {
+        "code" : "d",
+        "display" : "d"
+      },
+      {
+        "code" : "wk",
+        "display" : "wk"
+      },
+      {
+        "code" : "mo",
+        "display" : "Mo"
+      },
+      {
+        "code" : "a",
+        "display" : "yr"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "mm2",
+        "display" : "mm^2"
+      },
+      {
+        "code" : "cm2",
+        "display" : "cm^2"
+      },
+      {
+        "code" : "m2",
+        "display" : "m^2"
+      },
+      {
+        "code" : "km2",
+        "display" : "km^2"
+      },
+      {
+        "code" : "[sin_i]",
+        "display" : "in^2"
+      },
+      {
+        "code" : "[sft_i]",
+        "display" : "ft^2"
+      },
+      {
+        "code" : "[syd_i]",
+        "display" : "yd^2"
+      },
+      {
+        "code" : "[smi_i]",
+        "display" : "mi^2"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "{steps}",
+        "display" : "steps"
+      },
+      {
+        "code" : "mm[Hg]",
+        "display" : "mmHg"
+      },
+      {
+        "code" : "mg/dL",
+        "display" : "mg/dL"
+      },
+      {
+        "code" : "mmol/L",
+        "display" : "mmol/L"
+      },
+      {
+        "code" : "kg/m2",
+        "display" : "kg/m^2"
+      },
+      {
+        "code" : "kCal",
+        "display" : "kcal"
+      },
+      {
+        "code" : "/min",
+        "display" : "beats/min"
+      },
+      {
+        "code" : "/min",
+        "display" : "breaths/min"
+      },
+      {
+        "code" : "%",
+        "display" : "%"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "%",
+        "display" : "%"
+      },
+      {
+        "code" : "AU",
+        "display" : "AU"
+      },
+      {
+        "code" : "AU/mL",
+        "display" : "AU/mL"
+      },
+      {
+        "code" : "bar",
+        "display" : "bar"
+      },
+      {
+        "code" : "BAU",
+        "display" : "BAU"
+      },
+      {
+        "code" : "BAU/mL",
+        "display" : "BAU/mL"
+      },
+      {
+        "code" : "bead",
+        "display" : "bead"
+      },
+      {
+        "code" : "BU",
+        "display" : "BU"
+      },
+      {
+        "code" : "capsule",
+        "display" : "capsule"
+      },
+      {
+        "code" : "CCID_50",
+        "display" : "CCID_50"
+      },
+      {
+        "code" : "cellular sheet",
+        "display" : "cellular sheet"
+      },
+      {
+        "code" : "Ci",
+        "display" : "Ci"
+      },
+      {
+        "code" : "cloth",
+        "display" : "cloth"
+      },
+      {
+        "code" : "cm^2",
+        "display" : "cm^2"
+      },
+      {
+        "code" : "D'ag'U",
+        "display" : "D'ag'U"
+      },
+      {
+        "code" : "disc",
+        "display" : "disc"
+      },
+      {
+        "code" : "dL",
+        "display" : "dL"
+      },
+      {
+        "code" : "douche",
+        "display" : "douche"
+      },
+      {
+        "code" : "drop",
+        "display" : "drop"
+      },
+      {
+        "code" : "FFU",
+        "display" : "FFU"
+      },
+      {
+        "code" : "g",
+        "display" : "g"
+      },
+      {
+        "code" : "globule",
+        "display" : "globule"
+      },
+      {
+        "code" : "granule",
+        "display" : "granule"
+      },
+      {
+        "code" : "gum",
+        "display" : "gum"
+      },
+      {
+        "code" : "hp_C",
+        "display" : "hp_C"
+      },
+      {
+        "code" : "hp_M",
+        "display" : "hp_M"
+      },
+      {
+        "code" : "hp_Q",
+        "display" : "hp_Q"
+      },
+      {
+        "code" : "hp_X",
+        "display" : "hp_X"
+      },
+      {
+        "code" : "IU",
+        "display" : "IU"
+      },
+      {
+        "code" : "IU/L",
+        "display" : "IU/L"
+      },
+      {
+        "code" : "IU/mL",
+        "display" : "IU/mL"
+      },
+      {
+        "code" : "kp_C",
+        "display" : "kp_C"
+      },
+      {
+        "code" : "L",
+        "display" : "L"
+      },
+      {
+        "code" : "Lf",
+        "display" : "Lf"
+      },
+      {
+        "code" : "LfU/mL",
+        "display" : "LfU/mL"
+      },
+      {
+        "code" : "lozenge",
+        "display" : "lozenge"
+      },
+      {
+        "code" : "mCi",
+        "display" : "mCi"
+      },
+      {
+        "code" : "mCi/mL",
+        "display" : "mCi/mL"
+      },
+      {
+        "code" : "mEq",
+        "display" : "mEq"
+      },
+      {
+        "code" : "mg",
+        "display" : "mg"
+      },
+      {
+        "code" : "mg/actuat",
+        "display" : "mg/actuat"
+      },
+      {
+        "code" : "mg/hr",
+        "display" : "mg/hr"
+      },
+      {
+        "code" : "mg/mg",
+        "display" : "mg/mg"
+      },
+      {
+        "code" : "mg/mL",
+        "display" : "mg/mL"
+      },
+      {
+        "code" : "mL",
+        "display" : "mL"
+      },
+      {
+        "code" : "mmol",
+        "display" : "mmol"
+      },
+      {
+        "code" : "mol",
+        "display" : "mol"
+      },
+      {
+        "code" : "mU",
+        "display" : "mU"
+      },
+      {
+        "code" : "ng",
+        "display" : "ng"
+      },
+      {
+        "code" : "nmol",
+        "display" : "nmol"
+      },
+      {
+        "code" : "organisms",
+        "display" : "organisms"
+      },
+      {
+        "code" : "pastille",
+        "display" : "pastille"
+      },
+      {
+        "code" : "patch",
+        "display" : "patch"
+      },
+      {
+        "code" : "pellet",
+        "display" : "pellet"
+      },
+      {
+        "code" : "PFU",
+        "display" : "PFU"
+      },
+      {
+        "code" : "pill",
+        "display" : "pill"
+      },
+      {
+        "code" : "PNU",
+        "display" : "PNU"
+      },
+      {
+        "code" : "PNU/mL",
+        "display" : "PNU/mL"
+      },
+      {
+        "code" : "pouch",
+        "display" : "pouch"
+      },
+      {
+        "code" : "puff",
+        "display" : "puff"
+      },
+      {
+        "code" : "ring",
+        "display" : "ring"
+      },
+      {
+        "code" : "salve",
+        "display" : "salve"
+      },
+      {
+        "code" : "stick",
+        "display" : "stick"
+      },
+      {
+        "code" : "strip",
+        "display" : "strip"
+      },
+      {
+        "code" : "suppository",
+        "display" : "suppository"
+      },
+      {
+        "code" : "swab",
+        "display" : "swab"
+      },
+      {
+        "code" : "tablet",
+        "display" : "tablet"
+      },
+      {
+        "code" : "tampon",
+        "display" : "tampon"
+      },
+      {
+        "code" : "tape",
+        "display" : "tape"
+      },
+      {
+        "code" : "tbsp",
+        "display" : "tbsp"
+      },
+      {
+        "code" : "TCID_50",
+        "display" : "TCID_50"
+      },
+      {
+        "code" : "tsp",
+        "display" : "tsp"
+      },
+      {
+        "code" : "U",
+        "display" : "U"
+      },
+      {
+        "code" : "uCi",
+        "display" : "uCi"
+      },
+      {
+        "code" : "ug",
+        "display" : "ug"
+      },
+      {
+        "code" : "ug/mL",
+        "display" : "ug/mL"
+      },
+      {
+        "code" : "uL",
+        "display" : "uL"
+      },
+      {
+        "code" : "umol",
+        "display" : "umol"
+      },
+      {
+        "code" : "unt",
+        "display" : "unt"
+      },
+      {
+        "code" : "unt/mL",
+        "display" : "unt/mL"
+      },
+      {
+        "code" : "USP'U",
+        "display" : "USP'U"
+      },
+      {
+        "code" : "vial",
+        "display" : "vial"
+      },
+      {
+        "code" : "wafer",
+        "display" : "wafer"
+      },
+      {
+        "code" : "X",
+        "display" : "X"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "{steps}",
+        "display" : "steps"
+      },
+      {
+        "code" : "mm[Hg]",
+        "display" : "mmHg"
+      },
+      {
+        "code" : "mg/dL",
+        "display" : "mg/dL"
+      },
+      {
+        "code" : "mmol/L",
+        "display" : "mmol/L"
+      },
+      {
+        "code" : "kg/m2",
+        "display" : "kg/m^2"
+      },
+      {
+        "code" : "kCal",
+        "display" : "kcal"
+      },
+      {
+        "code" : "/min",
+        "display" : "beats/min"
+      },
+      {
+        "code" : "/min",
+        "display" : "breaths/min"
+      },
+      {
+        "code" : "%",
+        "display" : "%"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "%",
+        "display" : "%"
+      },
+      {
+        "code" : "AU",
+        "display" : "AU"
+      },
+      {
+        "code" : "AU/mL",
+        "display" : "AU/mL"
+      },
+      {
+        "code" : "bar",
+        "display" : "bar"
+      },
+      {
+        "code" : "BAU",
+        "display" : "BAU"
+      },
+      {
+        "code" : "BAU/mL",
+        "display" : "BAU/mL"
+      },
+      {
+        "code" : "bead",
+        "display" : "bead"
+      },
+      {
+        "code" : "BU",
+        "display" : "BU"
+      },
+      {
+        "code" : "capsule",
+        "display" : "capsule"
+      },
+      {
+        "code" : "CCID_50",
+        "display" : "CCID_50"
+      },
+      {
+        "code" : "cellular sheet",
+        "display" : "cellular sheet"
+      },
+      {
+        "code" : "Ci",
+        "display" : "Ci"
+      },
+      {
+        "code" : "cloth",
+        "display" : "cloth"
+      },
+      {
+        "code" : "cm^2",
+        "display" : "cm^2"
+      },
+      {
+        "code" : "D'ag'U",
+        "display" : "D'ag'U"
+      },
+      {
+        "code" : "disc",
+        "display" : "disc"
+      },
+      {
+        "code" : "dL",
+        "display" : "dL"
+      },
+      {
+        "code" : "douche",
+        "display" : "douche"
+      },
+      {
+        "code" : "drop",
+        "display" : "drop"
+      },
+      {
+        "code" : "FFU",
+        "display" : "FFU"
+      },
+      {
+        "code" : "g",
+        "display" : "g"
+      },
+      {
+        "code" : "globule",
+        "display" : "globule"
+      },
+      {
+        "code" : "granule",
+        "display" : "granule"
+      },
+      {
+        "code" : "gum",
+        "display" : "gum"
+      },
+      {
+        "code" : "hp_C",
+        "display" : "hp_C"
+      },
+      {
+        "code" : "hp_M",
+        "display" : "hp_M"
+      },
+      {
+        "code" : "hp_Q",
+        "display" : "hp_Q"
+      },
+      {
+        "code" : "hp_X",
+        "display" : "hp_X"
+      },
+      {
+        "code" : "IU",
+        "display" : "IU"
+      },
+      {
+        "code" : "IU/L",
+        "display" : "IU/L"
+      },
+      {
+        "code" : "IU/mL",
+        "display" : "IU/mL"
+      },
+      {
+        "code" : "kp_C",
+        "display" : "kp_C"
+      },
+      {
+        "code" : "L",
+        "display" : "L"
+      },
+      {
+        "code" : "Lf",
+        "display" : "Lf"
+      },
+      {
+        "code" : "LfU/mL",
+        "display" : "LfU/mL"
+      },
+      {
+        "code" : "lozenge",
+        "display" : "lozenge"
+      },
+      {
+        "code" : "mCi",
+        "display" : "mCi"
+      },
+      {
+        "code" : "mCi/mL",
+        "display" : "mCi/mL"
+      },
+      {
+        "code" : "mEq",
+        "display" : "mEq"
+      },
+      {
+        "code" : "mg",
+        "display" : "mg"
+      },
+      {
+        "code" : "mg/actuat",
+        "display" : "mg/actuat"
+      },
+      {
+        "code" : "mg/hr",
+        "display" : "mg/hr"
+      },
+      {
+        "code" : "mg/mg",
+        "display" : "mg/mg"
+      },
+      {
+        "code" : "mg/mL",
+        "display" : "mg/mL"
+      },
+      {
+        "code" : "mL",
+        "display" : "mL"
+      },
+      {
+        "code" : "mmol",
+        "display" : "mmol"
+      },
+      {
+        "code" : "mol",
+        "display" : "mol"
+      },
+      {
+        "code" : "mU",
+        "display" : "mU"
+      },
+      {
+        "code" : "ng",
+        "display" : "ng"
+      },
+      {
+        "code" : "nmol",
+        "display" : "nmol"
+      },
+      {
+        "code" : "organisms",
+        "display" : "organisms"
+      },
+      {
+        "code" : "pastille",
+        "display" : "pastille"
+      },
+      {
+        "code" : "patch",
+        "display" : "patch"
+      },
+      {
+        "code" : "pellet",
+        "display" : "pellet"
+      },
+      {
+        "code" : "PFU",
+        "display" : "PFU"
+      },
+      {
+        "code" : "pill",
+        "display" : "pill"
+      },
+      {
+        "code" : "PNU",
+        "display" : "PNU"
+      },
+      {
+        "code" : "PNU/mL",
+        "display" : "PNU/mL"
+      },
+      {
+        "code" : "pouch",
+        "display" : "pouch"
+      },
+      {
+        "code" : "puff",
+        "display" : "puff"
+      },
+      {
+        "code" : "ring",
+        "display" : "ring"
+      },
+      {
+        "code" : "salve",
+        "display" : "salve"
+      },
+      {
+        "code" : "stick",
+        "display" : "stick"
+      },
+      {
+        "code" : "strip",
+        "display" : "strip"
+      },
+      {
+        "code" : "suppository",
+        "display" : "suppository"
+      },
+      {
+        "code" : "swab",
+        "display" : "swab"
+      },
+      {
+        "code" : "tablet",
+        "display" : "tablet"
+      },
+      {
+        "code" : "tampon",
+        "display" : "tampon"
+      },
+      {
+        "code" : "tape",
+        "display" : "tape"
+      },
+      {
+        "code" : "tbsp",
+        "display" : "tbsp"
+      },
+      {
+        "code" : "TCID_50",
+        "display" : "TCID_50"
+      },
+      {
+        "code" : "tsp",
+        "display" : "tsp"
+      },
+      {
+        "code" : "U",
+        "display" : "U"
+      },
+      {
+        "code" : "uCi",
+        "display" : "uCi"
+      },
+      {
+        "code" : "ug",
+        "display" : "ug"
+      },
+      {
+        "code" : "ug/mL",
+        "display" : "ug/mL"
+      },
+      {
+        "code" : "uL",
+        "display" : "uL"
+      },
+      {
+        "code" : "umol",
+        "display" : "umol"
+      },
+      {
+        "code" : "unt",
+        "display" : "unt"
+      },
+      {
+        "code" : "unt/mL",
+        "display" : "unt/mL"
+      },
+      {
+        "code" : "USP'U",
+        "display" : "USP'U"
+      },
+      {
+        "code" : "vial",
+        "display" : "vial"
+      },
+      {
+        "code" : "wafer",
+        "display" : "wafer"
+      },
+      {
+        "code" : "X",
+        "display" : "X"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
 }
 -------------------------------------------------------------------------------------

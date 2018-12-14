@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ncimeta.nci.nih.gov",
+      "concept" : [{
+        "code" : "C1549040",
+        "display" : "before breakfast"
+      },
+      {
+        "code" : "C1550743",
+        "display" : "after breakfast"
+      },
+      {
+        "code" : "C1550741",
+        "display" : "before lunch"
+      },
+      {
+        "code" : "C1879668",
+        "display" : "after lunch"
+      },
+      {
+        "code" : "C1550742",
+        "display" : "before dinner"
+      },
+      {
+        "code" : "C1879671",
+        "display" : "after dinner"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------

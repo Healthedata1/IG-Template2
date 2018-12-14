@@ -9,7 +9,7 @@
     "contact": {}
   },
   "externalDocs": {
-    "url": "http://www.fhir.org/guides/mfhir/CapabilityStatement/server",
+    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/server",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {
@@ -25,12 +25,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/OperationOutcome"
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
                 }
               }
             }
@@ -45,12 +45,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/Bundle"
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Bundle"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/Bundle.xsd"
+                  "$ref": "http://hl7.org/fhir/STU3/Bundle.xsd"
                 }
               }
             }
@@ -70,12 +70,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/OperationOutcome"
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
                 }
               }
             }
@@ -90,12 +90,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/Basic"
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Basic"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/Basic.xsd"
+                  "$ref": "http://hl7.org/fhir/STU3/Basic.xsd"
                 }
               }
             }
@@ -115,12 +115,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/OperationOutcome"
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
                 }
               }
             }
@@ -135,12 +135,12 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/fhir.json.schema#/definitions/Basic"
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Basic"
                 }
               },
               "application/fhir+xml": {
                 "schema": {
-                  "$ref": "http://build.fhir.org/Basic.xsd"
+                  "$ref": "http://hl7.org/fhir/STU3/Basic.xsd"
                 }
               }
             }

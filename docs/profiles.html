@@ -5,11 +5,11 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>Open mHealth to FHIR</title>
+  <title>IG_Test3</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Open mHealth to FHIR Implemenation Guide" />
-<meta name="author" content="Open mHealth"/>
+<meta name="description" content="IG_Test3 Implemenation Guide" />
+<meta name="author" content="Health eData Inc"/>
   <link href="fhir.css" rel="stylesheet"/>
 
 
@@ -59,7 +59,7 @@
 your logo here
 
 [![visit our website](assets/images/org_logo.png)](your web site.html)
-{: .img-responsive #org_logo}
+{: .img-responsive # org_logo}
 
 can only resize using html  or css ;-(
 
@@ -67,16 +67,16 @@ can only resize using html  or css ;-(
 
 
 <a no-external="true" href="http://www.openmhealth.org/">
-<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.png"/>
+<img alt="visit our website" class="img-responsive project-logo" src="assets/images/org_logo.jpg"/>
 </a>
 
   <!-- end org logo -->
 
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
-        <b>Open mHealth to FHIR Implementation Guide</b>
+        <b>IG_Test3 Implementation Guide</b>
         
-        CI Build
+        (Release 0.0.0 Ballot)
         
     </div><!-- end ig title text -->
 
@@ -105,17 +105,15 @@ can only resize using html  or css ;-(
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+        <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
-  <li><a href="use_case.html">Use Case</a></li>
-  <li><a href="sa_workflow.html">Smart App Workflow</a></li>
-  <li><a href="mapping.html">OMH to FHIR Mapping</a></li>
-  <li><a href="profiles.html">Profiles and Logical Models</a>
-<!-- [Mappings](structuremaps.html)-->
+  <li><a href="guidance.html">General Guidance</a></li>
+  <li><a href="profiles.html">Profiles and Extensions</a>
+<!-- - [Mappings](structuremaps.html) -->
 <!-- - [Extensions](extensions.html) --></li>
   <li><a href="terminology.html">Terminology</a>
 <!-- - [Search Parameters](searchparams.html) --></li>
@@ -212,8 +210,8 @@ can only resize using html  or css ;-(
 <!--status-bar-->
 <p id="publish-box">
 This is the 
-    Continuous Integration Build
-    of the Open mHealth to FHIR Implementation Guide,  based on <a href="http://hl7.org/fhir/STU3/index.html">FHIR Version 3.0.1</a>.  See the <a href="history.html">Directory of published versions</a>
+     Release 0.0.0 Ballot
+    of the IG_Test3 Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 3.6.0</a>.  See the <a href="history.html">Directory of published versions</a>
 </p>
 
 
@@ -226,59 +224,24 @@ This is the
 
 
 
-<h4 id="profiles">Profiles</h4>
+<h3 id="profiles">Profiles</h3>
 
 <p>The following Profiles have been defined for this implementation guide.</p>
 
-<li><a href="StructureDefinition-contained-p.html">OMH Contained Patient Profile</a></li>
-<li><a href="StructureDefinition-omh-dr.html">OMH DocumentReference Profile</a></li>
+<li><a href="StructureDefinition-template-basic.html">Health eData Template Profile</a> template-basic</li>
+<li><a href="StructureDefinition-template-profile-on-profile.html">Template-Profile-on-Profile</a> Template-Profile-on-Profile</li>
 
-<h4 id="logical-models">Logical Models</h4>
+<p><br /></p>
 
-<p>The following Logical Models have been defined for this implementation guide.</p>
+<h3 id="extensions">Extensions</h3>
 
-<li><a href="StructureDefinition-omh-step-count.html">OMHStepCount</a></li>
-<li><a href="StructureDefinition-omh-heart-rate.html">OMHHeartRate</a></li>
-<li><a href="StructureDefinition-omh-header.html">OMHHeader</a></li>
-<li><a href="StructureDefinition-omh-datapoint-template.html">OmhDatapointTemplate</a></li>
-<li><a href="StructureDefinition-omh-ventilation-cycle-time.html">OMH Ventilation Cycle Time</a></li>
-<li><a href="StructureDefinition-omh-systolic-blood-pressure.html">OMH Systolic Blood Pressure</a></li>
-<li><a href="StructureDefinition-omh-speed.html">OMH Speed</a></li>
-<li><a href="StructureDefinition-omh-sleep-episode.html">OMH Sleep Episode</a></li>
-<li><a href="StructureDefinition-omh-sleep-duration.html">OMH Sleep Duration</a></li>
-<li><a href="StructureDefinition-omh-single-medication-dose-taken.html">OMH Single Medication Dose Taken</a></li>
-<li><a href="StructureDefinition-omh-rr-interval.html">OMH Rr Interval</a></li>
-<li><a href="StructureDefinition-omh-respiratory-rate.html">OMH Respiratory Rate</a></li>
-<li><a href="StructureDefinition-omh-reason-single-medication-dose-not-taken.html">OMH Reason Single Medication Dose Not Taken</a></li>
-<li><a href="StructureDefinition-omh-physical-activity.html">OMH Physical Activity</a></li>
-<li><a href="StructureDefinition-omh-pharmacy-medication-dispensing.html">OMH Pharmacy Medication Dispensing</a></li>
-<li><a href="StructureDefinition-omh-patient-medication-schedule.html">OMH Patient Medication Schedule</a></li>
-<li><a href="StructureDefinition-omh-pace.html">OMH Pace</a></li>
-<li><a href="StructureDefinition-omh-oxygen-saturation.html">OMH Oxygen Saturation</a></li>
-<li><a href="StructureDefinition-omh-orientation.html">OMH Orientation</a></li>
-<li><a href="StructureDefinition-omh-minutes-moderate-activity.html">OMH Minutes Moderate Activity</a></li>
-<li><a href="StructureDefinition-omh-minute-volume.html">OMH Minute Volume</a></li>
-<li><a href="StructureDefinition-omh-medication.html">OMH Medication</a></li>
-<li><a href="StructureDefinition-omh-medication-prescription.html">OMH Medication Prescription</a></li>
-<li><a href="StructureDefinition-omh-medication-adherence-percent.html">OMH Medication Adherence Percent</a></li>
-<li><a href="StructureDefinition-omh-magnetic-force.html">OMH Magnetic Force</a></li>
-<li><a href="StructureDefinition-omh-inspiratory-time.html">OMH Inspiratory Time</a></li>
-<li><a href="StructureDefinition-omh-geoposition.html">OMH Geoposition</a></li>
-<li><a href="StructureDefinition-omh-expiratory-time.html">OMH Expiratory Time</a></li>
-<li><a href="StructureDefinition-omh-diastolic-blood-pressure.html">OMH Diastolic Blood Pressure</a></li>
-<li><a href="StructureDefinition-omh-calories-burned.html">OMH Calories Burned</a></li>
-<li><a href="StructureDefinition-omh-breath-carbon-monoxide.html">OMH Breath Carbon Monoxide</a></li>
-<li><a href="StructureDefinition-omh-body-weight.html">OMH Body Weight</a></li>
-<li><a href="StructureDefinition-omh-body-temperature.html">OMH Body Temperature</a></li>
-<li><a href="StructureDefinition-omh-body-mass-index.html">OMH Body Mass Index</a></li>
-<li><a href="StructureDefinition-omh-body-height.html">OMH Body Height</a></li>
-<li><a href="StructureDefinition-omh-body-fat-percentage.html">OMH Body Fat Percentage</a></li>
-<li><a href="StructureDefinition-omh-blood-pressure.html">OMH Blood Pressure</a></li>
-<li><a href="StructureDefinition-omh-blood-glucose.html">OMH Blood Glucose</a></li>
-<li><a href="StructureDefinition-omh-ambient-temperature.html">OMH Ambient Temperature</a></li>
-<li><a href="StructureDefinition-omh-acceleration.html">OMH Acceleration</a></li>
+<p>These extensions have been defined for this implementation guide.</p>
 
-<hr />
+<li><a href="StructureDefinition-extension-blah.html">Simple Extension</a> an example of a simple extension.</li>
+<li><a href="StructureDefinition-extension-complex.html">Complex Extension</a> an example of a complex extension.</li>
+<li><a href="StructureDefinition-extension-blah2.html">Simple Extension</a> an example of a simple extension.</li>
+
+<p><br /></p>
 
 
   <!-- ==============END CONTENT END CONTENT=================== -->
@@ -309,10 +272,12 @@ This is the
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      Open mHealth to FHIR Version: 0.0.0 &reg;&copy;   <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/index.html">FHIR Version: 3.0.1</a> generated on Fri, Nov 23, 2018 04:16-0800.
+      IG_Test3 
+           Version 0.0.0 Ballot
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 3.6.0</a> generated on Thu, Dec 13, 2018 17:04-0800.
       | <a style="color: #81BEF7" href="history.html">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
-        <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+        <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
         </p>
    </div>  <!-- /inner-wrapper -->

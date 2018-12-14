@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.fhir.org/guides/mfhir/CodeSystem/temporal-relationship-to-meal",
+      "concept" : [{
+        "code" : "2-hours-postprandial",
+        "display" : "2 hours postprandial"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "org.hl7.fhir.dstu3.model.ExpansionProfile cannot be cast to org.hl7.fhir.dstu3.model.Parameters"
+}
+-------------------------------------------------------------------------------------
