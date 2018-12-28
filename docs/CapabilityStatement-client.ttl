@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "client"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<ul><li>FHIR Version: 3.6.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<ul><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>"
   ];
   fhir:CapabilityStatement.url [ fhir:value "http://www.fhir.org/guides/test3/CapabilityStatement/client"];
   fhir:CapabilityStatement.version [ fhir:value "0.0.0"];
@@ -28,7 +28,7 @@
   ];
   fhir:CapabilityStatement.description [ fhir:value "This resource defines the expected capabilities "];
   fhir:CapabilityStatement.kind [ fhir:value "requirements"];
-  fhir:CapabilityStatement.fhirVersion [ fhir:value "3.6.0"];
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.0"];
   fhir:CapabilityStatement.format [
      fhir:value "xml";
      fhir:index 0

@@ -13,7 +13,7 @@
   <name value="Template-Profile-on-Profile"/>
   <status value="active"/>
   <date value="2017-02-15"/>
-  <fhirVersion value="3.6.0"/>
+  <fhirVersion value="4.0.0"/>
   <mapping>
     <identity value="foo"/>
     <uri value="http://unknown.org/foo"/>

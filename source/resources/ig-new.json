@@ -30,8 +30,8 @@
   "copyright" : "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
   "packageId" : "healthedatainc.mfhir",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["3.6.0",
-  "3.6.0"],
+  "fhirVersion" : ["4.0.0",
+  "4.0.0"],
   "dependsOn" : [{
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
@@ -62,25 +62,7 @@
     },
     {
       "reference" : {
-        "reference" : "ValueSet/blah-codes"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/template-basic"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/extension-blah2"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/template-profile-on-profile"
+        "reference" : "CapabilityStatement/server"
       },
       "exampleBoolean" : false
     },
@@ -92,13 +74,31 @@
     },
     {
       "reference" : {
-        "reference" : "CapabilityStatement/server"
+        "reference" : "StructureDefinition/extension-blah2"
       },
       "exampleBoolean" : false
     },
     {
       "reference" : {
         "reference" : "CapabilityStatement/client"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/template-profile-on-profile"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/template-basic"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/blah-codes"
       },
       "exampleBoolean" : false
     }],
@@ -116,13 +116,13 @@
         "title" : "Profiles and Extensions",
         "generation" : "markdown",
         "page" : [{
-          "nameUrl" : "StructureDefinition-template-basic.html",
-          "title" : "StructureDefinition Template Basic",
+          "nameUrl" : "StructureDefinition-template-profile-on-profile.html",
+          "title" : "StructureDefinition Template Profile On Profile",
           "generation" : "generated"
         },
         {
-          "nameUrl" : "StructureDefinition-template-profile-on-profile.html",
-          "title" : "StructureDefinition Template Profile On Profile",
+          "nameUrl" : "StructureDefinition-template-basic.html",
+          "title" : "StructureDefinition Template Basic",
           "generation" : "generated"
         },
         {

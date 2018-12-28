@@ -15,7 +15,7 @@
   "packageId": "healthedatainc.mfhir",
   "license": "CC0-1.0",
   "fhirVersion": [
-    "3.6.0"
+    "4.0.0"
   ],
   "definition": {
     "grouping": [
@@ -23,12 +23,12 @@
         "name": "base"
       },
       {
-        "id": "patient-on-usprofile-spreadsheet.xml",
-        "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"
-      },
-      {
         "id": "template-profile-spreadsheet.xml",
         "name": "Template-basic"
+      },
+      {
+        "id": "patient-on-usprofile-spreadsheet.xml",
+        "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"
       }
     ],
     "resource": [
@@ -72,47 +72,11 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-blah-codes.html"
+            "valueUri": "CapabilityStatement-server.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/blah-codes"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-basic.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-basic"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah2.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah2"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-profile-on-profile.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-profile-on-profile"
+          "reference": "CapabilityStatement/server"
         },
         "exampleBoolean": false
       },
@@ -132,11 +96,11 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CapabilityStatement-server.html"
+            "valueUri": "StructureDefinition-extension-blah2.html"
           }
         ],
         "reference": {
-          "reference": "CapabilityStatement/server"
+          "reference": "StructureDefinition/extension-blah2"
         },
         "exampleBoolean": false
       },
@@ -162,8 +126,31 @@
         "reference": {
           "reference": "StructureDefinition/template-profile-on-profile"
         },
-        "name": "Template-Profile-on-Profile",
-        "groupingId": "patient-on-usprofile-spreadsheet.xml"
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-basic.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/template-basic"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-blah-codes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/blah-codes"
+        },
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -216,6 +203,19 @@
         },
         "name": "template-basic",
         "groupingId": "template-profile-spreadsheet.xml"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-profile-on-profile.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/template-profile-on-profile"
+        },
+        "name": "Template-Profile-on-Profile",
+        "groupingId": "patient-on-usprofile-spreadsheet.xml"
       }
     ],
     "page": {
@@ -234,13 +234,13 @@
           "generation": "markdown",
           "page": [
             {
-              "nameUrl": "StructureDefinition-template-basic.html",
-              "title": "StructureDefinition Template Basic",
+              "nameUrl": "StructureDefinition-template-profile-on-profile.html",
+              "title": "StructureDefinition Template Profile On Profile",
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-template-profile-on-profile.html",
-              "title": "StructureDefinition Template Profile On Profile",
+              "nameUrl": "StructureDefinition-template-basic.html",
+              "title": "StructureDefinition Template Basic",
               "generation": "generated"
             },
             {

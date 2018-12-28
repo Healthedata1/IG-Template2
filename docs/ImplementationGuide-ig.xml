@@ -14,16 +14,16 @@
   <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
   <packageId value="healthedatainc.mfhir"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="3.6.0"/>
+  <fhirVersion value="4.0.0"/>
   <definition>
     <grouping>
       <name value="base"/>
     </grouping>
-    <grouping id="patient-on-usprofile-spreadsheet.xml">
-      <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"/>
-    </grouping>
     <grouping id="template-profile-spreadsheet.xml">
       <name value="Template-basic"/>
+    </grouping>
+    <grouping id="patient-on-usprofile-spreadsheet.xml">
+      <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"/>
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -54,37 +54,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-blah-codes.html"/>
+        <valueUri value="CapabilityStatement-server.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/blah-codes"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-template-basic.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/template-basic"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-extension-blah2.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/extension-blah2"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/template-profile-on-profile"/>
+        <reference value="CapabilityStatement/server"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -99,10 +72,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CapabilityStatement-server.html"/>
+        <valueUri value="StructureDefinition-extension-blah2.html"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/server"/>
+        <reference value="StructureDefinition/extension-blah2"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -122,8 +95,25 @@
       <reference>
         <reference value="StructureDefinition/template-profile-on-profile"/>
       </reference>
-      <name value="Template-Profile-on-Profile"/>
-      <groupingId value="patient-on-usprofile-spreadsheet.xml"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-basic.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/template-basic"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-blah-codes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/blah-codes"/>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -165,6 +155,16 @@
       <name value="template-basic"/>
       <groupingId value="template-profile-spreadsheet.xml"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/template-profile-on-profile"/>
+      </reference>
+      <name value="Template-Profile-on-Profile"/>
+      <groupingId value="patient-on-usprofile-spreadsheet.xml"/>
+    </resource>
     <page>
       <nameUrl value="index.html"/>
       <title value="Home"/>
@@ -179,13 +179,13 @@
         <title value="Profiles and Extensions"/>
         <generation value="markdown"/>
         <page>
-          <nameUrl value="StructureDefinition-template-basic.html"/>
-          <title value="StructureDefinition Template Basic"/>
+          <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
+          <title value="StructureDefinition Template Profile On Profile"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
-          <title value="StructureDefinition Template Profile On Profile"/>
+          <nameUrl value="StructureDefinition-template-basic.html"/>
+          <title value="StructureDefinition Template Basic"/>
           <generation value="generated"/>
         </page>
         <page>

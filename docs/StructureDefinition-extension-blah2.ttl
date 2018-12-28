@@ -19,7 +19,7 @@
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.date [ fhir:value "2017-02-15"^^xsd:date];
   fhir:StructureDefinition.description [ fhir:value "an example of a simple extension."];
-  fhir:StructureDefinition.fhirVersion [ fhir:value "3.6.0"];
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
      fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ];

@@ -10,7 +10,7 @@
   "name": "Template-Profile-on-Profile",
   "status": "active",
   "date": "2017-02-15",
-  "fhirVersion": "3.6.0",
+  "fhirVersion": "4.0.0",
   "mapping": [
     {
       "identity": "foo",

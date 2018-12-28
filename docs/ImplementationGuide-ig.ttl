@@ -22,7 +22,7 @@
   fhir:ImplementationGuide.packageId [ fhir:value "healthedatainc.mfhir"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
-     fhir:value "3.6.0";
+     fhir:value "4.0.0";
      fhir:index 0
   ];
   fhir:ImplementationGuide.definition [
@@ -31,12 +31,12 @@
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "base" ]
      ], [
        fhir:index 1;
-       fhir:Element.id [ fhir:value "patient-on-usprofile-spreadsheet.xml" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet" ]
-     ], [
-       fhir:index 2;
        fhir:Element.id [ fhir:value "template-profile-spreadsheet.xml" ];
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Template-basic" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "patient-on-usprofile-spreadsheet.xml" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet" ]
      ];
      fhir:ImplementationGuide.definition.resource [
        fhir:index 0;
@@ -79,11 +79,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-blah-codes.html" ]
+         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-server.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://www.fhir.org/guides/test3/ValueSet/blah-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/blah-codes" ]
+         fhir:link <http://www.fhir.org/guides/test3/CapabilityStatement/server>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/server" ]
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -91,11 +91,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-template-basic.html" ]
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-blah-codes.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-basic>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/template-basic" ]
+         fhir:link <http://www.fhir.org/guides/test3/CodeSystem/blah-codes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/blah-codes" ]
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -115,42 +115,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-template-profile-on-profile.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/template-profile-on-profile" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-blah-codes.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://www.fhir.org/guides/test3/CodeSystem/blah-codes>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/blah-codes" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 8;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-server.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://www.fhir.org/guides/test3/CapabilityStatement/server>;
-         fhir:Reference.reference [ fhir:value "CapabilityStatement/server" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "CapabilityStatement-client.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -159,7 +123,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -169,10 +133,33 @@
          fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/template-profile-on-profile" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Template-Profile-on-Profile" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "patient-on-usprofile-spreadsheet.xml" ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-template-basic.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-basic>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/template-basic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-blah-codes.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.fhir.org/guides/test3/ValueSet/blah-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/blah-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -185,7 +172,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Extension" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
      ], [
-       fhir:index 12;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -198,7 +185,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Complex Extension" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
      ], [
-       fhir:index 13;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -211,7 +198,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Extension" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
      ], [
-       fhir:index 14;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -223,6 +210,19 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "template-basic" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-template-profile-on-profile.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/template-profile-on-profile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Template-Profile-on-Profile" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "patient-on-usprofile-spreadsheet.xml" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
@@ -240,13 +240,13 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
          fhir:ImplementationGuide.definition.page.page [
            fhir:index 0;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-template-basic.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Template Basic" ];
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-template-profile-on-profile.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Template Profile On Profile" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
            fhir:index 1;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-template-profile-on-profile.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Template Profile On Profile" ];
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-template-basic.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Template Basic" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
            fhir:index 2;

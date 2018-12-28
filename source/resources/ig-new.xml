@@ -26,8 +26,8 @@
   <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
   <packageId value="healthedatainc.mfhir"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="3.6.0"/>
-  <fhirVersion value="3.6.0"/>
+  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.0"/>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
@@ -57,25 +57,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/blah-codes"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/template-basic"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/extension-blah2"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/template-profile-on-profile"/>
+        <reference value="CapabilityStatement/server"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -87,13 +69,31 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CapabilityStatement/server"/>
+        <reference value="StructureDefinition/extension-blah2"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="CapabilityStatement/client"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/template-profile-on-profile"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/template-basic"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/blah-codes"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -111,13 +111,13 @@
         <title value="Profiles and Extensions"/>
         <generation value="markdown"/>
         <page>
-          <nameUrl value="StructureDefinition-template-basic.html"/>
-          <title value="StructureDefinition Template Basic"/>
+          <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
+          <title value="StructureDefinition Template Profile On Profile"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
-          <title value="StructureDefinition Template Profile On Profile"/>
+          <nameUrl value="StructureDefinition-template-basic.html"/>
+          <title value="StructureDefinition Template Basic"/>
           <generation value="generated"/>
         </page>
         <page>

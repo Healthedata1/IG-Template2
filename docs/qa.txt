@@ -2,7 +2,7 @@
 =========================================
 
 err = 26, warn = 28, info = 0
-Generated Thu Dec 13 17:04:52 PST 2018. FHIR version 3.6.0 for 3.6.0
+Generated Fri Dec 28 11:10:54 PST 2018. FHIR version 4.0.0 for 4.0.0
 
  Build Errors : 30 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 6 / 0
@@ -15,8 +15,8 @@ Generated Thu Dec 13 17:04:52 PST 2018. FHIR version 3.6.0 for 3.6.0
  Template-basic : 2 / 9
 </table>
 == n/a ==
-ERROR: Patient.contact.relationship: The reference http://hl7.org/fhir/ValueSet/v2-0131 could not be resolved
 ERROR: ??: The reference http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status could not be resolved
+ERROR: Patient.contact.relationship: The reference http://hl7.org/fhir/ValueSet/v2-0131 could not be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 448, column 1713: The link 'v2-0131.html' for "v2-0131" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 576, column 1713: The link 'v2-0131.html' for "v2-0131" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2081, column 18: The link '' for "Any " cannot be resolved
