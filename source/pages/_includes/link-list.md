@@ -6,3 +6,4 @@
 [Terminology]: terminology.html "Terminology Page"
 [Profiles]: profiles.html "Profiles and Extensions Page"
 [FHIR Version 3.0.1]: {{site.data.fhir.path}} "FHIR Specification Home Page"
+[All the examples]: all-examples.html

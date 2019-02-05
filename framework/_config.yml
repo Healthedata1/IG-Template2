@@ -1,7 +1,8 @@
-historypath : "history.html" # complete path to IG history file
+historypath : "#" # complete path to IG history file use "history" for an example of what this page would look like
 summaries: false #true if want custom profile summaries in summary tab
-diff2: false # true if want to show intermediate differentials
-build: ballot  # choice of ci|ballot|version
+diff2: false # true if want to show intermediate differentials - probably never use this.
+build: ci  # choice of ci|ballot|version
+hl7_version: #STU version of IG ( if needed for publishing HL7 guides)
 example_types:
 - Account
 - ActivityDefinition

@@ -1,0 +1,121 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "373067005",
+  "display" : "No"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 0
+      }],
+      "system" : "http://snomed.info/sct",
+      "version" : "20180131",
+      "code" : "373067005",
+      "display" : "No"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 2
+      }],
+      "system" : "http://fhir.org/guides/argonaut-questionnaire/CodeSystem/answer-codes",
+      "version" : "0.0.0",
+      "code" : "not-last-year",
+      "display" : "Yes, but not in the last year"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 4
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "code" : "LA15519-4",
+      "display" : "Yes, during the last year"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#373067005) is not  valid"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "373067005",
+  "display" : "No"
+}, "valueSet" :null}####
+v: {
+  "display" : "No (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "13644009"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "233604007"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "13644009",
+  "display" : "Hypercholesterolemia (disorder)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Hypercholesterolemia",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "34206005",
+  "display" : "Subcutaneous route (qualifier value)"
+}, "valueSet" :null}####
+v: {
+  "display" : "SC use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "233604007",
+  "display" : "Pneumonia (disorder)"
+}, "valueSet" :null}####
+v: {
+  "display" : "Pneumonia",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "311504000",
+  "display" : "With or after food"
+}, "valueSet" :null}####
+v: {
+  "display" : "With or after food",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

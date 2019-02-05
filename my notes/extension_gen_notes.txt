@@ -1,0 +1,17 @@
+extension workflow
+
+1) create extension in spreadsheet ( either from IG repo docs or output folder or IG template docs folder)
+    a) validate/confirm extension output OK.
+2) edit in xmlspy
+    a) grab xml from ig build and load into xml spy
+        get file, load as model
+    b) remove text and snapshot
+        sd.text = {}
+        sd.snapshot = {}
+    c) change name to snakecase id
+        sd.name = snakecase(id) (extension-itemOrder --> extension_item_order)
+    d) save and deprecate the spreadsheet entry
+        bash? write file  manually for now
+        change csv remove extension entry  manually for now
+
+    

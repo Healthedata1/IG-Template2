@@ -27,6 +27,12 @@
   "title" : "IG_Test3",
   "status" : "draft",
   "publisher" : "Health eData Inc",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ehaas@healthedatainc.com"
+    }]
+  }],
   "copyright" : "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
   "packageId" : "healthedatainc.mfhir",
   "license" : "CC0-1.0",

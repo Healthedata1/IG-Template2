@@ -8,6 +8,12 @@
   <title value="IG_Test3"/>
   <status value="draft"/>
   <publisher value="Health eData Inc"/>
+  <contact><!-- 0..* ContactDetail Contact details for the publisher -->
+    <telecom>
+      <system value="email"/>
+      <value value="ehaas@healthedatainc.com"/>
+    </telecom>
+  </contact>
   <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
   <!-- 0..1 Use and/or publishing restrictions -->
  <packageId value="healthedatainc.mfhir"/> <!-- 0..1 NPM Package name for IG -->

@@ -70,7 +70,7 @@ can only resize using html  or css ;-( -->
       <div id="project-status" class="project-status">   <!-- ig title text -->
         <b>IG_Test3 Implementation Guide</b>
         
-        (Release 0.0.0 Ballot)
+        CI Build
         
     </div>  <!-- end ig title text -->
 
@@ -92,7 +92,7 @@ can only resize using html  or css ;-( -->
     <div class="container">    <!-- container -->
       <div class="row">    <!-- row -->
        <div class="inner-wrapper">   <!-- inner-wrapper -->
-         <div class="col-12"><a name="d06f4262-006c-4bdb-a09c-25c0d78f6d61">​</a>    <!-- col -->
+         <div class="col-12"><a name="ea502bfc-ad55-4b59-bd70-cd5b401b5887">​</a>    <!-- col -->
               <!-- content of page -->
 
 
@@ -436,31 +436,10 @@ bootstrap.css,/assets/css/bootstrap.css
 jquery-ui.css,/assets/css/jquery-ui.css
 <br/>
 
-jquery-ui.min.css,/assets/css/jquery-ui.min.css
-<br/>
-
-jquery-ui.structure.css,/assets/css/jquery-ui.structure.css
-<br/>
-
-jquery-ui.structure.min.css,/assets/css/jquery-ui.structure.min.css
-<br/>
-
-jquery-ui.theme.css,/assets/css/jquery-ui.theme.css
-<br/>
-
-jquery-ui.theme.min.css,/assets/css/jquery-ui.theme.min.css
-<br/>
-
 project.css,/assets/css/project.css
 <br/>
 
 pygments-manni.css,/assets/css/pygments-manni.css
-<br/>
-
-section-numbering.css,/assets/css/section-numbering.css
-<br/>
-
-xml.css,/assets/css/xml.css
 <br/>
 
 glyphiconshalflings-regular.eot,/assets/fonts/glyphiconshalflings-regular.eot
@@ -499,6 +478,9 @@ favicon.png,/assets/ico/favicon.png
 cat.jpg,/assets/images/cat.jpg
 <br/>
 
+clippy.png,/assets/images/clippy.png
+<br/>
+
 download.png,/assets/images/download.png
 <br/>
 
@@ -535,37 +517,22 @@ anchor.min.js,/assets/js/anchor.min.js
 bootstrap.min.js,/assets/js/bootstrap.min.js
 <br/>
 
+clipboard.min.js,/assets/js/clipboard.min.js
+<br/>
+
 fhir.js,/assets/js/fhir.js
-<br/>
-
-html5shiv.js,/assets/js/html5shiv.js
-<br/>
-
-jquery-1.11.1.js,/assets/js/jquery-1.11.1.js
-<br/>
-
-jquery-1.11.1.min.js,/assets/js/jquery-1.11.1.min.js
-<br/>
-
-jquery-1.11.1.min.map,/assets/js/jquery-1.11.1.min.map
-<br/>
-
-jquery-ui.js,/assets/js/jquery-ui.js
 <br/>
 
 jquery-ui.min.js,/assets/js/jquery-ui.min.js
 <br/>
 
-jquery.js,/assets/js/jquery.js
+jquery.min.js,/assets/js/jquery.min.js
 <br/>
 
 respond.min.js,/assets/js/respond.min.js
 <br/>
 
 topofpage.js,/assets/js/topofpage.js
-<br/>
-
-xml.js,/assets/js/xml.js
 <br/>
 
 cc0.png,/cc0.png
@@ -2061,7 +2028,7 @@ p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Table of
 
 
 
-site.historypath = history.html
+site.historypath = #
 <br/>
 
 
@@ -4287,12 +4254,11 @@ value="markdown"/&gt;&lt;/page&gt;
    <div class="inner-wrapper">
     <p>
       IG_Test3 
-           Version 0.0.0 Ballot
-          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Fri, Dec 28, 2018 11:10-0800.
-      | <a style="color: #81BEF7" href="history.html">History</a>
+          Continuous Integration Build
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Mon, Feb 4, 2019 19:55-0800.
+      | <a style="color: #81BEF7" href="#">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
-        
         </p>
    </div>    <!-- /inner-wrapper -->
   </div>    <!-- /container -->
@@ -4310,7 +4276,7 @@ value="markdown"/&gt;&lt;/page&gt;
   <!-- Bootstrap core JavaScript
 ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-<script src="./assets/js/jquery.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./assets/js/jquery.min.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script src="./assets/js/bootstrap.min.js"> </script>
 <script src="./assets/js/respond.min.js"> </script>
 <script src="./assets/js/anchor.min.js"> </script>
@@ -4324,10 +4290,10 @@ value="markdown"/&gt;&lt;/page&gt;
   <!-- Analytics Below
 ================================================== -->
 
-  <!-- add anchors before the closing body tag. -->
-<script> anchors.add()</script>
-
-
+  <!-- add anchors before the closing body tag -->
+<script>
+anchors.add()
+</script>
 
 </body>
 

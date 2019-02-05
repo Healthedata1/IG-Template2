@@ -76,7 +76,7 @@ can only resize using html  or css ;-(
       <div id="project-status" class="project-status"> <!-- ig title text -->
         <b>IG_Test3 Implementation Guide</b>
         
-        (Release 0.0.0 Ballot)
+        CI Build
         
     </div><!-- end ig title text -->
 
@@ -198,8 +198,10 @@ can only resize using html  or css ;-(
 <!--status-bar-->
 <p id="publish-box">
 This is the 
-     Release 0.0.0 Ballot
-    of the IG_Test3 Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 4.0.0</a>.  See the <a href="history.html">Directory of published versions</a>
+    Continuous Integration Build
+   
+  
+  of the IG_Test3 Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 4.0.0</a>.  See the <a href="#">Directory of published versions</a>
 </p>
 
 
@@ -291,6 +293,48 @@ Formats: <a href="ImplementationGuide-ig.html">Narrative</a>, <a href="Implement
 
 
 
+<script src="assets/js/jquery.min.js"> </script>
+<script src="assets/js/clipboard.min.js"> </script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script>
+  // Tooltip
+
+  $('button').tooltip({
+    trigger: 'click',
+    placement: 'bottom'
+  });
+
+  function setTooltip(message) {
+    $('button').tooltip('hide')
+      .attr('data-original-title', message)
+      .tooltip('show');
+  }
+
+  function hideTooltip() {
+    setTimeout(function() {
+      $('button').tooltip('hide');
+    }, 1000);
+  }
+
+  // Clipboard
+
+  var clipboard = new ClipboardJS('button');
+
+  clipboard.on('success', function(e) {
+    setTooltip('Copied!');
+    hideTooltip();
+  });
+
+  clipboard.on('error', function(e) {
+    setTooltip('Failed!');
+    hideTooltip();
+  });
+
+</script>
+
+
+
 
 </div>
 
@@ -312,12 +356,11 @@ Formats: <a href="ImplementationGuide-ig.html">Narrative</a>, <a href="Implement
    <div class="inner-wrapper">
     <p>
       IG_Test3 
-           Version 0.0.0 Ballot
-          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Fri, Dec 28, 2018 11:10-0800.
-      | <a style="color: #81BEF7" href="history.html">History</a>
+          Continuous Integration Build
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Mon, Feb 4, 2019 19:55-0800.
+      | <a style="color: #81BEF7" href="#">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
-        </span>
         </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->
@@ -335,7 +378,7 @@ Formats: <a href="ImplementationGuide-ig.html">Narrative</a>, <a href="Implement
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./assets/js/jquery.min.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script src="./assets/js/bootstrap.min.js"> </script>
 <script src="./assets/js/respond.min.js"> </script>
 <script src="./assets/js/anchor.min.js"> </script>
@@ -351,10 +394,10 @@ Formats: <a href="ImplementationGuide-ig.html">Narrative</a>, <a href="Implement
 <!-- Analytics Below
 ================================================== -->
 
-<!-- add anchors before the closing body tag. -->
-<script> anchors.add()</script>
-
-
+<!-- add anchors before the closing body tag -->
+<script>
+anchors.add()
+</script>
 
 </body>
 </html>

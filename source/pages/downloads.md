@@ -22,7 +22,7 @@ Schematrons are also available for download and listed below:
 
 ### Examples
 
-all the examples that are used in this Implementation Guide available for download:
+[All the examples] that are used in this Implementation Guide available for download:
 
 - [XML](examples.xml.zip)
 - [JSON](examples.json.zip)
@@ -32,3 +32,8 @@ all the examples that are used in this Implementation Guide available for downlo
 A downloadable version of this IG is available so it can be hosted locally:
 
 - [Downloadable Copy](full-ig.zip)
+
+add link list to bottom of each page....
+<!-- {% raw %}>{% include link-list.md %} {% endraw %}-->
+
+{% include link-list.md %}

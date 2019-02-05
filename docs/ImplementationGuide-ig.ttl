@@ -18,6 +18,14 @@
   fhir:ImplementationGuide.title [ fhir:value "IG_Test3"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.publisher [ fhir:value "Health eData Inc"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "ehaas@healthedatainc.com" ]
+     ]
+  ];
   fhir:ImplementationGuide.copyright [ fhir:value "Used by permission of Health eData Inc, all rights reserved Creative Commons License"];
   fhir:ImplementationGuide.packageId [ fhir:value "healthedatainc.mfhir"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
