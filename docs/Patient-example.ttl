@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "example"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient";
+       fhir:value "http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+       fhir:link <http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient>
      ]
   ];
   fhir:DomainResource.text [

@@ -119,7 +119,7 @@
 			<type>
 				<code value="Reference"/>
 				<profile value="http://www.fhir.org/guides/test3/StructureDefinition/ifr"/>
-				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+				<targetProfile value="http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient"/>
 			</type>
 			<mustSupport value="true"/>
 			<isModifier value="false"/>

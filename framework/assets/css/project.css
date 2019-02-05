@@ -565,7 +565,7 @@ fieldset[disabled] .btn-example:active,
 .btn-example.disabled.active,
 .btn-example[disabled].active,
 fieldset[disabled] .btn-example.active {
-  background-color: #EFF3F6;.
+  background-color: #EFF3F6;
   border-color: #8C88A3;
 }
 

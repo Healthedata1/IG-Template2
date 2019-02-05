@@ -1,0 +1,13 @@
+change version in IGs
+
+1. make sure have latest package for the dependent IGs.  ( check version, current or dev )
+  -  this is often auto downloaded but if not working then:
+      1. find the package.tgz file for the dependency and add it manually to the local package repository
+       for me is located here `/Users/ehaas/.fhir/packages`
+
+1. check that path is correct for the version you are dependent on
+1. check that the canonicals are for the right version
+   e.g.`http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient` vs `http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient`
+   (doing a careful find and replace in source can accomplish this)
+
+1. can use dev locally if stuff and autobuilder is messed up.

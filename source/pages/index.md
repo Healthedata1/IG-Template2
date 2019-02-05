@@ -73,8 +73,6 @@ and more stuff
 
 #### And More Stuff
 
-<button class="btn btn-primary" data-clipboard-text="It worked!">Click me</button>
-
 add link list to bottom of each page....
 <!-- {% raw %}>{% include link-list.md %} {% endraw %}-->
 

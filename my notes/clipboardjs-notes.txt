@@ -1,0 +1,8 @@
+tojol tips and clipboard.js functionality notes
+
+need to have all dependencies met when invoked
+
+use the inspect console to see js errors
+
+may not need to load all scripts for each page jsut when invoke
+investigate  and unclear when need to run script for conformance pages.

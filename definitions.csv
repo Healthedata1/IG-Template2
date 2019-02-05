@@ -29,7 +29,6 @@ do-transforms,FALSE
 canonicalBase,http://www.fhir.org/guides/test3
 dependencyList.name,uscore
 dependencyList.location,http://hl7.org/fhir/us/core
-dependencyList.source,dependencies/uscore-vp
 dependencyList.version,current
 special-urls,
 tool,jekyll
