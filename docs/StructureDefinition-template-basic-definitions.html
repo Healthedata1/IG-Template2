@@ -545,7 +545,7 @@ This is the
   <tr><td>Definition</td><td><p>Identifies the patient, practitioner, device or any other resource that is the "focus" of this resource.</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="5a221e08-60bd-4a4a-b9eb-576b80343472">​</a><a href="http://build.fhir.org/datatypes.html#Reference">Reference</a>(<a href="file:/Users/ehaas/Documents/FHIR/US-Core-R4/output/StructureDefinition-us-core-patient.html" title="http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient">USCorePatientProfile</a>)</td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="74e1848c-f02a-497a-8f48-0ab83bcd8de6">​</a><a href="http://build.fhir.org/datatypes.html#Reference">Reference</a>(<a href="file:/Users/ehaas/Documents/FHIR/US-Core-R4/output/StructureDefinition-us-core-patient.html" title="http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient">USCorePatientProfile</a>)</td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Needed for partitioning the resource by Patient.</p>
 </td></tr>
@@ -592,26 +592,26 @@ This is the
 <script>
   // Tooltip
 
-  $('button').tooltip({
+  $('#copy-button').tooltip({
     trigger: 'click',
     placement: 'bottom'
   });
 
   function setTooltip(message) {
-    $('button').tooltip('hide')
+    $('#copy-button').tooltip('hide')
       .attr('data-original-title', message)
       .tooltip('show');
   }
 
   function hideTooltip() {
     setTimeout(function() {
-      $('button').tooltip('hide');
+      $('#copy-button').tooltip('hide');
     }, 1000);
   }
 
   // Clipboard
 
-  var clipboard = new ClipboardJS('button');
+  var clipboard = new ClipboardJS('#copy-button');
 
   clipboard.on('success', function(e) {
     setTooltip('Copied!');
@@ -649,7 +649,7 @@ This is the
     <p>
       IG_Test3 
           Continuous Integration Build
-          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Tue, Feb 5, 2019 14:27-0800.
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Tue, Feb 5, 2019 16:08-0800.
       | <a style="color: #81BEF7" href="#">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>

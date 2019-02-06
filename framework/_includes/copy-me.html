@@ -5,26 +5,26 @@
 <script>
   // Tooltip
 
-  $('button').tooltip({
+  $('#copy-button').tooltip({
     trigger: 'click',
     placement: 'bottom'
   });
 
   function setTooltip(message) {
-    $('button').tooltip('hide')
+    $('#copy-button').tooltip('hide')
       .attr('data-original-title', message)
       .tooltip('show');
   }
 
   function hideTooltip() {
     setTimeout(function() {
-      $('button').tooltip('hide');
+      $('#copy-button').tooltip('hide');
     }, 1000);
   }
 
   // Clipboard
 
-  var clipboard = new ClipboardJS('button');
+  var clipboard = new ClipboardJS('#copy-button');
 
   clipboard.on('success', function(e) {
     setTooltip('Copied!');
