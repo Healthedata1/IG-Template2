@@ -2,9 +2,9 @@
 =========================================
 
 err = 22, warn = 28, info = 6
-Generated Mon Feb 11 10:21:00 PST 2019. FHIR version 4.0.0 for 4.0.0
+Generated Mon Feb 11 10:30:54 PST 2019. FHIR version 4.0.0 for 4.0.0
 
- Build Errors : 92 / 0
+ Build Errors : 80 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 4 / 3
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes : 0 / 1
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-ifr : 0 / 2
@@ -17,12 +17,6 @@ Generated Mon Feb 11 10:21:00 PST 2019. FHIR version 4.0.0 for 4.0.0
 </table>
 == n/a ==
 ERROR: ??: The reference http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status could not be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 243, column 578: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 250, column 588: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 257, column 586: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 264, column 451: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 271, column 600: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 278, column 467: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/p/strong/a at Line 346, column 25: The link 'file:/Users/ehaas/Documents/FHIR/US-Core-R4/output/StructureDefinition-us-core-patient.html' for "USCorePatientProfile" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 413, column 1675: The link 'file:/Users/ehaas/Documents/FHIR/US-Core-R4/output/StructureDefinition-us-core-race.html' for "http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-race" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 414, column 1690: The link 'file:/Users/ehaas/Documents/FHIR/US-Core-R4/output/StructureDefinition-us-core-ethnicity.html' for "http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-ethnicity" cannot be resolved
@@ -75,18 +69,6 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2832, column 18: The link '' for "Terminology " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2850, column 18: The link '' for "Toc " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2868, column 18: The link '' for "Todo " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/p/a at Line 244, column 579: The link '' for "
-" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/p/a at Line 248, column 589: The link '' for "
-" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/p/a at Line 252, column 587: The link '' for "
-" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/p/a at Line 256, column 452: The link '' for "
-" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/p/a at Line 260, column 601: The link '' for "
-" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/div/div/div/ul/li/p/a at Line 264, column 468: The link '' for "
-" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2199, column 18: The link '' for "Any " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2217, column 18: The link '' for "Capabilitystatement Client " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2247, column 18: The link '' for "Capabilitystatement Server " cannot be resolved

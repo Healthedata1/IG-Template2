@@ -15,7 +15,7 @@ The following Profiles for FHIR *resources* have been defined for this implement
 
 The following Profiles for FHIR *datatypes* have been defined for this implementation guide.
 
-{% for sd_hash in site.data.structuredefinitions- %}
+{% for sd_hash in site.data.structuredefinitions -%}
   {%- assign sd = sd_hash[1] -%}
   {%- if sd.kind  == "complex-type" and sd.type != "Extension" -%}
     - [{{sd.name}}]({{sd.path}})
