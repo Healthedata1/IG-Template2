@@ -205,7 +205,7 @@ This is the
 
 
   <style type="text/css">
-  h2,h3,h4,h5,h6{--pagenumber: "3.2"}
+  h2,h3,h4,h5,h6{--pagenumber: "3.3"}
   </style>
 
 
@@ -246,7 +246,6 @@ This is the
 
 
     <!-- ============CONTENT CONTENT=============== -->
-
 
 
     <!-- ============CONTENT CONTENT=============== -->
@@ -545,7 +544,7 @@ This is the
   <tr><td>Definition</td><td><p>Identifies the patient, practitioner, device or any other resource that is the "focus" of this resource.</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="74e1848c-f02a-497a-8f48-0ab83bcd8de6">​</a><a href="http://build.fhir.org/datatypes.html#Reference">Reference</a>(<a href="file:/Users/ehaas/Documents/FHIR/US-Core-R4/output/StructureDefinition-us-core-patient.html" title="http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient">USCorePatientProfile</a>)</td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="937c2308-d34f-4d58-bf02-ae714ce08090">​</a><a href="http://build.fhir.org/datatypes.html#Reference">Reference</a>(<a href="file:/Users/ehaas/Documents/FHIR/US-Core-R4/output/StructureDefinition-us-core-patient.html" title="http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient">USCorePatientProfile</a>)</td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Needed for partitioning the resource by Patient.</p>
 </td></tr>
@@ -585,9 +584,62 @@ This is the
 
 
 
-<script src="assets/js/jquery.min.js"> </script>
+
+
+
+        <!-- /inner-wrapper -->
+                <!-- /row -->
+            <!-- /container -->
+
+        <!-- /segment-content -->
+
+  <!-- back to top arrow -->
+
+<a data-toggle="tooltip" role="button" data-placement="left" id="back-to-top" href="#" title="Click to return on the top page" class="btn btn-info btn-lg back-to-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+
+  <!-- end back to top arrow -->
+
+<div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+  <div class="container">    <!-- container -->
+   <div class="inner-wrapper">
+    <p>
+      IG_Test3 
+          Continuous Integration Build
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Mon, Feb 11, 2019 10:20-0800.
+      | <a style="color: #81BEF7" href="#">History</a>
+      | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
+        <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
+        </p>
+   </div>    <!-- /inner-wrapper -->
+  </div>    <!-- /container -->
+ </div>    <!-- /segment-footer -->
+    <!-- disqus thread -->
+    <!-- disqus -->
+    <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+  <div class="container">    <!-- container -->
+  </div>    <!-- /container -->
+ </div>    <!-- /segment-post-footer -->
+
+   <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.min.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./assets/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+<script src="./assets/js/anchor.min.js"> </script>
+<script src="./assets/js/fhir.js"> </script>
+
+
+<script src="./assets/js/topofpage.js"> </script>
+
+
+
+
 <script src="assets/js/clipboard.min.js"> </script>
-<script src="assets/js/bootstrap.min.js"></script>
 
 <script>
   // Tooltip
@@ -624,62 +676,6 @@ This is the
   });
 
 </script>
-
-
-
-
-
-
-        <!-- /inner-wrapper -->
-                <!-- /row -->
-            <!-- /container -->
-
-        <!-- /segment-content -->
-
-  <!-- back to top arrow -->
-
-<a data-toggle="tooltip" role="button" data-placement="left" id="back-to-top" href="#" title="Click to return on the top page" class="btn btn-info btn-lg back-to-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
-
-
-  <!-- end back to top arrow -->
-
-<div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-  <div class="container">    <!-- container -->
-   <div class="inner-wrapper">
-    <p>
-      IG_Test3 
-          Continuous Integration Build
-          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Tue, Feb 5, 2019 16:08-0800.
-      | <a style="color: #81BEF7" href="#">History</a>
-      | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
-        <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
-        </p>
-   </div>    <!-- /inner-wrapper -->
-  </div>    <!-- /container -->
- </div>    <!-- /segment-footer -->
-    <!-- disqus thread -->
-    <!-- disqus -->
-    <!-- end disqus -->
-
- <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-  <div class="container">    <!-- container -->
-  </div>    <!-- /container -->
- </div>    <!-- /segment-post-footer -->
-
-   <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
-================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-<script src="./assets/js/jquery.min.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-<script src="./assets/js/bootstrap.min.js"> </script>
-<script src="./assets/js/respond.min.js"> </script>
-<script src="./assets/js/anchor.min.js"> </script>
-<script src="./assets/js/fhir.js"> </script>
-
-
-<script src="./assets/js/topofpage.js"> </script>
-
-
 
 
 

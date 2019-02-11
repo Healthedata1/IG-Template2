@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ifr"/>
+  <url value="http://www.fhir.org/guides/test3/StructureDefinition/ifr"/>
+  <version value="0.0.0"/>
+  <name value="Identifer Free Reference Data Type"/>
+  <status value="draft"/>
+  <date value="2017-06-02"/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="Reference"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Reference"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Reference">
+      <path value="Reference"/>
+      <definition value="This is a simple profile on a datatype.  In this case to create a Identifier free Reference."/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Reference.identifier">
+      <path value="Reference.identifier"/>
+      <min value="0"/>
+      <max value="0"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+  </differential>
+</StructureDefinition>

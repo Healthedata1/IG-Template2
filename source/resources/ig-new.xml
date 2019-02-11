@@ -63,6 +63,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ifr"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CapabilityStatement/server"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -116,6 +122,11 @@
         <nameUrl value="profiles.html"/>
         <title value="Profiles and Extensions"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="StructureDefinition-ifr.html"/>
+          <title value="StructureDefinition Ifr"/>
+          <generation value="generated"/>
+        </page>
         <page>
           <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
           <title value="StructureDefinition Template Profile On Profile"/>

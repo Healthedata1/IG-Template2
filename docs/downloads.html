@@ -252,6 +252,9 @@ This is the
     <p><a href="extension-complex.sch">Extension Complex </a></p>
   </li>
   <li>
+    <p><a href="ifr.sch">Ifr </a></p>
+  </li>
+  <li>
     <p><a href="template-basic.sch">Template Basic </a></p>
   </li>
   <li>
@@ -313,7 +316,7 @@ This is the
     <p>
       IG_Test3 
           Continuous Integration Build
-          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Tue, Feb 5, 2019 16:08-0800.
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Mon, Feb 11, 2019 10:20-0800.
       | <a style="color: #81BEF7" href="#">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
@@ -342,6 +345,45 @@ This is the
 
 
 
+
+
+<script src="assets/js/clipboard.min.js"> </script>
+
+<script>
+  // Tooltip
+
+  $('#copy-button').tooltip({
+    trigger: 'click',
+    placement: 'bottom'
+  });
+
+  function setTooltip(message) {
+    $('#copy-button').tooltip('hide')
+      .attr('data-original-title', message)
+      .tooltip('show');
+  }
+
+  function hideTooltip() {
+    setTimeout(function() {
+      $('#copy-button').tooltip('hide');
+    }, 1000);
+  }
+
+  // Clipboard
+
+  var clipboard = new ClipboardJS('#copy-button');
+
+  clipboard.on('success', function(e) {
+    setTooltip('Copied!');
+    hideTooltip();
+  });
+
+  clipboard.on('error', function(e) {
+    setTooltip('Failed!');
+    hideTooltip();
+  });
+
+</script>
 
 
 

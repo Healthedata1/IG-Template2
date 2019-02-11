@@ -68,6 +68,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/ifr"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "CapabilityStatement/server"
       },
       "exampleBoolean" : false
@@ -122,6 +128,11 @@
         "title" : "Profiles and Extensions",
         "generation" : "markdown",
         "page" : [{
+          "nameUrl" : "StructureDefinition-ifr.html",
+          "title" : "StructureDefinition Ifr",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "StructureDefinition-template-profile-on-profile.html",
           "title" : "StructureDefinition Template Profile On Profile",
           "generation" : "generated"

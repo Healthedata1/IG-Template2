@@ -780,3 +780,110 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72109-2",
+  "display" : "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]"
+}, "valueSet" :null}####
+v: {
+  "display" : "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "68518-0",
+  "display" : "How often do you have a drink containing alcohol"
+}, "valueSet" :null}####
+v: {
+  "display" : "How often do you have a drink containing alcohol [SAMHSA]",
+  "severity" : "warning",
+  "error" : "The display \"How often do you have a drink containing alcohol\" is not a valid display for the code {http://loinc.org}68518-0 - should be one of [\"How often do you have a drink containing alcohol [SAMHSA]\",]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "68519-8",
+  "display" : "How many standard drinks containing alcohol do you have on a typical day"
+}, "valueSet" :null}####
+v: {
+  "display" : "How many standard drinks containing alcohol do you have on a typical day [SAMHSA]",
+  "severity" : "warning",
+  "error" : "The display \"How many standard drinks containing alcohol do you have on a typical day\" is not a valid display for the code {http://loinc.org}68519-8 - should be one of [\"How many standard drinks containing alcohol do you have on a typical day [SAMHSA]\",]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "68520-6",
+  "display" : "How often do you have 6 or more drinks on 1 occasion"
+}, "valueSet" :null}####
+v: {
+  "display" : "How often do you have 6 or more drinks on 1 occasion [SAMHSA]",
+  "severity" : "warning",
+  "error" : "The display \"How often do you have 6 or more drinks on 1 occasion\" is not a valid display for the code {http://loinc.org}68520-6 - should be one of [\"How often do you have 6 or more drinks on 1 occasion [SAMHSA]\",]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72109-2"
+}, "valueSet" :null}####
+v: {
+  "display" : "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "68518-0"
+}, "valueSet" :null}####
+v: {
+  "display" : "How often do you have a drink containing alcohol [SAMHSA]",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18929-2",
+  "display" : "4 or more times a week"
+}, "valueSet" :null}####
+v: {
+  "display" : "4 or more times a week",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18932-6",
+  "display" : "10 or more"
+}, "valueSet" :null}####
+v: {
+  "display" : "10 or more",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18934-2",
+  "display" : "Daily or almost daily"
+}, "valueSet" :null}####
+v: {
+  "display" : "Daily or almost daily",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "82666-9"
+}, "valueSet" :null}####
+v: {
+  "display" : "Drug Abuse Screening Test-10 [DAST-10]",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

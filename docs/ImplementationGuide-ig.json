@@ -82,6 +82,18 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-ifr.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ifr"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CapabilityStatement-server.html"
           }
         ],
@@ -243,6 +255,11 @@
           "title": "Profiles and Extensions",
           "generation": "markdown",
           "page": [
+            {
+              "nameUrl": "StructureDefinition-ifr.html",
+              "title": "StructureDefinition Ifr",
+              "generation": "generated"
+            },
             {
               "nameUrl": "StructureDefinition-template-profile-on-profile.html",
               "title": "StructureDefinition Template Profile On Profile",

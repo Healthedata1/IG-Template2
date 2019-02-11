@@ -60,6 +60,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ifr.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ifr"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-server.html"/>
       </extension>
       <reference>
@@ -184,6 +193,11 @@
         <nameUrl value="profiles.html"/>
         <title value="Profiles and Extensions"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="StructureDefinition-ifr.html"/>
+          <title value="StructureDefinition Ifr"/>
+          <generation value="generated"/>
+        </page>
         <page>
           <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
           <title value="StructureDefinition Template Profile On Profile"/>

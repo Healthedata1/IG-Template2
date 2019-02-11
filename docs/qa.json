@@ -3,9 +3,9 @@
   "name": "IG_Test3",
   "package-id": "healthedatainc.mfhir",
   "ig-ver": "0.0.0",
-  "date": "Tue, 05 Feb, 2019 16:08:56 -0800",
+  "date": "Mon, 11 Feb, 2019 10:20:53 -0800",
   "errs": 22,
-  "warnings": 24,
+  "warnings": 28,
   "hints": 6,
   "version": "4.0.0",
   "tool": "4.0.0 (3)"

@@ -92,7 +92,7 @@ can only resize using html  or css ;-( -->
     <div class="container">    <!-- container -->
       <div class="row">    <!-- row -->
        <div class="inner-wrapper">   <!-- inner-wrapper -->
-         <div class="col-12"><a name="dfc09688-020b-4a5b-984e-894f866d992c">​</a>    <!-- col -->
+         <div class="col-12"><a name="ceae812a-0099-470c-a61f-3aa885e612fc">​</a>    <!-- col -->
               <!-- content of page -->
 
 
@@ -217,6 +217,24 @@ StructureDefinition-extension-complex.ttl.html,StructureDefinition-extension-com
 <br/>
 
 StructureDefinition-extension-complex.xml.html,StructureDefinition-extension-complex.xml.html
+<br/>
+
+StructureDefinition-ifr-definitions.html,StructureDefinition-ifr-definitions.html
+<br/>
+
+StructureDefinition-ifr-mappings.html,StructureDefinition-ifr-mappings.html
+<br/>
+
+StructureDefinition-ifr.html,StructureDefinition-ifr.html
+<br/>
+
+StructureDefinition-ifr.json.html,StructureDefinition-ifr.json.html
+<br/>
+
+StructureDefinition-ifr.ttl.html,StructureDefinition-ifr.ttl.html
+<br/>
+
+StructureDefinition-ifr.xml.html,StructureDefinition-ifr.xml.html
 <br/>
 
 StructureDefinition-template-basic-definitions.html,StructureDefinition-template-basic-definitions.html
@@ -346,6 +364,9 @@ ComplexExtension.java,/ComplexExtension.java
 ExampleExtension.java,/ExampleExtension.java
 <br/>
 
+IdentiferFreeReferenceDataType.java,/IdentiferFreeReferenceDataType.java
+<br/>
+
 ImplementationGuide-ig.json,/ImplementationGuide-ig.json
 <br/>
 
@@ -389,6 +410,15 @@ StructureDefinition-extension-complex.ttl,/StructureDefinition-extension-complex
 <br/>
 
 StructureDefinition-extension-complex.xml,/StructureDefinition-extension-complex.xml
+<br/>
+
+StructureDefinition-ifr.json,/StructureDefinition-ifr.json
+<br/>
+
+StructureDefinition-ifr.ttl,/StructureDefinition-ifr.ttl
+<br/>
+
+StructureDefinition-ifr.xml,/StructureDefinition-ifr.xml
 <br/>
 
 StructureDefinition-template-basic.json,/StructureDefinition-template-basic.json
@@ -580,9 +610,6 @@ xml.js,/assets/js/xml.js
 cc0.png,/cc0.png
 <br/>
 
-client.openapi.json,/client.openapi.json
-<br/>
-
 extension-blah.csv,/extension-blah.csv
 <br/>
 
@@ -730,6 +757,15 @@ icon_slice.png,/icon_slice.png
 icon_text.png,/icon_text.png
 <br/>
 
+ifr.csv,/ifr.csv
+<br/>
+
+ifr.sch,/ifr.sch
+<br/>
+
+ifr.xlsx,/ifr.xlsx
+<br/>
+
 lock.png,/lock.png
 <br/>
 
@@ -737,9 +773,6 @@ modifier.png,/modifier.png
 <br/>
 
 mustsupport.png,/mustsupport.png
-<br/>
-
-server.openapi.json,/server.openapi.json
 <br/>
 
 summary.png,/summary.png
@@ -1039,9 +1072,6 @@ tbl_bck1111.png,/tbl_bck1111.png
 tbl_bck11110.png,/tbl_bck11110.png
 <br/>
 
-tbl_bck1112.png,/tbl_bck1112.png
-<br/>
-
 tbl_bck112.png,/tbl_bck112.png
 <br/>
 
@@ -1203,11 +1233,12 @@ pagepath = html_pages.html
 &nbsp;&nbsp;- 1 - [Home](index.html)
 &nbsp;&nbsp;- 2 - [General Guidance](guidance.html)
 &nbsp;&nbsp;- 3 - [Profiles and Extensions](profiles.html)
-&nbsp;&nbsp;&nbsp;&nbsp;- 3.1 - [StructureDefinition Template Profile On Profile](StructureDefinition-template-profile-on-profile.html)
-&nbsp;&nbsp;&nbsp;&nbsp;- 3.2 - [StructureDefinition Template Basic](StructureDefinition-template-basic.html)
-&nbsp;&nbsp;&nbsp;&nbsp;- 3.3 - [StructureDefinition Extension Complex](StructureDefinition-extension-complex.html)
-&nbsp;&nbsp;&nbsp;&nbsp;- 3.4 - [StructureDefinition Extension Blah](StructureDefinition-extension-blah.html)
-&nbsp;&nbsp;&nbsp;&nbsp;- 3.5 - [StructureDefinition Extension Blah2](StructureDefinition-extension-blah2.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 3.1 - [StructureDefinition Ifr](StructureDefinition-ifr.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 3.2 - [StructureDefinition Template Profile On Profile](StructureDefinition-template-profile-on-profile.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 3.3 - [StructureDefinition Template Basic](StructureDefinition-template-basic.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 3.4 - [StructureDefinition Extension Complex](StructureDefinition-extension-complex.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 3.5 - [StructureDefinition Extension Blah](StructureDefinition-extension-blah.html)
+&nbsp;&nbsp;&nbsp;&nbsp;- 3.6 - [StructureDefinition Extension Blah2](StructureDefinition-extension-blah2.html)
 &nbsp;&nbsp;- 4 - [Operations](operations.html)
 &nbsp;&nbsp;- 5 - [Terminology](terminology.html)
 &nbsp;&nbsp;&nbsp;&nbsp;- 5.1 - [ValueSet Blah Codes](ValueSet-blah-codes.html)
@@ -1262,391 +1293,469 @@ p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><b>Profiles
 
 
 
-p = StructureDefinition-template-profile-on-profile.html{"title"=&gt;"StructureDefinition Template Profile On Profile", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>", "examples"=&gt;[]}
+p = StructureDefinition-ifr.html{"title"=&gt;"StructureDefinition Ifr", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li>", "examples"=&gt;[]}
+<br/>
+
+pagepath = StructureDefinition-ifr.html
+<br/>
+p.title = StructureDefinition Ifr
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li></pre>
+
+
+
+p = StructureDefinition-ifr.xml.html{"title"=&gt;"StructureDefinition Ifr - XML Representation", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-ifr.xml.html
+<br/>
+p.title = StructureDefinition Ifr - XML Representation
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li></pre>
+
+
+
+p = StructureDefinition-ifr.json.html{"title"=&gt;"StructureDefinition Ifr - JSON Representation", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-ifr.json.html
+<br/>
+p.title = StructureDefinition Ifr - JSON Representation
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li></pre>
+
+
+
+p = StructureDefinition-ifr.ttl.html{"title"=&gt;"StructureDefinition Ifr - TTL Representation", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-ifr.ttl.html
+<br/>
+p.title = StructureDefinition Ifr - TTL Representation
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li></pre>
+
+
+
+p = StructureDefinition-ifr-definitions.html{"title"=&gt;"StructureDefinition Ifr - Definitions", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-ifr-definitions.html
+<br/>
+p.title = StructureDefinition Ifr - Definitions
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li></pre>
+
+
+
+p = StructureDefinition-ifr-mappings.html{"title"=&gt;"StructureDefinition Ifr - mappings", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li>"}
+<br/>
+
+pagepath = StructureDefinition-ifr-mappings.html
+<br/>
+p.title = StructureDefinition Ifr - mappings
+<br/>
+p.label = 3.1
+<br/>
+p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Ifr</b></li></pre>
+
+
+
+p = StructureDefinition-template-profile-on-profile.html{"title"=&gt;"StructureDefinition Template Profile On Profile", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>", "examples"=&gt;[]}
 <br/>
 
 pagepath = StructureDefinition-template-profile-on-profile.html
 <br/>
 p.title = StructureDefinition Template Profile On Profile
 <br/>
-p.label = 3.1
+p.label = 3.2
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li></pre>
 
 
 
-p = StructureDefinition-template-profile-on-profile.xml.html{"title"=&gt;"StructureDefinition Template Profile On Profile - XML Representation", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>"}
+p = StructureDefinition-template-profile-on-profile.xml.html{"title"=&gt;"StructureDefinition Template Profile On Profile - XML Representation", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-template-profile-on-profile.xml.html
 <br/>
 p.title = StructureDefinition Template Profile On Profile - XML Representation
 <br/>
-p.label = 3.1
+p.label = 3.2
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li></pre>
 
 
 
-p = StructureDefinition-template-profile-on-profile.json.html{"title"=&gt;"StructureDefinition Template Profile On Profile - JSON Representation", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>"}
+p = StructureDefinition-template-profile-on-profile.json.html{"title"=&gt;"StructureDefinition Template Profile On Profile - JSON Representation", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-template-profile-on-profile.json.html
 <br/>
 p.title = StructureDefinition Template Profile On Profile - JSON Representation
 <br/>
-p.label = 3.1
+p.label = 3.2
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li></pre>
 
 
 
-p = StructureDefinition-template-profile-on-profile.ttl.html{"title"=&gt;"StructureDefinition Template Profile On Profile - TTL Representation", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>"}
+p = StructureDefinition-template-profile-on-profile.ttl.html{"title"=&gt;"StructureDefinition Template Profile On Profile - TTL Representation", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-template-profile-on-profile.ttl.html
 <br/>
 p.title = StructureDefinition Template Profile On Profile - TTL Representation
 <br/>
-p.label = 3.1
+p.label = 3.2
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li></pre>
 
 
 
-p = StructureDefinition-template-profile-on-profile-definitions.html{"title"=&gt;"StructureDefinition Template Profile On Profile - Definitions", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>"}
+p = StructureDefinition-template-profile-on-profile-definitions.html{"title"=&gt;"StructureDefinition Template Profile On Profile - Definitions", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-template-profile-on-profile-definitions.html
 <br/>
 p.title = StructureDefinition Template Profile On Profile - Definitions
 <br/>
-p.label = 3.1
+p.label = 3.2
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li></pre>
 
 
 
-p = StructureDefinition-template-profile-on-profile-mappings.html{"title"=&gt;"StructureDefinition Template Profile On Profile - mappings", "label"=&gt;"2.1", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>"}
+p = StructureDefinition-template-profile-on-profile-mappings.html{"title"=&gt;"StructureDefinition Template Profile On Profile - mappings", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-template-profile-on-profile-mappings.html
 <br/>
 p.title = StructureDefinition Template Profile On Profile - mappings
 <br/>
-p.label = 3.1
+p.label = 3.2
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Profile On Profile</b></li></pre>
 
 
 
-p = StructureDefinition-template-basic.html{"title"=&gt;"StructureDefinition Template Basic", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>", "examples"=&gt;[]}
+p = StructureDefinition-template-basic.html{"title"=&gt;"StructureDefinition Template Basic", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>", "examples"=&gt;[]}
 <br/>
 
 pagepath = StructureDefinition-template-basic.html
 <br/>
 p.title = StructureDefinition Template Basic
 <br/>
-p.label = 3.2
+p.label = 3.3
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li></pre>
 
 
 
-p = StructureDefinition-template-basic.xml.html{"title"=&gt;"StructureDefinition Template Basic - XML Representation", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>"}
+p = StructureDefinition-template-basic.xml.html{"title"=&gt;"StructureDefinition Template Basic - XML Representation", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-template-basic.xml.html
 <br/>
 p.title = StructureDefinition Template Basic - XML Representation
 <br/>
-p.label = 3.2
+p.label = 3.3
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li></pre>
 
 
 
-p = StructureDefinition-template-basic.json.html{"title"=&gt;"StructureDefinition Template Basic - JSON Representation", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>"}
+p = StructureDefinition-template-basic.json.html{"title"=&gt;"StructureDefinition Template Basic - JSON Representation", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-template-basic.json.html
 <br/>
 p.title = StructureDefinition Template Basic - JSON Representation
 <br/>
-p.label = 3.2
+p.label = 3.3
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li></pre>
 
 
 
-p = StructureDefinition-template-basic.ttl.html{"title"=&gt;"StructureDefinition Template Basic - TTL Representation", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>"}
+p = StructureDefinition-template-basic.ttl.html{"title"=&gt;"StructureDefinition Template Basic - TTL Representation", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-template-basic.ttl.html
 <br/>
 p.title = StructureDefinition Template Basic - TTL Representation
 <br/>
-p.label = 3.2
+p.label = 3.3
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li></pre>
 
 
 
-p = StructureDefinition-template-basic-definitions.html{"title"=&gt;"StructureDefinition Template Basic - Definitions", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>"}
+p = StructureDefinition-template-basic-definitions.html{"title"=&gt;"StructureDefinition Template Basic - Definitions", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-template-basic-definitions.html
 <br/>
 p.title = StructureDefinition Template Basic - Definitions
 <br/>
-p.label = 3.2
+p.label = 3.3
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li></pre>
 
 
 
-p = StructureDefinition-template-basic-mappings.html{"title"=&gt;"StructureDefinition Template Basic - mappings", "label"=&gt;"2.2", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>"}
+p = StructureDefinition-template-basic-mappings.html{"title"=&gt;"StructureDefinition Template Basic - mappings", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-template-basic-mappings.html
 <br/>
 p.title = StructureDefinition Template Basic - mappings
 <br/>
-p.label = 3.2
+p.label = 3.3
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Template Basic</b></li></pre>
 
 
 
-p = StructureDefinition-extension-complex.html{"title"=&gt;"StructureDefinition Extension Complex", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>", "examples"=&gt;[]}
+p = StructureDefinition-extension-complex.html{"title"=&gt;"StructureDefinition Extension Complex", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>", "examples"=&gt;[]}
 <br/>
 
 pagepath = StructureDefinition-extension-complex.html
 <br/>
 p.title = StructureDefinition Extension Complex
 <br/>
-p.label = 3.3
+p.label = 3.4
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li></pre>
 
 
 
-p = StructureDefinition-extension-complex.xml.html{"title"=&gt;"StructureDefinition Extension Complex - XML Representation", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>"}
+p = StructureDefinition-extension-complex.xml.html{"title"=&gt;"StructureDefinition Extension Complex - XML Representation", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-complex.xml.html
 <br/>
 p.title = StructureDefinition Extension Complex - XML Representation
 <br/>
-p.label = 3.3
+p.label = 3.4
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li></pre>
 
 
 
-p = StructureDefinition-extension-complex.json.html{"title"=&gt;"StructureDefinition Extension Complex - JSON Representation", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>"}
+p = StructureDefinition-extension-complex.json.html{"title"=&gt;"StructureDefinition Extension Complex - JSON Representation", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-complex.json.html
 <br/>
 p.title = StructureDefinition Extension Complex - JSON Representation
 <br/>
-p.label = 3.3
+p.label = 3.4
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li></pre>
 
 
 
-p = StructureDefinition-extension-complex.ttl.html{"title"=&gt;"StructureDefinition Extension Complex - TTL Representation", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>"}
+p = StructureDefinition-extension-complex.ttl.html{"title"=&gt;"StructureDefinition Extension Complex - TTL Representation", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-complex.ttl.html
 <br/>
 p.title = StructureDefinition Extension Complex - TTL Representation
 <br/>
-p.label = 3.3
+p.label = 3.4
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li></pre>
 
 
 
-p = StructureDefinition-extension-complex-definitions.html{"title"=&gt;"StructureDefinition Extension Complex - Definitions", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>"}
+p = StructureDefinition-extension-complex-definitions.html{"title"=&gt;"StructureDefinition Extension Complex - Definitions", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-complex-definitions.html
 <br/>
 p.title = StructureDefinition Extension Complex - Definitions
 <br/>
-p.label = 3.3
+p.label = 3.4
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li></pre>
 
 
 
-p = StructureDefinition-extension-complex-mappings.html{"title"=&gt;"StructureDefinition Extension Complex - mappings", "label"=&gt;"2.3", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>"}
+p = StructureDefinition-extension-complex-mappings.html{"title"=&gt;"StructureDefinition Extension Complex - mappings", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-complex-mappings.html
 <br/>
 p.title = StructureDefinition Extension Complex - mappings
 <br/>
-p.label = 3.3
+p.label = 3.4
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Complex</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah.html{"title"=&gt;"StructureDefinition Extension Blah", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>", "examples"=&gt;[]}
+p = StructureDefinition-extension-blah.html{"title"=&gt;"StructureDefinition Extension Blah", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>", "examples"=&gt;[]}
 <br/>
 
 pagepath = StructureDefinition-extension-blah.html
 <br/>
 p.title = StructureDefinition Extension Blah
 <br/>
-p.label = 3.4
+p.label = 3.5
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah.xml.html{"title"=&gt;"StructureDefinition Extension Blah - XML Representation", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>"}
+p = StructureDefinition-extension-blah.xml.html{"title"=&gt;"StructureDefinition Extension Blah - XML Representation", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-blah.xml.html
 <br/>
 p.title = StructureDefinition Extension Blah - XML Representation
 <br/>
-p.label = 3.4
+p.label = 3.5
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah.json.html{"title"=&gt;"StructureDefinition Extension Blah - JSON Representation", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>"}
+p = StructureDefinition-extension-blah.json.html{"title"=&gt;"StructureDefinition Extension Blah - JSON Representation", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-blah.json.html
 <br/>
 p.title = StructureDefinition Extension Blah - JSON Representation
 <br/>
-p.label = 3.4
+p.label = 3.5
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah.ttl.html{"title"=&gt;"StructureDefinition Extension Blah - TTL Representation", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>"}
+p = StructureDefinition-extension-blah.ttl.html{"title"=&gt;"StructureDefinition Extension Blah - TTL Representation", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-blah.ttl.html
 <br/>
 p.title = StructureDefinition Extension Blah - TTL Representation
 <br/>
-p.label = 3.4
+p.label = 3.5
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah-definitions.html{"title"=&gt;"StructureDefinition Extension Blah - Definitions", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>"}
+p = StructureDefinition-extension-blah-definitions.html{"title"=&gt;"StructureDefinition Extension Blah - Definitions", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-blah-definitions.html
 <br/>
 p.title = StructureDefinition Extension Blah - Definitions
 <br/>
-p.label = 3.4
+p.label = 3.5
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah-mappings.html{"title"=&gt;"StructureDefinition Extension Blah - mappings", "label"=&gt;"2.4", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>"}
+p = StructureDefinition-extension-blah-mappings.html{"title"=&gt;"StructureDefinition Extension Blah - mappings", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-blah-mappings.html
 <br/>
 p.title = StructureDefinition Extension Blah - mappings
 <br/>
-p.label = 3.4
+p.label = 3.5
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah2.html{"title"=&gt;"StructureDefinition Extension Blah2", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>", "examples"=&gt;[]}
+p = StructureDefinition-extension-blah2.html{"title"=&gt;"StructureDefinition Extension Blah2", "label"=&gt;"2.6", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>", "examples"=&gt;[]}
 <br/>
 
 pagepath = StructureDefinition-extension-blah2.html
 <br/>
 p.title = StructureDefinition Extension Blah2
 <br/>
-p.label = 3.5
+p.label = 3.6
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah2.xml.html{"title"=&gt;"StructureDefinition Extension Blah2 - XML Representation", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>"}
+p = StructureDefinition-extension-blah2.xml.html{"title"=&gt;"StructureDefinition Extension Blah2 - XML Representation", "label"=&gt;"2.6", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-blah2.xml.html
 <br/>
 p.title = StructureDefinition Extension Blah2 - XML Representation
 <br/>
-p.label = 3.5
+p.label = 3.6
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah2.json.html{"title"=&gt;"StructureDefinition Extension Blah2 - JSON Representation", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>"}
+p = StructureDefinition-extension-blah2.json.html{"title"=&gt;"StructureDefinition Extension Blah2 - JSON Representation", "label"=&gt;"2.6", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-blah2.json.html
 <br/>
 p.title = StructureDefinition Extension Blah2 - JSON Representation
 <br/>
-p.label = 3.5
+p.label = 3.6
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah2.ttl.html{"title"=&gt;"StructureDefinition Extension Blah2 - TTL Representation", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>"}
+p = StructureDefinition-extension-blah2.ttl.html{"title"=&gt;"StructureDefinition Extension Blah2 - TTL Representation", "label"=&gt;"2.6", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-blah2.ttl.html
 <br/>
 p.title = StructureDefinition Extension Blah2 - TTL Representation
 <br/>
-p.label = 3.5
+p.label = 3.6
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah2-definitions.html{"title"=&gt;"StructureDefinition Extension Blah2 - Definitions", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>"}
+p = StructureDefinition-extension-blah2-definitions.html{"title"=&gt;"StructureDefinition Extension Blah2 - Definitions", "label"=&gt;"2.6", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-blah2-definitions.html
 <br/>
 p.title = StructureDefinition Extension Blah2 - Definitions
 <br/>
-p.label = 3.5
+p.label = 3.6
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li></pre>
 
 
 
-p = StructureDefinition-extension-blah2-mappings.html{"title"=&gt;"StructureDefinition Extension Blah2 - mappings", "label"=&gt;"2.5", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>"}
+p = StructureDefinition-extension-blah2-mappings.html{"title"=&gt;"StructureDefinition Extension Blah2 - mappings", "label"=&gt;"2.6", "breadcrumb"=&gt;"<li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li>"}
 <br/>
 
 pagepath = StructureDefinition-extension-blah2-mappings.html
 <br/>
 p.title = StructureDefinition Extension Blah2 - mappings
 <br/>
-p.label = 3.5
+p.label = 3.6
 <br/>
 p.breadcrumb = <pre><li><a href="index.html"><b>Home</b></a></li><li><a href="profiles.html"><b>Profiles and Extensions</b></a></li><li><b>StructureDefinition Extension Blah2</b></li></pre>
 
@@ -2370,6 +2479,44 @@ site.historypath = #
 9,
 
 
+<em>title</em> = Structuredefinition Ifr 
+<em>path</em> = StructureDefinition-ifr.html,
+<em>url</em> = /StructureDefinition-ifr.html,
+<em>link</em> = <a href="null">Structuredefinition Ifr </a>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10,
+
+
 <em>title</em> = Structuredefinition Template Basic 
 <em>path</em> = StructureDefinition-template-basic.html,
 <em>url</em> = /StructureDefinition-template-basic.html,
@@ -2405,7 +2552,7 @@ site.historypath = #
 
 
 
-10,
+11,
 
 
 <em>title</em> = Structuredefinition Template Profile On Profile 
@@ -2435,7 +2582,7 @@ site.historypath = #
 
 
 
-11,
+12,
 
 
 <em>title</em> = Valueset Blah Codes 
@@ -2465,7 +2612,7 @@ site.historypath = #
 
 
 
-12,
+13,
 
 
 <em>title</em> = All Examples 
@@ -2483,7 +2630,7 @@ site.historypath = #
 
 
 
-13,
+14,
 
 
 <em>title</em> = Capstatements 
@@ -2501,7 +2648,7 @@ site.historypath = #
 
 
 
-14,
+15,
 
 
 <em>title</em> = Downloads 
@@ -2519,7 +2666,7 @@ site.historypath = #
 
 
 
-15,
+16,
 
 
 <em>title</em> = Guidance 
@@ -2537,7 +2684,7 @@ site.historypath = #
 
 
 
-16,
+17,
 
 
 <em>title</em> = History 
@@ -2555,7 +2702,7 @@ site.historypath = #
 
 
 
-17,
+18,
 
 
 <em>title</em> = Html_pages 
@@ -2573,7 +2720,7 @@ site.historypath = #
 
 
 
-18,
+19,
 
 
 <em>title</em> = Index 
@@ -2591,7 +2738,7 @@ site.historypath = #
 
 
 
-19,
+20,
 
 
 <em>title</em> = Operations 
@@ -2609,7 +2756,7 @@ site.historypath = #
 
 
 
-20,
+21,
 
 
 <em>title</em> = Profiles 
@@ -2627,7 +2774,7 @@ site.historypath = #
 
 
 
-21,
+22,
 
 
 <em>title</em> = Searchparameters 
@@ -2645,7 +2792,7 @@ site.historypath = #
 
 
 
-22,
+23,
 
 
 <em>title</em> = Security 
@@ -2663,7 +2810,7 @@ site.historypath = #
 
 
 
-23,
+24,
 
 
 <em>title</em> = Terminology 
@@ -2681,7 +2828,7 @@ site.historypath = #
 
 
 
-24,
+25,
 
 
 <em>title</em> = Toc 
@@ -2699,7 +2846,7 @@ site.historypath = #
 
 
 
-25,
+26,
 
 
 <em>title</em> = Todo 
@@ -3029,6 +3176,50 @@ value="resource"/&gt;&lt;/page&gt;
 &lt;page&gt;&lt;source
 value="StructureDefinition-extension-complex.html"/&gt;&lt;title
 value="Structuredefinition Extension Complex "/&gt;&lt;kind
+
+
+
+
+
+
+
+value="resource"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;source
+value="StructureDefinition-ifr.html"/&gt;&lt;title
+value="Structuredefinition Ifr "/&gt;&lt;kind
 
 
 
@@ -3855,6 +4046,48 @@ value="generated"/&gt;&lt;/page&gt;
 
 
 &lt;page&gt;&lt;nameUrl
+value="StructureDefinition-ifr.html"/&gt;&lt;title
+value="Structuredefinition Ifr "/&gt;&lt;generation
+
+
+
+
+value="generated"/&gt;&lt;/page&gt;
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;page&gt;&lt;nameUrl
 value="StructureDefinition-template-basic.html"/&gt;&lt;title
 value="Structuredefinition Template Basic "/&gt;&lt;generation
 
@@ -4297,7 +4530,7 @@ value="markdown"/&gt;&lt;/page&gt;
     <p>
       IG_Test3 
           Continuous Integration Build
-          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Tue, Feb 5, 2019 16:08-0800.
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Mon, Feb 11, 2019 10:20-0800.
       | <a style="color: #81BEF7" href="#">History</a>
       | <a style="color: #81BEF7" href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>
         <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
@@ -4326,6 +4559,45 @@ value="markdown"/&gt;&lt;/page&gt;
 
 
 
+
+
+<script src="assets/js/clipboard.min.js"> </script>
+
+<script>
+  // Tooltip
+
+  $('#copy-button').tooltip({
+    trigger: 'click',
+    placement: 'bottom'
+  });
+
+  function setTooltip(message) {
+    $('#copy-button').tooltip('hide')
+      .attr('data-original-title', message)
+      .tooltip('show');
+  }
+
+  function hideTooltip() {
+    setTimeout(function() {
+      $('#copy-button').tooltip('hide');
+    }, 1000);
+  }
+
+  // Clipboard
+
+  var clipboard = new ClipboardJS('#copy-button');
+
+  clipboard.on('success', function(e) {
+    setTooltip('Copied!');
+    hideTooltip();
+  });
+
+  clipboard.on('error', function(e) {
+    setTooltip('Failed!');
+    hideTooltip();
+  });
+
+</script>
 
 
 
