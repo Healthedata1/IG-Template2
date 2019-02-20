@@ -525,7 +525,10 @@ li a[href^="http://"]:not([no-external^="true"]):after, a[href^="https://"]:not(
   width: 100%%;
 }
 
-
+.figure-img-small{
+  height: 100px;
+  width: 350px;
+}
 /*--------- change example button color------*/
 
 .btn-example {

@@ -3,355 +3,866 @@
   "id": "ig",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG_Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Argonaut Questionnaire</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/argonaut-questionnaire/ImplementationGuide/ig</pre></div>"
   },
-  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
-  "version": "0.0.0",
-  "name": "IG_Test3",
-  "title": "IG_Test3",
+  "url": "http://fhir.org/guides/argonaut-questionnaire/ImplementationGuide/ig",
+  "version": "1.0.0",
+  "name": "Argonaut Questionnaire",
   "status": "draft",
-  "publisher": "Health eData Inc",
+  "experimental": true,
+  "publisher": "Argonaut Project",
   "contact": [
     {
       "telecom": [
         {
-          "system": "email",
-          "value": "ehaas@healthedatainc.com"
+          "system": "url",
+          "value": "http://argonautwiki.hl7.org"
         }
       ]
     }
   ],
-  "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
-  "packageId": "healthedatainc.mfhir",
-  "license": "CC0-1.0",
-  "fhirVersion": [
-    "4.0.0"
-  ],
-  "definition": {
-    "grouping": [
-      {
-        "name": "base"
-      },
-      {
-        "id": "template-profile-spreadsheet.xml",
-        "name": "Template-basic"
-      },
-      {
-        "id": "patient-on-usprofile-spreadsheet.xml",
-        "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"
-      }
-    ],
-    "resource": [
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-example.html"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/example"
-        },
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-complex.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-complex"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-ifr.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/ifr"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CapabilityStatement-server.html"
-          }
-        ],
-        "reference": {
-          "reference": "CapabilityStatement/server"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-blah-codes.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/blah-codes"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah2.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah2"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CapabilityStatement-client.html"
-          }
-        ],
-        "reference": {
-          "reference": "CapabilityStatement/client"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-profile-on-profile.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-profile-on-profile"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-basic.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-basic"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-blah-codes.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/blah-codes"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah"
-        },
-        "name": "Example Extension",
-        "groupingId": "template-profile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-complex.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-complex"
-        },
-        "name": "Complex Extension",
-        "groupingId": "template-profile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah2.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah2"
-        },
-        "name": "Example Extension",
-        "groupingId": "template-profile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-basic.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-basic"
-        },
-        "name": "template-basic",
-        "groupingId": "template-profile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-profile-on-profile.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-profile-on-profile"
-        },
-        "name": "Template-Profile-on-Profile",
-        "groupingId": "patient-on-usprofile-spreadsheet.xml"
-      }
-    ],
-    "page": {
-      "nameUrl": "index.html",
-      "title": "Home",
-      "generation": "markdown",
-      "page": [
+  "fhirVersion": "3.0.1",
+  "package": [
+    {
+      "id": "p1",
+      "name": "base",
+      "resource": [
         {
-          "nameUrl": "guidance.html",
-          "title": "General Guidance",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "profiles.html",
-          "title": "Profiles and Extensions",
-          "generation": "markdown",
-          "page": [
+          "extension": [
             {
-              "nameUrl": "StructureDefinition-ifr.html",
-              "title": "StructureDefinition Ifr",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-template-profile-on-profile.html",
-              "title": "StructureDefinition Template Profile On Profile",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-template-basic.html",
-              "title": "StructureDefinition Template Basic",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-extension-complex.html",
-              "title": "StructureDefinition Extension Complex",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-extension-blah.html",
-              "title": "StructureDefinition Extension Blah",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-extension-blah2.html",
-              "title": "StructureDefinition Extension Blah2",
-              "generation": "generated"
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-adaptive-questionnaireresponse-example-audit-c.html"
             }
-          ]
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/adaptive-questionnaireresponse-example-audit-c"
+          }
         },
         {
-          "nameUrl": "operations.html",
-          "title": "Operations",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "terminology.html",
-          "title": "Terminology",
-          "generation": "markdown",
-          "page": [
+          "extension": [
             {
-              "nameUrl": "ValueSet-blah-codes.html",
-              "title": "ValueSet Blah Codes",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "CodeSystem-blah-codes.html",
-              "title": "CodeSystem Blah Codes",
-              "generation": "generated"
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-questionnaireresponse-example-housing.html"
             }
-          ]
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/questionnaireresponse-example-housing"
+          }
         },
         {
-          "nameUrl": "searchparameters.html",
-          "title": "Search Parameters",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "capstatements.html",
-          "title": "Capability Statements",
-          "generation": "markdown",
-          "page": [
+          "extension": [
             {
-              "nameUrl": "CapabilityStatement-server.html",
-              "title": "CapabilityStatement Server",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "CapabilityStatement-client.html",
-              "title": "CapabilityStatement Client",
-              "generation": "generated"
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Questionnaire-questionnaire-example-audit-c.html"
             }
-          ]
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Questionnaire/questionnaire-example-audit-c"
+          }
         },
         {
-          "nameUrl": "security.html",
-          "title": "Security",
-          "generation": "markdown"
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Encounter-encounter1.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Encounter/encounter1"
+          }
         },
         {
-          "nameUrl": "downloads.html",
-          "title": "Downloads",
-          "generation": "markdown"
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-questionnaireresponse-example-audit-c.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/questionnaireresponse-example-audit-c"
+          }
         },
         {
-          "nameUrl": "all-examples.html",
-          "title": "All Examples",
-          "generation": "markdown"
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Questionnaire-questionnaire-example-housing.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Questionnaire/questionnaire-example-housing"
+          }
         },
         {
-          "nameUrl": "toc.html",
-          "title": "Table of Contents",
-          "generation": "html"
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-questionnaireresponse-example-sampler.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/questionnaireresponse-example-sampler"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Practitioner-prov-admin1.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Practitioner/prov-admin1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-questionnaireresponse-example-dast.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/questionnaireresponse-example-dast"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-adaptive-questionnaireresponse-example-dast.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/adaptive-questionnaireresponse-example-dast"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-questionnaireresponse-example-phq9.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/questionnaireresponse-example-phq9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-questionnaireresponse-example-sampler-contained-patient.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/questionnaireresponse-example-sampler-contained-patient"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-adaptive-questionnaireresponse-example-phq9.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/adaptive-questionnaireresponse-example-phq9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Patient-subject1.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Patient/subject1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Questionnaire-questionnaire-example-dast.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Questionnaire/questionnaire-example-dast"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-adaptive-questionnaireresponse-example-sampler.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/adaptive-questionnaireresponse-example-sampler"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Questionnaire-questionnaire-example-phq9.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Questionnaire/questionnaire-example-phq9"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Questionnaire-questionnaire-example-sampler.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Questionnaire/questionnaire-example-sampler"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-Questionnaire-publisher.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/Questionnaire-publisher"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-assessmentbank.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/assessmentbank"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-multipleAnd.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-multipleAnd"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-adaptive-questionnaire-service.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/adaptive-questionnaire-service"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-multipleOr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-multipleOr"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-adap-questionnaireresponse.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-adap-questionnaireresponse"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-QuestionnaireResponse-status.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/QuestionnaireResponse-status"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-argo-questionnaire-provider-ehr.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/argo-questionnaire-provider-ehr"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-QuestionnaireResponse-questionnaire.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/QuestionnaireResponse-questionnaire"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-QuestionnaireResponse-author.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/QuestionnaireResponse-author"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-timeLimit.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-timeLimit"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-Questionnaire-status.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/Questionnaire-status"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-QuestionnaireResponse-patient.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/QuestionnaireResponse-patient"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-itemOrder.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-itemOrder"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-questionnaire.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-questionnaire"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "CapabilityStatement-answerbank.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "CapabilityStatement/answerbank"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-patient-birthdate.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/patient-birthdate"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "OperationDefinition-next-question.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "OperationDefinition/next-question"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-Questionnaire-context-type-value.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/Questionnaire-context-type-value"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-Questionnaire-context.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/Questionnaire-context"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-Questionnaire-title.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/Questionnaire-title"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-Questionnaire-version.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/Questionnaire-version"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-extension-responsePeriod.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/extension-responsePeriod"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-questionnaire-valueset.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-questionnaire-valueset"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-QuestionnaireResponse-context.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/QuestionnaireResponse-context"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-Questionnaire-context-type.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/Questionnaire-context-type"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "SearchParameter-QuestionnaireResponse-source.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "SearchParameter/QuestionnaireResponse-source"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-questionnaireresponse.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-questionnaireresponse"
+          }
+        }
+      ]
+    },
+    {
+      "id": "profile-base-qr-spreadsheet.xml",
+      "name": "argo_questionnaireresponse",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-questionnaireresponse.html"
+            }
+          ],
+          "example": false,
+          "name": "argo_questionnaireresponse",
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-questionnaireresponse"
+          }
+        }
+      ]
+    },
+    {
+      "id": "profile-base-qcvs-spreadsheet.xml",
+      "name": "argo_questionnaire_valueset",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-questionnaire-valueset.html"
+            }
+          ],
+          "example": false,
+          "name": "argo_questionnaire_valueset",
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-questionnaire-valueset"
+          }
+        }
+      ]
+    },
+    {
+      "id": "profile-base-q-spreadsheet.xml",
+      "name": "argo_questionnaire",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-questionnaire.html"
+            }
+          ],
+          "example": false,
+          "name": "argo_questionnaire",
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-questionnaire"
+          }
+        }
+      ]
+    },
+    {
+      "id": "profile-derived-qr-spreadsheet.xml",
+      "name": "argo_adap_questionnaireresponse",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-argo-adap-questionnaireresponse.html"
+            }
+          ],
+          "example": false,
+          "name": "argo_adap_questionnaireresponse",
+          "sourceReference": {
+            "reference": "StructureDefinition/argo-adap-questionnaireresponse"
+          }
         }
       ]
     }
+  ],
+  "page": {
+    "source": "index.html",
+    "title": "Home",
+    "kind": "page",
+    "page": [
+      {
+        "source": "guidance.html",
+        "title": "General Guidance",
+        "kind": "page",
+        "page": [
+          {
+            "source": "static.html",
+            "title": "Static ",
+            "kind": "page"
+          },
+          {
+            "source": "adaptive.html",
+            "title": "Adaptive ",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "source": "profiles.html",
+        "title": "Profiles and Extensions",
+        "kind": "page",
+        "page": [
+          {
+            "source": "StructureDefinition-argo-adap-questionnaireresponse.html",
+            "title": "StructureDefinition Argo Adap QuestionnaireResponse",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-argo-questionnaire.html",
+            "title": "StructureDefinition Argo Questionnaire",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-argo-questionnaire-valueset.html",
+            "title": "StructureDefinition Argo Questionnaire ValueSet",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-argo-questionnaireresponse.html",
+            "title": "StructureDefinition Argo QuestionnaireResponse",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-extension-multipleAnd.html",
+            "title": "StructureDefinition Extension multipleAnd",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-extension-multipleOr.html",
+            "title": "StructureDefinition Extension multipleOr",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-extension-timeLimit.html",
+            "title": "StructureDefinition Extension timeLimit",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-extension-itemOrder.html",
+            "title": "StructureDefinition Extension itemOrder",
+            "kind": "resource"
+          },
+          {
+            "source": "StructureDefinition-extension-responsePeriod.html",
+            "title": "StructureDefinition Extension responsePeriod",
+            "kind": "resource"
+          }
+        ]
+      },
+      {
+        "source": "operations.html",
+        "title": "Operations",
+        "kind": "page",
+        "page": [
+          {
+            "source": "OperationDefinition-next-question.html",
+            "title": "OperationDefinition Next Question",
+            "kind": "resource"
+          }
+        ]
+      },
+      {
+        "source": "searchparameters.html",
+        "title": "Search Parameters",
+        "kind": "page",
+        "page": [
+          {
+            "source": "SearchParameter-Questionnaire-publisher.html",
+            "title": "SearchParameter Questionnaire Publisher",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-QuestionnaireResponse-status.html",
+            "title": "SearchParameter QuestionnaireResponse Status",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-QuestionnaireResponse-questionnaire.html",
+            "title": "SearchParameter QuestionnaireResponse Questionnaire",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-QuestionnaireResponse-author.html",
+            "title": "SearchParameter QuestionnaireResponse Author",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-Questionnaire-status.html",
+            "title": "SearchParameter Questionnaire Status",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-QuestionnaireResponse-patient.html",
+            "title": "SearchParameter QuestionnaireResponse Patient",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-patient-birthdate.html",
+            "title": "SearchParameter Patient Birthdate",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-Questionnaire-context-type-value.html",
+            "title": "SearchParameter Questionnaire Context Type Value",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-Questionnaire-context.html",
+            "title": "SearchParameter Questionnaire Context",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-Questionnaire-title.html",
+            "title": "SearchParameter Questionnaire Title",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-Questionnaire-version.html",
+            "title": "SearchParameter Questionnaire Version",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-QuestionnaireResponse-context.html",
+            "title": "SearchParameter QuestionnaireResponse Context",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-Questionnaire-context-type.html",
+            "title": "SearchParameter Questionnaire Context Type",
+            "kind": "resource"
+          },
+          {
+            "source": "SearchParameter-QuestionnaireResponse-source.html",
+            "title": "SearchParameter QuestionnaireResponse Source",
+            "kind": "resource"
+          }
+        ]
+      },
+      {
+        "source": "capstatements.html",
+        "title": "Capability Statements",
+        "kind": "page",
+        "page": [
+          {
+            "source": "CapabilityStatement-assessmentbank.html",
+            "title": "CapabilityStatement Assessmentbank",
+            "kind": "resource"
+          },
+          {
+            "source": "CapabilityStatement-adaptive-questionnaire-service.html",
+            "title": "CapabilityStatement Adaptive Questionnaire Service",
+            "kind": "resource"
+          },
+          {
+            "source": "CapabilityStatement-argo-questionnaire-provider-ehr.html",
+            "title": "CapabilityStatement Argo Questionnaire Provider Ehr",
+            "kind": "resource"
+          },
+          {
+            "source": "CapabilityStatement-answerbank.html",
+            "title": "CapabilityStatement Answerbank",
+            "kind": "resource"
+          }
+        ]
+      },
+      {
+        "source": "downloads.html",
+        "title": "Downloads",
+        "kind": "page"
+      },
+      {
+        "source": "all-examples.html",
+        "title": "All Examples",
+        "kind": "page"
+      },
+      {
+        "source": "toc.html",
+        "title": "Table of Contents",
+        "kind": "resource"
+      }
+    ]
   }
 }

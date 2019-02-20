@@ -887,3 +887,113 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18926-8",
+  "display" : "Monthly or less"
+}, "valueSet" :null}####
+v: {
+  "display" : "Monthly or less",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18927-6",
+  "display" : "2-4 times a month"
+}, "valueSet" :null}####
+v: {
+  "display" : "2-4 times a month",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18928-4",
+  "display" : "2-3 times a week"
+}, "valueSet" :null}####
+v: {
+  "display" : "2-3 times a week",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15695-2",
+  "display" : "3 or 4"
+}, "valueSet" :null}####
+v: {
+  "display" : "3 or 4",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18930-0",
+  "display" : "5 or 6"
+}, "valueSet" :null}####
+v: {
+  "display" : "5 or 6",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18931-8",
+  "display" : "7 to 9"
+}, "valueSet" :null}####
+v: {
+  "display" : "7 to 9",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18933-4",
+  "display" : "Less than monthly"
+}, "valueSet" :null}####
+v: {
+  "display" : "Less than monthly",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18876-5",
+  "display" : "Monthly"
+}, "valueSet" :null}####
+v: {
+  "display" : "Monthly",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA18891-4",
+  "display" : "Weekly"
+}, "valueSet" :null}####
+v: {
+  "display" : "Weekly",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6572-7",
+  "display" : "Not difficult at all"
+}, "valueSet" :null}####
+v: {
+  "display" : "Not difficult at all",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
