@@ -28,6 +28,8 @@ Figure 1 is a picture of a cat to show how to insert an image using markdown.
 
 {% include img.html img="cat.jpg" caption="Figure 1: Meow" %}
 
+
+
 ### Jekyll Site Variables {#variables}
 
 These are the site variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation# Jekyll):
