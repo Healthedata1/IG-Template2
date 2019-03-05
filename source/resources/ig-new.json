@@ -56,6 +56,12 @@
     },
     {
       "reference" : {
+        "reference" : "Patient/example2"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/extension-complex"
       },
       "exampleBoolean" : false
