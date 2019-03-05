@@ -2,9 +2,9 @@
 =========================================
 
 err = 24, warn = 28, info = 6
-Generated Mon Mar 04 17:08:44 PST 2019. FHIR version 4.0.0 for 4.0.0
+Generated Mon Mar 04 17:22:54 PST 2019. FHIR version 4.0.0 for 4.0.0
 
- Build Errors : 85 / 0
+ Build Errors : 56 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 4 / 3
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2 : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes : 0 / 1
@@ -72,36 +72,7 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2883, column 18: The link '' for "Terminology " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2901, column 18: The link '' for "Toc " cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2919, column 18: The link '' for "Todo " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2220, column 18: The link '' for "Any " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2238, column 18: The link '' for "Capabilitystatement Client " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2268, column 18: The link '' for "Capabilitystatement Server " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2298, column 18: The link '' for "Codesystem Blah Codes " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2328, column 18: The link '' for "Implementationguide Ig " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2358, column 18: The link '' for "Patient Example " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2388, column 18: The link '' for "Patient Example2 " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2426, column 18: The link '' for "Structuredefinition Extension Blah " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2464, column 18: The link '' for "Structuredefinition Extension Blah2 " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2502, column 18: The link '' for "Structuredefinition Extension Complex " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2540, column 18: The link '' for "Structuredefinition Ifr " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2578, column 18: The link '' for "Structuredefinition Template Basic " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2616, column 18: The link '' for "Structuredefinition Template Profile On Profile " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2646, column 18: The link '' for "Valueset Blah Codes " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2676, column 18: The link '' for "All Examples " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2694, column 18: The link '' for "Capstatements " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2712, column 18: The link '' for "Downloads " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2730, column 18: The link '' for "Guidance " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2748, column 18: The link '' for "History " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2766, column 18: The link '' for "Html_pages " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2784, column 18: The link '' for "Index " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2802, column 18: The link '' for "Operations " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2820, column 18: The link '' for "Profiles " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2838, column 18: The link '' for "Searchparameters " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2856, column 18: The link '' for "Security " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2874, column 18: The link '' for "Terminology " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2892, column 18: The link '' for "Toc " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 2910, column 18: The link '' for "Todo " cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/div/div/div/ul/li/p/a at Line 290, column 64: The link '{{site.data.fhir.uscore}}' for "{{site.data.fhir.uscore}}" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/div/div/div/ul/li/p/a at Line 298, column 109: The link 'http://build.fhir.org/' for "http://build.fhir.org/" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 306, column 112: The link 'http://build.fhir.org/' for "http://build.fhir.org/" cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example.xml ==
 INFORMATION: Patient/example: Patient.extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient
 INFORMATION: Patient/example: Patient.extension[2]: This element does not match any known slice for the profile http://hl7.org/fhir/us/core-r4/StructureDefinition/us-core-patient

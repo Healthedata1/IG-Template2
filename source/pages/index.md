@@ -44,17 +44,20 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
 - dependency url - e.g. "uscore" : Base url of a dependency implementation Guide (defined in ig.json) -  {% raw %} {{site.data.fhir.uscore}} {% endraw %}= {{site.data.fhir.uscore}}
 
-     link to {{site.data.fhir.uscore}} in markdown is  {% raw %}\[{{site.data.fhir.uscore}}\]({{site.data.fhir.uscore}}){% endraw %} = [{{site.data.fhir.uscore}}]({{site.data.fhir.uscore}})
+     - link to {{site.data.fhir.uscore}} in markdown is  {% raw %}\[{{site.data.fhir.uscore}}\]({{site.data.fhir.uscore}}){% endraw %} = [{{site.data.fhir.uscore}}]({{site.data.fhir.uscore}})
+
+     - current link to {{site.data.fhir.uscore}} home in markdown is  {% raw %}\[{{site.data.fhir.uscore}}/index.html\]({{site.data.fhir.uscore}}/index.html){% endraw %} = [{{site.data.fhir.uscore}}/index.html]({{site.data.fhir.uscore}}/index.html)
+
 
 - igName : Title of the implementation Guide (defined in ig.xml) -  {% raw %} {{site.data.fhir.igName}} {% endraw %}= {{site.data.fhir.igName}}
 
 - path : path to the main FHIR specification (defined in ig.json)-  {% raw %} {{site.data.fhir.path}} {% endraw %}= {{site.data.fhir.path}}
 
-     link to {{site.data.fhir.path}} in markdown is  {% raw %}\[{{site.data.fhir.path}}\]({{site.data.fhir.path}}){% endraw %} = [{{site.data.fhir.path}}]({{site.data.fhir.path}})
+     - link to {{site.data.fhir.path}} in markdown is  {% raw %}\[{{site.data.fhir.path}}\]({{site.data.fhir.path}}){% endraw %} = [{{site.data.fhir.path}}]({{site.data.fhir.path}})
 
 - canonical : canonical path to this specification (defined in ig.json)-  {% raw %} {{site.data.fhir.canonical}} {% endraw %} = {{site.data.fhir.canonical}}
 
-    link to {{site.data.fhir.canonical}} in markdown is  {% raw %}\[{{site.data.fhir.canonical}}\]({{site.data.fhir.canonical}}){% endraw %} = [{{site.data.fhir.canonical}}]({{site.data.fhir.canonical}})
+    - link to {{site.data.fhir.canonical}} in markdown is  {% raw %}\[{{site.data.fhir.canonical}}\]({{site.data.fhir.canonical}}){% endraw %} = [{{site.data.fhir.canonical}}]({{site.data.fhir.canonical}})
 
 - errorCount : number of errors in the build file (not including HTML validation errors) -  {% raw %} {{site.data.fhir.errorCount}} {% endraw %} = {{site.data.fhir.errorCount}}
 
