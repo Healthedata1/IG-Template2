@@ -235,7 +235,7 @@
         "reference": {
           "reference": "StructureDefinition/template-basic"
         },
-        "name": "template-basic",
+        "name": "Template-basic",
         "groupingId": "template-profile-spreadsheet.xml"
       },
       {

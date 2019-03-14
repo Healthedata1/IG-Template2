@@ -240,7 +240,7 @@
          fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-basic>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/template-basic" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "template-basic" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Template-basic" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
      ], [
        fhir:index 16;

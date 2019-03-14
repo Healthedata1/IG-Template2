@@ -20,20 +20,18 @@
 	<description value="This resource defines the expected capabilities "/>
 	<kind value="requirements"/>
 	<fhirVersion value="4.0.0"/>
-	<acceptUnknown value="extensions"/>
 	<format value="xml"/>
 	<format value="json"/>
 
-	<profile>
 
-		<reference value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
-		<display value="StructureDefinition-template-basic"/>
-	</profile>
 	<rest>
 		<mode value="server"/>
 
 		<resource>
 			<type value="Basic"/>
+			<supportedProfile value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
+
+
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>

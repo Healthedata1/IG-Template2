@@ -176,7 +176,7 @@
       <reference>
         <reference value="StructureDefinition/template-basic"/>
       </reference>
-      <name value="template-basic"/>
+      <name value="Template-basic"/>
       <groupingId value="template-profile-spreadsheet.xml"/>
     </resource>
     <resource>

@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.0.0"];
   fhir:StructureDefinition.name [ fhir:value "Identifer Free Reference Data Type"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2017-06-02"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2017-06-02T00:00:00-07:00"^^xsd:dateTime];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

@@ -11,7 +11,7 @@
   <version value="0.0.0"/>
   <name value="Identifer Free Reference Data Type"/>
   <status value="draft"/>
-  <date value="2017-06-02"/>
+  <date value="2017-06-02T00:00:00-07:00"/>
   <fhirVersion value="4.0.0"/>
   <mapping>
     <identity value="rim"/>

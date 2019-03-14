@@ -294,10 +294,10 @@ This is the
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.url">url</a>
        <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://www.fhir.org/guides/test3/StructureDefinition/template-basic&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;0.0.0&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;template-basic&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Template-basic&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Health eData Template Profile&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2017-02-15&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2017-02-15T00:00:00-08:00&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;4.0.0&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping">mapping</a>&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -683,7 +683,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
                <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>
-                    <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](extensibility.html#modifierExtension).&quot;/&gt;
+                    <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://build.fhir.org/extensibility.html#modifierExtension).&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;extensions&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;user content&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -913,7 +913,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Basic.identifier.extension.value[x]&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Value of extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).&quot;/&gt;
+                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list).&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -1203,7 +1203,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;The portion of the identifier typically relevant to the user and which is unique within the context of the system.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value&amp;#39;s primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.&quot;/&gt;
+               <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value&amp;#39;s primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://build.fhir.org/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -1968,7 +1968,7 @@ Formats: <a href="StructureDefinition-template-basic.html">Narrative</a>, <a hre
     <p>
       IG_Test3 
           Continuous Integration Build
-          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Mon, Mar 4, 2019 17:22-0800.
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Thu, Mar 14, 2019 09:33-0700.
       | <a style="color: #81BEF7" href="#">History</a>
       | <a style="color: #81BEF7" href="https://github.com/argonautproject/questionnaire/issues" target="_blank">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>

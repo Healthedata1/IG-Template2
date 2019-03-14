@@ -10,7 +10,7 @@
   <version value="0.0.0"/>
   <name value="Client"/>
   <status value="draft"/>
-  <date value="2017-03-08"/>
+  <date value="2017-03-08T00:00:00-08:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -27,6 +27,7 @@
     <mode value="client"/>
     <resource>
       <type value="Basic"/>
+      <supportedProfile value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>

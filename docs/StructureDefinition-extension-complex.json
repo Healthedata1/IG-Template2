@@ -10,7 +10,7 @@
   "name": "Complex Extension",
   "title": "Complex Extension",
   "status": "active",
-  "date": "2017-02-15",
+  "date": "2017-02-15T00:00:00-08:00",
   "description": "an example of a complex extension.",
   "fhirVersion": "4.0.0",
   "mapping": [
@@ -293,7 +293,7 @@
         "id": "Extension.extension:code.valueCode",
         "path": "Extension.extension.valueCode",
         "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list).",
         "min": 0,
         "max": "1",
         "base": {
@@ -465,7 +465,7 @@
         "id": "Extension.extension:text.valueString",
         "path": "Extension.extension.valueString",
         "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list).",
         "min": 0,
         "max": "1",
         "base": {
@@ -522,7 +522,7 @@
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list).",
         "min": 0,
         "max": "0",
         "base": {

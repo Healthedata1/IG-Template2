@@ -293,7 +293,7 @@ This is the
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.version">fhir:CapabilityStatement.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;0.0.0&quot;];
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.name">fhir:CapabilityStatement.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Client&quot;];
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.status">fhir:CapabilityStatement.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.date">fhir:CapabilityStatement.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2017-03-08&quot;^^xsd:date];
+  <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.date">fhir:CapabilityStatement.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2017-03-08T00:00:00-08:00&quot;^^xsd:dateTime];
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.publisher">fhir:CapabilityStatement.publisher</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Health eData Inc&quot;];
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.contact">fhir:CapabilityStatement.contact</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
@@ -318,6 +318,10 @@ This is the
      <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource">fhir:CapabilityStatement.rest.resource</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
        <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.type">fhir:CapabilityStatement.rest.resource.type</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;Basic&quot; ];
+       <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">fhir:CapabilityStatement.rest.resource.supportedProfile</a> [
+         <a href="http://build.fhir.org/datatypes.html#canonical">fhir:value</a> &quot;http://www.fhir.org/guides/test3/StructureDefinition/template-basic&quot;;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://www.fhir.org/guides/test3/StructureDefinition/template-basic&gt;       ];
        <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">fhir:CapabilityStatement.rest.resource.interaction</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
@@ -403,7 +407,7 @@ Formats: <a href="CapabilityStatement-client.html">Narrative</a>, <a href="Capab
     <p>
       IG_Test3 
           Continuous Integration Build
-          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Mon, Mar 4, 2019 17:22-0800.
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Thu, Mar 14, 2019 09:33-0700.
       | <a style="color: #81BEF7" href="#">History</a>
       | <a style="color: #81BEF7" href="https://github.com/argonautproject/questionnaire/issues" target="_blank">Propose a change</a>
         <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
