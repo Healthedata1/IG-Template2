@@ -102,23 +102,8 @@ can only resize using html  or css ;-( -->
         <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-         <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
+       
 <ul class="nav navbar-nav">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="guidance.html">General Guidance</a></li>
-  <li><a href="profiles.html">Profiles and Extensions</a>
-  <!-- - [Mappings](structuremaps.html) -->
-  <!-- - [Extensions](extensions.html) --></li>
-  <li><a href="terminology.html">Terminology</a>
-  <!-- - [Search Parameters](searchparams.html) --></li>
-  <li><a href="capstatements.html">Capability Statements</a>
-  <!-- - [Security](security.html) -->
-  <!-- - [Examples](examples.html) --></li>
-  <li><a href="downloads.html">Downloads</a></li>
-</ul>
-
-
-               <!-- <ul class="nav navbar-nav">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -128,31 +113,43 @@ can only resize using html  or css ;-( -->
           <li>
             <a href="profiles.html">Profiles and Logical Models</a>
           </li>
-          <li>
+  <!-- <li>
             <a href="structuremaps.html">Mappings</a>
           </li>
           <li>
             <a href="extensions.html">Extensions</a>
-          </li>
+          </li> -->
           <li>
             <a href="terminology.html">Terminology</a>
           </li>
           <li>
-            <a href="searchparams.html">Search Parameters</a>
+            <a href="searchparameters.html">Search Parameters</a>
           </li>
-          <li>
-            <a href="capstatements.html">Capability Statements</a>
-          </li>
-          <li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statements<b class="caret">
+            </b>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
+            </li>
+            <li>
+              <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
+            </li>
+
+          </ul>
+          </li>          <li>
             <a href="security.html">Security</a>
           </li>
           <li>
-            <a href="examples.html">Examples</a>
+            <a href="all-examples.html">Examples</a>
           </li>
           <li>
             <a href="downloads.html">Downloads</a>
           </li>
-        </ul> -->
+        </ul>
+
+
       </div>
         <!-- /.nav-collapse -->
     </div>
@@ -251,7 +248,7 @@ This is the
   <!-- <p>
 Formats: <a href="Patient-example2.xml.html">XML</a>, <a href="Patient-example2.json.html">JSON</a>, <a href="Patient-example2.ttl.html">Turtle</a>
 </p> -->
-<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example2</p><p><b>identifier</b>: Medical record number = 12345 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Peter James Chalmers (OFFICIAL), Jim , Peter James Windsor (MAIDEN)</p><p><b>telecom</b>: -unknown-(HOME), ph: (03) 5555 6473(WORK), ph: (03) 3410 5613(MOBILE), ph: (03) 5555 8834(OLD)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Dec 25, 1974</p><p><b>deceased</b>: false</p><p><b>address</b>: 534 Erewhon St PeasantVille, Rainbow, Vic  3999(HOME)</p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td><td><b>Gender</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>Next-of-Kin <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v2-0131 code 'N' = 'Next-of-Kin)</span></td><td>BÃ&copy;nÃ&copy;dicte du MarchÃ&copy; </td><td>ph: +33 (237) 998327</td><td>534 Erewhon St PleasantVille Vic 3999 (HOME)</td><td>female</td><td>Jan 1, 2012, 12:00:00 AM --&gt; (ongoing)</td></tr></table><p><a name="8cd6ad48-90c6-4b41-ada5-79c13c024b26">​</a><b>managingOrganization</b>: <a href="Organization/1">Organization/1</a></p></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example2</p><p><b>identifier</b>: Medical record number = 12345 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Peter James Chalmers (OFFICIAL), Jim , Peter James Windsor (MAIDEN)</p><p><b>telecom</b>: -unknown-(HOME), ph: (03) 5555 6473(WORK), ph: (03) 3410 5613(MOBILE), ph: (03) 5555 8834(OLD)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Dec 25, 1974</p><p><b>deceased</b>: false</p><p><b>address</b>: 534 Erewhon St PeasantVille, Rainbow, Vic  3999(HOME)</p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td><td><b>Gender</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>Next-of-Kin <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v2-0131 code 'N' = 'Next-of-Kin)</span></td><td>BÃ&copy;nÃ&copy;dicte du MarchÃ&copy; </td><td>ph: +33 (237) 998327</td><td>534 Erewhon St PleasantVille Vic 3999 (HOME)</td><td>female</td><td>Jan 1, 2012, 12:00:00 AM --&gt; (ongoing)</td></tr></table><p><a name="08b3b63a-1f9a-4558-988b-a366f42330ce">​</a><b>managingOrganization</b>: <a href="Organization/1">Organization/1</a></p></div>
 
     <!-- ==============END CONTENT END CONTENT=================== -->
 
@@ -292,10 +289,10 @@ Formats: <a href="Patient-example2.xml.html">XML</a>, <a href="Patient-example2.
     <p>
       IG_Test3 
           Continuous Integration Build
-          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Thu, Mar 14, 2019 09:33-0700.
+          &reg;&copy;   <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR Version: 4.0.0</a> generated on Thu, Mar 14, 2019 13:12-0700.
       | <a style="color: #81BEF7" href="#">History</a>
       | <a style="color: #81BEF7" href="https://github.com/argonautproject/questionnaire/issues" target="_blank">Propose a change</a>
-        <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
+      | <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         </p>
    </div>    <!-- /inner-wrapper -->
   </div>    <!-- /container -->
