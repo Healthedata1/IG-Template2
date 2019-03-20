@@ -4,7 +4,8 @@ summaries: false #true if want custom profile summaries in summary tab
 diff2: false # true if want to show intermediate differentials - probably never use this.
 build: ci  # choice of ci|ballot|version
 ballot: STU1    #STU version of IG ( if needed for publishing HL7 guides)
-hl7_version:    
+hl7_version:
+hl7_ig:
 example_types:
 - Account
 - ActivityDefinition

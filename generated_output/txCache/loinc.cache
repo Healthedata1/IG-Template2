@@ -516,3 +516,411 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6270-8",
+  "display" : "Never"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://loinc.org/vs/LL2179-1"]
+    }]
+  },
+  "expansion" : {
+    "parameter" : [{
+      "name" : "version",
+      "valueUri" : "http://loinc.org/vs/LL2179-1|Loinc_2.65_AnswerFile_2.65-Beta.3"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 1
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 0
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA6270-8",
+      "display" : "Never"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 2
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 1
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18926-8",
+      "display" : "Monthly or less"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 3
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 2
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18927-6",
+      "display" : "2-4 times a month"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 4
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 3
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18928-4",
+      "display" : "2-3 times a week"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 5
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 4
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18929-2",
+      "display" : "4 or more times a week"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to find value set http://loinc.org/vs/LL2179-1"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15694-5",
+  "display" : "1 or 2"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://loinc.org/vs/LL2180-9"]
+    }]
+  },
+  "expansion" : {
+    "parameter" : [{
+      "name" : "version",
+      "valueUri" : "http://loinc.org/vs/LL2180-9|Loinc_2.65_AnswerFile_2.65-Beta.3"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 1
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 0
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA15694-5",
+      "display" : "1 or 2"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 2
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 1
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA15695-2",
+      "display" : "3 or 4"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 3
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 2
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18930-0",
+      "display" : "5 or 6"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 4
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 3
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18931-8",
+      "display" : "7 to 9"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 5
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 4
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18932-6",
+      "display" : "10 or more"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to find value set http://loinc.org/vs/LL2180-9"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6270-8",
+  "display" : "Never"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://loinc.org/vs/LL2181-7"]
+    }]
+  },
+  "expansion" : {
+    "parameter" : [{
+      "name" : "version",
+      "valueUri" : "http://loinc.org/vs/LL2181-7|Loinc_2.65_AnswerFile_2.65-Beta.3"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 1
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 0
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA6270-8",
+      "display" : "Never"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 2
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 1
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18933-4",
+      "display" : "Less than monthly"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 3
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 2
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18876-5",
+      "display" : "Monthly"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 4
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 3
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18891-4",
+      "display" : "Weekly"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 5
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 4
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.65",
+      "code" : "LA18934-2",
+      "display" : "Daily or almost daily"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to find value set http://loinc.org/vs/LL2181-7"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6568-5",
+  "display" : "Not at all"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 1
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 0
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "code" : "LA6568-5",
+      "display" : "Not at all"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 2
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 1
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "code" : "LA6569-3",
+      "display" : "Several days"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 3
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 2
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "code" : "LA6570-1",
+      "display" : "More than half the days"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 4
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+        "valueDecimal" : 3
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "code" : "LA6571-9",
+      "display" : "Nearly every day"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://loinc.org#LA6568-5) is not  valid"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6572-7",
+  "display" : "Not difficult at all"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 1
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "code" : "LA6572-7",
+      "display" : "Not difficult at all"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 2
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "code" : "LA6573-5",
+      "display" : "Somewhat difficult"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 3
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "code" : "LA6575-0",
+      "display" : "Very difficult"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+        "valueInteger" : 4
+      }],
+      "system" : "http://loinc.org",
+      "version" : "2.64",
+      "code" : "LA6574-3",
+      "display" : "Extremely difficult"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://loinc.org#LA6572-7) is not  valid"
+}
+-------------------------------------------------------------------------------------

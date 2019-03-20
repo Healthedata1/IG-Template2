@@ -1,1 +1,307 @@
-{"gen-examples": "false", "extensions": ["extension-referenceAny", "extension-measureSubscription", "extension-doNotPerform", "extension-dataCollectionType", "extension-reportingVendor", "extension-certificationIdentifier"], "special-urls": ["https://ncqa.org/fhir/ig/Measure/measure-mrp"], "jurisdiction": "US", "source": "ig.xml", "resources": {"StructureDefinition/extension-referenceAny": {"base": "StructureDefinition-extension-referenceAny.html", "defns": "StructureDefinition-extension-referenceAny-definitions.html"}, "Encounter/Encounter01": {"base": "Encounter-Encounter01.html", "source": "Encounter-encounter01.json"}, "Patient/patient03": {"base": "Patient-patient03.html", "source": "Patient-patient03.json"}, "ValueSet/improvement-notation": {"base": "ValueSet-improvement-notation.html", "source": "valueset-improvement-notation.xml"}, "StructureDefinition/coverage-deqm": {"base": "StructureDefinition-coverage-deqm.html", "defns": "StructureDefinition-coverage-deqm-definitions.html"}, "Coverage/coverage01": {"base": "Coverage-coverage01.html", "source": "Coverage-coverage01.json"}, "Coverage/coverage03": {"base": "Coverage-coverage03.html", "source": "Coverage-coverage03.json"}, "Measure/measure-mrp": {"base": "Measure-measure-mrp.html", "source": "Measure-measure-mrp.json"}, "Practitioner/practitioner03": {"base": "Practitioner-practitioner03.html", "source": "Practitioner-practitioner03.json"}, "Practitioner/practitioner02": {"base": "Practitioner-practitioner02.html", "source": "Practitioner-practitioner02.json"}, "OperationDefinition/collect-data": {"base": "OperationDefinition-collect-data.html", "source": "operationdefinition-collect-data.xml"}, "CapabilityStatement/aggregator-client": {"base": "CapabilityStatement-aggregator-client.html", "source": "capabilitystatement-aggregator-client.json"}, "StructureDefinition/extension-measureSubscription": {"base": "StructureDefinition-extension-measureSubscription.html", "defns": "StructureDefinition-extension-measureSubscription-definitions.html"}, "StructureDefinition/subscription-deqm": {"base": "StructureDefinition-subscription-deqm.html", "defns": "StructureDefinition-subscription-deqm-definitions.html"}, "Location/location03": {"base": "Location-location03.html", "source": "Location-location03.json"}, "Patient/patient01": {"base": "Patient-patient01.html", "source": "Patient-patient01.json"}, "CapabilityStatement/producer-server": {"base": "CapabilityStatement-producer-server.html", "source": "capabilitystatement-producer-server.json"}, "MeasureReport/datax-measurereport02": {"base": "MeasureReport-datax-measurereport02.html", "source": "MeasureReport-datax-measurereport02.json"}, "StructureDefinition/indv-measurereport-deqm": {"base": "StructureDefinition-indv-measurereport-deqm.html", "defns": "StructureDefinition-indv-measurereport-deqm-definitions.html"}, "StructureDefinition/extension-certificationIdentifier": {"base": "StructureDefinition-extension-certificationIdentifier.html", "defns": "StructureDefinition-extension-certificationIdentifier-definitions.html"}, "StructureDefinition/deviceusestatement-deqm": {"base": "StructureDefinition-deviceusestatement-deqm.html", "defns": "StructureDefinition-deviceusestatement-deqm-definitions.html"}, "StructureDefinition/organization-deqm": {"base": "StructureDefinition-organization-deqm.html", "defns": "StructureDefinition-organization-deqm-definitions.html"}, "Organization/organization03": {"base": "Organization-organization03.html", "source": "Organization-organization03.json"}, "MeasureReport/indv-measurereport01": {"base": "MeasureReport-indv-measurereport01.html", "source": "MeasureReport-indv-measurereport01.json"}, "CapabilityStatement/receiver-server": {"base": "CapabilityStatement-receiver-server.html", "source": "capabilitystatement-receiver-server.json"}, "StructureDefinition/extension-dataCollectionType": {"base": "StructureDefinition-extension-dataCollectionType.html", "defns": "StructureDefinition-extension-dataCollectionType-definitions.html"}, "Location/location02": {"base": "Location-location02.html", "source": "Location-location02.json"}, "Patient/patient02": {"base": "Patient-patient02.html", "source": "Patient-patient02.json"}, "MeasureReport/datax-measurereport01": {"base": "MeasureReport-datax-measurereport01.html", "source": "MeasureReport-datax-measurereport01.json"}, "StructureDefinition/extension-reportingVendor": {"base": "StructureDefinition-extension-reportingVendor.html", "defns": "StructureDefinition-extension-reportingVendor-definitions.html"}, "StructureDefinition/extension-doNotPerform": {"base": "StructureDefinition-extension-doNotPerform.html", "defns": "StructureDefinition-extension-doNotPerform-definitions.html"}, "StructureDefinition/devicerequest-deqm": {"base": "StructureDefinition-devicerequest-deqm.html", "defns": "StructureDefinition-devicerequest-deqm-definitions.html"}, "StructureDefinition/practitioner-deqm": {"base": "StructureDefinition-practitioner-deqm.html", "defns": "StructureDefinition-practitioner-deqm-definitions.html"}, "Organization/organization01": {"base": "Organization-organization01.html", "source": "Organization-organization01.json"}, "Organization/organization02": {"base": "Organization-organization02.html", "source": "Organization-organization02.json"}, "Coverage/coverage02": {"base": "Coverage-coverage02.html", "source": "Coverage-coverage02.json"}, "Location/location01": {"base": "Location-location01.html", "source": "Location-location01.json"}, "Practitioner/practitioner01": {"base": "Practitioner-practitioner01.html", "source": "Practitioner-practitioner01.json"}, "Observation/observation01": {"base": "Observation-observation01.html", "source": "Observation-observation01.json"}, "CapabilityStatement/aggregator-server": {"base": "CapabilityStatement-aggregator-server.html", "source": "capabilitystatement-aggregator-server.json"}, "CapabilityStatement/producer-client": {"base": "CapabilityStatement-producer-client.html", "source": "capabilitystatement-producer-client.json"}, "Organization/organization04": {"base": "Organization-organization04.html", "source": "Organization-organization04.json"}, "MeasureReport/summ-measurereport01": {"base": "MeasureReport-summ-measurereport01.html", "source": "MeasureReport-summ-measurereport01.json"}, "StructureDefinition/medicationrequest-deqm": {"base": "StructureDefinition-medicationrequest-deqm.html", "defns": "StructureDefinition-medicationrequest-deqm-definitions.html"}, "StructureDefinition/datax-measurereport-deqm": {"base": "StructureDefinition-datax-measurereport-deqm.html", "defns": "StructureDefinition-datax-measurereport-deqm-definitions.html"}, "MeasureReport/indv-measurereport02": {"base": "MeasureReport-indv-measurereport02.html", "source": "MeasureReport-indv-measurereport02.json"}, "CodeSystem/improvement-notation": {"base": "CodeSystem-improvement-notation.html", "source": "codesystem-improvement-notation.xml"}, "StructureDefinition/summary-measurereport-deqm": {"base": "StructureDefinition-summary-measurereport-deqm.html", "defns": "StructureDefinition-summary-measurereport-deqm-definitions.html"}, "Task/Task01": {"base": "Task-Task01.html", "source": "Task-task01.json"}, "StructureDefinition/medicationadministration-deqm": {"base": "StructureDefinition-medicationadministration-deqm.html", "defns": "StructureDefinition-medicationadministration-deqm-definitions.html"}}, "version": "3.0.1", "title": "Data Exchange For Quality Measures", "extraTemplates": ["mappings"], "broken-links": "warning", "logging": ["progress"], "mappings": "false", "contact_value": "http://www.hl7.org/Special/committees/cqi/index.cfm", "license": "CC0-1.0", "working-dir": "/Users/ehaas/Documents/FHIR/DaVinci/", "dependencyList": [{"location": "http://hl7.org/fhir/us/qicore", "name": "qicore", "version": "current"}, {"location": "http://hl7.org/fhir/us/core", "name": "uscore", "version": "2.0.0"}], "npm-name": "hl7.fhir.us.davinci-deqm.stu3", "paths": {"output": "output", "resources": ["../DaVinci-DEQM/source/resources", "../DaVinci-DEQM/source/examples"], "pages": ["framework", "../DaVinci-DEQM/source/pages"], "txCache": "generated_output/txCache", "temp": "generated_output/temp", "specification": "http://hl7.org/fhir/STU3/", "qa": "generated_output/qa"}, "spreadsheets": ["profile-devicerequest-deqm-spreadsheet.xml", "profile-medicationadministration-deqm-spreadsheet.xml", "profile-summary-measurereport-deqm-spreadsheet.xml", "profile-datax-measurereport-deqm-spreadsheet.xml", "profile-practitioner-deqm-spreadsheet.xml", "profile-deviceusestatement-deqm-spreadsheet.xml", "profile-organization-deqm-spreadsheet.xml", "profile-coverage-deqm-spreadsheet.xml", "profile-indv-measurereport-deqm-spreadsheet.xml", "profile-medicationrequest-deqm-spreadsheet.xml", "profile-subcription-deqm-spreadsheet.xml"], "publisher": "DaVinci Project", "pub_url": "ehaas@healthedatainc.com", "topofpage": "true", "defaults": {"Task": {"template-base": "ex.html"}, "SearchParameter": {"template-base": "base.html"}, "Practitioner": {"template-base": "ex.html"}, "MeasureReport": {"template-base": "ex.html"}, "StructureMap": {"script": false, "content": false, "template-base": "ex.html", "profiles": false}, "Encounter": {"template-base": "ex.html"}, "StructureDefinition": {"template-defns": "sd-definitions.html", "template-base": "sd.html", "template-mappings": "sd-mappings.html"}, "Organization": {"template-base": "ex.html"}, "CapabilityStatement": {"template-base": "base.html"}, "Patient": {"template-base": "ex.html"}, "Observation": {"template-base": "ex.html"}, "ConceptMap": {"template-base": "base.html"}, "CodeSystem": {"template-base": "base.html"}, "Any": {"swagger": "true", "template-base": "base.html", "template-format": "format.html"}, "Measure": {"template-base": "ex.html"}, "Coverage": {"template-base": "ex.html"}, "Location": {"template-base": "ex.html"}, "ValueSet": {"template-base": "base.html"}, "OperationDefinition": {"template-base": "base.html"}}, "swagger": [{"mode": "single", "capabilities": "server"}], "contact_system": "url", "allviews": "true", "no-inactive-codes": "false", "tool": "jekyll", "fixed-business-version": "2.0.0", "status": "draft", "canonicalBase": "http://hl7.org/fhir/us/davinci-deqm/STU3", "igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/", "sct-edition": "http://snomed.info/sct/731000124108", "do-transforms": "false"}
+{
+  "dependencyList": [
+    {
+      "name": "uscore",
+      "version": "2.0.0",
+      "location": "http://hl7.org/fhir/us/core"
+    }
+  ],
+  "contact_value": "http://argonautwiki.hl7.org",
+  "fixed-business-version": "1.0.0",
+  "do-transforms": "false",
+  "title": "Argonaut Questionnaire",
+  "spreadsheets": [
+    "profile-base-qr-spreadsheet.xml",
+    "profile-base-qcvs-spreadsheet.xml",
+    "profile-base-q-spreadsheet.xml",
+    "profile-derived-qr-spreadsheet.xml"
+  ],
+  "working-dir": "/Users/ehaas/Documents/FHIR/Argonaut-Questionnaire/",
+  "paths": {
+    "output": "docs",
+    "qa": "generated_output/qa",
+    "pages": [
+      "framework",
+      "../Argo-Questionnaire/source/pages"
+    ],
+    "txCache": "generated_output/txCache",
+    "temp": "generated_output/temp",
+    "specification": "http://hl7.org/fhir/STU3",
+    "resources": [
+      "../Argo-Questionnaire/source/resources",
+      "../Argo-Questionnaire/source/examples"
+    ]
+  },
+  "no-inactive-codes": "false",
+  "resources": {
+    "Questionnaire/questionnaire-example-sampler": {
+      "base": "Questionnaire-questionnaire-example-sampler.html",
+      "source": "questionnaire-example-sampler.json"
+    },
+    "SearchParameter/Questionnaire-context-type": {
+      "base": "SearchParameter-Questionnaire-context-type.html",
+      "source": "searchparameter-questionnaire-context-type.xml"
+    },
+    "Questionnaire/questionnaire-example-audit-c": {
+      "base": "Questionnaire-questionnaire-example-audit-c.html",
+      "source": "questionnaire-example-audit-c.json"
+    },
+    "SearchParameter/Questionnaire-context": {
+      "base": "SearchParameter-Questionnaire-context.html",
+      "source": "searchparameter-questionnaire-context-value.xml"
+    },
+    "SearchParameter/QuestionnaireResponse-source": {
+      "base": "SearchParameter-QuestionnaireResponse-source.html",
+      "source": "searchparameter-questionnaireresponse-source.json"
+    },
+    "SearchParameter/QuestionnaireResponse-context": {
+      "base": "SearchParameter-QuestionnaireResponse-context.html",
+      "source": "searchparameter-questionnaireresponse-context.json"
+    },
+    "Questionnaire/questionnaire-example-housing": {
+      "base": "Questionnaire-questionnaire-example-housing.html",
+      "source": "questionnaire-example-housing.json"
+    },
+    "Questionnaire/questionnaire-example-phq9": {
+      "base": "Questionnaire-questionnaire-example-phq9.html",
+      "source": "questionnaire-example-phq9.json"
+    },
+    "CapabilityStatement/argo-questionnaire-provider-ehr": {
+      "base": "CapabilityStatement-argo-questionnaire-provider-ehr.html",
+      "source": "capabilitystatement-argo-questionnaire-provider-ehr.json"
+    },
+    "QuestionnaireResponse/adaptive-questionnaireresponse-example-audit-c": {
+      "base": "QuestionnaireResponse-adaptive-questionnaireresponse-example-audit-c.html",
+      "source": "adaptive-questionnaireresponse-example-audit-c.json"
+    },
+    "OperationDefinition/next-question": {
+      "base": "OperationDefinition-next-question.html",
+      "source": "operationdefinition-next-q.xml"
+    },
+    "Encounter/encounter1": {
+      "base": "Encounter-encounter1.html",
+      "source": "encounter-example-encounter1.json"
+    },
+    "CapabilityStatement/answerbank": {
+      "base": "CapabilityStatement-answerbank.html",
+      "source": "capabilitystatement-answerbank.json"
+    },
+    "SearchParameter/QuestionnaireResponse-status": {
+      "base": "SearchParameter-QuestionnaireResponse-status.html",
+      "source": "searchparameter-questionnaireresponse-status.json"
+    },
+    "QuestionnaireResponse/questionnaireresponse-example-phq9": {
+      "base": "QuestionnaireResponse-questionnaireresponse-example-phq9.html",
+      "source": "questionnaireresponse-example-phq9.json"
+    },
+    "SearchParameter/Questionnaire-status": {
+      "base": "SearchParameter-Questionnaire-status.html",
+      "source": "searchparameter-questionnaire-status.json"
+    },
+    "StructureDefinition/argo-questionnaire": {
+      "base": "StructureDefinition-argo-questionnaire.html",
+      "defns": "StructureDefinition-argo-questionnaire-definitions.html"
+    },
+    "StructureDefinition/argo-adap-questionnaireresponse": {
+      "base": "StructureDefinition-argo-adap-questionnaireresponse.html",
+      "defns": "StructureDefinition-argo-adap-questionnaireresponse-definitions.html"
+    },
+    "QuestionnaireResponse/questionnaireresponse-example-dast": {
+      "base": "QuestionnaireResponse-questionnaireresponse-example-dast.html",
+      "source": "questionnaireresponse-example-dast.json"
+    },
+    "StructureDefinition/argo-questionnaireresponse": {
+      "base": "StructureDefinition-argo-questionnaireresponse.html",
+      "defns": "StructureDefinition-argo-questionnaireresponse-definitions.html"
+    },
+    "CapabilityStatement/assessmentbank": {
+      "base": "CapabilityStatement-assessmentbank.html",
+      "source": "capabilitystatement-assessmentbank.json"
+    },
+    "QuestionnaireResponse/adaptive-questionnaireresponse-example-sampler": {
+      "base": "QuestionnaireResponse-adaptive-questionnaireresponse-example-sampler.html",
+      "source": "adaptive-questionnaireresponse-example-sampler.json"
+    },
+    "QuestionnaireResponse/adaptive-questionnaireresponse-example-phq9": {
+      "base": "QuestionnaireResponse-adaptive-questionnaireresponse-example-phq9.html",
+      "source": "adaptive-questionnaireresponse-example-phq9.json"
+    },
+    "StructureDefinition/argo-questionnaire-valueset": {
+      "base": "StructureDefinition-argo-questionnaire-valueset.html",
+      "defns": "StructureDefinition-argo-questionnaire-valueset-definitions.html"
+    },
+    "SearchParameter/QuestionnaireResponse-patient": {
+      "base": "SearchParameter-QuestionnaireResponse-patient.html",
+      "source": "searchparameter-questionnaireresponse-patient.json"
+    },
+    "QuestionnaireResponse/questionnaireresponse-example-audit-c": {
+      "base": "QuestionnaireResponse-questionnaireresponse-example-audit-c.html",
+      "source": "questionnaireresponse-example-audit-c.json"
+    },
+    "Questionnaire/questionnaire-example-dast": {
+      "base": "Questionnaire-questionnaire-example-dast.html",
+      "source": "questionnaire-example-dast.json"
+    },
+    "QuestionnaireResponse/adaptive-questionnaireresponse-example-dast": {
+      "base": "QuestionnaireResponse-adaptive-questionnaireresponse-example-dast.html",
+      "source": "adaptive-questionnaireresponse-example-dast.json"
+    },
+    "SearchParameter/Questionnaire-version": {
+      "base": "SearchParameter-Questionnaire-version.html",
+      "source": "searchparameter-questionnaire-version.json"
+    },
+    "StructureDefinition/extension-multipleOr": {
+      "base": "StructureDefinition-extension-multipleOr.html",
+      "source": "StructureDefinition-extension-multipleOr.xml",
+      "defns": "StructureDefinition-extension-multipleOr-definitions.html"
+    },
+    "SearchParameter/QuestionnaireResponse-author": {
+      "base": "SearchParameter-QuestionnaireResponse-author.html",
+      "source": "searchparameter-questionnaireresponse-author.json"
+    },
+    "SearchParameter/Questionnaire-title": {
+      "base": "SearchParameter-Questionnaire-title.html",
+      "source": "searchparameter-questionnaire-title.json"
+    },
+    "StructureDefinition/extension-itemOrder": {
+      "base": "StructureDefinition-extension-itemOrder.html",
+      "source": "StructureDefinition-extension-itemorder.xml",
+      "defns": "StructureDefinition-extension-itemOrder-definitions.html"
+    },
+    "StructureDefinition/extension-responsePeriod": {
+      "base": "StructureDefinition-extension-responsePeriod.html",
+      "source": "StructureDefinition-extension-responsePeriod.xml",
+      "defns": "StructureDefinition-extension-responsePeriod-definitions.html"
+    },
+    "SearchParameter/Questionnaire-context-type-value": {
+      "base": "SearchParameter-Questionnaire-context-type-value.html",
+      "source": "searchparameter-questionnaire-context-type-value.xml"
+    },
+    "StructureDefinition/extension-timeLimit": {
+      "base": "StructureDefinition-extension-timeLimit.html",
+      "source": "StructureDefinition-extension-timelimit.xml",
+      "defns": "StructureDefinition-extension-timeLimit-definitions.html"
+    },
+    "SearchParameter/Questionnaire-publisher": {
+      "base": "SearchParameter-Questionnaire-publisher.html",
+      "source": "searchparameter-questionnaire-publisher.json"
+    },
+    "Patient/subject1": {
+      "base": "Patient-subject1.html",
+      "source": "patient-example-subject1.json"
+    },
+    "QuestionnaireResponse/questionnaireresponse-example-sampler-contained-patient": {
+      "base": "QuestionnaireResponse-questionnaireresponse-example-sampler-contained-patient.html",
+      "source": "questionnaireresponse-example-sampler-contained-patient.json"
+    },
+    "Practitioner/prov-admin1": {
+      "base": "Practitioner-prov-admin1.html",
+      "source": "practitioner-example-prov-admin1.json"
+    },
+    "StructureDefinition/extension-multipleAnd": {
+      "base": "StructureDefinition-extension-multipleAnd.html",
+      "source": "StructureDefinition-extension-multipleAnd.xml",
+      "defns": "StructureDefinition-extension-multipleAnd-definitions.html"
+    },
+    "SearchParameter/patient-birthdate": {
+      "base": "SearchParameter-patient-birthdate.html",
+      "source": "searchparameter-patient-birthdate.json"
+    },
+    "CapabilityStatement/adaptive-questionnaire-service": {
+      "base": "CapabilityStatement-adaptive-questionnaire-service.html",
+      "source": "capabilitystatement-adaptive-questionnaire-service.json"
+    },
+    "SearchParameter/QuestionnaireResponse-questionnaire": {
+      "base": "SearchParameter-QuestionnaireResponse-questionnaire.html",
+      "source": "searchparameter-questionnaireresponse-questionnaire.json"
+    },
+    "QuestionnaireResponse/questionnaireresponse-example-housing": {
+      "base": "QuestionnaireResponse-questionnaireresponse-example-housing.html",
+      "source": "questionnaireresponse-example-housing.json"
+    },
+    "QuestionnaireResponse/questionnaireresponse-example-sampler": {
+      "base": "QuestionnaireResponse-questionnaireresponse-example-sampler.html",
+      "source": "questionnaireresponse-example-sampler.json"
+    }
+  },
+  "extraTemplates": [
+    "mappings"
+  ],
+  "version": "3.0.1",
+  "allviews": "true",
+  "gen-examples": "false",
+  "mappings": "true",
+  "swagger": [
+    {
+      "capabilities": "server",
+      "mode": "single"
+    }
+  ],
+  "status": "draft",
+  "pub_url": "ehaas@healthedatainc.com",
+  "license": "CC0-1.0",
+  "broken-links": "warning",
+  "source": "ig.xml",
+  "topofpage": "true",
+  "defaults": {
+    "StructureMap": {
+      "profiles": false,
+      "template-base": "ex.html",
+      "script": false,
+      "content": false
+    },
+    "StructureDefinition": {
+      "template-mappings": "sd-mappings.html",
+      "template-defns": "sd-definitions.html",
+      "template-base": "sd.html"
+    },
+    "Questionnaire": {
+      "template-base": "ex.html"
+    },
+    "QuestionnaireResponse": {
+      "template-base": "ex.html"
+    },
+    "SearchParameter": {
+      "template-base": "base.html"
+    },
+    "CodeSystem": {
+      "template-base": "base.html"
+    },
+    "Patient": {
+      "template-base": "ex.html"
+    },
+    "Practitioner": {
+      "template-base": "ex.html"
+    },
+    "ConceptMap": {
+      "template-base": "base.html"
+    },
+    "Any": {
+      "template-format": "format.html",
+      "template-base": "base.html",
+      "swagger": "true"
+    },
+    "CapabilityStatement": {
+      "template-base": "base.html"
+    },
+    "Encounter": {
+      "template-base": "ex.html"
+    },
+    "OperationDefinition": {
+      "template-base": "base.html"
+    },
+    "ValueSet": {
+      "template-base": "base.html"
+    }
+  },
+  "logging": [
+    "progress"
+  ],
+  "igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/",
+  "publisher": "Argonaut Project",
+  "npm-name": "argonaut.us.questionnaire",
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "contact_system": "url",
+  "tool": "jekyll",
+  "canonicalBase": "http://fhir.org/guides/argonaut-questionnaire"
+}

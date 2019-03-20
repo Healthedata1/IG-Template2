@@ -40,7 +40,7 @@ topofpage: True
 
   {% include {{[type]}}-{{[name]}}.xhtml %}
 
-  {% capture my-include %}{% include {{[id]}}.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
+  {% capture my-include %}{% include {{[id]}}-example.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
 <!-- ============OperationDefinition CONTENT CONTENT=============== -->
 
 {% else %}
