@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/test3/ImplementationGuide/ig> a fhir:ImplementationGuide;
+<http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ig"];
+  fhir:Resource.id [ fhir:value "healthedatainc.ig-template2-0.0.0"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG_Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/ig</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG_Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://www.fhir.org/guides/test3/ImplementationGuide/ig"];
+  fhir:ImplementationGuide.url [ fhir:value "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0"];
   fhir:ImplementationGuide.version [ fhir:value "0.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "IG_Test3"];
   fhir:ImplementationGuide.title [ fhir:value "IG_Test3"];
@@ -23,11 +23,11 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "ehaas@healthedatainc.com" ]
+       fhir:ContactPoint.value [ fhir:value "mailto:ehaas@healthedatainc.com" ]
      ]
   ];
   fhir:ImplementationGuide.copyright [ fhir:value "Used by permission of Health eData Inc, all rights reserved Creative Commons License"];
-  fhir:ImplementationGuide.packageId [ fhir:value "healthedatainc.mfhir"];
+  fhir:ImplementationGuide.packageId [ fhir:value "healthedatainc.ig-template2"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.0";
@@ -369,7 +369,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://www.fhir.org/guides/test3/ImplementationGuide/ig.ttl> a owl:Ontology;
+<http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

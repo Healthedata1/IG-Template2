@@ -188,7 +188,7 @@ can only resize using html  or css ;-(
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> <li><a href='index.html'><b>Home</b></a></li><li><a href='terminology.html'><b>Terminology</b></a></li><li><b>CodeSystem Blah Codes</b></li>
+    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> 
 </nav>
 
 
@@ -209,10 +209,6 @@ This is the
 
 
 
-  <style type="text/css">
-  h2,h3,h4,h5,h6{--pagenumber: "5.2"}
-  </style>
-
 
 
 <!-- ============nav-tabs=============== -->
@@ -224,30 +220,30 @@ This is the
 	<li class="active"><a href="#">Narrative Content</a></li>
 
 <!--
-{ % if CodeSystem == "StructureDefinition"  % }
+{ % if ImplementationGuide == "StructureDefinition"  % }
 	{ % if content == "definitions"  % }
 		<li class="active"><a href="#">Detailed Descriptions</a></li>
 	{ % else % }
-		<li><a href="CodeSystem-blah-codes-definitions.html">Detailed Descriptions</a></li>
+		<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0-definitions.html">Detailed Descriptions</a></li>
 	{ % endif % }
 	{ % if content == "mappings" % }
 		<li class="active"><a href="#">Mappings</a></li>
 	{ % else % }
-		<li><a href="CodeSystem-blah-codes-mappings.html">Mappings</a></li>
+		<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0-mappings.html">Mappings</a></li>
 	{ % endif % }
 { % endif % }
 -->
 
-<li><a href="CodeSystem-blah-codes.xml.html">XML</a></li>
+<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.xml.html">XML</a></li>
 
 
-	<li><a href="CodeSystem-blah-codes.json.html">JSON</a></li>
+	<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.json.html">JSON</a></li>
 
 <!--
 { % if content == "turtle" % }
 	<li class="active"><a href="#">Turtle</a></li>
 { % else % }
-	<li><a href="CodeSystem-blah-codes.ttl.html">Turtle</a></li>
+	<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.ttl.html">Turtle</a></li>
 { % endif % }
 -->
 </ul>
@@ -262,30 +258,18 @@ This is the
 <!-- ============ CONTENT CONTENT=============== -->
 
 
-<!-- ============CODESYSTEM CONTENT CONTENT=============== -->
+<!-- ============ConceptMap CapabilityStatement SearchParameter CONTENT CONTENT=============== -->
 
-  <table class="grid">
- <tbody><tr><td>Defining URL:</td><td>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</td></tr>
- <tr><td>Version:</td><td>0.0.0</td></tr>
- <tr><td>Name:</td><td>BlahCodes</td></tr>
- <tr><td>Status:</td><td>All the concepts defined by the code system are included in the code system resource</td></tr>
- <tr><td>Definition:</td><td><p>A bunch of example codes</p>
-</td></tr>
- <tr><td>Source Resource:</td><td><a href="CodeSystem-blah-codes.xml.html">XML</a> / <a href="CodeSystem-blah-codes.json.html">JSON</a> / <a href="CodeSystem-blah-codes.ttl.html">Turtle</a></td></tr>
-</tbody></table>
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2>IG_Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>
 
-
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>
-</div><p>This code system http://www.fhir.org/guides/test3/CodeSystem/blah-codes defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">blah<a name="blah-codes-blah"> </a></td><td>Blah</td><td>example code 1</td></tr><tr><td style="white-space:nowrap">foo<a name="blah-codes-foo"> </a></td><td>Foo</td><td>example code 2</td></tr><tr><td style="white-space:nowrap">bar<a name="blah-codes-bar"> </a></td><td>Bar</td><td>example code 3</td></tr></table></div>
-
-  <!-- ============CODESYSTEM CONTENT CONTENT=============== -->
+  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
 
 
 
 
 <!-- simple format links
 <p>
-Formats: <a href="CodeSystem-blah-codes.html">Narrative</a>, <a href="CodeSystem-blah-codes.xml.html">XML</a>, <a href="CodeSystem-blah-codes.json.html">JSON</a>, <a href="CodeSystem-blah-codes.ttl.html">Turtle</a>
+Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Narrative</a>, <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.xml.html">XML</a>, <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.json.html">JSON</a>, <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.ttl.html">Turtle</a>
 </p>
 -->
 

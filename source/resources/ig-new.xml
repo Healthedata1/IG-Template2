@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ig"/>
+  <id value="healthedatainc.ig-template2-0.0.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
     <valueString value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources"/>
   </extension>
@@ -17,7 +17,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="/Users/ehaas/Documents/FHIR/IG-Template2/source/history"/>
   </extension>
-  <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
+  <url value="http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0"/>
   <version value="0.0.0"/>
   <name value="IG_Test3"/>
   <title value="IG_Test3"/>
@@ -26,11 +26,11 @@
   <contact>
     <telecom>
       <system value="email"/>
-      <value value="ehaas@healthedatainc.com"/>
+      <value value="mailto:ehaas@healthedatainc.com"/>
     </telecom>
   </contact>
   <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
-  <packageId value="healthedatainc.mfhir"/>
+  <packageId value="healthedatainc.ig-template2"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
   <fhirVersion value="4.0.0"/>

@@ -5,7 +5,7 @@ title,IG_Test3
 status,draft
 publisher,Health eData Inc
 contact_system,email
-contact_value,ehaas@healthedatainc.com
+contact_value,mailto:ehaas@healthedatainc.com
 license,
 extensions,extension-blah|extension-complex
 searches,
@@ -29,6 +29,7 @@ do-transforms,FALSE
 canonicalBase,http://www.fhir.org/guides/test3
 dependencyList.name,uscore
 dependencyList.location,http://hl7.org/fhir/us/core
+dependencyList.package,hl7.fhir.us.core
 dependencyList.version,current
 special-urls,
 tool,jekyll
@@ -36,5 +37,5 @@ logging,progress
 topofpage,TRUE
 allviews,TRUE
 mappings,TRUE
-npm-name,healthedatainc.mfhir
+npm-name,healthedatainc.ig-template2
 version,4.0.0

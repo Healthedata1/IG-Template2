@@ -1,6 +1,6 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "ig",
+  "id" : "healthedatainc.ig-template2-0.0.0",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
     "valueString" : "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources"
@@ -21,7 +21,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "/Users/ehaas/Documents/FHIR/IG-Template2/source/history"
   }],
-  "url" : "http://www.fhir.org/guides/test3/ImplementationGuide/ig",
+  "url" : "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
   "version" : "0.0.0",
   "name" : "IG_Test3",
   "title" : "IG_Test3",
@@ -30,11 +30,11 @@
   "contact" : [{
     "telecom" : [{
       "system" : "email",
-      "value" : "ehaas@healthedatainc.com"
+      "value" : "mailto:ehaas@healthedatainc.com"
     }]
   }],
   "copyright" : "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
-  "packageId" : "healthedatainc.mfhir",
+  "packageId" : "healthedatainc.ig-template2",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.0",
   "4.0.0"],

@@ -34,6 +34,8 @@ Figure 1 is a picture of a cat to show how to insert an image using markdown.
 
 These are the site variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation# Jekyll):
 
+- IG Package ID (defined in ig.json)- {% raw %}{{site.data.fhir.packageId}} {% endraw %} = {{site.data.fhir.packageId}}
+
 - IG Business version specification (defined in ig.json)- {% raw %}{{site.data.fhir.ig.version}} {% endraw %} = {{site.data.fhir.ig.version}}
 
 - IG status (defined in ig.xml)- {% raw %}{{site.data.fhir.ig.status}} {% endraw %} = {{site.data.fhir.ig.status}}
@@ -46,14 +48,14 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
      - link to {{site.data.fhir.uscore}} in markdown is  {% raw %}\[{{site.data.fhir.uscore}}\]({{site.data.fhir.uscore}}){% endraw %} = [{{site.data.fhir.uscore}}]({{site.data.fhir.uscore}})
 
-     - current link to {{site.data.fhir.uscore}} home in markdown is  {% raw %}\[{{site.data.fhir.uscore}}/index.html\]({{site.data.fhir.uscore}}/index.html){% endraw %} = [{{site.data.fhir.uscore}}/index.html]({{site.data.fhir.uscore}}/index.html)
+     - current link to {{site.data.fhir.uscore}} home in markdown is  {% raw %}\[{{site.data.fhir.uscore}}index.html\]({{site.data.fhir.uscore}}index.html){% endraw %} = [{{site.data.fhir.uscore}}index.html]({{site.data.fhir.uscore}}index.html)
 
 
 - igName : Title of the implementation Guide (defined in ig.xml) -  {% raw %} {{site.data.fhir.igName}} {% endraw %}= {{site.data.fhir.igName}}
 
 - path : path to the main FHIR specification (defined in ig.json)-  {% raw %} {{site.data.fhir.path}} {% endraw %}= {{site.data.fhir.path}}
 
-     - link to {{site.data.fhir.path}} in markdown is  {% raw %}\[{{site.data.fhir.path}}\]({{site.data.fhir.path}}){% endraw %} = [{{site.data.fhir.path}}]({{site.data.fhir.path}})
+     - link to {{site.data.fhir.path}} in markdown is  {% raw %}\[{{site.data.fhir.path}}index.html\]({{site.data.fhir.path}}index.html){% endraw %} = [{{site.data.fhir.path}}index.html]({{site.data.fhir.path}}index.html)
 
 - canonical : canonical path to this specification (defined in ig.json)-  {% raw %} {{site.data.fhir.canonical}} {% endraw %} = {{site.data.fhir.canonical}}
 
