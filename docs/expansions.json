@@ -1,8 +1,69 @@
 {
   "resourceType" : "Bundle",
-  "id" : "943dd50f-b0e4-4d0e-870f-e27e94671d52",
+  "id" : "f6739f20-bb1a-480c-ae0c-d0bb43f518d8",
   "meta" : {
-    "lastUpdated" : "2019-03-19T19:33:49.817-07:00"
+    "lastUpdated" : "2019-03-20T08:50:24.992-07:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "blah-codes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p><p>All codes from system <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-blah\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-blah\">blah</a></td><td>Blah</td><td>example code 1</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-foo\">foo</a></td><td>Foo</td><td>example code 2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar\"> </a><a href=\"CodeSystem-blah-codes.html#blah-codes-bar\">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></div>"
+      },
+      "url" : "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
+      "version" : "0.0.0",
+      "name" : "BlahCodes",
+      "status" : "draft",
+      "date" : "2018-03-13T08:16:34-07:00",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url"
+        },
+        {
+          "system" : "email"
+        }]
+      }],
+      "description" : "A bunch of example codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US",
+          "display" : "United States of America"
+        }]
+      }],
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:0ca8a9f7-a532-4197-87c3-6913a1e6cb93",
+        "timestamp" : "2019-03-20T08:35:12-07:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
+          "code" : "blah",
+          "display" : "Blah"
+        },
+        {
+          "system" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
+          "code" : "foo",
+          "display" : "Foo"
+        },
+        {
+          "system" : "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
+          "code" : "bar",
+          "display" : "Bar"
+        }]
+      }
+    }
+  }]
 }

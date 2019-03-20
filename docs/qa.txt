@@ -1,208 +1,298 @@
-﻿Argonaut Questionnaire : Validation Results
+﻿IG_Test3 : Validation Results
 =========================================
 
-err = 36, warn = 90, info = 84
-Generated Tue Mar 19 19:34:09 PDT 2019. FHIR version 4.1.0 for 3.0.1
+err = 20, warn = 28, info = 0
+Generated Wed Mar 20 08:50:36 PDT 2019. FHIR version 4.1.0 for 4.0.0
 
- Build Errors : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/adaptive-questionnaireresponse-example-audit-c : 0 / 7
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/adaptive-questionnaireresponse-example-dast : 0 / 3
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/adaptive-questionnaireresponse-example-phq9 : 0 / 3
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/adaptive-questionnaireresponse-example-sampler : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/encounter-example-encounter1 : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/patient-example-subject1 : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/practitioner-example-prov-admin1 : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaire-example-audit-c : 0 / 3
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaire-example-dast : 0 / 1
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaire-example-housing : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaire-example-phq9 : 0 / 2
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaire-example-sampler : 0 / 13
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-audit-c : 3 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-dast : 5 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-housing : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-phq9 : 4 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-sampler : 2 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-sampler-contained-patient : 4 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/StructureDefinition-extension-itemorder : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/StructureDefinition-extension-multipleAnd : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/StructureDefinition-extension-multipleOr : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/StructureDefinition-extension-responsePeriod : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/StructureDefinition-extension-timelimit : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/capabilitystatement-adaptive-questionnaire-service : 0 / 3
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/capabilitystatement-answerbank : 0 / 14
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/capabilitystatement-argo-questionnaire-provider-ehr : 0 / 24
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/capabilitystatement-assessmentbank : 0 / 13
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/ig : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/operationdefinition-next-q : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-patient-birthdate : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-context-type : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-context-type-value : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-context-value : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-publisher : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-status : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-title : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-version : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-author : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-context : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-patient : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-questionnaire : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-source : 0 / 0
- /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-status : 0 / 0
- argo_adap_questionnaireresponse : 0 / 0
- argo_questionnaire : 0 / 0
- argo_questionnaire_valueset : 0 / 0
- argo_questionnaireresponse : 0 / 0
+ Build Errors : 244 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 6 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2 : 1 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes : 0 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-ifr : 0 / 2
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes : 0 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet : 1 / 2
+ Template-basic : 2 / 8
 </table>
 == n/a ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/adaptive-questionnaireresponse-example-audit-c.json ==
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-audit-c: QuestionnaireResponse: The questionnaire "#contained-adaptive-questionnaire-example-audit-c" could not be resolved, so no validation can be performed against the base questionnaire
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-audit-c: QuestionnaireResponse.contained.item[3].code: The display "How often do you have a drink containing alcohol" is not a valid display for the code {http://loinc.org}68518-0 - should be one of ["How often do you have a drink containing alcohol [SAMHSA]",]
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-audit-c: QuestionnaireResponse.contained.item[4].code: The display "How many standard drinks containing alcohol do you have on a typical day" is not a valid display for the code {http://loinc.org}68519-8 - should be one of ["How many standard drinks containing alcohol do you have on a typical day [SAMHSA]",]
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-audit-c: QuestionnaireResponse.contained.item[5].code: The display "How often do you have 6 or more drinks on 1 occasion" is not a valid display for the code {http://loinc.org}68520-6 - should be one of ["How often do you have 6 or more drinks on 1 occasion [SAMHSA]",]
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-audit-c: QuestionnaireResponse.questionnaire.contained.item[3].code: The display "How often do you have a drink containing alcohol" is not a valid display for the code {http://loinc.org}68518-0 - should be one of ["How often do you have a drink containing alcohol [SAMHSA]",]
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-audit-c: QuestionnaireResponse.questionnaire.contained.item[4].code: The display "How many standard drinks containing alcohol do you have on a typical day" is not a valid display for the code {http://loinc.org}68519-8 - should be one of ["How many standard drinks containing alcohol do you have on a typical day [SAMHSA]",]
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-audit-c: QuestionnaireResponse.questionnaire.contained.item[5].code: The display "How often do you have 6 or more drinks on 1 occasion" is not a valid display for the code {http://loinc.org}68520-6 - should be one of ["How often do you have 6 or more drinks on 1 occasion [SAMHSA]",]
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/adaptive-questionnaireresponse-example-dast.json ==
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-dast: QuestionnaireResponse: The questionnaire "#contained-adaptive-questionnaire-example-dast" could not be resolved, so no validation can be performed against the base questionnaire
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-dast: QuestionnaireResponse.contained.item[3].prefix: value should not start or finish with whitespace
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-dast: QuestionnaireResponse.questionnaire.contained.item[3].prefix: value should not start or finish with whitespace
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/adaptive-questionnaireresponse-example-phq9.json ==
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-phq9: QuestionnaireResponse: The questionnaire "#contained-adaptive-questionnaire-example-phq9" could not be resolved, so no validation can be performed against the base questionnaire
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-phq9: QuestionnaireResponse.contained.item[3].prefix: value should not start or finish with whitespace
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-phq9: QuestionnaireResponse.questionnaire.contained.item[3].prefix: value should not start or finish with whitespace
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/adaptive-questionnaireresponse-example-sampler.json ==
-WARNING: QuestionnaireResponse/adaptive-questionnaireresponse-example-sampler: QuestionnaireResponse: The questionnaire "#contained-adaptive-questionnaire-example-sampler" could not be resolved, so no validation can be performed against the base questionnaire
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/encounter-example-encounter1.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/patient-example-subject1.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/practitioner-example-prov-admin1.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaire-example-audit-c.json ==
-WARNING: Questionnaire/questionnaire-example-audit-c: Questionnaire.item[1].code: The display "How often do you have a drink containing alcohol" is not a valid display for the code {http://loinc.org}68518-0 - should be one of ["How often do you have a drink containing alcohol [SAMHSA]",]
-WARNING: Questionnaire/questionnaire-example-audit-c: Questionnaire.item[2].code: The display "How many standard drinks containing alcohol do you have on a typical day" is not a valid display for the code {http://loinc.org}68519-8 - should be one of ["How many standard drinks containing alcohol do you have on a typical day [SAMHSA]",]
-WARNING: Questionnaire/questionnaire-example-audit-c: Questionnaire.item[3].code: The display "How often do you have 6 or more drinks on 1 occasion" is not a valid display for the code {http://loinc.org}68520-6 - should be one of ["How often do you have 6 or more drinks on 1 occasion [SAMHSA]",]
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaire-example-dast.json ==
-WARNING: Questionnaire/questionnaire-example-dast: Questionnaire.item[1].item[2].prefix: value should not start or finish with whitespace
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaire-example-housing.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaire-example-phq9.json ==
-WARNING: Questionnaire/questionnaire-example-phq9: Questionnaire.code: The display "PHQ-9 quick depression assessment panel" is not a valid display for the code {http://loinc.org}44249-1 - should be one of ["PHQ-9 quick depression assessment panel [Reported.PHQ]",]
-WARNING: Questionnaire/questionnaire-example-phq9: Questionnaire.item[1].item[2].prefix: value should not start or finish with whitespace
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaire-example-sampler.json ==
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[1].item.text: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[2].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[3].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[4].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[5].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[6].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[7].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[8].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[9].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[10].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[11].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[12].prefix: value should not start or finish with whitespace
-WARNING: Questionnaire/questionnaire-example-sampler: Questionnaire.item[13].prefix: value should not start or finish with whitespace
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-audit-c.json ==
-ERROR: QuestionnaireResponse/questionnaireresponse-example-audit-c: QuestionnaireResponse.item.answer: The value provided (http://loinc.org::LA6270-8) is not in the options value set in the questionnaire
-ERROR: QuestionnaireResponse/questionnaireresponse-example-audit-c: QuestionnaireResponse.item.answer: The value provided (http://loinc.org::LA15694-5) is not in the options value set in the questionnaire
-ERROR: QuestionnaireResponse/questionnaireresponse-example-audit-c: QuestionnaireResponse.item: If text exists, it must match the questionnaire definition for linkId d1
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-dast.json ==
-ERROR: QuestionnaireResponse/questionnaireresponse-example-dast: QuestionnaireResponse.item: If text exists, it must match the questionnaire definition for linkId g1
-ERROR: QuestionnaireResponse/questionnaireresponse-example-dast: QuestionnaireResponse.item.item: No response answer found for required item g1.d
-ERROR: QuestionnaireResponse/questionnaireresponse-example-dast: QuestionnaireResponse.item: If text exists, it must match the questionnaire definition for linkId g2
-ERROR: QuestionnaireResponse/questionnaireresponse-example-dast: QuestionnaireResponse.item.item: If text exists, it must match the questionnaire definition for linkId g2.d
-ERROR: QuestionnaireResponse/questionnaireresponse-example-dast: QuestionnaireResponse.item.item: No response answer found for required item g2.d
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-housing.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-phq9.json ==
-ERROR: QuestionnaireResponse/questionnaireresponse-example-phq9: QuestionnaireResponse.item.item: No response answer found for required item g1.d
-ERROR: QuestionnaireResponse/questionnaireresponse-example-phq9: QuestionnaireResponse.item.item.answer: The value provided (http://loinc.org::LA6568-5) is not in the options value set in the questionnaire
-ERROR: QuestionnaireResponse/questionnaireresponse-example-phq9: QuestionnaireResponse.item.item: If text exists, it must match the questionnaire definition for linkId g1.s
-ERROR: QuestionnaireResponse/questionnaireresponse-example-phq9: QuestionnaireResponse.item.item.answer: The value provided (http://loinc.org::LA6572-7) is not in the options value set in the questionnaire
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-sampler.json ==
-ERROR: QuestionnaireResponse/questionnaireresponse-example-sampler: QuestionnaireResponse.item.item: If text exists, it must match the questionnaire definition for linkId g1.d
-ERROR: QuestionnaireResponse/questionnaireresponse-example-sampler: QuestionnaireResponse.item.item: No response answer found for required item g1.d
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/examples/questionnaireresponse-example-sampler-contained-patient.json ==
-ERROR: QuestionnaireResponse/questionnaireresponse-example-sampler-contained-patient: QuestionnaireResponse.item.item: If text exists, it must match the questionnaire definition for linkId g1.d
-ERROR: QuestionnaireResponse/questionnaireresponse-example-sampler-contained-patient: QuestionnaireResponse.item.item: No response answer found for required item g1.d
-ERROR: QuestionnaireResponse/questionnaireresponse-example-sampler-contained-patient: QuestionnaireResponse.subject.contained: Profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient, Element 'QuestionnaireResponse.subject.contained.identifier': minimum required = 1, but only found 0
-ERROR: QuestionnaireResponse/questionnaireresponse-example-sampler-contained-patient: QuestionnaireResponse.subject.contained: Profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient, Element 'QuestionnaireResponse.subject.contained.name': minimum required = 1, but only found 0
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/StructureDefinition-extension-itemorder.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/StructureDefinition-extension-multipleAnd.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/StructureDefinition-extension-multipleOr.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/StructureDefinition-extension-responsePeriod.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/StructureDefinition-extension-timelimit.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/capabilitystatement-adaptive-questionnaire-service.json ==
-WARNING: CapabilityStatement/adaptive-questionnaire-service: CapabilityStatement.format[1]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-WARNING: CapabilityStatement/adaptive-questionnaire-service: CapabilityStatement.format[2]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-WARNING: CapabilityStatement/adaptive-questionnaire-service: CapabilityStatement.patchFormat: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/capabilitystatement-answerbank.json ==
-WARNING: CapabilityStatement/answerbank: CapabilityStatement.format[1]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-WARNING: CapabilityStatement/answerbank: CapabilityStatement.format[2]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-WARNING: CapabilityStatement/answerbank: CapabilityStatement.patchFormat: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[2].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[3].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[4].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[5].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[6].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[7].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[8].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[9].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[10].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[11].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/answerbank: CapabilityStatement.rest.resource.extension[12].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/capabilitystatement-argo-questionnaire-provider-ehr.json ==
-WARNING: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.format[1]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-WARNING: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.format[2]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-WARNING: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.patchFormat: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[1].extension[2].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[1].extension[3].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[1].extension[4].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[1].extension[5].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[1].extension[6].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[1].extension[7].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[1].extension[8].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[1].extension[9].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[1].extension[10].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[1].extension[11].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[2].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[3].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[4].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[5].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[6].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[7].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[8].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[9].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[10].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[11].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/argo-questionnaire-provider-ehr: CapabilityStatement.rest.resource[2].extension[12].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/capabilitystatement-assessmentbank.json ==
-WARNING: CapabilityStatement/assessmentbank: CapabilityStatement.format[1]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-WARNING: CapabilityStatement/assessmentbank: CapabilityStatement.format[2]: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-WARNING: CapabilityStatement/assessmentbank: CapabilityStatement.patchFormat: ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
-INFORMATION: CapabilityStatement/assessmentbank: CapabilityStatement.rest.resource.extension[2].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/assessmentbank: CapabilityStatement.rest.resource.extension[3].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/assessmentbank: CapabilityStatement.rest.resource.extension[4].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/assessmentbank: CapabilityStatement.rest.resource.extension[5].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/assessmentbank: CapabilityStatement.rest.resource.extension[6].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/assessmentbank: CapabilityStatement.rest.resource.extension[7].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/assessmentbank: CapabilityStatement.rest.resource.extension[8].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/assessmentbank: CapabilityStatement.rest.resource.extension[9].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/assessmentbank: CapabilityStatement.rest.resource.extension[10].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-INFORMATION: CapabilityStatement/assessmentbank: CapabilityStatement.rest.resource.extension[11].extension[1]: This element does not match any known slice for the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/ig.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/operationdefinition-next-q.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-patient-birthdate.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-context-type.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-context-type-value.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-context-value.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-publisher.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-status.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-title.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaire-version.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-author.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-context.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-patient.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-questionnaire.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-source.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/searchparameter-questionnaireresponse-status.json ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/profile-derived-qr-spreadsheet.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/profile-base-q-spreadsheet.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/profile-base-qcvs-spreadsheet.xml ==
-== /Users/ehaas/Documents/FHIR/Argo-Questionnaire/source/resources/profile-base-qr-spreadsheet.xml ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be healthedatainc.mfhir-0.0.0
+ERROR: ??: The reference http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status could not be resolved
+ERROR: Patient.contact.relationship: The reference http://hl7.org/fhir/ValueSet/v2-0131 could not be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/p/a at Line 284, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/p/a at Line 284, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.xml.html#/html/head/body/div/div/div/p/a at Line 601, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.xml.html#/html/head/body/div/div/div/p/a at Line 601, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.html#/html/head/body/div/div/div/p/a at Line 314, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.html#/html/head/body/div/div/div/p/a at Line 314, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/p/a at Line 304, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/p/a at Line 304, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.json.html#/html/head/body/div/div/div/p/a at Line 631, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.json.html#/html/head/body/div/div/div/p/a at Line 631, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.xml.html#/html/head/body/div/div/div/p/a at Line 639, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.xml.html#/html/head/body/div/div/div/p/a at Line 639, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/todo.html#/html/head/body/div/div/div/p/a at Line 256, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/todo.html#/html/head/body/div/div/div/p/a at Line 256, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-definitions.html#/html/head/body/div/div/div/p/a at Line 399, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-definitions.html#/html/head/body/div/div/div/p/a at Line 399, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 450, column 1713: The link 'v2-0131.html' for "v2-0131" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 578, column 1713: The link 'v2-0131.html' for "v2-0131" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/p/a at Line 653, column 39: The link 'StructureDefinition-template-basic.html#quick-start' for "StructureDefinition-template-basic.html#quick-start" cannot be resolved (valid targets: [page-content-wrapper, mandatory-data-elements-and-terminology, tbl-snap-inner, Basic.identifier.extension.id, Basic.implicitRules, Basic.id, copy-button, Basic.code.coding.extension, all-tbl-diff, Basic.code.coding, Basic.code.coding.id, tabs-summ, tbl-summ, stripe, segment-footer, Basic.code.coding.system, Basic.modifierExtension, Basic.identifier.extension.extension, Basic.identifier.id, all-tbl-snap-inner, segment-header, Basic.code.coding.display, Basic.created, profile, tabs-diff, all-tbl-summ, tbl-diff, Basic.extension, Basic.identifier.use, Basic.text, all-tbl-summ-inner, examples, tabs-all, back-to-top, Basic.identifier.value, Basic.code.text, tbl-diff-inner, segment-navbar, Basic.identifier.extension.value_x_, Basic.identifier.assigner, Basic.code.coding.version, Basic, Basic.identifier.extension, publish-box, Basic.subject, tabs, Basic.author, segment-post-footer, Basic.language, all-tbl-snap, Basic.identifier.system, search, Basic.identifier.type, Basic.code, downloads, Basic.code.coding.code, tabs-snap, introduction, Basic.code.id, tbl-snap, summary, scope-and-usage, Basic.code.extension, Basic.contained, Basic.identifier.period, Basic.identifier, Basic.meta, Basic.code.coding.userSelected, all-tbl-diff-inner, project-status, Basic.identifier.extension.url])
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 723, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 723, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-mappings.html#/html/head/body/div/div/div/p/a at Line 309, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-mappings.html#/html/head/body/div/div/div/p/a at Line 309, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.ttl.html#/html/head/body/div/div/div/p/a at Line 591, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.ttl.html#/html/head/body/div/div/div/p/a at Line 591, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.ttl.html#/html/head/body/div/div/div/p/a at Line 393, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.ttl.html#/html/head/body/div/div/div/p/a at Line 393, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/searchparameters.html#/html/head/body/div/div/div/p/a at Line 259, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/searchparameters.html#/html/head/body/div/div/div/p/a at Line 259, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.xml.html#/html/head/body/div/div/div/p/a at Line 1969, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.xml.html#/html/head/body/div/div/div/p/a at Line 1969, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.json.html#/html/head/body/div/div/div/p/a at Line 691, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.json.html#/html/head/body/div/div/div/p/a at Line 691, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.json.html#/html/head/body/div/div/div/p/a at Line 384, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.json.html#/html/head/body/div/div/div/p/a at Line 384, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.ttl.html#/html/head/body/div/div/div/p/a at Line 1818, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.ttl.html#/html/head/body/div/div/div/p/a at Line 1818, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/br/tr/td/a at Line 632, column 206: The link 'v2-0131.html' for "v2-0131" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/br/tr/td/br/div/div/div/p/a at Line 904, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/br/tr/td/br/div/div/div/p/a at Line 904, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/terminology.html#/html/head/body/div/div/div/p/a at Line 268, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/terminology.html#/html/head/body/div/div/div/p/a at Line 268, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.ttl.html#/html/head/body/div/div/div/p/a at Line 475, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.ttl.html#/html/head/body/div/div/div/p/a at Line 475, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.json.html#/html/head/body/div/div/div/p/a at Line 487, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.json.html#/html/head/body/div/div/div/p/a at Line 487, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.xml.html#/html/head/body/div/div/div/p/a at Line 2845, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.xml.html#/html/head/body/div/div/div/p/a at Line 2845, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.json.html#/html/head/body/div/div/div/p/a at Line 579, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.json.html#/html/head/body/div/div/div/p/a at Line 579, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.json.html#/html/head/body/div/div/div/p/a at Line 408, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.json.html#/html/head/body/div/div/div/p/a at Line 408, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-definitions.html#/html/head/body/div/div/div/p/a at Line 338, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-definitions.html#/html/head/body/div/div/div/p/a at Line 338, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.xml.html#/html/head/body/div/div/div/p/a at Line 1014, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.xml.html#/html/head/body/div/div/div/p/a at Line 1014, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.json.html#/html/head/body/div/div/div/p/a at Line 579, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.json.html#/html/head/body/div/div/div/p/a at Line 579, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.json.html#/html/head/body/div/div/div/p/a at Line 371, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.json.html#/html/head/body/div/div/div/p/a at Line 371, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.ttl.html#/html/head/body/div/div/div/p/a at Line 376, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.ttl.html#/html/head/body/div/div/div/p/a at Line 376, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 713, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 713, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#/html/head/body/div/div/div/p/a at Line 338, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#/html/head/body/div/div/div/p/a at Line 338, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-mappings.html#/html/head/body/div/div/div/p/a at Line 346, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-mappings.html#/html/head/body/div/div/div/p/a at Line 346, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.xml.html#/html/head/body/div/div/div/p/a at Line 542, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.xml.html#/html/head/body/div/div/div/p/a at Line 542, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/security.html#/html/head/body/div/div/div/p/a at Line 259, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/security.html#/html/head/body/div/div/div/p/a at Line 259, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.ttl.html#/html/head/body/div/div/div/p/a at Line 407, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.ttl.html#/html/head/body/div/div/div/p/a at Line 407, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-mappings.html#/html/head/body/div/div/div/p/a at Line 309, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-mappings.html#/html/head/body/div/div/div/p/a at Line 309, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.xml.html#/html/head/body/div/div/div/p/a at Line 542, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.xml.html#/html/head/body/div/div/div/p/a at Line 542, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.html#/html/head/body/div/div/div/p/a at Line 330, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.html#/html/head/body/div/div/div/p/a at Line 330, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/operations.html#/html/head/body/div/div/div/p/a at Line 259, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/operations.html#/html/head/body/div/div/div/p/a at Line 259, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.json.html#/html/head/body/div/div/div/p/a at Line 3125, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.json.html#/html/head/body/div/div/div/p/a at Line 3125, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-definitions.html#/html/head/body/div/div/div/p/a at Line 338, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-definitions.html#/html/head/body/div/div/div/p/a at Line 338, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.xml.html#/html/head/body/div/div/div/p/a at Line 468, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.xml.html#/html/head/body/div/div/div/p/a at Line 468, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.ttl.html#/html/head/body/div/div/div/p/a at Line 953, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.ttl.html#/html/head/body/div/div/div/p/a at Line 953, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 552, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 552, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.html#/html/head/body/div/div/div/p/a at Line 330, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.html#/html/head/body/div/div/div/p/a at Line 330, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 265, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/p/a at Line 304, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/p/a at Line 304, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.html#/html/head/body/div/div/div/p/a at Line 319, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.html#/html/head/body/div/div/div/p/a at Line 319, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr-definitions.html#/html/head/body/div/div/div/p/a at Line 360, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr-definitions.html#/html/head/body/div/div/div/p/a at Line 360, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/all-examples.html#/html/head/body/div/div/div/p/a at Line 273, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/all-examples.html#/html/head/body/div/div/div/p/a at Line 273, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.xml.html#/html/head/body/div/div/div/p/a at Line 375, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.xml.html#/html/head/body/div/div/div/p/a at Line 375, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.ttl.html#/html/head/body/div/div/div/p/a at Line 407, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.ttl.html#/html/head/body/div/div/div/p/a at Line 407, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.xml.html#/html/head/body/div/div/div/p/a at Line 388, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.xml.html#/html/head/body/div/div/div/p/a at Line 388, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.json.html#/html/head/body/div/div/div/p/a at Line 2158, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.json.html#/html/head/body/div/div/div/p/a at Line 2158, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/guidance.html#/html/head/body/div/div/div/p/a at Line 333, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/guidance.html#/html/head/body/div/div/div/p/a at Line 333, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr-mappings.html#/html/head/body/div/div/div/p/a at Line 310, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr-mappings.html#/html/head/body/div/div/div/p/a at Line 310, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 503, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 503, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 544, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 544, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/p/a at Line 316, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/p/a at Line 316, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.ttl.html#/html/head/body/div/div/div/p/a at Line 462, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.ttl.html#/html/head/body/div/div/div/p/a at Line 462, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/history.html#/html/head/body/div/div/div/p/a at Line 294, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/history.html#/html/head/body/div/div/div/p/a at Line 294, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.ttl.html#/html/head/body/div/div/div/p/a at Line 605, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.ttl.html#/html/head/body/div/div/div/p/a at Line 605, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/br/div/div/div/p/a at Line 616, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/br/div/div/div/p/a at Line 616, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.json.html#/html/head/body/div/div/div/p/a at Line 1111, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.json.html#/html/head/body/div/div/div/p/a at Line 1111, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.ttl.html#/html/head/body/div/div/div/p/a at Line 2594, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.ttl.html#/html/head/body/div/div/div/p/a at Line 2594, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.ttl.html#/html/head/body/div/div/div/p/a at Line 553, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.ttl.html#/html/head/body/div/div/div/p/a at Line 553, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.html#/html/head/body/div/div/div/p/a at Line 319, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.html#/html/head/body/div/div/div/p/a at Line 319, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.json.html#/html/head/body/div/div/div/p/a at Line 408, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.json.html#/html/head/body/div/div/div/p/a at Line 408, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/capstatements.html#/html/head/body/div/div/div/p/a at Line 267, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/capstatements.html#/html/head/body/div/div/div/p/a at Line 267, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 574, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 574, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-mappings.html#/html/head/body/div/div/div/p/a at Line 318, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-mappings.html#/html/head/body/div/div/div/p/a at Line 318, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/p/a at Line 4668, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/p/a at Line 4668, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.xml.html#/html/head/body/div/div/div/p/a at Line 362, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.xml.html#/html/head/body/div/div/div/p/a at Line 362, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.json.html#/html/head/body/div/div/div/p/a at Line 474, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.json.html#/html/head/body/div/div/div/p/a at Line 474, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-mappings.html#/html/head/body/div/div/div/p/a at Line 483, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-mappings.html#/html/head/body/div/div/div/p/a at Line 483, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.xml.html#/html/head/body/div/div/div/p/a at Line 458, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.xml.html#/html/head/body/div/div/div/p/a at Line 458, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/div/div/div/ul/li/ul/li/p/a at Line 294, column 158: The link 'http://hl7.org/fhir/us/core//index.html' for "http://hl7.org/fhir/us/core//index.html" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 305, column 112: The link 'http://build.fhir.org/' for "http://build.fhir.org/" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/p/a at Line 381, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/p/a at Line 381, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.ttl.html#/html/head/body/div/div/div/p/a at Line 553, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.ttl.html#/html/head/body/div/div/div/p/a at Line 553, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.xml.html#/html/head/body/div/div/div/p/a at Line 388, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.xml.html#/html/head/body/div/div/div/p/a at Line 388, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0 title="Wed, Mar 20, 2019 08:34-0700"" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html#/html/head/body/div/div/div/p/a at Line 284, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.xml.html#/html/head/body/div/div/div/p/a at Line 601, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.html#/html/head/body/div/div/div/p/a at Line 314, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html#/html/head/body/div/div/div/p/a at Line 304, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.json.html#/html/head/body/div/div/div/p/a at Line 631, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.xml.html#/html/head/body/div/div/div/p/a at Line 639, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/todo.html#/html/head/body/div/div/div/p/a at Line 256, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-definitions.html#/html/head/body/div/div/div/p/a at Line 399, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 723, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-mappings.html#/html/head/body/div/div/div/p/a at Line 309, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.ttl.html#/html/head/body/div/div/div/p/a at Line 591, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.ttl.html#/html/head/body/div/div/div/p/a at Line 393, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/searchparameters.html#/html/head/body/div/div/div/p/a at Line 259, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.xml.html#/html/head/body/div/div/div/p/a at Line 1969, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.json.html#/html/head/body/div/div/div/p/a at Line 691, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.json.html#/html/head/body/div/div/div/p/a at Line 384, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.ttl.html#/html/head/body/div/div/div/p/a at Line 1818, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/br/tr/td/br/div/div/div/p/a at Line 904, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/terminology.html#/html/head/body/div/div/div/p/a at Line 268, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.ttl.html#/html/head/body/div/div/div/p/a at Line 475, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.json.html#/html/head/body/div/div/div/p/a at Line 487, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.xml.html#/html/head/body/div/div/div/p/a at Line 2845, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.json.html#/html/head/body/div/div/div/p/a at Line 579, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.json.html#/html/head/body/div/div/div/p/a at Line 408, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-definitions.html#/html/head/body/div/div/div/p/a at Line 338, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.xml.html#/html/head/body/div/div/div/p/a at Line 1014, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.json.html#/html/head/body/div/div/div/p/a at Line 579, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.json.html#/html/head/body/div/div/div/p/a at Line 371, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.ttl.html#/html/head/body/div/div/div/p/a at Line 376, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 713, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#/html/head/body/div/div/div/p/a at Line 338, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-mappings.html#/html/head/body/div/div/div/p/a at Line 346, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.xml.html#/html/head/body/div/div/div/p/a at Line 542, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/security.html#/html/head/body/div/div/div/p/a at Line 259, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.ttl.html#/html/head/body/div/div/div/p/a at Line 407, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-mappings.html#/html/head/body/div/div/div/p/a at Line 309, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.xml.html#/html/head/body/div/div/div/p/a at Line 542, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.html#/html/head/body/div/div/div/p/a at Line 330, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/operations.html#/html/head/body/div/div/div/p/a at Line 259, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.json.html#/html/head/body/div/div/div/p/a at Line 3125, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-definitions.html#/html/head/body/div/div/div/p/a at Line 338, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.xml.html#/html/head/body/div/div/div/p/a at Line 468, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.ttl.html#/html/head/body/div/div/div/p/a at Line 953, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 552, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.html#/html/head/body/div/div/div/p/a at Line 330, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/p/a at Line 304, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.html#/html/head/body/div/div/div/p/a at Line 319, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr-definitions.html#/html/head/body/div/div/div/p/a at Line 360, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/all-examples.html#/html/head/body/div/div/div/p/a at Line 273, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.xml.html#/html/head/body/div/div/div/p/a at Line 375, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.ttl.html#/html/head/body/div/div/div/p/a at Line 407, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.xml.html#/html/head/body/div/div/div/p/a at Line 388, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.json.html#/html/head/body/div/div/div/p/a at Line 2158, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/guidance.html#/html/head/body/div/div/div/p/a at Line 333, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr-mappings.html#/html/head/body/div/div/div/p/a at Line 310, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 503, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 544, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html#/html/head/body/div/div/div/p/a at Line 316, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.ttl.html#/html/head/body/div/div/div/p/a at Line 462, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/history.html#/html/head/body/div/div/div/p/a at Line 294, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-ig.ttl.html#/html/head/body/div/div/div/p/a at Line 605, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/br/div/div/div/p/a at Line 616, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.json.html#/html/head/body/div/div/div/p/a at Line 1111, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.ttl.html#/html/head/body/div/div/div/p/a at Line 2594, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.ttl.html#/html/head/body/div/div/div/p/a at Line 553, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.html#/html/head/body/div/div/div/p/a at Line 319, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.json.html#/html/head/body/div/div/div/p/a at Line 408, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/capstatements.html#/html/head/body/div/div/div/p/a at Line 267, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/p/a at Line 574, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-mappings.html#/html/head/body/div/div/div/p/a at Line 318, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/p/a at Line 4659, column 7: The link 'ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html#/html/head/body/div/div/div/p/a at Line 4659, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.xml.html#/html/head/body/div/div/div/p/a at Line 362, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.json.html#/html/head/body/div/div/div/p/a at Line 474, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-mappings.html#/html/head/body/div/div/div/p/a at Line 483, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.xml.html#/html/head/body/div/div/div/p/a at Line 458, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/p/a at Line 381, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.ttl.html#/html/head/body/div/div/div/p/a at Line 553, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.xml.html#/html/head/body/div/div/div/p/a at Line 388, column 100: The link 'http://build.fhir.org/' for "FHIR v4.0.0" cannot be resolved
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example.xml ==
+ERROR: Patient/example: Patient.extension[1].extension[4].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#1586-7) is not  valid in the value set US-Core Detailed Race)
+ERROR: Patient/example: Patient.extension[1].extension[5].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2036-2) is not  valid in the value set US-Core Detailed Race)
+ERROR: Patient/example: Patient.extension[2].extension[2].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity (http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2184-0) is not  valid in the value set US-Core Detailed ethnicity)
+ERROR: Patient/example: Patient.extension[2].extension[3].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity (http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2148-5) is not  valid in the value set US-Core Detailed ethnicity)
+ERROR: Patient/example: Patient.extension[3].valueCode: The value provided ('F') is not in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex (http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex, and a code is required from this value set) (error message = The code system "" is not known; The code provided (#F) is not  valid in the value set US Core Birth Sex Value Set)
+ERROR: Patient/example: Patient.identifier.type.coding: Unknown Code System http://hl7.org/fhir/v2/0203
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2.xml ==
+ERROR: Patient/example2: Patient.managingOrganization: Unable to resolve resource 'Organization/1'
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes.xml ==
+WARNING: CodeSystem/blah-codes: CodeSystem: A resource should have narrative for robust management [text.div.exists()]
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-ifr.xml ==
+WARNING: StructureDefinition/ifr: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
+WARNING: StructureDefinition/ifr: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes.xml ==
+WARNING: ValueSet/blah-codes: ValueSet: A resource should have narrative for robust management [text.div.exists()]
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet.xml ==
+WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
+WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+ERROR: StructureDefinition/template-profile-on-profile: StructureDefinition.mapping[2].uri: URI values cannot have whitespace
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/template-profile-spreadsheet.xml ==
+WARNING: StructureDefinition/extension-blah: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
+WARNING: StructureDefinition/extension-blah: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/extension-complex: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
+WARNING: StructureDefinition/extension-complex: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/extension-blah2: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
+WARNING: StructureDefinition/extension-blah2: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/template-basic: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
+WARNING: StructureDefinition/template-basic: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+ERROR: template-basic: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic differential Basic.identifier.extension (foo)
+ERROR: template-basic: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic snapshot Basic.identifier.extension (foo)
