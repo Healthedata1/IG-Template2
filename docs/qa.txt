@@ -2,9 +2,9 @@
 =========================================
 
 err = 16, warn = 28, info = 0
-Generated Wed Mar 20 11:44:12 PDT 2019. FHIR version 4.1.0 for 4.0.0
+Generated Thu Mar 21 13:58:08 PDT 2019. FHIR version 4.1.0 for 4.0.0
 
- Build Errors : 3 / 0
+ Build Errors : 2 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 5 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2 : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes : 0 / 1
@@ -19,12 +19,11 @@ Generated Wed Mar 20 11:44:12 PDT 2019. FHIR version 4.1.0 for 4.0.0
 == n/a ==
 ERROR: ??: The reference http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status could not be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 265, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html#/html/head/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 308, column 112: The link 'http://build.fhir.org/' for "http://build.fhir.org/" cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example.xml ==
-ERROR: Patient/example: Patient.extension[1].extension[4].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#1586-7) is not  valid in the value set US-Core Detailed Race)
-ERROR: Patient/example: Patient.extension[1].extension[5].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2036-2) is not  valid in the value set US-Core Detailed Race)
-ERROR: Patient/example: Patient.extension[2].extension[2].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity (http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2184-0) is not  valid in the value set US-Core Detailed ethnicity)
-ERROR: Patient/example: Patient.extension[2].extension[3].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity (http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2148-5) is not  valid in the value set US-Core Detailed ethnicity)
+ERROR: Patient/example: Patient.extension[1].extension[4].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#1586-7) is not  valid in the value set US_Core_Detailed_Race)
+ERROR: Patient/example: Patient.extension[1].extension[5].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2036-2) is not  valid in the value set US_Core_Detailed_Race)
+ERROR: Patient/example: Patient.extension[2].extension[2].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity (http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2184-0) is not  valid in the value set UsCoreDetailedEthnicity)
+ERROR: Patient/example: Patient.extension[2].extension[3].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity (http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2148-5) is not  valid in the value set UsCoreDetailedEthnicity)
 ERROR: Patient/example: Patient.identifier.type.coding: Unknown Code System http://hl7.org/fhir/v2/0203
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2.xml ==
 ERROR: Patient/example2: Patient.managingOrganization: Unable to resolve resource 'Organization/1'

@@ -4,8 +4,8 @@ working-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
 title,IG_Test3
 status,draft
 publisher,Health eData Inc
-contact_system,email
-contact_value,mailto:ehaas@healthedatainc.com
+contact.system,email|url
+contact.value,mailto:ehaas@healthedatainc.com|http://foobar.com
 license,
 extensions,extension-blah|extension-complex
 searches,

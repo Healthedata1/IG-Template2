@@ -19,6 +19,14 @@
           "value": "mailto:ehaas@healthedatainc.com"
         }
       ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://foobar.com"
+        }
+      ]
     }
   ],
   "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",

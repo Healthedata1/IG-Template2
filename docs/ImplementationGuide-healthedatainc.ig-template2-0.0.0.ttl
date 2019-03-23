@@ -25,6 +25,13 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "mailto:ehaas@healthedatainc.com" ]
      ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://foobar.com" ]
+     ]
   ];
   fhir:ImplementationGuide.copyright [ fhir:value "Used by permission of Health eData Inc, all rights reserved Creative Commons License"];
   fhir:ImplementationGuide.packageId [ fhir:value "healthedatainc.ig-template2"];

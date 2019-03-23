@@ -1160,7 +1160,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="18">
     <Cell><Data ss:Type="String">foo</Data></Cell>
     <Cell ss:StyleID="s73"><Data ss:Type="String">Template Profile on Profile</Data></Cell>
-    <Cell><Data ss:Type="String">template_profile_on_profile</Data></Cell>
+    <Cell><Data ss:Type="String">TemplateProfileOnProfile</Data></Cell>
     <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s94"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s94"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3111,8 +3111,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>0</ActiveRow>
-     <ActiveCol>24</ActiveCol>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>2</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
