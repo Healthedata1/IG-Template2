@@ -1,7 +1,6 @@
 Configuration Parameter,Configuration Value ( use '|' for lists)
 igtemplate-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
 working-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
-name,IG_Test3
 title,IG Test3
 status,draft
 publisher,Health eData Inc
