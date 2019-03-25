@@ -5,7 +5,7 @@
   <url value="http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0"/>
   <version value="0.0.0"/>
   <name value="IG_Test3"/>
-  <title value="IG_Test3"/>
+  <title value="IG Test3"/>
   <status value="draft"/>
   <publisher value="Health eData Inc"/>
   <contact>

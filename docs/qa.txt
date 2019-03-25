@@ -1,24 +1,24 @@
 ﻿IG_Test3 : Validation Results
 =========================================
 
-err = 16, warn = 28, info = 0
-Generated Thu Mar 21 13:58:08 PDT 2019. FHIR version 4.1.0 for 4.0.0
+err = 16, warn = 12, info = 0
+Generated Mon Mar 25 15:06:07 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
 
  Build Errors : 2 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 5 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2 : 1 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes : 0 / 1
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-ifr : 0 / 2
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes : 0 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-ifr : 0 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet : 0 / 2
- Template-basic : 2 / 8
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet : 0 / 1
+ Template-basic : 2 / 4
 </table>
 == n/a ==
 ERROR: ??: The reference http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status could not be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 265, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 267, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example.xml ==
 ERROR: Patient/example: Patient.extension[1].extension[4].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#1586-7) is not  valid in the value set US_Core_Detailed_Race)
 ERROR: Patient/example: Patient.extension[1].extension[5].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2036-2) is not  valid in the value set US_Core_Detailed_Race)
@@ -28,26 +28,18 @@ ERROR: Patient/example: Patient.identifier.type.coding: Unknown Code System http
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2.xml ==
 ERROR: Patient/example2: Patient.managingOrganization: Unable to resolve resource 'Organization/1'
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes.xml ==
-WARNING: CodeSystem/blah-codes: CodeSystem: A resource should have narrative for robust management [text.div.exists()]
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-ifr.xml ==
-WARNING: StructureDefinition/ifr: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
 WARNING: StructureDefinition/ifr: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes.xml ==
-WARNING: ValueSet/blah-codes: ValueSet: A resource should have narrative for robust management [text.div.exists()]
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet.xml ==
-WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
 WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/template-profile-spreadsheet.xml ==
-WARNING: StructureDefinition/extension-blah: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
 WARNING: StructureDefinition/extension-blah: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition/extension-complex: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
 WARNING: StructureDefinition/extension-complex: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition/extension-blah2: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
 WARNING: StructureDefinition/extension-blah2: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition/template-basic: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
 WARNING: StructureDefinition/template-basic: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: template-basic: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic differential Basic.identifier.extension (foo)
 ERROR: template-basic: Unable to find Extension 'http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status' referenced at http://www.fhir.org/guides/test3/StructureDefinition/template-basic snapshot Basic.identifier.extension (foo)

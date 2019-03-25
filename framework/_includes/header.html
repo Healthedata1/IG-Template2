@@ -56,7 +56,11 @@
 
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
-        <b>{{ site.data.fhir.igName }} Implementation Guide</b>
+        {% if site.data.fhir.version == 3.0.1 %}
+        <b>{{ site.data.fhir.ig.name }} Implementation Guide</b>
+        {% else %}
+        <b>{{ site.data.fhir.ig.title }} Implementation Guide</b>
+        {% endif %}
         {% if {{site.build}} == "ci" %}
         CI Build
         {% elsif {{site.build}} == "ballot" %}

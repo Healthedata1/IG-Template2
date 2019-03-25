@@ -1,13 +1,18 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 2, errors = 8, warn = 14, info = 0 -->
+<!-- broken links = 2, errors = 8, warn = 6, info = 0 -->
 <head>
   <title>IG_Test3 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IG_Test3</h1>
- <p>Generated Thu Mar 21 13:58:08 PDT 2019. FHIR version 4.1.0 for 4.0.0</p>
+ <p>Generated Mon Mar 25 15:06:07 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = <a href="http://www.fhir.org/guides/test3">http://www.fhir.org/guides/test3</a> (<a href="http://www.fhir.org/guides/test3/history.html">history</a>))</p>
+ <p>HL7 Publication check:</p> <ul>
+  <li>History Page 'null' is wrong (ig.json#paths/history) - must be 'http://www.fhir.org/guides/test3/history.html' or 'http://www.fhir.org/guides/test3/history.cfml'</li>
+  <li>package-list.json: file not found in /Users/ehaas/Documents/FHIR/IG-Template2</li>
+</ul>
+
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
@@ -22,13 +27,13 @@
      <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_examples_patient-example2"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2</b></a></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_CodeSystem-blah-codes"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_CodeSystem-blah-codes"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_StructureDefinition-ifr"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-ifr</b></a></td><td><b>0</b></td><td><b>2</b></td>
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_StructureDefinition-ifr"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-ifr</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_ValueSet-blah-codes"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_ValueSet-blah-codes"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_capabilitystatement-client"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client</b></a></td><td><b>0</b></td><td><b>0</b></td>
@@ -40,10 +45,10 @@
      <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_ig"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_patient-on-usprofile-spreadsheet"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet</b></a></td><td><b>0</b></td><td><b>2</b></td>
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template2_source_resources_patient-on-usprofile-spreadsheet"><b>/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#Template-basic"><b>Template-basic</b></a></td><td><b>2</b></td><td><b>8</b></td>
+     <td><a href="#Template-basic"><b>Template-basic</b></a></td><td><b>2</b></td><td><b>4</b></td>
    </tr>
 </table>
 <hr/>
@@ -54,7 +59,7 @@
      <td><b>??</b></td><td><b>error</b></td><td><b>The reference http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example2.html#dd3ffcf1-76c1-48a7-9aea-a4ea834a3057">Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 265, column 1167</a></b></td><td><b>error</b></td><td><b>The link 'Organization/1' for &quot;Organization/1&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example2.html#6aced8de-d006-446d-a1fc-7ce9c2932e30">Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 267, column 1167</a></b></td><td><b>error</b></td><td><b>The link 'Organization/1' for &quot;Organization/1&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -96,10 +101,7 @@
 <h2><a href="CodeSystem-blah-codes.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes.xml</a></h2>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem/blah-codes: CodeSystem</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -110,9 +112,6 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/ifr: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition/ifr: StructureDefinition</b></td><td><b>warning</b></td><td><b>Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
    </tr>
 </table>
@@ -121,10 +120,7 @@
 <h2><a href="ValueSet-blah-codes.html">/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes.xml</a></h2>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet/blah-codes: ValueSet</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -159,9 +155,6 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition</b></td><td><b>warning</b></td><td><b>Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
    </tr>
 </table>
@@ -173,25 +166,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-blah: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition/extension-blah: StructureDefinition</b></td><td><b>warning</b></td><td><b>Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-complex: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition/extension-complex: StructureDefinition</b></td><td><b>warning</b></td><td><b>Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/extension-blah2: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition/extension-blah2: StructureDefinition</b></td><td><b>warning</b></td><td><b>Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/template-basic: StructureDefinition</b></td><td><b>warning</b></td><td><b>A resource should have narrative for robust management [text.div.exists()]</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition/template-basic: StructureDefinition</b></td><td><b>warning</b></td><td><b>Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>

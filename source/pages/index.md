@@ -51,7 +51,9 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
      - current link to {{site.data.fhir.uscore}} home in markdown is  {% raw %}\[{{site.data.fhir.uscore}}index.html\]({{site.data.fhir.uscore}}index.html){% endraw %} = [{{site.data.fhir.uscore}}index.html]({{site.data.fhir.uscore}}index.html)
 
 
-- igName : Title of the implementation Guide (defined in ig.xml) -  {% raw %} {{site.data.fhir.igName}} {% endraw %}= {{site.data.fhir.igName}}
+- ig Name : computer friendly name of the implementation Guide - used as human friendly name in STU3 (defined in ig.xml) -  {% raw %} {{site.data.fhir.ig.name}} {% endraw %}= {{site.data.fhir.ig.name}}
+
+- ig Title : human friendly name of the implementation Guide - R4 and above (defined in ig.xml) -  {% raw %} {{site.data.fhir.ig.title}} {% endraw %}= {{site.data.fhir.ig.title}}
 
 - path : path to the main FHIR specification (defined in ig.json)-  {% raw %} {{site.data.fhir.path}} {% endraw %}= {{site.data.fhir.path}}
 

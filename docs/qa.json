@@ -3,9 +3,9 @@
   "name": "IG_Test3",
   "package-id": "healthedatainc.ig-template2",
   "ig-ver": "0.0.0",
-  "date": "Thu, 21 Mar, 2019 13:57:53 -0700",
+  "date": "Mon, 25 Mar, 2019 15:05:56 -0700",
   "errs": 16,
-  "warnings": 28,
+  "warnings": 12,
   "hints": 0,
   "version": "4.0.0",
   "tool": "4.1.0 (3)"
