@@ -208,14 +208,17 @@ can only resize using html  or css ;-(
 
 <!-- ============StatusBox=============== -->
 
-<!--status-bar-->
-<p id="publish-box">
-This is the 
+
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+<!-- 
+This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
-   
-  
-  of the IG_Test3 Implementation Guide,  based on <a href="http://build.fhir.org/index.html">FHIR Version 4.0.0</a>.  See the <a href="#">Directory of published versions.</a>
-</p>
+   {% else %}
+    (release {{site.data.fhir.ig.version}})
+  {% endif %}
+  {% if {{site.build}} == "ballot" %} {{site.ballot}} Ballot {% endif %}
+  of the {{site.data.fhir.igName}} Implementation Guide,  based on <a href="{{ site.data.fhir.path }}index.html">FHIR Version {{ site.data.fhir.version }}</a>.  See the <a href="{{ site.historypath }}">Directory of published versions.</a>
+ -->
 
 
 <!-- ============CONTENT CONTENT=============== -->
@@ -283,7 +286,7 @@ This is the
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Mar 25, 2019 15:05-0700">2019-03-25</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Mar 29, 2019 17:25-0700">2019-03-29</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

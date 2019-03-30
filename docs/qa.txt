@@ -2,9 +2,9 @@
 =========================================
 
 err = 16, warn = 12, info = 0
-Generated Mon Mar 25 15:06:07 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+Generated Fri Mar 29 17:25:20 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
 
- Build Errors : 2 / 0
+ Build Errors : 85 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 5 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2 : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes : 0 / 0
@@ -18,7 +18,90 @@ Generated Mon Mar 25 15:06:07 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig
 </table>
 == n/a ==
 ERROR: ??: The reference http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status could not be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 267, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Any.html: The html source does not contain the header marker <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-client.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CapabilityStatement-server.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/CodeSystem-blah-codes.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-healthedatainc.ig-template2-0.0.0.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-healthedatainc.ig-template2-0.0.0.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-healthedatainc.ig-template2-0.0.0.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ImplementationGuide-healthedatainc.ig-template2-0.0.0.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 269, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-definitions.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah-mappings.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-definitions.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2-mappings.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-definitions.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex-mappings.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-complex.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr-definitions.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr-mappings.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-ifr.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-definitions.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic-mappings.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-basic.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-definitions.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile-mappings.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.json.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.ttl.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.xml.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/all-examples.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/capstatements.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/downloads.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/guidance.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/history.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/index.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/operations.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/profiles.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/searchparameters.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/security.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/terminology.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/toc.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/todo.html: The html source does not contain the header marker
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/p/div/p/a at Line 273, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 273, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 270, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html: The html source does not contain the header marker <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example.xml ==
 ERROR: Patient/example: Patient.extension[1].extension[4].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#1586-7) is not  valid in the value set US_Core_Detailed_Race)
 ERROR: Patient/example: Patient.extension[1].extension[5].valueCoding: The Coding provided is not in the value set http://hl7.org/fhir/us/core/ValueSet/detailed-race (http://hl7.org/fhir/us/core/ValueSet/detailed-race, and a code is required from this value set) (error message = The code system "urn:oid:2.16.840.1.113883.6.238" is not known; The code provided (urn:oid:2.16.840.1.113883.6.238#2036-2) is not  valid in the value set US_Core_Detailed_Race)
