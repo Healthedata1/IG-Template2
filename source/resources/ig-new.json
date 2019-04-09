@@ -23,7 +23,7 @@
   }],
   "url" : "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
   "version" : "0.0.0",
-  "name" : "IG_Test3",
+  "name" : "IGTest3",
   "title" : "IG Test3",
   "status" : "draft",
   "publisher" : "Health eData Inc",
@@ -98,12 +98,6 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/extension-blah2"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "CapabilityStatement/client"
       },
       "exampleBoolean" : false
@@ -162,11 +156,6 @@
         {
           "nameUrl" : "StructureDefinition-extension-blah.html",
           "title" : "StructureDefinition Extension Blah",
-          "generation" : "generated"
-        },
-        {
-          "nameUrl" : "StructureDefinition-extension-blah2.html",
-          "title" : "StructureDefinition Extension Blah2",
           "generation" : "generated"
         }]
       },

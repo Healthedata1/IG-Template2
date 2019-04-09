@@ -3,11 +3,11 @@
   "id": "healthedatainc.ig-template2-0.0.0",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IG_Test3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>"
   },
   "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
   "version": "0.0.0",
-  "name": "IG_Test3",
+  "name": "IGTest3",
   "title": "IG Test3",
   "status": "draft",
   "publisher": "Health eData Inc",
@@ -131,18 +131,6 @@
         ],
         "reference": {
           "reference": "CodeSystem/blah-codes"
-        },
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah2.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-blah2"
         },
         "exampleBoolean": false
       },
@@ -298,11 +286,6 @@
             {
               "nameUrl": "StructureDefinition-extension-blah.html",
               "title": "StructureDefinition Extension Blah",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-extension-blah2.html",
-              "title": "StructureDefinition Extension Blah2",
               "generation": "generated"
             }
           ]

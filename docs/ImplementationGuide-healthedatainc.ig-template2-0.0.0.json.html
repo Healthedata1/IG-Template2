@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IG_Test3</title>
+  <title>IGTest3</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IG_Test3 Implemenation Guide" />
+<meta name="description" content="IGTest3 Implemenation Guide" />
 <meta name="author" content="Health eData Inc"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -225,47 +225,22 @@ This is the {% if {{site.build}} == "ci" %}
 
 	<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Narrative Content</a></li>
 
-<!--
-{ % if ImplementationGuide == "StructureDefinition"  % }
-	{ % if json == "definitions"  % }
-		<li class="active"><a href="#">Detailed Descriptions</a></li>
-	{ % else % }
-		<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0-definitions.html">Detailed Descriptions</a></li>
-	{ % endif % }
-	{ % if json == "mappings" % }
-		<li class="active"><a href="#">Mappings</a></li>
-	{ % else % }
-		<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0-mappings.html">Mappings</a></li>
-	{ % endif % }
-{ % endif % }
--->
 
-<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.xml.html">XML</a></li>
+
+
+
 
 
 	<li class="active"><a href="#">JSON</a></li>
 
-<!--
-{ % if json == "turtle" % }
-	<li class="active"><a href="#">Turtle</a></li>
-{ % else % }
-	<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.ttl.html">Turtle</a></li>
-{ % endif % }
--->
+
+
+
 </ul>
 
     <h2> JSON Format: ImplementationGuide-healthedatainc.ig-template2-0.0.0</h2>
   
-
-<!--
-   { % elsif page.template == 'definitions'% }
-    { % include nav-tabs.html type=page.type id=page.id active="definitions" % }
-  { % elsif page.template == 'mappings' %}
-    { % include nav-tabs.html type=page.type id=page.id active="mappings" % }
- -->
-
- <!--
-  
+   
 
   <!-- ============CONTENT CONTENT=============== -->
 
@@ -283,11 +258,11 @@ This is the {% if {{site.build}} == "ci" %}
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.id">id</a>" : "healthedatainc.ig-template2-0.0.0",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.text">text</a>" : {
     "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;IG_Test3&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0&lt;/pre&gt;&lt;/div&gt;"
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;IGTest3&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0&lt;/pre&gt;&lt;/div&gt;"
   },
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.url">url</a>" : "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.version">version</a>" : "0.0.0",
-  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a>" : "IG_Test3",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a>" : "IGTest3",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.title">title</a>" : "IG Test3",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a>" : "draft",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a>" : "Health eData Inc",
@@ -411,18 +386,6 @@ This is the {% if {{site.build}} == "ci" %}
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/blah-codes"
-        },
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
-      },
-      {
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
-          {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-blah2.html"
-          }
-        ],
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah2"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
@@ -579,11 +542,6 @@ This is the {% if {{site.build}} == "ci" %}
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-extension-blah.html",
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Extension Blah",
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
-            },
-            {
-              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-extension-blah2.html",
-              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Extension Blah2",
-              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
             }
           ]
         },
@@ -704,7 +662,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Fri, Mar 29, 2019 17:25-0700">2019-03-29</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Apr 8, 2019 17:51-0700">2019-04-08</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

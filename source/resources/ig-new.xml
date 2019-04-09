@@ -19,7 +19,7 @@
   </extension>
   <url value="http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0"/>
   <version value="0.0.0"/>
-  <name value="IG_Test3"/>
+  <name value="IGTest3"/>
   <title value="IG Test3"/>
   <status value="draft"/>
   <publisher value="Health eData Inc"/>
@@ -93,12 +93,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/extension-blah2"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="CapabilityStatement/client"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -157,11 +151,6 @@
         <page>
           <nameUrl value="StructureDefinition-extension-blah.html"/>
           <title value="StructureDefinition Extension Blah"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-extension-blah2.html"/>
-          <title value="StructureDefinition Extension Blah2"/>
           <generation value="generated"/>
         </page>
       </page>
