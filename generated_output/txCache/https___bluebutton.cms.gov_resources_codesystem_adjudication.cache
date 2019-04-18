@@ -1,0 +1,61 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+  "code" : "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://bluebutton.cms.gov/resources/codesystem/adjudication\" is not known; The code provided (https://bluebutton.cms.gov/resources/codesystem/adjudication#https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+  "code" : "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://bluebutton.cms.gov/resources/codesystem/adjudication\" is not known; The code provided (https://bluebutton.cms.gov/resources/codesystem/adjudication#https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+  "code" : "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://bluebutton.cms.gov/resources/codesystem/adjudication\" is not known; The code provided (https://bluebutton.cms.gov/resources/codesystem/adjudication#https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+  "code" : "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://bluebutton.cms.gov/resources/codesystem/adjudication\" is not known; The code provided (https://bluebutton.cms.gov/resources/codesystem/adjudication#https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+  "code" : "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://bluebutton.cms.gov/resources/codesystem/adjudication\" is not known; The code provided (https://bluebutton.cms.gov/resources/codesystem/adjudication#https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+  "code" : "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://bluebutton.cms.gov/resources/codesystem/adjudication\" is not known; The code provided (https://bluebutton.cms.gov/resources/codesystem/adjudication#https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

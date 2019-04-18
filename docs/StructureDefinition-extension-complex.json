@@ -12,6 +12,7 @@
   "status": "active",
   "experimental": false,
   "date": "2017-02-15T00:00:00-08:00",
+  "publisher": "Health eData Inc",
   "description": "an example of a complex extension.",
   "fhirVersion": "4.0.0",
   "mapping": [

@@ -4,7 +4,7 @@ set -e
 path1=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
 path2=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
 path3=/Users/ehaas/Documents/FHIR/IG-tools/
-while getopts ds:ton option
+while getopts ds:tonp option
 do
  case "${option}"
  in
@@ -13,6 +13,7 @@ do
  t) NA='N/A';;
  o) PUB=1;;
  n) USEDEF=1;;
+ p) UPDATE=1;;
  esac
 done
 echo "================================================================="
@@ -24,12 +25,21 @@ echo '-n parameter = use definitions source directory definition files  = ' $USE
 echo '-s parameter = source directory = ' $SOURCE
 echo '-t parameter for no terminology server (run faster and offline)= ' $NA
 echo '-o parameter for running previous version of the igpublisher= ' $PUB
+echo '-p parameter for downloading latest version of the igpublisher from source = ' $UPDATE
 echo ' current directory =' $PWD
 echo "================================================================="
 echo getting rid of .DS_Store files since they gum up the igpublisher....
 find . -name '.DS_Store' -type f -delete
 sleep 1
 # git status
+if [[ $UPDATE ]]; then
+echo "================================================================="
+echo === get the latest ig-pub file ===
+echo "================================================================="
+mv /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar /Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
+curl http://build.fhir.org/org.hl7.fhir.igpublisher.jar -o /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
+sleep 3
+fi
 
 if [[ $DEFN ]]; then
   echo "================================================================="
