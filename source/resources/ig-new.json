@@ -52,6 +52,12 @@
     }],
     "resource" : [{
       "reference" : {
+        "reference" : "Basic/diet"
+      },
+      "exampleCanonical" : "http://www.fhir.org/guides/test3/StructureDefinition/template-basic"
+    },
+    {
+      "reference" : {
         "reference" : "Patient/example"
       },
       "exampleBoolean" : true

@@ -48,6 +48,12 @@
     </grouping>
     <resource>
       <reference>
+        <reference value="Basic/diet"/>
+      </reference>
+      <exampleCanonical value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/example"/>
       </reference>
       <exampleBoolean value="true"/>

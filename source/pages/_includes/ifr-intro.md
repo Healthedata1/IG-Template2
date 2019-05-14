@@ -23,3 +23,5 @@ The following data-elements are mandatory (i.e data MUST be present). blah blah 
 #### Examples
 
 - list examples here
+
+## NOTE if the status of the StructureDefinition is `draft` the rendering will only show the untabbed all view below.  To get the tabbed views of the resource change the status to `active`

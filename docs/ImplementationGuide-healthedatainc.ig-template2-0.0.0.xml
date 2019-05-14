@@ -39,6 +39,15 @@
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Basic-diet.html"/>
+      </extension>
+      <reference>
+        <reference value="Basic/diet"/>
+      </reference>
+      <exampleCanonical value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Patient-example.html"/>
       </extension>
       <reference>

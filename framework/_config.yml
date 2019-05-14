@@ -11,7 +11,9 @@ showTTL: false  #'true' if want ttl tab'
 showMappings: false  # 'true' if want to display mappings tab'
 showDefs: false  # 'true' if want to display Definitions tab'
 showExamples: false  # 'true' if want to display Examples tab -currently no template for it'
-default_profile_view: 0  # choice of 0|1|2|3 for summary|differential|full|all views in profile
+showPsuedoJson: # 'true' if want to display Psuedo JSON profile view'
+showPsuedoXML: # 'true' if want to display Psuedo JSON profile view'
+default_profile_view: 1  # choice of 0|1|2|3 for summary|differential|full|all views in profile
 example_types:  # for matching type to Type
 - Account
 - ActivityDefinition

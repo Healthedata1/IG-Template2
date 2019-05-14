@@ -359,12 +359,10 @@ This profile builds on <a href= "http://build.fhir.org/datatypes.html#Extension"
 <!--  this could be a customizable include -->
  <ul>
   
-<!--  <li><a href="#tabs-diff">Differential Table</a></li> -->
   <li><a href="#tabs-diff">Differential View</a></li>
-  <!-- <li><a href="#tabs-snap">Snapshot Table</a></li> -->
   <li><a href="#tabs-snap">Full View</a></li>
-  <!-- <li><a href="#tabs-xml">XML Template</a></li> -->
-  <!-- <li><a href="#tabs-json">JSON Template</a></li> -->
+  
+  
   <li><a href="#tabs-all">All Views</a></li>
 
  </ul>
@@ -408,28 +406,13 @@ This profile builds on <a href= "http://build.fhir.org/datatypes.html#Extension"
    </div>
   </div>
  </div>
+
 <!-- =======XML and JSON ======== -->
 
- <!--
- <div id="tabs-xml">
-  <div id="xml">
-   <div id="xml-inner">
-{% include StructureDefinition-extension-complex-pseudo-xml.xhtml %}
-   </div>
-  </div>
- </div>
--->
-<!--
- <div id="tabs-json">
-  <div id="json">
-   <div id="json-inner">
-     <pre class="spec">
-      {% include StructureDefinition-extension-complex-pseudo-json.xhtml %}
-     </pre>
-   </div>
-  </div>
- </div>
--->
+
+
+
+
 
 
 
@@ -479,25 +462,10 @@ This profile builds on <a href= "http://build.fhir.org/datatypes.html#Extension"
 
 <!-- =======XML and JSON ======== -->
 
-    <!--
-        <div id="all-xml">
-         <p><b>XML Template</b></p>
-         <div id="all-xml-inner">
-      {% include StructureDefinition-extension-complex-pseudo-xml.xhtml %}
-         </div>
-        </div>
-    -->
 
-        <!--
-    <div id="all-json">
-     <p><b>JSON Template</b></p>
-     <div id="all-json-inner">
-        <pre class="spec">
-         {% include StructureDefinition-extension-complex-pseudo-json.xhtml %}
-        </pre>
-    </div>
-  </div>
-    -->
+    
+
+    
 
 
  </div>
@@ -539,7 +507,7 @@ catch(exception){
 
 if (!currentTabIndex)
   
-  currentTabIndex = '0';
+  currentTabIndex = '1';
   
 
 $( '#tabs' ).tabs({
@@ -579,7 +547,7 @@ $( '#tabs' ).tabs({
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, May 14, 2019 10:15-0700">2019-05-14</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, May 14, 2019 12:36-0700">2019-05-14</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

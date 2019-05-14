@@ -54,6 +54,18 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Basic-diet.html"
+          }
+        ],
+        "reference": {
+          "reference": "Basic/diet"
+        },
+        "exampleCanonical": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Patient-example.html"
           }
         ],

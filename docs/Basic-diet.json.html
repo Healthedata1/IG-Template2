@@ -229,10 +229,12 @@ This is the {% if {{site.build}} == "ci" %}
 <!-- ============nav-tabs=============== -->
 
 
-     <!--  - choose what you want  comment out or Change what you don't-->
+
+  
+    <!--  - choose what you want  comment out or Change what you don't-->
 <ul class="nav nav-tabs">
 
-	<li class="active"><a href="#">Narrative Content</a></li>
+	<li><a href="Basic-diet.html">Narrative Content</a></li>
 
 
 
@@ -240,36 +242,68 @@ This is the {% if {{site.build}} == "ci" %}
 
 
 
-	<li><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.json.html">JSON</a></li>
+	<li class="active"><a href="#">JSON</a></li>
 
 
 
 
 </ul>
 
+    <h2> JSON Format: Basic-diet</h2>
+  
+
 
 
   <!-- ============CONTENT CONTENT=============== -->
 
 
-<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
-
 <!-- ============ CONTENT CONTENT=============== -->
 
+  <!-- ============ default xml or json content for structuredefinition CONTENT CONTENT=============== -->
+  <p>
+  Download Raw <a href="Basic-diet.json" download>json</a>
+  </p>
 
-<!-- ============ConceptMap CapabilityStatement SearchParameter CONTENT CONTENT=============== -->
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/basic.html#Basic">resourceType</a>" : "Basic",
+  "<a href="http://build.fhir.org/basic.html#Basic.id">id</a>" : "diet",
+  "<a href="http://build.fhir.org/basic.html#Basic.meta">meta</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://www.fhir.org/guides/test3/StructureDefinition/template-basic"
+    ]
+  },
+  "<a href="http://build.fhir.org/basic.html#Basic.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: diet&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 746&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diet &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/basic-resource-type code 'diet' = 'Diet)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Generated Summary: id: example; Medical Record Number = 1032702 (USUAL); active; Amy V. Shaw ; ph: 555-555-5555(HOME), amy.shaw@example.com; gender: female; birthDate: Feb 20, 2007&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: May 14, 2019&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/basic.html#Basic.identifier">identifier</a>" : [
+    {
+      "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.system">system</a>" : "http://goodhealth.org/basic/identifiers",
+      "<a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.value">value</a>" : "746"
+    }
+  ],
+  "<a href="http://build.fhir.org/basic.html#Basic.code">code</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/basic-resource-type",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "diet"
+      }
+    ]
+  },
+  "<a href="http://build.fhir.org/basic.html#Basic.subject">subject</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/example"
+  },
+  "<a href="http://build.fhir.org/basic.html#Basic.created">created</a>" : "2019-05-14"
+}</pre>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>IGTest3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>
-
-  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
-
-
+<!-- ============ default xml or json content CONTENT CONTENT=============== -->
 
 
 <!-- simple format links
 <p>
-Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Narrative</a>, <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.xml.html">XML</a>, <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.json.html">JSON</a>, <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.ttl.html">Turtle</a>
+Formats: <a href="Basic-diet.html">Narrative</a>, <a href="Basic-diet.xml.html">XML</a>, <a href="Basic-diet.json.html">JSON</a>, <a href="Basic-diet.ttl.html">Turtle</a>
 </p>
 -->
 
