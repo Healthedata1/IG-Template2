@@ -16,10 +16,6 @@
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "/Users/ehaas/Documents/FHIR/IG-Template2/source/pages"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/ehaas/Documents/FHIR/IG-Template2/source/history"
   }],
   "url" : "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
   "version" : "0.0.0",
@@ -225,16 +221,12 @@
       "value" : "version"
     },
     {
-      "code" : "generate-json",
-      "value" : "true"
+      "code" : "generate",
+      "value" : "xml"
     },
     {
-      "code" : "generate-xml",
-      "value" : "true"
-    },
-    {
-      "code" : "generate-turtle",
-      "value" : "true"
+      "code" : "generate",
+      "value" : "JSON"
     }]
   }
 }

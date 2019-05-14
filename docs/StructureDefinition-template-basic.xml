@@ -257,7 +257,7 @@
     </element>
     <element id="Basic.extension">
       <path value="Basic.extension"/>
-      <slicing id="2">
+      <slicing id="1">
         <discriminator>
           <type value="value"/>
           <path value="url"/>

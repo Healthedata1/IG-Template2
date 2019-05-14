@@ -295,7 +295,7 @@
         "id": "Basic.extension",
         "path": "Basic.extension",
         "slicing": {
-          "id": "2",
+          "id": "1",
           "discriminator": [
             {
               "type": "value",

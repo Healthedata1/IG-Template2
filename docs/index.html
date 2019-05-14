@@ -75,7 +75,7 @@ can only resize using html  or css ;-(
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
         
-        <b>IG Test3 Implementation Guide</b>
+        <b> Implementation Guide</b>
         
         
         CI Build
@@ -110,54 +110,64 @@ can only resize using html  or css ;-(
         <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-       
+       <?xml version="1.0" encoding="UTF-8"?>
 <ul class="nav navbar-nav">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="guidance.html">General Guidance</a>
-          </li>
-          <li>
-            <a href="profiles.html">Profiles and Logical Models</a>
-          </li>
-<!--
-          <li>
-            <a href="structuremaps.html">Mappings</a>
-          </li>
-          <li>
-            <a href="extensions.html">Extensions</a>
-          </li>
--->
-          <li>
-            <a href="terminology.html">Terminology</a>
-          </li>
-          <li>
-            <a href="searchparameters.html">Search Parameters</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Capability Statements<b class="caret">
-            </b>
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
-            </li>
-            <li>
-              <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
-            </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">General Guidance</a>
+  </li>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
 
-          </ul>
-          </li>          <li>
-            <a href="security.html">Security</a>
-          </li>
-          <li>
-            <a href="all-examples.html">Examples</a>
-          </li>
-          <li>
-            <a href="downloads.html">Downloads</a>
-          </li>
-        </ul>
+    <li>
+      <a href="profiles.html">Profiles and Logical Models</a>
+    </li>
+
+    <!-- <li>
+    <a href="extensions.html">Extensions</a>
+  </li>-->
+
+  <li>
+    <a href="searchparameters.html">Search Parameters</a>
+  </li>
+
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+
+  <!--   <li>
+  <a href="structuremaps.html">Mappings</a>
+</li>-->
+
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+
+<li>
+<a href="capstatements.html">CapabilityStatements</a>
+
+</li>
+
+</ul>
+</li>
+<li>
+  <a href="security.html">Security</a>
+</li>
+<li>
+  <a href="all-examples.html">Examples</a>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
+</ul>
 
 
       </div>
@@ -202,7 +212,7 @@ can only resize using html  or css ;-(
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> <li><b>Home</b></li>
+     <li><b>Home</b></li>
 </nav>
 
 
@@ -307,7 +317,7 @@ This is the {% if {{site.build}} == "ci" %}
     <p>ig Name : computer friendly name of the implementation Guide - used as human friendly name in STU3 (defined in ig.xml) -   {{site.data.fhir.ig.name}} = IGTest3</p>
   </li>
   <li>
-    <p>ig Title : human friendly name of the implementation Guide - R4 and above (defined in ig.xml) -   {{site.data.fhir.ig.title}} = IG Test3</p>
+    <p>ig Title : human friendly name of the implementation Guide - R4 and above (defined in ig.xml) -   {{site.data.fhir.ig.title}} =</p>
   </li>
   <li>
     <p>path : path to the main FHIR specification (defined in ig.json)-   {{site.data.fhir.path}} = http://build.fhir.org/</p>
@@ -324,7 +334,7 @@ This is the {% if {{site.build}} == "ci" %}
     </ul>
   </li>
   <li>
-    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 16</p>
+    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 28</p>
   </li>
   <li>
     <p>version : version of FHIR -   {{site.data.fhir.version}}  = 4.0.0</p>
@@ -339,10 +349,10 @@ This is the {% if {{site.build}} == "ci" %}
     <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 10</p>
   </li>
   <li>
-    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 1</p>
+    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 7</p>
   </li>
   <li>
-    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Wed, Apr 17, 2019 09:52-0700</p>
+    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Tue, May 14, 2019 10:15-0700</p>
   </li>
 </ul>
 
@@ -389,7 +399,7 @@ This is the {% if {{site.build}} == "ci" %}
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Apr 17, 2019 09:52-0700">2019-04-17</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, May 14, 2019 10:15-0700">2019-05-14</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

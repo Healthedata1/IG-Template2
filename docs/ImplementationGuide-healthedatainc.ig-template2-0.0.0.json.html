@@ -75,7 +75,7 @@ can only resize using html  or css ;-(
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
         
-        <b>IG Test3 Implementation Guide</b>
+        <b> Implementation Guide</b>
         
         
         CI Build
@@ -110,54 +110,64 @@ can only resize using html  or css ;-(
         <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-       
+       <?xml version="1.0" encoding="UTF-8"?>
 <ul class="nav navbar-nav">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="guidance.html">General Guidance</a>
-          </li>
-          <li>
-            <a href="profiles.html">Profiles and Logical Models</a>
-          </li>
-<!--
-          <li>
-            <a href="structuremaps.html">Mappings</a>
-          </li>
-          <li>
-            <a href="extensions.html">Extensions</a>
-          </li>
--->
-          <li>
-            <a href="terminology.html">Terminology</a>
-          </li>
-          <li>
-            <a href="searchparameters.html">Search Parameters</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Capability Statements<b class="caret">
-            </b>
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="CapabilityStatement-server.html">Conformance requirements for Server</a>
-            </li>
-            <li>
-              <a href="CapabilityStatement-client.html">Conformance requirements for Client</a>
-            </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">General Guidance</a>
+  </li>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
 
-          </ul>
-          </li>          <li>
-            <a href="security.html">Security</a>
-          </li>
-          <li>
-            <a href="all-examples.html">Examples</a>
-          </li>
-          <li>
-            <a href="downloads.html">Downloads</a>
-          </li>
-        </ul>
+    <li>
+      <a href="profiles.html">Profiles and Logical Models</a>
+    </li>
+
+    <!-- <li>
+    <a href="extensions.html">Extensions</a>
+  </li>-->
+
+  <li>
+    <a href="searchparameters.html">Search Parameters</a>
+  </li>
+
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+
+  <!--   <li>
+  <a href="structuremaps.html">Mappings</a>
+</li>-->
+
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+
+<li>
+<a href="capstatements.html">CapabilityStatements</a>
+
+</li>
+
+</ul>
+</li>
+<li>
+  <a href="security.html">Security</a>
+</li>
+<li>
+  <a href="all-examples.html">Examples</a>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
+</ul>
 
 
       </div>
@@ -190,7 +200,7 @@ can only resize using html  or css ;-(
 
 <nav class="breadcrumb">
   
-    <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a> 
+     
 </nav>
 
 
@@ -219,6 +229,7 @@ This is the {% if {{site.build}} == "ci" %}
 <!-- ============nav-tabs=============== -->
 
 
+
   
     <!--  - choose what you want  comment out or Change what you don't-->
 <ul class="nav nav-tabs">
@@ -240,7 +251,8 @@ This is the {% if {{site.build}} == "ci" %}
 
     <h2> JSON Format: ImplementationGuide-healthedatainc.ig-template2-0.0.0</h2>
   
-   
+
+
 
   <!-- ============CONTENT CONTENT=============== -->
 
@@ -441,27 +453,12 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-blah.html"
+            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ImplementationGuide-healthedatainc.ig-template2-0.0.0.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah"
-        },
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "blah",
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "template-profile-spreadsheet.xml"
-      },
-      {
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
-          {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-complex.html"
-          }
-        ],
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-complex"
-        },
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "complex",
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "template-profile-spreadsheet.xml"
+          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "ImplementationGuide/healthedatainc.ig-template2-0.0.0"
+        }
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
@@ -475,32 +472,6 @@ This is the {% if {{site.build}} == "ci" %}
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "blah2",
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "template-profile-spreadsheet.xml"
-      },
-      {
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
-          {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-template-basic.html"
-          }
-        ],
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-basic"
-        },
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Template-basic",
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "template-profile-spreadsheet.xml"
-      },
-      {
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
-          {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-template-profile-on-profile.html"
-          }
-        ],
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-profile-on-profile"
-        },
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Template-Profile-on-Profile",
-        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "patient-on-usprofile-spreadsheet.xml"
       }
     ],
     "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page">page</a>" : {
@@ -662,7 +633,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Apr 17, 2019 09:52-0700">2019-04-17</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, May 14, 2019 10:15-0700">2019-05-14</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

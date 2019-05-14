@@ -186,27 +186,12 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-blah.html"
+            "valueUri": "ImplementationGuide-healthedatainc.ig-template2-0.0.0.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/extension-blah"
-        },
-        "name": "blah",
-        "groupingId": "template-profile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-extension-complex.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/extension-complex"
-        },
-        "name": "complex",
-        "groupingId": "template-profile-spreadsheet.xml"
+          "reference": "ImplementationGuide/healthedatainc.ig-template2-0.0.0"
+        }
       },
       {
         "extension": [
@@ -220,32 +205,6 @@
         },
         "name": "blah2",
         "groupingId": "template-profile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-basic.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-basic"
-        },
-        "name": "Template-basic",
-        "groupingId": "template-profile-spreadsheet.xml"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-template-profile-on-profile.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/template-profile-on-profile"
-        },
-        "name": "Template-Profile-on-Profile",
-        "groupingId": "patient-on-usprofile-spreadsheet.xml"
       }
     ],
     "page": {

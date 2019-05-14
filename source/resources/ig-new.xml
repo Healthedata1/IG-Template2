@@ -14,9 +14,6 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="/Users/ehaas/Documents/FHIR/IG-Template2/source/pages"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/ehaas/Documents/FHIR/IG-Template2/source/history"/>
-  </extension>
   <url value="http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0"/>
   <version value="0.0.0"/>
   <name value="IGTest3"/>
@@ -220,16 +217,12 @@
       <value value="version"/>
     </parameter>
     <parameter>
-      <code value="generate-json"/>
-      <value value="true"/>
+      <code value="generate"/>
+      <value value="xml"/>
     </parameter>
     <parameter>
-      <code value="generate-xml"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="generate-turtle"/>
-      <value value="true"/>
+      <code value="generate"/>
+      <value value="JSON"/>
     </parameter>
   </definition>
 </ImplementationGuide>
