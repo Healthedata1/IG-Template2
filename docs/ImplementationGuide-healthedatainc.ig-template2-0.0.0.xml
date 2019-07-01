@@ -44,7 +44,7 @@
       <reference>
         <reference value="Basic/diet"/>
       </reference>
-      <exampleCanonical value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -144,14 +144,6 @@
         <reference value="ValueSet/blah-codes"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html"/>
-      </extension>
-      <reference>
-        <reference value="ImplementationGuide/healthedatainc.ig-template2-0.0.0"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">

@@ -1,0 +1,9 @@
+Change for all IGs
+
+1. add "copyrightyear: "2019" # copyright date for footer   to _config.yml
+   - change {{site.data.info.copyrightyear}} to {{site.copyrightyear}}+ in _includes/footer.html
+
+For US Core
+
+1. update npm name from hl7.fhir.us.core.r4 to hl7.fhir.us.core in ig.json, definitions.csv, ig.xml
+1. manually changed from US Realm to Structured Docs in ig.json

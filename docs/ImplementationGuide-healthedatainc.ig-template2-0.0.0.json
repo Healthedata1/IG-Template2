@@ -60,7 +60,7 @@
         "reference": {
           "reference": "Basic/diet"
         },
-        "exampleCanonical": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -193,17 +193,6 @@
           "reference": "ValueSet/blah-codes"
         },
         "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ImplementationGuide-healthedatainc.ig-template2-0.0.0.html"
-          }
-        ],
-        "reference": {
-          "reference": "ImplementationGuide/healthedatainc.ig-template2-0.0.0"
-        }
       },
       {
         "extension": [

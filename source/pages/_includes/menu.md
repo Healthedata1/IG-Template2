@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ul class="nav navbar-nav">
   <li>
-    <a href="toc.html">Table of Contents</a>
-  </li>
-  <li>
     <a href="index.html">Home</a>
   </li>
   <li>

@@ -54,7 +54,7 @@
       "reference" : {
         "reference" : "Basic/diet"
       },
-      "exampleCanonical" : "http://www.fhir.org/guides/test3/StructureDefinition/template-basic"
+      "exampleBoolean" : true
     },
     {
       "reference" : {

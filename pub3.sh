@@ -4,7 +4,7 @@ set -e
 path1=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
 path2=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
 path3=/Users/ehaas/Documents/FHIR/IG-tools/
-while getopts ds:tonp option
+while getopts ds:tonpw option
 do
  case "${option}"
  in
@@ -14,6 +14,7 @@ do
  o) PUB=1;;
  n) USEDEF=1;;
  p) UPDATE=1;;
+ w) WATCH =1;;
  esac
 done
 echo "================================================================="
@@ -26,6 +27,7 @@ echo '-s parameter = source directory = ' $SOURCE
 echo '-t parameter for no terminology server (run faster and offline)= ' $NA
 echo '-o parameter for running previous version of the igpublisher= ' $PUB
 echo '-p parameter for downloading latest version of the igpublisher from source = ' $UPDATE
+echo '-w parameter for using watch on igpublisher from source default is on = ' $WATCH
 echo ' current directory =' $PWD
 echo "================================================================="
 echo getting rid of .DS_Store files since they gum up the igpublisher....
@@ -37,9 +39,8 @@ echo "================================================================="
 echo === get the latest ig-pub file ===
 echo "================================================================="
 #mv /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar /Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
-
-curl 'https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.hl7.fhir.publisher&a=org.hl7.fhir.publisher.cli&v=LATEST&e=jar' -H 'authority: oss.sonatype.org' -H 'upgrade-insecure-requests: 1' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36' -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3' -H 'referer: http://build.fhir.org/downloads.html' -H 'accept-encoding: gzip, deflate, br' -H 'accept-language: en-US,en;q=0.9' --compressed ;
-curl 'https://oss.sonatype.org/service/local/repositories/snapshots/content/org/hl7/fhir/publisher/org.hl7.fhir.publisher.cli/0.9.4-SNAPSHOT/org.hl7.fhir.publisher.cli-0.9.4-20190425.204650-1.jar' -H 'authority: oss.sonatype.org' -H 'upgrade-insecure-requests: 1' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36' -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3' -H 'referer: http://build.fhir.org/downloads.html' -H 'accept-encoding: gzip, deflate, br' -H 'accept-language: en-US,en;q=0.9' --compressed -o /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
+# _L flag for redirects
+curl -L https://github.com/FHIR/latest-ig-publisher/raw/master/org.hl7.fhir.publisher.jar -o /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
 sleep 3
 fi
 

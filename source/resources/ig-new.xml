@@ -50,7 +50,7 @@
       <reference>
         <reference value="Basic/diet"/>
       </reference>
-      <exampleCanonical value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
