@@ -1,5 +1,5 @@
 Configuration Parameter,Configuration Value ( use '|' for lists)
-onlyJson,TRUE
+onlyJson,FALSE
 igtemplate-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
 working-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
 title,IG Test3
