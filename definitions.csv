@@ -38,6 +38,5 @@ tool,jekyll
 logging,progress
 topofpage,TRUE
 allviews,TRUE
-mappings,TRUE
 npm-name,healthedatainc.ig-template2
 version,4.0.0

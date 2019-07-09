@@ -32,6 +32,111 @@
       ]
     },
     {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
       "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
       "title": "Simple Extension",
       "types": [
@@ -57,6 +162,824 @@
       "title": "Simple Extension",
       "types": [
         "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+      "title": "Simple Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+      "title": "Complex Extension",
+      "types": [
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
       ]
     },
     {
@@ -305,9 +1228,113 @@
       {
         "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
         "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+        "title": "Health eData Template Profile"
       }
     ],
     "Patient": [
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+        "title": "Template Profile on Profile"
+      },
       {
         "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
         "title": "Template Profile on Profile"
@@ -381,6 +1408,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type": [
       "StructureDefinition.snapshot.element.type.code"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
       "Patient"
     ],
@@ -389,9 +1419,6 @@
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
-    ],
-    "http://tools.fhir.org/StructureDefinition/resource-information": [
-      "ImplementationGuide.definition.resource"
     ],
     "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah": [
       "Basic"
