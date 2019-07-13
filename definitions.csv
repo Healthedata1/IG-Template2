@@ -21,7 +21,7 @@ paths.temp,generated_output/temp
 paths.output,docs
 paths.txCache,generated_output/txCache
 paths.qa,generated_output/qa
-paths.history,source/history
+paths.specification,http://build.fhir.org/
 jurisdiction,
 sct-edition,
 no-inactive-codes,FALSE
