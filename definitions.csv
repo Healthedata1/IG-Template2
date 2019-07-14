@@ -22,6 +22,7 @@ paths.output,docs
 paths.txCache,generated_output/txCache
 paths.qa,generated_output/qa
 paths.specification,http://build.fhir.org/
+paths.history,http://hl7.org/fhir/us/davinci-alerts/history.cfml
 jurisdiction,
 sct-edition,
 no-inactive-codes,FALSE
