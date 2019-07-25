@@ -1,0 +1,31 @@
+{
+  "resourceType": "Basic",
+  "id": "diet",
+  "meta": {
+    "profile": [
+      "http://www.fhir.org/guides/test3/StructureDefinition/template-basic"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: diet</p><p><b>meta</b>: </p><p><b>identifier</b>: 746</p><p><b>code</b>: Diet <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/basic-resource-type code 'diet' = 'Diet)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: id: example; Medical Record Number = 1032702 (USUAL); active; Amy V. Shaw ; ph: 555-555-5555(HOME), amy.shaw@example.com; gender: female; birthDate: Feb 20, 2007</a></p><p><b>created</b>: May 14, 2019</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://goodhealth.org/basic/identifiers",
+      "value": "746"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/basic-resource-type",
+        "code": "diet"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "created": "2019-05-14"
+}
