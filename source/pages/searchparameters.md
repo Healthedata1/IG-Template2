@@ -5,4 +5,6 @@ title: SearchParameters
 layout: default
 ---
 
-   searchparameters page
+The following SearchParameters have been defined for this implementation guide.
+
+<!-- {%raw%}{% include list-searchparameters.xhtml %}{%endraw%}-->

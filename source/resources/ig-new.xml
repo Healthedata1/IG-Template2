@@ -78,6 +78,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="OperationDefinition/opdef-test"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ifr"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -161,6 +167,11 @@
         <nameUrl value="operations.html"/>
         <title value="Operations"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="OperationDefinition-opdef-test.html"/>
+          <title value="OperationDefinition Opdef Test"/>
+          <generation value="generated"/>
+        </page>
       </page>
       <page>
         <nameUrl value="terminology.html"/>

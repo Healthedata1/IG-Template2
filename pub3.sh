@@ -49,6 +49,7 @@ if [[ $DEFN ]]; then
   echo === run definitions maker with optional source directory name as first argument ===
   echo === create ig.json and ig.xml in $PWD and ../$SOURCE ===
   echo "================================================================="
+  # need to install python 3.7+ and install "lxml"  module  using 'pip install lxml' on the command line
   python3.5 ${path3}definitions.py $SOURCE
   sleep 3
   git status

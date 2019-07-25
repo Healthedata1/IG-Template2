@@ -82,6 +82,12 @@
     },
     {
       "reference" : {
+        "reference" : "OperationDefinition/opdef-test"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ifr"
       },
       "exampleBoolean" : false
@@ -164,7 +170,12 @@
       {
         "nameUrl" : "operations.html",
         "title" : "Operations",
-        "generation" : "markdown"
+        "generation" : "markdown",
+        "page" : [{
+          "nameUrl" : "OperationDefinition-opdef-test.html",
+          "title" : "OperationDefinition Opdef Test",
+          "generation" : "generated"
+        }]
       },
       {
         "nameUrl" : "terminology.html",

@@ -8,7 +8,7 @@
 
 
   <!-- ============CONTENT CONTENT=============== -->
-  
+
 <h3>list of pages</h3>
 
 {% for p in site.pages %}
@@ -32,14 +32,14 @@ pagepath = {{pagepath}}
 <pre>
 #### Table of Contents
 {: nocount="true"}
-{% for p in site.data.pages %}{% assign pagepath = p[0] %}{% assign pagelabel = site.data.pages[pagepath].label | remove: ".0" %}{% assign pagetitle = site.data.pages[pagepath].title %}{% assign depth = pagelabel | split: '.' %}{% unless {{pagepath}} contains 'ttl' or {{pagepath}} contains 'json' or  {{pagepath}} contains 'xml' or  {{pagepath}} contains 'definitions' or {{pagepath}} contains 'mappings'%}
+{% for p in site.data.pages %}{% assign pagepath = p[0] %}{% assign pagelabel = site.data.pages[pagepath].label | remove: ".0" %}{% assign pagetitle = site.data.pages[pagepath].title %}{% assign depth = pagelabel | split: '.' %}{% unless pagepath contains 'ttl' or pagepath contains 'json' or  pagepath contains 'xml' or  pagepath contains 'definitions' or pagepath contains 'mappings'%}
 {% for i in depth %}&nbsp;&nbsp;{% endfor %}- {{pagelabel | plus: 1 }} - [{{pagetitle | remove: ".html"}}]({{pagepath}}){% endunless %}{% endfor %}
 </pre>
 
 {% for p in site.data.pages %}
 p = {{p}}
 <br />
-{% assign pagepath = {{p[0]}} %}
+{% assign pagepath = p[0] %}
 pagepath = {{pagepath}}
 <br />
 p.title = {{site.data.pages[pagepath].title}}
