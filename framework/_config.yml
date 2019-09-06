@@ -16,6 +16,9 @@ showExamples: false  # 'true' if want to display Examples tab -currently no temp
 showPsuedoJson: true # 'true' if want to display Psuedo JSON profile view'
 showPsuedoXML: # 'true' if want to display Psuedo JSON profile view'
 default_profile_view: 1  # choice of 0|1|2|3 for summary|differential|full|all views in profile
+ballot_pages: # list of pages to highlight for balloters/comments  names = html pages for ig pub generated artifacts and file names for pages
+#- index.md #page.name = source file name for "static" pages
+#- StructureDefinition-template-basic.html # page.name file name for ig-pub generated html_pages
 example_types:  # for matching type to Type
 - Account
 - ActivityDefinition
@@ -69,6 +72,7 @@ example_types:  # for matching type to Type
 - FamilyMemberHistory
 - Flag
 - Goal
+- GraphDefinition
 - Group
 - GuidanceResponse
 - HealthcareService
@@ -103,6 +107,7 @@ example_types:  # for matching type to Type
 - MedicinalProductPharmaceutical
 - MedicinalProductUndesirableEffect
 - MessageHeader
+- MessageDefinition
 - NutritionOrder
 - Observation
 - ObservationDefinition

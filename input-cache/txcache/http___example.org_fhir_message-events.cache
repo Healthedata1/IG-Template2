@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://example.org/fhir/message-events",
+  "code" : "admin-notify"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://example.org/fhir/message-events\" is not known for the code \"admin-notify\"; The code provided (http://example.org/fhir/message-events#admin-notify) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

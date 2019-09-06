@@ -4,7 +4,7 @@ set -e
 path1=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
 path2=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
 path3=/Users/ehaas/Documents/FHIR/IG-tools/
-while getopts ds:tonpw option
+while getopts ds:tonpwi option
 do
  case "${option}"
  in
@@ -14,7 +14,8 @@ do
  o) PUB=1;;
  n) USEDEF=1;;
  p) UPDATE=1;;
- w) WATCH =1;;
+ w) WATCH=1;;
+ i) INI=1;;
  esac
 done
 echo "================================================================="
@@ -28,6 +29,7 @@ echo '-t parameter for no terminology server (run faster and offline)= ' $NA
 echo '-o parameter for running previous version of the igpublisher= ' $PUB
 echo '-p parameter for downloading latest version of the igpublisher from source = ' $UPDATE
 echo '-w parameter for using watch on igpublisher from source default is on = ' $WATCH
+echo '-i parameter for for using the new publishing framework with ig.ini and ig.xml and templates ( oh my !) = ' $INI
 echo ' current directory =' $PWD
 echo "================================================================="
 echo getting rid of .DS_Store files since they gum up the igpublisher....
@@ -68,7 +70,12 @@ if [[ $USEDEF ]]; then
   git status
 fi
 
-if [[ $PUB ]]; then
+if [[ $INI ]]; then
+  echo "================================================================="
+  echo ===  using the new publishing framework with ig.ini by adding \-ig ig.ini instead of \-ig ig.json option===
+  echo "================================================================="
+  java -jar ${path1} -ig ig.ini -tx $NA
+elif [[ $PUB ]]; then
   echo "================================================================="
   echo === run last known good version of the igpublisherrun most recent version of the igpublisher ===
   echo "================================================================="

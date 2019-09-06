@@ -1,0 +1,12 @@
+{
+ "package-id" : "healthedatainc.ig-template2",
+ "title" : "Test IG 3",
+ "canonical" : "http://www.fhir.org/guides/test3",
+ "introduction" : "Health eData Inc Test IG",
+ "list" : [{
+  "version" : "current",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "file:///Users/ehaas/Documents/FHIR/IG-template2/docs/guidance.html",
+  "status" : "ci-build",
+  "current" : true
+ }

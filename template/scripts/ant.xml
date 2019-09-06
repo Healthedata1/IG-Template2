@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ProcessIg" basedir=".">
+  <target name="onLoad">
+    <property name="dir.input" value="input"/>
+    <!-- Look in all input folders that might contain spreadsheets and capture the list of spreadsheet XML files as a property -->
+    <fileset id="spreadsheet.contents.id" dir=".">
+      <include name="${dir.input}/examples/*spreadsheet.xml"/>
+      <include name="${dir.input}/extensions/*spreadsheet.xml"/>
+      <include name="${dir.input}/models/*spreadsheet.xml"/>
+      <include name="${dir.input}/profiles/*spreadsheet.xml"/>
+      <include name="${dir.input}/resources/*spreadsheet.xml"/>
+      <include name="${dir.input}/structures/*spreadsheet.xml"/>
+      <include name="${dir.input}/vocabulary/*spreadsheet.xml"/>
+    </fileset>
+    <property name="prop.spreadsheet.contents" refid="spreadsheet.contents.id"/>
+    <!-- Supplement the IG file with various standard configuration files, as well as with a list of any found spreadsheets (if they're not already enumerated) -->
+    <xslt in="${onLoad.ig.source}xml" out="${onLoad.ig.dest}xml" style="${ig.scripts}/onLoad.xslt">
+      <param name="spreadsheetList" expression="${prop.spreadsheet.contents}"/>
+    </xslt>
+  </target>
+  <target name="onGenerate">
+    <property name="dir.temp.includes" value="${ig.temp}/_includes" relative="yes"/>
+    <property name="dir.template.includes" value="${ig.template}/includes" relative="yes"/>
+    <xslt in="${onGenerate.ig.source}xml" out="${onGenerate.ig.dest}xml" style="${ig.scripts}/onGenerate.xslt"/>
+    <copy todir="${dir.temp.includes}">
+      <fileset dir="${dir.template.includes}" includes="*"/>
+    </copy>
+    <xslt basedir="${dir.input}/includes" includes="*.xml" destdir="${dir.temp.includes}" extension=".xml" style="${ig.scripts}/processPages.xslt"/>
+    <xslt basedir="${dir.input}/pagecontent" includes="*.xml" destdir="${dir.temp.includes}" extension=".xml" style="${ig.scripts}/processPages.xslt"/>
+    <xslt in="${onGenerate.ig.source}xml" out="${dir.temp.includes}/artifacts.xml" style="${ig.scripts}/createArtifactSummary.xslt"/>
+    <fileset id="onGenerate.files.id" dir=".">
+      <include name="${dir.temp.includes}/artifacts.xml"/>
+    </fileset>
+    <property name="onGenerate.files" refid="onGenerate.files.id"/>
+  </target>
+</project>

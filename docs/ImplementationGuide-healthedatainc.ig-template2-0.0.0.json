@@ -10,6 +10,7 @@
   "name": "IGTest3",
   "title": "IG Test3",
   "status": "draft",
+  "date": "2019-08-31T21:23:41-07:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -95,6 +96,22 @@
         ],
         "reference": {
           "reference": "Patient/example2"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageDefinition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MessageDefinition-example.html"
+          }
+        ],
+        "reference": {
+          "reference": "MessageDefinition/example"
         },
         "exampleBoolean": true
       },

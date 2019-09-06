@@ -22,6 +22,15 @@
 {% include pagenumber.html %}
 
 <!-- ============nav-tabs=============== -->
+<!-- {% raw %}
+page source: {{ page.path }}
+<br />
+page name: {{ page.name }}
+<br />
+page title: {{ page.title }}
+<br />
+page url: {{ page.url }}
+{% endraw %} -->
 
 {% if page.template == 'format' %}
 
@@ -51,6 +60,7 @@
 {% endif %}
 
   <!-- ============CONTENT CONTENT=============== -->
+
 
 
 {{ content }}

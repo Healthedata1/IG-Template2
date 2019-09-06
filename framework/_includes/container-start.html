@@ -7,5 +7,5 @@
     <div class="container">  <!-- container -->
       <div class="row">  <!-- row -->
        <div class="inner-wrapper"> <!-- inner-wrapper -->
-         <div class="col-12">  <!--col -->
+         <div class="col-12{% if site.ballot_pages contains page.name %} note-to-balloters{% endif %}">  <!--col -->
             <!-- content of page -->

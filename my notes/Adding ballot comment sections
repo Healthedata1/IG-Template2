@@ -1,0 +1,31 @@
+Adding ballot comment sections to:
+
+update the css to class and not just p elementswrap
+
+whole page: create page variable = for_ballot trigger page level class for content in layout
+
+- does not work for generated html_pages
+
+- create a list of page names for ballot in _config.yml and look up to see if for ballot:
+
+~~~yml
+ballot_pages: # list of pages to highlight for balloters/comments  names = html pages for ig pub generated artifacts and file names for pages
+- index.md #page.name = source file name for "static" pages
+- StructureDefinition-template-basic.html # page.name file name for ig-pub generated html_pages
+~~~
+
+{% if site.ballot_pages contains page.name %} note-to-balloters{% endif %}
+ e.g.,
+<body{% if site.ballot_pages contains site.page %} class="note-to-balloters"{% endif %}>
+
+see framework/_includes/container-start.html
+
+for actually where this is implemented
+
+section  append {: .note-to-balloters} to kramdown blocks or <div class="note-to-balloters" markdown="1"></div>  to multiple blocks)
+
+append {: .note-to-balloters} to next line of block element  ( p )
+
+ or prepend to beginning of list li html element
+
+append {: .note-to-balloters} to end of inline element (span)

@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -224,6 +224,15 @@ This is the {% if {{site.build}} == "ci" %}
 
 
 <!-- ============nav-tabs=============== -->
+<!-- 
+page source: {{ page.path }}
+<br />
+page name: {{ page.name }}
+<br />
+page title: {{ page.title }}
+<br />
+page url: {{ page.url }}
+ -->
 
 
 
@@ -262,6 +271,7 @@ This is the {% if {{site.build}} == "ci" %}
   <!-- ============CONTENT CONTENT=============== -->
 
 
+
 <!-- ============ CONTENT CONTENT=============== -->
 
   <!-- ============ default xml or json content for structuredefinition CONTENT CONTENT=============== -->
@@ -283,15 +293,16 @@ This is the {% if {{site.build}} == "ci" %}
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;IGTest3&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;IG Test3&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2019-08-31T21:23:41-07:00&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Health eData Inc&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.contact">contact</a>&gt;
-    &lt;<a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+    &lt;<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;mailto:ehaas@healthedatainc.com&quot;/&gt;
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.contact">contact</a>&gt;
-    &lt;<a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+    &lt;<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://foobar.com&quot;/&gt;
     &lt;/telecom&gt;
@@ -315,11 +326,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Basic&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Basic&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Basic-diet.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Basic-diet.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Basic/diet&quot;/&gt;
@@ -329,11 +340,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Patient&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Patient&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Patient-example.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Patient-example.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Patient/example&quot;/&gt;
@@ -343,11 +354,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Patient&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Patient&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Patient-example2.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Patient-example2.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Patient/example2&quot;/&gt;
@@ -357,11 +368,25 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:extension&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;MessageDefinition&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-complex.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;MessageDefinition-example.html&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;MessageDefinition/example&quot;/&gt;
+      &lt;/reference&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:extension&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-complex.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition/extension-complex&quot;/&gt;
@@ -371,11 +396,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:extension&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:extension&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-blah.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-blah.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition/extension-blah&quot;/&gt;
@@ -385,11 +410,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;OperationDefinition&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;OperationDefinition&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;OperationDefinition-opdef-test.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;OperationDefinition-opdef-test.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;OperationDefinition/opdef-test&quot;/&gt;
@@ -399,11 +424,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:complex-type&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:complex-type&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-ifr.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-ifr.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition/ifr&quot;/&gt;
@@ -413,11 +438,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;CapabilityStatement&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;CapabilityStatement&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;CapabilityStatement-server.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;CapabilityStatement-server.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;CapabilityStatement/server&quot;/&gt;
@@ -427,11 +452,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;CodeSystem&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;CodeSystem&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;CodeSystem-blah-codes.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;CodeSystem-blah-codes.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;CodeSystem/blah-codes&quot;/&gt;
@@ -441,11 +466,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;CapabilityStatement&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;CapabilityStatement&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;CapabilityStatement-client.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;CapabilityStatement-client.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;CapabilityStatement/client&quot;/&gt;
@@ -455,11 +480,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:resource&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:resource&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-template-profile-on-profile.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-template-profile-on-profile.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition/template-profile-on-profile&quot;/&gt;
@@ -469,11 +494,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:resource&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:resource&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-template-basic.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-template-basic.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition/template-basic&quot;/&gt;
@@ -483,11 +508,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;ValueSet-blah-codes.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;ValueSet-blah-codes.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet/blah-codes&quot;/&gt;
@@ -497,11 +522,11 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:extension&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition:extension&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-blah2.html&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;StructureDefinition-extension-blah2.html&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition/extension-blah2&quot;/&gt;
@@ -665,7 +690,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Jul 25, 2019 07:57-0700">2019-07-25</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Sat, Aug 31, 2019 21:35-0700">2019-08-31</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

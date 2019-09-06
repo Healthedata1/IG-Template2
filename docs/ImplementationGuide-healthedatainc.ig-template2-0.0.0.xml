@@ -10,6 +10,7 @@
   <name value="IGTest3"/>
   <title value="IG Test3"/>
   <status value="draft"/>
+  <date value="2019-08-31T21:23:41-07:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -70,6 +71,18 @@
       </extension>
       <reference>
         <reference value="Patient/example2"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MessageDefinition-example.html"/>
+      </extension>
+      <reference>
+        <reference value="MessageDefinition/example"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
