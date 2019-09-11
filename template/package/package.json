@@ -5,5 +5,6 @@
   "license": "CC0-1.0",
   "description": "FHIR Test Template",
   "author": "http://hl7.org/fhir",
-  "canonical": "http://github.com/FHIR/hl7-ig-template"
+  "canonical": "http://github.com/FHIR/hl7-ig-template",
+  "date": "20190907042344"
 }

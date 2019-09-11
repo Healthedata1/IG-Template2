@@ -1,0 +1,104 @@
+{
+  "template-profile-on-profile": {
+    "index": 0,
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+    "name": "Template-Profile-on-Profile",
+    "path": "template-profile-on-profile.html",
+    "kind": "resource",
+    "type": "Patient",
+    "base": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+    "basename": "US Core Patient Profile",
+    "basepath": "https://build.fhir.org/ig/HL7/US-Core-R4//StructureDefinition-us-core-patient.html",
+    "status": "active",
+    "date": "Wed Feb 15 00:00:00 PST 2017",
+    "publisher": "Health eData Inc"
+  },
+  "extension-blah": {
+    "index": 1,
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+    "name": "blah",
+    "path": "extension-extension-blah.html",
+    "kind": "complex-type",
+    "type": "Extension",
+    "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename": "Extension",
+    "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "status": "active",
+    "date": "Wed Feb 15 00:00:00 PST 2017",
+    "publisher": "Health eData Inc",
+    "description": "an example of a simple extension.",
+    "contexts": [
+      {
+        "type": "Basic"
+      }
+    ]
+  },
+  "extension-complex": {
+    "index": 2,
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+    "name": "complex",
+    "path": "extension-extension-complex.html",
+    "kind": "complex-type",
+    "type": "Extension",
+    "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename": "Extension",
+    "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "status": "active",
+    "date": "Wed Feb 15 00:00:00 PST 2017",
+    "publisher": "Health eData Inc",
+    "description": "an example of a complex extension.",
+    "contexts": [
+      {
+        "type": "Basic"
+      }
+    ]
+  },
+  "extension-blah2": {
+    "index": 3,
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+    "name": "blah2",
+    "path": "extension-extension-blah2.html",
+    "kind": "complex-type",
+    "type": "Extension",
+    "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "basename": "Extension",
+    "basepath": "http://hl7.org/fhir/R4/extensibility.html#Extension",
+    "status": "active",
+    "date": "Wed Feb 15 00:00:00 PST 2017",
+    "publisher": "Health eData Inc",
+    "description": "an example of a simple extension.",
+    "contexts": [
+      {
+        "type": "Identifier"
+      }
+    ]
+  },
+  "template-basic": {
+    "index": 4,
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+    "name": "Template-basic",
+    "path": "template-basic.html",
+    "kind": "resource",
+    "type": "Basic",
+    "base": "http://hl7.org/fhir/StructureDefinition/Basic",
+    "basename": "Basic",
+    "basepath": "http://hl7.org/fhir/R4/basic.html",
+    "status": "active",
+    "date": "Wed Feb 15 00:00:00 PST 2017",
+    "publisher": "Health eData Inc"
+  },
+  "ifr": {
+    "index": 5,
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/ifr",
+    "name": "Identifer Free Reference Data Type",
+    "path": "ifr.html",
+    "kind": "complex-type",
+    "type": "Reference",
+    "base": "http://hl7.org/fhir/StructureDefinition/Reference",
+    "basename": "Reference",
+    "basepath": "http://hl7.org/fhir/R4/references.html#Reference",
+    "status": "draft",
+    "date": "Fri Jun 02 00:00:00 PDT 2017",
+    "publisher": "Health eData Inc"
+  }
+}

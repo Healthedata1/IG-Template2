@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/test3/Basic/diet> a fhir:Basic;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "diet"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.fhir.org/guides/test3/StructureDefinition/template-basic";
+       fhir:index 0;
+       fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-basic>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: diet</p><p><b>meta</b>: </p><p><b>identifier</b>: 746</p><p><b>code</b>: Diet <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/basic-resource-type code 'diet' = 'Diet)</span></p><p><b>subject</b>: <a href=\"{{[id]}}.html\">Generated Summary: id: example; Medical Record Number = 1032702 (USUAL); active; Amy V. Shaw ; ph: 555-555-5555(HOME), amy.shaw@example.com; gender: female; birthDate: Feb 20, 2007</a></p><p><b>created</b>: May 14, 2019</p></div>"
+  ];
+  fhir:Basic.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://goodhealth.org/basic/identifiers" ];
+     fhir:Identifier.value [ fhir:value "746" ]
+  ];
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/basic-resource-type" ];
+       fhir:Coding.code [ fhir:value "diet" ]
+     ]
+  ];
+  fhir:Basic.subject [
+     fhir:link <http://www.fhir.org/guides/test3/Patient/example>;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ];
+  fhir:Basic.created [ fhir:value "2019-05-14"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/test3/Basic/diet.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

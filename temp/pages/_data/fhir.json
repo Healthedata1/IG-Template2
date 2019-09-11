@@ -1,0 +1,45 @@
+{
+  "path": "http://hl7.org/fhir/R4/",
+  "canonical": "http://www.fhir.org/guides/test3",
+  "igId": "healthedatainc.ig-template2-0.0.0",
+  "igName": "IGTest3",
+  "packageId": "healthedatainc.ig-template2",
+  "igVer": "0.0.0",
+  "errorCount": 23,
+  "version": "4.0.0",
+  "revision": "a53ec6ee1b",
+  "versionFull": "4.0.0-a53ec6ee1b",
+  "toolingVersion": "4.1.0",
+  "toolingRevision": "3",
+  "toolingVersionFull": "4.1.0 (3)",
+  "totalFiles": 13,
+  "processedFiles": 199,
+  "genDate": "Sun, Sep 8, 2019 15:32-0700",
+  "genDay": "08/09/2019",
+  "ig": {
+    "id": "healthedatainc.ig-template2-0.0.0",
+    "name": "IGTest3",
+    "title": "IG Test3",
+    "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
+    "version": "0.0.0",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "Health eData Inc",
+    "contact": [
+      {
+        "telecom": [
+          "mailto:ehaas@healthedatainc.com"
+        ]
+      },
+      {
+        "telecom": [
+          "http://foobar.com"
+        ]
+      }
+    ],
+    "date": "2019-09-08T15:32:04-07:00",
+    "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
+    "fhirVersion": "4.0.0"
+  },
+  "u74121efea65a4b6a8f0b2871a8c1925f": "http://hl7.org/fhir/us/core"
+}

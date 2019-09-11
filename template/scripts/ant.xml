@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="ProcessIg" basedir=".">
+<project name="ProcessIg">
   <target name="onLoad">
-    <property name="dir.input" value="input"/>
+    <property name="dir.input" value="${ig.root}/input"/>
     <!-- Look in all input folders that might contain spreadsheets and capture the list of spreadsheet XML files as a property -->
     <fileset id="spreadsheet.contents.id" dir=".">
       <include name="${dir.input}/examples/*spreadsheet.xml"/>
@@ -28,9 +28,10 @@
     <xslt basedir="${dir.input}/includes" includes="*.xml" destdir="${dir.temp.includes}" extension=".xml" style="${ig.scripts}/processPages.xslt"/>
     <xslt basedir="${dir.input}/pagecontent" includes="*.xml" destdir="${dir.temp.includes}" extension=".xml" style="${ig.scripts}/processPages.xslt"/>
     <xslt in="${onGenerate.ig.source}xml" out="${dir.temp.includes}/artifacts.xml" style="${ig.scripts}/createArtifactSummary.xslt"/>
-    <fileset id="onGenerate.files.id" dir=".">
+    <fileset id="onGenerate.files.id" dir="${ig.root}">
       <include name="${dir.temp.includes}/artifacts.xml"/>
     </fileset>
     <property name="onGenerate.files" refid="onGenerate.files.id"/>
+<echo message="Files: ${onGenerate.files}"/>
   </target>
 </project>

@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/test3/MessageDefinition/md-example> a fhir:MessageDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "md-example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: md-example</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/MessageDefinition/example\">http://hl7.org/fhir/MessageDefinition/example</a></p><p><b>name</b>: EXAMPLE</p><p><b>title</b>: Message definition base example</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Nov 9, 2016, 12:00:00 AM</p><p><b>publisher</b>: Health eData Inc</p><p><b>contact</b>: , </p><p><b>purpose</b>: Defines a base example for other MessageDefinition instances.</p><p><b>event</b>: admin-notify (Details: http://example.org/fhir/message-events code admin-notify = 'admin-notify', stated as 'null')</p><p><b>category</b>: notification</p></div>"
+  ];
+  fhir:MessageDefinition.url [ fhir:value "http://hl7.org/fhir/MessageDefinition/example"];
+  fhir:MessageDefinition.name [ fhir:value "EXAMPLE"];
+  fhir:MessageDefinition.title [ fhir:value "Message definition base example"];
+  fhir:MessageDefinition.status [ fhir:value "draft"];
+  fhir:MessageDefinition.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:MessageDefinition.date [ fhir:value "2016-11-09T00:00:00-08:00"^^xsd:dateTime];
+  fhir:MessageDefinition.publisher [ fhir:value "Health eData Inc"];
+  fhir:MessageDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:ehaas@healthedatainc.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://foobar.com" ]
+     ]
+  ];
+  fhir:MessageDefinition.purpose [ fhir:value "Defines a base example for other MessageDefinition instances."];
+  fhir:MessageDefinition.eventCoding [
+     fhir:Coding.system [ fhir:value "http://example.org/fhir/message-events" ];
+     fhir:Coding.code [ fhir:value "admin-notify" ]
+  ];
+  fhir:MessageDefinition.category [ fhir:value "notification"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/test3/MessageDefinition/md-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

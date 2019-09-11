@@ -8,7 +8,20 @@
   <xsl:template match="f:extension[@url='http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet']"/>
   <xsl:template match="f:ImplementationGuide/f:definition/f:page">
     <xsl:copy>
-      <xsl:apply-templates select="@*|node()"/>
+      <xsl:choose>
+        <xsl:when test="f:nameUrl/@value='toc.html' and f:generation/@value='html'">
+          <xsl:apply-templates select="@*|node()"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <nameUrl xmlns="http://hl7.org/fhir" value="toc.html"/>
+          <title xmlns="http://hl7.org/fhir" value="Table of Contents"/>
+          <generation xmlns="http://hl7.org/fhir" value="html"/>
+          <page xmlns="http://hl7.org/fhir">
+            <xsl:apply-templates select="@*|node()[not(self::f:page)]"/>
+          </page>
+          <xsl:apply-templates select="f:page"/>
+        </xsl:otherwise>
+      </xsl:choose>
       <xsl:if test="not(descendant-or-self::f:page[f:nameUrl/@value='artifacts.html'])">
         <page xmlns="http://hl7.org/fhir">
           <nameUrl value="artifacts.html"/>
@@ -31,7 +44,7 @@
         <page xmlns="http://hl7.org/fhir">
           <nameUrl value="{f:extension[@url='http://hl7.org/fhir/StructureDefinition/implementationguide-page']/f:valueUri/@value}"/>
           <title value="{f:name/@value}"/>
-          <generation value="html"/>
+          <generation value="generated"/>
         </page>      
       </xsl:for-each>
     </xsl:for-each>
