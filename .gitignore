@@ -46,7 +46,7 @@ c:\temp\json.json
 
 generated_output/qa
 generated_output/temp
-output
+#output
 archived
 validation
 validateme

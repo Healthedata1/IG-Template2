@@ -1,0 +1,81 @@
+﻿IGTest3 : Validation Results
+=========================================
+
+err = 42, warn = 24, info = 0
+Generated Sun Sep 08 15:32:39 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+
+ Build Errors : 12 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/examples/basic-diet : 1 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/examples/messagedefinition-md-example : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/examples/patient-example : 2 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/examples/patient-example2 : 1 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/ig : 16 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/capabilitystatement-client : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/capabilitystatement-server : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/operationdefinition-opdef-test : 1 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/patient-on-usprofile-spreadsheet : 0 / 2
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/structuredefinition-ifr : 0 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/vocabulary/codesystem-blah-codes : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/input/vocabulary/valueset-blah-codes : 0 / 0
+ Template-basic : 0 / 8
+</table>
+== n/a ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be healthedatainc.ig-template2
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/example2.html#/html/body/div/div/div/div/div/div/p/a at Line 182, column 1168: The link 'Organization/1' for "Organization/1" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/index.html#/html/body/div/div/div/div/div/div/figure/figcaption/p/img at Line 203, column 4: The image source 'assets/images/cat.jpg' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 159, column 2515: The link 'StructureDefinition-ifr.html' for "2.1 StructureDefinition Ifr" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 159, column 3235: The link 'StructureDefinition-template-profile-on-profile.html' for "2.2 StructureDefinition Template Profile On Profile" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 159, column 4027: The link 'StructureDefinition-template-basic.html' for "2.3 StructureDefinition Template Basic" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 159, column 4780: The link 'StructureDefinition-extension-complex.html' for "2.4 StructureDefinition Extension Complex" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 159, column 5546: The link 'StructureDefinition-extension-blah.html' for "2.5 StructureDefinition Extension Blah" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 159, column 6897: The link 'OperationDefinition-opdef-test.html' for "3.1 OperationDefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 159, column 8235: The link 'ValueSet-blah-codes.html' for "4.1 ValueSet Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 159, column 8947: The link 'CodeSystem-blah-codes.html' for "4.2 CodeSystem Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 159, column 10894: The link 'CapabilityStatement-server.html' for "6.1 CapabilityStatement Server" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 159, column 11627: The link 'CapabilityStatement-client.html' for "6.2 CapabilityStatement Client" cannot be resolved
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/examples/basic-diet.xml ==
+ERROR: Basic/diet: Basic: Identifier SHALL be greater than 5 characters [Identifier.value.length() > 5]
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/examples/messagedefinition-md-example.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/examples/patient-example.xml ==
+ERROR: Patient/example: Patient.identifier[0].type.coding[0]: Unknown Code System http://hl7.org/fhir/v2/0203
+ERROR: Patient/example: Patient.identifier[0].type.coding[0].system: URL value 'http://hl7.org/fhir/v2/0203' does not resolve
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/examples/patient-example2.xml ==
+ERROR: Patient/example2: Patient.managingOrganization: Unable to resolve resource 'Organization/1'
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/ig.xml ==
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.extension[1]: The extension http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.dependsOn[0].uri: URL value 'http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[10].code: The value provided ('path-qa') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-qa in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[11].code: The value provided ('path-temp') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-temp in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[12].code: The value provided ('path-output') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-output in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[14].code: The value provided ('path-suppressed-warnings') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-suppressed-warnings in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[15].code: The value provided ('template-html') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#template-html in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[16].code: The value provided ('template-md') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#template-md in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[17].code: The value provided ('apply-contact') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-contact in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[18].code: The value provided ('apply-context') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-context in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[19].code: The value provided ('apply-copyright') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-copyright in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[20].code: The value provided ('apply-jurisdiction') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-jurisdiction in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[21].code: The value provided ('apply-license') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-license in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[22].code: The value provided ('apply-publisher') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-publisher in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template2-0.0.0: ImplementationGuide.definition.parameter[23].code: The value provided ('apply-version') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.0 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-version in http://hl7.org/fhir/guide-parameter-code)
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/capabilitystatement-client.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/capabilitystatement-server.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/operationdefinition-opdef-test.json ==
+ERROR: OperationDefinition.url: Resource id/url mismatch: opdef-test/http://www.fhir.org/guides/test3/OperationDefinition/example
+WARNING: OperationDefinition/opdef-test: OperationDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/patient-on-usprofile-spreadsheet.xml ==
+WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile: Profiles SHOULD state their own version
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/StructureDefinition-ifr.xml ==
+WARNING: StructureDefinition/ifr: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/vocabulary/CodeSystem-blah-codes.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/vocabulary/ValueSet-blah-codes.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template2/input/resources/template-profile-spreadsheet.xml ==
+WARNING: StructureDefinition/extension-blah: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/extension-complex: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/extension-blah2: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/template-basic: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: http://www.fhir.org/guides/test3/StructureDefinition/extension-blah: Profiles SHOULD state their own version
+WARNING: http://www.fhir.org/guides/test3/StructureDefinition/extension-complex: Profiles SHOULD state their own version
+WARNING: http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2: Profiles SHOULD state their own version
+WARNING: http://www.fhir.org/guides/test3/StructureDefinition/template-basic: Profiles SHOULD state their own version

@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "blah-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BlahCodes</h2><div><p>A bunch of example codes</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"blah-codes.html\"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></li></ul></div>"
+  },
+  "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
+  "version": "0.0.0",
+  "name": "BlahCodes",
+  "status": "draft",
+  "date": "2018-03-13T08:16:34-07:00",
+  "publisher": "Health eData Inc",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:ehaas@healthedatainc.com"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://foobar.com"
+        }
+      ]
+    }
+  ],
+  "description": "A bunch of example codes",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes"
+      }
+    ]
+  }
+}

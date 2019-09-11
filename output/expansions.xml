@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="c82af726-715b-4bc4-b56a-85662c583442"/>
+  <meta>
+    <lastUpdated value="2019-09-08T15:32:04.568-07:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="blah-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p>
+            <p>All codes from system 
+              <a href="blah-codes.html">
+                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-blah"> </a>
+                  <a href="blah-codes.html#blah-codes-blah">blah</a>
+                </td>
+                <td>Blah</td>
+                <td>example code 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo"> </a>
+                  <a href="blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a>
+                  <a href="blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
+        <version value="0.0.0"/>
+        <name value="BlahCodes"/>
+        <status value="draft"/>
+        <date value="2018-03-13T08:16:34-07:00"/>
+        <publisher value="Health eData Inc"/>
+        <contact>
+          <telecom>
+            <system value="email"/>
+            <value value="mailto:ehaas@healthedatainc.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://foobar.com"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <immutable value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:d084f932-325a-4b4f-b2f7-2f95fd218bff"/>
+          <timestamp value="2019-09-08T15:32:21-07:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+            <code value="blah"/>
+            <display value="Blah"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>
