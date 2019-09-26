@@ -221,12 +221,48 @@ This is the {% if {{site.build}} == "ci" %}
 
 
 
+
   <style type="text/css">
-  h2,h3,h4,h5,h6{
-  /* Set pagenumber */
-  counter-reset: pagenumber 4.1;
-}
-  </style>
+    /* Section numbering*/
+    body{
+      counter-reset: pagenumber1 4  pagenumber2 1 section
+        }
+
+  h2{counter-reset: sub-section}
+  h3{counter-reset: composite}
+  h4{counter-reset: detail}
+  h5{counter-reset: more-detail}
+
+  h2:not([nocount^="true"]):before{
+    counter-increment: section;
+    content:  counter(pagenumber1) "." counter(pagenumber2)"." counter(section) " ";
+    color: silver;
+  }
+  h3:not([nocount^="true"]):before{
+    counter-increment: sub-section;
+    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) " ";
+    color: silver;
+
+  }
+  h4:not([nocount^="true"]):before{
+    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) " ";
+    color: silver;
+    counter-increment: composite;
+    counter-reset: detail 1;
+  }
+  h5:not([nocount^="true"]):before{
+
+    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
+    color: silver;
+    counter-increment: detail;
+    counter-reset: more-detail 1;
+  }
+  h6:not([nocount^="true"]):before{
+    content: counter(pagenumber1) "." counter(pagenumber2)"." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";
+    color: silver;
+    counter-increment: more-detail;
+  }
+</style>
 
 
 
@@ -431,7 +467,7 @@ Formats: <a href="OperationDefinition-opdef-test.html">Narrative</a>, <a href="O
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Sep 25, 2019 21:14-0700">2019-09-25</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Sep 26, 2019 14:51-0700">2019-09-26</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

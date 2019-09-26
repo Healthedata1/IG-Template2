@@ -402,7 +402,7 @@ li#markdown-toc {
 /* font-size: 1.5em; */
 }
 
-/* Section numbering*/*
+/* Section numbering
 
 body{counter-reset: section}
 h2{counter-reset: sub-section}
