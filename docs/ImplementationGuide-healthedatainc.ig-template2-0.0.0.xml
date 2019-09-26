@@ -10,6 +10,7 @@
   <name value="IGTest3"/>
   <title value="IG Test3"/>
   <status value="draft"/>
+  <date value="2019-09-21T20:27:47-07:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -99,6 +100,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-yaml-example.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/yaml-example"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="OperationDefinition"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -174,6 +187,18 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-yaml-rtrip.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/yaml-rtrip"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-basic.html"/>
       </extension>
       <reference>
@@ -220,6 +245,11 @@
         <title value="Profiles and Extensions"/>
         <generation value="markdown"/>
         <page>
+          <nameUrl value="StructureDefinition-yaml-example.html"/>
+          <title value="StructureDefinition Yaml Example"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="StructureDefinition-ifr.html"/>
           <title value="StructureDefinition Ifr"/>
           <generation value="generated"/>
@@ -227,6 +257,11 @@
         <page>
           <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
           <title value="StructureDefinition Template Profile On Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-yaml-rtrip.html"/>
+          <title value="StructureDefinition Yaml Rtrip"/>
           <generation value="generated"/>
         </page>
         <page>

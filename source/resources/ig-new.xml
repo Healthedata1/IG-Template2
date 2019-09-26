@@ -78,6 +78,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/yaml-example"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="OperationDefinition/opdef-test"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -114,6 +120,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/yaml-rtrip"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/template-basic"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -138,6 +150,11 @@
         <title value="Profiles and Extensions"/>
         <generation value="markdown"/>
         <page>
+          <nameUrl value="StructureDefinition-yaml-example.html"/>
+          <title value="StructureDefinition Yaml Example"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="StructureDefinition-ifr.html"/>
           <title value="StructureDefinition Ifr"/>
           <generation value="generated"/>
@@ -145,6 +162,11 @@
         <page>
           <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
           <title value="StructureDefinition Template Profile On Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-yaml-rtrip.html"/>
+          <title value="StructureDefinition Yaml Rtrip"/>
           <generation value="generated"/>
         </page>
         <page>

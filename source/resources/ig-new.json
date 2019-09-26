@@ -82,6 +82,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/yaml-example"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "OperationDefinition/opdef-test"
       },
       "exampleBoolean" : false
@@ -118,6 +124,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/yaml-rtrip"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/template-basic"
       },
       "exampleBoolean" : false
@@ -142,6 +154,11 @@
         "title" : "Profiles and Extensions",
         "generation" : "markdown",
         "page" : [{
+          "nameUrl" : "StructureDefinition-yaml-example.html",
+          "title" : "StructureDefinition Yaml Example",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "StructureDefinition-ifr.html",
           "title" : "StructureDefinition Ifr",
           "generation" : "generated"
@@ -149,6 +166,11 @@
         {
           "nameUrl" : "StructureDefinition-template-profile-on-profile.html",
           "title" : "StructureDefinition Template Profile On Profile",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "StructureDefinition-yaml-rtrip.html",
+          "title" : "StructureDefinition Yaml Rtrip",
           "generation" : "generated"
         },
         {

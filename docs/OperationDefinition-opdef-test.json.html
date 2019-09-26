@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -282,7 +282,7 @@ This is the {% if {{site.build}} == "ci" %}
     "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Populate Questionnaire&lt;/h2&gt;&lt;p&gt;OPERATION: Populate Questionnaire&lt;/p&gt;&lt;p&gt;The official URL for this operation definition is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/test3/OperationDefinition/example&lt;/pre&gt;&lt;div&gt;&lt;p&gt;Limited implementation of the Populate Questionnaire implementation&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;URL: [base]/Questionnaire/[id]/$populate&lt;/p&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;subject&lt;/td&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://build.fhir.org/datatypes.html#Reference\&quot;&gt;Reference&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The resource that is to be the &lt;em&gt;QuestionnaireResponse.subject&lt;/em&gt;. The &lt;a href=\&quot;http://build.fhir.org/questionnaireresponse.html\&quot;&gt;QuestionnaireResponse&lt;/a&gt;      instance will reference the provided subject.  In addition, if the &lt;em&gt;local&lt;/em&gt; parameter is      set to true, server information about the specified subject will be used to populate the      instance.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;local&lt;/td&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://build.fhir.org/datatypes.html#Reference\&quot;&gt;Reference&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;If the &lt;em&gt;local&lt;/em&gt; parameter is set to true, server information about the specified subject will be used to populate the instance.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://build.fhir.org/questionnaireresponse.html\&quot;&gt;QuestionnaireResponse&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The partially (or fully)-populated set of answers for the specified Questionnaire&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div&gt;&lt;p&gt;Only implemented for Labs and Medications so far&lt;/p&gt;\n&lt;/div&gt;&lt;/div&gt;"
   },
   "<a href="http://build.fhir.org/operationdefinition.html#OperationDefinition.url">url</a>" : "http://www.fhir.org/guides/test3/OperationDefinition/example",
-  "<a href="http://build.fhir.org/operationdefinition.html#OperationDefinition.version">version</a>" : "B",
+  "<a href="http://build.fhir.org/operationdefinition.html#OperationDefinition.version">version</a>" : "0.0.0",
   "<a href="http://build.fhir.org/operationdefinition.html#OperationDefinition.name">name</a>" : "Populate Questionnaire",
   "<a href="http://build.fhir.org/operationdefinition.html#OperationDefinition.status">status</a>" : "draft",
   "<a href="http://build.fhir.org/operationdefinition.html#OperationDefinition.kind">kind</a>" : "operation",
@@ -290,8 +290,8 @@ This is the {% if {{site.build}} == "ci" %}
   "<a href="http://build.fhir.org/operationdefinition.html#OperationDefinition.publisher">publisher</a>" : "Acme Healthcare Services",
   "<a href="http://build.fhir.org/operationdefinition.html#OperationDefinition.contact">contact</a>" : [
     {
-      "<a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.name">name</a>" : "System Administrator",
-      "<a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+      "<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "System Administrator",
+      "<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
           "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
           "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "beep@coyote.acme.com"
@@ -302,12 +302,12 @@ This is the {% if {{site.build}} == "ci" %}
   "<a href="http://build.fhir.org/operationdefinition.html#OperationDefinition.description">description</a>" : "Limited implementation of the Populate Questionnaire implementation",
   "<a href="http://build.fhir.org/operationdefinition.html#OperationDefinition.useContext">useContext</a>" : [
     {
-      "<a href="http://build.fhir.org/datatypes.html#UsageContext#UsageContext.code">code</a>" : {
+      "<a href="http://build.fhir.org/metadatatypes.html#UsageContext#UsageContext.code">code</a>" : {
         "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://build.fhir.org/codesystem-usage-context-type",
         "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "venue",
         "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Clinical Venue"
       },
-      "<a href="http://build.fhir.org/datatypes.html#UsageContext#UsageContext.value[x]">valueCodeableConcept</a>" : {
+      "<a href="http://build.fhir.org/metadatatypes.html#UsageContext#UsageContext.value[x]">valueCodeableConcept</a>" : {
         "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -428,7 +428,7 @@ Formats: <a href="OperationDefinition-opdef-test.html">Narrative</a>, <a href="O
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Jul 25, 2019 07:57-0700">2019-07-25</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Sat, Sep 21, 2019 20:27-0700">2019-09-21</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
