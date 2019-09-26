@@ -33,7 +33,8 @@ user content","",0,*,"","Y","","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://build.fhir.org/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","","N/A"
 "Basic.identifier","","","",1,1,"Y","","Y","Identifier {[]} {[]}
-","Business identifier","Identifier assigned to the resource for business purposes, outside the context of FHIR.","","","","","","","","","",,,,,"",,,,"Basic.identifier",0,*,"","","./identifier","FiveWs.identifier"
+","Business identifier","Identifier assigned to the resource for business purposes, outside the context of FHIR.","","","","","","","","","",,,,,"",,,,"Basic.identifier",0,*,"null
+","","./identifier","FiveWs.identifier"
 "Basic.code","","","",1,1,"","Y","Y","CodeableConcept {[]} {[]}
 ","Kind of Resource","Identifies the 'type' of resource - equivalent to the resource name for other resources.","Because resource references will only be able to indicate 'Basic', the type of reference will need to be specified in a Profile identified as part of the resource.  Refer to the resource notes section for information on appropriate terminologies for this code.
 

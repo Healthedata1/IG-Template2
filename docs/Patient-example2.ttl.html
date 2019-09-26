@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -297,7 +297,7 @@ This is the {% if {{site.build}} == "ci" %}
      <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.period">fhir:Identifier.period</a> [
        <a href="http://build.fhir.org/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2001-05-06&quot;^^xsd:date ]     ];
      <a href="http://build.fhir.org/datatypes.html#Identifier#Identifier.assigner">fhir:Identifier.assigner</a> [
-       <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Acme Healthcare&quot; ]     ]
+       <a href="http://build.fhir.org/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Acme Healthcare&quot; ]     ]
   ];
   <a href="http://build.fhir.org/patient.html#Patient.active">fhir:Patient.active</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean];
   <a href="http://build.fhir.org/patient.html#Patient.name">fhir:Patient.name</a> [
@@ -355,8 +355,8 @@ This is the {% if {{site.build}} == "ci" %}
      <a href="http://build.fhir.org/datatypes.html#date">fhir:value</a> &quot;1974-12-25&quot;^^xsd:date;
      <a href="http://build.fhir.org/datatypes.html#date#date.extension">fhir:Element.extension</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-       <a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/patient-birthTime&quot; ];
-       <a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;1974-12-25T14:35:45-05:00&quot;^^xsd:dateTime ]     ]
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/patient-birthTime&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;1974-12-25T14:35:45-05:00&quot;^^xsd:dateTime ]     ]
   ];
   <a href="http://build.fhir.org/patient.html#Patient.deceased[x]">fhir:Patient.deceasedBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean];
   <a href="http://build.fhir.org/patient.html#Patient.address">fhir:Patient.address</a> [
@@ -387,8 +387,8 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;du MarchÃ©&quot;;
          <a href="http://build.fhir.org/datatypes.html#string#string.extension">fhir:Element.extension</a> [
            <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-           <a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/humanname-own-prefix&quot; ];
-           <a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;VV&quot; ]         ]       ];
+           <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/humanname-own-prefix&quot; ];
+           <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;VV&quot; ]         ]       ];
        <a href="http://build.fhir.org/datatypes.html#HumanName#HumanName.given">fhir:HumanName.given</a> [
          <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;BÃ©nÃ©dicte&quot;;
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0       ]     ];
@@ -413,7 +413,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2012&quot;^^xsd:gYear ]     ]
   ];
   <a href="http://build.fhir.org/patient.html#Patient.managingOrganization">fhir:Patient.managingOrganization</a> [
-     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/1&quot; ]
+     <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/1&quot; ]
   ].
 
 # - ontology header ------------------------------------------------------------
@@ -472,7 +472,7 @@ Formats: <a href="Patient-example2.html">Narrative</a>, <a href="Patient-example
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Jul 25, 2019 07:57-0700">2019-07-25</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Sep 25, 2019 21:14-0700">2019-09-25</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -222,7 +222,10 @@ This is the {% if {{site.build}} == "ci" %}
 
 
   <style type="text/css">
-  h2,h3,h4,h5,h6{--pagenumber: "7.2"}
+  h2,h3,h4,h5,h6{
+  /* Set pagenumber */
+  counter-reset: pagenumber 7.2;
+}
   </style>
 
 
@@ -289,14 +292,13 @@ This is the {% if {{site.build}} == "ci" %}
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n&lt;ul&gt;&lt;li&gt;FHIR Version: 4.0.0&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2017-03-08&lt;/li&gt;&lt;li&gt;Published by: Health eData Inc&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;The Section describes the expected capabilities etc....&lt;/p&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.url">fhir:CapabilityStatement.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://www.fhir.org/guides/test3/CapabilityStatement/client&quot;];
-  <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.version">fhir:CapabilityStatement.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;0.0.0&quot;];
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.name">fhir:CapabilityStatement.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Client&quot;];
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.status">fhir:CapabilityStatement.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.date">fhir:CapabilityStatement.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2017-03-08T00:00:00-08:00&quot;^^xsd:dateTime];
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.publisher">fhir:CapabilityStatement.publisher</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Health eData Inc&quot;];
   <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.contact">fhir:CapabilityStatement.contact</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-     <a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+     <a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
        <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;other&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ehaas@healthedatainc.com&quot; ]     ]
@@ -325,26 +327,26 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
            <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-           <a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
+           <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
+           <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
          <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;search-type&quot; ]       ], [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
          <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
            <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-           <a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
+           <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
+           <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
          <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;read&quot; ]       ], [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
          <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
            <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-           <a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
+           <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
+           <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
          <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;history-instance&quot; ]       ], [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
          <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">fhir:Element.extension</a> [
            <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-           <a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
-           <a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
+           <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot; ];
+           <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;SHOULD&quot; ]         ];
          <a href="http://build.fhir.org/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">fhir:CapabilityStatement.rest.resource.interaction.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;vread&quot; ]       ]     ]
   ].
 
@@ -404,7 +406,7 @@ Formats: <a href="CapabilityStatement-client.html">Narrative</a>, <a href="Capab
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Jul 25, 2019 07:57-0700">2019-07-25</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Sep 25, 2019 21:14-0700">2019-09-25</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

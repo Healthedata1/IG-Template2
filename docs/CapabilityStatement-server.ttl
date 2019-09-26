@@ -13,7 +13,6 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<ul><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>"
   ];
   fhir:CapabilityStatement.url [ fhir:value "http://www.fhir.org/guides/test3/CapabilityStatement/server"];
-  fhir:CapabilityStatement.version [ fhir:value "0.0.0"];
   fhir:CapabilityStatement.name [ fhir:value "Server"];
   fhir:CapabilityStatement.status [ fhir:value "draft"];
   fhir:CapabilityStatement.date [ fhir:value "2017-03-08T00:00:00-08:00"^^xsd:dateTime];

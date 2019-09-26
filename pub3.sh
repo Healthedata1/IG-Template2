@@ -14,7 +14,7 @@ do
  o) PUB=1;;
  n) USEDEF=1;;
  p) UPDATE=1;;
- w) WATCH =1;;
+ w) WATCH=1;;
  esac
 done
 echo "================================================================="
@@ -27,7 +27,7 @@ echo '-s parameter = source directory = ' $SOURCE
 echo '-t parameter for no terminology server (run faster and offline)= ' $NA
 echo '-o parameter for running previous version of the igpublisher= ' $PUB
 echo '-p parameter for downloading latest version of the igpublisher from source = ' $UPDATE
-echo '-w parameter for using watch on igpublisher from source default is on = ' $WATCH
+echo '-w parameter for using watch on igpublisher from source default is off = ' $WATCH
 echo ' current directory =' $PWD
 echo "================================================================="
 echo getting rid of .DS_Store files since they gum up the igpublisher....
@@ -38,7 +38,7 @@ if [[ $UPDATE ]]; then
 echo "================================================================="
 echo === get the latest ig-pub file ===
 echo "================================================================="
-#mv /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar /Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
+mv /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar /Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
 # _L flag for redirects
 curl -L https://github.com/FHIR/latest-ig-publisher/raw/master/org.hl7.fhir.publisher.jar -o /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
 sleep 3
@@ -49,14 +49,12 @@ if [[ $DEFN ]]; then
   echo === run definitions maker with optional source directory name as first argument ===
   echo === create ig.json and ig.xml in $PWD and ../$SOURCE ===
   echo "================================================================="
-  # need to install python 3.7+ and install "lxml"  module  using 'pip install lxml' on the command line
   python3.5 ${path3}definitions.py $SOURCE
   sleep 3
   git status
 fi
 
 if [[ $USEDEF ]]; then
-
   echo "================================================================="
   echo === use definition files from relative path ../$SOURCE ===
   echo "================================================================="
@@ -68,14 +66,19 @@ if [[ $USEDEF ]]; then
   git status
 fi
 
-if [[ $PUB ]]; then
+if [[ $WATCH ]]; then
   echo "================================================================="
-  echo === run last known good version of the igpublisherrun most recent version of the igpublisher ===
+  echo ===un most recent version of the igpublisher with watch on ===
+  echo "================================================================="
+  java -jar ${path1} -ig ig.json -watch -tx $NA
+elif [[ $PUB ]]; then
+  echo "================================================================="
+  echo === run last known good version of the igpublisher run most recent version of the igpublisher ===
   echo "================================================================="
   java -jar ${path2} -ig ig.json -watch -tx $NA
 else
   echo "================================================================="
-  echo ===run most recent version of the igpublisher ===
+  echo ===run igpublisher just once \(no watch option\)===
   echo "================================================================="
-  java -jar ${path1} -ig ig.json -watch -tx $NA
+  java -jar ${path1} -ig ig.json -tx $NA
 fi

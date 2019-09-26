@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -275,17 +275,18 @@ This is the {% if {{site.build}} == "ci" %}
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.id">id</a>" : "healthedatainc.ig-template2-0.0.0",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.text">text</a>" : {
     "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;IGTest3&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0&lt;/pre&gt;&lt;/div&gt;"
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;IGTest3&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0&lt;/pre&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.url">url</a>" : "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.version">version</a>" : "0.0.0",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a>" : "IGTest3",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.title">title</a>" : "IG Test3",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a>" : "draft",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">date</a>" : "2019-09-25T21:14:31-07:00",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a>" : "Health eData Inc",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.contact">contact</a>" : [
     {
-      "<a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+      "<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
           "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
           "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "mailto:ehaas@healthedatainc.com"
@@ -293,7 +294,7 @@ This is the {% if {{site.build}} == "ci" %}
       ]
     },
     {
-      "<a href="http://build.fhir.org/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+      "<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
           "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
           "<a href="http://build.fhir.org/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://foobar.com"
@@ -325,224 +326,224 @@ This is the {% if {{site.build}} == "ci" %}
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Basic"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Basic"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Basic-diet.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "Basic-diet.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Basic/diet"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Basic/diet"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : true
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Patient"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Patient"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Patient-example.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "Patient-example.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/example"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Patient/example"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : true
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Patient"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Patient"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Patient-example2.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "Patient-example2.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/example2"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "Patient/example2"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : true
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:extension"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:extension"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-complex.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-complex.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-complex"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-complex"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:extension"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:extension"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-blah.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-blah.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "OperationDefinition"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "OperationDefinition"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "OperationDefinition-opdef-test.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "OperationDefinition-opdef-test.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "OperationDefinition/opdef-test"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "OperationDefinition/opdef-test"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:complex-type"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:complex-type"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-ifr.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-ifr.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/ifr"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/ifr"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "CapabilityStatement"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "CapabilityStatement"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CapabilityStatement-server.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "CapabilityStatement-server.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "CapabilityStatement/server"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "CapabilityStatement/server"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "CodeSystem"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "CodeSystem"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CodeSystem-blah-codes.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "CodeSystem-blah-codes.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/blah-codes"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/blah-codes"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "CapabilityStatement"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "CapabilityStatement"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "CapabilityStatement-client.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "CapabilityStatement-client.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "CapabilityStatement/client"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "CapabilityStatement/client"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:resource"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:resource"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-template-profile-on-profile.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-template-profile-on-profile.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-profile-on-profile"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-profile-on-profile"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:resource"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:resource"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-template-basic.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-template-basic.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-basic"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-basic"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "ValueSet"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "ValueSet"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-blah-codes.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-blah-codes.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/blah-codes"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/blah-codes"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
       {
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:extension"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:extension"
           },
           {
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-blah2.html"
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-extension-blah2.html"
           }
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah2"
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah2"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "blah2",
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.groupingId">groupingId</a>" : "template-profile-spreadsheet.xml"
@@ -714,7 +715,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Jul 25, 2019 07:57-0700">2019-07-25</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Sep 25, 2019 21:14-0700">2019-09-25</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
