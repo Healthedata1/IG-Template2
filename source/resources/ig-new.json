@@ -44,7 +44,7 @@
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
     "packageId" : "hl7.fhir.us.core",
-    "version" : "current"
+    "version" : "3.0.1"
   }],
   "definition" : {
     "grouping" : [{

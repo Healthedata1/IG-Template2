@@ -1,1 +1,155 @@
-{"paths": {"qa": "generated_output/qa", "resources": ["source/resources", "source/examples"], "specification": "http://build.fhir.org/", "temp": "generated_output/temp", "txCache": "generated_output/txCache", "pages": ["framework", "source/pages"], "output": "docs", "history": "http://hl7.org/fhir/us/davinci-alerts/history.cfml"}, "extensions": ["extension-blah", "extension-complex"], "sct-edition": "http://snomed.info/sct/731000124108", "canonicalBase": "http://www.fhir.org/guides/test3", "igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/", "do-transforms": "false", "publisher": "Health eData Inc", "status": "draft", "dependencyList": [{"version": "current", "package": "hl7.fhir.us.core", "location": "http://hl7.org/fhir/us/core", "name": "uscore"}], "pub_url": "ehaas@healthedatainc.com", "no-inactive-codes": "false", "fixed-business-version": "0.0.0", "npm-name": "healthedatainc.ig-template2", "license": "CC0-1.0", "source": "ig.xml", "structuremaps": ["Foo"], "gen-examples": "false", "defaults": {"SearchParameter": {"template-base": "base.html"}, "StructureMap": {"script": false, "profiles": false, "template-base": "ex.html", "content": false}, "CodeSystem": {"template-base": "base.html"}, "Any": {"template-format": "format.html", "template-base": "base.html", "swagger": "true"}, "ConceptMap": {"template-base": "base.html"}, "Patient": {"template-base": "ex.html"}, "CapabilityStatement": {"template-base": "base.html"}, "ValueSet": {"template-base": "base.html"}, "StructureDefinition": {"template-base": "sd.html", "template-defns": "sd-definitions.html", "template-mappings": "sd-mappings.html"}, "Basic": {"template-base": "ex.html"}, "OperationDefinition": {"template-base": "base.html"}}, "allviews": "true", "resources": {"StructureDefinition/ifr": {"base": "StructureDefinition-ifr.html", "defns": "StructureDefinition-ifr-definitions.html", "source": "StructureDefinition-ifr.xml"}, "StructureMap/Foo": {"base": "StructureMap-Foo.html"}, "CapabilityStatement/client": {"base": "CapabilityStatement-client.html", "source": "capabilitystatement-client.xml"}, "CapabilityStatement/server": {"base": "CapabilityStatement-server.html", "source": "capabilitystatement-server.xml"}, "CodeSystem/blah-codes": {"base": "CodeSystem-blah-codes.html", "source": "CodeSystem-blah-codes.xml"}, "ValueSet/blah-codes": {"base": "ValueSet-blah-codes.html", "source": "ValueSet-blah-codes.xml"}, "Basic/diet": {"base": "Basic-diet.html", "source": "basic-example1.xml"}, "OperationDefinition/opdef-test": {"base": "OperationDefinition-opdef-test.html", "source": "operationdefinition-example.json"}, "StructureDefinition/extension-complex": {"base": "StructureDefinition-extension-complex.html", "defns": "StructureDefinition-extension-complex-definitions.html"}, "StructureDefinition/extension-blah": {"base": "StructureDefinition-extension-blah.html", "defns": "StructureDefinition-extension-blah-definitions.html"}, "Patient/example2": {"base": "Patient-example2.html", "source": "patient-example2.xml"}, "StructureDefinition/template-profile-on-profile": {"base": "StructureDefinition-template-profile-on-profile.html", "defns": "StructureDefinition-template-profile-on-profile-definitions.html"}, "Patient/example": {"base": "Patient-example.html", "source": "patient-example.xml"}, "StructureDefinition/template-basic": {"base": "StructureDefinition-template-basic.html", "defns": "StructureDefinition-template-basic-definitions.html"}}, "topofpage": "true", "contact": [{"system": "email", "value": "mailto:ehaas@healthedatainc.com"}, {"system": "url", "value": "http://foobar.com"}], "extraTemplates": ["mappings"], "logging": ["progress"], "working-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/", "title": "IG Test3", "swagger": [{"capabilities": "server", "mode": "single"}], "name": "IGTest3", "version": "4.0.0", "tool": "jekyll", "broken-links": "warning", "spreadsheets": ["template-profile-spreadsheet.xml", "patient-on-usprofile-spreadsheet.xml"]}
+{
+  "swagger": [{
+    "mode": "single",
+    "capabilities": "server"
+  }],
+  "broken-links": "warning",
+  "no-inactive-codes": "false",
+  "dependencyList": [ {
+    "name": "uscore",
+    "package": "hl7.fhir.us.core",
+    "location": "http://hl7.org/fhir/us/core",
+    "version": "3.0.1"
+  }],
+  "npm-name": "healthedatainc.ig-template2",
+  "name": "IGTest3",
+  "logging": ["progress"],
+  "igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/",
+  "spreadsheets": ["template-profile-spreadsheet.xml", "patient-on-usprofile-spreadsheet.xml"],
+  "publisher": "Health eData Inc",
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "pub_url": "ehaas@healthedatainc.com",
+  "tool": "jekyll",
+  "topofpage": "true",
+  "canonicalBase": "http://www.fhir.org/guides/test3",
+  "structuremaps": ["Foo"],
+  "allviews": "true",
+  "paths": {
+    "temp": "generated_output/temp",
+    "specification": "http://build.fhir.org/",
+    "qa": "generated_output/qa",
+    "output": "docs",
+    "history": "http://hl7.org/fhir/us/davinci-alerts/history.cfml",
+    "pages": ["framework", "source/pages"],
+    "resources": ["source/resources", "source/examples"],
+    "txCache": "generated_output/txCache"
+  },
+  "license": "CC0-1.0",
+  "defaults": {
+    "ConceptMap": {
+      "template-base": "base.html"
+    },
+    "SearchParameter": {
+      "template-base": "base.html"
+    },
+    "CapabilityStatement": {
+      "template-base": "base.html"
+    },
+    "ValueSet": {
+      "template-base": "base.html"
+    },
+    "Patient": {
+      "template-base": "ex.html"
+    },
+    "CodeSystem": {
+      "template-base": "base.html"
+    },
+    "StructureMap": {
+      "script": false,
+      "template-base": "ex.html",
+      "content": false,
+      "profiles": false
+    },
+    "Basic": {
+      "template-base": "ex.html"
+    },
+    "OperationDefinition": {
+      "template-base": "base.html"
+    },
+    "StructureDefinition": {
+      "template-defns": "sd-definitions.html",
+      "template-base": "sd.html",
+      "template-mappings": "sd-mappings.html"
+    },
+    "Any": {
+      "template-base": "base.html",
+      "swagger": "true",
+      "template-format": "format.html"
+    }
+  },
+  "contact": [{
+    "value": "mailto:ehaas@healthedatainc.com",
+    "system": "email"
+  }, {
+    "value": "http://foobar.com",
+    "system": "url"
+  }],
+  "source": "ig.xml",
+  "extensions": ["extension-blah", "extension-complex"],
+  "extraTemplates": ["mappings"],
+  "title": "IG Test3",
+  "working-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/",
+  "status": "draft",
+  "fixed-business-version": "0.0.0",
+  "do-transforms": "false",
+  "gen-examples": "false",
+  "resources": {
+    "StructureMap/Foo": {
+      "base": "StructureMap-Foo.html"
+    },
+    "Patient/example2": {
+      "base": "Patient-example2.html",
+      "source": "patient-example2.xml"
+    },
+    "Basic/diet": {
+      "base": "Basic-diet.html",
+      "source": "basic-example1.xml"
+    },
+    "CodeSystem/blah-codes": {
+      "base": "CodeSystem-blah-codes.html",
+      "source": "CodeSystem-blah-codes.xml"
+    },
+    "StructureDefinition/ifr": {
+      "base": "StructureDefinition-ifr.html",
+      "defns": "StructureDefinition-ifr-definitions.html",
+      "source": "StructureDefinition-ifr.xml"
+    },
+    "CapabilityStatement/server": {
+      "base": "CapabilityStatement-server.html",
+      "source": "capabilitystatement-server.xml"
+    },
+    "StructureDefinition/extension-complex": {
+      "base": "StructureDefinition-extension-complex.html",
+      "defns": "StructureDefinition-extension-complex-definitions.html"
+    },
+    "StructureDefinition/extension-blah": {
+      "base": "StructureDefinition-extension-blah.html",
+      "defns": "StructureDefinition-extension-blah-definitions.html"
+    },
+    "StructureDefinition/template-profile-on-profile": {
+      "base": "StructureDefinition-template-profile-on-profile.html",
+      "defns": "StructureDefinition-template-profile-on-profile-definitions.html"
+    },
+    "OperationDefinition/opdef-test": {
+      "base": "OperationDefinition-opdef-test.html",
+      "source": "operationdefinition-example.json"
+    },
+    "ValueSet/blah-codes": {
+      "base": "ValueSet-blah-codes.html",
+      "source": "ValueSet-blah-codes.xml"
+    },
+    "Patient/example": {
+      "base": "Patient-example.html",
+      "source": "patient-example.xml"
+    },
+    "StructureDefinition/template-basic": {
+      "base": "StructureDefinition-template-basic.html",
+      "defns": "StructureDefinition-template-basic-definitions.html"
+    },
+    "CapabilityStatement/client": {
+      "base": "CapabilityStatement-client.html",
+      "source": "capabilitystatement-client.xml"
+    }
+  },
+  "version": "4.0.0"
+}

@@ -524,6 +524,215 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;n/a&quot; ]       ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:code.extension.id&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.extension.id&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">fhir:ElementDefinition.representation</a> [
+         <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;xmlAttr&quot;;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Unique id for inter-element referencing&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">fhir:ElementDefinition.base.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Element.id&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">fhir:ElementDefinition.base.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">fhir:ElementDefinition.base.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;string&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:ElementDefinition.isModifier</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:ElementDefinition.isSummary</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:ElementDefinition.mapping</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;n/a&quot; ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:code.extension.extension&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.extension.extension&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing">fhir:ElementDefinition.slicing</a> [
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">fhir:ElementDefinition.slicing.discriminator</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">fhir:ElementDefinition.slicing.discriminator.type</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;value&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">fhir:ElementDefinition.slicing.discriminator.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;url&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">fhir:ElementDefinition.slicing.description</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extensions are always sliced by (at least) url&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">fhir:ElementDefinition.slicing.rules</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;open&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Additional content defined by implementations&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">fhir:ElementDefinition.comment</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">fhir:ElementDefinition.alias</a> [
+         <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;extensions&quot;;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0       ], [
+         <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;user content&quot;;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;*&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">fhir:ElementDefinition.base.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Element.extension&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">fhir:ElementDefinition.base.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">fhir:ElementDefinition.base.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;*&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Extension&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:ElementDefinition.isModifier</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:ElementDefinition.isSummary</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:ElementDefinition.mapping</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;n/a&quot; ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:code.extension.url&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.extension.url&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">fhir:ElementDefinition.representation</a> [
+         <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;xmlAttr&quot;;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;identifies the meaning of the extension&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;Source of the definition for the extension code - a logical name or a URL.&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">fhir:ElementDefinition.comment</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;1&quot;^^xsd:nonNegativeInteger ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">fhir:ElementDefinition.base.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.url&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">fhir:ElementDefinition.base.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;1&quot;^^xsd:nonNegativeInteger ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">fhir:ElementDefinition.base.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#uri#uri.extension">fhir:Element.extension</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type&quot; ];
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;string&quot; ]           ], [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type&quot; ];
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;xsd:string&quot; ]           ], [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type&quot; ];
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;xsd:string&quot; ]           ], [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/regex&quot; ];
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;((http|https)://([A-Za-z0-9\\\\\\.\\:\\%\\$]*\\/)*)?(Account|ActivityDefinition|AdverseEvent|AllergyIntolerance|Appointment|AppointmentResponse|AuditEvent|Basic|Binary|BiologicallyDerivedProduct|BodyStructure|Bundle|CapabilityStatement|CarePlan|CareTeam|CatalogEntry|ChargeItem|ChargeItemDefinition|Claim|ClaimResponse|ClinicalImpression|CodeSystem|Communication|CommunicationRequest|CompartmentDefinition|Composition|ConceptMap|Condition|Consent|Contract|Coverage|CoverageEligibilityRequest|CoverageEligibilityResponse|DetectedIssue|Device|DeviceDefinition|DeviceMetric|DeviceRequest|DeviceUseStatement|DiagnosticReport|DocumentManifest|DocumentReference|EffectEvidenceSynthesis|Encounter|Endpoint|EnrollmentRequest|EnrollmentResponse|EpisodeOfCare|EventDefinition|Evidence|EvidenceVariable|ExampleScenario|ExplanationOfBenefit|FamilyMemberHistory|Flag|Goal|GraphDefinition|Group|GuidanceResponse|HealthcareService|ImagingStudy|Immunization|ImmunizationEvaluation|ImmunizationRecommendation|ImplementationGuide|InsurancePlan|Invoice|Library|Linkage|List|Location|Measure|MeasureReport|Media|Medication|MedicationAdministration|MedicationDispense|MedicationKnowledge|MedicationRequest|MedicationStatement|MedicinalProduct|MedicinalProductAuthorization|MedicinalProductContraindication|MedicinalProductIndication|MedicinalProductIngredient|MedicinalProductInteraction|MedicinalProductManufactured|MedicinalProductPackaged|MedicinalProductPharmaceutical|MedicinalProductUndesirableEffect|MessageDefinition|MessageHeader|MolecularSequence|NamingSystem|NutritionOrder|Observation|ObservationDefinition|OperationDefinition|OperationOutcome|Organization|OrganizationAffiliation|Patient|PaymentNotice|PaymentReconciliation|Person|PlanDefinition|Practitioner|PractitionerRole|Procedure|Provenance|Questionnaire|QuestionnaireResponse|RelatedPerson|RequestGroup|ResearchDefinition|ResearchElementDefinition|ResearchStudy|ResearchSubject|RiskAssessment|RiskEvidenceSynthesis|Schedule|SearchParameter|ServiceRequest|Slot|Specimen|SpecimenDefinition|StructureDefinition|StructureMap|Subscription|Substance|SubstanceNucleicAcid|SubstancePolymer|SubstanceProtein|SubstanceReferenceInformation|SubstanceSourceMaterial|SubstanceSpecification|SupplyDelivery|SupplyRequest|Task|TerminologyCapabilities|TestReport|TestScript|ValueSet|VerificationResult|VisionPrescription)\\/[A-Za-z0-9\\-\\.]{1,64}(\\/_history\\/[A-Za-z0-9\\-\\.]{1,64})?&quot; ]           ]         ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:ElementDefinition.isModifier</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:ElementDefinition.isSummary</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:ElementDefinition.mapping</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;N/A&quot; ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:code.extension.value[x]&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.extension.value[x]&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Value of extension&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list).&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">fhir:ElementDefinition.base.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.value[x]&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">fhir:ElementDefinition.base.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">fhir:ElementDefinition.base.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;base64Binary&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;boolean&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;canonical&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;code&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;date&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;dateTime&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;decimal&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;id&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;instant&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;integer&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;markdown&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 11;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;oid&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 12;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;positiveInt&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 13;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;string&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 14;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;time&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 15;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;unsignedInt&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 16;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;uri&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 17;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;url&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 18;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;uuid&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 19;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Address&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 20;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Age&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 21;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Annotation&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 22;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Attachment&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 23;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;CodeableConcept&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 24;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Coding&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 25;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;ContactPoint&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 26;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Count&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 27;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Distance&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 28;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Duration&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 29;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;HumanName&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 30;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Identifier&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 31;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Money&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 32;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Period&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 33;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Quantity&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 34;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Range&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 35;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Ratio&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 36;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Reference&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 37;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;SampledData&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 38;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Signature&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 39;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Timing&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 40;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;ContactDetail&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 41;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Contributor&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 42;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;DataRequirement&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 43;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Expression&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 44;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;ParameterDefinition&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 45;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;RelatedArtifact&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 46;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;TriggerDefinition&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 47;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;UsageContext&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 48;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Dosage&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:ElementDefinition.isModifier</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:ElementDefinition.isSummary</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:ElementDefinition.mapping</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;N/A&quot; ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:code.url&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.url&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">fhir:ElementDefinition.representation</a> [
@@ -561,7 +770,7 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;N/A&quot; ]       ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 11;
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:code.value[x]&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.value[x]&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Value of extension&quot; ];
@@ -587,7 +796,7 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;N/A&quot; ]       ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 12;
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:text&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.sliceName">fhir:ElementDefinition.sliceName</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;text&quot; ];
@@ -604,7 +813,7 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Extension&quot; ]       ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:ElementDefinition.isModifier</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:ElementDefinition.isSummary</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 13;
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:text.id&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.id&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">fhir:ElementDefinition.representation</a> [
@@ -627,7 +836,7 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;n/a&quot; ]       ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 14;
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:text.extension&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.extension&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing">fhir:ElementDefinition.slicing</a> [
@@ -660,7 +869,216 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;n/a&quot; ]       ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 11;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 15;
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:text.extension.id&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.extension.id&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">fhir:ElementDefinition.representation</a> [
+         <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;xmlAttr&quot;;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Unique id for inter-element referencing&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">fhir:ElementDefinition.base.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Element.id&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">fhir:ElementDefinition.base.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">fhir:ElementDefinition.base.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;string&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:ElementDefinition.isModifier</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:ElementDefinition.isSummary</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:ElementDefinition.mapping</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;n/a&quot; ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 16;
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:text.extension.extension&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.extension.extension&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing">fhir:ElementDefinition.slicing</a> [
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">fhir:ElementDefinition.slicing.discriminator</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">fhir:ElementDefinition.slicing.discriminator.type</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;value&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">fhir:ElementDefinition.slicing.discriminator.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;url&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">fhir:ElementDefinition.slicing.description</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extensions are always sliced by (at least) url&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">fhir:ElementDefinition.slicing.rules</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;open&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Additional content defined by implementations&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">fhir:ElementDefinition.comment</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">fhir:ElementDefinition.alias</a> [
+         <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;extensions&quot;;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0       ], [
+         <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;user content&quot;;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;*&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">fhir:ElementDefinition.base.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Element.extension&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">fhir:ElementDefinition.base.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">fhir:ElementDefinition.base.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;*&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Extension&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:ElementDefinition.isModifier</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:ElementDefinition.isSummary</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:ElementDefinition.mapping</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;n/a&quot; ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 17;
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:text.extension.url&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.extension.url&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">fhir:ElementDefinition.representation</a> [
+         <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;xmlAttr&quot;;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;identifies the meaning of the extension&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;Source of the definition for the extension code - a logical name or a URL.&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">fhir:ElementDefinition.comment</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;1&quot;^^xsd:nonNegativeInteger ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">fhir:ElementDefinition.base.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.url&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">fhir:ElementDefinition.base.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;1&quot;^^xsd:nonNegativeInteger ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">fhir:ElementDefinition.base.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [
+           <a href="http://build.fhir.org/datatypes.html#uri#uri.extension">fhir:Element.extension</a> [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type&quot; ];
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;string&quot; ]           ], [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type&quot; ];
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;xsd:string&quot; ]           ], [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type&quot; ];
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;xsd:string&quot; ]           ], [
+             <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/regex&quot; ];
+             <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;((http|https)://([A-Za-z0-9\\\\\\.\\:\\%\\$]*\\/)*)?(Account|ActivityDefinition|AdverseEvent|AllergyIntolerance|Appointment|AppointmentResponse|AuditEvent|Basic|Binary|BiologicallyDerivedProduct|BodyStructure|Bundle|CapabilityStatement|CarePlan|CareTeam|CatalogEntry|ChargeItem|ChargeItemDefinition|Claim|ClaimResponse|ClinicalImpression|CodeSystem|Communication|CommunicationRequest|CompartmentDefinition|Composition|ConceptMap|Condition|Consent|Contract|Coverage|CoverageEligibilityRequest|CoverageEligibilityResponse|DetectedIssue|Device|DeviceDefinition|DeviceMetric|DeviceRequest|DeviceUseStatement|DiagnosticReport|DocumentManifest|DocumentReference|EffectEvidenceSynthesis|Encounter|Endpoint|EnrollmentRequest|EnrollmentResponse|EpisodeOfCare|EventDefinition|Evidence|EvidenceVariable|ExampleScenario|ExplanationOfBenefit|FamilyMemberHistory|Flag|Goal|GraphDefinition|Group|GuidanceResponse|HealthcareService|ImagingStudy|Immunization|ImmunizationEvaluation|ImmunizationRecommendation|ImplementationGuide|InsurancePlan|Invoice|Library|Linkage|List|Location|Measure|MeasureReport|Media|Medication|MedicationAdministration|MedicationDispense|MedicationKnowledge|MedicationRequest|MedicationStatement|MedicinalProduct|MedicinalProductAuthorization|MedicinalProductContraindication|MedicinalProductIndication|MedicinalProductIngredient|MedicinalProductInteraction|MedicinalProductManufactured|MedicinalProductPackaged|MedicinalProductPharmaceutical|MedicinalProductUndesirableEffect|MessageDefinition|MessageHeader|MolecularSequence|NamingSystem|NutritionOrder|Observation|ObservationDefinition|OperationDefinition|OperationOutcome|Organization|OrganizationAffiliation|Patient|PaymentNotice|PaymentReconciliation|Person|PlanDefinition|Practitioner|PractitionerRole|Procedure|Provenance|Questionnaire|QuestionnaireResponse|RelatedPerson|RequestGroup|ResearchDefinition|ResearchElementDefinition|ResearchStudy|ResearchSubject|RiskAssessment|RiskEvidenceSynthesis|Schedule|SearchParameter|ServiceRequest|Slot|Specimen|SpecimenDefinition|StructureDefinition|StructureMap|Subscription|Substance|SubstanceNucleicAcid|SubstancePolymer|SubstanceProtein|SubstanceReferenceInformation|SubstanceSourceMaterial|SubstanceSpecification|SupplyDelivery|SupplyRequest|Task|TerminologyCapabilities|TestReport|TestScript|ValueSet|VerificationResult|VisionPrescription)\\/[A-Za-z0-9\\-\\.]{1,64}(\\/_history\\/[A-Za-z0-9\\-\\.]{1,64})?&quot; ]           ]         ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:ElementDefinition.isModifier</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:ElementDefinition.isSummary</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:ElementDefinition.mapping</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;N/A&quot; ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 18;
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:text.extension.value[x]&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.extension.value[x]&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Value of extension&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://build.fhir.org/datatypes.html#markdown">fhir:value</a> &quot;Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list).&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">fhir:ElementDefinition.base.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.value[x]&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">fhir:ElementDefinition.base.min</a> [ <a href="http://build.fhir.org/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">fhir:ElementDefinition.base.max</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;1&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;base64Binary&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;boolean&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;canonical&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;code&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;date&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;dateTime&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;decimal&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;id&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;instant&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;integer&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;markdown&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 11;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;oid&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 12;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;positiveInt&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 13;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;string&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 14;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;time&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 15;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;unsignedInt&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 16;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;uri&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 17;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;url&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 18;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;uuid&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 19;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Address&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 20;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Age&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 21;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Annotation&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 22;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Attachment&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 23;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;CodeableConcept&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 24;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Coding&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 25;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;ContactPoint&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 26;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Count&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 27;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Distance&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 28;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Duration&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 29;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;HumanName&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 30;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Identifier&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 31;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Money&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 32;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Period&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 33;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Quantity&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 34;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Range&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 35;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Ratio&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 36;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Reference&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 37;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;SampledData&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 38;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Signature&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 39;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Timing&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 40;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;ContactDetail&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 41;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Contributor&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 42;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;DataRequirement&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 43;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Expression&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 44;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;ParameterDefinition&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 45;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;RelatedArtifact&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 46;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;TriggerDefinition&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 47;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;UsageContext&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 48;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;Dosage&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:ElementDefinition.isModifier</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:ElementDefinition.isSummary</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
+       <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:ElementDefinition.mapping</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;N/A&quot; ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 19;
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:text.url&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.url&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">fhir:ElementDefinition.representation</a> [
@@ -698,7 +1116,7 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;N/A&quot; ]       ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 12;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 20;
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension:text.value[x]&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.extension.value[x]&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Value of extension&quot; ];
@@ -718,7 +1136,7 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;N/A&quot; ]       ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 13;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 21;
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.url&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.url&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">fhir:ElementDefinition.representation</a> [
@@ -743,7 +1161,7 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
          <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;N/A&quot; ]       ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 14;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 22;
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.value[x]&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Extension.value[x]&quot; ];
        <a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Value of extension&quot; ];
@@ -986,7 +1404,7 @@ Formats: <a href="StructureDefinition-extension-complex.html">Narrative</a>, <a 
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Sep 26, 2019 14:51-0700">2019-09-26</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Oct 14, 2019 15:53-0700">2019-10-14</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

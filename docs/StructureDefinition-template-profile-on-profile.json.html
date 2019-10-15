@@ -643,7 +643,6 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.extension",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.extension",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.id">id</a>" : "1",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>" : [
             {
               "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a>" : "value",
@@ -674,8 +673,8 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.extension:race",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.extension",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "race",
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extension",
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "An Extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "US Core Race Extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories: - American Indian or Alaska Native - Asian - Black or African American - Native Hawaiian or Other Pacific Islander - White.",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -691,9 +690,29 @@ This is the {% if {{site.build}} == "ci" %}
             ]
           }
         ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
+          "ele-1"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "All FHIR elements must have a @value or children",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "children().count() &gt; id.count()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "@value|f:*|h:div",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "Element"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ext-1",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "Extension"
+          }
+        ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
@@ -705,8 +724,8 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.extension:ethnicity",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.extension",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "ethnicity",
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extension",
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "An Extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "US Core ethnicity Extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -722,9 +741,29 @@ This is the {% if {{site.build}} == "ci" %}
             ]
           }
         ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
+          "ele-1"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "All FHIR elements must have a @value or children",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "children().count() &gt; id.count()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "@value|f:*|h:div",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "Element"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ext-1",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "Extension"
+          }
+        ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
@@ -737,7 +776,8 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.extension",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "birthsex",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extension",
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "An Extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex.",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -753,10 +793,38 @@ This is the {% if {{site.build}} == "ci" %}
             ]
           }
         ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
+          "ele-1"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "All FHIR elements must have a @value or children",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "children().count() &gt; id.count()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "@value|f:*|h:div",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "Element"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ext-1",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "Extension"
+          }
+        ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "iso11179",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".patient.administrativeGenderCode"
+          },
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Patient.extension"
@@ -769,7 +837,7 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extensions that cannot be ignored",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://build.fhir.org/extensibility.html#modifierExtension).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
           "extensions",
           "user content"
@@ -1062,7 +1130,7 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.identifier.value",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "The value that is unique within the system.",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://build.fhir.org/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -1230,6 +1298,15 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "HumanName"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "us-core-8",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Patient.name.given or Patient.name.family or both SHALL be present",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "family.exists() or given.exists()",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "f:given or f:family"
           }
         ],
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
@@ -1413,7 +1490,7 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
           "surname"
         ],
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "HumanName.family",
@@ -1457,7 +1534,7 @@ This is the {% if {{site.build}} == "ci" %}
           "first name",
           "middle name"
         ],
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "HumanName.given",
@@ -1612,6 +1689,7 @@ This is the {% if {{site.build}} == "ci" %}
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "ContactPoint"
           }
         ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -1626,6 +1704,279 @@ This is the {% if {{site.build}} == "ci" %}
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "cda",
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".telecom"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "NA"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.telecom.id",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.telecom.id",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">representation</a>" : [
+          "xmlAttr"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Unique id for inter-element referencing",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Element.id",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.telecom.extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.telecom.extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a>" : "value",
+              "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a>" : "url"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">description</a>" : "Extensions are always sliced by (at least) url",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a>" : "open"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Additional content defined by implementations",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "extensions",
+          "user content"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Element.extension",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.telecom.system",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.telecom.system",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "phone | fax | email | pager | url | sms | other",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Telecommunications form for contact point - what communications system is required to make use of the contact.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "ContactPoint.system",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
+          "cpt-2"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "Telecommunications form for contact point.",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/contact-point-system"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XTN.3"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./scheme"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./ContactPointType"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "NA"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.telecom.value",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.telecom.value",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "The actual contact point details",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Need to support legacy numbers that are not in a tightly controlled format.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "ContactPoint.value",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XTN.1 (or XTN.12)"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./url"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./Value"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "NA"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.telecom.use",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.telecom.use",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "home | work | temp | old | mobile - purpose of this contact point",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Identifies the purpose for the contact point.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Applications can assume that a contact is current unless it explicitly says that it is temporary or old.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "ContactPoint.use",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "This is labeled as \&quot;Is Modifier\&quot; because applications should not mistake a temporary or old contact etc.for a current/permanent one",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/contact-point-use"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XTN.2 - but often indicated by field"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "unique(./use)"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./ContactPointPurpose"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "NA"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.telecom.rank",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.telecom.rank",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Specify preferred order of use (1 = highest)",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Note that rank does not necessarily follow the order in which the contacts are represented in the instance.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "ContactPoint.rank",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "positiveInt"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.telecom.period",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.telecom.period",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Time period when the contact point was/is in use",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Time period when the contact point was/is in use.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "ContactPoint.period",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Period"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./usablePeriod[type=\&quot;IVL&lt;TS&gt;\&quot;]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./StartDate and ./EndDate"
           }
         ]
       },
@@ -1778,6 +2129,7 @@ This is the {% if {{site.build}} == "ci" %}
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address"
           }
         ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -1792,6 +2144,563 @@ This is the {% if {{site.build}} == "ci" %}
           {
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "cda",
             "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".addr"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Patient.birthDate"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.id",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.id",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">representation</a>" : [
+          "xmlAttr"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Unique id for inter-element referencing",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Element.id",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.extension",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>" : [
+            {
+              "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a>" : "value",
+              "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a>" : "url"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">description</a>" : "Extensions are always sliced by (at least) url",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a>" : "open"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Additional content defined by implementations",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "extensions",
+          "user content"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Element.extension",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.use",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.use",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "home | work | temp | old | billing - purpose of this address",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The purpose of this address.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Applications can assume that an address is current unless it explicitly says that it is temporary or old.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Allows an appropriate address to be chosen from a list of many.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Address.use",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example">example</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.label">label</a>" : "General",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.value[x]">valueCode</a>" : "home"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "This is labeled as \&quot;Is Modifier\&quot; because applications should not mistake a temporary or old address etc.for a current/permanent one",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
+            {
+              "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "AddressUse"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The use of an address.",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/address-use|4.0.0"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XAD.7"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "unique(./use)"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./AddressPurpose"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.type",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.type",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "postal | physical | both",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "The definition of Address states that \&quot;address is intended to describe postal addresses, not physical locations\&quot;. However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Address.type",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example">example</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.label">label</a>" : "General",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.value[x]">valueCode</a>" : "both"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
+            {
+              "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "AddressType"
+            }
+          ],
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The type of an address (physical / postal).",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/address-type|4.0.0"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XAD.18"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "unique(./use)"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "vcard",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "address type parameter"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.text",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.text",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Text representation of the address",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "A renderable, unencoded form.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Address.text",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example">example</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.label">label</a>" : "General",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.value[x]">valueString</a>" : "137 Nowhere Street, Erewhon 9132"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./formatted"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "vcard",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "address label parameter"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.line",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.line",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Street name, number, direction &amp; P.O. Box etc.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Address.line",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "*"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.orderMeaning">orderMeaning</a>" : "The order in which lines should appear in an address label",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example">example</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.label">label</a>" : "General",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.value[x]">valueString</a>" : "137 Nowhere Street"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "AD.part[parttype = AL]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "vcard",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "street"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./StreetAddress (newline delimitted)"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "NA"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.city",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.city",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Name of city, town etc.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The name of the city, town, suburb, village or other community or delivery center.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "Municpality"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Address.city",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example">example</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.label">label</a>" : "General",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.value[x]">valueString</a>" : "Erewhon"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XAD.3"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "AD.part[parttype = CTY]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "vcard",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "locality"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./Jurisdiction"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "NA"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.district",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.district",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "District name (aka county)",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The name of the administrative area (county).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "County"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Address.district",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example">example</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.label">label</a>" : "General",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.value[x]">valueString</a>" : "Madison"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XAD.9"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "AD.part[parttype = CNT | CPA]"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.state",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.state",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Sub-unit of country (abbreviations ok)",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "Province",
+          "Territory"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Address.state",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "Two Letter USPS alphabetic codes.",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XAD.4"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "AD.part[parttype = STA]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "vcard",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "region"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./Region"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "NA"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.postalCode",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.postalCode",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "US Zip Codes",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "A postal code designating a region defined by the postal service.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
+          "Zip",
+          "Zip Code"
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Address.postalCode",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example">example</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.label">label</a>" : "General",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.value[x]">valueString</a>" : "9132"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XAD.5"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "AD.part[parttype = ZIP]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "vcard",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "code"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./PostalIdentificationCode"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "NA"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.country",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.country",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Country (e.g. can be ISO 3166 2 or 3 letter code)",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Country - a nation as commonly understood or generally accepted.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "ISO 3166 3 letter codes can be used in place of a human readable country name.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Address.country",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XAD.6"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "AD.part[parttype = CNT]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "vcard",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "country"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./Country"
+          }
+        ]
+      },
+      {
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Patient.address.period",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Patient.address.period",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Time period when address was/is in use",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Time period when address was/is in use.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Allows addresses to be placed in historical context.",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Address.period",
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Period"
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example">example</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.label">label</a>" : "General",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.example.value[x]">valuePeriod</a>" : {
+              "<a href="http://build.fhir.org/datatypes.html#Period#Period.start">start</a>" : "2010-03-22T21:00:00-07:00",
+              "<a href="http://build.fhir.org/datatypes.html#Period#Period.end">end</a>" : "2010-06-30T21:00:00-07:00"
+            }
+          }
+        ],
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "XAD.12 / XAD.13 + XAD.14"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./usablePeriod[type=\&quot;IVL&lt;TS&gt;\&quot;]"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "./StartDate and ./EndDate"
+          },
+          {
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "argonaut-dq-dstu2",
+            "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "NA"
           }
         ]
       },
@@ -2041,7 +2950,7 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extensions that cannot be ignored even if unrecognized",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://build.fhir.org/extensibility.html#modifierExtension).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
           "extensions",
           "user content",
@@ -2455,7 +3364,7 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extensions that cannot be ignored even if unrecognized",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://build.fhir.org/extensibility.html#modifierExtension).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
           "extensions",
           "user content",
@@ -2506,12 +3415,6 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
-          "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
-            {
-              "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-              "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueCanonical</a>" : "http://hl7.org/fhir/us/core/ValueSet/simple-language"
-            }
-          ],
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/us/core/ValueSet/simple-language"
         },
@@ -2757,7 +3660,7 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extensions that cannot be ignored even if unrecognized",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://build.fhir.org/extensibility.html#modifierExtension).",
+        "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
         "<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
           "extensions",
           "user content",
@@ -2977,7 +3880,7 @@ Formats: <a href="StructureDefinition-template-profile-on-profile.html">Narrativ
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Sep 26, 2019 14:51-0700">2019-09-26</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Oct 14, 2019 15:53-0700">2019-10-14</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
