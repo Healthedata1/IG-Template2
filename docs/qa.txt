@@ -3,7 +3,7 @@
 
 err = 12, warn = 28, info = 0
 IG Publisher Version: v0.9.84-SNAPSHOT
-Generated Mon Oct 14 15:53:59 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+Generated Tue Oct 15 09:00:13 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
 
  Build Errors : 38 / 1
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/basic-example1 : 1 / 0
