@@ -112,6 +112,6 @@
 	</address>
 	<generalPractitioner><!-- 0..* Reference(Organization|Practitioner|
     PractitionerRole) Patient's nominated primary care provider -->
-		 <reference value="Practitioner/practitioner-1"/><!-- ?? 0..1 Literal reference, Relative, internal or absolute URL -->
+		 <reference value="http://hl7.org/fhir/us/core/Practitioner/practitioner-1"/><!-- ?? 0..1 Literal reference, Relative, internal or absolute URL -->
 	</generalPractitioner>
 </Patient>

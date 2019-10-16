@@ -3,9 +3,9 @@
 
 err = 12, warn = 28, info = 0
 IG Publisher Version: v0.9.84-SNAPSHOT
-Generated Tue Oct 15 09:00:13 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+Generated Tue Oct 15 11:40:20 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
 
- Build Errors : 38 / 1
+ Build Errors : 37 / 1
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/basic-example1 : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example : 3 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2 : 1 / 0
@@ -21,7 +21,6 @@ Generated Tue Oct 15 09:00:13 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be healthedatainc.ig-template2
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 270, column 477: The link 'Practitioner-practitioner-1.html' for "Practitioner/practitioner-1" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 270, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 454, column 8: The link 'StructureDefinition-extension-blah.html#Extension.valueCode' for "valueCode" cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Extension.extension, publish-box, copy-button, tabs, segment-post-footer, Extension.id, json-inner, all-tbl-diff, all-tbl-snap, stripe, segment-footer, json, Extension.url, tabs-snap, introduction, tbl-snap, all-tbl-snap-inner, segment-header, profile, tabs-diff, tbl-diff, Extension, Extension.value_x_, tabs-json, tabs-all, back-to-top, tbl-diff-inner, all-tbl-diff-inner, segment-navbar, project-status])
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 454, column 496: The link 'http://build.fhir.org/null.html' for "Value of extension" cannot be resolved
@@ -64,7 +63,7 @@ ERROR: Basic/diet: Basic: Identifier SHALL be greater than 5 characters [Identif
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example.xml ==
 ERROR: Patient/example: Patient.identifier[0].type.coding[0]: Unknown Code System http://hl7.org/fhir/v2/0203
 ERROR: Patient/example: Patient.identifier[0].type.coding[0].system: URL value 'http://hl7.org/fhir/v2/0203' does not resolve
-ERROR: Patient/example: Patient.generalPractitioner[0]: Unable to resolve resource 'Practitioner/practitioner-1'
+ERROR: Patient/example: Patient.generalPractitioner[0]: Unable to resolve resource 'http://hl7.org/fhir/us/core/Practitioner/practitioner-1'
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2.xml ==
 ERROR: Patient/example2: Patient.managingOrganization: Unable to resolve resource 'Organization/1'
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes.xml ==

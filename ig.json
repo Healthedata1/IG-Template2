@@ -9,7 +9,7 @@
     "name": "uscore",
     "package": "hl7.fhir.us.core",
     "location": "http://hl7.org/fhir/us/core",
-    "version": "3.0.1"
+    "version": "current"
   }],
   "npm-name": "healthedatainc.ig-template2",
   "name": "IGTest3",

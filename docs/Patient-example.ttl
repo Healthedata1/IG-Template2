@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>meta</b>: </p><p><b>identifier</b>: Medical Record Number = 1032702 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Amy V. Shaw </p><p><b>telecom</b>: ph: 555-555-5555(HOME), amy.shaw@example.com</p><p><b>gender</b>: female</p><p><b>birthDate</b>: Feb 20, 2007</p><p><b>address</b>: 49 Meadow St Mounds OK 74047 US </p><p><b>generalPractitioner</b>: <a href=\"Practitioner-practitioner-1.html\">Practitioner/practitioner-1</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>meta</b>: </p><p><b>identifier</b>: Medical Record Number = 1032702 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Amy V. Shaw </p><p><b>telecom</b>: ph: 555-555-5555(HOME), amy.shaw@example.com</p><p><b>gender</b>: female</p><p><b>birthDate</b>: Feb 20, 2007</p><p><b>address</b>: 49 Meadow St Mounds OK 74047 US </p><p><b>generalPractitioner</b>: <a href=\"http://hl7.org/fhir/us/core/Practitioner/practitioner-1\">http://hl7.org/fhir/us/core/Practitioner/practitioner-1</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -156,9 +156,11 @@
   ];
   fhir:Patient.generalPractitioner [
      fhir:index 0;
-     fhir:link <http://www.fhir.org/guides/test3/Practitioner/practitioner-1>;
-     fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ]
+     fhir:link <http://hl7.org/fhir/us/core/Practitioner/practitioner-1>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/core/Practitioner/practitioner-1" ]
   ] .
+
+<http://hl7.org/fhir/us/core/Practitioner/practitioner-1> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
