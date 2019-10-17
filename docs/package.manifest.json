@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "fhirVersion": "[4.0.0]",
-  "date": "20191015113832",
+  "fhirVersion": "[3.0.1]",
+  "date": "20191017152408",
   "name": "healthedatainc.ig-template2"
 }

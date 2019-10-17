@@ -1,12 +1,11 @@
 {
   "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
-  "name": "IGTest3",
   "package-id": "healthedatainc.ig-template2",
   "ig-ver": "0.0.0",
-  "date": "Tue, 15 Oct, 2019 11:39:27 -0700",
-  "errs": 12,
-  "warnings": 28,
+  "date": "Thu, 17 Oct, 2019 15:24:53 -0700",
+  "errs": 8,
+  "warnings": 0,
   "hints": 0,
-  "version": "4.0.0",
+  "version": "3.0.1",
   "tool": "4.1.0 (3)"
 }

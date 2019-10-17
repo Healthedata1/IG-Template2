@@ -10,14 +10,13 @@
   fhir:Resource.id [ fhir:value "healthedatainc.ig-template2-0.0.0"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2/><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0"];
   fhir:ImplementationGuide.version [ fhir:value "0.0.0"];
-  fhir:ImplementationGuide.name [ fhir:value "IGTest3"];
-  fhir:ImplementationGuide.title [ fhir:value "IG Test3"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2019-10-15T11:39:27-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ImplementationGuide.date [ fhir:value "2019-10-17T15:24:53-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Health eData Inc"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -34,27 +33,12 @@
        fhir:ContactPoint.value [ fhir:value "http://foobar.com" ]
      ]
   ];
-  fhir:ImplementationGuide.copyright [ fhir:value "Used by permission of Health eData Inc, all rights reserved Creative Commons License"];
-  fhir:ImplementationGuide.packageId [ fhir:value "healthedatainc.ig-template2"];
-  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
-  fhir:ImplementationGuide.fhirVersion [
-     fhir:value "4.0.0";
-     fhir:index 0
-  ];
-  fhir:ImplementationGuide.definition [
-     fhir:ImplementationGuide.definition.grouping [
-       fhir:index 0;
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "base" ]
-     ], [
-       fhir:index 1;
-       fhir:Element.id [ fhir:value "template-profile-spreadsheet.xml" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Template-basic" ]
-     ], [
-       fhir:index 2;
-       fhir:Element.id [ fhir:value "patient-on-usprofile-spreadsheet.xml" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet" ]
-     ];
-     fhir:ImplementationGuide.definition.resource [
+  fhir:ImplementationGuide.fhirVersion [ fhir:value "3.0.1"];
+  fhir:ImplementationGuide.package [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "p1" ];
+     fhir:ImplementationGuide.package.name [ fhir:value "base" ];
+     fhir:ImplementationGuide.package.resource [
        fhir:index 0;
        fhir:Element.extension [
          fhir:index 0;
@@ -65,11 +49,11 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "Basic-diet.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/Basic/diet>;
          fhir:Reference.reference [ fhir:value "Basic/diet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
@@ -81,11 +65,11 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "Patient-example.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/Patient/example>;
          fhir:Reference.reference [ fhir:value "Patient/example" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 2;
        fhir:Element.extension [
@@ -97,11 +81,11 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "Patient-example2.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/Patient/example2>;
          fhir:Reference.reference [ fhir:value "Patient/example2" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
@@ -113,11 +97,11 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-extension-complex.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/extension-complex>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/extension-complex" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 4;
        fhir:Element.extension [
@@ -129,29 +113,13 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-extension-blah.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/extension-blah>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/extension-blah" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
      ], [
        fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "OperationDefinition-opdef-test.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://www.fhir.org/guides/test3/OperationDefinition/opdef-test>;
-         fhir:Reference.reference [ fhir:value "OperationDefinition/opdef-test" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -161,29 +129,13 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-ifr.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/ifr>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ifr" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
      ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-server.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://www.fhir.org/guides/test3/CapabilityStatement/server>;
-         fhir:Reference.reference [ fhir:value "CapabilityStatement/server" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 8;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -193,29 +145,13 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "CodeSystem-blah-codes.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/CodeSystem/blah-codes>;
          fhir:Reference.reference [ fhir:value "CodeSystem/blah-codes" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
      ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-client.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://www.fhir.org/guides/test3/CapabilityStatement/client>;
-         fhir:Reference.reference [ fhir:value "CapabilityStatement/client" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 10;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -225,13 +161,13 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-template-profile-on-profile.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/template-profile-on-profile" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
      ], [
-       fhir:index 11;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -241,13 +177,13 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-template-basic.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/template-basic>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/template-basic" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
      ], [
-       fhir:index 12;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -257,13 +193,18 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "ValueSet-blah-codes.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/ValueSet/blah-codes>;
          fhir:Reference.reference [ fhir:value "ValueSet/blah-codes" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 13;
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "template-profile-spreadsheet.xml" ];
+     fhir:ImplementationGuide.package.name [ fhir:value "Template-basic" ];
+     fhir:ImplementationGuide.package.resource [
+       fhir:index 0;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -273,122 +214,105 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-extension-blah2.html" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.name [ fhir:value "blah2" ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/extension-blah2" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "blah2" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "template-profile-spreadsheet.xml" ]
-     ];
-     fhir:ImplementationGuide.definition.page [
-       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
-       fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
-       fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-       fhir:ImplementationGuide.definition.page.page [
+       ]
+     ]
+  ];
+  fhir:ImplementationGuide.page [
+     fhir:ImplementationGuide.page.source [ fhir:value "index.html" ];
+     fhir:ImplementationGuide.page.title [ fhir:value "Home" ];
+     fhir:ImplementationGuide.page.kind [ fhir:value "page" ];
+     fhir:ImplementationGuide.page.page [
+       fhir:index 0;
+       fhir:ImplementationGuide.page.source [ fhir:value "guidance.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "General Guidance" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.page.source [ fhir:value "profiles.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Profiles and Extensions" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ];
+       fhir:ImplementationGuide.page.page [
          fhir:index 0;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guidance.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "General Guidance" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         fhir:ImplementationGuide.page.source [ fhir:value "StructureDefinition-ifr.html" ];
+         fhir:ImplementationGuide.page.title [ fhir:value "StructureDefinition Ifr" ];
+         fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
        ], [
          fhir:index 1;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles and Extensions" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-         fhir:ImplementationGuide.definition.page.page [
-           fhir:index 0;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-ifr.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Ifr" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ], [
-           fhir:index 1;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-template-profile-on-profile.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Template Profile On Profile" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ], [
-           fhir:index 2;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-template-basic.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Template Basic" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ], [
-           fhir:index 3;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-complex.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension Complex" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ], [
-           fhir:index 4;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-blah.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension Blah" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ]
+         fhir:ImplementationGuide.page.source [ fhir:value "StructureDefinition-template-profile-on-profile.html" ];
+         fhir:ImplementationGuide.page.title [ fhir:value "StructureDefinition Template Profile On Profile" ];
+         fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
        ], [
          fhir:index 2;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operations.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Operations" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-         fhir:ImplementationGuide.definition.page.page [
-           fhir:index 0;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "OperationDefinition-opdef-test.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "OperationDefinition Opdef Test" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ]
+         fhir:ImplementationGuide.page.source [ fhir:value "StructureDefinition-template-basic.html" ];
+         fhir:ImplementationGuide.page.title [ fhir:value "StructureDefinition Template Basic" ];
+         fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
        ], [
          fhir:index 3;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-         fhir:ImplementationGuide.definition.page.page [
-           fhir:index 0;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "ValueSet-blah-codes.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "ValueSet Blah Codes" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ], [
-           fhir:index 1;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CodeSystem-blah-codes.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "CodeSystem Blah Codes" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ]
+         fhir:ImplementationGuide.page.source [ fhir:value "StructureDefinition-extension-complex.html" ];
+         fhir:ImplementationGuide.page.title [ fhir:value "StructureDefinition Extension Complex" ];
+         fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
        ], [
          fhir:index 4;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "searchparameters.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Search Parameters" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 5;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "capstatements.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Capability Statements" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-         fhir:ImplementationGuide.definition.page.page [
-           fhir:index 0;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CapabilityStatement-server.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "CapabilityStatement Server" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ], [
-           fhir:index 1;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CapabilityStatement-client.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "CapabilityStatement Client" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
-         ]
-       ], [
-         fhir:index 6;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Security" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 7;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 8;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "all-examples.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "All Examples" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 9;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         fhir:ImplementationGuide.page.source [ fhir:value "StructureDefinition-extension-blah.html" ];
+         fhir:ImplementationGuide.page.title [ fhir:value "StructureDefinition Extension Blah" ];
+         fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
        ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.page.source [ fhir:value "operations.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Operations" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.page.source [ fhir:value "terminology.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Terminology" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ];
+       fhir:ImplementationGuide.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.page.source [ fhir:value "ValueSet-blah-codes.html" ];
+         fhir:ImplementationGuide.page.title [ fhir:value "ValueSet Blah Codes" ];
+         fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.page.source [ fhir:value "CodeSystem-blah-codes.html" ];
+         fhir:ImplementationGuide.page.title [ fhir:value "CodeSystem Blah Codes" ];
+         fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.page.source [ fhir:value "searchparameters.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Search Parameters" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.page.source [ fhir:value "capstatements.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Capability Statements" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.page.source [ fhir:value "security.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Security" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.page.source [ fhir:value "downloads.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Downloads" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.page.source [ fhir:value "all-examples.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "All Examples" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.page.source [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
      ]
   ] .
 

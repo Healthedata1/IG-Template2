@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+  "code" : "N"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.org/CodeSystem/v2-0131\" is not known for the code \"N\"; The code provided (http://terminology.hl7.org/CodeSystem/v2-0131#N) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

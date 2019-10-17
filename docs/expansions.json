@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "c07d3d68-afd0-42ef-afac-ccf1314fc2ef",
+  "id" : "6b7b13a2-fff7-4bdb-a22d-ad6a6b59f62c",
   "meta" : {
-    "lastUpdated" : "2019-10-15T11:39:27.690-07:00"
+    "lastUpdated" : "2019-10-17T15:24:53.002-07:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -36,9 +36,10 @@
         }]
       }],
       "immutable" : true,
+      "copyright" : "markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2",
       "expansion" : {
-        "identifier" : "urn:uuid:c1e837ca-08d7-44cc-9253-a28d75cfedf9",
-        "timestamp" : "2019-10-15T11:39:51-07:00",
+        "identifier" : "urn:uuid:e76b5ff4-4f8c-41a5-94ee-52cddba6cfa9",
+        "timestamp" : "2019-10-17T15:25:20-07:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",

@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IGTest3</title>
+  <title></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IGTest3 Implemenation Guide" />
+<meta name="description" content=" Implemenation Guide" />
 <meta name="author" content="Health eData Inc"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -75,7 +75,7 @@ can only resize using html  or css ;-(
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
         
-        <b>IG Test3 Implementation Guide</b>
+        <b> Implementation Guide</b>
         
         
         CI Build
@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">ImplementationGuide[http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0] - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -283,9 +283,8 @@ This is the {% if {{site.build}} == "ci" %}
   <a href="http://build.fhir.org/patient.html#Patient.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;example&quot;];
   <a href="http://build.fhir.org/patient.html#Patient.meta">fhir:Resource.meta</a> [
      <a href="http://build.fhir.org/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://build.fhir.org/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient&quot;;
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient&gt;     ]
+       <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0     ]
   ];
   <a href="http://build.fhir.org/patient.html#Patient.text">fhir:DomainResource.text</a> [
      <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
@@ -293,69 +292,69 @@ This is the {% if {{site.build}} == "ci" %}
   ];
   <a href="http://build.fhir.org/patient.html#Patient.extension">fhir:DomainResource.extension</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-     <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-race&quot; ];
+     <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-race&quot; ];
      <a href="http://build.fhir.org/extensibility.html#Extension#Extension.extension">fhir:Element.extension</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ombCategory&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;ombCategory&quot; ];
        <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCoding</a> [
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:oid:2.16.840.1.113883.6.238&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;2106-3&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;White&quot; ]       ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
-       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ombCategory&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;ombCategory&quot; ];
        <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCoding</a> [
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:oid:2.16.840.1.113883.6.238&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;1002-5&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;American Indian or Alaska Native&quot; ]       ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
-       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ombCategory&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;ombCategory&quot; ];
        <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCoding</a> [
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:oid:2.16.840.1.113883.6.238&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;2028-9&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Asian&quot; ]       ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
-       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;detailed&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;detailed&quot; ];
        <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCoding</a> [
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:oid:2.16.840.1.113883.6.238&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;1586-7&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Shoshone&quot; ]       ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
-       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;detailed&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;detailed&quot; ];
        <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCoding</a> [
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:oid:2.16.840.1.113883.6.238&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;2036-2&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Filipino&quot; ]       ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
-       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;text&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;text&quot; ];
        <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Mixed&quot; ]     ]
   ], [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
-     <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity&quot; ];
+     <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity&quot; ];
      <a href="http://build.fhir.org/extensibility.html#Extension#Extension.extension">fhir:Element.extension</a> [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ombCategory&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;ombCategory&quot; ];
        <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCoding</a> [
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:oid:2.16.840.1.113883.6.238&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;2135-2&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Hispanic or Latino&quot; ]       ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
-       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;detailed&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;detailed&quot; ];
        <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCoding</a> [
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:oid:2.16.840.1.113883.6.238&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;2184-0&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Dominican&quot; ]       ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
-       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;detailed&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;detailed&quot; ];
        <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCoding</a> [
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;urn:oid:2.16.840.1.113883.6.238&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;2148-5&quot; ];
          <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Mexican&quot; ]       ]     ], [
        <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
-       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;text&quot; ];
+       <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;text&quot; ];
        <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Hispanic or Latino&quot; ]     ]
   ], [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
-     <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex&quot; ];
+     <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex&quot; ];
      <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;F&quot; ]
   ];
   <a href="http://build.fhir.org/patient.html#Patient.identifier">fhir:Patient.identifier</a> [
@@ -467,7 +466,7 @@ Formats: <a href="Patient-example.html">Narrative</a>, <a href="Patient-example.
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Oct 15, 2019 11:39-0700">2019-10-15</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 3.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Oct 17, 2019 15:24-0700">2019-10-17</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

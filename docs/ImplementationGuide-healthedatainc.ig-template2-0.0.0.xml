@@ -3,14 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="healthedatainc.ig-template2-0.0.0"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IGTest3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2/><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>
   </text>
   <url value="http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0"/>
   <version value="0.0.0"/>
-  <name value="IGTest3"/>
-  <title value="IG Test3"/>
   <status value="draft"/>
-  <date value="2019-10-15T11:39:27-07:00"/>
+  <experimental value="true"/>
+  <date value="2019-10-17T15:24:53-07:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -24,20 +23,9 @@
       <value value="http://foobar.com"/>
     </telecom>
   </contact>
-  <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
-  <packageId value="healthedatainc.ig-template2"/>
-  <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.0"/>
-  <definition>
-    <grouping>
-      <name value="base"/>
-    </grouping>
-    <grouping id="template-profile-spreadsheet.xml">
-      <name value="Template-basic"/>
-    </grouping>
-    <grouping id="patient-on-usprofile-spreadsheet.xml">
-      <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"/>
-    </grouping>
+  <fhirVersion value="3.0.1"/>
+  <package id="p1">
+    <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Basic"/>
@@ -45,10 +33,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Basic-diet.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Basic/diet"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -57,10 +45,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Patient-example.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Patient/example"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -69,10 +57,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Patient-example2.html"/>
       </extension>
-      <reference>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Patient/example2"/>
-      </reference>
-      <exampleBoolean value="true"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -81,10 +69,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-complex.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/extension-complex"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -93,22 +81,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-blah.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/extension-blah"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="OperationDefinition"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="OperationDefinition-opdef-test.html"/>
-      </extension>
-      <reference>
-        <reference value="OperationDefinition/opdef-test"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -117,22 +93,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-ifr.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/ifr"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CapabilityStatement-server.html"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/server"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -141,22 +105,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-blah-codes.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="CodeSystem/blah-codes"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CapabilityStatement-client.html"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/client"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -165,10 +117,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/template-profile-on-profile"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -177,10 +129,10 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-basic.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="StructureDefinition/template-basic"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -189,11 +141,14 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-blah-codes.html"/>
       </extension>
-      <reference>
+      <example value="false"/>
+      <sourceReference>
         <reference value="ValueSet/blah-codes"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      </sourceReference>
     </resource>
+  </package>
+  <package id="template-profile-spreadsheet.xml">
+    <name value="Template-basic"/>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
@@ -201,116 +156,101 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-blah2.html"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/extension-blah2"/>
-      </reference>
+      <example value="false"/>
       <name value="blah2"/>
-      <groupingId value="template-profile-spreadsheet.xml"/>
+      <sourceReference>
+        <reference value="StructureDefinition/extension-blah2"/>
+      </sourceReference>
     </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="Home"/>
+    <kind value="page"/>
     <page>
-      <nameUrl value="index.html"/>
-      <title value="Home"/>
-      <generation value="markdown"/>
+      <source value="guidance.html"/>
+      <title value="General Guidance"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="profiles.html"/>
+      <title value="Profiles and Extensions"/>
+      <kind value="page"/>
       <page>
-        <nameUrl value="guidance.html"/>
-        <title value="General Guidance"/>
-        <generation value="markdown"/>
+        <source value="StructureDefinition-ifr.html"/>
+        <title value="StructureDefinition Ifr"/>
+        <kind value="resource"/>
       </page>
       <page>
-        <nameUrl value="profiles.html"/>
-        <title value="Profiles and Extensions"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="StructureDefinition-ifr.html"/>
-          <title value="StructureDefinition Ifr"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
-          <title value="StructureDefinition Template Profile On Profile"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-template-basic.html"/>
-          <title value="StructureDefinition Template Basic"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-extension-complex.html"/>
-          <title value="StructureDefinition Extension Complex"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-extension-blah.html"/>
-          <title value="StructureDefinition Extension Blah"/>
-          <generation value="generated"/>
-        </page>
+        <source value="StructureDefinition-template-profile-on-profile.html"/>
+        <title value="StructureDefinition Template Profile On Profile"/>
+        <kind value="resource"/>
       </page>
       <page>
-        <nameUrl value="operations.html"/>
-        <title value="Operations"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="OperationDefinition-opdef-test.html"/>
-          <title value="OperationDefinition Opdef Test"/>
-          <generation value="generated"/>
-        </page>
+        <source value="StructureDefinition-template-basic.html"/>
+        <title value="StructureDefinition Template Basic"/>
+        <kind value="resource"/>
       </page>
       <page>
-        <nameUrl value="terminology.html"/>
-        <title value="Terminology"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="ValueSet-blah-codes.html"/>
-          <title value="ValueSet Blah Codes"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="CodeSystem-blah-codes.html"/>
-          <title value="CodeSystem Blah Codes"/>
-          <generation value="generated"/>
-        </page>
+        <source value="StructureDefinition-extension-complex.html"/>
+        <title value="StructureDefinition Extension Complex"/>
+        <kind value="resource"/>
       </page>
       <page>
-        <nameUrl value="searchparameters.html"/>
-        <title value="Search Parameters"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="capstatements.html"/>
-        <title value="Capability Statements"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="CapabilityStatement-server.html"/>
-          <title value="CapabilityStatement Server"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="CapabilityStatement-client.html"/>
-          <title value="CapabilityStatement Client"/>
-          <generation value="generated"/>
-        </page>
-      </page>
-      <page>
-        <nameUrl value="security.html"/>
-        <title value="Security"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Downloads"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="all-examples.html"/>
-        <title value="All Examples"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="toc.html"/>
-        <title value="Table of Contents"/>
-        <generation value="html"/>
+        <source value="StructureDefinition-extension-blah.html"/>
+        <title value="StructureDefinition Extension Blah"/>
+        <kind value="resource"/>
       </page>
     </page>
-  </definition>
+    <page>
+      <source value="operations.html"/>
+      <title value="Operations"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="terminology.html"/>
+      <title value="Terminology"/>
+      <kind value="page"/>
+      <page>
+        <source value="ValueSet-blah-codes.html"/>
+        <title value="ValueSet Blah Codes"/>
+        <kind value="resource"/>
+      </page>
+      <page>
+        <source value="CodeSystem-blah-codes.html"/>
+        <title value="CodeSystem Blah Codes"/>
+        <kind value="resource"/>
+      </page>
+    </page>
+    <page>
+      <source value="searchparameters.html"/>
+      <title value="Search Parameters"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="capstatements.html"/>
+      <title value="Capability Statements"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="security.html"/>
+      <title value="Security"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="downloads.html"/>
+      <title value="Downloads"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="all-examples.html"/>
+      <title value="All Examples"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="toc.html"/>
+      <title value="Table of Contents"/>
+      <kind value="resource"/>
+    </page>
+  </page>
 </ImplementationGuide>

@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IGTest3</title>
+  <title></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IGTest3 Implemenation Guide" />
+<meta name="description" content=" Implemenation Guide" />
 <meta name="author" content="Health eData Inc"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -75,7 +75,7 @@ can only resize using html  or css ;-(
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
         
-        <b>IG Test3 Implementation Guide</b>
+        <b> Implementation Guide</b>
         
         
         CI Build
@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">ImplementationGuide[http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0] - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -290,6 +290,7 @@ This is the {% if {{site.build}} == "ci" %}
   &lt;/text&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.url">url</a>
        <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;0.0.0&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;blah2&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Simple Extension&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
@@ -297,7 +298,7 @@ This is the {% if {{site.build}} == "ci" %}
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2017-02-15T00:00:00-08:00&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Health eData Inc&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.description">description</a> <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;an example of a simple extension.&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;4.0.0&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;3.0.1&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping">mapping</a>&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.mapping.uri">uri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/v3&quot;/&gt;
@@ -305,12 +306,10 @@ This is the {% if {{site.build}} == "ci" %}
   &lt;/mapping&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.kind">kind</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;complex-type&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.abstract">abstract</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.context">context</a>&gt;
-    &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.context.type">type</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;element&quot;/&gt;
-    &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.context.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Identifier&quot;/&gt;
-  &lt;/context&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.type">type</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.baseDefinition">baseDefinition</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.contextType">contextType</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;datatype&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.context">context</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Identifier&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.type">type</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;Extension&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.baseDefinition">baseDefinition</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.derivation">derivation</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;constraint&quot;/&gt;
   &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot">snapshot</a>&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Extension&quot;&gt;
@@ -329,9 +328,9 @@ This is the {% if {{site.build}} == "ci" %}
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;All FHIR elements must have a @value or children&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;hasValue() or (children().count() &amp;gt; id.count())&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;hasValue() | (children().count() &amp;gt; id.count())&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;Element&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;ext-1&quot;/&gt;
@@ -340,16 +339,15 @@ This is the {% if {{site.build}} == "ci" %}
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), &amp;#39;value&amp;#39;)])&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;Extension&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://build.fhir.org/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>=&quot;Extension.id&quot;&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Extension.id&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.representation">representation</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;xmlAttr&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Unique id for inter-element referencing&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot;/&gt;
+                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -360,8 +358,6 @@ This is the {% if {{site.build}} == "ci" %}
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;string&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
@@ -377,9 +373,9 @@ This is the {% if {{site.build}} == "ci" %}
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">description</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Extensions are always sliced by (at least) url&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
       &lt;/slicing&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Additional content defined by implementations&quot;/&gt;
+      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Additional Content defined by implementations&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
+                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
                <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;extensions&quot;/&gt;
@@ -394,8 +390,6 @@ This is the {% if {{site.build}} == "ci" %}
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
@@ -421,8 +415,6 @@ This is the {% if {{site.build}} == "ci" %}
       &lt;/type&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedUri</a>
                 <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
@@ -432,7 +424,7 @@ This is the {% if {{site.build}} == "ci" %}
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Extension.value[x]&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Value of extension&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list).&quot;/&gt;
+                  <a href="http://build.fhir.org/datatypes.html#markdown">value</a>=&quot;Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://build.fhir.org/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -443,12 +435,13 @@ This is the {% if {{site.build}} == "ci" %}
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;code&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-      &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;A bunch of example codes&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://www.fhir.org/guides/test3/ValueSet/blah-codes&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>
+                     <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://www.fhir.org/guides/test3/ValueSet/blah-codes&quot;/&gt;
+        &lt;/valueSetReference&gt;
       &lt;/binding&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
@@ -480,7 +473,10 @@ This is the {% if {{site.build}} == "ci" %}
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;A bunch of example codes&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://www.fhir.org/guides/test3/ValueSet/blah-codes&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+          &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>
+                     <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;http://www.fhir.org/guides/test3/ValueSet/blah-codes&quot;/&gt;
+        &lt;/valueSetReference&gt;
       &lt;/binding&gt;
     &lt;/element&gt;
   &lt;/differential&gt;
@@ -534,7 +530,7 @@ Formats: <a href="StructureDefinition-extension-blah2.html">Narrative</a>, <a hr
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Oct 15, 2019 11:39-0700">2019-10-15</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 3.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Oct 17, 2019 15:24-0700">2019-10-17</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

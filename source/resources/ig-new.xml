@@ -16,9 +16,8 @@
   </extension>
   <url value="http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0"/>
   <version value="0.0.0"/>
-  <name value="IGTest3"/>
-  <title value="IG Test3"/>
   <status value="draft"/>
+  <experimental value="true"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -32,18 +31,21 @@
       <value value="http://foobar.com"/>
     </telecom>
   </contact>
-  <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
   <packageId value="healthedatainc.ig-template2"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="3.0.1"/>
+  <dependsOn id="qicore">
+    <uri value="http://hl7.org/fhir/us/qicore"/>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <version value="3.2.0"/>
+  </dependsOn>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="3.0.1"/>
+    <version value="2.0.0"/>
   </dependsOn>
   <definition>
-    <grouping>
+    <grouping id="p1">
       <name value="base"/>
     </grouping>
     <resource>
@@ -51,92 +53,84 @@
         <reference value="Basic/diet"/>
       </reference>
       <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/example"/>
       </reference>
       <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/example2"/>
       </reference>
       <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/extension-complex"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/extension-blah"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="OperationDefinition/opdef-test"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ifr"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CapabilityStatement/server"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/blah-codes"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CapabilityStatement/client"/>
-      </reference>
-      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/template-profile-on-profile"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/template-basic"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/blah-codes"/>
       </reference>
       <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
     </resource>
     <page>
       <nameUrl value="index.html"/>
       <title value="Home"/>
-      <generation value="markdown"/>
+      <generation value="html"/>
       <page>
         <nameUrl value="guidance.html"/>
         <title value="General Guidance"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="profiles.html"/>
         <title value="Profiles and Extensions"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
         <page>
           <nameUrl value="StructureDefinition-ifr.html"/>
           <title value="StructureDefinition Ifr"/>
@@ -166,17 +160,12 @@
       <page>
         <nameUrl value="operations.html"/>
         <title value="Operations"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="OperationDefinition-opdef-test.html"/>
-          <title value="OperationDefinition Opdef Test"/>
-          <generation value="generated"/>
-        </page>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="terminology.html"/>
         <title value="Terminology"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
         <page>
           <nameUrl value="ValueSet-blah-codes.html"/>
           <title value="ValueSet Blah Codes"/>
@@ -191,42 +180,32 @@
       <page>
         <nameUrl value="searchparameters.html"/>
         <title value="Search Parameters"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="capstatements.html"/>
         <title value="Capability Statements"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="CapabilityStatement-server.html"/>
-          <title value="CapabilityStatement Server"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="CapabilityStatement-client.html"/>
-          <title value="CapabilityStatement Client"/>
-          <generation value="generated"/>
-        </page>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="security.html"/>
         <title value="Security"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="all-examples.html"/>
         <title value="All Examples"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="toc.html"/>
         <title value="Table of Contents"/>
-        <generation value="html"/>
+        <generation value="generated"/>
       </page>
     </page>
     <parameter>

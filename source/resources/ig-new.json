@@ -19,9 +19,8 @@
   }],
   "url" : "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
   "version" : "0.0.0",
-  "name" : "IGTest3",
-  "title" : "IG Test3",
   "status" : "draft",
+  "experimental" : true,
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -35,112 +34,109 @@
       "value" : "http://foobar.com"
     }]
   }],
-  "copyright" : "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
   "packageId" : "healthedatainc.ig-template2",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["4.0.0",
-  "4.0.0"],
+  "fhirVersion" : ["3.0.1"],
   "dependsOn" : [{
+    "id" : "qicore",
+    "uri" : "http://hl7.org/fhir/us/qicore",
+    "packageId" : "hl7.fhir.us.qicore",
+    "version" : "3.2.0"
+  },
+  {
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
     "packageId" : "hl7.fhir.us.core",
-    "version" : "3.0.1"
+    "version" : "2.0.0"
   }],
   "definition" : {
     "grouping" : [{
+      "id" : "p1",
       "name" : "base"
     }],
     "resource" : [{
       "reference" : {
         "reference" : "Basic/diet"
       },
-      "exampleBoolean" : true
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "Patient/example"
       },
-      "exampleBoolean" : true
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "Patient/example2"
       },
-      "exampleBoolean" : true
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/extension-complex"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/extension-blah"
       },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "OperationDefinition/opdef-test"
-      },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/ifr"
       },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "CapabilityStatement/server"
-      },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "CodeSystem/blah-codes"
       },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "CapabilityStatement/client"
-      },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/template-profile-on-profile"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/template-basic"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "ValueSet/blah-codes"
       },
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
     }],
     "page" : {
       "nameUrl" : "index.html",
       "title" : "Home",
-      "generation" : "markdown",
+      "generation" : "html",
       "page" : [{
         "nameUrl" : "guidance.html",
         "title" : "General Guidance",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "nameUrl" : "profiles.html",
         "title" : "Profiles and Extensions",
-        "generation" : "markdown",
+        "generation" : "html",
         "page" : [{
           "nameUrl" : "StructureDefinition-ifr.html",
           "title" : "StructureDefinition Ifr",
@@ -170,17 +166,12 @@
       {
         "nameUrl" : "operations.html",
         "title" : "Operations",
-        "generation" : "markdown",
-        "page" : [{
-          "nameUrl" : "OperationDefinition-opdef-test.html",
-          "title" : "OperationDefinition Opdef Test",
-          "generation" : "generated"
-        }]
+        "generation" : "html"
       },
       {
         "nameUrl" : "terminology.html",
         "title" : "Terminology",
-        "generation" : "markdown",
+        "generation" : "html",
         "page" : [{
           "nameUrl" : "ValueSet-blah-codes.html",
           "title" : "ValueSet Blah Codes",
@@ -195,42 +186,32 @@
       {
         "nameUrl" : "searchparameters.html",
         "title" : "Search Parameters",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "nameUrl" : "capstatements.html",
         "title" : "Capability Statements",
-        "generation" : "markdown",
-        "page" : [{
-          "nameUrl" : "CapabilityStatement-server.html",
-          "title" : "CapabilityStatement Server",
-          "generation" : "generated"
-        },
-        {
-          "nameUrl" : "CapabilityStatement-client.html",
-          "title" : "CapabilityStatement Client",
-          "generation" : "generated"
-        }]
+        "generation" : "html"
       },
       {
         "nameUrl" : "security.html",
         "title" : "Security",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "nameUrl" : "downloads.html",
         "title" : "Downloads",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "nameUrl" : "all-examples.html",
         "title" : "All Examples",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "nameUrl" : "toc.html",
         "title" : "Table of Contents",
-        "generation" : "html"
+        "generation" : "generated"
       }]
     },
     "parameter" : [{

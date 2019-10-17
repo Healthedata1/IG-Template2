@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>IGTest3</title>
+  <title></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="IGTest3 Implemenation Guide" />
+<meta name="description" content=" Implemenation Guide" />
 <meta name="author" content="Health eData Inc"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -75,7 +75,7 @@ can only resize using html  or css ;-(
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
         
-        <b>IG Test3 Implementation Guide</b>
+        <b> Implementation Guide</b>
         
         
         CI Build
@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">ImplementationGuide[http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0] - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -283,13 +283,12 @@ This is the {% if {{site.build}} == "ci" %}
   <a href="http://build.fhir.org/basic.html#Basic.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;diet&quot;];
   <a href="http://build.fhir.org/basic.html#Basic.meta">fhir:Resource.meta</a> [
      <a href="http://build.fhir.org/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://build.fhir.org/datatypes.html#canonical">fhir:value</a> &quot;http://www.fhir.org/guides/test3/StructureDefinition/template-basic&quot;;
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://www.fhir.org/guides/test3/StructureDefinition/template-basic&gt;     ]
+       <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://www.fhir.org/guides/test3/StructureDefinition/template-basic&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0     ]
   ];
   <a href="http://build.fhir.org/basic.html#Basic.text">fhir:DomainResource.text</a> [
      <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: diet&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 746&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diet &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/basic-resource-type code 'diet' = 'Diet)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Generated Summary: id: example; Medical Record Number = 1032702 (USUAL); active; Amy V. Shaw ; ph: 555-555-5555(HOME), amy.shaw@example.com; gender: female; birthDate: Feb 20, 2007&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: May 14, 2019&lt;/p&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: diet&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 746&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: diet &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/basic-resource-type code 'diet' = 'diet)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Generated Summary: id: example; Medical Record Number = 1032702 (USUAL); active; Amy V. Shaw ; ph: 555-555-5555(HOME), amy.shaw@example.com; gender: female; birthDate: Feb 20, 2007&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: May 14, 2019&lt;/p&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://build.fhir.org/basic.html#Basic.identifier">fhir:Basic.identifier</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
@@ -363,7 +362,7 @@ Formats: <a href="Basic-diet.html">Narrative</a>, <a href="Basic-diet.xml.html">
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Oct 15, 2019 11:39-0700">2019-10-15</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 3.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Oct 17, 2019 15:24-0700">2019-10-17</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
