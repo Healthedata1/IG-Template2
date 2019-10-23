@@ -41,10 +41,16 @@
   "fhirVersion" : ["4.0.0",
   "4.0.0"],
   "dependsOn" : [{
+    "id" : "qicore",
+    "uri" : "http://hl7.org/fhir/us/qicore",
+    "packageId" : "hl7.fhir.us.qicore",
+    "version" : "current"
+  },
+  {
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
     "packageId" : "hl7.fhir.us.core",
-    "version" : "3.0.1"
+    "version" : "current"
   }],
   "definition" : {
     "grouping" : [{

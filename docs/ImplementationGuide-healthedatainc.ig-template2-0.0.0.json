@@ -10,7 +10,7 @@
   "name": "IGTest3",
   "title": "IG Test3",
   "status": "draft",
-  "date": "2019-10-15T11:39:27-07:00",
+  "date": "2019-10-23T11:47:17-07:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -44,10 +44,6 @@
       {
         "id": "template-profile-spreadsheet.xml",
         "name": "Template-basic"
-      },
-      {
-        "id": "patient-on-usprofile-spreadsheet.xml",
-        "name": "/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"
       }
     ],
     "resource": [

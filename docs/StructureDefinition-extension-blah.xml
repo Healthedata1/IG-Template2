@@ -9,6 +9,7 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://build.fhir.org/formats.html#table" title="Legend for this format"><img src="http://build.fhir.org/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://www.fhir.org/guides/test3/StructureDefinition/extension-blah"/>
+  <version value="0.0.0"/>
   <name value="blah"/>
   <title value="Simple Extension"/>
   <status value="active"/>

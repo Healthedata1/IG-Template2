@@ -10,7 +10,7 @@
   <name value="IGTest3"/>
   <title value="IG Test3"/>
   <status value="draft"/>
-  <date value="2019-10-15T11:39:27-07:00"/>
+  <date value="2019-10-23T11:47:17-07:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -34,9 +34,6 @@
     </grouping>
     <grouping id="template-profile-spreadsheet.xml">
       <name value="Template-basic"/>
-    </grouping>
-    <grouping id="patient-on-usprofile-spreadsheet.xml">
-      <name value="/Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet"/>
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
