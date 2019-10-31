@@ -1,9 +1,9 @@
 ﻿IGTest3 : Validation Results
 =========================================
 
-err = 12, warn = 18, info = 0
-IG Publisher Version: v0.9.87-SNAPSHOT
-Generated Wed Oct 23 23:03:16 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+err = 16, warn = 18, info = 0
+IG Publisher Version: v0.9.88-SNAPSHOT
+Generated Wed Oct 30 17:57:40 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
 
  Build Errors : 32 / 1
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/basic-example1 : 1 / 0
@@ -11,7 +11,9 @@ Generated Wed Oct 23 23:03:16 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example2 : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-ifr : 0 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-bar-codes : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes : 1 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-foo-codes : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig : 0 / 0
@@ -21,7 +23,7 @@ Generated Wed Oct 23 23:03:16 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be healthedatainc.ig-template2
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 270, column 1167: The link 'Organization/1' for "Organization/1" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 270, column 1165: The link 'Organization/1' for "Organization/1" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 454, column 8: The link 'StructureDefinition-extension-blah.html#Extension.valueCode' for "valueCode" cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Extension.extension, publish-box, copy-button, tabs, segment-post-footer, Extension.id, json-inner, all-tbl-diff, all-tbl-snap, stripe, segment-footer, json, Extension.url, tabs-snap, introduction, tbl-snap, all-tbl-snap-inner, segment-header, profile, tabs-diff, tbl-diff, Extension, Extension.value_x_, tabs-json, tabs-all, back-to-top, tbl-diff-inner, all-tbl-diff-inner, segment-navbar, project-status])
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 454, column 496: The link 'http://build.fhir.org/null.html' for "Value of extension" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah2.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 416, column 8: The link 'StructureDefinition/extension-blah2.html#Extension.id' for "id" cannot be resolved
@@ -51,10 +53,10 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-templat
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 619, column 493: The link 'http://build.fhir.org/null.html' for "male | female | other | unknown" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 626, column 772: The link 'http://build.fhir.org/null.html' for "The language which can be used to communicate with the patient about his or her health" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 635, column 511: The link 'http://build.fhir.org/null.html' for "replaced-by | replaces | refer | seealso" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 323, column 8: The link 'StructureDefinition/extension-blah2.html' for "Simple Extension" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/ValueSet-blah-codes.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 324, column 8: The link 'StructureDefinition/extension-blah2.html' for "Simple Extension" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/html_pages.html: The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/basic-example1.xml ==
-ERROR: Basic/diet: Basic: Identifier SHALL be greater than 5 characters [Identifier.value.length() > 5]
+ERROR: Basic/diet: Basic: temp-1: Identifier SHALL be greater than 5 characters [Identifier.value.length() > 5]
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/patient-example.xml ==
 ERROR: Patient/example: Patient.identifier[0].type.coding[0]: Unknown Code System http://hl7.org/fhir/v2/0203
 ERROR: Patient/example: Patient.identifier[0].type.coding[0].system: URL value 'http://hl7.org/fhir/v2/0203' does not resolve
@@ -62,21 +64,25 @@ ERROR: Patient/example: Patient.identifier[0].type.coding[0].system: URL value '
 ERROR: Patient/example2: Patient.managingOrganization: Unable to resolve resource 'Organization/1'
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/CodeSystem-blah-codes.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/StructureDefinition-ifr.xml ==
-WARNING: StructureDefinition/ifr: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/ifr: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-bar-codes.xml ==
+ERROR: ValueSet/bar-codes: ValueSet.jurisdiction[0]: As specified by profile http://hl7.org/fhir/StructureDefinition/ValueSet, Element 'jurisdiction' is out of order
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-blah-codes.xml ==
 ERROR: ValueSet/blah-codes: ValueSet.jurisdiction[0]: As specified by profile http://hl7.org/fhir/StructureDefinition/ValueSet, Element 'jurisdiction' is out of order
+== /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ValueSet-foo-codes.xml ==
+ERROR: ValueSet/foo-codes: ValueSet.jurisdiction[0]: As specified by profile http://hl7.org/fhir/StructureDefinition/ValueSet, Element 'jurisdiction' is out of order
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-client.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/capabilitystatement-server.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/ig.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/operationdefinition-example.json ==
 ERROR: OperationDefinition.url: Resource id/url mismatch: opdef-test/http://www.fhir.org/guides/test3/OperationDefinition/example
-WARNING: OperationDefinition/opdef-test: OperationDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: OperationDefinition/opdef-test: OperationDefinition: opd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: OperationDefinition/opdef-test: OperationDefinition.useContext[0].code: The Coding provided is not in the value set http://hl7.org/fhir/ValueSet/usage-context-type (http://hl7.org/fhir/ValueSet/usage-context-type, and a code should come from this value set unless it has no suitable code) (error message = The code system "http://build.fhir.org/codesystem-usage-context-type" is not known for the code "venue"; The code provided (http://build.fhir.org/codesystem-usage-context-type#venue) is not  valid in the value set UsageContextType)
 WARNING: OperationDefinition/opdef-test: OperationDefinition.jurisdiction[0]: The display "United Kingdom of Great Britain and Northern Ireland (the)" is not a valid display for the code {urn:iso:std:iso:3166}GB - should be one of ["United Kingdom of Great Britain and Northern Ireland"]
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/patient-on-usprofile-spreadsheet.xml ==
-WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 == /Users/ehaas/Documents/FHIR/IG-Template2/source/resources/template-profile-spreadsheet.xml ==
-WARNING: StructureDefinition/extension-blah: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition/extension-complex: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition/extension-blah2: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: StructureDefinition/template-basic: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/extension-blah: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/extension-complex: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/extension-blah2: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition/template-basic: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]

@@ -284,7 +284,7 @@ This is the {% if {{site.build}} == "ci" %}
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;IGTest3&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;IG Test3&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2019-10-23T23:02:33-07:00&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2019-10-30T17:56:53-07:00&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Health eData Inc&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.contact">contact</a>&gt;
     &lt;<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -411,6 +411,20 @@ This is the {% if {{site.build}} == "ci" %}
     &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
                  <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;ValueSet-bar-codes.html&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet/bar-codes&quot;/&gt;
+      &lt;/reference&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
         &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;CapabilityStatement&quot;/&gt;
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
@@ -461,6 +475,20 @@ This is the {% if {{site.build}} == "ci" %}
       &lt;/extension&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
         &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;StructureDefinition/template-profile-on-profile&quot;/&gt;
+      &lt;/reference&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot;&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>=&quot;ValueSet-foo-codes.html&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet/foo-codes&quot;/&gt;
       &lt;/reference&gt;
       &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
     &lt;/resource&gt;
@@ -560,6 +588,16 @@ This is the {% if {{site.build}} == "ci" %}
         &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a> <a href="http://build.fhir.org/datatypes.html#url">value</a>=&quot;terminology.html&quot;/&gt;
         &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Terminology&quot;/&gt;
         &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;markdown&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>&gt;
+          &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a> <a href="http://build.fhir.org/datatypes.html#url">value</a>=&quot;ValueSet-bar-codes.html&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet Bar Codes&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+        &lt;/page&gt;
+        &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>&gt;
+          &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a> <a href="http://build.fhir.org/datatypes.html#url">value</a>=&quot;ValueSet-foo-codes.html&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet Foo Codes&quot;/&gt;
+          &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+        &lt;/page&gt;
         &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>&gt;
           &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a> <a href="http://build.fhir.org/datatypes.html#url">value</a>=&quot;ValueSet-blah-codes.html&quot;/&gt;
           &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;ValueSet Blah Codes&quot;/&gt;
@@ -663,7 +701,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Oct 23, 2019 23:02-0700">2019-10-23</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Oct 30, 2019 17:56-0700">2019-10-30</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

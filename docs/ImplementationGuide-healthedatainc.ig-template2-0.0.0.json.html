@@ -283,7 +283,7 @@ This is the {% if {{site.build}} == "ci" %}
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a>" : "IGTest3",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.title">title</a>" : "IG Test3",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a>" : "draft",
-  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">date</a>" : "2019-10-23T23:02:33-07:00",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">date</a>" : "2019-10-30T17:56:53-07:00",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a>" : "Health eData Inc",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.contact">contact</a>" : [
     {
@@ -436,6 +436,22 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
             "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "ValueSet"
+          },
+          {
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-bar-codes.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/bar-codes"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "CapabilityStatement"
           },
           {
@@ -493,6 +509,22 @@ This is the {% if {{site.build}} == "ci" %}
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
           "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/template-profile-on-profile"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "ValueSet"
+          },
+          {
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-foo-codes.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/foo-codes"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
@@ -606,6 +638,16 @@ This is the {% if {{site.build}} == "ci" %}
           "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown",
           "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>" : [
             {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "ValueSet-bar-codes.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "ValueSet Bar Codes",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            },
+            {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "ValueSet-foo-codes.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "ValueSet Foo Codes",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            },
+            {
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "ValueSet-blah-codes.html",
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "ValueSet Blah Codes",
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
@@ -712,7 +754,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Oct 23, 2019 23:02-0700">2019-10-23</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Oct 30, 2019 17:56-0700">2019-10-30</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

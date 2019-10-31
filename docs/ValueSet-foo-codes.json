@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "foo-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Foo Value Set</h2><div><p>A bunch of example codes</p>\n</div><p><b>Copyright Statement:</b> markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-blah-codes.html#blah-codes-foo\">foo</a></td><td>Foo</td><td>example code 2</td></tr></table></li></ul></div>"
+  },
+  "url": "http://www.fhir.org/guides/test3/ValueSet/foo-codes",
+  "version": "0.0.0",
+  "name": "FooCodes",
+  "title": "Foo Value Set",
+  "status": "draft",
+  "date": "2019-03-13T08:16:34-07:00",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url"
+        },
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "description": "A bunch of example codes",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "immutable": true,
+  "copyright": "markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
+        "concept": [
+          {
+            "code": "foo"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -100,6 +100,12 @@
     },
     {
       "reference" : {
+        "reference" : "ValueSet/bar-codes"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "CapabilityStatement/server"
       },
       "exampleBoolean" : false
@@ -119,6 +125,12 @@
     {
       "reference" : {
         "reference" : "StructureDefinition/template-profile-on-profile"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/foo-codes"
       },
       "exampleBoolean" : false
     },
@@ -188,6 +200,16 @@
         "title" : "Terminology",
         "generation" : "markdown",
         "page" : [{
+          "nameUrl" : "ValueSet-bar-codes.html",
+          "title" : "ValueSet Bar Codes",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "ValueSet-foo-codes.html",
+          "title" : "ValueSet Foo Codes",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "ValueSet-blah-codes.html",
           "title" : "ValueSet Blah Codes",
           "generation" : "generated"

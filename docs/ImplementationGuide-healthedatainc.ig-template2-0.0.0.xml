@@ -10,7 +10,7 @@
   <name value="IGTest3"/>
   <title value="IG Test3"/>
   <status value="draft"/>
-  <date value="2019-10-23T23:02:33-07:00"/>
+  <date value="2019-10-30T17:56:53-07:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -121,6 +121,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-bar-codes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/bar-codes"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -164,6 +176,18 @@
       </extension>
       <reference>
         <reference value="StructureDefinition/template-profile-on-profile"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-foo-codes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/foo-codes"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -257,6 +281,16 @@
         <nameUrl value="terminology.html"/>
         <title value="Terminology"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="ValueSet-bar-codes.html"/>
+          <title value="ValueSet Bar Codes"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="ValueSet-foo-codes.html"/>
+          <title value="ValueSet Foo Codes"/>
+          <generation value="generated"/>
+        </page>
         <page>
           <nameUrl value="ValueSet-blah-codes.html"/>
           <title value="ValueSet Blah Codes"/>

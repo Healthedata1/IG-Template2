@@ -1,0 +1,78 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "33586001",
+  "display" : "Sitting Position"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Sitting position",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "309642005",
+  "display" : "Mercury sphygmomanometer"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Mercury sphygmomanometer",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "720736009",
+  "display" : "Blood pressure cuff, pediatric size"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Blood pressure cuff, pediatric size (physical object)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "248218005",
+  "display" : "Awake"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Awake",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "263678003",
+  "display" : "At rest"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "At rest",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "72098002",
+  "display" : "Left arm"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Entire left arm",
+  "severity" : "warning",
+  "error" : "The display \"Left arm\" is not a valid display for the code {http://snomed.info/sct}72098002 - should be one of [\"Entire left arm\",\"Entire left upper arm\",\"Entire left upper arm (body structure)\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "37931006",
+  "display" : "Auscultation"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Auscultation - examination",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

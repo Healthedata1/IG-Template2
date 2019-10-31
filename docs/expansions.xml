@@ -1,11 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="222400f2-14d2-4925-9cfc-f9659d0fcfac"/>
+  <id value="c05207ab-91a9-4b17-b039-5860bad5b593"/>
   <meta>
-    <lastUpdated value="2019-10-23T23:02:33.373-07:00"/>
+    <lastUpdated value="2019-10-30T17:56:53.732-07:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/bar-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="bar-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p>
+            <p>All codes from system 
+              <a href="CodeSystem-blah-codes.html">
+                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test3/ValueSet/bar-codes"/>
+        <version value="0.0.0"/>
+        <name value="BarCodes"/>
+        <title value="Bar Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:2ab6de86-44ae-48c6-bbe4-44c62d15242d"/>
+          <timestamp value="2019-10-30T17:57:17-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/foo-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="foo-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p>
+            <p>All codes from system 
+              <a href="CodeSystem-blah-codes.html">
+                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem-blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test3/ValueSet/foo-codes"/>
+        <version value="0.0.0"/>
+        <name value="FooCodes"/>
+        <title value="Foo Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:ca67a453-4beb-42ee-8dd6-1373e9659ce2"/>
+          <timestamp value="2019-10-30T17:57:17-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
     <resource>
@@ -84,8 +250,8 @@
         <immutable value="true"/>
         <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
         <expansion>
-          <identifier value="urn:uuid:64cf2c67-9425-4261-b04d-a0ac1109afb0"/>
-          <timestamp value="2019-10-23T23:02:52-07:00"/>
+          <identifier value="urn:uuid:8fd1f152-6aeb-4fe7-936a-69bb066bdf4f"/>
+          <timestamp value="2019-10-30T17:57:17-07:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

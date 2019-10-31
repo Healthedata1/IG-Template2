@@ -10,7 +10,7 @@
   "name": "IGTest3",
   "title": "IG Test3",
   "status": "draft",
-  "date": "2019-10-23T23:02:33-07:00",
+  "date": "2019-10-30T17:56:53-07:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -163,6 +163,22 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-bar-codes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/bar-codes"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CapabilityStatement"
           },
           {
@@ -220,6 +236,22 @@
         ],
         "reference": {
           "reference": "StructureDefinition/template-profile-on-profile"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-foo-codes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/foo-codes"
         },
         "exampleBoolean": false
       },
@@ -332,6 +364,16 @@
           "title": "Terminology",
           "generation": "markdown",
           "page": [
+            {
+              "nameUrl": "ValueSet-bar-codes.html",
+              "title": "ValueSet Bar Codes",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-foo-codes.html",
+              "title": "ValueSet Foo Codes",
+              "generation": "generated"
+            },
             {
               "nameUrl": "ValueSet-blah-codes.html",
               "title": "ValueSet Blah Codes",

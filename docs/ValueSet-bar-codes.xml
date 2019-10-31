@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="bar-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Bar Value Set</h2><div><p>A bunch of example codes</p>
+</div><p><b>Copyright Statement:</b> markdown link: [American Medical Association](https://www.ama-assn.org/)
+
+  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
+
+  ## header2
+  ### header3
+  ### header4 
+ *emphasis* 
+ **bold** 
+ unordered markdown list:
+ - list 1
+ - list 2
+
+  ordered markdown list:
+ 1. list1
+ 1. list2</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="CodeSystem-blah-codes.html"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://www.fhir.org/guides/test3/ValueSet/bar-codes"/>
+  <version value="0.0.0"/>
+  <name value="BarCodes"/>
+  <title value="Bar Value Set"/>
+  <status value="draft"/>
+  <date value="2019-03-13T08:16:34-07:00"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+    </telecom>
+  </contact>
+  <description value="A bunch of example codes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="true"/>
+  <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
+  <compose>
+    <include>
+      <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+      <concept>
+        <code value="bar"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -95,6 +95,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/bar-codes"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CapabilityStatement/server"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -114,6 +120,12 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/template-profile-on-profile"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/foo-codes"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -182,6 +194,16 @@
         <nameUrl value="terminology.html"/>
         <title value="Terminology"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="ValueSet-bar-codes.html"/>
+          <title value="ValueSet Bar Codes"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="ValueSet-foo-codes.html"/>
+          <title value="ValueSet Foo Codes"/>
+          <generation value="generated"/>
+        </page>
         <page>
           <nameUrl value="ValueSet-blah-codes.html"/>
           <title value="ValueSet Blah Codes"/>

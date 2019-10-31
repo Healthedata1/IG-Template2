@@ -278,8 +278,56 @@ This is the {% if {{site.build}} == "ci" %}
 
 <h3 id="value-sets">Value Sets</h3>
 
-<p>These value sets have been defined for this implementation guide:</p>
+<h4 id="method-1-is-to-render-a-unsorted-list-of-valuesets-using-the-ig-publisher-generated-simple-list-include-file">Method 1 is to render a <em>unsorted</em> list of valuesets using the IG Publisher generated simple list include file.</h4>
+
+<p>This liquid ‘include’ tag</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include list-simple-valuesets.xhtml %}
+</code></pre></div></div>
+
+<p>results in:</p>
+
+<li><a href="ValueSet-bar-codes.html">Bar Value Set</a></li>
+<li><a href="ValueSet-foo-codes.html">Foo Value Set</a></li>
 <li><a href="ValueSet-blah-codes.html">BlahCodes</a></li>
+
+<h4 id="method-2-is-to-render-a-sorted-list-using-a-custom-liquid-script">Method 2 is to render a sorted list using a custom liquid script:</h4>
+
+<p>This liquid syntax:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign html_pages = site.html_pages | sort: 'name' %}
+{% for p in html_pages %}
+  {% assign html_frag = p.name | split: '.' | size %}
+  {% if p.name contains "ValueSet" and html_frag == 2 %}
+      &lt;li&gt;&lt;a href="{{p.name}}"&gt;{{p.name |  remove: ".html" | replace: '-', ' ' }}&lt;/a&gt;&lt;/li&gt;
+  {% endif %}
+{% endfor %}
+</code></pre></div></div>
+
+<p>results in:</p>
+
+<li><a href="ValueSet-bar-codes.html">ValueSet bar codes</a></li>
+
+<li><a href="ValueSet-blah-codes.html">ValueSet blah codes</a></li>
+
+<li><a href="ValueSet-foo-codes.html">ValueSet foo codes</a></li>
+
+<h4 id="method-3-is-to-render-a-custom-list-by-manually-creating-the-list-using-markdown">Method 3 is to render a custom list by manually creating the list using Markdown:</h4>
+
+<p>This markdown:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [Foo Value Set](ValueSet-foo-codes.html)
+- [Bar Value Set](ValueSet-bar-codes.html)
+- [Blah Value Set](ValueSet-blah-codes.html)
+</code></pre></div></div>
+
+<p>results in:</p>
+
+<ul>
+  <li><a href="#">Foo Value Set</a></li>
+  <li><a href="#">Bar Value Set</a></li>
+  <li><a href="#">Blah Value Set</a></li>
+</ul>
 
 <h3 id="code-systems">Code Systems</h3>
 
@@ -316,7 +364,7 @@ This is the {% if {{site.build}} == "ci" %}
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Oct 23, 2019 23:02-0700">2019-10-23</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Oct 30, 2019 17:56-0700">2019-10-30</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

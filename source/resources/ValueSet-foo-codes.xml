@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="foo-codes"/>
+<url value="http://www.fhir.org/guides/test3/ValueSet/foo-codes"/>
+<version value="0.0.0"/>
+<name value="FooCodes"/>
+<title value="Foo Value Set"/>
+<status value="draft"/>
+<date value="2019-03-13T08:16:34-07:00"/>
+<contact>
+  <telecom>
+    <system value="url"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+  </telecom>
+</contact>
+<description value="A bunch of example codes"/>
+<copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)
+
+markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
+
+## header2
+### header3
+### header4
+
+*emphasis*
+
+**bold**
+
+markdown list:
+- list 1
+- list 2
+
+1. list1
+1. list2"/>
+<jurisdiction>
+  <coding>
+    <system value="urn:iso:std:iso:3166"/>
+    <code value="US"/>
+    <display value="United States of America"/>
+  </coding>
+</jurisdiction>
+<immutable value="true"/>
+<compose>
+  <include>
+    <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+    <concept>
+      <code value="foo">
+      </code>
+    </concept>
+  </include>
+</compose>
+</ValueSet>

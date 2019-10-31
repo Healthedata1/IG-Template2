@@ -378,7 +378,7 @@ This is the {% if {{site.build}} == "ci" %}
                     <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;reference.startsWith(&amp;#39;#&amp;#39;).not() or (reference.substring(1).trace(&amp;#39;url&amp;#39;) in %resource.contained.id.trace(&amp;#39;ids&amp;#39;))&quot;/&gt;
         &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
                <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;not(starts-with(f:reference/@value, &amp;#39;#&amp;#39;)) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, &amp;#39;#&amp;#39;)]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, &amp;#39;#&amp;#39;)])&quot;/&gt;
-        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;Reference&quot;/&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://build.fhir.org/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Reference&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://build.fhir.org/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
@@ -636,7 +636,7 @@ Formats: <a href="StructureDefinition-ifr.html">Narrative</a>, <a href="Structur
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Oct 23, 2019 23:02-0700">2019-10-23</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Oct 30, 2019 17:56-0700">2019-10-30</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

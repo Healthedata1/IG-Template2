@@ -8,6 +8,9 @@
 
 
   <!-- ============CONTENT CONTENT=============== -->
+<h2>site page variable example</h2>
+
+
 
 <h3>list of pages</h3>
 
@@ -27,6 +30,15 @@
 pagepath = {{pagepath}}
 <br />
 
+<h3>list of valuesets from pages</h3>
+
+{% assign html_pages = site.html_pages | sort: 'name' %}
+{% for p in html_pages %}
+{% assign html_frag = p.name | split: '.' | size %}
+{% if p.name contains "ValueSet" and html_frag == 2 %}
+  <li><a href="{{p.name}}">{{p.name |  remove: ".html" | replace: '-', ' ' }}</a></li>
+{% endif %}
+{% endfor %}
 
 
 <pre>
